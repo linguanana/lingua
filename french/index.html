@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>French Albums | LinguaNana</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>French Albums – LinguaNana</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f4ed;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #e0f7fa, #80deea);
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      text-align: center;
     }
     h1 {
-      text-align: center;
-      color: #2b2e4a;
+      margin-top: 40px;
+      font-size: 2.5rem;
+      color: #333;
     }
-    .albums {
+    .album-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    .album {
+    .album-card {
       background-color: #ffffff;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
       overflow: hidden;
-      transition: transform 0.2s ease;
-      text-align: center;
-      padding-bottom: 1rem;
+      cursor: pointer;
     }
-    .album:hover {
-      transform: translateY(-5px);
+    .album-card:hover {
+      transform: scale(1.05);
     }
-    .album img {
+    .album-card img {
       width: 100%;
-      height: 200px;
+      height: 150px;
       object-fit: cover;
+      border-bottom: 1px solid #eee;
     }
-    .album-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin: 1rem 0 0.5rem;
-      color: #2b2e4a;
+    .album-card .label {
+      padding: 1rem;
+      font-size: 1.1rem;
+      color: #333;
     }
-    .album-desc {
-      color: #555;
-      font-size: 0.95rem;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
 <body>
-  <h1>🎵 French Albums – LinguaNana</h1>
-  <div class="albums">
-    <a class="album" href="/french/album1.html">
-      <img src="https://via.placeholder.com/300x200/9fa8da/ffffff?text=Greetings+Album" alt="Greetings Album Cover">
-      <div class="album-title">Album 1: Salutations</div>
-      <div class="album-desc">Greetings & Common Phrases</div>
+  <h1>🇫🇷 French Albums</h1>
+  <div class="album-grid">
+    <a href="./greetings/index.html">
+      <div class="album-card">
+        <img src="./greetings/cover.jpg" alt="Greetings Album Cover" />
+        <div class="label">👋 Greetings</div>
+      </div>
     </a>
-    <!-- Add more albums below -->
+    <a href="./numbers/index.html">
+      <div class="album-card">
+        <img src="./numbers/cover.jpg" alt="Numbers Album Cover" />
+        <div class="label">🔢 Numbers</div>
+      </div>
+    </a>
+    <!-- Add more albums as needed -->
   </div>
 </body>
 </html>
