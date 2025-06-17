@@ -1,59 +1,59 @@
-# 🇫🇷 Module 1 – Lesson 3: Ça va ?
+# 🇫🇷 Module 1 – Lesson 4: Tu viens d’où ?
 
 **📘 Theme:** Greetings at a Market  
 **🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
 
 ---
 
-## ✅ Level 1 – A0: Ask “How are you?”
+## ✅ Level 1 – A0: Ask where someone is from
 
 ### 📊 Key Phrase
->     Comment ça va ? – How are you?  
->     Ça va bien. – I’m good.  
->     Ça va mal. – I’m not well.  
->     Comme ci, comme ça. – So-so.  
+    Tu viens d’où ? – Where are you from?  
+    Je viens de Paris. – I come from Paris.  
+    Je viens de Lyon. – I come from Lyon.  
+    Je viens de Bordeaux. – I come from Bordeaux.  
 
-### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson3_1.mp3)
+### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson4_1.mp3)
 
->     👩 A: Comment ça va ?  
->     → How are you?  
->     
->     👨 B: Ça va bien.  
->     → I’m good.
+    👩 A: Tu viens d’où ?  
+    → Where are you from?  
+
+    👨 B: Je viens de Lyon.  
+    → I’m from Lyon.
 
 ### 🎯 Task or homework
->     Ask two people “Comment ça va ?” and try answering differently each time.
+    Ask two people where they’re from. Practice saying: Je viens de + city.
 
 ### 💡 Tip
->     “Comment” = how  
->     “Ça va” = literally “it goes,” commonly means “I’m okay”  
->     “Comment ça va ?” is informal and friendly  
->     Formal version: “Comment allez-vous ?”
+    “Tu” = you (informal)  
+    “Viens” = come  
+    “Je viens de…” = I come from…  
+    For formal situations, use “Vous venez d’où ?”
 
 ---
 
-## ✅ Level 2 – A0+: Respond with Variation
+## ✅ Level 2 – A0+: More cities + map practice
 
 ### 📊 Key Phrase
->     Ça va mal. – I’m not well.  
->     Comme ci, comme ça. – So-so.  
+    Je viens de Marseille. – I come from Marseille.  
+    Je viens de Nice. – I come from Nice.  
+    Je viens de Toulouse. – I come from Toulouse.  
 
-### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson3_2.mp3)
+### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson4_2.mp3)
 
->     👩 A: Comment ça va ?  
->     → How are you?  
->     
->     👨 B: Comme ci, comme ça.  
->     → So-so.
+    👩 A: Tu viens d’où ?  
+    → Where are you from?  
+
+    👨 B: Je viens de Nice.  
+    → I’m from Nice.
 
 ### 🎯 Task or homework
->     Say how you’re feeling using different responses: bien / mal / comme ci, comme ça.
+    Choose 3 cities on the map and say where you're from using “Je viens de…”
 
 ### 💡 Tip
->     Use your voice tone to match your feeling: cheerful, tired, unsure…  
->     Practice with a partner and switch roles  
->     These phrases are used every day — try using one today!
+    This phrase is useful for travel, cafes, and meeting new friends  
+    “Je viens de…” can also be followed by countries: “Je viens de France.”
 
 ---
 
-➡️ **Next Lesson:** [Lesson 4 – Tu viens d’où ?](Lesson4.md)
+➡️ **Next Lesson:** [Lesson 5 – Je m’appelle…](Lesson5.md)

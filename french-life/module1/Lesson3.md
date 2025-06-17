@@ -1,62 +1,58 @@
-# 🇫🇷 Module 1 – Lesson 3: Tu t’appelles comment ?
+# 🇫🇷 Module 1 – Lesson 3: Ça va ?
 
 **📘 Theme:** Greetings at a Market  
-**🔤 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
+**🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
 
 ---
 
-## ✅ Level 1 – A0: Ask for Names
+## ✅ Level 1 – A0: Ask “How are you?”
 
-### 📌 Key Phrase
-> * Tu t'appelles comment ? – What’s your name?  
-> * Je m'appelle... – My name is...  
+### 📊 Key Phrase
+    Comment ça va ? – How are you?  
+    Ça va bien. – I’m good.  
+    Ça va mal. – I’m not well.  
+    Comme ci, comme ça. – So-so.  
 
-### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/lesson3_1.mp3)
+### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson3_1.mp3)
 
-> 👩 A: Tu t'appelles comment ?  
-> → What’s your name?  
+    👩 A: Comment ça va ?  
+    → How are you?  
 
-> 👨 B: Je m'appelle Leo.  
-> → My name is Leo.  
-
-> 👩 A: Je m'appelle Emma.  
-> → My name is Emma.  
+    👨 B: Ça va bien.  
+    → I’m good.
 
 ### 🎯 Task or homework
-> Practice saying your name in French to a mirror or a friend.
+    Ask two people “Comment ça va ?” and try answering differently each time.
 
 ### 💡 Tip
-> **Tu** = you (informal, use with friends or kids)  
-> **Je** = I  
-> **Comment** = how  
-> “Tu t’appelles comment ?” = What’s your name?  
-> “Je m’appelle…” = My name is…
+    “Comment” = how  
+    “Ça va” = literally “it goes,” commonly means “I’m okay”  
+    “Comment ça va ?” is informal and friendly  
+    Formal version: “Comment allez-vous ?”
 
 ---
 
-## ✅ Level 2 – A0+: Response Practice
+## ✅ Level 2 – A0+: Respond with Variation
 
-### 📌 Key Phrase
-> * Je m'appelle Emma. Et toi ? – My name is Emma. And you?  
-> * Tu t'appelles comment ? – What’s your name? (repeat for return question)
+### 📊 Key Phrase
+    Ça va mal. – I’m not well.  
+    Comme ci, comme ça. – So-so.  
 
-### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/lesson3_2.mp3)
+### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson3_2.mp3)
 
-> 👩 A: Je m'appelle Emma. Et toi ?  
-> → My name is Emma. And you?  
+    👩 A: Comment ça va ?  
+    → How are you?  
 
-> 👨 B: Je m'appelle Leo. Tu t'appelles comment ?  
-> → My name is Leo. What’s your name?
-
-> 👩 A: Je m'appelle Emma.  
-> → My name is Emma.
+    👨 B: Comme ci, comme ça.  
+    → So-so.
 
 ### 🎯 Task or homework
-> Use "Et toi ?" to ask someone their name after saying yours.
+    Say how you’re feeling using different responses: bien / mal / comme ci, comme ça.
 
 ### 💡 Tip
-> “Et toi ?” is informal. Say “Et vous ?” to be more formal or polite.  
-> You can also repeat “Tu t’appelles comment ?” after hearing someone’s name to confirm or ask in return.
+    Use your voice tone to match your feeling: cheerful, tired, unsure…  
+    Practice with a partner and switch roles  
+    These phrases are used every day — try using one today!
 
 ---
 
