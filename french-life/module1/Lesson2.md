@@ -1,47 +1,70 @@
 # 🇫🇷 Module 1 – Lesson 2: Comment ça va ?
 
 **📘 Theme:** Greetings at a Market  
-**🔤 Lessons:** [1](#lesson-1) | [2](#lesson-2) | [3](#lesson-3) | [4](#lesson-4) | [5](#lesson-5) | [6](#lesson-6) | [7](#lesson-7)
+**🔤 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
 
 ---
 
-## ✅ Level 1 – A0: Basic Phrases
+## ✅ Level 1 – A0: Ask and Answer “How are you?”
 
 ### 📌 Key Phrase
-    * Comment ça va ? – How are you?
-    * Ça va bien. – I’m good.
-    * Comme ci, comme ça. – So-so.
-    * Ça va mal. – Not well.
+&nbsp;&nbsp;&nbsp;&nbsp;* Comment ça va ? – How are you?  
+&nbsp;&nbsp;&nbsp;&nbsp;* Ça va bien. – I’m fine.  
+&nbsp;&nbsp;&nbsp;&nbsp;* Comme ci, comme ça. – So-so.  
+&nbsp;&nbsp;&nbsp;&nbsp;* Ça va mal. – Not well.  
 
 ### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/lesson2_1.mp3)
 
-    👩 A: Comment ça va ?
-        → How are you? (你好嗎?)
+&nbsp;&nbsp;&nbsp;&nbsp;👩 A: Comment ça va ?  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ How are you?  
 
-    👨 B: Ça va bien.
-        → I'm good. (我很好)
+&nbsp;&nbsp;&nbsp;&nbsp;👨 B: Ça va bien.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ I’m fine.  
 
-    👩 A: Comment ça va ?
-        → How are you? (你好嗎?)
+&nbsp;&nbsp;&nbsp;&nbsp;👩 A: Comment ça va ?  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ How are you?  
 
-    👨 B: Comme ci, comme ça.
-        → So-so. (還好啦)
+&nbsp;&nbsp;&nbsp;&nbsp;👨 B: Comme ci, comme ça.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ So-so.  
 
-    👩 A: Comment ça va ?
-        → How are you? (你好嗎?)
+&nbsp;&nbsp;&nbsp;&nbsp;👩 A: Comment ça va ?  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ How are you?  
 
-    👨 B: Ça va mal.
-        → Not well. (不好)
+&nbsp;&nbsp;&nbsp;&nbsp;👨 B: Ça va mal.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Not well.  
 
 ### 🎯 Task or homework
-    Say each pair with different facial expressions: happy, tired, sad.
+&nbsp;&nbsp;&nbsp;&nbsp;Try asking “Comment ça va ?” to three different people this week. Listen carefully to their replies.
 
 ### 💡 Tip
-    Use “Comment ça va ?” to ask how someone is.
-    Say “Ça va bien” if you feel good.
-    Use “Comme ci, comme ça” for so-so.
-    Say “Ça va mal” if you don’t feel well.
+&nbsp;&nbsp;&nbsp;&nbsp;**Comment** = how  
+&nbsp;&nbsp;&nbsp;&nbsp;**Ça va** = it goes (used to ask or answer how someone feels)
 
 ---
 
-➡️ **Next Lesson:** [Lesson 3 – Tu t’appelles comment ?](#lesson-3)
+## ✅ Level 2 – A0+: Add “Et toi ?” to Ask in Return
+
+### 📌 Key Phrase
+&nbsp;&nbsp;&nbsp;&nbsp;* Et toi ? – And you?  
+&nbsp;&nbsp;&nbsp;&nbsp;* Ça va bien. Et toi ? – I’m fine. And you?
+
+### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/lesson2_2.mp3)
+
+&nbsp;&nbsp;&nbsp;&nbsp;👩 A: Comment ça va ?  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ How are you?  
+
+&nbsp;&nbsp;&nbsp;&nbsp;👨 B: Ça va bien. Et toi ?  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ I’m fine. And you?  
+
+&nbsp;&nbsp;&nbsp;&nbsp;👩 A: Comme ci, comme ça.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ So-so.  
+
+### 🎯 Task or homework
+&nbsp;&nbsp;&nbsp;&nbsp;When someone asks you “Comment ça va ?”, respond and then ask “Et toi ?” to continue the conversation.
+
+### 💡 Tip
+&nbsp;&nbsp;&nbsp;&nbsp;“Et toi ?” is informal. To be polite or formal, say “Et vous ?”
+
+---
+
+➡️ **Next Lesson:** [Lesson 3 – Tu t’appelles comment ?](Lesson3.md)
