@@ -1,6 +1,6 @@
 # 🇫🇷 Module 1
 ## Lesson 1: Bonjour! Market Greeting Mission
-#### 📘 Theme: Greetings at a Market
+** 📘 Theme: Greetings at a Market**
 
 #### 🔤 Lessons: [1](#lesson-1-bonjour-market-greeting-mission) | [2](#lesson-2) | [3](#lesson-3) | [4](#lesson-4) | [5](#lesson-5) | [6](#lesson-6) | [7](#lesson-7)
 
