@@ -1,7 +1,7 @@
 # 🇫🇷 Module 1 – Lesson 2: Comment ça va ?
 
 **📘 Theme:** Greetings at a Market  
-**🔤 Lessons:** [1](#lesson-1) | [2](#lesson-2) | [3](#lesson-3) | [4](#lesson-4) | [5](#lesson-5) | [6](#lesson-6) | [7](#lesson-7)
+**🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
 
 ---
 
