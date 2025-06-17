@@ -1,56 +1,59 @@
-# 🇫🇷 Module 1 – Lesson 4: Tu viens d’où ?
+# 🇫🇷 Module 1 – Lesson 3: Ça va ?
 
 **📘 Theme:** Greetings at a Market  
 **🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
 
 ---
 
-## ✅ Level 1 – A0: Ask Where Someone Is From
+## ✅ Level 1 – A0: Ask “How are you?”
 
 ### 📊 Key Phrase
-> Tu viens d’où ? – Where are you from?  
-> Je viens de Paris. – I’m from Paris.  
+>     Comment ça va ? – How are you?  
+>     Ça va bien. – I’m good.  
+>     Ça va mal. – I’m not well.  
+>     Comme ci, comme ça. – So-so.  
 
-### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson4_1.mp3)
+### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson3_1.mp3)
 
-> 👩 A: Tu viens d’où ?  
-> → Where are you from?  
->
-> 👨 B: Je viens de Paris.  
-> → I’m from Paris.
+>     👩 A: Comment ça va ?  
+>     → How are you?  
+>     
+>     👨 B: Ça va bien.  
+>     → I’m good.
 
 ### 🎯 Task or homework
-> Try asking a friend or teacher where they are from using “Tu viens d’où ?”
+>     Ask two people “Comment ça va ?” and try answering differently each time.
 
 ### 💡 Tip
-> **Tu** = you (informal)  
-> **Viens** = come (from verb *venir*)  
-> **D’où** = from where  
-> “Tu viens d’où ?” is informal. Use “Vous venez d’où ?” for polite/formal situations.
+>     “Comment” = how  
+>     “Ça va” = literally “it goes,” commonly means “I’m okay”  
+>     “Comment ça va ?” is informal and friendly  
+>     Formal version: “Comment allez-vous ?”
 
 ---
 
-## ✅ Level 2 – A0+: Ask Back with “Et toi ?”
+## ✅ Level 2 – A0+: Respond with Variation
 
 ### 📊 Key Phrase
-> Et toi ? – And you?  
-> Je viens de Tokyo. Et toi ? – I’m from Tokyo. And you?  
+>     Ça va mal. – I’m not well.  
+>     Comme ci, comme ça. – So-so.  
 
-### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson4_2.mp3)
+### 🗣️ Dialogue 🎿 [Listen to the audio](https://yourdomain.com/audio/lesson3_2.mp3)
 
-> 👩 A: Je viens de Tokyo. Et toi ?  
-> → I’m from Tokyo. And you?  
->
-> 👨 B: Je viens de Paris.  
-> → I’m from Paris.
+>     👩 A: Comment ça va ?  
+>     → How are you?  
+>     
+>     👨 B: Comme ci, comme ça.  
+>     → So-so.
 
 ### 🎯 Task or homework
-> Practice replying and adding “Et toi ?” when someone tells you where they are from.
+>     Say how you’re feeling using different responses: bien / mal / comme ci, comme ça.
 
 ### 💡 Tip
-> Use “Et toi ?” informally and “Et vous ?” in formal settings.  
-> You can answer with "Je viens de [your city/country]."
+>     Use your voice tone to match your feeling: cheerful, tired, unsure…  
+>     Practice with a partner and switch roles  
+>     These phrases are used every day — try using one today!
 
 ---
 
-➡️ **Next Lesson:** [Lesson 5 – Je suis étudiant(e)](Lesson5.md)
+➡️ **Next Lesson:** [Lesson 4 – Tu viens d’où ?](Lesson4.md)
