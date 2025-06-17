@@ -14,16 +14,19 @@
 ### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/bonjour.mp3)
 
 &nbsp;&nbsp;&nbsp;&nbsp;👩 A: Bonjour !  
-&nbsp;&nbsp;&nbsp;&nbsp;👨 B: Bonjour !  
-&nbsp;&nbsp;&nbsp;&nbsp;👩 A: Salut !  
-&nbsp;&nbsp;&nbsp;&nbsp;👨 B: Salut !
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Good morning! / Hello! （早安 / 你好）
 
-### 🎯 Task  
-Practice saying:  
-- Bonjour! 👋  
-- Salut! 😊  
-Try them with family or your pet.  
-（試著跟家人或寵物打招呼）
+&nbsp;&nbsp;&nbsp;&nbsp;👨 B: Bonjour !  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Good morning! / Hello! （早安 / 你好）
+
+&nbsp;&nbsp;&nbsp;&nbsp;👩 A: Salut !  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Hi! （嗨 / 你好）
+
+&nbsp;&nbsp;&nbsp;&nbsp;👨 B: Salut !  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Hi! （嗨 / 你好）
+
+### 🎯 Task
+Say both phrases out loud with a smile. 🙂
 
 ### 💡 Tip  
 - `Bonjour` is polite and can be used anytime before 6 PM.  
@@ -46,11 +49,8 @@ Try them with family or your pet.
 
 🎥 [Watch the video on YouTube](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
-### 🎯 Task  
-At a market, say:  
-- Bonjour to a seller  
-- Salut to someone your age  
-- Bonsoir if it’s late in the day
+### 🎯 Task
+Try saying Bonsoir if it's evening.
 
 ### 💡 Tip  
 Use `Bonsoir` after 5–6 PM. `Bonjour` is still okay before that.  
@@ -67,16 +67,8 @@ Use `Bonsoir` after 5–6 PM. `Bonjour` is still okay before that.
 &nbsp;&nbsp;&nbsp;&nbsp;👩 A: Merci, au revoir !  
 &nbsp;&nbsp;&nbsp;&nbsp;👨 B: À bientôt !
 
-### 🎯 Task  
-Role-play this short exchange:  
-1. Say hello  
-2. Ask for something  
-3. Say goodbye  
-（練習完整對話流程）  
-Try replacing “une pomme” with:  
-- une baguette  
-- un croissant  
-- une tomate
+### 🎯 Task
+Try the same dialogue with a different item: baguette, croissant, or tomato.
 
 ### 📌 Key Phrase
 
