@@ -1,28 +1,41 @@
-# 🇫🇷 Module 1 – Lesson 7: Placeholder Title
+# 🇫🇷 Module 1 – Lesson 7: Merci, de rien !
 
-**📘 Theme:** Greetings at a Market  
-**🔤 Lessons:** [1](#lesson-1) | [2](#lesson-2) | [3](#lesson-3) | [4](#lesson-4) | [5](#lesson-5) | [6](#lesson-6) | [7](#lesson-7)
+**📘 Theme:** Be polite – say thanks and respond kindly  
+**🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
 
 ---
 
-## ✅ Level 1 – A0: Basic Phrases
+## ✅ Level 1 – A0: Say "Thanks" and "You’re welcome"
 
-### 📌 Key Phrase
-    * Placeholder phrase – Placeholder meaning.
+### 📊 Key Phrase
+    Merci ! – Thank you!  
+    Merci beaucoup ! – Thank you very much!  
+    De rien. – You’re welcome.  
+    Pas de problème. – No problem.
 
-### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/lesson7_1.mp3)
+### 🗣️ Dialogue 🏏 [Listen to the audio](https://yourdomain.com/audio/lesson7_1.mp3)
 
-    👩 A: Placeholder
-        → Translation
+    👩 A: Merci !  
+    → Thank you!  
 
-    👨 B: Placeholder
+    👨 B: De rien !  
+    → You’re welcome!  
 
-### 🎯 Task or homework
-    Try using this phrase with a friend today.
+    👩 A: Merci beaucoup !  
+    → Thanks a lot!  
+
+    👨 B: Pas de problème.  
+    → No problem.
+
+### 🌟 Task or homework
+    Say “Merci !” and reply “De rien” to someone today — even just for fun.
 
 ### 💡 Tip
-    This is a placeholder tip for Lesson 7.
+    - “Merci” is used for any kind of thank you — big or small.  
+    - “De rien” is polite and casual, used like “no problem.”  
+    - “Merci beaucoup” adds more warmth — for extra kindness.
 
 ---
 
-➡️ **Next Lesson:** [Lesson 1 – Placeholder](#lesson-1)
+🎉 **Module 1 Complete!**
+Go back to [Lesson 1](Lesson1.md) or start the next module.

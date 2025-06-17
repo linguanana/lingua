@@ -1,4 +1,4 @@
-# # 🇫🇷 Module 1 – Lesson 4: Enchanté ! Nice to Meet You
+# 🇫🇷 Module 1 – Lesson 4: Enchanté ! Nice to Meet You
 
 **📘 Theme:** Introduce Yourself Politely  
 **🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
