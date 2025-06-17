@@ -8,62 +8,62 @@
 ## ✅ Level 1 – A0: Ask and Answer “How are you?”
 
 ### 📌 Key Phrase
-> * Comment ça va ? – How are you?  
-> * Ça va bien. – I’m fine.  
-> * Comme ci, comme ça. – So-so.  
-> * Ça va mal. – Not well.  
+    * Comment ça va ? – How are you?  
+    * Ça va bien. – I’m fine.  
+    * Comme ci, comme ça. – So-so.  
+    * Ça va mal. – Not well.  
 
 ### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/lesson2_1.mp3)
 
-> 👩 A: Comment ça va ?  
-> → How are you?  
+    👩 A: Comment ça va ?  
+    → How are you?  
 
-> 👨 B: Ça va bien.  
-> → I’m fine.  
+    👨 B: Ça va bien.  
+    → I’m fine.  
 
-> 👩 A: Comment ça va ?  
-> → How are you?  
+    👩 A: Comment ça va ?  
+    → How are you?  
 
-> 👨 B: Comme ci, comme ça.  
-> → So-so.  
+    👨 B: Comme ci, comme ça.  
+    → So-so.  
 
-> 👩 A: Comment ça va ?  
-> → How are you?  
+    👩 A: Comment ça va ?  
+    → How are you?  
 
-> 👨 B: Ça va mal.  
-> → Not well.  
+    👨 B: Ça va mal.  
+    → Not well.  
 
 ### 🎯 Task or homework
-> Try asking “Comment ça va ?” to three different people this week. Listen carefully to their replies.
+    Try asking “Comment ça va ?” to three different people this week. Listen carefully to their replies.
 
 ### 💡 Tip
-> **Comment** = how  
-> **Ça va** = it goes (used to ask or answer how someone feels)
+    **Comment** = how  
+    **Ça va** = it goes (used to ask or answer how someone feels)
 
 ---
 
 ## ✅ Level 2 – A0+: Add “Et toi ?” to Ask in Return
 
 ### 📌 Key Phrase
-> * Et toi ? – And you?  
-> * Ça va bien. Et toi ? – I’m fine. And you?
+    * Et toi ? – And you?  
+    * Ça va bien. Et toi ? – I’m fine. And you?
 
 ### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/lesson2_2.mp3)
 
-> 👩 A: Comment ça va ?  
-> → How are you?  
+    👩 A: Comment ça va ?  
+      → How are you?  
 
-> 👨 B: Ça va bien. Et toi ?  
-> → I’m fine. And you?  
+    👨 B: Ça va bien. Et toi ?  
+    → I’m fine. And you?  
 
-> 👩 A: Comme ci, comme ça.  
-> → So-so.  
+    👩 A: Comme ci, comme ça.  
+    → So-so.  
 
 ### 🎯 Task or homework
-> When someone asks you “Comment ça va ?”, respond and then ask “Et toi ?” to continue the conversation.
+    When someone asks you “Comment ça va ?”, respond and then ask “Et toi ?” to continue the conversation.
 
 ### 💡 Tip
-> “Et toi ?” is informal. To be polite or formal, say “Et vous ?”
+    “Et toi ?” is informal. To be polite or formal, say “Et vous ?”
 
 ---
 
