@@ -1,62 +1,55 @@
 body {
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: #fdfcf9;
   color: #333;
   line-height: 1.4;
-  padding: 1.5rem;
-  max-width: 780px;
+  padding: 1.2rem;
+  max-width: 880px;
   margin: auto;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 h1 {
-  color: #2c3e50;
   text-align: center;
-  border-bottom: 1px solid #ccc;
   font-size: 1.4rem;
-  padding-bottom: 0.3rem;
   margin-bottom: 1.2rem;
 }
 
-.module-title .zh {
-  color: #999;
-  font-size: 0.85rem;
-  margin-left: 0.4em;
-}
-
-.module-list {
+ul.module-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .module-list li {
-  background: #ffffff;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.5rem;
   border-left: 4px solid #6c5ce7;
-  padding: 0.7rem 1rem;
-  margin-bottom: 0.6rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  transition: background-color 0.2s ease;
-}
-
-.module-list li:hover {
-  background-color: #f3f3f3;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .module-title {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.98rem;
+  margin-bottom: 0.2rem;
+}
+
+.module-title .zh {
+  font-weight: normal;
+  color: #888;
+  font-size: 0.85rem;
+  margin-left: 0.4em;
 }
 
 .module-description {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: #555;
-  margin-top: 0.1rem;
 }
 
 .module-description a {
+  color: #0066cc;
   text-decoration: none;
-  color: #2980b9;
 }
 
 .module-description a:hover {
