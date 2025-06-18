@@ -6,39 +6,34 @@
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
-      background-color: #fefefe;
-      color: #333;
-      padding: 2rem;
-      max-width: 700px;
+      max-width: 780px;
       margin: auto;
+      padding: 2rem;
+      background-color: #fdfdfd;
       font-size: 14px;
     }
-    h1 {
+    h1, h2 {
       text-align: center;
-      font-size: 1.3rem;
-      margin-bottom: 2rem;
+      margin-bottom: 0.3rem;
     }
-    ul.lesson-list {
-      list-style-type: none;
-      padding: 0;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
     }
-    .lesson-list li {
-      margin-bottom: 1rem;
-      padding: 0.5rem 1rem;
-      border-left: 4px solid #6c5ce7;
-      background: #fafafa;
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.6rem;
+      text-align: left;
     }
-    .lesson-title {
-      font-weight: 600;
+    th {
+      background-color: #f0f0f5;
     }
-    .lesson-link {
-      display: inline-block;
-      margin-top: 0.2rem;
-      font-size: 0.9rem;
+    a {
       color: #007BFF;
       text-decoration: none;
     }
-    .lesson-link:hover {
+    a:hover {
       text-decoration: underline;
     }
   </style>
@@ -46,49 +41,68 @@
 <body>
 
 <h1>🇫🇷 Module 1 – Greet People at the Market</h1>
+<h2>Lesson List: Say Hello, Introduce Yourself, Be Polite</h2>
 
-<ul class="lesson-list">
-  <li>
-    <div class="lesson-title">Lesson 1: Say Hello</div>
-    Bonjour, Salut, Bonsoir
-    <br><a class="lesson-link" href="lesson1.md">View Lesson 1</a>
-  </li>
-  <li>
-    <div class="lesson-title">Lesson 2: Ask “How are you?”</div>
-    Comment ça va ? / Comment allez-vous ?
-    <br><a class="lesson-link" href="lesson2.md">View Lesson 2</a>
-  </li>
-  <li>
-    <div class="lesson-title">Lesson 3: Introduce Yourself</div>
-    Je m’appelle… / Enchanté(e)
-    <br><a class="lesson-link" href="lesson3.md">View Lesson 3</a>
-  </li>
-  <li>
-    <div class="lesson-title">Lesson 4: Where are you from?</div>
-    Tu es d’où ? / Je viens de…
-    <br><a class="lesson-link" href="lesson4.md">View Lesson 4</a>
-  </li>
-  <li>
-    <div class="lesson-title">Lesson 5: What do you do?</div>
-    Que fais-tu ? / Je suis…
-    <br><a class="lesson-link" href="lesson5.md">View Lesson 5</a>
-  </li>
-  <li>
-    <div class="lesson-title">Lesson 6: Do you speak French?</div>
-    Tu parles français ? / Un peu…
-    <br><a class="lesson-link" href="lesson6.md">View Lesson 6</a>
-  </li>
-  <li>
-    <div class="lesson-title">Lesson 7: I don’t understand</div>
-    Je ne comprends pas / Répétez, s’il vous plaît
-    <br><a class="lesson-link" href="lesson7.md">View Lesson 7</a>
-  </li>
-  <li>
-    <div class="lesson-title">Lesson 8: Goodbye & Polite Words</div>
-    Merci, S’il te plaît, Au revoir, À bientôt
-    <br><a class="lesson-link" href="lesson8.md">View Lesson 8</a>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Lesson</th>
+      <th>Topic</th>
+      <th>Key Phrase</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lesson 1</td>
+      <td>Say Hello</td>
+      <td>Bonjour, Salut, Bonsoir</td>
+      <td><a href="Lesson1.md">View</a></td>
+    </tr>
+    <tr>
+      <td>Lesson 2</td>
+      <td>How are you?</td>
+      <td>Comment ça va ? / Comment allez-vous ?</td>
+      <td><a href="Lesson2.md">View</a></td>
+    </tr>
+    <tr>
+      <td>Lesson 3</td>
+      <td>Introduce Yourself</td>
+      <td>Je m’appelle…, Enchanté(e)</td>
+      <td><a href="Lesson3.md">View</a></td>
+    </tr>
+    <tr>
+      <td>Lesson 4</td>
+      <td>Where are you from?</td>
+      <td>D’où viens-tu ? / Tu es de…</td>
+      <td><a href="Lesson4.md">View</a></td>
+    </tr>
+    <tr>
+      <td>Lesson 5</td>
+      <td>What do you do?</td>
+      <td>Que fais-tu ? / Je suis…</td>
+      <td><a href="Lesson5.md">View</a></td>
+    </tr>
+    <tr>
+      <td>Lesson 6</td>
+      <td>Do you speak French?</td>
+      <td>Tu parles français ? / Un peu</td>
+      <td><a href="Lesson6.md">View</a></td>
+    </tr>
+    <tr>
+      <td>Lesson 7</td>
+      <td>I don’t understand</td>
+      <td>Je ne comprends pas / Répétez</td>
+      <td><a href="Lesson7.md">View</a></td>
+    </tr>
+    <tr>
+      <td>Lesson 8</td>
+      <td>Goodbye & Polite Words</td>
+      <td>Merci, S’il te plaît, Au revoir</td>
+      <td><a href="Lesson8.md">View</a></td>
+    </tr>
+  </tbody>
+</table>
 
 </body>
 </html>
