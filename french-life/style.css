@@ -1,57 +1,138 @@
+/* Import Google Fonts for an elegant look */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+/* --- General Body & Layout --- */
 body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #fdfcf9;
-  color: #333;
-  line-height: 1.4;
-  padding: 1.2rem;
-  max-width: 880px;
-  margin: auto;
-  font-size: 14px;
+    font-family: 'Open Sans', Arial, sans-serif; /* Clean sans-serif for body text */
+    margin: 0;
+    padding: 2em; /* Keep your existing margin, or adjust as needed */
+    background-color: #f8f8f8; /* A very light, soft grey */
+    color: #333; /* Dark grey for good readability */
+    line-height: 1.6;
 }
 
+/* Center the main content on larger screens */
+.container {
+    max-width: 800px; /* Adjust max width for comfortable reading */
+    margin: 0 auto; /* Centers the content block */
+    padding: 1em; /* Add some padding inside the container */
+}
+
+/* --- Headings --- */
 h1 {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 1.2rem;
+    font-family: 'Playfair Display', serif; /* Elegant serif font for headings */
+    font-size: 2.8em;
+    text-align: center;
+    color: #0056b3; /* A sophisticated deep blue */
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #e0e0e0; /* Subtle line below the title */
+    letter-spacing: 0.05em; /* A little spacing for elegance */
 }
 
-ul.module-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+/* --- Module List --- */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default ul margin */
 }
 
-.module-list li {
-  padding: 0.6rem 0.9rem;
-  margin-bottom: 0.5rem;
-  border-left: 4px solid #6c5ce7;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+/* --- Individual Module Items --- */
+li {
+    background: #fff;
+    padding: 1.5em 2em; /* More generous padding */
+    margin-bottom: 1.2em; /* Slightly more space between modules */
+    border-radius: 10px; /* Softer rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* More pronounced, softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    display: flex; /* Use flexbox for layout within the list item */
+    flex-direction: column; /* Stack title and description */
+    align-items: flex-start; /* Align text to the left */
 }
 
+li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12); /* Enhanced shadow on hover */
+}
+
+/* --- Module Title & Chinese Translation --- */
 .module-title {
-  font-weight: 600;
-  font-size: 0.98rem;
-  margin-bottom: 0.2rem;
+    font-size: 1.3rem; /* Larger title font */
+    font-weight: 600; /* Slightly bolder than regular bold */
+    color: #2c3e50; /* A dark, almost black, for prominence */
+    margin-bottom: 0.5em; /* Space between title and description */
 }
 
 .module-title .zh {
-  font-weight: normal;
-  color: #888;
-  font-size: 0.85rem;
-  margin-left: 0.4em;
+    color: #888; /* Softer grey for the Chinese translation */
+    font-size: 0.9em; /* Slightly larger Chinese font */
+    margin-left: 0.6em; /* More space from the English title */
+    font-weight: 400; /* Normal weight for the Chinese text */
 }
 
+/* --- Module Description & Link --- */
 .module-description {
-  font-size: 0.85rem;
-  color: #555;
+    width: 100%; /* Ensure the link takes full width for consistent alignment */
 }
 
 .module-description a {
-  color: #0066cc;
-  text-decoration: none;
+    display: inline-block; /* Keep it inline-block */
+    margin-top: 0.8em; /* More space from title */
+    padding: 0.6em 1.2em; /* Padding for button-like appearance */
+    text-decoration: none;
+    color: #ffffff; /* White text for the button */
+    background-color: #28a745; /* A pleasant green for "Start Lesson" */
+    border-radius: 5px; /* Slightly rounded button corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    font-weight: 600;
+    font-size: 0.95em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for the button */
 }
 
 .module-description a:hover {
-  text-decoration: underline;
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+}
+
+/* --- Responsive Adjustments (Optional but Recommended) --- */
+@media (max-width: 768px) {
+    body {
+        padding: 1em; /* Reduce overall padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2.2em; /* Smaller title on smaller screens */
+        margin-bottom: 1em;
+    }
+
+    li {
+        padding: 1em 1.2em; /* Adjust padding for list items */
+        margin-bottom: 1em;
+    }
+
+    .module-title {
+        font-size: 1.15rem; /* Adjust module title size */
+    }
+
+    .module-description a {
+        padding: 0.5em 1em; /* Adjust button padding */
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em; /* Even smaller title on very small screens */
+    }
+
+    .module-title {
+        font-size: 1rem;
+    }
+
+    .module-title .zh {
+        display: block; /* Stack Chinese text below English title on very small screens */
+        margin-left: 0;
+        margin-top: 0.2em;
+    }
 }
