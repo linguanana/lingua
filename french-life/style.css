@@ -2,47 +2,50 @@ body {
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
   background-color: #fdfcf9;
   color: #333;
-  line-height: 1.6;
-  padding: 2rem;
-  max-width: 800px;
+  line-height: 1.4;
+  padding: 1.5rem;
+  max-width: 780px;
   margin: auto;
+  font-size: 15px;
 }
 
 h1 {
   color: #2c3e50;
   text-align: center;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.4rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .module-list {
-  margin-top: 2rem;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .module-list li {
   background: #ffffff;
-  border-left: 6px solid #6c5ce7;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  transition: transform 0.1s ease;
+  border-left: 4px solid #6c5ce7;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.6rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: background-color 0.2s ease;
 }
 
 .module-list li:hover {
-  transform: scale(1.02);
-  background-color: #fafafa;
+  background-color: #f3f3f3;
 }
 
 .module-title {
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .module-description {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: #555;
+  margin-top: 0.1rem;
 }
 
 .module-description a {
