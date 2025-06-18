@@ -1,7 +1,7 @@
 # 🇫🇷 Module 1 – Lesson 7: Merci, de rien !
 
 **📘 Theme:** Be polite – say thanks and respond kindly  
-**🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
+**🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md) | [8](Lesson8.md)
 
 ---
 

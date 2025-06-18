@@ -1,41 +1,63 @@
-# 🇫🇷 Module 1 – Lesson 6: Tu parles français ?
-
-**📘 Theme:** Ask and answer if someone speaks French  
-**🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md)
+## 🇫🇷 Module 1 – Lesson 6: Tu parles français ?
+**📘 Theme:** Asking if someone speaks French
+**🌠 Lessons:** [1](Lesson1.md) | [2](Lesson2.md) | [3](Lesson3.md) | [4](Lesson4.md) | [5](Lesson5.md) | [6](Lesson6.md) | [7](Lesson7.md) | [8](Lesson8.md)
 
 ---
 
-## ✅ Level 1 – A0: Ask "Do you speak French?"
+## ✅ Level 1 – A0: Do you speak French?
 
 ### 📊 Key Phrase
-    Tu parles français ? – Do you speak French? (informal)  
-    Oui, je parle un peu français. – Yes, I speak a little French.  
-    Non, je ne parle pas français. – No, I don’t speak French.
+		Tu parles français ? — Do you speak French?（你會說法語嗎？）
+		Oui, je parle un peu. — Yes, I speak a little.（我會說一點點）
 
-### 🗣️ Dialogue 🏏 [Listen to the audio](https://yourdomain.com/audio/lesson6_1.mp3)
 
-    👩 A: Tu parles français ?  
-    → Do you speak French?  
+### 🗣️ Dialogue 🍗 [Listen to the audio](https://yourdomain.com/audio/lesson6.mp3)
 
-    👨 B: Oui, je parle un peu français. Et toi ?  
-    → Yes, I speak a little French. And you?  
+		👩 A: Salut ! Tu parles français ?
+		︎ Hi! Do you speak French?（嗨！你會說法語嗎？）
 
-    👩 A: Moi aussi, un peu.  
-    → Me too, a little.
+		👨 B: Oui, je parle un peu.
+		︎ Yes, I speak a little.（是的，我會說一點點）
+
+		👩 A: Super !
+		︎ Great!（太棒了！）
+
 
 ### 🌟 Task or homework
-    Ask someone you know, “Tu parles français ?” and see how they answer.
+		Try asking someone if they speak French using "Tu parles français ?"
+
 
 ### 💡 Tip
-    - Use **Tu parles français ?** informally — with friends, kids, classmates.  
-    - “Parle” means “speak.”
-    - “Parles” is the **tu** form of the verb *parler* (to speak).  
-    - “Ne parle pas” means “don’t speak” — a basic negative structure.  
-    - “Un peu” means “a little.”  
-    - “Pas” is part of the negation — *ne ... pas* means “not.”    
-    - Use **Tu parles français ?** informally — with friends, kids, classmates.  
-    - “Je parle un peu” means “I speak a little.” Try it with other languages!
+		- "Tu parles français ?" = Do you speak French?（你說法語嗎？）
+		- "Oui, je parle un peu" = Yes, I speak a little.（是的，我說一點）
+		- "Un peu" = a little（一點點）
+		- "parles" = speak（說）
+		- "ne parle pas" = don’t speak（不會說）
+
 
 ---
 
-➡️ **Next Lesson:** [Lesson 7 – Merci, de rien !](Lesson7.md)
+## ✅ Level 2 – A1: Say you don’t speak much French
+
+### 📊 Key Phrase
+		Je ne parle pas bien français. — I don’t speak French well.（我法語說得不好）
+
+
+### 🗣️ Dialogue 🍗 [Listen to the audio](https://yourdomain.com/audio/lesson6_2.mp3)
+		👨 A: Tu parles français ?
+		︎ Do you speak French?（你會說法語嗎？）
+
+		👩 B: Je ne parle pas bien français.
+		︎ I don’t speak French well.（我法語說得不好）
+
+		👨 A: Pas de problème !
+		︎ No problem!（沒問題！）
+
+### 🌟 Task or homework
+		Practice saying what languages you speak or don’t speak.
+
+### 💡 Tip
+		- "Je ne parle pas..." = I don’t speak...（我不會說...）
+		- "pas" 是否定句的關鍵詞（not）
+		- "bien" = well（好地）
+		- "Pas de problème" = No problem（沒問題）
