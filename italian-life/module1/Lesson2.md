@@ -13,6 +13,10 @@
    Non molto bene – Not very well （不太好）
 
 ### 🗣️ Dialogue 🎧 [Listen to the audio](https://yourdomain.com/audio/lesson2.mp3)
+<audio controls>
+  <source src="./audio/lesson1_1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
    👩 A: Ciao! Come stai?  
    → Hi! How are you? （嗨！你好嗎？）
