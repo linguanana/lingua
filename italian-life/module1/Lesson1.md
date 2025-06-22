@@ -12,7 +12,7 @@
     Buongiorno! – Good morning / Hello （早安 / 您好）  
     Buonasera! – Good evening （晚安）
 
-### 🗣️ Dialogue 🎧 
+### 🗣️ Dialogue 🎧
 <audio controls>
   <source src="./audio/lesson1_1.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
