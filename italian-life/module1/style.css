@@ -40,6 +40,12 @@ a:hover {
   text-decoration: underline;
 }
 
+br {
+  line-height: 1;
+  display: block;
+  margin: 2px 0; /* 控制上下空白 */
+}
+
 /* 表格樣式（選用） */
 table {
   border-collapse: collapse;
