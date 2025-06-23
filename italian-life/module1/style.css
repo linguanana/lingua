@@ -5,7 +5,18 @@ body {
   font-size: 1rem;
   color: #333;
   background-color: #fff;
-  margin: 2em;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
 }
 
 h1, h2, h3 {
