@@ -88,7 +88,7 @@ th, td {
 
 .auto-list {
   line-height: 1.3;
-  margin-top: 0.1em;
+  margin-top: 0.05em;
   font-size: 1rem; /* 可依需要微調字體大小 */
 }
 h3 + .auto-list {
