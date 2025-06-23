@@ -73,3 +73,12 @@ th, td {
   margin-bottom: 0.2em;
   color: #444;
 }
+
+ /* contreol space <p> */
+.section-dot {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1.2em;
+  margin-bottom: 0.2em;
+  color: #444;
+}
