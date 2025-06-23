@@ -75,10 +75,7 @@ th, td {
 }
 
  /* contreol space <p> */
-.section-dot {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 1.2em;
-  margin-bottom: 0.2em;
-  color: #444;
-}
+ .spacer-xs { margin-top: 4px; }
+ .spacer-sm { margin-top: 8px; }
+ .spacer-md { margin-top: 12px; }
+ .spacer-lg { margin-top: 20px; }
