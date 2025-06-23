@@ -51,14 +51,15 @@ th, td {
 
 .dialogue-box {
   background-color: #f9f9f9;
-  border-left: 4px solid #B22222;
-  padding: 16px;
-  margin: 20px 0;
-  border-radius: 8px;
-  font-size: 1.15em;
-  line-height: 1.7;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 3px solid #d44;
+  padding: 10px 14px;
+  margin: 16px 0;
+  border-radius: 6px;
+  font-size: 0.93rem;
+  line-height: 1.45;
+  box-shadow: none;  /* removed shadow for a lighter look */
 }
+
 
 .section-dot {
   font-size: 1.2rem;
