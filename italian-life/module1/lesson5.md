@@ -73,7 +73,7 @@ Look at 3 photos and describe who they are using “lui / lei / noi / voi”.
 | your (pl)   | 你們的   | vostro    | vostra   |
 | their       | 他們的   | loro      | loro     |
 
-### 🗣️ Dialogue 🎧 [Listen to the audio](./audio/lesson5_2.mp3)
+### 🎯 Dialogue 🎧 [Listen to the audio](./audio/lesson5_2.mp3)
 
 👩 A: È il tuo telefono?  
 → Is this your phone?（這是你的手機嗎？）
