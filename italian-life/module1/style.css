@@ -22,6 +22,7 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #222;
+  margin-bottom: 0.3em;
 }
 
 /* 所有 h3 大小統一 */
