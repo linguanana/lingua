@@ -30,7 +30,7 @@ h1, h2, h3 {
 
 /* 所有 h3 大小統一 */
 h3 {
-  font-size: 1em;
+  margin-bottom: 0.1em;
 }
 
 a {
@@ -90,7 +90,7 @@ th, td {
 
 .auto-list {
   line-height: 1.45;
-  margin-top: 0.4em;
+  margin-top: 0.1em;
   font-size: 1rem; /* 可依需要微調字體大小 */
 }
 
