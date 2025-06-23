@@ -1,8 +1,8 @@
 /* style.css */
 body {
   font-family: 'Noto Sans', sans-serif;
-  line-height: 1;
-  font-size: 1rem;
+  line-height: 0.8;
+  font-size: 0.93;
   color: #333;
   background-color: #fff;
   max-width: 800px;
@@ -27,7 +27,7 @@ h1, h2, h3 {
 
 /* 所有 h3 大小統一 */
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 a {
@@ -44,7 +44,7 @@ table {
   margin-top: 1em;
 }
 th, td {
-  border: 1px solid #ccc;
+  border: 0.7px solid #ccc;
   padding: 0.5em 1em;
   text-align: left;
 }
@@ -62,10 +62,14 @@ th, td {
   margin-right: auto;
 }
 
+.dialogue-box br {
+  margin-bottom: 2px;
+}
+
 .section-dot {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  margin-top: 1.2em;
+  margin-bottom: 0.2em;
   color: #444;
 }
