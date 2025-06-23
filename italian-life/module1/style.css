@@ -18,11 +18,13 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .section-dot {
+  font-size: 1.05rem;
+  margin-top: 0.2em;
+  margin-bottom: 0.1em;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #222;
-  margin-bottom: 0.3em;
 }
 
 /* 所有 h3 大小統一 */
