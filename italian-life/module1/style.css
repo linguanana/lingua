@@ -88,7 +88,7 @@ th, td {
 }
 
 .auto-list {
-  line-height: 1.4; /* 行距調小讓每行靠近一點 */
+  line-height: 1; /* 行距調小讓每行靠近一點 */
   font-size: 1rem; /* 可依需要微調字體大小 */
   margin-bottom: 1em;
 }
