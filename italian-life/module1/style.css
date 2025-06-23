@@ -1,7 +1,7 @@
 /* style.css */
 body {
   font-family: 'Noto Sans', sans-serif;
-  line-height: 0.8;
+  line-height: 1.2;
   font-size: 0.93;
   color: #333;
   background-color: #fff;
@@ -10,7 +10,16 @@ body {
   padding: 20px;
 }
 
-h1, h2, h3, .section-dot {
+h1, h2, h3 {
+  font-size: 1.05rem;
+  margin-top: 0.2em;
+  margin-bottom: 0.1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #222;
+}
+
+h1, h2, h3 {
   font-size: 1.05rem;
   margin-top: 0.2em;
   margin-bottom: 0.1em;
@@ -33,9 +42,9 @@ a:hover {
 }
 
 br {
-  line-height: 1;
   display: block;
-  margin: 0.5px 0; /* 控制上下空白 */
+  content: "";
+  margin-top: 0.2em;
 }
 
 /* 表格樣式（選用） */
