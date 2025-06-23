@@ -1,14 +1,13 @@
 /* style.css */
 body {
   font-family: 'Noto Sans', sans-serif;
-  line-height: 1.6;
+  line-height: 1;
   font-size: 1rem;
   color: #333;
   background-color: #fff;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  line-height: 1.6;
 }
 
 body {
