@@ -84,8 +84,8 @@ th, td {
 
  /* 往內縮 */
  .tip-box {
-   border-left: 4px solid;
-   padding-left: 12px;
+   border-left: 4px solid transparent;
+   padding: 0 0 0 14px; /* 左邊內縮一點 */
    margin: 12px 0;
  }
 
