@@ -83,11 +83,11 @@ th, td {
 }
 
  /* 往內縮 */
-.tip-box {
-  border-left: 4px;
-  padding-left: 12px;
-  margin: 12px 0;
-}
+ .tip-box {
+   border-left: 4px solid;
+   padding-left: 12px;
+   margin: 12px 0;
+ }
 
  /* contreol space <p> */
  .spacer-xs { margin-top: 4px; }
