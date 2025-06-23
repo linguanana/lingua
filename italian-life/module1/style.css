@@ -43,7 +43,7 @@ a:hover {
 br {
   line-height: 1;
   display: block;
-  margin: 1px 0; /* 控制上下空白 */
+  margin: 0.5px 0; /* 控制上下空白 */
 }
 
 /* 表格樣式（選用） */
@@ -72,19 +72,6 @@ th, td {
 
 .dialogue-box br {
   margin-bottom: 2px;
-}
-
-/* Dialogue using <pre> format */
-.pr-dialogue {
-  background-color: #f7f7f7;
-  padding: 10px 14px;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  white-space: pre-wrap;
-  max-width: 700px;
-  margin: 12px auto;
-  font-family: 'Noto Sans', sans-serif;
 }
 
 .section-dot {
