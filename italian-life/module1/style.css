@@ -51,7 +51,7 @@ th, td {
 
 .dialogue-box {
   background-color: #fafafa;
-  border-left: 4px solid #e74c3c;
+  border-left: 4px solid transparent; /* removed red bar */
   padding: 10px 14px;
   margin-top: 10px;
   margin-bottom: 20px;
