@@ -21,7 +21,7 @@ body *:lang(zh-TW) {
 
 h1, h2, h3 {
   margin-top: 0.1em;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* 統一字體 */
   font-weight: 600;
   color: #222;
 }
