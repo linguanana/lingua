@@ -10,7 +10,7 @@ const modulesData = [
                      { name: 'Lesson 5: Personal Pronouns & Possession', link: 'module1/lesson5.html' },
                      { name: 'Lesson 6: Polite Words 客氣詞', link: 'module1/lesson6.html' },
                      { name: 'Lesson 7: Professions & Greetings 打招呼與職業', link: 'module1/lesson7.html' },
-                    },
+          ]
     },
     { title: 'Module 2 – Introduce Yourself 自我介紹', lessons: [] },
     { title: 'Module 3 – Order at a Café 點餐', lessons: [] },
