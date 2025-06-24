@@ -2,7 +2,7 @@
 body {
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.2;
-  font-size: 0.93;
+  font-size: 0.93rem;
   color: #333;
   background-color: #fff;
   max-width: 650px; /* 從 800px 調整為 700px，約縮小 12.5% */
