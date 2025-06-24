@@ -3,13 +3,13 @@ const modulesData = [
     {
         title: '🇮🇹 Module 1 – Greeting 問候',
         lessons: [
-            { name: 'Say Hello 打招呼', link: 'module1/lesson1.html' },
-            { name: 'Ask “How are you?” 最近如何', link: 'module1/lesson2.html' },
-            { name: 'Introduce Your Name 說出名字', link: 'module1/lesson3.html' },
-            { name: 'Where are you from? 你從哪裡來', link: 'module1/lesson4.html' },
-            { name: 'Personal Pronouns & Possession', link: 'module1/lesson5.html' },
-            { name: 'Polite Words 客氣詞', link: 'module1/lesson6.html' },
-            { name: 'Professions & Greetings 打招呼與職業', link: 'module1/lesson7.html' },
+            { name: 'Lesson1: Say Hello 打招呼', link: 'module1/lesson1.html' },
+            { name: 'Lesson2: Ask “How are you?” 最近如何', link: 'module1/lesson2.html' },
+            { name: 'Lesson3: Introduce Your Name 說出名字', link: 'module1/lesson3.html' },
+            { name: 'Lesson4: Where are you from? 你從哪裡來', link: 'module1/lesson4.html' },
+            { name: 'Lesson5: Personal Pronouns & Possession', link: 'module1/lesson5.html' },
+            { name: 'Lesson6: Polite Words 客氣詞', link: 'module1/lesson6.html' },
+            { name: 'Lesson7: Professions & Greetings 打招呼與職業', link: 'module1/lesson7.html' },
         ]
     },
     { title: 'Module 2 – Introduce Yourself 自我介紹', lessons: [] },
