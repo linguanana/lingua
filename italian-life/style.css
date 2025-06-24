@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #6a9acb; /* A soft blue */
+    --secondary-color: #e0f2f7; /* Light blue for accents */
+    --text-color: #333;
+    --light-grey: #f8f8f8;
+    --border-color: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.06); /* Slightly lighter shadow */
+    --transition-speed: 0.25s; /* Slightly faster transition */
+}
+
+body {
+    font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
+    background-color: var(--light-grey);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.4; /* Further reduced line height */
+    font-size: 14px; /* Base font size slightly smaller */
+}
+
+.container {
+    max-width: 600px; /* Further reduced max-width */
+    margin: 15px auto; /* Reduced top/bottom margin */
+    padding: 12px; /* Reduced padding */
+    background-color: #fff;
+    border-radius: 8px; /* Smaller border-radius */
+    box-shadow: 0 2px 12px var(--shadow-color); /* Smaller shadow */
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem; /* Further reduced font size */
+    color: var(--primary-color);
+    margin-bottom: 25px; /* Reduced margin */
+    font-weight: 600;
+    letter-spacing: 0.3px; /* Further reduced letter spacing */
+}
+
+.module {
+    background-color: #fff;
+    border-radius: 5px; /* Even smaller border-radius */
+    margin-bottom: 8px; /* Further reduced margin */
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03); /* Lighter shadow */
+    transition: box-shadow var(--transition-speed) ease;
+}
+
+.module:hover {
+    box-shadow: 0 3px 10px var(--shadow-color); /* Smaller hover shadow */
+}
+
+.module h2 {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    padding: 10px 12px; /* Further reduced padding */
+    border-left: 3px solid var(--primary-color); /* Thinner border */
+    font-size: 0.95rem; /* Further reduced font size */
+    margin: 0;
+    font-weight: 500;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color var(--transition-speed) ease;
+}
+
+.module h2:hover {
+    background-color: #d2ecf4;
+}
+
+.module h2::after {
+    content: '▼';
+    font-size: 0.65rem; /* Smaller arrow */
+    transition: transform var(--transition-speed) ease;
+}
+
+.module.active h2::after {
+    content: '▲';
+    transform: rotate(0deg);
+}
+
+.lesson-list {
+    padding: 0px 12px 10px; /* Further reduced padding */
+    background-color: #fff;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease-out, padding 0.35s ease-out; /* Faster transition */
+}
+
+.module.active .lesson-list {
+    display: block;
+    max-height: 300px; /* Adjusted max height for potentially smaller content */
+    padding: 10px 12px; /* Further reduced padding */
+}
+
+.lesson-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 5px 0; /* Further reduced margin */
+    font-size: 0.85rem; /* Further reduced font size */
+    padding: 3px 0; /* Further reduced padding */
+    transition: color var(--transition-speed) ease;
+}
+
+.lesson-list a:hover {
+    color: #4a7aa3;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 500px) {
+    .container {
+        margin: 10px auto;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .module h2 {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .lesson-list {
+        padding: 6px 10px;
+    }
+
+    .lesson-list a {
+        font-size: 0.8rem;
+    }
+}
