@@ -21,7 +21,7 @@ body *:lang(zh-TW) {
 
 h1, h2, h3 {
   margin-top: 0.1em;
-  font-family: 'Montserrat', sans-serif; /* 統一字體 */
+  font-family: 'Noto Sans', sans-serif; /* 統一字體 */
   font-weight: 600;
   color: #222;
 }
@@ -29,7 +29,6 @@ h1, h2, h3 {
 h1 {
   margin-bottom: 1em;
   font-size: 1.2rem;
-  color: #6a9acb; /* 主標題使用主頁的藍色 */
 }
 h2 {
   margin-bottom: 1em;
