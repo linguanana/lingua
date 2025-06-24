@@ -56,4 +56,155 @@
             box-shadow: 0 4px 15px var(--shadow-color); /* Smaller hover shadow */
         }
 
-        .module h2
+        .module h2 {
+            cursor: pointer;
+            background-color: var(--secondary-color);
+            padding: 12px 15px; /* Reduced padding */
+            border-left: 4px solid var(--primary-color); /* Smaller border */
+            font-size: 1.05rem; /* Reduced font size */
+            margin: 0;
+            font-weight: 500; /* Lighter font weight */
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color var(--transition-speed) ease;
+        }
+
+        .module h2:hover {
+            background-color: #d2ecf4;
+        }
+
+        .module h2::after {
+            content: '▼';
+            font-size: 0.7rem; /* Smaller arrow */
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .module.active h2::after {
+            content: '▲';
+            transform: rotate(0deg);
+        }
+
+        .lesson-list {
+            padding: 0px 15px 12px; /* Reduced padding */
+            background-color: #fff;
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+        }
+
+        .module.active .lesson-list {
+            display: block;
+            max-height: 400px; /* Adjust based on content */
+            padding: 12px 15px; /* Reduced padding */
+        }
+
+        .lesson-list a {
+            display: block;
+            text-decoration: none;
+            color: var(--primary-color);
+            margin: 6px 0; /* Reduced margin */
+            font-size: 0.9rem; /* Reduced font size */
+            padding: 4px 0; /* Reduced padding */
+            transition: color var(--transition-speed) ease;
+        }
+
+        .lesson-list a:hover {
+            color: #4a7aa3;
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 15px auto;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+                margin-bottom: 25px;
+            }
+
+            .module h2 {
+                font-size: 1rem;
+                padding: 10px 12px;
+            }
+
+            .lesson-list {
+                padding: 8px 12px;
+            }
+
+            .lesson-list a {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 義大利文學習模組</h1>
+
+        <div class="module">
+            <h2 onclick="toggleLessons(this)">🇮🇹 Module 1 – Greeting 問候</h2>
+            <div class="lesson-list">
+                <a href="module1/lesson1.html">Lesson 1: Say Hello 打招呼</a>
+                <a href="module1/lesson2.html">Lesson 2: Ask “How are you?” 最近如何</a>
+                <a href="module1/lesson3.html">Lesson 3: Introduce Your Name 說出名字</a>
+                <a href="module1/lesson4.html">Lesson 4: Where are you from? 你從哪裡來</a>
+                <a href="module1/lesson5.html">Lesson 5: Personal Pronouns & Possession</a>
+                <a href="module1/lesson6.html">Lesson 6: Polite Words 客氣詞</a>
+                <a href="module1/lesson7.html">Lesson 7: Professions & Greetings 打招呼與職業</a>
+            </div>
+        </div>
+
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 2 – Introduce Yourself 自我介紹</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 3 – Order at a Café 點餐</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 4 – Buy Fruits at the Market 買水果</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 5 – Buy a Train Ticket to Florence 買火車票</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 6 – Hotel Check-in 櫃台對話</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 7 – Public Transport & Directions 問路搭車</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 8 – Order Pasta and Wine 餐廳點餐</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 9 – Shop at Supermarket / Ask for Deals 超市購物</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 10 – Describe Symptoms at the Pharmacy 看病買藥</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 11 – Book a Room & Ask the Host 找民宿</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 12 – Open a Bank Account 開戶對話</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 13 – Navigate Bureaucracy 處理行政</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 14 – Make Friends and Describe 家人與朋友</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 15 – Express Opinions 表達想法</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 16 – Festival Market Chat 市集聊天</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 17 – Emergencies & Help 緊急狀況</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 18 – Plans and Time 任務與時間</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 19 – Daily Errands 日常生活</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 20 – Appearance & Feelings 外觀與感受</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 21 – Weather 天氣任務</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 22 – Make a Reservation 預約任務</h2><div class="lesson-list"></div></div>
+        <div class="module"><h2 onclick="toggleLessons(this)">Module 23 – Ask for Clarification 理解與確認</h2><div class="lesson-list"></div></div>
+
+    </div>
+    <script>
+        function toggleLessons(el) {
+            const moduleDiv = el.closest('.module');
+            const lessonList = el.nextElementSibling;
+
+            if (moduleDiv.classList.contains('active')) {
+                moduleDiv.classList.remove('active');
+                lessonList.style.maxHeight = '0';
+                lessonList.style.padding = '0px 15px';
+            } else {
+                document.querySelectorAll('.module.active').forEach(openModule => {
+                    openModule.classList.remove('active');
+                    openModule.querySelector('.lesson-list').style.maxHeight = '0';
+                    openModule.querySelector('.lesson-list').style.padding = '0px 15px';
+                });
+
+                moduleDiv.classList.add('active');
+                lessonList.style.maxHeight = lessonList.scrollHeight + 'px';
+                lessonList.style.padding = '12px 15px';
+            }
+        }
+    </script>
+</body>
+</html>
