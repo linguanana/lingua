@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Italian Modules Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      line-height: 1.5;
+      padding: 2em;
+      background: #f9f9f9;
+    }
+
+    .module {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      padding: 1em;
+    }
+
+    .module h2 {
+      margin: 0;
+      font-size: 1.1em;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .lessons {
+      margin-top: 0.5em;
+      padding-left: 1em;
+      display: none;
+    }
+
+    .lesson-link {
+      display: block;
+      margin: 0.2em 0;
+      font-size: 0.95em;
+    }
+
+    .expand-icon {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Italian Module Index</h1>
+
+  <div class="module">
+    <h2 onclick="toggleLessons(this)">
+      Module 1 – Greeting 問候
+      <span class="expand-icon">＋</span>
+    </h2>
+    <div class="lessons">
+      <a class="lesson-link" href="lesson1.html">Lesson 1</a>
+      <a class="lesson-link" href="lesson2.html">Lesson 2</a>
+      <a class="lesson-link" href="lesson3.html">Lesson 3</a>
+      <a class="lesson-link" href="lesson4.html">Lesson 4</a>
+      <a class="lesson-link" href="lesson5.html">Lesson 5</a>
+      <a class="lesson-link" href="lesson6.html">Lesson 6</a>
+      <a class="lesson-link" href="lesson7.html">Lesson 7</a>
+    </div>
+  </div>
+
+  <div class="module"><h2>Module 2 – Introduce Yourself 自我介紹</h2></div>
+  <div class="module"><h2>Module 3 – Order at a Café 點咖啡</h2></div>
+  <div class="module"><h2>Module 4 – Market Shopping 買水果</h2></div>
+  <div class="module"><h2>Module 5 – Buy a Train Ticket 買火車票</h2></div>
+  <div class="module"><h2>Module 6 – Hotel Check-In 旅館報到</h2></div>
+  <div class="module"><h2>Module 7 – Public Transport & Directions 問路搭車</h2></div>
+  <div class="module"><h2>Module 8 – Order Pasta & Wine 點義大利麵</h2></div>
+  <div class="module"><h2>Module 9 – Shop at Supermarket 購物</h2></div>
+  <div class="module"><h2>Module 10 – At the Pharmacy 藥局</h2></div>
+  <div class="module"><h2>Module 11 – Ask Your Host 找房東</h2></div>
+  <div class="module"><h2>Module 12 – Open Bank Account 開戶</h2></div>
+  <div class="module"><h2>Module 13 – Bureaucracy 行政事務</h2></div>
+  <div class="module"><h2>Module 14 – Make Friends 交朋友</h2></div>
+  <div class="module"><h2>Module 15 – Opinions & Socialize 表達意見</h2></div>
+  <div class="module"><h2>Module 16 – Festival Chat 市集聊天</h2></div>
+  <div class="module"><h2>Module 17 – Emergencies 緊急狀況</h2></div>
+  <div class="module"><h2>Module 18 – Time & Schedule 行程時間</h2></div>
+  <div class="module"><h2>Module 19 – Daily Tasks 日常任務</h2></div>
+  <div class="module"><h2>Module 20 – Describe Appearance 外觀與感受</h2></div>
+  <div class="module"><h2>Module 21 – Talk About Weather 天氣</h2></div>
+  <div class="module"><h2>Module 22 – Make a Reservation 預約</h2></div>
+  <div class="module"><h2>Module 23 – Ask for Clarification 問與理解</h2></div>
+
+  <script>
+    function toggleLessons(el) {
+      const lessons = el.nextElementSibling;
+      const icon = el.querySelector(".expand-icon");
+      if (lessons.style.display === "block") {
+        lessons.style.display = "none";
+        icon.textContent = "＋";
+      } else {
+        lessons.style.display = "block";
+        icon.textContent = "－";
+      }
+    }
+  </script>
+</body>
+</html>
