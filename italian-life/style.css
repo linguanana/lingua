@@ -16,12 +16,6 @@ body {
     padding: 0;
     line-height: 1.4; /* Further reduced line height */
     font-size: 14px; /* Base font size slightly smaller */
-    /* --- 以下是主要的修改 --- */
-    margin: 25px auto;  /* 上下留白更多，左右自動置中 */
-    padding: 20px 25px; /* 左右內邊距稍微多一點，讓內容不頂到邊 */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* 增加柔和的陰影 */
-    border-radius: 10px; /* 增加圓角 */
-    /* --- 主要修改結束 --- */
 }
 
 .container {
