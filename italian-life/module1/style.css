@@ -5,7 +5,7 @@ body {
   font-size: 0.93;
   color: #333;
   background-color: #fff;
-  max-width: 700px; /* 從 800px 調整為 700px，約縮小 12.5% */
+  max-width: 650px; /* 從 800px 調整為 700px，約縮小 12.5% */
   margin: 0 auto;  /* ⬅️ 自動左右置中 */
   padding: 20px;
   /* --- 以下是主要的修改 --- */
