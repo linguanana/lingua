@@ -52,7 +52,7 @@ h1 {
 .module h2 {
     cursor: pointer;
     background-color: var(--secondary-color);
-    padding: 10px 12px; /* Further reduced padding */
+    padding: 8px 12px; /* Further reduced padding */
     border-left: 3px solid var(--primary-color); /* Thinner border */
     font-size: 0.95rem; /* Further reduced font size */
     margin: 0;
@@ -107,6 +107,15 @@ h1 {
 .lesson-list a:hover {
     color: #4a7aa3;
     text-decoration: underline;
+}
+
+.course-intro {
+    text-align: center;
+    font-size: 0.85rem; /* 將字體大小調整得更小 */
+    color: var(--text-color);
+    margin: -15px auto 30px auto;
+    max-width: 500px;
+    line-height: 1.5;
 }
 
 /* Responsive adjustments for smaller screens */
