@@ -1,0 +1,188 @@
+/* style.css for lesson1.html */
+
+/* 定義變數，與主頁的顏色保持一致 */
+:root {
+    --primary-color: #6a9acb; /* Soft blue for highlights/links */
+    --secondary-color: #e0f2f7; /* Light blue for background accents */
+    --text-color: #333; /* Dark text for readability */
+    --light-grey: #f8f8f8; /* Soft background */
+    --white: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    --transition-speed: 0.3s; /* Smooth transitions */
+}
+
+body {
+    font-family: 'Montserrat', 'Noto Sans TC', sans-serif; /* 統一字體 */
+    line-height: 1.6; /* 調整行高，增加可讀性 */
+    font-size: 15px; /* 基礎字體大小 */
+    color: var(--text-color); /* 統一文字顏色 */
+    background-color: var(--light-grey); /* 統一背景色 */
+    max-width: 760px; /* 適度縮小最大寬度，讓內容更集中 */
+    margin: 25px auto; /* 增加上下外邊距，讓頁面有呼吸感 */
+    padding: 20px 25px; /* 調整內邊距 */
+    box-shadow: 0 4px 20px var(--shadow-color); /* 增加柔和陰影，提升質感 */
+    border-radius: 12px; /* 圓角，與主頁模組呼應 */
+}
+
+body *:lang(zh-TW) {
+    font-family: 'Noto Sans TC', sans-serif; /* 確保中文使用 Noto Sans TC */
+    font-size: 0.98em; /* 相對於父元素的字體大小微調 */
+}
+
+h1, h2, h3 {
+    margin-top: 1.2em; /* 增加標題上方間距 */
+    margin-bottom: 0.8em; /* 調整標題下方間距 */
+    font-family: 'Montserrat', sans-serif; /* 統一標題字體 */
+    font-weight: 700; /* 加粗 */
+    color: var(--primary-color); /* 統一標題顏色 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-size: 2.2rem; /* 增大主標題 */
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5em;
+    letter-spacing: 0.5px;
+}
+h2 {
+    font-size: 1.6rem; /* 增大二級標題 */
+    border-bottom: 2px solid var(--secondary-color); /* 增加底部線條 */
+    padding-bottom: 5px;
+    margin-top: 2em; /* 更明顯的區塊分割 */
+}
+h3 {
+    font-size: 1.2rem; /* 增大三級標題 */
+    font-weight: 600; /* 略輕於 h1/h2 */
+    color: var(--text-color); /* 讓 h3 更貼近內容顏色 */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em; /* 確保段落間有足夠間距 */
+}
+
+a {
+    color: var(--primary-color); /* 統一連結顏色 */
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+}
+a:hover {
+    color: #4a7aa3; /* 懸停顏色 */
+    text-decoration: underline;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 0.5em; /* 增加換行符的間距 */
+}
+
+/* 表格樣式 */
+table {
+    width: 100%; /* 寬度佔滿 */
+    border-collapse: collapse;
+    margin: 1.5em 0; /* 調整表格外邊距 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* 柔和陰影 */
+    border-radius: 8px; /* 圓角 */
+    overflow: hidden; /* 確保圓角生效 */
+}
+th, td {
+    border: 1px solid var(--secondary-color); /* 統一邊框顏色 */
+    padding: 0.8em 1.2em; /* 調整內邊距 */
+    text-align: left;
+}
+th {
+    background-color: var(--secondary-color); /* 表頭背景色 */
+    font-weight: 600;
+    color: var(--text-color);
+}
+td {
+    background-color: var(--white);
+}
+
+
+.dialogue-box, .tip-box {
+    background-color: var(--secondary-color); /* 統一背景色 */
+    border-left: 5px solid var(--primary-color); /* 使用 primary color 作為強調邊框 */
+    padding: 15px 20px; /* 增加內邊距 */
+    margin: 20px auto; /* 增加上下外邊距 */
+    line-height: 1.5;
+    font-size: 1rem; /* 字體大小與主體內容接近 */
+    max-width: 700px; /* 控制最大寬度 */
+    border-radius: 8px; /* 圓角 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* 柔和陰影 */
+}
+.dialogue-box {
+    background-color: #f5fafd; /* 讓對話框顏色稍微不同 */
+}
+
+
+.auto-list {
+    line-height: 1.6; /* 增加列表行高 */
+    margin-top: 0.8em; /* 調整列表上方間距 */
+    font-size: 1rem; /* 與基礎字體大小一致 */
+    padding-left: 1.5em; /* 增加列表縮進 */
+}
+.auto-list li {
+    margin-bottom: 0.5em; /* 列表項之間間距 */
+}
+h3 + .auto-list {
+    margin-top: 0.5em; /* 減少 h3 與列表間距，但保持足夠區隔 */
+}
+
+/* 額外間距控制 (可保留，但可能需要微調數值) */
+.spacer-xs { margin-top: 6px; }
+.spacer-sm { margin-top: 12px; }
+.spacer-md { margin-top: 18px; }
+.spacer-lg { margin-top: 25px; }
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    body {
+        margin: 15px auto;
+        padding: 15px 20px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1em;
+    }
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 1.5em;
+    }
+    h3 {
+        font-size: 1.1rem;
+        margin-top: 1em;
+    }
+    .dialogue-box, .tip-box {
+        padding: 12px 15px;
+        margin: 15px auto;
+        font-size: 0.95rem;
+    }
+    .auto-list {
+        font-size: 0.95rem;
+        padding-left: 1.2em;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 10px auto;
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}
