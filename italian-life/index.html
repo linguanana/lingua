@@ -22,190 +22,38 @@
             color: var(--text-color);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.5; /* Slightly reduced line height */
         }
 
         .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
+            max-width: 700px; /* Reduced max-width */
+            margin: 20px auto; /* Reduced top/bottom margin */
+            padding: 15px; /* Reduced padding */
             background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px var(--shadow-color);
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 3px 15px var(--shadow-color); /* Slightly smaller shadow */
         }
 
         h1 {
             text-align: center;
-            font-size: 2.2rem;
+            font-size: 2.0rem; /* Reduced font size */
             color: var(--primary-color);
-            margin-bottom: 40px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+            margin-bottom: 30px; /* Reduced margin */
+            font-weight: 600; /* Slightly lighter font weight */
+            letter-spacing: 0.4px; /* Slightly reduced letter spacing */
         }
 
         .module {
             background-color: #fff;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            overflow: hidden; /* Ensures border-radius applies to content */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 6px; /* Smaller border-radius */
+            margin-bottom: 12px; /* Reduced margin */
+            overflow: hidden;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04); /* Smaller shadow */
             transition: box-shadow var(--transition-speed) ease;
         }
 
         .module:hover {
-            box-shadow: 0 6px 20px var(--shadow-color);
+            box-shadow: 0 4px 15px var(--shadow-color); /* Smaller hover shadow */
         }
 
-        .module h2 {
-            cursor: pointer;
-            background-color: var(--secondary-color);
-            padding: 15px 20px;
-            border-left: 5px solid var(--primary-color); /* Emphasize with primary color */
-            font-size: 1.15rem;
-            margin: 0;
-            font-weight: 600;
-            color: var(--text-color);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: background-color var(--transition-speed) ease;
-        }
-
-        .module h2:hover {
-            background-color: #d2ecf4; /* Slightly darker hover for module header */
-        }
-
-        .module h2::after {
-            content: '▼'; /* Down arrow */
-            font-size: 0.8rem;
-            transition: transform var(--transition-speed) ease;
-        }
-
-        .module.active h2::after {
-            content: '▲'; /* Up arrow when active */
-            transform: rotate(0deg); /* Reset rotation */
-        }
-
-        .lesson-list {
-            padding: 0px 20px 15px;
-            background-color: #fff;
-            display: none;
-            max-height: 0; /* For smooth transition */
-            overflow: hidden;
-            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-        }
-
-        .module.active .lesson-list {
-            display: block; /* Important for accessibility and initial state */
-            max-height: 500px; /* Adjust based on max content height */
-            padding: 15px 20px;
-        }
-
-        .lesson-list a {
-            display: block;
-            text-decoration: none;
-            color: var(--primary-color);
-            margin: 8px 0;
-            font-size: 0.95rem;
-            padding: 5px 0;
-            transition: color var(--transition-speed) ease;
-        }
-
-        .lesson-list a:hover {
-            color: #4a7aa3; /* Darker shade of primary color */
-            text-decoration: underline;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px auto;
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-                margin-bottom: 30px;
-            }
-
-            .module h2 {
-                font-size: 1.05rem;
-                padding: 12px 15px;
-            }
-
-            .lesson-list {
-                padding: 10px 15px;
-            }
-
-            .lesson-list a {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>📚 義大利文學習模組</h1>
-
-        <div class="module">
-            <h2 onclick="toggleLessons(this)">🇮🇹 Module 1 – Greeting 問候</h2>
-            <div class="lesson-list">
-                <a href="module1/lesson1.html">Lesson 1: Say Hello 打招呼</a>
-                <a href="module1/lesson2.html">Lesson 2: Ask “How are you?” 最近如何</a>
-                <a href="module1/lesson3.html">Lesson 3: Introduce Your Name 說出名字</a>
-                <a href="module1/lesson4.html">Lesson 4: Where are you from? 你從哪裡來</a>
-                <a href="module1/lesson5.html">Lesson 5: Personal Pronouns & Possession</a>
-                <a href="module1/lesson6.html">Lesson 6: Polite Words 客氣詞</a>
-                <a href="module1/lesson7.html">Lesson 7: Professions & Greetings 打招呼與職業</a>
-            </div>
-        </div>
-
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 2 – Introduce Yourself 自我介紹</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 3 – Order at a Café 點餐</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 4 – Buy Fruits at the Market 買水果</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 5 – Buy a Train Ticket to Florence 買火車票</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 6 – Hotel Check-in 櫃台對話</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 7 – Public Transport & Directions 問路搭車</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 8 – Order Pasta and Wine 餐廳點餐</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 9 – Shop at Supermarket / Ask for Deals 超市購物</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 10 – Describe Symptoms at the Pharmacy 看病買藥</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 11 – Book a Room & Ask the Host 找民宿</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 12 – Open a Bank Account 開戶對話</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 13 – Navigate Bureaucracy 處理行政</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 14 – Make Friends and Describe 家人與朋友</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 15 – Express Opinions 表達想法</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 16 – Festival Market Chat 市集聊天</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 17 – Emergencies & Help 緊急狀況</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 18 – Plans and Time 任務與時間</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 19 – Daily Errands 日常生活</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 20 – Appearance & Feelings 外觀與感受</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 21 – Weather 天氣任務</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 22 – Make a Reservation 預約任務</h2><div class="lesson-list"></div></div>
-        <div class="module"><h2 onclick="toggleLessons(this)">Module 23 – Ask for Clarification 理解與確認</h2><div class="lesson-list"></div></div>
-
-    </div>
-    <script>
-        function toggleLessons(el) {
-            const moduleDiv = el.closest('.module');
-            const lessonList = el.nextElementSibling;
-
-            if (moduleDiv.classList.contains('active')) {
-                moduleDiv.classList.remove('active');
-                lessonList.style.maxHeight = '0';
-                lessonList.style.padding = '0px 20px';
-            } else {
-                // Close other open modules
-                document.querySelectorAll('.module.active').forEach(openModule => {
-                    openModule.classList.remove('active');
-                    openModule.querySelector('.lesson-list').style.maxHeight = '0';
-                    openModule.querySelector('.lesson-list').style.padding = '0px 20px';
-                });
-
-                moduleDiv.classList.add('active');
-                lessonList.style.maxHeight = lessonList.scrollHeight + 'px'; // Set to actual height
-                lessonList.style.padding = '15px 20px';
-            }
-        }
-    </script>
-</body>
-</html>
+        .module h2
