@@ -5,7 +5,7 @@ body {
   font-size: 0.93;
   color: #333;
   background-color: #fff;
-  max-width: 800px;
+  max-width: 700px; /* 從 800px 調整為 700px，約縮小 12.5% */
   margin: 0 auto;  /* ⬅️ 自動左右置中 */
   padding: 20px;
   /* --- 以下是主要的修改 --- */
@@ -16,7 +16,7 @@ body {
   /* --- 主要修改結束 --- */
 }
 body *:lang(zh-TW) {
-  font-size: 0.92rem;
+  font-size: 0.8rem; /* 從 0.92rem 調整為 0.8rem，約縮小 12% */
 }
 
 h1, h2, h3 {
