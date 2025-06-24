@@ -29,16 +29,19 @@ h1, h2, h3 {
 h1 {
   margin-bottom: 1em;
   font-size: 1.2rem;
+  color: #6a9acb; /* 主標題使用主頁的藍色 */
 }
 h2 {
   margin-bottom: 1em;
   font-size: 1.1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #6a9acb; /* 二級標題使用主頁的藍色 */
 }
 h3 {
   margin-bottom: 0.2em;
   font-size: 1.05rem;
+  color: #333; /* 三級標題使用接近內文的顏色 */
 }
 a {
   color: #0066cc;
