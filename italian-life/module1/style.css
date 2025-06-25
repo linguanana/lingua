@@ -112,3 +112,58 @@ h3 + .auto-list {
  .spacer-sm { margin-top: 8px; }
  .spacer-md { margin-top: 12px; }
  .spacer-lg { margin-top: 20px; }
+
+/* this is for lesson level and lesson context ========= */
+
+.lesson-level {
+    /* Optional: You might want to add some margin-bottom here
+       to separate levels when they are all collapsed. */
+    margin-bottom: 15px;
+}
+
+.level-title {
+    cursor: pointer; /* Indicates it's clickable */
+    user-select: none; /* Prevents text selection on double-click */
+    /* Add any other styling for your clickable title, e.g., padding, background */
+    padding: 10px 12px; /* Example padding */
+    background-color: #f0f0f0; /* Light background for the title */
+    border-radius: 5px; /* Rounded corners for the title */
+    margin-bottom: 0; /* Remove default margin */
+    display: block; /* Ensure it takes full width for clicking */
+    position: relative; /* For potential arrow icon positioning */
+}
+
+/* Optional: Add a simple arrow indicator */
+.level-title::after {
+    content: '▼'; /* Down arrow */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.lesson-level.active .level-title::after {
+    content: '▲'; /* Up arrow when active */
+    transform: translateY(-50%) rotate(0deg); /* No rotation needed if using up/down arrows */
+}
+
+
+.level-content {
+    max-height: 0; /* Start collapsed by default */
+    overflow: hidden; /* Hide content that goes beyond max-height */
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth transition */
+    padding: 0px 12px; /* Initial padding when collapsed */
+    background-color: #fff; /* Match body background or slightly different */
+    border-top: none; /* No border at the top when collapsed */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* The JavaScript adds the 'active' class to .lesson-level when expanded */
+.lesson-level.active .level-content {
+    /* max-height is set by JavaScript based on scrollHeight for smooth variable height */
+    padding: 10px 12px; /* Expanded padding, matches the JS setting */
+}
+
+/* this is for lesson level and lesson context ========= */
