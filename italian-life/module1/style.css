@@ -57,7 +57,7 @@ a:hover {
 br {
   display: block;
   content: "";
-  margin-top: 0.2em;
+  margin-top: 0.8em;
 }
 
 /* 表格樣式（選用） */
@@ -107,6 +107,8 @@ h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
 }
 
+
+
  /* contreol space <p> */
  .spacer-xs { margin-top: 4px; }
  .spacer-sm { margin-top: 8px; }
@@ -148,14 +150,12 @@ h3 + .auto-list {
     transform: translateY(-50%) rotate(0deg); /* No rotation needed if using up/down arrows */
 }
 
-
 .level-content {
-    max-height: 0; /* Start collapsed by default */
-    overflow: hidden; /* Hide content that goes beyond max-height */
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth transition */
-    padding: 0px 12px; /* Initial padding when collapsed */
+    max-height: 0; /* Ensures it starts collapsed */
+    overflow: hidden; /* <<< THIS IS CRUCIAL FOR COLLAPSING CONTENT */
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth animation */
+    padding: 0px 12px; /* Collapsed padding */
     background-color: #fff; /* Match body background or slightly different */
-    border-top: none; /* No border at the top when collapsed */
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
