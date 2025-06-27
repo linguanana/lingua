@@ -120,7 +120,7 @@ h3 + .auto-list {
 .lesson-level {
     /* Optional: You might want to add some margin-bottom here
        to separate levels when they are all collapsed. */
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .level-title {
