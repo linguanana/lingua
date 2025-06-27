@@ -101,14 +101,16 @@ th, td {
 .auto-list {
   line-height: 1.3;
   margin-top: 0.05em;
-  font-size: 1rem; /* 可依需要微調字體大小 */
+  font-size: 0.95rem; /* 可依需要微調字體大小 */
+  color: #555; /* Changes text color to a soft grey */
 }
+
 h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
 }
 
 .italian-word {
-  color: #c0392b;
+  color: #E74C3C;
   font-weight: bold;
 }
 
@@ -170,29 +172,3 @@ h3 + .auto-list {
 }
 
 /* this is for lesson level and lesson context ========= */
-
-
-/* Basic CSS for expandable sections for demonstration */
-.expandable-grammar .grammar-content {
-  display: none;
-  background-color: #f9f9f9;
-  border-left: 3px solid #007bff;
-  padding: 10px;
-  margin-top: 5px;
-}
-.expandable-grammar .grammar-toggle {
-  cursor: pointer;
-  color: #007bff;
-  font-weight: bold;
-  margin-top: 5px;
-  display: inline-block;
-}
-.expandable-grammar .grammar-toggle::after {
-  content: ' ▼';
-}
-.expandable-grammar.expanded .grammar-toggle::after {
-  content: ' ▲';
-}
-.expandable-grammar.expanded .grammar-content {
-  display: block;
-}
