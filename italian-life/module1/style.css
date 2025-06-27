@@ -101,19 +101,20 @@ th, td {
 .auto-list {
   line-height: 1.3;
   margin-top: 0.05em;
-  font-size: 0.95rem; /* 可依需要微調字體大小 */
-  color: #555; /* Changes text color to a soft grey */
+  font-size: 1rem; /* 可依需要微調字體大小 */
 }
-
 h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
 }
 
 .italian-word {
-  color: #E74C3C;
+  color: #c0392b;
   font-weight: bold;
 }
 
+.small-audio {
+  width: 100px;
+}
  /* contreol space <p> */
  .spacer-xs { margin-top: 4px; }
  .spacer-sm { margin-top: 8px; }
