@@ -107,7 +107,10 @@ h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
 }
 
-
+.italian-word {
+  color: #c0392b;
+  font-weight: bold;
+}
 
  /* contreol space <p> */
  .spacer-xs { margin-top: 4px; }
