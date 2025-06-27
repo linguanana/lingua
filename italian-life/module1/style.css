@@ -113,7 +113,8 @@ h3 + .auto-list {
 }
 
 .small-audio {
-  width: 100px;
+  transform: scale(1, 0.7); /* x 不變，y 軸壓扁 */
+  transform-origin: top;
 }
  /* contreol space <p> */
  .spacer-xs { margin-top: 4px; }
