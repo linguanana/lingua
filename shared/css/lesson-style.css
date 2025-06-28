@@ -128,6 +128,10 @@ th, td {
   font-size: 0.9rem; /* 可依需要微調字體大小 */
 }
 
+.auto-list li {
+  margin-bottom: 2px;  /* 行距小一點點，感覺更緊湊 */
+}
+
 .auto-list.nested {
   margin-left: 1.4em;  /* 或 1.5em，視覺上明顯就好 */
   font-size: 0.88rem;  /* 可視情況再小一點點 */
@@ -135,6 +139,9 @@ th, td {
 }
 
 .small-audio {
+  margin-left: 1.4em;  /* 模擬對話的內縮 */
+  margin-top: 0;
+  margin-bottom: 0;
   transform: scale(1, 0.85); /* x 不變，y 軸壓扁 */
   transform-origin: top;
 }
