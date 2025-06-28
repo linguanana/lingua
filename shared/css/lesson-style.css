@@ -135,7 +135,7 @@ h3 + .auto-list {
     cursor: pointer; /* Indicates it's clickable */
     user-select: none; /* Prevents text selection on double-click */
     /* Add any other styling for your clickable title, e.g., padding, background */
-    padding: 10px 12px; /* Example padding */
+    padding: 8px 12px; /* Example padding */
     background-color: #f0f0f0; /* Light background for the title */
     border-radius: 5px; /* Rounded corners for the title */
     margin-bottom: 0; /* Remove default margin */
