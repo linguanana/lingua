@@ -44,12 +44,8 @@ h3 {
 }
 
 .highlight-word{
-  font-weight: 500;
+  font-weight: bold;
   background-color: #f0f8ff;  /* 微微淺藍，類似 #e6f2ff */
-  padding: 6px 10px;
-  border-left: 4px solid #0077cc;
-  border-radius: 4px;
-  margin: 12px 0;
 }
 
 .italian-word {
