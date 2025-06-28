@@ -159,20 +159,16 @@ h3 + .auto-list {
 }
 
 .level-content {
-    max-height: 0; /* Ensures it starts collapsed */
-    overflow: hidden; /* <<< THIS IS CRUCIAL FOR COLLAPSING CONTENT */
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth animation */
-    padding: 0px 12px; /* Collapsed padding */
-    background-color: #fff; /* Match body background or slightly different */
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin: 0;
+  padding: 0; /* 完全收起時不要 padding */
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
-/* The JavaScript adds the 'active' class to .lesson-level when expanded */
 .lesson-level.active .level-content {
-    /* max-height is set by JavaScript based on scrollHeight for smooth variable height */
-    padding: 10px 12px; /* Expanded padding, matches the JS setting */
+  padding: 3px 12px; /* 只有展開時才有 padding */
+  max-height: 500px; /* 或你想要的展開高度 */
 }
 
 /* this is for lesson level and lesson context ========= */
