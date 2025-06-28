@@ -1,0 +1,82 @@
+.container {
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px var(--shadow-color);
+}
+
+.module {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+  transition: box-shadow var(--transition-speed) ease;
+}
+
+.module:hover {
+  box-shadow: 0 3px 10px var(--shadow-color);
+}
+
+.module h2 {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  padding: 8px 12px;
+  border-left: 3px solid var(--primary-color);
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.module h2::after {
+  content: '▼';
+  font-size: 0.65rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+.module.active h2::after {
+  content: '▲';
+}
+
+.lesson-list {
+  padding: 0 12px 10px;
+  background-color: #fff;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out, padding 0.35s ease-out;
+}
+
+.module.active .lesson-list {
+  display: block;
+  max-height: 300px;
+  padding: 10px 12px;
+}
+
+.lesson-list a {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-color);
+  margin: 5px 0;
+  font-size: 0.85rem;
+  padding: 3px 0;
+  transition: color var(--transition-speed) ease;
+}
+
+.lesson-list a:hover {
+  color: #4a7aa3;
+  text-decoration: underline;
+}
+
+.course-intro {
+  text-align: center;
+  font-size: 0.85rem;
+  margin: -15px auto 30px auto;
+  max-width: 500px;
+  line-height: 1.5;
+}
