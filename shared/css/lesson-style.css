@@ -43,6 +43,15 @@ h3 {
   color: #333; /* 三級標題使用接近內文的顏色 */
 }
 
+.highlight-word{
+  font-weight: 500;
+  background-color: #f0f8ff;  /* 微微淺藍，類似 #e6f2ff */
+  padding: 6px 10px;
+  border-left: 4px solid #0077cc;
+  border-radius: 4px;
+  margin: 12px 0;
+}
+
 /* --- 連結顏色和過渡效果調整 --- */
 a {
   color: #6a9acb; /* 使用與主頁相同的藍色 orginal #0066cc;*/
@@ -121,6 +130,9 @@ h3 + .auto-list {
 .current-lesson {
   font-weight: 700;
   color: #0077cc;
+  background-color: #e6f2ff;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
  /* contreol space <p> */
