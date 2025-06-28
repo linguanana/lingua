@@ -52,6 +52,23 @@ h3 {
   margin: 12px 0;
 }
 
+.italian-word {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+h3 + .auto-list {
+  margin-top: 0.1em; /* Reduce space between h3 and the list */
+}
+
+strong {
+  font-weight: bold;
+  color: #333;
+  background-color: #fdf5d9;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
 /* --- 連結顏色和過渡效果調整 --- */
 a {
   color: #6a9acb; /* 使用與主頁相同的藍色 orginal #0066cc;*/
@@ -111,15 +128,6 @@ th, td {
   line-height: 1.3;
   margin-top: 0.05em;
   font-size: 0.9rem; /* 可依需要微調字體大小 */
-}
-
-h3 + .auto-list {
-  margin-top: 0.1em; /* Reduce space between h3 and the list */
-}
-
-.italian-word {
-  color: #c0392b;
-  font-weight: bold;
 }
 
 .small-audio {
