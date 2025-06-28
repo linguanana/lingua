@@ -77,7 +77,7 @@ th, td {
   /* border-left: 4px solid #6a9acb; /* 使用與主頁相同的藍色 */
   padding: 10px 14px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   line-height: 1.2;
   font-size: 0.95rem;
   max-width: 600px; /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
