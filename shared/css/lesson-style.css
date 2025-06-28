@@ -20,7 +20,7 @@ body *:lang(zh-TW) {
 }
 
 h1, h2, h3 {
-  margin-top: 0.1em;
+  margin-top: 0.5em;
   font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
   font-weight: 600;
   color: #222;
@@ -107,6 +107,10 @@ th, td {
   max-width: 600px; /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
   margin-left: auto;
   margin-right: auto;
+}
+
+.dialogue-box p {
+  margin-bottom: 5px;
 }
 
 /* 往內縮 */
