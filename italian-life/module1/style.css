@@ -2,7 +2,7 @@
 body {
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.2;
-  font-size: 0.93rem;
+  font-size: 0.95rem;
   color: #333;
   background-color: #fff;
   max-width: 650px; /* 從 800px 調整為 700px，約縮小 12.5% */
@@ -32,7 +32,7 @@ h1 {
 }
 h2 {
   margin-bottom: 1em;
-  font-size: 1.1rem;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #6a9acb; /* 二級標題使用主頁的藍色 */
