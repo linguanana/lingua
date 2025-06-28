@@ -73,7 +73,7 @@ h3 + .auto-list {
 /* ✅ lesson level 開合區塊 */
 /* ✅ lesson level 開合區塊 - Even Tighter Version */
 .lesson-level {
-    margin-bottom: 3px; /* Reduced from 5px to 3px */
+    margin-bottom: 1px; /* Reduced from 5px to 3px */
     border: 1px solid #e0e0e0; /* Adding a subtle border for separation */
     border-radius: 6px; /* Slightly smaller border-radius */
     overflow: hidden; /* Ensures content respects border-radius */
@@ -82,7 +82,7 @@ h3 + .auto-list {
 .level-title {
     cursor: pointer;
     user-select: none;
-    padding: 6px 10px; /* Reduced from 8px 12px for title padding */
+    padding: 4px 8px; /* Reduced from 8px 12px for title padding */
     font-size: 0.92rem; /* Slightly smaller font for title */
     background-color: #f5f5f5; /* Lighter background for title */
     border-radius: 5px; /* Keep consistent with .lesson-level */
@@ -99,6 +99,7 @@ h3 + .auto-list {
 .level-title .title-text { /* Assuming you wrap your text content for better flex control */
     flex-grow: 1;
     padding-right: 20px; /* Make space for the arrow */
+    margin-bottom: 0;
 }
 
 
