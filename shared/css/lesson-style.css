@@ -77,7 +77,7 @@ th, td {
   /* border-left: 4px solid #6a9acb; /* 使用與主頁相同的藍色 */
   padding: 10px 14px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   line-height: 1.2;
   font-size: 0.9rem;
   max-width: 600px; /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
@@ -154,11 +154,24 @@ h3 + .auto-list {
     transition: transform 0.3s ease;
 }
 
-.lesson-level.active .level-title::after {
-    content: '▲'; /* Up arrow when active */
-    transform: translateY(-50%) rotate(0deg); /* No rotation needed if using up/down arrows */
+/* 當一個手風琴區塊被打開時 */
+.lesson-level.active .level-title {
+  background-color: #e8e8e8; /* 打開時背景顏色略深 */
+  border-bottom-left-radius: 0; /* 打開時移除底部圓角，使其與內容區塊融合 */
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #ddd; /* 增加一條線分隔標題和內容 *//
 }
 
+
+.lesson-level.active .level-title::after {
+    content: '▲'; /* Up arrow when active */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* 增加平滑過渡效果 */
+}
+
+.level-title:hover {
+    background-color: #e0e0e0; /* 懸停時背景顏色略深 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 可選：柔和的陰影效果 */
+}
 .level-content {
   padding: 0; /* 完全收起時不要 padding */
   margin: 0;
