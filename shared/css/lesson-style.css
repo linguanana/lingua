@@ -42,138 +42,33 @@ a:hover {
 }
 
 /* ✅ 課程元件樣式 */
-.dialogue-box {
-  background-color: #fafafa;
-  border-left: 4px solid transparent; /* removed red bar */
-  /* border-left: 4px solid #6a9acb; /* 使用與主頁相同的藍色 */
-  padding: 10px 14px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  line-height: 1.2;
-  font-size: 0.95rem;
-  max-width: 600px; /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
-  margin-left: auto;
-  margin-right: auto;
-}
-/* 往內縮 */
-.tip-box {
-  border-left: 4px solid transparent; /* removed red bar */
-  padding: 10px 14px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  line-height: 1.3;
-  font-size: 0.95rem;
-  max-width: 600px;  /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.auto-list {
-  line-height: 1.3;
-  font-size: 0.95rem;
-}
-h3 + .auto-list {
-  margin-top: 0.1em;
-}
-.italian-word {
-  color: #c0392b;
-  font-weight: bold;
-}
-.small-audio {
-  transform: scale(1, 0.85);
-  transform-origin: top;
-}
-
-/* ✅ lesson level 開合區塊 */
-/* ✅ lesson level 開合區塊 - Even Tighter Version */
-.lesson-level {
-    margin-bottom: 1px; /* Reduced from 5px to 3px */
-    border: 1px solid #e0e0e0; /* Adding a subtle border for separation */
-    border-radius: 6px; /* Slightly smaller border-radius */
-    overflow: hidden; /* Ensures content respects border-radius */
-}
-
-.level-title {
-    cursor: pointer;
-    user-select: none;
-    padding: 4px 8px; /* Reduced from 8px 12px for title padding */
-    font-size: 0.92rem; /* Slightly smaller font for title */
-    background-color: #f5f5f5; /* Lighter background for title */
-    border-radius: 5px; /* Keep consistent with .lesson-level */
-    margin-bottom: 2px; /* Reduced from 4px to 2px */
-    position: relative;
-    display: flex; /* Use flexbox to align content and arrow */
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* Push arrow to the right */
-    gap: 5px; /* Small gap between text and arrow if needed */
-    color: #333; /* Slightly darker text for contrast */
-}
-
-/* Make sure your checkmark/text and arrow are separate elements or refine content handling */
-.level-title .title-text { /* Assuming you wrap your text content for better flex control */
-    flex-grow: 1;
-    padding-right: 20px; /* Make space for the arrow */
-    margin-bottom: 0;
-}
-
-
+/* Optional: Add a simple arrow indicator */
 .level-title::after {
-    content: '▼';
-    /* position: absolute; - Remove this if using flexbox for simpler positioning */
-    font-size: 0.75rem; /* Even smaller arrow */
-    /* right: 10px; - No longer needed with flexbox */
-    /* top: 50%; - No longer needed with flexbox */
-    /* transform: translateY(-50%); - No longer needed with flexbox */
+    content: '▼'; /* Down arrow */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
     transition: transform 0.3s ease;
-    line-height: 1; /* Ensures arrow sits well */
-    margin-left: auto; /* Pushes arrow to the right if not using absolute positioning */
 }
 
 .lesson-level.active .level-title::after {
-    content: '▲';
-    /* transform: translateY(-50%) rotate(180deg); /* Optional: More dynamic rotation */
+    content: '▲'; /* Up arrow when active */
+    transform: translateY(-50%) rotate(0deg); /* No rotation needed if using up/down arrows */
 }
 
 .level-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Slightly faster transition */
-    padding: 0px 8px; /* Reduced from 0px 10px */
-    font-size: 0.88rem; /* Inner content font size slightly smaller */
-    line-height: 1.35; /* More compact line height */
-    background-color: #ffffff; /* White background for content */
+    max-height: 0; /* Ensures it starts collapsed */
+    overflow: hidden; /* <<< THIS IS CRUCIAL FOR COLLAPSING CONTENT */
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth animation */
+    padding: 0px 12px; /* Collapsed padding */
+    background-color: #fff; /* Match body background or slightly different */
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: #444; /* Slightly lighter text color for inner content */
 }
 
+/* The JavaScript adds the 'active' class to .lesson-level when expanded */
 .lesson-level.active .level-content {
-    padding: 6px 8px; /* Reduced from 8px 10px for expanded state */
-    max-height: 200px; /* Give it a sufficient max-height for content to show */
-    /* You might need to adjust this max-height depending on how much content you expect */
-    /* A very large max-height (e.g., 1000px) is often used for smooth transitions,
-       but visually, it won't impact tightness when content is smaller. */
-}
-
-/* Consider adding this for the checkmark next to Level 1 (A0) */
-.level-title .checkmark {
-    margin-right: 5px; /* Space between checkmark and text */
-    color: #28a745; /* Green color for checkmark */
-}
-
-/* If you have specific content within .level-content that has its own padding/margins,
-   you might need to adjust those too. For example: */
-.level-content h3 {
-    margin-top: 3px; /* Reduced from default */
-    margin-bottom: 3px; /* Reduced from default */
-    font-size: 1em; /* Keep relative size */
-}
-.level-content .auto-list {
-    margin-bottom: 3px; /* Reduce spacing below auto-lists */
-}
-.level-content ul, .level-content li {
-    margin-left: 15px; /* Reduce default list indentation */
-    padding-left: 0;
-    margin-bottom: 2px; /* Reduce spacing between list items */
+    /* max-height is set by JavaScript based on scrollHeight for smooth variable height */
+    padding: 10px 12px; /* Expanded padding, matches the JS setting */
 }
