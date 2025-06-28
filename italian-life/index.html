@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>🇮🇹 Your Real Italian Life</title> <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>🇮🇹 Your Real Italian Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ✅ 引入共用字體 + 基本樣式 + 模組樣式 -->
+    <link rel="stylesheet" href="../../shared/css/fonts.css">
+    <link rel="stylesheet" href="../../shared/css/base.css">
+    <link rel="stylesheet" href="../../shared/css/module-style.css">
 </head>
 <body>
     <div class="container">
@@ -12,6 +15,8 @@
         <p class="course-intro">Step into daily Italian life — Italian, as it truly is.</p>
         <div id="modules-container"></div>
     </div>
-    <script src="scripts/module-toggler.js"></script>
+    <!-- ✅ 引入模組資料 + 生成模組 + toggle 展開功能 -->
+    <script src="../../shared/modules/modules-it.js"></script>
+    <script src="../../shared/js/render-modules.js"></script>
 </body>
 </html>
