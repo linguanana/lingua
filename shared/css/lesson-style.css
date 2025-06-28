@@ -100,7 +100,7 @@ th, td {
   border-left: 4px solid transparent; /* removed red bar */
   /* border-left: 4px solid #6a9acb; /* 使用與主頁相同的藍色 */
   padding: 10px 14px;
-  margin-top: 3px;
+  margin-top: 0px;
   margin-bottom: 10px;
   line-height: 1.2;
   font-size: 0.9rem;
