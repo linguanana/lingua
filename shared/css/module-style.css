@@ -1,3 +1,5 @@
+/* module-style.css – for module index page only */
+
 :root {
   --primary-color: #6a9acb;
   --secondary-color: #e0f2f7;
@@ -8,28 +10,137 @@
   --transition-speed: 0.25s;
 }
 
-/* Module index page container */
-.container {
-  max-width: 600px;
-  margin: 15px auto;
-  padding: 12px;
+body {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.2;
+  font-size: 0.95rem;
+  color: var(--text-color);
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px var(--shadow-color);
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 20px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
 }
 
-/* Larger H1 for module homepage */
+h1, h2, h3 {
+  margin-top: 0.1em;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  color: #222;
+}
+
 h1 {
-  text-align: center;
+  margin-bottom: 1em;
   font-size: 1.8rem;
   color: var(--primary-color);
-  margin-bottom: 25px;
-  font-weight: 600;
+  text-align: center;
   letter-spacing: 0.3px;
 }
 
-/* Module toggle styles */
-.module { ... }
-.module h2 { ... }
-.module.active h2::after { ... }
-.lesson-list { ... }
+.module {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+  transition: box-shadow var(--transition-speed) ease;
+}
+
+.module:hover {
+  box-shadow: 0 3px 10px var(--shadow-color);
+}
+
+.module h2 {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  padding: 8px 12px;
+  border-left: 3px solid var(--primary-color);
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.module h2:hover {
+  background-color: #d2ecf4;
+}
+
+.module h2::after {
+  content: '▼';
+  font-size: 0.65rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+.module.active h2::after {
+  content: '▲';
+  transform: rotate(0deg);
+}
+
+.lesson-list {
+  padding: 0px 12px 10px;
+  background-color: #fff;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out, padding 0.35s ease-out;
+}
+
+.module.active .lesson-list {
+  display: block;
+  max-height: 300px;
+  padding: 10px 12px;
+}
+
+.lesson-list a {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-color);
+  margin: 5px 0;
+  font-size: 0.85rem;
+  padding: 3px 0;
+  transition: color var(--transition-speed) ease;
+}
+
+.lesson-list a:hover {
+  color: #4a7aa3;
+  text-decoration: underline;
+}
+
+.course-intro {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  margin: -15px auto 30px auto;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 16px 18px;
+    margin: 12px auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .module h2 {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .lesson-list {
+    padding: 6px 10px;
+  }
+
+  .lesson-list a {
+    font-size: 0.8rem;
+  }
+}
