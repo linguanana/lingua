@@ -176,7 +176,7 @@ th, td {
     padding: 8px 12px; /* Example padding */
     background-color: #f0f0f0; /* Light background for the title */
     border-radius: 5px; /* Rounded corners for the title */
-    margin-bottom: 4px; /* Remove default margin */
+    margin-bottom: 2px; /* Remove default margin */
     display: block; /* Ensure it takes full width for clicking */
     position: relative; /* For potential arrow icon positioning */
 }
