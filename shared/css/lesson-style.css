@@ -43,11 +43,20 @@ h3 {
   color: #333; /* 三級標題使用接近內文的顏色 */
 }
 
+/* 粗體， 加底色*/
 .highlight-word{
   font-weight: bold;
   background-color: #f0f8ff;  /* 微微淺藍，類似 #e6f2ff */
 }
+/* 粗體*/
+strong {
+  font-weight: bold;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
 
+/* 義大利字加紅色*/
 .italian-word {
   color: #c0392b;
   font-weight: bold;
@@ -55,14 +64,6 @@ h3 {
 
 h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
-}
-
-strong {
-  font-weight: bold;
-  color: #333;
-  background-color: #fdf5d9;
-  padding: 2px 4px;
-  border-radius: 4px;
 }
 
 /* --- 連結顏色和過渡效果調整 --- */
