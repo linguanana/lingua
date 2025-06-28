@@ -150,12 +150,12 @@ h3 + .auto-list {
 /* If you have specific content within .level-content that has its own padding/margins,
    you might need to adjust those too. For example: */
 .level-content h3 {
-    margin-top: 10px; /* Reduced from default */
-    margin-bottom: 5px; /* Reduced from default */
+    margin-top: 3px; /* Reduced from default */
+    margin-bottom: 3px; /* Reduced from default */
     font-size: 1em; /* Keep relative size */
 }
 .level-content .auto-list {
-    margin-bottom: 5px; /* Reduce spacing below auto-lists */
+    margin-bottom: 3px; /* Reduce spacing below auto-lists */
 }
 .level-content ul, .level-content li {
     margin-left: 15px; /* Reduce default list indentation */
