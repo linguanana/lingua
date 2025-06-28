@@ -71,43 +71,93 @@ h3 + .auto-list {
 }
 
 /* ✅ lesson level 開合區塊 */
+/* ✅ lesson level 開合區塊 - Even Tighter Version */
 .lesson-level {
-  margin-bottom: 5px;
+    margin-bottom: 3px; /* Reduced from 5px to 3px */
+    border: 1px solid #e0e0e0; /* Adding a subtle border for separation */
+    border-radius: 6px; /* Slightly smaller border-radius */
+    overflow: hidden; /* Ensures content respects border-radius */
 }
+
 .level-title {
-  cursor: pointer;
-  user-select: none;
-  padding: 8px 12px; /* 原本是 10px 12px，更緊湊 */
-  font-size: 0.95rem; /* 保持文字清楚可讀 */
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  margin-bottom: 4px; /* 原本可能是 8px */
-  position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 10px; /* Reduced from 8px 12px for title padding */
+    font-size: 0.92rem; /* Slightly smaller font for title */
+    background-color: #f5f5f5; /* Lighter background for title */
+    border-radius: 5px; /* Keep consistent with .lesson-level */
+    margin-bottom: 2px; /* Reduced from 4px to 2px */
+    position: relative;
+    display: flex; /* Use flexbox to align content and arrow */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Push arrow to the right */
+    gap: 5px; /* Small gap between text and arrow if needed */
+    color: #333; /* Slightly darker text for contrast */
 }
+
+/* Make sure your checkmark/text and arrow are separate elements or refine content handling */
+.level-title .title-text { /* Assuming you wrap your text content for better flex control */
+    flex-grow: 1;
+    padding-right: 20px; /* Make space for the arrow */
+}
+
+
 .level-title::after {
-  content: '▼';
-  position: absolute;
-  font-size: 0.8rem; /* 箭頭稍微小一點 */
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.3s ease;
+    content: '▼';
+    /* position: absolute; - Remove this if using flexbox for simpler positioning */
+    font-size: 0.75rem; /* Even smaller arrow */
+    /* right: 10px; - No longer needed with flexbox */
+    /* top: 50%; - No longer needed with flexbox */
+    /* transform: translateY(-50%); - No longer needed with flexbox */
+    transition: transform 0.3s ease;
+    line-height: 1; /* Ensures arrow sits well */
+    margin-left: auto; /* Pushes arrow to the right if not using absolute positioning */
 }
+
 .lesson-level.active .level-title::after {
-  content: '▲';
+    content: '▲';
+    /* transform: translateY(-50%) rotate(180deg); /* Optional: More dynamic rotation */
 }
+
 .level-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-  padding: 0px 10px; /* 關閉時的 padding 更少 */
-  font-size: 0.9rem;  /* 內文字體可再微調小一點 */
-  line-height: 1.4;   /* 行距也可以再緊湊一點 */
-  background-color: #fff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Slightly faster transition */
+    padding: 0px 8px; /* Reduced from 0px 10px */
+    font-size: 0.88rem; /* Inner content font size slightly smaller */
+    line-height: 1.35; /* More compact line height */
+    background-color: #ffffff; /* White background for content */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #444; /* Slightly lighter text color for inner content */
 }
 
 .lesson-level.active .level-content {
-  padding: 8px 10px; /* 展開時 padding 比原本少 */
+    padding: 6px 8px; /* Reduced from 8px 10px for expanded state */
+    max-height: 200px; /* Give it a sufficient max-height for content to show */
+    /* You might need to adjust this max-height depending on how much content you expect */
+    /* A very large max-height (e.g., 1000px) is often used for smooth transitions,
+       but visually, it won't impact tightness when content is smaller. */
+}
+
+/* Consider adding this for the checkmark next to Level 1 (A0) */
+.level-title .checkmark {
+    margin-right: 5px; /* Space between checkmark and text */
+    color: #28a745; /* Green color for checkmark */
+}
+
+/* If you have specific content within .level-content that has its own padding/margins,
+   you might need to adjust those too. For example: */
+.level-content h3 {
+    margin-top: 10px; /* Reduced from default */
+    margin-bottom: 5px; /* Reduced from default */
+    font-size: 1em; /* Keep relative size */
+}
+.level-content .auto-list {
+    margin-bottom: 5px; /* Reduce spacing below auto-lists */
+}
+.level-content ul, .level-content li {
+    margin-left: 15px; /* Reduce default list indentation */
+    padding-left: 0;
+    margin-bottom: 2px; /* Reduce spacing between list items */
 }
