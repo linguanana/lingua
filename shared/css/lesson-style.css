@@ -128,7 +128,7 @@ h3 + .auto-list {
 .lesson-level {
     /* Optional: You might want to add some margin-bottom here
        to separate levels when they are all collapsed. */
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .level-title {
@@ -166,6 +166,7 @@ h3 + .auto-list {
     background-color: #fff; /* Match body background or slightly different */
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    margin: 0;
 }
 
 /* The JavaScript adds the 'active' class to .lesson-level when expanded */
