@@ -1,38 +1,38 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const lessonLevels = document.querySelectorAll(".lesson-level");
+document.addEventListener('DOMContentLoaded', () => {
+  const levelTitles = document.querySelectorAll('.level-title');
 
-  // 只有超過兩個 lesson-level 區塊時才啟用手風琴效果
-  if (lessonLevels.length > 2) {
-    lessonLevels.forEach((level, index) => {
-      const title = level.querySelector(".level-title");
-      const content = level.querySelector(".level-content");
+  levelTitles.forEach(title => {
+    title.addEventListener('click', () => {
+      const levelDiv = title.closest('.lesson-level');
+      const levelContent = title.nextElementSibling;
 
-      if (title && content) {
-        title.addEventListener("click", () => {
-          // 關閉所有內容
-          document.querySelectorAll(".lesson-level .level-content").forEach((c) => {
-            c.style.display = "none";
-          });
-
-          // 打開目前這個
-          content.style.display = "block";
+      if (levelDiv.classList.contains('active')) {
+        levelDiv.classList.remove('active');
+        levelContent.style.maxHeight = '0';
+        levelContent.style.padding = '0px 12px';
+      } else {
+        // Close all other active levels
+        document.querySelectorAll('.lesson-level.active').forEach(openLevel => {
+          openLevel.classList.remove('active');
+          const openContent = openLevel.querySelector('.level-content');
+          openContent.style.maxHeight = '0';
+          openContent.style.padding = '0px 12px';
         });
 
-        // 預設只打開第一個
-        if (index === 0) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+        // Open current
+        levelDiv.classList.add('active');
+        levelContent.style.maxHeight = levelContent.scrollHeight + 'px';
+        levelContent.style.padding = '10px 12px';
       }
     });
-  } else {
-    // 只有 1～2 個區塊就全部展開
-    lessonLevels.forEach((level) => {
-      const content = level.querySelector(".level-content");
-      if (content) {
-        content.style.display = "block";
-      }
-    });
+  });
+
+  // Auto-open the first lesson
+  const firstLevel = document.querySelector('.lesson-level');
+  if (firstLevel) {
+    firstLevel.classList.add('active');
+    const firstLevelContent = firstLevel.querySelector('.level-content');
+    firstLevelContent.style.maxHeight = firstLevelContent.scrollHeight + 'px';
+    firstLevelContent.style.padding = '10px 12px';
   }
 });

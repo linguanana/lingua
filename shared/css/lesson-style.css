@@ -99,6 +99,7 @@ h3 + .auto-list {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .lesson-level.active .level-content {
   padding: 10px 12px;
 }
