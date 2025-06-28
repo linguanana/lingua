@@ -117,6 +117,12 @@ h3 + .auto-list {
   transform: scale(1, 0.85); /* x 不變，y 軸壓扁 */
   transform-origin: top;
 }
+
+.current-lesson {
+  font-weight: 700;
+  color: #0077cc;
+}
+
  /* contreol space <p> */
  .spacer-xs { margin-top: 4px; }
  .spacer-sm { margin-top: 8px; }
