@@ -1,47 +1,58 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Select all elements with the class 'level-title'. These are your clickable headings for each level.
+document.addEventListener('DOMContentLoaded', function() {
     const levelTitles = document.querySelectorAll('.level-title');
+    const lessonLevels = document.querySelectorAll('.lesson-level'); // Get all lesson level containers
 
-    // Loop through each level title and attach an event listener.
-    levelTitles.forEach(title => {
-        title.addEventListener('click', () => {
-            // Find the closest parent 'div' with the class 'lesson-level'. This is the container for the entire level section.
-            const levelDiv = title.closest('.lesson-level');
-            // The 'level-content' is the next sibling element after the 'level-title'. This is the part that expands/collapses.
-            const levelContent = title.nextElementSibling;
+    // Helper function to set max-height for smooth transitions
+    function setContentMaxHeight(contentElement, isActive) {
+        if (isActive) {
+            contentElement.style.maxHeight = contentElement.scrollHeight + 'px';
+        } else {
+            contentElement.style.maxHeight = null; // Resets max-height for collapse
+        }
+    }
 
-            // Check if the current level is already active (i.e., it's open).
-            if (levelDiv.classList.contains('active')) {
-                // If it's active, we want to close it.
-                levelDiv.classList.remove('active'); // Remove the 'active' class from the parent div.
-                levelContent.style.maxHeight = '0'; // Set max-height to 0 to collapse the content.
-                levelContent.style.padding = '0px 12px'; // Adjust padding to match the collapsed state defined in CSS.
+    // --- On Page Load: Try to restore the last open level ---
+    const lastOpenLevelId = localStorage.getItem('lastOpenLevelId'); // Retrieve stored ID
+    if (lastOpenLevelId) {
+        const targetLevel = document.getElementById(lastOpenLevelId);
+        if (targetLevel) {
+            targetLevel.classList.add('active'); // Add 'active' class to the stored level
+            const content = targetLevel.querySelector('.level-content');
+            setContentMaxHeight(content, true); // Expand its content
+        }
+    }
+    // If no ID is found in localStorage, or the ID doesn't match an existing element,
+    // all levels will remain closed by default (which fulfills your "all close on refresh" for initial state).
+
+
+    // --- Click Event Listener for Level Titles ---
+    levelTitles.forEach(function(title) {
+        title.addEventListener('click', function() {
+            const currentLevel = this.closest('.lesson-level'); // Get the parent .lesson-level
+            const content = currentLevel.querySelector('.level-content');
+            const currentLevelId = currentLevel.id; // Get the unique ID of the clicked level
+
+            // If the clicked level is currently active (open)
+            if (currentLevel.classList.contains('active')) {
+                // Close it
+                currentLevel.classList.remove('active');
+                setContentMaxHeight(content, false);
+                localStorage.removeItem('lastOpenLevelId'); // Clear the stored state, as nothing is open
             } else {
-                // If it's not active, we want to open it.
-                // First, close any other levels that might be open. This ensures only one level is expanded at a time (accordion-style).
-                document.querySelectorAll('.lesson-level.active').forEach(openLevel => {
-                    openLevel.classList.remove('active'); // Remove 'active' class.
-                    const openContent = openLevel.querySelector('.level-content'); // Get its content.
-                    openContent.style.maxHeight = '0'; // Collapse its content.
-                    openContent.style.padding = '0px 12px'; // Adjust its padding.
+                // If the clicked level is not active (closed), open it
+                // First, close any other open levels (accordion behavior)
+                lessonLevels.forEach(function(level) {
+                    if (level !== currentLevel && level.classList.contains('active')) {
+                        level.classList.remove('active');
+                        setContentMaxHeight(level.querySelector('.level-content'), false);
+                    }
                 });
 
-                // Now, open the clicked level.
-                levelDiv.classList.add('active'); // Add the 'active' class to the parent div.
-                // Set max-height to the actual scrollHeight of the content. This allows for a smooth transition regardless of content size.
-                levelContent.style.maxHeight = levelContent.scrollHeight + 'px';
-                levelContent.style.padding = '10px 12px'; // Adjust padding to match the expanded state defined in CSS.
+                // Then, open the clicked level
+                currentLevel.classList.add('active');
+                setContentMaxHeight(content, true);
+                localStorage.setItem('lastOpenLevelId', currentLevelId); // Store the ID of the newly opened level
             }
         });
     });
-
-    // Optional: Automatically open the first level when the page loads. This provides an immediate view of the first set of content.
-    const firstLevel = document.querySelector('.lesson-level');
-    if (firstLevel) {
-        firstLevel.classList.add('active'); // Mark the first level as active.
-        const firstLevelContent = firstLevel.querySelector('.level-content'); // Get its content div.
-        // Set its max-height and padding to immediately show its content.
-        firstLevelContent.style.maxHeight = firstLevelContent.scrollHeight + 'px';
-        firstLevelContent.style.padding = '10px 12px';
-    }
 });
