@@ -132,6 +132,7 @@ h3 + .auto-list {
 }
 
 .level-title {
+     font-size: 0.88rem; /* 原本是 0.92rem，可再小一點點 */
     cursor: pointer; /* Indicates it's clickable */
     user-select: none; /* Prevents text selection on double-click */
     /* Add any other styling for your clickable title, e.g., padding, background */
