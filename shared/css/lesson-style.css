@@ -103,15 +103,15 @@ th, td {
   padding: 10px 14px;
   margin-top: 0px;
   margin-bottom: 10px;
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 0.9rem;
   max-width: 600px; /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
   margin-left: auto;
   margin-right: auto;
 }
-
 .dialogue-box p {
-  margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 1em;     /* 控制兩段之間的間距，建議使用 em 比 px 更響應式 */
 }
 
 /* 往內縮 */
