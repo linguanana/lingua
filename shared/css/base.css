@@ -27,6 +27,23 @@ h1, h2, h3 {
   margin-bottom: 0.6em;
 }
 
+/* 如果是模組首頁 字大一點 */
+/* 如果是課程首頁 字小一點 */
+body h1 {
+  font-size: 1.2rem;
+}
+body h2 {
+  font-size: 1rem;
+}
+
+body:has(#modules-container) h1 {
+  font-size: 2rem;
+}
+body:has(#modules-container) h2 {
+  font-size: 1.5rem;
+}
+/* 如果是模組首頁（通常是直接在 /italian-life/ 下） */
+
 a {
   color: var(--primary-color);
   text-decoration: none;
