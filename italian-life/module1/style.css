@@ -103,6 +103,7 @@ th, td {
   margin-top: 0.05em;
   font-size: 1rem; /* 可依需要微調字體大小 */
 }
+
 h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
 }
@@ -113,7 +114,7 @@ h3 + .auto-list {
 }
 
 .small-audio {
-  transform: scale(1, 0.7); /* x 不變，y 軸壓扁 */
+  transform: scale(1, 0.85); /* x 不變，y 軸壓扁 */
   transform-origin: top;
 }
  /* contreol space <p> */
