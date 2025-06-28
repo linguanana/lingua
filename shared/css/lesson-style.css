@@ -43,10 +43,11 @@ h3 {
   color: #333; /* 三級標題使用接近內文的顏色 */
 }
 
-/* 粗體， 加底色*/
-.highlight-word{
+/* 粗體， 加底色，往後移*/
+.Start-with-word{
   font-weight: bold;
   background-color: #f0f8ff;  /* 微微淺藍，類似 #e6f2ff */
+  padding-left: 10px; /*往後（內）移*/
 }
 /* 粗體*/
 strong {
