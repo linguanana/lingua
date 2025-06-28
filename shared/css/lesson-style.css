@@ -1,21 +1,26 @@
-/* ✅ 共用樣式（可複製自 module-style 的 body、h1~h3、a、table 等） */
-
+/* style.css */
 body {
   font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
-  background-color: #fff;
-  color: #333;
-  font-size: 0.95px;
   line-height: 1.2;
-  margin: 25px auto;
-  padding: 20px 25px;
-  max-width: 650px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #fff;
+  max-width: 650px; /* 從 800px 調整為 700px，約縮小 12.5% */
+  margin: 0 auto;  /* ⬅️ 自動左右置中 */
+  padding: 20px;
+  /* --- 以下是主要的修改 --- */
+  margin: 25px auto;  /* 上下留白更多，左右自動置中 */
+  padding: 20px 25px; /* 左右內邊距稍微多一點，讓內容不頂到邊 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* 增加柔和的陰影 */
+  border-radius: 10px; /* 增加圓角 */
+  /* --- 主要修改結束 --- */
 }
 body *:lang(zh-TW) {
   font-size: 0.7rem; /* 從 0.92rem 調整為 0.7rem，約縮小 20% */
 }
+
 h1, h2, h3 {
+  margin-top: 0.1em;
   font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
   font-weight: 600;
   color: #222;
