@@ -75,6 +75,10 @@ strong {
   color: #44b03a;
   font-weight: bold;
 }
+.tip-box .italian-word {
+  color: #44b03a;
+  font-weight: bold;
+}
 
 h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
@@ -126,12 +130,6 @@ h3 + .auto-list {
   margin-bottom: 2px;  /* 行距小一點點，感覺更緊湊 */
 }
 
-
-.auto-list.nested {
-  margin-left: 1.4em;  /* 或 1.5em，視覺上明顯就好 */
-  font-size: 0.88rem;  /* 可視情況再小一點點 */
-  line-height: 1.3;
-}
 
 /* --- 連結顏色和過渡效果調整 --- */
 a {
