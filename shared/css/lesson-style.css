@@ -188,7 +188,7 @@ th, td {
 /* this is for lesson level and lesson context ========= */
 
 .lesson-level {
-  margin-bottom: 0px;
+  margin-bottom: 0.5px;
 }
 
 .level-title {
