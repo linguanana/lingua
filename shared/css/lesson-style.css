@@ -179,9 +179,8 @@ th, td {
 /* this is for lesson level and lesson context ========= */
 
 .lesson-level {
-    /* Optional: You might want to add some margin-bottom here
-       to separate levels when they are all collapsed. */
-    margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0.3rem;  /* 控制區塊與區塊之間的距離 */
 }
 
 .level-title {
