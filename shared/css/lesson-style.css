@@ -77,7 +77,7 @@ h3 + .auto-list {
 
 .dialogue-box {
   background-color: #fafafa;
-  border-left: 4px solid transparent; /* removed red bar */
+  border-left: 6px solid transparent; /* removed red bar */
   /* border-left: 4px solid #6a9acb; /* 使用與主頁相同的藍色 */
   padding: 10px 14px;
   margin-top: 0px;
