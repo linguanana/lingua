@@ -2,107 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lesson Template</title>
+  <title>Lesson X – [TODO: 課程名稱，例如 Ciao! Missione al mercato]</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ✅ Shared styles -->
+  <!-- ✅ 共用樣式：請確保 shared/css 有對應檔案 -->
   <link rel="stylesheet" href="../../shared/css/fonts.css">
   <link rel="stylesheet" href="../../shared/css/lesson-style.css">
 </head>
 <body>
 
-  <h1>🇮🇹 Module X – Lesson X: [Title goes here]</h1>
-  <strong>🎬 Theme:</strong> [Short theme description]<br>
-  <strong>📚 Lessons:</strong>
-    <span class="current-lesson">X</span> |
-    <a href="lesson1.html">1</a> |
-    <a href="lesson2.html">2</a> |
-    <a href="lesson3.html">3</a> |
-    <a href="lesson4.html">4</a> |
-    <a href="lesson5.html">5</a> |
-    <a href="lesson6.html">6</a> |
-    <a href="lesson7.html">7</a>
+  <!-- ✅ 主標題 -->
+  <h1 title="[TODO: 課程英文解釋＋中文翻譯，例如 Hello! Market mission（打招呼！市場任務）]">
+    🇮🇹 Module X – Lesson X: [TODO: 義大利文課程標題，例如 Ciao! Missione al mercato]
+  </h1>
+  
+  <!-- ✅ 章節資訊 + 其他課連結 -->
+  <p class="info-text-size">
+    <strong>🎬 Theme:</strong> [TODO: 主題簡述，例如 Greetings in everyday Italian]<br>
+    <strong>📚 Lessons:</strong>
+      <span class="current-lesson">X</span> |
+      <a href="lessonX.html">2</a> |
+      <a href="lessonX.html">3</a> |
+      <a href="lessonX.html">4</a> |
+      <a href="lessonX.html">5</a> |
+      <a href="lessonX.html">6</a> |
+      <a href="lessonX.html">7</a>
+    <br><br>
+    <span class="start-with-word">Start with Level 1</span> — come back for Level 2 or/and 3 as you progress.
+  </p>
 
-  <br>
-  <p><span class="start-with-word">Start with Level 1</span> — come back for Level 2 or/and 3 as you progress.</p>
 
-  <!-- LESSON LEVEL BLOCK START -->
-  <div class="lesson-level" id="level-1">
-    <h2 class="level-title">✅ Level 1 (A0): [Level Title]</h2>
-    <div class="level-content">
+<!-- 🩷🩷🩷🩷 ********************************* LEVEL 1 區塊 *************************** -->
+<div class="lesson-level" id="level-1">
+  <h2 class="level-title">✅ Level 1 (A0): [TODO: 標題，例如 Say Hello!]</h2>
+  <div class="level-content">
 
-      <h3>🔐 Key Phrase</h3>
-      <div class="auto-list">
-        <!-- Add phrases here using <span class="italian-word">word</span> -->
-      </div>
-      <audio controls class="small-audio">
-        <source src="./audio/lessonX_11.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+    <h3>🔐 Key Phrase</h3>
+    <div class="auto-list">
+      <!-- TODO: 放義大利單字加粗的用法 -->
+      <span class="italian-word">XXX</span> – 英文解釋（簡單的中文註解）<br>
+      <span class="italian-word">XXX</span> – 英文解釋（簡單的中文註解）
+    </div>
 
-      <h3>🎯 Dialogue / When to use</h3>
-      <audio controls class="small-audio">
-        <source src="./audio/lessonX_1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <div class="dialogue-box">
-        <p>🧑‍🏫 [Context description]<br>
-        Say <span class="italian-word">[Phrase]</span> – [Translation]</p>
-        <!-- Repeat for more examples -->
-      </div>
+    <!-- TODO: 如果有對應音檔，就放下面，檔名為 lessonX_1k.mp3 -->
+    <audio controls class="small-audio">
+      <source src="./audio/lessonX_1k.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
-      <h3>🤖 Task or Homework</h3>
-      <div class="auto-list">
-        <!-- Task or challenge -->
-      </div>
+    <h3>🎯 Dialogue / When to use</h3>
+    <audio controls class="small-audio">
+      <source src="./audio/lessonX_1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="dialogue-box">
+      <!-- TODO: 每個使用情境一段 -->
+      <p>🧑‍🏫 When: [英文描述] [簡單的中文解釋]<br>
+      Say <span class="italian-word">XXX</span> – [英文說明]（簡單的中文翻譯）</p>
+    </div>
 
-      <h3>📌 Tip</h3>
-      <div class="auto-list">
-        <!-- Tips or reminders -->
-      </div>
+    <h3>🤖 Task or Homework</h3>
+    <div class="auto-list">
+      <!-- TODO: 給學生的任務 -->
+      Try saying <span class="italian-word">XXX</span> when you do XXX.
+    </div>
+
+    <h3>📌 Tip</h3>
+    <div class="auto-list">
+      <!-- TODO: 用於補充資訊，常識、文化、時機 -->
+      <span class="italian-word">XXX</span> – 用法說明（簡單的中文解釋）<br>
     </div>
   </div>
-  <!-- LESSON LEVEL BLOCK END -->
+</div>
 
-  <!-- Duplicate the block above for Level 2 and Level 3 if needed -->
-  <!-- LESSON LEVEL BLOCK START -->
-  <div class="lesson-level" id="level-2">
-    <h2 class="level-title">✅ Level 2 (A0+): [Level Title]</h2>
-    <div class="level-content">
+<!-- 🩷🩷🩷🩷 ****************************** LEVEL 2 & 3 可視需要複製多層 ******************************-->
+<!-- 記得更新 ID、音檔檔名、標題內容與內文結構即可 -->
 
-      <h3>🔐 Key Phrase</h3>
-      <div class="auto-list">
-        <!-- Add phrases here using <span class="italian-word">word</span> -->
-      </div>
-      <audio controls class="small-audio">
-        <source src="./audio/lessonX_22.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-      <h3>🎯 Dialogue / When to use</h3>
-      <audio controls class="small-audio">
-        <source src="./audio/lessonX_2.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <div class="dialogue-box">
-        <p>🧑‍🏫 [Context description]<br>
-        Say <span class="italian-word">[Phrase]</span> – [Translation]</p>
-        <!-- Repeat for more examples -->
-      </div>
-
-      <h3>🤖 Task or Homework</h3>
-      <div class="auto-list">
-        <!-- Task or challenge -->
-      </div>
-
-      <h3>📌 Tip</h3>
-      <div class="auto-list">
-        <!-- Tips or reminders -->
-      </div>
-    </div>
-  </div>
-
-  <script src="../../shared/js/auto-list.js"></script>
-  <script src="../../shared/js/toggle-lesson-level.js"></script>
+<script src="../../shared/js/auto-list.js"></script>
+<script src="../../shared/js/toggle-lesson-level.js"></script>
 </body>
 </html>
