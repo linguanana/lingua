@@ -230,9 +230,9 @@ th, td {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 可選：柔和的陰影效果 */
 }
 .level-content {
-  padding: 0; /* 完全收起時不要 padding */
-  margin: 0;
-  max-height: 0;
+  padding: 0 !important; /* 確保收合時沒有內邊距，加上 !important */
+  margin: 0 !important; /* 確保收合時沒有外邊距，加上 !important */
+  max-height: 0 !important; /* 確保收合時高度為0，加上 !important */
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
