@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🇮🇹 Module 1 – Lesson X: [Lesson Title]</title>
+  <title>Lesson Template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ✅ 引入共用字體與樣式 -->
+  <!-- ✅ Shared styles -->
   <link rel="stylesheet" href="../../shared/css/fonts.css">
-  <link rel="stylesheet" href="../../shared/css/base.css">
   <link rel="stylesheet" href="../../shared/css/lesson-style.css">
 </head>
 <body>
 
-  <!-- ✅ 課程標題與導覽連結 -->
-  <h1>🇮🇹 Module 1 – Lesson X: [Lesson Title]</h1>
-  <strong>🎬 Theme:</strong> [Theme or real-life scenario]<br>
+  <h1>🇮🇹 Module X – Lesson X: [Title goes here]</h1>
+  <strong>🎬 Theme:</strong> [Short theme description]<br>
   <strong>📚 Lessons:</strong>
+    <span class="current-lesson">X</span> |
     <a href="lesson1.html">1</a> |
     <a href="lesson2.html">2</a> |
     <a href="lesson3.html">3</a> |
@@ -24,45 +23,49 @@
     <a href="lesson6.html">6</a> |
     <a href="lesson7.html">7</a>
 
-  <hr>
-  <p>Start with Level 1 — come back for Level 2 and 3 as you progress</p>
+  <br>
+  <p><span class="start-with-word">Start with Level 1</span> — come back for Level 2 or/and 3 as you progress.</p>
 
-  <!-- ✅ Lesson Level 區塊（可複製增加） -->
-  <div class="lesson-level">
-    <h2 class="level-title">✅ Level 1 (A0): [簡介主題]</h2>
+  <!-- LESSON LEVEL BLOCK START -->
+  <div class="lesson-level" id="level-1">
+    <h2 class="level-title">✅ Level 1 (A0): [Level Title]</h2>
     <div class="level-content">
 
-      <h3>🔐 Key Phrases</h3>
+      <h3>🔐 Key Phrase</h3>
       <div class="auto-list">
-        [義大利語詞語] – [英文翻譯] （中文翻譯）<br>
+        <!-- Add phrases here using <span class="italian-word">word</span> -->
       </div>
+      <audio controls class="small-audio">
+        <source src="./audio/lessonX_1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
 
-      <h3>🎧 Audio</h3>
+      <h3>🎯 Dialogue / When to use</h3>
+      <audio controls class="small-audio">
+        <source src="./audio/lessonX_2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
       <div class="dialogue-box">
-        <audio controls class="small-audio">
-          <source src="./audio/lessonX_1.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-        <br>
-        🎙️ Example usage or explanation goes here.
+        <p>🧑‍🏫 [Context description]<br>
+        Say <span class="italian-word">[Phrase]</span> – [Translation]</p>
+        <!-- Repeat for more examples -->
       </div>
 
       <h3>🤖 Task or Homework</h3>
       <div class="auto-list">
-        Practice saying [key phrase] at a [location or situation].
+        <!-- Task or challenge -->
       </div>
 
       <h3>📌 Tip</h3>
       <div class="auto-list">
-        [Extra explanation or cultural tip]<br>
+        <!-- Tips or reminders -->
       </div>
-
     </div>
   </div>
+  <!-- LESSON LEVEL BLOCK END -->
 
-  <!-- ✅ 如需更多等級，請複製 lesson-level 區塊 -->
+  <!-- Duplicate the block above for Level 2 and Level 3 if needed -->
 
-  <!-- ✅ 共用 JS 功能 -->
   <script src="../../shared/js/auto-list.js"></script>
   <script src="../../shared/js/toggle-lesson-level.js"></script>
 </body>
