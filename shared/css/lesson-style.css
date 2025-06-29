@@ -44,6 +44,12 @@ h3 {
   color: #333; /* 三級標題使用接近內文的顏色 */
 }
 
+.info-text-size{
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
 /* 粗體， 加底色，往後移*/
 .start-with-word{
   font-weight: bold;
