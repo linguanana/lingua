@@ -181,7 +181,7 @@ th, td {
     padding: 8px 12px; /* Example padding */
     background-color: #f0f0f0; /* Light background for the title */
     border-radius: 5px; /* Rounded corners for the title */
-    margin-bottom: 0.5px; /* level 間的空格 */
+    margin-bottom: 0.2px; /* level 間的空格 */
     display: block; /* Ensure it takes full width for clicking */
     position: relative; /* For potential arrow icon positioning */
 }
