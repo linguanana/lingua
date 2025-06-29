@@ -67,20 +67,12 @@ strong {
 
 /* 義大利字加紅色*/
 .italian-word {
-  color: #6a6ee5;
-  font-weight: bold;
-}
-.french-word {
-  color: #d88a25;
-  font-weight: bold;
-}
-.spanish-word {
-  color: #4b8b3b;
+  color: #c0392b;
   font-weight: bold;
 }
 
 .auto-list li .italian-word {
-  color: #883ddd;
+  color: #44b03a;
   font-weight: bold;
 }
 
