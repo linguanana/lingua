@@ -198,7 +198,7 @@ th, td {
     display: block; /* Ensure it takes full width for clicking */
     position: relative; /* For potential arrow icon positioning */
     /* === 新增或修改以下行 === */
-    margin-bottom: 0; /* 覆蓋 h2 默認的 margin-bottom */
+    margin-bottom: 0 !important;  /* 覆蓋 h2 默認的 margin-bottom */
 }
 
 /* Optional: Add a simple arrow indicator */
