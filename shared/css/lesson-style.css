@@ -45,15 +45,15 @@ h3 {
 }
 
 .info-text-size{
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   line-height: 1.4;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 /* 粗體， 加底色，往後移*/
 .start-with-word{
   font-weight: bold;
-  background-color: #f0f8ff;  /* 微微淺藍，類似 #e6f2ff */
+  background-color: #0097b2;  /* 微微淺藍，類似 #e6f2ff */
   padding-left: 10px; /*往後（內）移*/
 }
 /* 粗體*/
