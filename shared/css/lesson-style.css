@@ -56,6 +56,7 @@ h3 {
   background-color: #fff8dc;
   padding-left: 10px; /*往後（內）移*/
 }
+
 /* 粗體*/
 strong {
   font-weight: bold;
@@ -72,34 +73,6 @@ strong {
 
 h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
-}
-
-/* --- 連結顏色和過渡效果調整 --- */
-a {
-  color: #6a9acb; /* 使用與主頁相同的藍色 orginal #0066cc;*/
-  text-decoration: none; /*none original */
-  transition: color 0.3s ease; /* 增加平滑過渡效果 */
-}
-a:hover {
-  color: #4a7aa3; /* 懸停時顏色變深一點 */
-  text-decoration: underline;
-}
-
-br {
-  display: block;
-  content: "";
-  margin-top: 0.8em;
-}
-
-/* 表格樣式（選用） */
-table {
-  border-collapse: collapse;
-  margin-top: 1em;
-}
-th, td {
-  border: 0.7px solid #ccc;
-  padding: 0.5em 1em;
-  text-align: left;
 }
 
 .dialogue-box {
@@ -152,6 +125,38 @@ th, td {
 .auto-list .italian-word {
   color: #aa0000;
   font-weight: bold;
+}
+
+.auto-list span.italian-word {
+  display: inline-block; /* 讓它在每行都當成一個獨立區塊 */
+}
+
+/* --- 連結顏色和過渡效果調整 --- */
+a {
+  color: #6a9acb; /* 使用與主頁相同的藍色 orginal #0066cc;*/
+  text-decoration: none; /*none original */
+  transition: color 0.3s ease; /* 增加平滑過渡效果 */
+}
+a:hover {
+  color: #4a7aa3; /* 懸停時顏色變深一點 */
+  text-decoration: underline;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: 0.8em;
+}
+
+/* 表格樣式（選用） */
+table {
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+th, td {
+  border: 0.7px solid #ccc;
+  padding: 0.5em 1em;
+  text-align: left;
 }
 
 .small-audio {
