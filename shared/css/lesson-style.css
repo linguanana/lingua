@@ -53,7 +53,7 @@ h3 {
 /* 粗體， 加底色，往後移*/
 .start-with-word{
   font-weight: bold;
-  background-color: #0097b2;  /* 微微淺藍，類似 #e6f2ff */
+  background-color: #883ddd;  /* 微微淺藍，類似 #e6f2ff */
   padding-left: 10px; /*往後（內）移*/
 }
 /* 粗體*/
