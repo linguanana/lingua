@@ -179,8 +179,7 @@ th, td {
 /* this is for lesson level and lesson context ========= */
 
 .lesson-level {
-  margin-top: 0;
-  margin-bottom: 0.3rem;  /* 控制區塊與區塊之間的距離 */
+  margin: 0;
 }
 
 .level-title {
