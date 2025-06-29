@@ -143,6 +143,11 @@ th, td {
   line-height: 1.3;
 }
 
+.auto-list .italian-word {
+  color: #aa0000;
+  font-weight: bold;
+}
+
 .small-audio {
   margin-left: 2.5em;  /* 模擬對話的內縮 */
   margin-top: 0;
