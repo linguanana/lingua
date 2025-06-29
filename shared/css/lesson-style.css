@@ -90,7 +90,7 @@ h3 + .auto-list {
   line-height: 1.4;
   font-size: 0.9rem;
   max-width: 600px; /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
-  margin-left: 30px;
+  margin-left: 20px;
   margin-right: auto;
 }
 .dialogue-box p {
@@ -157,7 +157,7 @@ th, td {
 }
 
 .small-audio {
-  margin-left: 2.5em;  /* 模擬對話的內縮 */
+  margin-left: 2em;  /* 模擬對話的內縮 */
   margin-top: 0;
   margin-bottom: 0;
   transform: scale(1, 0.85); /* x 不變，y 軸壓扁 */
