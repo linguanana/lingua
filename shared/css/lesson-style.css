@@ -110,6 +110,11 @@ h3 + .auto-list {
   font-size: 0.9rem;
   max-width: 600px;  /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
 }
+.tip-box .tip-nested {
+  margin-left: 1.4em;  /* 或你喜歡的縮排寬度 */
+  font-size: 0.88rem;  /* 稍微小一點更像補充說明 */
+  line-height: 1.3;
+}
 
 .auto-list {
   line-height: 1.33;
