@@ -142,7 +142,7 @@ h3 + .auto-list {
 
 /* --- 連結顏色和過渡效果調整 --- */
 a {
-  color: #6a9acb; /* 使用與主頁相同的藍色 orginal #0066cc;*/
+  color: #4f84b9; /* 使用與主頁相同的藍色 orginal #0066cc;*/
   text-decoration: none; /*none original */
   transition: color 0.3s ease; /* 增加平滑過渡效果 */
 }
