@@ -4,7 +4,7 @@ const modulesData = [
         lessons: [
             { name: 'Lesson1: Say Hello 打招呼', link: 'module1/lesson1.html' },
             { name: 'Lesson2: Ask “How are you?” 最近如何', link: 'module1/lesson2.html' },
-            { name: 'Lesson3: Waht is your name（你叫什麼名字？)', link: 'module1/lesson3.html' },
+            { name: 'Lesson3: Waht is your name 你叫什麼名字？', link: 'module1/lesson3.html' },
             { name: 'Lesson4: Where are you from? 你從哪裡來', link: 'module1/lesson4.html' },
             { name: 'Lesson5: What are you doing? What is your job?（在做什麼？／你的職業是什麼)', link: 'module1/lesson5.html' },
             { name: 'Lesson6: Polite Words 客氣詞', link: 'module1/lesson6.html' },
@@ -14,11 +14,11 @@ const modulesData = [
     {
         title: '🇮🇹 Module 2 – Order at a Café 買咖啡早餐',
         lessons: [
-          { name: 'Lesson1: The Italian Bar & Coffee Basics (Il Bar Italiano e il Caffè) (了解義式咖啡館文化與基本咖啡種類)', link: 'module2/lesson1.html' },
-          { name: 'Lesson2: Ordering Pastries & Drinks (Pasticceria e Altre Bevande) (點購點心與其他飲品)', link: 'module2/lesson2.html' },
-          { name: 'Lesson3: Making Special Requests (Richieste Speciali) (提出客製化需求)', link: 'module2/lesson3.html' },
-          { name: 'Lesson4: Asking for the Bill & Paying (Il Conto e Pagare) (結帳與付款)', link: 'module2/lesson4.html' },
-          { name: 'Lesson5: Cafe Small Talk (Due Chiachiere al Bar) (咖啡館簡短閒聊)', link: 'module2/lesson5.html' }, // The 5th lesson!
+          { name: 'Lesson1: The Italian Bar & Coffee Basics 義式咖啡館', link: 'module2/lesson1.html' },
+          { name: 'Lesson2: Ordering Pastries & Drinks 點購點心與其他飲品', link: 'module2/lesson2.html' },
+          { name: 'Lesson3: Making Special Requests 提出客製化需求', link: 'module2/lesson3.html' },
+          { name: 'Lesson4: Asking for the Bill & Paying 結帳與付款', link: 'module2/lesson4.html' },
+          { name: 'Lesson5: Cafe Small Talk 咖啡館簡短閒聊', link: 'module2/lesson5.html' }, // The 5th lesson!
         ]
     },
     { title: 'Module 3 – Buy Fruits at the Market 買水果 (Coming Soon! 即將推出!)', lessons: [] },
