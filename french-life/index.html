@@ -1,56 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>French Life – Module List</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>🇫🇷 Your Real French Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ✅ 引入共用字體 + 基本樣式 + 模組樣式 -->
+    <link rel="stylesheet" href="../shared/css/fonts.css">
+    <link rel="stylesheet" href="../shared/css/module-style.css">
 </head>
 <body>
-
-<h1>🇫🇷 French Life – Module List</h1>
-
-<ul class="module-list">
-  <li>
-    <div class="module-title">Module 1 – Greet People at the Market <span class="zh">（市集打招呼任務）</span></div>
-    <div class="module-description"><a href="module1/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 2 – Grocery Shopping <span class="zh">（買菜點麵包）</span></div>
-    <div class="module-description"><a href="module2/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 3 – Ask Train Times / Travel to Nice <span class="zh">（問火車時刻／搭火車去尼斯）</span></div>
-    <div class="module-description"><a href="module3/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 4 – Find Ingredients at the Supermarket <span class="zh">（超市找食材）</span></div>
-    <div class="module-description"><a href="module4/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 5 – Pharmacy Visit / Buy Medicine <span class="zh">（藥局買東西）</span></div>
-    <div class="module-description"><a href="module5/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 6 – Open a Bank Account & Rent an Apartment <span class="zh">（開戶與租房）</span></div>
-    <div class="module-description"><a href="module6/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 7 – Greet and Talk with Neighbors <span class="zh">（和鄰居打招呼）</span></div>
-    <div class="module-description"><a href="module7/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 8 – Order at a Restaurant <span class="zh">（餐廳點餐）</span></div>
-    <div class="module-description"><a href="module8/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 9 – Buy Warm Clothes in Winter <span class="zh">（冬天暖衣買衣服）</span></div>
-    <div class="module-description"><a href="module9/index.html">Start Lesson</a></div>
-  </li>
-  <li>
-    <div class="module-title">Module 10 – Talk at the Bank or Post Office <span class="zh">（銀行／郵局對話）</span></div>
-    <div class="module-description"><a href="module10/index.html">Start Lesson</a></div>
-  </li>
-</ul>
-
+    <div class="container">
+        <h1>🇫🇷 Your Real French Life</h1>
+        <p class="course-intro">Step into daily French life — French, as it truly is.</p>
+        <div id="modules-container"></div>
+    </div>
+    <!-- ✅ 引入模組資料 + 生成模組 + toggle 展開功能 -->
+    <script src="../shared/modules/modules-fr.js"></script>
+    <script src="../shared/js/render-modules.js"></script>
 </body>
 </html>
