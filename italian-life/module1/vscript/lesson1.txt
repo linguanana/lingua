@@ -35,17 +35,6 @@ Buonasera! – Good evening
 Buonanotte! – Good night
 
 ==========🎤 English Voice (講稿)：==========
-Italian has different ways to greet people  {{pause=500}}
-depending on the time of day  {{pause=500}}
-and the level of formality.  {{pause=500}}
-Mastering these simple greetings  {{pause=500}}
-will allow you to start any conversation confidently. {{pause=500}}
-Let's read these words together! {{pause=500}}
-
-========== 🩷🩷 3
-(頁面)：如上
-
-==========🎤 Italian Voice (講稿1)：==========
 
 Ciao! {{pause=500}}
 Salve! {{pause=500}}
@@ -53,6 +42,18 @@ Buongiorno! {{pause=500}}
 Buon pomeriggio!  {{pause=500}}
 Buonasera! {{pause=500}}
 Buonanotte! {{pause=500}}
+
+========== 🩷🩷 3
+(頁面)：如上
+
+==========🎤 Italian Voice (講稿1)：==========
+
+Italian has different ways to greet people  {{pause=500}}
+depending on the time of day  {{pause=500}}
+and the level of formality.  {{pause=500}}
+Mastering these simple greetings  {{pause=500}}
+will allow you to start any conversation confidently. {{pause=500}}
+Let's read these words together! {{pause=500}}
 
 
 ========== 🩷🩷 4
@@ -164,7 +165,7 @@ Say this when someone is heading out during the day. {{pause=1000}}
 Buona serata! {{pause=1000}}
 And this one is used in the evening — polite and warm. {{pause=1000}}
 
-========== 🩷🩷 6
+========== 🩷🩷 7
 
 (頁面)：都是一樣的只是改 lesson x - 而已
 
@@ -180,10 +181,26 @@ subscribe, put a like, and check out the next videos!
 Bye, thank you, see you!
 
 
-==========🎤 ItVoice (講稿)：==========
+==========🎤 Italian (講稿)：==========
 
 【基本上都一樣 】
 Bravissimo!  {{pause=1000}}
 Grazie per aver imparato con me! {{pause=800}}
 Non dimenticare: Iscriviti, metti un like, e guarda i prossimi video! {{pause=1000}}
 Ciao, grazie, arrivederci!  {{pause=1000}}
+
+
+========== 🩷🩷 8
+
+(頁面)：都是一樣
+
+Click the practice song 
+ and listen
+
+you’ll remember it naturally!  
+
+==========🎤 English (講稿)：==========
+Now click the song video — and just sing it twice!   {{pause=500}}  
+You’ll remember these words without even trying.  {{pause=500}}
+
+
