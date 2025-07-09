@@ -107,7 +107,7 @@ Are you ready? {{pause=300}} Let’s discover them together! 🇮🇹 {{pause=50
 
 IT (Italian voiceover):~~~~~~~~~~~~~~
 Arrivederci {{pause=1000}}
-Ciao {{pause=1000}}
+Ciao ciao {{pause=1000}}
 A dopo {{pause=1000}}
 A più tardi {{pause=1000}}
 A domani {{pause=1000}}
@@ -161,9 +161,10 @@ Bravo!!
 Thanks for learning with me!
 
 Don’t forget:
-Subscribe, put a like, and check out the next videos!
+subscribe, put a like, and check out the next videos!
 
 Bye, thank you, see you!
+
 
 IT (Italian voiceover):~~~~~~~~~~~~~~
 Bravissimo! {{pause=1000}}

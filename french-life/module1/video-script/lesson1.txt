@@ -1,7 +1,7 @@
 🎬 French Lesson 1 – Greetings & Goodbyes (Level 1)
 
-========== 🩷🩷 1
-(頁面1)：
+🩷🩷 Slide 1 *************************
+ *************** TEXT: ***************
 
 🎬 French Lesson 1 - Greetings & Goodbyes
 
@@ -22,9 +22,8 @@ you’ll be able to start any conversation with confidence. {{pause=500}}
 So — let’s discover what these beautiful words mean…
 and say them together! {{pause=800}}
 
-========== 🩷🩷 2
-
-(頁面)：
+🩷🩷 Slide 2 *************************
+ *************** TEXT: ***************
 
 Salut ! – Hi / Bye
 Bonjour ! – Good morning / Hello
@@ -40,8 +39,9 @@ Bonsoir ! {{pause=500}}
 Bonne nuit ! {{pause=500}}
 
 
-========== 🩷🩷 3
-(頁面)：如上
+🩷🩷 Slide 3 *************************
+ *************** TEXT: ***************
+如上
 
 ==========🎤 English Voice (講稿)：==========
 French has different ways to greet people {{pause=500}}
@@ -52,8 +52,8 @@ will allow you to start any conversation confidently. {{pause=500}}
 Let’s read these words together! {{pause=500}}
 
 
-========== 🩷🩷 4
-(頁面)：
+🩷🩷 Slide 4 *************************
+ *************** TEXT: ***************
 
 Lesson 1
 Greetings in everyday French
@@ -71,9 +71,10 @@ Up next: we’ll learn 13 different ways to say goodbye in French {{pause=500}}
 Are you ready? {{pause=300}}  Let’s discover them together! 🇮🇹 {{pause=500}}
 
 
-========== 🩷🩷 5
+🩷🩷 Slide 5 *************************
+ *************** TEXT: ***************
 
-(頁面)：
+
 👋 General Goodbyes
 Au revoir – Goodbye (standard and polite)
 Salut – Bye (informal, also means "hi")
@@ -122,9 +123,10 @@ Bonne journée {{pause=1000}}
 Bonne soirée {{pause=1000}}
 
 
-========== 🩷🩷 6
+🩷🩷 Slide 6 *************************
+ *************** TEXT: ***************
 
-(頁面)：如上
+如上
 
 ==========🎤 English Voice (講稿)：==========
 Au revoir {{pause=1000}}

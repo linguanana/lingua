@@ -162,5 +162,7 @@ TEXT:
 and listen —
 you’ll remember it naturally!
 
-IT:
-Want to make it stick? Click the song link and sing along! Let's go
+EN:
+Take a little break — click the song video  {{pause=500}}and sing along!
+Listen a few times and the words will stay with you. {{pause=500}}
+Let's go {{pause=500}}
