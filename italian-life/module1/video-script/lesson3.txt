@@ -1,0 +1,226 @@
+🩷🩷 Slide 1 *************************
+ *************** TEXT: ***************
+ [slide-1]
+TEXT:
+🎬 Lesson 3
+Polite Words & Greetings in Italian
+
+Part 1: Everyday Polite Words
+Part 2: Responding Politely & Addressing Others
+
+
+EN:
+Welcome! {{pause=1000}}
+Today we’re learning how to be polite in Italian — with simple, everyday words and respectful phrases. {{pause=1000}}
+Perfect for greetings, small talk, and good manners! {{pause=1000}}
+
+🩷🩷 Slide 2*************************
+ *************** TEXT: ***************
+[slide-2]
+TEXT:
+Grazie – Thank you
+Grazie mille – Thank you very much
+Prego – You’re welcome
+Per favore – Please
+Scusa – Excuse me / Sorry (informal)
+Scusi – Excuse me / Sorry (formal)
+Mi scusi – Excuse me (more polite)
+Di niente – No problem / Don’t mention it
+Signore – Mr. / Sir
+Signora – Mrs. / Madam / older woman
+
+IT:
+Grazie {{pause=1000}}
+Grazie mille {{pause=1000}}
+Prego {{pause=1000}}
+Per favore {{pause=1000}}
+Scusa {{pause=1000}}
+Scusi {{pause=1000}}
+Mi scusi {{pause=1000}}
+Di niente {{pause=1000}}
+Signore {{pause=1000}}
+Signora {{pause=1000}}
+
+🩷🩷 Slide 3 *************************
+ *************** TEXT: ***************
+[slide-3]
+TEXT:
+same as [slide-2] TEXT:
+
+EN:
+Let’s learn when to use each polite word in Italian. {{pause=2000}}
+
+{{pause=2000}}“Grazie” and “Grazie mille”{{pause=2000}}
+They both mean “thank you.”
+You can use either one — they’re both great! {{pause=1000}}
+
+---
+
+{{pause=2000}}“Prego”{{pause=2000}}
+is the classic way to say “you’re welcome.”
+You’ll hear it right after you say {{pause=1000}} “Grazie.” {{pause=1000}}
+
+But actually, {{pause=2000}}Prego{{pause=2000}} can mean a few things.
+It also works when someone invites you to go first — like holding a door open.
+Or if you say “Can I sit here?”, they might reply {{pause=2000}}Prego!{{pause=2000}} — meaning “Go ahead!” {{pause=1000}}
+
+So if you hear {{pause=2000}}Prego{{pause=2000}} don’t panic —
+It just means the other person is being polite! 😄 {{pause=1000}}
+
+---
+
+{{pause=2000}}“Per favore”{{pause=2000}}
+means “please.”
+Use it when you ask for something politely.
+It’s simple — just add it at the end of a request. {{pause=1000}}
+{{pause=2000}}“Scusa”{{pause=2000}}
+is informal — say it with friends or younger people.
+It means “excuse me” or “sorry.” {{pause=1000}}
+
+{{pause=2000}}“Scusi”{{pause=2000}}
+is formal — use it with strangers or older people.
+For example, in a restaurant or on the street. {{pause=1000}}
+
+{{pause=2000}}“Mi scusi”{{pause=2000}}
+is even more polite.
+Use it when you’re trying to get someone’s attention. {{pause=1000}}
+
+If you bump into someone — just say {{pause=2000}}Scusa!{{pause=2000}}
+If you need to ask something politely — try {{pause=2000}} Mi scusi.” {{pause=1000}}
+
+{{pause=2000}}“Di niente”{{pause=2000}}
+means “no problem” or “don’t mention it.”
+It’s another way to say “you’re welcome.” {{pause=1000}}
+
+You might also hear people say this casually — after you thank them. {{pause=1000}}
+{{pause=2000}}“Signore”{{pause=2000}}
+means “Mr.” or “Sir.”
+{{pause=2000}}“Signora”{{pause=2000}}
+means “Mrs.” or “Ma’am.”
+
+
+
+🩷🩷 Slide 4 *************************
+ *************** TEXT: ***************
+[slide-4]
+TEXT:
+🎬 Lesson 3
+Polite Words & Greetings in Italian
+
+Part 2: Responding Politely & Meeting People
+
+EN:
+Great job so far! {{pause=500}}
+You’ve just completed Part 1 of our polite words lesson. 🎉 {{pause=500}}
+Let’s keep going with more polite ways to respond in Italian. {{pause=1500}}
+Sometimes you don’t understand something, or you meet someone for the first time.
+Here’s how to be polite in those situations. {{pause=1000}}
+
+
+🩷🩷 Slide 5 *************************
+ *************** TEXT: ***************
+ TEXT:
+ Non capisco. – I don't understand
+ Può ripetere, per favore? – Can you repeat, please?
+ Mi dispiace molto. – I'm very sorry
+
+ Piacere! – Nice to meet you
+ Piacere di conoscerti – Nice to meet you (informal)
+ Piacere di conoscerla – Nice to meet you (formal)
+ Con piacere. – With pleasure
+
+ IT:
+ Non capisco {{pause=1000}}
+ Può ripetere, per favore? {{pause=1000}}
+ Mi dispiace molto {{pause=1000}}
+ Piacere! {{pause=1000}}
+ Piacere di conoscerti {{pause=1000}}
+ Piacere di conoscerla {{pause=1000}}
+ Con piacere {{pause=1000}}
+
+
+
+🩷🩷 Slide 6 *************************
+ *************** TEXT: ***************
+TEXT:
+same as [slide-2]
+
+EN:
+
+{{pause=2000}}“Non capisco”{{pause=2000}}
+means “I don’t understand.”
+Use this when you’re confused — or when someone speaks too fast! {{pause=1000}}
+
+{{pause=2000}}“Può ripetere, per favore?”{{pause=2000}}
+means “Can you repeat, please?”
+It’s a very polite way to ask someone to say it again.
+Perfect in shops, cafés, or on the street. {{pause=1000}}
+
+{{pause=2000}}“Mi dispiace molto”{{pause=2000}}
+means “I’m very sorry.”
+It’s stronger than just “sorry.”
+You can use it when something bad happens, or to express sympathy. {{pause=1000}}
+
+Now let’s look at polite phrases for meeting someone. {{pause=1000}}
+
+{{pause=2000}}“Piacere!”{{pause=2000}}
+means “Nice to meet you.”
+It’s simple and friendly — just say it with a smile. {{pause=1000}}
+
+{{pause=2000}}“Piacere di conoscerti”{{pause=2000}}
+is the full version — and it’s informal.
+Say it when you meet someone your age, or a friend of a friend. {{pause=1000}}
+
+{{pause=2000}}“Piacere di conoscerla”{{pause=2000}}
+is the formal version.
+Use it when meeting someone older, or in a professional setting. {{pause=1000}}
+
+{{pause=2000}}“Con piacere”{{pause=2000}}
+means “With pleasure.”
+It’s a polite response if someone says “Would you like to...?” or “Can you help me?”
+Like saying “Gladly” or “Sure, happy to!” {{pause=1000}}
+
+---
+
+These polite expressions are short, easy, and powerful. {{pause=1000}}
+They help you communicate — even when you don’t understand everything! {{pause=1000}}
+Well done — and let’s keep going! 🇮🇹 {{pause=1000}}
+
+🩷🩷 Slide 7 *************************
+ *************** TEXT: ***************
+[slide-7]
+TEXT:
+🎬 Lesson 3
+Polite Words & Greetings in Italian
+
+Bravo!!
+Thanks for learning with me!
+
+Don’t forget:
+subscribe, put a like, and check out the next videos!
+
+Bye, thank you, see you!
+
+IT:
+Bravissimo! {{pause=1000}}
+Grazie per aver imparato con me! {{pause=800}}
+Non dimenticare: Iscriviti, metti un like, e guarda i prossimi video! {{pause=1000}}
+Ciao ciao, grazie, arrivederci! {{pause=1000}}
+
+
+🩷🩷 Slide 8 *************************
+ *************** TEXT: ***************
+[slide-8]
+TEXT:
+
+🎬 Lesson 3
+Polite Words & Greetings in Italian
+
+🎵 Practice with the song!
+and listen —
+you’ll remember it naturally!
+
+EN:
+Take a little break — click the song video  {{pause=500}}and sing along!
+Listen a few times and the words will stay with you. {{pause=500}}
+Let's go {{pause=500}}

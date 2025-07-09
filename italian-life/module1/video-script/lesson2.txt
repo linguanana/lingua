@@ -1,7 +1,9 @@
-[slide-1]
+🩷🩷 Slide 1 *************************
+ *************** TEXT: ***************
+ [slide-1]
 TEXT:
 🎬 Lesson 1
-Greetings in Everyday Italian
+ Say “How Are You?” and Respond in Italian
 Part 1: How to Ask "How are you?"
 Part 2: How to Answer "How are you?"
 
@@ -10,24 +12,24 @@ Welcome! {{pause=1000}}
 Today you’ll learn how to ask and answer "How are you?" in Italian — for both casual and polite situations. {{pause=1000}}
 Let’s get started! {{pause=1000}}
 
-
+🩷🩷 Slide 2*************************
+ *************** TEXT: ***************
 [slide-2]
 TEXT:
 Come stai? - How are you?
 Come sta? = How are you? (formal)
 Come va? = How’s it going?
-Bene = I’m good / Fine
-Così così = So-so
+Tutto bene? – Everything good?
 
 IT:
-{{pause=2000}}{{pause=2000}}
 Come stai? {{pause=1000}}
 Come sta? {{pause=1000}}
 Come va? {{pause=1000}}
-Bene {{pause=1000}}
-Così così {{pause=1000}}
+Tutto bene? {{pause=1000}}
 
 
+🩷🩷 Slide 3 *************************
+ *************** TEXT: ***************
 [slide-3]
 TEXT:
 same as [slide-2] TEXT:
@@ -44,17 +46,16 @@ is the polite version — use it in formal situations. {{pause=1000}}
 {{pause=2000}}“Come va?”{{pause=2000}}
 is friendly and can be used almost anytime. {{pause=1000}}
 
-If someone asks you how you are, you can say
-{{pause=2000}}“Bene”{{pause=2000}} — I’m good. {{pause=1000}}
-Or
-{{pause=2000}}“Così così”{{pause=2000}}
-which means “so-so.” {{pause=1000}}
+{{pause=2000}}“Tutto bene?”{{pause=2000}}
+means “Everything good?” — it’s often used if someone looks a bit tired or upset,
+or just to gently check in. {{pause=1000}}
 
-
+🩷🩷 Slide 4 *************************
+ *************** TEXT: ***************
 [slide-4]
 TEXT:
 🎬 Lesson 2
-Greetings in Everyday Italian
+ Say “How Are You?” and Respond in Italian
 
 Part 2: How to Answer "How are you?"
 
@@ -65,80 +66,56 @@ Up next: we’ll learn how to answer when someone asks, "How are you?" in Italia
 Are you ready? {{pause=300}} Let’s continue together! 🇮🇹 {{pause=500}}
 
 
+🩷🩷 Slide 5 *************************
+ *************** TEXT: ***************
 [slide-5]
-TEXT:
-Sto bene. - I’m fine
-Tutto bene? - Everything okay?
-Come va? - How’s it going?
-Stai bene? - Are you okay?
-Grazie! - Thank you!
-Grazie mille! - Thank you very much!
-Sto benissimo! - I’m great!
-Così così. - So-so
-Non molto bene. - Not very well
-Sono stanco / stanca. - I’m tired
-E tu? - And you?
+Bene – I’m good / Fine
+Molto bene – Very good
+Sto bene – I’m fine
+Sto benissimo! – I’m great!
+Così così – So-so
+Non molto bene – Not very well
+Sono stanco / stanca – I’m tired
+E tu? – And you?
 
 IT:
-{{pause=2000}}{{pause=2000}}
-Sto bene. {{pause=1000}}
-Tutto bene? {{pause=1000}}
-Come va? {{pause=1000}}
-Stai bene? {{pause=1000}}
-Grazie! {{pause=1000}}
-Grazie mille! {{pause=1000}}
+Bene {{pause=1000}}
+Molto bene {{pause=1000}}
+Sto bene {{pause=1000}}
 Sto benissimo! {{pause=1000}}
-Così così. {{pause=1000}}
-Non molto bene. {{pause=1000}}
-Sono stanco. {{pause=1000}}
-Sono stanca. {{pause=1000}}
+Così così {{pause=1000}}
+Non molto bene {{pause=1000}}
+Sono stanco / Sono stanca {{pause=1000}}
 E tu? {{pause=1000}}
 
 
-[slide-6]
+
+🩷🩷 Slide 6 *************************
+ *************** TEXT: ***************
 TEXT:
-Lesson – Part 2: How to Answer "How are you?" in Italian
+same as [slide-2]
 
 EN:
-Let’s go a bit further with common responses. {{pause=1000}}
 
-You can say
-{{pause=2000}}"Sto bene"{{pause=2000}} — I’m fine. {{pause=1000}}
-
-{{pause=2000}}"Tutto bene?"{{pause=2000}}
-means {{pause=2000}}“Everything okay?”{{pause=2000}} — good for checking in. {{pause=1000}}
-
-{{pause=2000}}"Come va?"{{pause=2000}}
-you’ve seen already — it works both ways. {{pause=1000}}
-
-{{pause=2000}}“Stai bene?”{{pause=2000}}
-is more direct — used when someone looks unwell. {{pause=1000}}
-
-{{pause=2000}}"Grazie"{{pause=2000}}
-means thank you — and
-{{pause=2000}}“Grazie mille!”{{pause=2000}} means thank you very much. {{pause=1000}}
-
-If you’re feeling fantastic, say
-{{pause=2000}}“Sto benissimo!”{{pause=2000}}
-
-Still just okay? You can repeat
-{{pause=2000}}“Così così.”{{pause=2000}}
-
-Not doing well?
-Try {{pause=2000}}“Non molto bene.”{{pause=2000}} {{pause=1000}}
-
-If you’re tired,
-say {{pause=2000}}“Sono stanco”{{pause=2000}} — or
-{{pause=2000}}“stanca”{{pause=2000}} if you’re a woman. {{pause=1000}}
-
-And to ask the other person, simply say:
+If someone asks how you are, you can say…
+{{pause=2000}}“Bene”{{pause=2000}} — I’m good. {{pause=1000}}
+{{pause=2000}}“Molto bene”{{pause=2000}} — Very good. {{pause=1000}}
+{{pause=2000}}“Sto bene”{{pause=2000}} — I’m fine. {{pause=1000}}
+{{pause=2000}}“Sto benissimo!”{{pause=2000}} — I’m great! {{pause=1000}}
+{{pause=2000}}“Così così”{{pause=2000}} — So-so. {{pause=1000}}
+{{pause=2000}}“Non molto bene”{{pause=2000}} — Not very well. {{pause=1000}}
+If you’re tired, say
+{{pause=2000}}“Sono stanco”{{pause=500}} or
+{{pause=2000}}“Sono stanca”{{pause=2000}} if you’re a woman. {{pause=1000}}
+And to ask back, just say:
 {{pause=2000}}“E tu?”{{pause=2000}} — And you? {{pause=1000}}
 
-
+🩷🩷 Slide 7 *************************
+ *************** TEXT: ***************
 [slide-7]
 TEXT:
 🎬 Lesson 2
-Greetings in Everyday Italian
+ Say “How Are You?” and Respond in Italian
 
 Bravo!!
 Thanks for learning with me!
@@ -155,8 +132,13 @@ Non dimenticare: Iscriviti, metti un like, e guarda i prossimi video! {{pause=10
 Ciao ciao, grazie, arrivederci! {{pause=1000}}
 
 
+🩷🩷 Slide 8 *************************
+ *************** TEXT: ***************
 [slide-8]
 TEXT:
+
+🎬 Lesson 2
+ Say “How Are You?” and Respond in Italian
 
 🎵 Practice with the song!
 and listen —
