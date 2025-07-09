@@ -196,7 +196,7 @@ For example, leaving a dinner or event. {{pause=1000}}
 
 
 
-🩷🩷 Slide 17*************************
+🩷🩷 Slide 7*************************
  *************** TEXT: ***************
 
 Lesson 1
@@ -223,7 +223,7 @@ N’oublie pas : abonne-toi, mets un like, et regarde les prochaines vidéos ! {
 Salut, merci, à bientôt ! {{pause=1000}}
 
 
-🩷🩷 Slide 1 *************************
+🩷🩷 Slide 8 *************************
  *************** TEXT: ***************
 
  Lesson 1
