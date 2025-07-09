@@ -27,7 +27,9 @@ you’ll be able to start any conversation with confidence. {{pause=500}}
 So — let’s go to Italy, discover what these beautiful words mean…
 and say them together! {{pause=500}}
 
-========== 🩷🩷 Slide 2
+
+
+================== 🩷🩷 Slide 2
 (slide 2) ~~~~~~~~~~~~
 
 Ciao! – Hi / Hello / Bye
@@ -46,7 +48,8 @@ Buon pomeriggio!  {{pause=500}}
 Buonasera! {{pause=500}}
 Buonanotte! {{pause=500}}
 
-========== 🩷🩷 Slide 3
+
+================== 🩷🩷 Slide 3
 (slide 3) ~~~~~~~~~~~~
 如上
 
@@ -84,7 +87,7 @@ It’s warm, soft, and full of care.  {{control=happy,1}}
 
 
 
-========== 🩷🩷 Slide 4
+================== 🩷🩷 Slide 4
 (slide 4) ~~~~~~~~~~~~
 
 Lesson 1
@@ -104,7 +107,9 @@ You’ve just completed your first Italian lesson. 🎉 {{pause=500}}
 Up next: we’ll learn 12 different ways to say goodbye in Italian. {{pause=500}}
 Are you ready? {{pause=300}}   Let’s discover them together! 🇮🇹 {{pause=500}}
 
-==========🎤 English Voice (講稿)：==========
+
+
+(Speech 4 - English 講稿) ~~~~~~~~~~~
 
 Great job today! {{pause=500}}
 You’ve just completed your first Italian lesson. 🎉 {{pause=500}}
@@ -113,7 +118,8 @@ Up next: we’ll learn 12 different ways to say goodbye in Italian. {{pause=500}
 Are you ready? {{pause=300}}  Let’s discover them together! 🇮🇹 {{pause=500}}
 
 
-========== 🩷🩷 Slide 6
+
+================== 🩷🩷 Slide 5
 
 (頁面)：
 👋 Arrivederci – Goodbye
@@ -133,7 +139,7 @@ Are you ready? {{pause=300}}  Let’s discover them together! 🇮🇹 {{pause=5
 🌞 Buona giornata! – Have a good day
 🌆 Buona serata! – Have a good evening
 
-==========🎤 Italian Voice (講稿)：==========
+(Speech 5 - Italian 講稿) ~~~~~~~~~~~
 
 Arrivederci {{pause=1000}}
 Ciao {{pause=1000}}
@@ -152,12 +158,14 @@ Ci sentiamo {{pause=1000}}
 Buona giornata {{pause=1000}}
 Buona serata {{pause=1000}}
 
-========== 🩷🩷 Slide 7
+
+
+================== 🩷🩷 Slide 6
 
 (頁面)：如上
 
 
-==========🎤 English Voice (講稿)：==========
+(Speech 6 - English 講稿) ~~~~~~~~~~~
 
 Arrivederci {{pause=1000}}
 — a very common goodbye. {{pause=500}}
@@ -203,9 +211,13 @@ Say this when someone is heading out during the day. {{pause=1000}}
 Buona serata! {{pause=1000}}
 And this one is used in the evening — polite and warm. {{pause=1000}}
 
-========== 🩷🩷 Slide 8
 
+
+================== 🩷🩷 Slide 7
+
+(頁面)：如上
 (頁面)：都是一樣的只是改 lesson x - 而已
+
 
 Lesson 1
 Greetings in everyday Italian
@@ -218,8 +230,7 @@ subscribe, put a like, and check out the next videos!
 
 Bye, thank you, see you!
 
-
-==========🎤 Italian Voice (講稿)：==========
+(Speech 7 - Italian 講稿) ~~~~~~~~~~~
 
 
 Bravissimo!  {{pause=1000}}
@@ -227,13 +238,17 @@ Grazie per aver imparato con me! {{pause=800}}
 Non dimenticare: Iscriviti, metti un like, e guarda i prossimi video! {{pause=1000}}
 Ciao ciao, grazie, arrivederci!  {{pause=1000}}
 
-========== 🩷🩷 7
-
-(頁面)：如上
 
 
-==========🎤 English Voice (講稿)：==========
+================== 🩷🩷 Slide 8
 
+(頁面)：都是一樣
 
-Now click the video — and just sing it twice!
-Your brain remembers it without even trying! 🎶
+Click the practice song
+ and listen
+
+you’ll remember it naturally!
+
+(Speech 8 - English 講稿) ~~~~~~~~~~~
+Now click the song video — and just sing it twice!   {{pause=500}}
+You’ll remember these words without even trying.  {{pause=500}}
