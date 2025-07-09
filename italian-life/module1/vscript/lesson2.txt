@@ -1,0 +1,166 @@
+[slide-1]
+TEXT:
+🎬 Lesson 1
+Greetings in Everyday Italian
+Part 1: How to Ask "How are you?"
+Part 2: How to Answer "How are you?"
+
+EN:
+Welcome! {{pause=1000}}
+Today you’ll learn how to ask and answer "How are you?" in Italian — for both casual and polite situations. {{pause=1000}}
+Let’s get started! {{pause=1000}}
+
+
+[slide-2]
+TEXT:
+Come stai? - How are you?
+Come sta? = How are you? (formal)
+Come va? = How’s it going?
+Bene = I’m good / Fine
+Così così = So-so
+
+IT:
+{{pause=2000}}{{pause=2000}}
+Come stai? {{pause=1000}}
+Come sta? {{pause=1000}}
+Come va? {{pause=1000}}
+Bene {{pause=1000}}
+Così così {{pause=1000}}
+
+
+[slide-3]
+TEXT:
+same as [slide-2] TEXT:
+
+EN:
+Let’s look at different ways to ask and answer {{pause=2000}}“How are you?”{{pause=2000}} in Italian.
+
+{{pause=2000}}“Come stai?”{{pause=2000}}
+is casual — for friends or people your age. {{pause=1000}}
+
+{{pause=2000}}“Come sta?”{{pause=2000}}
+is the polite version — use it in formal situations. {{pause=1000}}
+
+{{pause=2000}}“Come va?”{{pause=2000}}
+is friendly and can be used almost anytime. {{pause=1000}}
+
+If someone asks you how you are, you can say
+{{pause=2000}}“Bene”{{pause=2000}} — I’m good. {{pause=1000}}
+Or
+{{pause=2000}}“Così così”{{pause=2000}}
+which means “so-so.” {{pause=1000}}
+
+
+[slide-4]
+TEXT:
+🎬 Lesson 2
+Greetings in Everyday Italian
+
+Part 2: How to Answer "How are you?"
+
+EN:
+Great job so far! {{pause=500}}
+You’ve just completed Part 1 of your Italian greetings lesson. 🎉 {{pause=500}}
+Up next: we’ll learn how to answer when someone asks, "How are you?" in Italian. {{pause=500}}
+Are you ready? {{pause=300}} Let’s continue together! 🇮🇹 {{pause=500}}
+
+
+[slide-5]
+TEXT:
+Sto bene. - I’m fine
+Tutto bene? - Everything okay?
+Come va? - How’s it going?
+Stai bene? - Are you okay?
+Grazie! - Thank you!
+Grazie mille! - Thank you very much!
+Sto benissimo! - I’m great!
+Così così. - So-so
+Non molto bene. - Not very well
+Sono stanco / stanca. - I’m tired
+E tu? - And you?
+
+IT:
+{{pause=2000}}{{pause=2000}}
+Sto bene. {{pause=1000}}
+Tutto bene? {{pause=1000}}
+Come va? {{pause=1000}}
+Stai bene? {{pause=1000}}
+Grazie! {{pause=1000}}
+Grazie mille! {{pause=1000}}
+Sto benissimo! {{pause=1000}}
+Così così. {{pause=1000}}
+Non molto bene. {{pause=1000}}
+Sono stanco. {{pause=1000}}
+Sono stanca. {{pause=1000}}
+E tu? {{pause=1000}}
+
+
+[slide-6]
+TEXT:
+Lesson – Part 2: How to Answer "How are you?" in Italian
+
+EN:
+Let’s go a bit further with common responses. {{pause=1000}}
+
+You can say
+{{pause=2000}}"Sto bene"{{pause=2000}} — I’m fine. {{pause=1000}}
+
+{{pause=2000}}"Tutto bene?"{{pause=2000}}
+means {{pause=2000}}“Everything okay?”{{pause=2000}} — good for checking in. {{pause=1000}}
+
+{{pause=2000}}"Come va?"{{pause=2000}}
+you’ve seen already — it works both ways. {{pause=1000}}
+
+{{pause=2000}}“Stai bene?”{{pause=2000}}
+is more direct — used when someone looks unwell. {{pause=1000}}
+
+{{pause=2000}}"Grazie"{{pause=2000}}
+means thank you — and
+{{pause=2000}}“Grazie mille!”{{pause=2000}} means thank you very much. {{pause=1000}}
+
+If you’re feeling fantastic, say
+{{pause=2000}}“Sto benissimo!”{{pause=2000}}
+
+Still just okay? You can repeat
+{{pause=2000}}“Così così.”{{pause=2000}}
+
+Not doing well?
+Try {{pause=2000}}“Non molto bene.”{{pause=2000}} {{pause=1000}}
+
+If you’re tired,
+say {{pause=2000}}“Sono stanco”{{pause=2000}} — or
+{{pause=2000}}“stanca”{{pause=2000}} if you’re a woman. {{pause=1000}}
+
+And to ask the other person, simply say:
+{{pause=2000}}“E tu?”{{pause=2000}} — And you? {{pause=1000}}
+
+
+[slide-7]
+TEXT:
+🎬 Lesson 2
+Greetings in Everyday Italian
+
+Bravo!!
+Thanks for learning with me!
+
+Don’t forget:
+subscribe, put a like, and check out the next videos!
+
+Bye, thank you, see you!
+
+IT:
+Bravissimo! {{pause=1000}}
+Grazie per aver imparato con me! {{pause=800}}
+Non dimenticare: Iscriviti, metti un like, e guarda i prossimi video! {{pause=1000}}
+Ciao ciao, grazie, arrivederci! {{pause=1000}}
+
+
+[slide-8]
+TEXT:
+
+🎵 Practice with the song!
+and listen —
+you’ll remember it naturally!
+
+IT:
+Want to make it stick? Click the song link and sing along! Let's go
