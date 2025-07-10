@@ -100,7 +100,7 @@ Are you ready? {{pause=300}} Let’s discover them together! 🇮🇹 {{pause=50
 📅 Alla prossima – Until next time
 📅 Alla prossima settimana! – See you next week
 🫶 A presto – See you soon (unspecified)
-👀 Ci vediamo – See you (in person)
+👀 Ci vediamo – See you (in person) | Ci vediamo domani | Ci vediamo presto
 📞 Ci sentiamo – Talk to you soon (phone or message)
 🌞 Buona giornata! – Have a good day
 🌆 Buona serata! – Have a good evening
@@ -115,6 +115,8 @@ Alla prossima {{pause=1000}}
 Alla prossima settimana {{pause=1000}}
 A presto {{pause=1000}}
 Ci vediamo {{pause=1000}}
+Ci vediamo domani {{pause=1000}}
+Ci vediamo presto {{pause=1000}}
 Ci sentiamo {{pause=1000}}
 Buona giornata {{pause=1000}}
 Buona serata {{pause=1000}}
@@ -124,33 +126,52 @@ Buona serata {{pause=1000}}
 (Same as Slide 5)
 
 EN (English narration):~~~~~~~~~~~~~~
-Arrivederci — a very common goodbye. {{pause=500}}
-Use it in restaurants, hotels, or shops. {{pause=1000}}
+{{pause=1000}}Arrivederci {{pause=1000}} is a very common goodbye. {{pause=500}}
+You’ll hear it everywhere — on the street, in stores, even when leaving a café. {{pause=1000}}
+It’s polite and neutral, so you can use it with anyone, anytime. {{pause=1000}}
+{{pause=1000}Arrivederci{{pause=1000} isn’t just a goodbye {{pause=500}}
+There’s even a famous song called {{pause=1000}Arrivederci{{pause=1000} Roma {{pause=500}}
+“Goodbye, Rome.” {{pause=1000}}
+It talks about saying goodbye to the city,
+and to someone you’ve just met… under the Roman sky. {{pause=1000}}
+So when you say {{pause=1000}}Arrivederci{{pause=1000}}
+you’re not just being polite , you’re speaking with a bit of Italian soul.
 
-Ciao! This one is casual — perfect with friends. {{pause=1000}}
 
-A dopo — you’ll see this person again today. {{pause=1000}}
-It’s used when you’re not sure what time. {{pause=1000}}
+{{pause=1000}}Ciao{{pause=1000}} This one is casual — perfect with friends. {{pause=1000}}
 
-A più tardi! It means “later today” and feels more specific. {{pause=1000}}
+{{pause=1000}}A dopo{{pause=1000}} — you’ll see this person again today. {{pause=1000}}
+It’s used when you’re not sure what time. {{pause=500}} It’s like saying, “Catch you later!” {{pause=1000}}
+
+{{pause=1000}}A più tardi!{{pause=1000}} It means “later today” and feels more specific. {{pause=1000}}
 For example: you go out for lunch but will come back to work —
 so you say: {{control=happy,1}} “A più tardi!” {{pause=1000}}
 
-A domani — for when you’ll see someone tomorrow. {{pause=1000}}
+{{pause=1000}}A domani {{pause=1000}} for when you’ll see someone tomorrow. {{pause=1000}}
 
-Alla prossima — “until next time,” open-ended. {{pause=1000}}
+{{pause=1000}} Alla prossima {{pause=1000}}— “until next time,” open-ended.
+you don’t know when, but you’ll meet again. {{pause=1000}}
 
-Alla prossima settimana — for next week. {{pause=1000}}
+{{pause=1000}} Alla prossima settimana {{pause=1000}} — for next week. {{pause=1000}}
+Use it if you meet someone every week — maybe at a class, or a market. {{pause=1000}}
 
-A presto — soft and kind. It means “soon,” without saying when. {{pause=1000}}
+{{pause=1000}}A presto{{pause=1000}}
+You use it when you hope — or expect — to see the person soon. {{pause=1000}}
+For example, you can say {{pause=1000}}A presto{{pause=1000}} at a coffee bar if you go there often. {{pause=1000}}
+It’s a warm way to say “see you soon.” {{pause=1000}} Otherwise, just say {{pause=1000}}Arrivederci{{pause=1000}} or {{pause=1000}}Buona giornata{{pause=1000}} to keep it polite. {{pause=1000}}
 
-Ci vediamo — when you’ll see them in person. {{pause=1000}}
+{{pause=1000}}Ci vediamo{{pause=1000}} — it means “See you.” {{pause=1000}}
+It’s short, friendly, and used a lot. {{pause=1000}}
+If you want to add when, you can say:
+{{pause=1000}}Ci vediamo domani {{pause=1000}} — See you tomorrow. {{pause=1000}}
+Or {{pause=1000}}Ci vediamo presto{{pause=1000}} — See you soon. {{pause=1000}}
 
-Ci sentiamo — for calls or messages. Like “Talk soon!” {{pause=1000}}
 
-Buona giornata! — say it when someone’s heading out for the day. {{pause=1000}}
+{{pause=1000}}Ci sentiamo{{pause=1000}} — for calls or messages. Like “Talk soon!” {{pause=1000}}
 
-Buona serata! — say this in the evening. Polite and warm. {{pause=1000}}
+{{pause=1000}}Buona giornata!{{pause=1000}} — say it when someone’s heading out for the day. {{pause=1000}}
+
+{{pause=1000}}Buona serata!{{pause=1000}} — say this in the evening. Polite and warm. {{pause=1000}}
 
 🩷🩷 Slide 7 *************************
  *************** TEXT: ***************

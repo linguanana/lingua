@@ -36,11 +36,11 @@ Bonsoir ! – Good evening
 Bonne nuit ! – Good night
 
 ==========🎤 French Voice (講稿1)：==========
-Salut ! {{pause=1000}}
-Bonjour ! {{pause=1000}}
-Bon après-midi ! {{pause=1000}}
-Bonsoir !{{pause=1000}}
-Bonne nuit !{{pause=1000}}
+Salut ! {{pause=500}}
+Bonjour ! {{pause=500}}
+Bon après-midi ! {{pause=500}}
+Bonsoir ! {{pause=500}}
+Bonne nuit ! {{pause=500}}
 
 
 🩷🩷 Slide 3 *************************
@@ -211,25 +211,10 @@ subscribe, put a like, and check out the next videos!
 Bye, thank you, see you!
 
 
-🩷🩷 Slide 7*************************
- *************** TEXT: ***************
+==========🎤 French (講稿)：==========
 
 Lesson 1
 Greetings in everyday French
-
-Super!!
-Thanks for learning with me!
-
-Don’t forget:
-subscribe, put a like, and check out the next videos!
-
-Bye, thank you, see you!
-
-
-==========🎤 French (講稿)：==========
-
-Lesson  (跟第一張一樣)
-x x x x x x x x x x x x
 
 
 Super ! {{pause=1000}}
@@ -241,8 +226,8 @@ Salut, merci, à bientôt ! {{pause=1000}}
 🩷🩷 Slide 8 *************************
  *************** TEXT: ***************
 
- Lesson  (跟第一張一樣)
- x x x x x x x x x x x x
+ Lesson 1
+ Greetings in everyday French
 
  Super!!
  Thanks for learning with me!

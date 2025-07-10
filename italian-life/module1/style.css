@@ -1,0 +1,177 @@
+/* style.css */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.2;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #fff;
+  max-width: 650px; /* 從 800px 調整為 700px，約縮小 12.5% */
+  margin: 0 auto;  /* ⬅️ 自動左右置中 */
+  padding: 20px;
+  /* --- 以下是主要的修改 --- */
+  margin: 25px auto;  /* 上下留白更多，左右自動置中 */
+  padding: 20px 25px; /* 左右內邊距稍微多一點，讓內容不頂到邊 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* 增加柔和的陰影 */
+  border-radius: 10px; /* 增加圓角 */
+  /* --- 主要修改結束 --- */
+}
+body *:lang(zh-TW) {
+  font-size: 0.7rem; /* 從 0.92rem 調整為 0.7rem，約縮小 20% */
+}
+
+h1, h2, h3 {
+  margin-top: 0.1em;
+  font-family: 'Noto Sans', sans-serif; /* 統一字體 */
+  font-weight: 600;
+  color: #222;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+h2 {
+  margin-bottom: 1em;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #6a9acb; /* 二級標題使用主頁的藍色 */
+}
+h3 {
+  margin-bottom: 0.2em;
+  font-size: 1rem;
+  color: #333; /* 三級標題使用接近內文的顏色 */
+}
+
+/* --- 連結顏色和過渡效果調整 --- */
+a {
+  color: #6a9acb; /* 使用與主頁相同的藍色 orginal #0066cc;*/
+  text-decoration: none; /*none original */
+  transition: color 0.3s ease; /* 增加平滑過渡效果 */
+}
+a:hover {
+  color: #4a7aa3; /* 懸停時顏色變深一點 */
+  text-decoration: underline;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: 0.8em;
+}
+
+/* 表格樣式（選用） */
+table {
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+th, td {
+  border: 0.7px solid #ccc;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+.dialogue-box {
+  background-color: #fafafa;
+  border-left: 4px solid transparent; /* removed red bar */
+  /* border-left: 4px solid #6a9acb; /* 使用與主頁相同的藍色 */
+  padding: 10px 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  font-size: 0.95rem;
+  max-width: 600px; /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 往內縮 */
+.tip-box {
+  border-left: 4px solid transparent; /* removed red bar */
+  padding: 10px 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  font-size: 0.95rem;
+  max-width: 600px;  /* 注意：這裡的寬度設定，如果希望它比 body 窄，可以調整 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auto-list {
+  line-height: 1.3;
+  margin-top: 0.05em;
+  font-size: 0.95rem; /* 可依需要微調字體大小 */
+}
+
+h3 + .auto-list {
+  margin-top: 0.1em; /* Reduce space between h3 and the list */
+}
+
+.italian-word {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.small-audio {
+  transform: scale(1, 0.85); /* x 不變，y 軸壓扁 */
+  transform-origin: top;
+}
+ /* contreol space <p> */
+ .spacer-xs { margin-top: 4px; }
+ .spacer-sm { margin-top: 8px; }
+ .spacer-md { margin-top: 12px; }
+ .spacer-lg { margin-top: 20px; }
+
+/* this is for lesson level and lesson context ========= */
+
+.lesson-level {
+    /* Optional: You might want to add some margin-bottom here
+       to separate levels when they are all collapsed. */
+    margin-bottom: 5px;
+}
+
+.level-title {
+    cursor: pointer; /* Indicates it's clickable */
+    user-select: none; /* Prevents text selection on double-click */
+    /* Add any other styling for your clickable title, e.g., padding, background */
+    padding: 10px 12px; /* Example padding */
+    background-color: #f0f0f0; /* Light background for the title */
+    border-radius: 5px; /* Rounded corners for the title */
+    margin-bottom: 0; /* Remove default margin */
+    display: block; /* Ensure it takes full width for clicking */
+    position: relative; /* For potential arrow icon positioning */
+}
+
+/* Optional: Add a simple arrow indicator */
+.level-title::after {
+    content: '▼'; /* Down arrow */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.lesson-level.active .level-title::after {
+    content: '▲'; /* Up arrow when active */
+    transform: translateY(-50%) rotate(0deg); /* No rotation needed if using up/down arrows */
+}
+
+.level-content {
+    max-height: 0; /* Ensures it starts collapsed */
+    overflow: hidden; /* <<< THIS IS CRUCIAL FOR COLLAPSING CONTENT */
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth animation */
+    padding: 0px 12px; /* Collapsed padding */
+    background-color: #fff; /* Match body background or slightly different */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* The JavaScript adds the 'active' class to .lesson-level when expanded */
+.lesson-level.active .level-content {
+    /* max-height is set by JavaScript based on scrollHeight for smooth variable height */
+    padding: 10px 12px; /* Expanded padding, matches the JS setting */
+}
+
+/* this is for lesson level and lesson context ========= */
