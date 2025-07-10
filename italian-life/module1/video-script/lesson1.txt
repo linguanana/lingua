@@ -182,5 +182,16 @@ and listen —
 you’ll remember it naturally!
 
 EN (English narration):
-Now click the song video — and just sing it twice! {{pause=500}}
-You’ll remember these words without even trying. {{pause=500}
+In this lesson, we taught you many different ways to say goodbye —
+but don’t worry, you don’t need to remember them all right now. {{pause=1000}}
+
+We’re just helping you hear how real conversations sound.
+You’re still a beginner — and that’s perfect. {{pause=800}}
+
+Now click the song video — and just sing it twice! 🎵 {{pause=500}}
+You’ll remember the phrases naturally. {{pause=500}}
+
+Later, come back to this video,
+and you’ll see — it’s the exact same words. {{pause=500}}
+Your ears will recognize them right away.
+See you soon — ciao ciao! 👋

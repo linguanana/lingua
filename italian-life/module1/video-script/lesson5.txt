@@ -1,0 +1,130 @@
+🩷🩷 Slide 1 *************************
+ *************** TEXT: ***************
+[slide-1]
+TEXT:
+🎬 Lesson 5
+Where are you from? – Di dove sei?
+
+Part 1: Ask and Answer Where You’re From
+
+EN:
+Ciao! {{pause=500}}
+Today you’ll learn how to ask and answer {{pause=500}}“Where are you from?” in Italian.
+We’ll also learn how to say where someone is from — casually or politely.
+Let’s begin! 🇮🇹
+
+🩷🩷 Slide 2 *************************
+ *************** TEXT: ***************
+[slide-2]
+TEXT:
+Di dove sei? – Where are you from? (informal)
+Di dov’è? – Where are you from? (formal)
+Io sono di Milano – I’m from Milan
+Vengo da New York – I come from New York
+Sei italiano / italiana? – Are you Italian?
+No, sono americano / americana – No, I’m American
+
+IT:
+Di dove sei? {{pause=1000}}
+Di dov’è? {{pause=1000}}
+Io sono di Milano {{pause=1000}}
+Vengo da New York {{pause=1000}}
+Sei italiano? / italiana? {{pause=1000}}
+Sono americano / americana {{pause=1000}}
+
+🩷🩷 Slide 3 *************************
+ *************** TEXT: ***************
+
+ [slide-3]
+ TEXT:
+ same as Slide 2
+
+ EN:
+ {{pause=2000}}“Di dove sei?”{{pause=2000}}
+ means “Where are you from?” — it’s used informally. {{pause=1000}}
+
+ {{pause=2000}}“Di dov’è?”{{pause=2000}}
+ is the formal version — use it with someone you don’t know well. {{pause=1000}}
+
+ You can say:
+ {{pause=2000}}“Io sono di Milano”{{pause=2000}} — I’m from Milan.
+ Use **"Sono di..."** when you’re talking about a city. {{pause=1000}}
+
+ Or say:
+ {{pause=2000}}“Vengo da Taiwan”{{pause=2000}} — I come from Taiwan.
+ Use **"Vengo da..."** for countries or to emphasize where you come from. {{pause=1000}}
+
+ Examples:
+ {{pause=2000}}“Vengo da Taiwan”{{pause=2000}} — I come from Taiwan.
+ {{pause=2000}}“Vengo dagli Stati Uniti”{{pause=2000}} — I come from the United States. {{pause=1000}}
+
+ To ask if someone is Italian:
+ {{pause=2000}}“Sei italiano?” {{pause=500}} or {{pause=500}} “italiana?”{{pause=2000}}
+ depending on gender. {{pause=1000}}
+
+ If not, you might say:
+ {{pause=2000}}“No, sono americano”{{pause=2000}} — I’m American.
+ Or {{pause=2000}}“americana”{{pause=2000}} if you’re a woman.
+
+ 🩷🩷 Slide 4 *************************
+ *************** TEXT: ***************
+[slide-4]
+TEXT:
+🎬 Lesson 5
+Where are you from? & Where do you live?
+
+Part 2: Talking About Where You Live
+
+You might feel like it’s a lot to remember —
+but don’t worry! {{pause=500}}
+We’re focusing on real-life conversations,
+so just listen for now — you don’t need to memorize everything! {{pause=1000}}
+
+Later, when you listen to the song again,
+these phrases will start to stick. 🎵 {{pause=500}}
+Once the music helps you remember,
+you can come back and review this part. 💡 {{pause=500}}
+
+Ready? Let’s go! 🇮🇹
+
+🩷🩷 Slide 5 *************************
+ *************** TEXT: ***************
+[slide-5]
+TEXT:
+Dove abiti? – Where do you live? (informal)
+Dove vive? – Where do you live? (formal)
+Abito a Roma – I live in Rome
+Anch’io abito lì – I live there too
+In quale zona? – In which area?
+Da quanto tempo? – For how long?
+
+IT:
+Dove abiti? {{pause=1000}}
+Dove vive? {{pause=1000}}
+Abito a Roma {{pause=1000}}
+Anch’io abito lì {{pause=1000}}
+In quale zona? {{pause=1000}}
+Da quanto tempo? {{pause=1000}}
+
+🩷🩷 Slide 6 *************************
+ *************** TEXT: ***************
+[slide-6]
+TEXT:
+same as Slide 5
+
+EN:
+To ask someone where they live, say:
+{{pause=2000}}“Dove abiti?”{{pause=2000}} — informal.
+Or
+{{pause=2000}}“Dove vive?”{{pause=2000}} — the formal version. {{pause=1000}}
+
+If you live in a city, say:
+{{pause=2000}}“Abito a Roma”{{pause=2000}} — I live in Rome.
+And to respond with “me too,” say:
+{{pause=2000}}“Anch’io abito lì”{{pause=2000}} — I live there too. {{pause=1000}}
+
+Want to know more?
+Ask:
+{{pause=2000}}“In quale zona?”{{pause=2000}} — In which area?
+Or
+{{pause=2000}}“Da quanto tempo?”{{pause=2000}} — For how long have you lived there?
