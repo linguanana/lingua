@@ -20,7 +20,8 @@ TEXT:
 Di dove sei? – Where are you from? (informal)
 Di dov’è? – Where are you from? (formal)
 Io sono di Milano – I’m from Milan
-Vengo da New York – I come from New York
+Vengo dagli Stati Uniti – I come from the United States
+Vengo dalla California – I come from California
 Sei italiano / italiana? – Are you Italian?
 No, sono americano / americana – No, I’m American
 
@@ -28,7 +29,8 @@ IT:
 Di dove sei? {{pause=1000}}
 Di dov’è? {{pause=1000}}
 Io sono di Milano {{pause=1000}}
-Vengo da New York {{pause=1000}}
+Vengo dagli Stati Uniti {{pause=1000}}
+Vengo dalla Californi {{pause=1000}}
 Sei italiano? / italiana? {{pause=1000}}
 Sono americano / americana {{pause=1000}}
 
@@ -48,15 +50,15 @@ Sono americano / americana {{pause=1000}}
 
  You can say:
  {{pause=2000}}“Io sono di Milano”{{pause=2000}} — I’m from Milan.
- Use **"Sono di..."** when you’re talking about a city. {{pause=1000}}
+ Use {{pause=1000}}Sono di...{{pause=1000}} when you’re talking about a city. {{pause=1000}}
 
  Or say:
- {{pause=2000}}“Vengo da Taiwan”{{pause=2000}} — I come from Taiwan.
- Use **"Vengo da..."** for countries or to emphasize where you come from. {{pause=1000}}
+ {{pause=2000}}“Vengo dagli Stati Uniti”{{pause=2000}} — I come from the United States.
+ Use {{pause=1000}}Vengo da...{{pause=1000}} for countries or to emphasize where you come from. {{pause=1000}}
 
- Examples:
- {{pause=2000}}“Vengo da Taiwan”{{pause=2000}} — I come from Taiwan.
- {{pause=2000}}“Vengo dagli Stati Uniti”{{pause=2000}} — I come from the United States. {{pause=1000}}
+ Or more specifically:
+ {{pause=2000}}“Vengo dalla California”{{pause=2000}} — I come from California.
+ You can also say your city, region, or state. {{pause=1000}}
 
  To ask if someone is Italian:
  {{pause=2000}}“Sei italiano?” {{pause=500}} or {{pause=500}} “italiana?”{{pause=2000}}
@@ -93,10 +95,12 @@ Ready? Let’s go! 🇮🇹
 TEXT:
 Dove abiti? – Where do you live? (informal)
 Dove vive? – Where do you live? (formal)
+     abiti = you live (informal)|vive = you live (formal)
 Abito a Roma – I live in Rome
-Anch’io abito lì – I live there too
-In quale zona? – In which area?
-Da quanto tempo? – For how long?
+     abito = I live
+Anch’io abito lì – I live there too (Anch’io = me to, ì = there)
+In quale zona? – In which area? (quale= which)
+Da quanto tempo? – For how long? (quanto=how long)
 
 IT:
 Dove abiti? {{pause=1000}}
@@ -115,16 +119,65 @@ same as Slide 5
 EN:
 To ask someone where they live, say:
 {{pause=2000}}“Dove abiti?”{{pause=2000}} — informal.
-Or
+Or:
 {{pause=2000}}“Dove vive?”{{pause=2000}} — the formal version. {{pause=1000}}
 
-If you live in a city, say:
-{{pause=2000}}“Abito a Roma”{{pause=2000}} — I live in Rome.
-And to respond with “me too,” say:
-{{pause=2000}}“Anch’io abito lì”{{pause=2000}} — I live there too. {{pause=1000}}
+These questions are useful when you're getting to know someone.
+They sound polite, but still friendly. {{pause=1000}}
 
-Want to know more?
-Ask:
+If you live in a city, you can say:
+{{pause=2000}}“Abito a Roma”{{pause=2000}} — I live in Rome.
+Use {{pause=1000}}“Abito a…”{{pause=1000}} for cities and small towns. {{pause=1000}}
+
+And if someone says the same place as you, you might reply:
+{{pause=2000}}“Anch’io abito lì”{{pause=2000}} — I live there too! {{pause=1000}}
+
+Want to keep the conversation going? Try asking:
 {{pause=2000}}“In quale zona?”{{pause=2000}} — In which area?
-Or
-{{pause=2000}}“Da quanto tempo?”{{pause=2000}} — For how long have you lived there?
+or
+{{pause=2000}}“Da quanto tempo?”{{pause=2000}} — For how long have you lived there? {{pause=1000}}
+
+These are great phrases for small talk,  especially if you’re in a café or meeting someone new. {{pause=1000}}
+You’ve finished Lesson 5 — well done! {{pause=1000}}
+You’re learning real Italian for real conversations. {{pause=1000}}
+Let’s keep going — one step at a time. 🇮🇹 {{pause=1000}}
+
+
+🩷🩷 Slide 7 *************************
+ *************** TEXT: ***************
+[slide-7]
+TEXT:
+🎬 Lesson 4
+Come ti chiami? – What’s your name?
+
+Bravo!!
+Thanks for learning with me!
+
+Don’t forget:
+subscribe, put a like, and check out the next videos!
+
+Bye, thank you, see you!
+
+IT:
+Bravissimo! {{pause=1000}}
+Grazie per aver imparato con me! {{pause=800}}
+Non dimenticare: Iscriviti, metti un like, e guarda i prossimi video! {{pause=1000}}
+Ciao ciao, grazie, arrivederci! {{pause=1000}}
+
+
+🩷🩷 Slide 8 *************************
+ *************** TEXT: ***************
+[slide-8]
+TEXT:
+
+🎬 Lesson
+xxxxxxxxxxxxxxxxxxxxxx （跟第一張一樣）
+
+🎵 Practice with the song!
+and listen —
+you’ll remember it naturally!
+
+EN:
+We learned a lot of phrases today — but don’t worry if you can’t remember them all right away.
+Just listen to the song a few times, and it’ll all start to stick. 🎵
+Come back to review after singing, and you’ll be surprised how much you’ve picked up!
