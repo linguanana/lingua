@@ -39,13 +39,13 @@ same as Slide 2
 
 EN:
 {{pause=2000}}“Come ti chiami?”{{pause=2000}}
-means “What’s your name?” — it’s used with friends or people your age. {{pause=1000}}
+means “What’s your name?” {{pause=500}} it’s used with friends or people your age. {{pause=1000}}
 
 {{pause=2000}}“Come si chiama?”{{pause=2000}}
-is the formal version — use it with adults or in polite situations. {{pause=1000}}
+is the formal version , use it with adults or in polite situations. {{pause=1000}}
 
 {{pause=2000}}“Mi chiamo...”{{pause=2000}}
-means “My name is...” — you say your name right after. {{pause=1000}}
+means “My name is...” {{pause=500}} you say your name right after. {{pause=1000}}
 
 {{pause=2000}}“Sono...”{{pause=2000}}
 also means “I am...” — it’s a shorter way to say your name. {{pause=1000}}
@@ -98,21 +98,26 @@ same as Slide 5
 
 EN:
 {{pause=2000}}“Piacere!”{{pause=2000}}
-means “Nice to meet you!” — it’s short and friendly. {{pause=1000}}
+means “Nice to meet you!” {{pause=500}} it’s short and friendly. {{pause=1000}}
 
 {{pause=2000}}“Piacere di conoscerti”{{pause=2000}}
-is the full, informal version — say it to someone your age or in casual settings. {{pause=1000}}
+is the full, informal version {{pause=500}} say it to someone your age or in casual settings. {{pause=1000}}
 
 {{pause=2000}}“Piacere di conoscerla”{{pause=2000}}
-is formal — use it with adults or in respectful situations. {{pause=1000}}
+is formal . For example:
+When meeting your boss, a teacher, someone older or during interview,
+you can say {{pause=1000}}“Piacere di conoscerla”{{pause=1000}} to show respect.
 
 {{pause=2000}}“Anche a me”{{pause=2000}}
-means “Me too” — you can say this right after someone says “Piacere.” {{pause=1000}}
+means “Me too” — you can say this right after someone says {{pause=1000}}“Piacere.” {{pause=1000}}
 
 {{pause=2000}}“Come si scrive?”{{pause=2000}}
 means “How do you spell it?” — use it if you didn’t catch their name clearly. {{pause=1000}}
 
 {{pause=2000}}“Che bel nome!”{{pause=2000}}
+means “What a nice name!” {{pause=500}}
+It’s a sweet way to give someone a compliment. {{pause=1000}}
+If someone tells you their name and you like it, just smile and say {{pause=1000}}“Che bel nome!” 😊{{pause=1000}}
 
 
 
