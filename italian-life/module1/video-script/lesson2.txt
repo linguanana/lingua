@@ -38,31 +38,31 @@ TEXT:
 same as [slide-2] TEXT:
 
 EN:
-Let’s look at different ways to ask and answer {{pause=2000}}“How are you?”{{pause=2000}} in Italian.
+Let’s look at different ways to ask and answer {{pause=1000}}“How are you?”{{pause=1000}} in Italian.
 
-{{pause=2000}}Come stai?{{pause=2000}}
+{{pause=1000}}Come stai?{{pause=1000}}
 It means “How are you?” — casually. {{pause=500}}
 Use it with friends or people your age. {{pause=1000}}
 
-{{pause=2000}}Come sta?{{pause=2000}}
+{{pause=1000}}Come sta?{{pause=1000}}
 Also means “How are you?” — but politely. {{pause=500}}
 Use it with strangers, teachers, or someone older. {{pause=1000}}
 
-{{pause=2000}}Come va?{{pause=2000}}
+{{pause=1000}}Come va?{{pause=1000}}
 It means “How’s it going?” {{pause=500}}
 This one is relaxed and friendly. {{pause=500}}
 Great for work, casual chats, or daily encounters. {{pause=1000}}
 
-{{pause=2000}}Tutto bene?{{pause=2000}}
+{{pause=1000}}Tutto bene?{{pause=1000}}
 It means “Everything good?” — quick and cheerful. {{pause=500}}
 Say it when you bump into someone, like in the hallway. {{pause=1000}}
 
-{{pause=2000}}Va tutto bene?{{pause=2000}}
+{{pause=1000}}Va tutto bene?{{pause=1000}}
 It means “Is everything going well?” {{pause=500}}
 Use this if someone looks worried or tired. {{pause=500}}
-For example: your teacher might gently ask, {{pause=2000}}“Va tutto bene?”{{pause=2000}}
+For example: your teacher might gently ask, {{pause=1000}}“Va tutto bene?”{{pause=1000}}
 
-{{pause=2000}}Stai bene?{{pause=2000}}
+{{pause=1000}}Stai bene?{{pause=1000}}
 It means “Are you okay?” {{pause=500}}
 Use this when someone seems sick or upset. {{pause=500}}
 It shows you care. {{pause=1000}}
@@ -119,33 +119,32 @@ EN:
 
 Let’s go over how to answer “How are you?” in Italian. {{pause=1000}}
 
-{{pause=2000}}Bene{{pause=2000}} means “I’m good.”
+{{pause=1000}}Bene{{pause=1000}} means “I’m good.”{{pause=500}}
 You’ll hear it all the time — short and friendly. {{pause=1000}}
 
-{{pause=2000}}Tutto bene{{pause=2000}} or {{pause=2000}}Va tutto bene{{pause=2000}} means “Everything’s good” or “Everything’s going well.”
+{{pause=1000}}Tutto bene{{pause=1000}} or {{pause=1000}}Va tutto bene{{pause=1000}} means “Everything’s good” or “Everything’s going well.”
 It sounds friendly, calm, and often used in casual conversation. {{pause=1000}}
 
-{{pause=2000}}Molto bene{{pause=2000}} means “very good.”
+{{pause=1000}}Molto bene{{pause=1000}} means “very good.”
 It’s positive and slightly more enthusiastic {{pause=1000}}
 
-{{pause=2000}}Sto bene{{pause=2000}} means “I’m fine.”
+{{pause=1000}}Sto bene{{pause=1000}} means “I’m fine.”
 It’s a full sentence, but still casual. {{pause=1000}}
 
-{{pause=2000}}Sto benissimo{{pause=2000}} means “I’m great!”
+{{pause=1000}}Sto benissimo{{pause=1000}} means “I’m great!”
 Use it when you’re feeling fantastic. {{pause=1000}}
 
-{{pause=2000}}Così così{{pause=2000}} means “so-so.”
+{{pause=1000}}Così così{{pause=1000}} means “so-so.”
 Not great, not terrible — just okay. {{pause=1000}}
 
-{{pause=2000}}Non molto bene{{pause=2000}} means “not very well.”
+{{pause=1000}}Non molto bene{{pause=1000}} means “not very well.”
 Say this if you’re feeling down, but want to be polite. {{pause=1000}}
 
-{{pause=2000}}Sono stanco{{pause=2000}} (for males) or {{pause=2000}}Sono stanca{{pause=2000}} (for females) means “I’m tired.”
+{{pause=1000}}Sono stanco{{pause=1000}} is for males or {{pause=1000}}Sono stanca{{pause=1000}} for female, means “I’m tired.”
 A common and honest answer. {{pause=1000}}
 
-And finally — {{pause=2000}}E tu?{{pause=2000}}
-It means “And you?”
-Always polite to ask back! {{pause=1000}}
+And finally — {{pause=1000}}E tu?{{pause=1000}}
+It means “And you?” Always polite to ask back! {{pause=1000}}
 
 🩷🩷 Slide 7 *************************
  *************** TEXT: ***************
