@@ -49,19 +49,19 @@ Bonne nuit !{{pause=1000}}
 
 ==========🎤 English Voice (講稿)：==========
 In French, there are different ways to say “hello” — depending on the time of day. {{pause=500}}
-{{pause=2000}} Salut ! {{pause=2000}}
+{{pause=1000}} Salut ! {{pause=1000}}
 — This is super casual. Like saying “Hey!” to a friend. {{pause=500}}
 
-{{pause=2000}} Bonjour ! {{pause=2000}}
+{{pause=1000}} Bonjour ! {{pause=1000}}
 — Means “Good morning” or just “Hello” during the day. {{pause=500}}
 
-{{pause=2000}} Bon après-midi ! {{pause=2000}}
+{{pause=1000}} Bon après-midi ! {{pause=1000}}
 — This means “Good afternoon,” but it’s not used to greet — it’s more for saying goodbye in the afternoon. {{pause=500}}
 
-{{pause=2000}} Bonsoir ! {{pause=2000}}
+{{pause=1000}} Bonsoir ! {{pause=1000}}
 — Use this in the evening, like “Good evening.” {{pause=500}}
 
-{{pause=2000}} Bonne nuit ! {{pause=2000}}
+{{pause=1000}} Bonne nuit ! {{pause=1000}}
 — Say this only at night, when someone is going to sleep — like “Good night.” {{pause=500}}
 
 
@@ -116,24 +116,58 @@ Bonne soirée ! – Have a good evening
 
 ==========🎤 English Voice (講稿)：==========
 
-Au revoir {{pause=1000}}
-Salut {{pause=1000}}
+{{pause=1000}}Au revoir{{pause=1000}}
+A standard goodbye — polite and formal. Like when leaving a shop or hotel.{{pause=1000}}
 
-À bientôt {{pause=1000}}
-À très vite {{pause=1000}}
+{{pause=1000}}Salut !{{pause=1000}}
+Hi or bye — friendly and casual. Use it with friends, like saying “Hey!” or “See ya!”{{pause=1000}}
 
-À tout à l’heure {{pause=1000}}
-À plus tard {{pause=1000}}
+{{pause=1000}}À bientôt{{pause=1000}}
+See you soon — maybe in a few days. Not right away, but not too far either.{{pause=1000}}
 
-À demain {{pause=1000}}
-À la prochaine {{pause=1000}}
-À la semaine prochaine {{pause=1000}}
+{{pause=1000}}À très vite{{pause=1000}}
+Very soon — like “See you super soon!” when you can’t wait to meet again.{{pause=1000}}
 
-On se voit {{pause=1000}}
-On se parle {{pause=1000}}
+{{pause=1000}}À tout à l’heure{{pause=1000}}
+See you later today — like when leaving for a walk but coming back soon.{{pause=1000}}
 
-Bonne journée {{pause=1000}}
-Bonne soirée {{pause=1000}}
+{{pause=1000}}À plus tard{{pause=1000}}
+Catch you later — casual and open-ended, maybe later today, maybe not.{{pause=1000}}
+
+{{pause=1000}}À demain{{pause=1000}}
+See you tomorrow — when you know you’ll meet the next day, like after class or work.{{pause=1000}}
+
+{{pause=1000}}À la prochaine{{pause=1000}}
+Until next time — relaxed and friendly, when you don’t know exactly when you’ll meet again.{{pause=1000}}
+
+{{pause=1000}}À la semaine prochaine{{pause=1000}}
+See you next week — a perfect phrase to end a Friday meeting or class.{{pause=1000}}
+
+{{pause=1000}}On se voit{{pause=1000}}
+See you around — casual and relaxed, when you’ll likely cross paths again.{{pause=1000}}
+
+{{pause=1000}}On se parle{{pause=1000}}
+We’ll talk soon — like at the end of a message or call.{{pause=1000}}
+
+{{pause=1000}}Bonne journée{{pause=1000}}
+Have a great day — warm and polite, like after buying coffee in the morning.{{pause=1000}}
+
+{{pause=1000}}Bonne soirée{{pause=1000}}
+Have a lovely evening — great for dinner, events, or when night is coming.{{pause=1000}}
+
+🔶 {{pause=1000}}Most useful phrases to remember?{{pause=1000}}
+Try these:
+{{pause=500}}Au revoir{{pause=500}} — formal and safe
+{{pause=500}}Salut{{pause=500}} — casual and friendly
+{{pause=500}}À bientôt{{pause=500}} — see you soon
+{{pause=500}}À demain{{pause=500}} — see you tomorrow
+{{pause=500}}Bonne journée{{pause=500}} — have a nice day!{{pause=1000}}
+
+🔶 {{pause=1000}}And if you only remember one…{{pause=1000}}
+Just say:
+{{pause=1000}}Au revoir!{{pause=1000}}
+It always works. 🎯{{pause=1000}}
+
 
 
 🩷🩷 Slide 6 *************************
@@ -142,58 +176,44 @@ Bonne soirée {{pause=1000}}
 如上
 
 ==========🎤 English Voice (講稿)：==========
-{{pause=2000}}Au revoir{{pause=2000}}
-A standard way to say goodbye.
-For example, when leaving a store. {{pause=1000}}
+{{{pause=1000}}Au revoir.{{pause=1000}}
+A standard way to say goodbye. Like when you’re walking out of a store. {{pause=1000}}
 
-{{pause=2000}}Salut !{{pause=2000}}
-Hi or bye — informal.
-For example, waving to a friend. {{pause=1000}}
+{{pause=1000}}Salut !{{pause=1000}}
+Hi or bye. Very casual. Perfect for waving to a friend. {{pause=1000}}
 
-{{pause=2000}}À bientôt{{pause=2000}}
-See you soon.
-For example, after a casual meet-up. {{pause=1000}}
+{{pause=1000}}À bientôt.{{pause=1000}}
+See you soon. Great after a friendly coffee or a short chat. {{pause=1000}}
 
-{{pause=2000}}À très vite{{pause=2000}}
-See you very soon.
-For example, when you’re excited to meet again. {{pause=1000}}
+{{pause=1000}}À très vite.{{pause=1000}}
+See you very soon. When you’re really looking forward to the next meet-up. {{pause=1000}}
 
-{{pause=2000}}À tout à l’heure{{pause=2000}}
-See you later today.
-For example, before heading to lunch. {{pause=1000}}
+{{pause=1000}}À tout à l’heure.{{pause=1000}}
+See you later today. Like when you're heading to lunch and will be back. {{pause=1000}}
 
-{{pause=2000}}À plus tard{{pause=2000}}
-See you later — casual.
-For example, ending a quick chat. {{pause=1000}}
+{{pause=1000}}À plus tard.{{pause=1000}}
+Catch you later. Works well for ending a quick chat. {{pause=1000}}
 
-{{pause=2000}}À demain{{pause=2000}}
-See you tomorrow.
-For example, after class or work. {{pause=1000}}
+{{pause=1000}}À demain.{{pause=1000}}
+See you tomorrow. Try this after class or work. {{pause=1000}}
 
-{{pause=2000}}On se voit{{pause=2000}}
-We’ll see each other.
-For example, when you cross paths often. {{pause=1000}}
+{{pause=1000}}On se voit.{{pause=1000}}
+We’ll see each other again. Great for neighbors or classmates you bump into often. {{pause=1000}}
 
-{{pause=2000}}On se parle{{pause=2000}}
-We’ll talk soon.
-For example, ending a message thread. {{pause=1000}}
+{{pause=1000}}On se parle.{{pause=1000}}
+We’ll talk soon. Good for ending a message or call. {{pause=1000}}
 
-{{pause=2000}}À la prochaine{{pause=2000}}
-Until next time.
-For example, parting ways at a café. {{pause=1000}}
+{{pause=1000}}À la prochaine.{{pause=1000}}
+Until next time. A nice way to part at a café or meet-up. {{pause=1000}}
 
-{{pause=2000}}À la semaine prochaine{{pause=2000}}
-See you next week.
-For example, after a Friday meeting. {{pause=1000}}
+{{pause=1000}}À la semaine prochaine.{{pause=1000}}
+See you next week. Great after a Friday meeting or class. {{pause=1000}}
 
-{{pause=2000}}Bonne journée{{pause=2000}}
-Have a good day.
-For example, leaving a bakery. {{pause=1000}}
+{{pause=1000}}Bonne journée.{{pause=1000}}
+Have a good day. Use this when leaving a bakery or shop. {{pause=1000}}
 
-{{pause=2000}}Bonne soirée{{pause=2000}}
-Have a good evening.
-For example, leaving a dinner or event. {{pause=1000}}
-
+{{pause=1000}}Bonne soirée.{{pause=1000}}
+Have a nice evening. Say it after dinner, or when leaving an event. {{pause=1000}}
 
 
 🩷🩷 Slide 7*************************
