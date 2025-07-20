@@ -1,45 +1,55 @@
-function renderEpisodeHeaderAndTopics(data) {
-  const params = new URLSearchParams(window.location.search);
-  const topicIndex = parseInt(params.get("t")) || 1;
+// shared/js/ep-load.js
 
-  // Set <h1> title from JSON
+// 取得目前頁面參數（ep 編號與 topic 編號）
+const params = new URLSearchParams(window.location.search);
+const epNumber = params.get("ep") || "1";
+const topicIndex = parseInt(params.get("t")) || 1;
+
+// 動態載入對應 ep 的資料檔案，例如 ep1.js
+const script = document.createElement("script");
+script.src = `ep/ep${epNumber}.js`;  // 假設 JS 放在 ep 資料夾內
+document.head.appendChild(script);
+
+// 載入後自動渲染內容
+script.onload = () => {
+  renderEpisodeHeaderAndTopics(window.epData, topicIndex);
+  renderEpisodeFromData(window.epData, topicIndex);
+};
+
+// ✅ 渲染頁面標題與 Topics 切換導覽列
+function renderEpisodeHeaderAndTopics(data, topicIndex) {
   const h1 = document.getElementById("episode-title");
-  h1.textContent = `🇮🇹 ${data.episode}`;
+  h1.textContent = `${data.flag || "🎬"} ${data.episode}`;
   if (data.title_en && data.title_zh) {
     h1.title = `${data.title_en}（${data.title_zh}）`;
   }
 
-  // Render Topics nav
   const nav = document.getElementById("topics-nav");
-  nav.innerHTML = '<strong>📚 Topics:</strong> ';
+  let html = '<strong>📚 Topics:</strong> ';
 
-  data.topics.forEach((topic, i) => {
+  const pageName = window.location.pathname.split("/").pop();
+  data.topics.forEach((_, i) => {
     const num = i + 1;
     if (num === topicIndex) {
-      nav.innerHTML += `<span class="current-topic">${num}</span>`;
+      html += `<span class="current-topic">${num}</span>`;
     } else {
-      nav.innerHTML += ` | <a href="ep1.html?t=${num}">${num}</a>`;
+      html += ` | <a href="${pageName}?ep=${epNumber}&t=${num}">${num}</a>`;
     }
   });
+
+  nav.innerHTML = html;
 }
 
-function renderEpisodeFromData(data) {
-  const params = new URLSearchParams(window.location.search);
-  const topicIndex = parseInt(params.get("t")) || 1;
+// ✅ 渲染單一 topic 的對話內容
+function renderEpisodeFromData(data, topicIndex) {
   const container = document.getElementById("episode-content");
-
   const topic = data.topics[topicIndex - 1];
+
   if (!topic) {
     container.innerHTML = `<p>⚠️ Topic ${topicIndex} not found.</p>`;
     return;
   }
 
-  // 顯示 topic 標題
-  //const topicTitle = document.createElement("h2");
-  //topicTitle.innerHTML = topic.title || `Topic ${topicIndex}`;
-  //container.appendChild(topicTitle);
-
-  // 渲染每個 scene
   topic.scenes.forEach((scene, index) => {
     const sceneTitle = document.createElement("h3");
     sceneTitle.innerHTML = `🎬 Scene ${index + 1}: ${scene.scene}`;
