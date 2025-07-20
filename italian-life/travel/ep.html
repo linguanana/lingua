@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../shared/css/lesson-style.css">
 </head>
 <body>
-  <h1 id="episode-title" title="Loading…">Loading…</h1>
+  <h1 id="episode-title"></h1>
 
   <p class="info-text-size" id="topics-nav">
     <strong>📚 Topics:</strong> Loading…
@@ -25,23 +25,6 @@
     <div id="episode-content" class="auto-list"></div>
     <p class="back-link"><a href="../../index.html">← Back to Episodes</a></p>
   </div>
-
-  <!-- ✅ 自動載入對應 JS 檔 -->
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const epNum = params.get("ep") || "1";
-    const js = document.createElement("script");
-    js.src = `ep${epNum}.js`;
-    js.onload = () => {
-      renderEpisodeHeaderAndTopics(episodeData);
-      renderEpisodeFromData(episodeData);
-
-      // ⏯️ 自動換 audio 檔案
-      document.getElementById("audio-source").src = `audio/ep${epNum}.mp3`;
-      document.querySelector("audio").load();
-    };
-    document.body.appendChild(js);
-  </script>
 
   <script src="../../shared/js/ep-load.js"></script>
 </body>
