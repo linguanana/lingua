@@ -1,50 +1,31 @@
 function renderEpisodeFromJSON(jsonPath) {
   fetch(jsonPath)
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById("scenes-container");
-      data.scenes.forEach(scene => {
-        const sceneDiv = document.createElement("div");
-        sceneDiv.className = "scene";
+    .then((res) => res.json())
+    .then((data) => {
+      const container = document.getElementById("episode-content");
 
+      data.scenes.forEach((scene, index) => {
         const sceneTitle = document.createElement("h2");
-        sceneTitle.textContent = scene.scene;
-        sceneDiv.appendChild(sceneTitle);
+        sceneTitle.innerHTML = `🎬 Scene ${index + 1}: ${scene.scene}`;
+        container.appendChild(sceneTitle);
 
-        const table = document.createElement("table");
-        table.className = "dialogue-table";
+        const dialogueBox = document.createElement("div");
+        dialogueBox.className = "dialogue-box";
 
-        scene.dialogue.forEach(line => {
-          const row = document.createElement("tr");
+        scene.dialogue.forEach((line) => {
+          const p = document.createElement("p");
 
-          const speakerCell = document.createElement("td");
-          speakerCell.className = "speaker-cell";
-          speakerCell.textContent = line.speaker;
+          const italianSpan = `<span class="italian-word">${line.text}</span>`;
+          const translation = `→ ${line.en}（${line.zh}）`;
 
-          const textCell = document.createElement("td");
-          textCell.className = "italian-cell";
-          textCell.textContent = line.text;
-
-          const englishCell = document.createElement("td");
-          englishCell.className = "english-cell";
-          englishCell.textContent = line.en || "";
-
-          const chineseCell = document.createElement("td");
-          chineseCell.className = "chinese-cell";
-          chineseCell.textContent = line.zh || "";
-
-          row.appendChild(speakerCell);
-          row.appendChild(textCell);
-          row.appendChild(englishCell);
-          row.appendChild(chineseCell);
-          table.appendChild(row);
+          p.innerHTML = `${line.speaker}: ${italianSpan}<br>${translation}`;
+          dialogueBox.appendChild(p);
         });
 
-        sceneDiv.appendChild(table);
-        container.appendChild(sceneDiv);
+        container.appendChild(dialogueBox);
       });
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("Error loading JSON:", error);
     });
 }
