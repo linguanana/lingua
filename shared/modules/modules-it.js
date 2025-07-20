@@ -16,16 +16,19 @@ const modulesData = [
     {
         title: '✈️ Travel Survival Italian 旅行義大利語精選',
         lessons: [
-            { "name": "Episode 1: At the Airport 機場場景", "link": "travel/ep1.html" },
-            { "name": "Episode 2: Asking for Directions 問路任務", "link": "travel/ep2.html" },
+             // each ep has 5-10 topics depends, each topic should have 3 differnt asking or Answering scenes
+             // scenes in one mp3
+            { "name": "Episode 1: At the Coffee Bar 咖啡吧體驗", "link": "travel/ep1.html" },
+            { "name": "Episode 2: Dining at a Restaurant 餐廳用餐", "link": "travel/ep2.html" },
             { "name": "Episode 3: Buying a Train Ticket 買火車票任務", "link": "travel/ep3.html" },
-            { "name": "Episode 4: Ordering Food at a Restaurant 餐廳點餐任務", "link": "travel/ep4.html" },
+            { "name": "Episode 4: Asking for Directions 問路與尋找洗手間", "link": "travel/ep4.html" },
+              //洗手間在哪裡 can be in ep4
             { "name": "Episode 5: Hotel Check-in 入住旅館對話", "link": "travel/ep5.html" },
-            { "name": "Episode 6: Going to the Bathroom 洗手間在哪裡", "link": "travel/ep6.html" },
-            { "name": "Episode 7: Taking the Bus 搭乘公車或計程車", "link": "travel/ep7.html" },
-            { "name": "Episode 8: Visiting a Plaza or Monument 尋找景點", "link": "travel/ep8.html" },
-            { "name": "Episode 9: Shopping at a Market 市場購物對話", "link": "travel/ep9.html" },
-            { "name": "Episode 10: At the Pharmacy 藥局購買常備品", "link": "travel/ep10.html" }
+            { "name": "Episode 6: Taking the Bus or Taxi 搭乘公車與計程車", "link": "travel/ep6.html" },
+            { "name": "Episode 7: Shopping at a Market 市場購物對話", "link": "travel/ep7.html" },
+            { "name": "Episode 8: Visiting Monuments & Plazas 尋找景點與名勝", "link": "travel/ep8.html" },
+            { "name": "Episode 9: At the Pharmacy 藥局購買常備品", "link": "travel/ep9.html" },
+            { "name": "Episode 10: Making Friends & Small Talk 交朋友與閒聊", "link": "travel/ep10.html" }
           ]
     },
     {
