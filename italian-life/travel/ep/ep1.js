@@ -1,5 +1,5 @@
 // Episode 1 – Al bar (At the Coffee Bar / 咖啡館)
-const episodeData = {
+window.epData = {
   episode: "Episode 1 – Al bar", title_en: "At the Coffee Bar", title_zh: "咖啡館",
   topics: [
     {
