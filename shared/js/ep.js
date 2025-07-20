@@ -2,6 +2,19 @@ function renderEpisodeFromJSON(jsonPath) {
   fetch(jsonPath)
     .then((res) => res.json())
     .then((data) => {
+      // ✅ 更新頁面標題與 h1
+      const docTitle = document.getElementById("doc-title");
+      const h1 = document.getElementById("episode-title");
+
+      if (data.title) {
+        if (docTitle) docTitle.textContent = data.title;
+        if (h1) h1.textContent = data.title;
+      }
+      if (data.subtitle && h1) {
+        h1.setAttribute("title", data.subtitle);
+      }
+
+      // ✅ 渲染對話內容
       const container = document.getElementById("episode-content");
 
       data.scenes.forEach((scene, index) => {
