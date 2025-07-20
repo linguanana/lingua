@@ -1,0 +1,36 @@
+{
+  "title": "Episode 1: Dove si trova il bagno?",
+  "subtitle": "Asking where the bathroom is in different places",
+  "scenes": [
+    {
+      "location": "🚉 Stazione dei treni",
+      "situation": "At the train station",
+      "dialogue": [
+        "👩🏻‍🦰: Mi scusi, dov’è il bagno?",
+        "🧸: È vicino al binario tre.",
+        "👩🏻‍🦰: Grazie mille! Che sollievo!"
+      ],
+      "audio": "audio/ep1/train_station.mp3"
+    },
+    {
+      "location": "🏛️ Piazza del centro",
+      "situation": "In a central plaza",
+      "dialogue": [
+        "👩🏻‍🦰: Mi scusi, dov’è il bagno?",
+        "🧸: Sempre dritto, accanto alla fontana.",
+        "👩🏻‍🦰: Perfetto, grazie mille!"
+      ],
+      "audio": "audio/ep1/plaza.mp3"
+    },
+    {
+      "location": "🛫 Aeroporto",
+      "situation": "At the airport",
+      "dialogue": [
+        "👩🏻‍🦰: Mi scusi, dov’è il bagno?",
+        "🧸: Dopo il controllo di sicurezza, vicino al gate C3.",
+        "👩🏻‍🦰: Ok, grazie! Mi serviva proprio!"
+      ],
+      "audio": "audio/ep1/airport.mp3"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Italian Episode 1 – Where’s the Bathroom?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fefefe;
+    }
+    .scene {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: #f9f9f9;
+    }
+    .scene h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #333;
+    }
+    .dialogue-line {
+      margin: 8px 0;
+      padding: 6px 12px;
+      background: #fff;
+      border-left: 4px solid #888;
+      border-radius: 6px;
+    }
+    .speaker {
+      font-weight: bold;
+      margin-right: 6px;
+    }
+    .translation {
+      display: block;
+      color: #666;
+      font-size: 0.9em;
+      margin-left: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Episode 1 – Where’s the Bathroom?</h1>
+  <div id="episode-container"></div>
+
+  <script>
+    fetch('episode1.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('episode-container');
+
+        data.scenes.forEach(scene => {
+          const sceneDiv = document.createElement('div');
+          sceneDiv.className = 'scene';
+
+          const sceneTitle = document.createElement('h2');
+          sceneTitle.textContent = scene.scene;
+          sceneDiv.appendChild(sceneTitle);
+
+          scene.dialogue.forEach(line => {
+            const lineDiv = document.createElement('div');
+            lineDiv.className = 'dialogue-line';
+
+            lineDiv.innerHTML = `<span class="speaker">${line.speaker}:</span> ${line.text}
+              <span class="translation">${line.translation}</span>`;
+
+            sceneDiv.appendChild(lineDiv);
+          });
+
+          container.appendChild(sceneDiv);
+        });
+      })
+      .catch(error => {
+        console.error('Error loading episode:', error);
+      });
+  </script>
+</body>
+</html>
