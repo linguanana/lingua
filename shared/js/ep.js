@@ -35,9 +35,9 @@ function renderEpisodeFromData(data) {
   }
 
   // 顯示 topic 標題
-  const topicTitle = document.createElement("h2");
-  topicTitle.innerHTML = topic.title || `Topic ${topicIndex}`;
-  container.appendChild(topicTitle);
+  //const topicTitle = document.createElement("h2");
+  //topicTitle.innerHTML = topic.title || `Topic ${topicIndex}`;
+  //container.appendChild(topicTitle);
 
   // 渲染每個 scene
   topic.scenes.forEach((scene, index) => {
