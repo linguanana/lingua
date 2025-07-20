@@ -7,26 +7,20 @@
         {
           "speaker": "👩",
           "text": "Mi scusi, dov’è il bagno?",
-          "translation": {
-            "en": "Excuse me, where’s the bathroom?",
-            "zh": "請問，洗手間在哪裡？"
-          }
+          "en": "Excuse me, where’s the bathroom?",
+          "zh": "請問，洗手間在哪裡？"
         },
         {
           "speaker": "🧸",
           "text": "È vicino al binario tre.",
-          "translation": {
-            "en": "It’s near platform three.",
-            "zh": "在三號月台附近。"
-          }
+          "en": "It’s near platform three.",
+          "zh": "在第三月台附近。"
         },
         {
           "speaker": "👩",
           "text": "Grazie mille! Che sollievo!",
-          "translation": {
-            "en": "Thank you so much! What a relief!",
-            "zh": "非常感謝！太鬆了一口氣了！"
-          }
+          "en": "Thank you so much! What a relief!",
+          "zh": "非常感謝！太舒坦了！"
         }
       ]
     },
@@ -36,26 +30,20 @@
         {
           "speaker": "👩",
           "text": "Mi scusi, dov’è il bagno?",
-          "translation": {
-            "en": "Excuse me, where’s the bathroom?",
-            "zh": "請問，洗手間在哪裡？"
-          }
+          "en": "Excuse me, where’s the bathroom?",
+          "zh": "請問，洗手間在哪裡？"
         },
         {
           "speaker": "🧸",
           "text": "Dritto, poi a sinistra vicino alla fontana.",
-          "translation": {
-            "en": "Straight ahead, then left near the fountain.",
-            "zh": "直走，然後在噴水池旁邊左轉。"
-          }
+          "en": "Straight ahead, then left near the fountain.",
+          "zh": "直走，然後在噴泉旁邊左轉。"
         },
         {
           "speaker": "👩",
           "text": "Perfetto, grazie!",
-          "translation": {
-            "en": "Perfect, thanks!",
-            "zh": "太好了，謝謝！"
-          }
+          "en": "Perfect, thanks!",
+          "zh": "太好了，謝謝你！"
         }
       ]
     },
@@ -65,28 +53,14 @@
         {
           "speaker": "👩",
           "text": "Mi scusi, dov’è il bagno?",
-          "translation": {
-            "en": "Excuse me, where’s the bathroom?",
-            "zh": "請問，洗手間在哪裡？"
-          }
+          "en": "Excuse me, where’s the bathroom?",
+          "zh": "請問，洗手間在哪裡？"
         },
         {
           "speaker": "🧸",
           "text": "Accanto al gate 12, vicino al bar.",
-          "translation": {
-            "en": "Next to gate 12, near the café.",
-            "zh": "在12號登機門旁邊，靠近咖啡廳。"
-          }
+          "en": "Next to gate 12, near the café.",
+          "zh": "在12號登機門旁邊，靠近咖啡廳。"
         },
         {
           "speaker": "👩",
-          "text": "Grazie! Finalmente!",
-          "translation": {
-            "en": "Thanks! Finally!",
-            "zh": "謝謝！終於找到了！"
-          }
-        }
-      ]
-    }
-  ]
-}
