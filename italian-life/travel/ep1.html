@@ -8,20 +8,14 @@
   <link rel="stylesheet" href="../../shared/css/lesson-style.css">
 </head>
 <body>
-  <h1 id="episode-title" title="">Loading…</h1>
+  <h1 id="episode-title" title="Loading…">Loading…</h1>
 
-  <!-- ✅ 題目選擇器（未來每個 topic 拆頁） -->
-  <p class="info-text-size">
+  <p class="info-text-size" id="topics-nav">
     <strong>📚 Topics:</strong>
-    <span class="current-topic">1</span> |
-    <a href="topic2.html">2</a> |
-    <a href="topic3.html">3</a> |
-    <a href="topic4.html">4</a> |
-    <a href="topic5.html">5</a> |
-    <a href="topic6.html">6</a> |
-    <a href="topic7.html">7</a> |
-    <a href="topic8.html">8</a>
+    <span class="current-topic">Loading…</span>
   </p>
+
+  <br>
 
   <!-- ✅ 音訊 -->
   <audio controls class="small-audio">
@@ -31,14 +25,16 @@
 
   <!-- ✅ 對話容器與返回連結 -->
   <div class="lesson-container">
-    <div id="episode-content" class="auto-list"></div> <!-- ✅ 已修正 ID -->
+    <div id="episode-content" class="auto-list"></div>
     <p class="back-link"><a href="../../index.html">← Back to Episodes</a></p>
   </div>
 
-  <!-- ✅ 載入 ep.js 並呼叫對應 JSON -->
+  <!-- ✅ 改為載入 JS 檔案（內含資料變數） -->
+  <script src="ep1.js"></script>
   <script src="../../shared/js/ep.js"></script>
   <script>
-    renderEpisodeFromJSON("ep1.json");
+    renderEpisodeHeaderAndTopics(episodeData);
+    renderEpisodeFromData(episodeData);
   </script>
 </body>
 </html>
