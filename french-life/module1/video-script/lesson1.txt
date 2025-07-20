@@ -30,16 +30,18 @@ and say them out loud together! {{pause=800}}
  *************** TEXT: ***************
 
 Salut ! – Hi / Bye
+Coucou - Hi there! (playful, for close friends or kids)
 Bonjour ! – Good morning / Hello
 Bon après-midi ! – Good afternoon
 Bonsoir ! – Good evening
 Bonne nuit ! – Good night
 
 ==========🎤 French Voice (講稿1)：==========
-Salut ! {{pause=1000}}
-Bonjour ! {{pause=1000}}
-Bon après-midi ! {{pause=1000}}
-Bonsoir !{{pause=1000}}
+Salut  {{pause=1000}}
+Coucou  {{pause=1000}}
+Bonjour  {{pause=1000}}
+Bon après-midi  {{pause=1000}}
+Bonsoir {{pause=1000}}
 Bonne nuit !{{pause=1000}}
 
 
@@ -49,8 +51,13 @@ Bonne nuit !{{pause=1000}}
 
 ==========🎤 English Voice (講稿)：==========
 In French, there are different ways to say “hello” — depending on the time of day. {{pause=500}}
+
 {{pause=1000}} Salut ! {{pause=1000}}
 — This is super casual. Like saying “Hey!” to a friend. {{pause=500}}
+
+{{pause=1000}} Coucou ! {{pause=1000}}
+— This one’s even cuter. You say it to close friends, kids, or someone you love. {{pause=500}}
+It’s like saying “Hi hi!” or “Peekaboo!” with a smile. {{pause=500}}
 
 {{pause=1000}} Bonjour ! {{pause=1000}}
 — Means “Good morning” or just “Hello” during the day. {{pause=500}}
@@ -88,85 +95,42 @@ Are you ready? {{pause=300}}  Let’s discover them together! 🇮🇹 {{pause=5
  *************** TEXT: ***************
 
 
-👋 General Goodbyes
-Au revoir – Goodbye (standard and polite)
-Salut – Bye (informal, also means "hi")
+ Au revoir – Goodbye (polite and standard)
+ Salut – Bye (casual, also means "hi")
 
-🫶 Friendly / Unspecified Reunions
-À bientôt – See you soon (unspecified time)
-À très vite – See you very soon! (enthusiastic)
+ À bientôt – See you soon
+ À tout à l’heure – See you later (same day, certain)
+ À plus tard – Catch you later (casual, maybe)
 
-🕒 Later Today
-À tout à l’heure – See you later (today)
-À plus tard – See you later today (casual/emphasized)
+ À demain – See you tomorrow
+ À la prochaine – Until next time
+ À la semaine prochaine – See you next week
 
-📅 Next Time / Scheduled
-À demain – See you tomorrow
-À la prochaine – Until next time
-À la semaine prochaine – See you next week
+ On se voit – See you (in person)
+ On se parle – Talk soon (by phone or message)
 
-👀 Keeping in Touch
-On se voit – See you (in person)
-On se parle – Talk to you soon (text or call)
+ Bonne journée – Have a good day
+ Bonne soirée – Have a good evening
 
-🌞 Polite Wishes
-Bonne journée ! – Have a good day
-Bonne soirée ! – Have a good evening
+
+
 
 
 ==========🎤 English Voice (講稿)：==========
 
-{{pause=1000}}Au revoir{{pause=1000}}
-A standard goodbye — polite and formal. Like when leaving a shop or hotel.{{pause=1000}}
+Au revoir.{{pause=1000}}
+Salut !{{pause=1000}}
+À bientôt.{{pause=1000}}
+À tout à l’heure.{{pause=1000}}
+À plus tard.{{pause=1000}}
+À demain.{{pause=1000}}
+À la prochaine.{{pause=1000}}
+À la semaine prochaine.{{pause=1000}}
+On se voit.{{pause=1000}}
+On se parle.{{pause=1000}}
+Bonne journée.{{pause=1000}}
+Bonne soirée.{{pause=1000}}
 
-{{pause=1000}}Salut !{{pause=1000}}
-Hi or bye — friendly and casual. Use it with friends, like saying “Hey!” or “See ya!”{{pause=1000}}
-
-{{pause=1000}}À bientôt{{pause=1000}}
-See you soon — maybe in a few days. Not right away, but not too far either.{{pause=1000}}
-
-{{pause=1000}}À très vite{{pause=1000}}
-Very soon — like “See you super soon!” when you can’t wait to meet again.{{pause=1000}}
-
-{{pause=1000}}À tout à l’heure{{pause=1000}}
-See you later today — like when leaving for a walk but coming back soon.{{pause=1000}}
-
-{{pause=1000}}À plus tard{{pause=1000}}
-Catch you later — casual and open-ended, maybe later today, maybe not.{{pause=1000}}
-
-{{pause=1000}}À demain{{pause=1000}}
-See you tomorrow — when you know you’ll meet the next day, like after class or work.{{pause=1000}}
-
-{{pause=1000}}À la prochaine{{pause=1000}}
-Until next time — relaxed and friendly, when you don’t know exactly when you’ll meet again.{{pause=1000}}
-
-{{pause=1000}}À la semaine prochaine{{pause=1000}}
-See you next week — a perfect phrase to end a Friday meeting or class.{{pause=1000}}
-
-{{pause=1000}}On se voit{{pause=1000}}
-See you around — casual and relaxed, when you’ll likely cross paths again.{{pause=1000}}
-
-{{pause=1000}}On se parle{{pause=1000}}
-We’ll talk soon — like at the end of a message or call.{{pause=1000}}
-
-{{pause=1000}}Bonne journée{{pause=1000}}
-Have a great day — warm and polite, like after buying coffee in the morning.{{pause=1000}}
-
-{{pause=1000}}Bonne soirée{{pause=1000}}
-Have a lovely evening — great for dinner, events, or when night is coming.{{pause=1000}}
-
-🔶 {{pause=1000}}Most useful phrases to remember?{{pause=1000}}
-Try these:
-{{pause=500}}Au revoir{{pause=500}} — formal and safe
-{{pause=500}}Salut{{pause=500}} — casual and friendly
-{{pause=500}}À bientôt{{pause=500}} — see you soon
-{{pause=500}}À demain{{pause=500}} — see you tomorrow
-{{pause=500}}Bonne journée{{pause=500}} — have a nice day!{{pause=1000}}
-
-🔶 {{pause=1000}}And if you only remember one…{{pause=1000}}
-Just say:
-{{pause=1000}}Au revoir!{{pause=1000}}
-It always works. 🎯{{pause=1000}}
 
 
 
@@ -176,44 +140,63 @@ It always works. 🎯{{pause=1000}}
 如上
 
 ==========🎤 English Voice (講稿)：==========
-{{{pause=1000}}Au revoir.{{pause=1000}}
-A standard way to say goodbye. Like when you’re walking out of a store. {{pause=1000}}
 
-{{pause=1000}}Salut !{{pause=1000}}
-Hi or bye. Very casual. Perfect for waving to a friend. {{pause=1000}}
+{{pause=1000}}Au revoir{{pause=1000}}
+It means “Goodbye” — polite and formal.{{pause=500}}
+You use it when saying goodbye to someone you don’t know well {{pause=500}}
+like when you're checking out of a hotel, or after paying at a store. {{pause=1000}}
+You wouldn’t usually say this to your close friends  {{pause=500}}
+they’d just say  {{pause=500}}Salut {{pause=500}} or  {{pause=500}}À plus {{pause=500}} instead. {{pause=500}}
 
-{{pause=1000}}À bientôt.{{pause=1000}}
-See you soon. Great after a friendly coffee or a short chat. {{pause=1000}}
+{{pause=500}}Salut !{{pause=1000}}
+Hi or bye — friendly and casual. Use it with friends, like saying “Hey!” or “See ya!”{{pause=1000}}
 
-{{pause=1000}}À très vite.{{pause=1000}}
-See you very soon. When you’re really looking forward to the next meet-up. {{pause=1000}}
+{{pause=500}}À bientôt{{pause=1000}}
+It means “See you soon.”{{pause=500}}
+Use it when you think you’ll see the person again — maybe in a few days.{{pause=1000}}
+For example, after lunch with a friend, you can say:{{pause=500}}
+“Thanks for today {{pause=500}}À bientôt!”{{pause=500}}
 
-{{pause=1000}}À tout à l’heure.{{pause=1000}}
-See you later today. Like when you're heading to lunch and will be back. {{pause=1000}}
 
-{{pause=1000}}À plus tard.{{pause=1000}}
-Catch you later. Works well for ending a quick chat. {{pause=1000}}
+{{pause=500}}À tout à l’heure{{pause=1000}}
+It means “See you later today.”{{pause=500}}
+Use it when you’re sure you’ll meet again — like this afternoon.{{pause=1000}}
+For example, in the morning at work, you might say:{{pause=500}}
+“Let’s talk again after lunch {{pause=500}} À tout à l’heure!”{{pause=500}}
 
-{{pause=1000}}À demain.{{pause=1000}}
-See you tomorrow. Try this after class or work. {{pause=1000}}
+{{pause=1000}}À plus tard{{pause=1000}}
+It's like “Catch you later.”{{pause=800}}
+For example, after chatting with your neighbor on the street,
+you might say goodbye with a smile:{{pause=500}}“À plus tard !”{{pause=1000}}
 
-{{pause=1000}}On se voit.{{pause=1000}}
-We’ll see each other again. Great for neighbors or classmates you bump into often. {{pause=1000}}
+{{pause=500}}À demain{{pause=1000}}
+See you tomorrow {{pause=300}} when you know you’ll meet the next day, like after class or work.{{pause=1000}}
 
-{{pause=1000}}On se parle.{{pause=1000}}
-We’ll talk soon. Good for ending a message or call. {{pause=1000}}
+{{pause=500}}À la prochaine{{pause=1000}}
+It means “Until next time.”{{pause=500}}
+Great for casual goodbyes — even if you don’t know when you’ll meet again.{{pause=1000}}
 
-{{pause=1000}}À la prochaine.{{pause=1000}}
-Until next time. A nice way to part at a café or meet-up. {{pause=1000}}
+{{pause=500}}À la semaine prochaine{{pause=1000}}
+It means “See you next week.”{{pause=500}}
+Use it if you’ll meet someone again next Monday, in class, or at work.{{pause=500}}
 
-{{pause=1000}}À la semaine prochaine.{{pause=1000}}
-See you next week. Great after a Friday meeting or class. {{pause=1000}}
+{{pause=1000}}On se voit{{pause=1000}}
+It means “See you” {{pause=300}} casual and relaxed.{{pause=500}}
+You say it when you’ll probably see the person again soon,{{pause=500}}
+like a classmate, coworker, or neighbor. {{pause=500}}
+You don’t use it for formal goodbyes — it’s more for everyday situations.{{pause=1000}}
 
-{{pause=1000}}Bonne journée.{{pause=1000}}
-Have a good day. Use this when leaving a bakery or shop. {{pause=1000}}
+{{pause=500}}On se parle{{pause=1000}}
+This means “We’ll talk soon.”{{pause=500}}
+You can say it after a text, a call, or a quick chat.{{pause=1000}}
 
-{{pause=1000}}Bonne soirée.{{pause=1000}}
-Have a nice evening. Say it after dinner, or when leaving an event. {{pause=1000}}
+{{pause=500}}Bonne journée{{pause=1000}}
+It means “Have a good day.”{{pause=500}}
+Use it after buying coffee in the morning {{pause=300}} or when leaving a shop.{{pause=1000}}
+
+{{pause=500}}Bonne soirée{{pause=1000}}
+It means “Have a lovely evening.”{{pause=500}}
+Say it after dinner, at night, or when leaving an event.{{pause=1000}}
 
 
 🩷🩷 Slide 7*************************
@@ -273,6 +256,16 @@ Click the practice song
 you’ll remember it naturally!
 
 ==========🎤 English (講稿)：==========
-Now click the song video — and just sing it twice!   {{pause=500}}
-You’ll remember these words without even trying.  {{pause=500}}
-Let's go!
+In this lesson, we taught you many different ways to say goodbye —
+but don’t worry, you don’t need to remember them all right now. {{pause=1000}}
+
+We’re just helping you hear how real conversations sound.
+You’re still a beginner — and that’s perfect. {{pause=800}}
+
+Now click the song video — and just sing it twice! 🎵 {{pause=500}}
+You’ll remember the phrases naturally. {{pause=500}}
+
+Later, come back to this video,
+and you’ll see — it’s the exact same words. {{pause=500}}
+Your ears will recognize them right away.
+see you soon ciao ciao
