@@ -1,9 +1,8 @@
 // shared/js/ep-load.js
 
 // 取得目前頁面參數（ep 編號與 topic 編號）
-const params = new URLSearchParams(window.location.search);
-const epNumber = params.get("ep") || "1";
-const topicIndex = parseInt(params.get("t")) || 1;
+const epNumber = new URLSearchParams(window.location.search).get("ep") || "1";
+const topicIndex = parseInt(new URLSearchParams(window.location.search).get("t")) || 1;
 
 // 動態載入對應 ep 的資料檔案，例如 ep1.js
 const script = document.createElement("script");
