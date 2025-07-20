@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title id="doc-title">Loading…</title>
+  <title id="page-title">Episode</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../shared/css/fonts.css">
   <link rel="stylesheet" href="../../shared/css/lesson-style.css">
 </head>
 <body>
-  <h1 id="episode-title"></h1>
 
-  <p class="info-text-size" id="topics-nav">
-    <strong>📚 Topics:</strong> Loading…
-  </p>
+  <!-- 頁面標題 -->
+  <h1 id="ep-title">Loading...</h1>
 
-  <br>
+  <!-- 所有對話場景 -->
+  <div id="topics"></div>
 
-  <audio controls class="small-audio" id="episode-audio">
-    <source id="audio-source" src="" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <div class="lesson-container">
-    <div id="episode-content" class="auto-list"></div>
-    <p class="back-link"><a href="../../index.html">← Back to Episodes</a></p>
-  </div>
-
+  <!-- 加載 ep-load.js -->
   <script src="../../shared/js/ep-load.js"></script>
+
+  <!-- 載入指定的 ep1.js / ep2.js -->
+  <script>
+    const params = new URLSearchParams(location.search);
+    const epNumber = params.get("ep") || "1";
+    const script = document.createElement("script");
+    script.src = `ep/ep${epNumber}.js`;  // ← 建議放在 ep/ 資料夾中：ep/ep1.js
+    script.onload = () => {
+      if (window.epData) {
+        renderEpisodeHeaderAndTopics(window.epData);
+      }
+    };
+    document.body.appendChild(script);
+  </script>
 </body>
 </html>
