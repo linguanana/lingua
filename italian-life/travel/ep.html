@@ -1,34 +1,24 @@
+<!-- ep.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title id="page-title">Episode</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../shared/css/lesson-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../shared/css/lesson-style.css">
 </head>
 <body>
-
-  <!-- 頁面標題 -->
-  <h1 id="ep-title">Loading...</h1>
-
-  <!-- 所有對話場景 -->
+  <h1 id="ep-title">Loading…</h1>
   <div id="topics"></div>
 
-  <!-- 加載 ep-load.js -->
-  <script src="../../shared/js/ep-load.js"></script>
-
-  <!-- 載入指定的 ep1.js / ep2.js -->
   <script>
-    const params = new URLSearchParams(location.search);
-    const epNumber = params.get("ep") || "1";
+    // Load episode JS dynamically (e.g., ep1.js)
+    const epId = new URLSearchParams(window.location.search).get("id") || "1";
     const script = document.createElement("script");
-    script.src = `ep/ep${epNumber}.js`;  // ← 建議放在 ep/ 資料夾中：ep/ep1.js
-    script.onload = () => {
-      if (window.epData) {
-        renderEpisodeHeaderAndTopics(window.epData);
-      }
-    };
+    script.src = `ep${epId}.js`;
+    script.onload = () => renderEpisodeHeaderAndTopics(episodeData);
     document.body.appendChild(script);
   </script>
+  <script src="../shared/js/ep-load.js"></script>
 </body>
 </html>

@@ -1,34 +1,45 @@
-function renderDialogue(dialogue) {
-  return dialogue.map(d => `
-    <div class="dialogue-box">
-      <p class="speaker-line">👤 ${d.speaker}: <span class="italian-word">${d.text}</span></p>
-      <p class="translation-line">${d.en}</p>
-      <p class="translation-line zh">${d.zh}</p>
-    </div>
-  `).join("");
-}
+function renderEpisodeHeaderAndTopics(data) {
+  // Set page title and episode title
+  const pageTitle = document.getElementById("page-title");
+  const epTitle = document.getElementById("ep-title");
+  if (pageTitle) pageTitle.textContent = data.episode;
+  if (epTitle) epTitle.textContent = `🎬 ${data.episode} (${data.title_zh})`;
 
-function renderScene(scene) {
-  return `
-    <h3 class="scene-title">🎬 ${scene.scene}</h3>
-    ${renderDialogue(scene.dialogue)}
-  `;
-}
+  // Target container for topics
+  const topicsContainer = document.getElementById("topics");
+  if (!topicsContainer) return;
 
-function renderTopic(topic) {
-  const scenesHTML = topic.scenes.map(renderScene).join("");
-  return `
-    <section class="topic-section">
-      <h2 class="topic-title">📌 ${topic.topic}</h2>
-      ${scenesHTML}
-    </section>
-  `;
-}
+  // Loop through all topics
+  data.topics.forEach((topic, index) => {
+    // Create topic wrapper
+    const topicDiv = document.createElement("div");
+    topicDiv.className = "topic-block";
 
-function renderEpisodeHeaderAndTopics(epData) {
-  document.title = epData.episode;
-  document.getElementById("ep-title").textContent = `${epData.episode} – ${epData.title_en} · ${epData.title_zh}`;
+    const topicHeader = document.createElement("h2");
+    topicHeader.textContent = `🟦 Topic ${index + 1}`;
+    topicDiv.appendChild(topicHeader);
 
-  const topicsHTML = epData.topics.map(renderTopic).join("");
-  document.getElementById("topics").innerHTML = topicsHTML;
+    // Loop through scenes in the topic
+    topic.scenes.forEach((sceneObj) => {
+      const sceneTitle = document.createElement("h3");
+      sceneTitle.textContent = `🎭 ${sceneObj.scene}`;
+      topicDiv.appendChild(sceneTitle);
+
+      const dialogueList = document.createElement("div");
+      dialogueList.className = "dialogue-box";
+
+      sceneObj.dialogue.forEach((line) => {
+        const lineEl = document.createElement("p");
+        lineEl.innerHTML = `<strong>${line.speaker === "1" ? "👤" : "🧑‍🍳"}</strong>
+          <span class="italian-word">${line.text}</span><br>
+          <span class="translation">EN: ${line.en}</span><br>
+          <span class="translation">ZH: ${line.zh}</span>`;
+        dialogueList.appendChild(lineEl);
+      });
+
+      topicDiv.appendChild(dialogueList);
+    });
+
+    topicsContainer.appendChild(topicDiv);
+  });
 }
