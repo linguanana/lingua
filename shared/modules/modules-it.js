@@ -16,16 +16,16 @@ const modulesData = [
     {
         title: '✈️ Travel Survival Italian 旅行義大利語精選',
         lessons: [
-            { "name": "Episode 1: At the Airport 機場場景", "link": "travel/lesson1.html" },
-            { "name": "Episode 2: Asking for Directions 問路任務", "link": "travel/lesson2.html" },
-            { "name": "Episode 3: Buying a Train Ticket 買火車票任務", "link": "travel/lesson3.html" },
-            { "name": "Episode 4: Ordering Food at a Restaurant 餐廳點餐任務", "link": "travel/lesson4.html" },
-            { "name": "Episode 5: Hotel Check-in 入住旅館對話", "link": "travel/lesson5.html" },
-            { "name": "Episode 6: Going to the Bathroom 洗手間在哪裡", "link": "travel/lesson6.html" },
-            { "name": "Episode 7: Taking the Bus 搭乘公車或計程車", "link": "travel/lesson7.html" },
-            { "name": "Episode 8: Visiting a Plaza or Monument 尋找景點", "link": "travel/lesson8.html" },
-            { "name": "Episode 9: Shopping at a Market 市場購物對話", "link": "travel/lesson9.html" },
-            { "name": "Episode 10: At the Pharmacy 藥局購買常備品", "link": "travel/lesson10.html" }
+            { "name": "Episode 1: At the Airport 機場場景", "link": "travel/ep1.html" },
+            { "name": "Episode 2: Asking for Directions 問路任務", "link": "travel/ep2.html" },
+            { "name": "Episode 3: Buying a Train Ticket 買火車票任務", "link": "travel/ep3.html" },
+            { "name": "Episode 4: Ordering Food at a Restaurant 餐廳點餐任務", "link": "travel/ep4.html" },
+            { "name": "Episode 5: Hotel Check-in 入住旅館對話", "link": "travel/ep5.html" },
+            { "name": "Episode 6: Going to the Bathroom 洗手間在哪裡", "link": "travel/ep6.html" },
+            { "name": "Episode 7: Taking the Bus 搭乘公車或計程車", "link": "travel/ep7.html" },
+            { "name": "Episode 8: Visiting a Plaza or Monument 尋找景點", "link": "travel/ep8.html" },
+            { "name": "Episode 9: Shopping at a Market 市場購物對話", "link": "travel/ep9.html" },
+            { "name": "Episode 10: At the Pharmacy 藥局購買常備品", "link": "travel/ep10.html" }
           ]
     },
     {
