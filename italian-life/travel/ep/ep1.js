@@ -1,9 +1,12 @@
 // Episode 1 – Al bar (At the Coffee Bar / 咖啡館)
-window.epData  = {
-  episode: "Episode 1 – Al bar", title_en: "At the Coffee Bar", title_zh: "咖啡館",
+const episodeData = {
+  episode: "Episode 1 – Al bar",
+  title_en: "At the Coffee Bar",
+  title_zh: "咖啡館",
   topics: [
     {
-      topicId: 1, scenes: [
+      topicId: 1,
+      scenes: [
         { scene: "Ordering a coffee", dialogue: [
           { speaker: "1", text: "Vorrei un caffè, per favore.", en: "I’d like a coffee, please.", zh: "我想要一杯咖啡，謝謝。" },
           { speaker: "2", text: "Subito! Un espresso?", en: "Right away! An espresso?", zh: "馬上來！是濃縮咖啡嗎？" },
@@ -30,8 +33,11 @@ window.epData  = {
           { speaker: "2", text: "Arriva subito!", en: "Coming right up!", zh: "馬上來！" }
         ]}
       ]
-      topicId: 2, scenes: [
-          { scene: "Ordering a croissant", dialogue: [
+    },
+    {
+      topicId: 2,
+      scenes: [
+        { scene: "Ordering a croissant", dialogue: [
           { speaker: "1", text: "Vorrei un cornetto, per favore.", en: "I’d like a croissant, please.", zh: "我想要一個可頌，謝謝。" },
           { speaker: "2", text: "Lo vuole semplice o con cioccolato?", en: "Do you want it plain or with chocolate?", zh: "您要原味的還是巧克力的？" },
           { speaker: "1", text: "Con cioccolato, grazie.", en: "With chocolate, thank you.", zh: "加巧克力的，謝謝。" }
@@ -48,8 +54,7 @@ window.epData  = {
           { speaker: "1", text: "Allora prendo anche un tiramisù.", en: "Then I’ll also take a tiramisù.", zh: "那我也來一個提拉米蘇。" },
           { speaker: "2", text: "Perfetto, arrivo subito.", en: "Perfect, I’ll be right there.", zh: "好的，我馬上來。" }
         ]}
-        ]
-      // adding more topic if any
+      ]
     }
   ]
 };
