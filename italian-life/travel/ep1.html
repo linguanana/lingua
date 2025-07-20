@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Episode 1 – At the Coffee Bar</title>
-  <link rel="stylesheet" href="../../shared/lesson.css" />
-  <script src="../../shared/ep.js" defer></script>
+  <meta charset="UTF-8">
+  <title>🇮🇹 Episode 1 – Al bar: Missione caffè</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ✅ 使用共用 CSS -->
+  <link rel="stylesheet" href="../../shared/css/fonts.css">
+  <link rel="stylesheet" href="../../shared/css/lesson-style.css">
 </head>
 <body>
+  <!-- ✅ 頁面標題 -->
+  <h1 title="At the Coffee Bar（咖啡點東西）">
+    🇮🇹 Episode 1 – Al bar: Missione caffè
+  </h1>
+
+  <!-- ✅ 題目選擇器（未來每個 topic 拆頁） -->
+  <p class="info-text-size">
+    <strong>📚 Topics:</strong>
+    <span class="current-topic">1</span> |
+    <a href="topic2.html">2</a> |
+    <a href="topic3.html">3</a> |
+    <a href="topic4.html">4</a> |
+    <a href="topic5.html">5</a> |
+    <a href="topic2.html">6</a> |
+    <a href="topic3.html">7</a> |
+    <a href="topic4.html">8</a> |
+  </p>
+
+  <audio controls class="small-audio">
+    <source src="./audio/lesson1_1k.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <!-- ✅ 對話容器與音訊 -->
   <div class="lesson-container">
-    <h1>☕ Episode 1 – At the Coffee Bar<br><small>咖啡吧體驗</small></h1>
-
-    <audio controls src="../../audio/ep1.mp3" class="episode-audio"></audio>
-
     <div id="scenes-container" class="auto-list"></div>
-
     <p class="back-link"><a href="../../index.html">← Back to Episodes</a></p>
   </div>
+
+  <!-- ✅ 載入 ep.js 並呼叫對應 JSON -->
+  <script src="../../shared/js/ep.js"></script>
   <script>
     renderEpisodeFromJSON("../../travel/ep1.json");
   </script>
