@@ -15,7 +15,7 @@
     // Load episode JS dynamically (e.g., ep1.js)
     const epId = new URLSearchParams(window.location.search).get("id") || "1";
     const script = document.createElement("script");
-    script.src = `ep${epId}.js`;
+    script.src = `ep/ep${epId}.js`;
     script.onload = () => renderEpisodeHeaderAndTopics(episodeData);
     document.body.appendChild(script);
   </script>
