@@ -4,6 +4,7 @@ function renderEpisodeHeaderAndTopics(episodeData) {
 
   // 顯示標題
   titleEl.textContent = `🎬 ${episodeData.episode}`;
+  titleEl.setAttribute("title", `${episodeData.title_en} (${episodeData.title_zh})`);
 
   // 建立 Topic 按鈕區塊
   const nav = document.createElement("div");
