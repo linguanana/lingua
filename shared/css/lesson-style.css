@@ -255,13 +255,15 @@ th, td {
 
 /* travel topic */
 #topic-nav {
-  display: flex; /* Puts items in a row */
-  align-items: center; /* Vertically aligns them */
+  display: flex; /* Arranges children (label and buttons) in a row */
+  align-items: center; /* Vertically aligns them in the middle */
+  flex-wrap: nowrap; /* 🔥 THIS IS THE KEY: Prevents items from wrapping to the next line */
   gap: 10px; /* Space between items */
 }
 
 #topic-nav p {
   margin: 0; /* No extra space around the label */
+  white-space: nowrap; /* Ensures "Topics:" text itself doesn't wrap */
 }
 
 #topic-nav button {
