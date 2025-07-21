@@ -15,11 +15,19 @@ function renderEpisodeHeaderAndTopics(episodeData) {
   nav.appendChild(label);  // ✅ 加這一行
 
   episodeData.topics.forEach((topic, index) => {
-    const btn = document.createElement("button");
-    btn.textContent = `${topic.title || (index + 1)}`;
-    btn.onclick = () => renderSingleTopic(topic);
-    nav.appendChild(btn);
-  });
+      const btn = document.createElement("button");
+      btn.textContent = `${topic.title || (index + 1)}`;
+      btn.onclick = () => {
+        // Remove 'active' class from all buttons within this nav
+        document.querySelectorAll('#topic-nav button').forEach(button => {
+          button.classList.remove('active');
+        });
+        // Add 'active' class to the clicked button
+        btn.classList.add('active');
+        renderSingleTopic(topic);
+      };
+      nav.appendChild(btn);
+    });
 
   topicsContainer.appendChild(nav);
 
