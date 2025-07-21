@@ -29,6 +29,13 @@ function renderEpisodeHeaderAndTopics(episodeData) {
       nav.appendChild(btn);
     });
 
+    // Default load the first topic and set its button as active
+    if (episodeData.topics.length > 0) {
+      const firstButton = nav.querySelector('button'); // Get the first button created
+      if (firstButton) {
+        firstButton.classList.add('active'); // Add active class to it
+      }
+    }
   topicsContainer.appendChild(nav);
 
   // 預設載入第一個 topic
