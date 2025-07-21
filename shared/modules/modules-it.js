@@ -1,6 +1,7 @@
 const modulesData = [
     {
         title: '🇮🇹 Module 1 – Greeting 問候',
+        moduleId: 'm1',
         lessons: [
             { name: 'Lesson1: Say Hello 打招呼', link: 'module1/lesson1.html' },
             { name: 'Lesson2: Ask “How are you?” 最近如何', link: 'module1/lesson2.html' },
@@ -15,6 +16,7 @@ const modulesData = [
     },
     {
         title: '✈️ Travel Survival Italian 旅行義大利語精選',
+        moduleId: 'travel1',
         lessons: [
              // each ep has 5-10 topics depends, each topic should have 3 differnt asking or Answering scenes
              // scenes in one mp3
@@ -33,6 +35,7 @@ const modulesData = [
     },
     {
         title: '🇮🇹 Module 2 – Order at a Café 買咖啡早餐',
+        moduleId: 'm3',
         lessons: [
           { name: 'Lesson1: The Italian Bar & Coffee Basics 義式咖啡館', link: 'module2/lesson1.html' },
           { name: 'Lesson2: Ordering Pastries & Drinks 點心與其他飲品', link: 'module2/lesson2.html' },
@@ -53,6 +56,7 @@ const modulesData = [
     { title: 'Module 12 – Navigate Bureaucracy 處理行政 (Coming Soon! 即將推出!)', lessons: [] },
     {
         title: 'Module 13 – Make Friends & Introduce Yourself 認識朋友與自我介紹',
+        moduleId: 'm13',
         lessons: [
             { name: 'Lesson1: Sharing More About Yourself (Condividere di Più su di Te)', link: 'module13/lesson1.html' },
             { name: 'Lesson2: Talking About Where You Live (Dove Abito? - Deeper Dive)', link: 'module13/lesson2.html' },
