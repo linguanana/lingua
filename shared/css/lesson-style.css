@@ -279,3 +279,34 @@ th, td {
   color: white; /* White text for active button */
   border-color: #007bff;
 }
+
+.back-link {
+    /* Adjust this value to control the text size */
+    font-size: 1.2em; /* Example: Slightly smaller than a typical H2, but larger than body text */
+    /* font-size: 1.5em; */ /* Example: Similar to a common H2 size */
+    /* font-size: 22px; */ /* Example: You can use pixel values too */
+
+    padding: 8px 15px; /* Adjust padding around the text if it's too tight or too wide */
+    display: inline-block; /* Crucial for padding/margin to work on 'a' tags */
+
+    /* Other styling you might want for a button-like appearance */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make it bold like a heading */
+}
+
+.back-link:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/* Also adjust the spacing around the nav element if needed */
+nav {
+    margin-top: 20px;    /* Space above the navigation */
+    margin-bottom: 30px; /* Space below the navigation (e.g., separating it from the H1) */
+    text-align: left;    /* Align the link to the left */
+}
