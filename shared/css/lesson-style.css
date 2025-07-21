@@ -284,7 +284,8 @@ th, td {
 /* 1. Basic spacing for the navigation wrapper */
 nav {
     margin-top: 20px;     /* Space above the nav */
-    margin-bottom: 30px;  /* Space below the nav */
+    margin-bottom: 5px;  /* Space below the nav */
+    padding-left: 5px;
     /* Removed padding-left, relying on .container for overall page padding */
 }
 
@@ -294,6 +295,7 @@ nav {
     color: #007bff;         /* A standard blue for links */
     text-decoration: none;  /* REMOVE the default underline */
     cursor: pointer;        /* Keep this to indicate it's clickable */
+    margin-right: auto;
 
     /* All other decorative properties (padding, border, background, shadow, font-weight, transition) are REMOVED */
 }
@@ -310,5 +312,5 @@ nav {
     max-width: 960px; /* Adjust to your page's max content width */
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px; /* This provides the essential horizontal spacing for all content */
+    padding: 0 10px; /* This provides the essential horizontal spacing for all content */
 }
