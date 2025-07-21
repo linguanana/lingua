@@ -8,17 +8,25 @@ function renderEpisodeHeaderAndTopics(episodeData) {
   // 建立 Topic 按鈕區塊
   const nav = document.createElement("div");
   nav.id = "topic-nav";
+
+  const label = document.createElement("p");
+  label.className = "info-text-size";
+  label.innerHTML = `<strong>📚 Topics:</strong> `;
+  nav.appendChild(label);  // ✅ 加這一行
+
   episodeData.topics.forEach((topic, index) => {
     const btn = document.createElement("button");
-    btn.textContent = `${topic.title || 'Topic ' + (index + 1)}`;
+    btn.textContent = `${topic.title || (index + 1)}`;
     btn.onclick = () => renderSingleTopic(topic);
     nav.appendChild(btn);
   });
+
   topicsContainer.appendChild(nav);
 
   // 預設載入第一個 topic
   renderSingleTopic(episodeData.topics[0]);
 }
+
 
 function renderSingleTopic(topicObj) {
   const container = document.getElementById("topics");
