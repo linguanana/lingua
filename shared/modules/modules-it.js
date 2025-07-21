@@ -15,7 +15,7 @@ const modulesData = [
         ]
     },
     {
-        title: '✈️ Travel Survival Italian 旅行義大利語精選',
+        title: '✈️ Italian Travel Phrases Survival Italian 旅行義大利語精選',
         moduleId: 'travel1',
         lessons: [
              // each ep has 5-10 topics depends, each topic should have 3 differnt asking or Answering scenes
