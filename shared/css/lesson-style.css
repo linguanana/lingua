@@ -258,7 +258,7 @@ th, td {
   display: flex; /* Arranges children (label and buttons) in a row */
   align-items: center; /* Vertically aligns them in the middle */
   flex-wrap: nowrap; /* 🔥 THIS IS THE KEY: Prevents items from wrapping to the next line */
-  gap: 10px; /* Space between items */
+  gap: 8px; /* Space between items */
 }
 
 #topic-nav p {
@@ -275,7 +275,7 @@ th, td {
 }
 
 #topic-nav button.active {
-  background-color: #007bff; /* Blue for active button */
+  background-color: #6a9acb; /* Blue for active button */
   color: white; /* White text for active button */
   border-color: #007bff;
 }
