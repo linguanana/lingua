@@ -29,15 +29,14 @@ function renderEpisodeHeaderAndTopics(data) {
       dialogueList.className = "dialogue-box";
 
       sceneObj.dialogue.forEach((line) => {
-        const lineEl = document.createElement("p");
-        const emoji = line.speaker === "1" ? "👩🏻‍‍" : "🧑‍🍳"; // or 👤/👨‍🍳
-        lineEl.innerHTML = `
-        <strong>${emoji} ${line.text}</strong><br>
-        → ${line.en}${line.zh ? ` (${line.zh})` : ""}
-        `;
-        dialogueList.appendChild(lineEl);
+      const lineEl = document.createElement("p");
+      const emoji = line.speaker === "1" ? "👩🏻‍‍" : "🧑‍🍳"; // Customize emoji as needed
+      lineEl.innerHTML = `
+        <strong>${emoji} <span class="italian-word">${line.text}</span></strong><br>
+        <span class="translation">→ ${line.en}${line.zh ? ` (${line.zh})` : ""}</span>
+      `;
+      dialogueList.appendChild(lineEl);
       });
-
 
       topicDiv.appendChild(dialogueList);
     });
