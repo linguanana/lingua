@@ -30,13 +30,14 @@ function renderEpisodeHeaderAndTopics(data) {
 
       sceneObj.dialogue.forEach((line) => {
         const lineEl = document.createElement("p");
-        const emoji = line.speaker === "1" ? "👱🏻‍♀️" : "🧑‍🍳"; // or 👤/👨‍🍳
+        const emoji = line.speaker === "1" ? "👩🏻‍‍" : "🧑‍🍳"; // or 👤/👨‍🍳
         lineEl.innerHTML = `
         <strong>${emoji} ${line.text}</strong><br>
         → ${line.en}${line.zh ? ` (${line.zh})` : ""}
         `;
         dialogueList.appendChild(lineEl);
       });
+
 
       topicDiv.appendChild(dialogueList);
     });
