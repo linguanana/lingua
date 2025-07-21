@@ -52,6 +52,21 @@ function renderSingleTopic(topicObj) {
     if (child.id !== "topic-nav") container.removeChild(child);
   });
 
+  // === 🎧 Insert Audio Player ===
+ const audio = document.createElement("audio");
+ audio.setAttribute("controls", "");
+ audio.className = "small-audio";
+
+ // Use topicObj.mp3 if defined, or fallback to epX_Y.mp3
+ const epId = new URLSearchParams(window.location.search).get("id") || "1";
+ const topicId = topicObj.topicId || "1"; // fallback if missing
+ const filename = topicObj.mp3 || `ep${epId}_${topicId}.mp3`;
+
+ const source = document.createElement("source");
+ source.src = `./audio/${filename}`;
+ source.type = "audio/mpeg";
+ audio.appendChild(source);
+
   // 顯示該 topic 底下所有 scene
   topicObj.scenes.forEach((sceneObj) => {
     const sceneDiv = document.createElement("div");
