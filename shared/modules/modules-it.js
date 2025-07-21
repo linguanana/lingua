@@ -20,7 +20,7 @@ const modulesData = [
         lessons: [
              // each ep has 5-10 topics depends, each topic should have 3 differnt asking or Answering scenes
              // scenes in one mp3
-            { "name": "Episode 1: At the Coffee Bar 咖啡吧體驗", "link": "travel/ep1.html" },
+            { "name": "Episode 1: At the Coffee Bar 咖啡吧體驗", "link": "travel/ep.html" },
             { "name": "Episode 2: Dining at a Restaurant 餐廳用餐", "link": "travel/ep2.html" },
             { "name": "Episode 3: Buying a Train Ticket 買火車票任務", "link": "travel/ep3.html" },
             { "name": "Episode 4: Asking for Directions 問路與尋找洗手間", "link": "travel/ep4.html" },
