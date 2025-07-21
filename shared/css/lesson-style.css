@@ -280,33 +280,35 @@ th, td {
   border-color: #007bff;
 }
 
-.back-link {
-    /* Adjust this value to control the text size */
-    font-size: 1.2em; /* Example: Slightly smaller than a typical H2, but larger than body text */
-    /* font-size: 1.5em; */ /* Example: Similar to a common H2 size */
-    /* font-size: 22px; */ /* Example: You can use pixel values too */
-
-    padding: 8px 15px; /* Adjust padding around the text if it's too tight or too wide */
-    display: inline-block; /* Crucial for padding/margin to work on 'a' tags */
-
-    /* Other styling you might want for a button-like appearance */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f5f5f5;
-    color: #333;
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Optional: Make it bold like a heading */
-}
-
-.back-link:hover {
-    background-color: #e0e0e0;
-    text-decoration: none;
-    color: #0056b3;
-}
-
-/* Also adjust the spacing around the nav element if needed */
+/* return to back
+/* 1. Basic spacing for the navigation wrapper */
 nav {
-    margin-top: 20px;    /* Space above the navigation */
-    margin-bottom: 30px; /* Space below the navigation (e.g., separating it from the H1) */
-    text-align: left;    /* Align the link to the left */
+    margin-top: 20px;     /* Space above the nav */
+    margin-bottom: 30px;  /* Space below the nav */
+    /* Removed padding-left, relying on .container for overall page padding */
+}
+
+/* 2. Styling for the actual "Back" link */
+.back-link {
+    font-size: 0.95em;      /* Adjust this for size (e.g., 1em for regular text size) */
+    color: #007bff;         /* A standard blue for links */
+    text-decoration: none;  /* REMOVE the default underline */
+    cursor: pointer;        /* Keep this to indicate it's clickable */
+
+    /* All other decorative properties (padding, border, background, shadow, font-weight, transition) are REMOVED */
+}
+
+/* 3. Hover effect (still important for usability) */
+.back-link:hover {
+    color: #0056b3;         /* A slightly darker blue on hover */
+    text-decoration: underline; /* Add underline on hover for clear feedback */
+}
+
+/* 4. Ensure your main content container has horizontal padding */
+/* This is crucial if you remove padding-left from 'nav' */
+.container {
+    max-width: 960px; /* Adjust to your page's max content width */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* This provides the essential horizontal spacing for all content */
 }
