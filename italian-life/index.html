@@ -2,20 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>🇮🇹 Your Real Italian Life</title>
+    <title>✈️ Travel Survival Italian</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- ✅ 引入共用字體 + 基本樣式 + 模組樣式 -->
     <link rel="stylesheet" href="../shared/css/fonts.css">
     <link rel="stylesheet" href="../shared/css/module-style.css">
 </head>
 <body>
     <div class="container">
-        <h1>🇮🇹 Your Real Italian Life</h1>
-        <p class="course-intro">Step into daily Italian life — Italian, as it truly is.</p>
-        <div id="modules-container"></div>
+        <nav>
+            <a href="../index.html" class="back-link">⬅️ Back to All Modules</a>
+        </nav>
+        <h1>✈️ Travel Survival Italian</h1>
+        <p class="course-intro">Master essential Italian phrases for your travels.</p>
+        <div id="travel-modules-container"></div>
     </div>
-    <!-- ✅ 引入模組資料 + 生成模組 + toggle 展開功能 -->
+
     <script src="../shared/modules/modules-it.js"></script>
     <script src="../shared/js/render-modules.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const requestedModuleId = 'travel1';
+            // Call the shared renderModules function, specifying the target container and the module ID
+            renderModules('travel-modules-container', requestedModuleId);
+        });
+    </script>
+    <footer>
+        <p>&copy; 2025 Your Language App</p>
+    </footer>
 </body>
 </html>
