@@ -31,12 +31,10 @@ function renderModules(targetContainerId, moduleIdToRender = null) {
     modulesToDisplay.forEach(moduleData => {
         const moduleDiv = document.createElement('div');
         moduleDiv.classList.add('module');
-        // You can also add the module's ID directly to its container for specific styling if needed
         moduleDiv.id = moduleData.moduleId;
 
         const h2 = document.createElement('h2');
         h2.textContent = moduleData.title;
-        // Set click event for accordion-like behavior (expand/collapse)
         h2.onclick = function() { toggleLessons(this); };
 
         const lessonListDiv = document.createElement('div');
@@ -46,7 +44,23 @@ function renderModules(targetContainerId, moduleIdToRender = null) {
         if (moduleData.lessons && moduleData.lessons.length > 0) {
             moduleData.lessons.forEach(lesson => {
                 const a = document.createElement('a');
-                a.href = lesson.link;
+
+                // --- Start of Dynamic Link Path Adjustment ---
+                let finalLink = lesson.link;
+                const currentPathname = window.location.pathname;
+
+                // Check if the current page's path includes '/travel/' AND is not the base 'italian-life/' path.
+                // This indicates we are in a subdirectory like 'lingua/italian-life/travel/index.html'
+                // The check `!currentPathname.endsWith('/italian-life/')` prevents false positives on the main index.
+                if (currentPathname.includes('/travel/') && !currentPathname.endsWith('/italian-life/')) {
+                    // If the link itself starts with 'travel/', remove it to prevent 'travel/travel/'
+                    if (finalLink.startsWith('travel/')) {
+                        finalLink = finalLink.substring('travel/'.length);
+                    }
+                }
+                // --- End of Dynamic Link Path Adjustment ---
+
+                a.href = finalLink; // Use the adjusted link
                 a.textContent = lesson.name;
                 lessonListDiv.appendChild(a);
             });
@@ -65,7 +79,6 @@ function renderModules(targetContainerId, moduleIdToRender = null) {
         // If this is a single-module page, automatically expand the module
         if (moduleIdToRender) {
             moduleDiv.classList.add('active'); // Add 'active' class to expand
-            // Use requestAnimationFrame to ensure the element is fully rendered before calculating scrollHeight
             requestAnimationFrame(() => {
                 lessonListDiv.style.maxHeight = lessonListDiv.scrollHeight + 'px';
                 lessonListDiv.style.padding = '10px 12px'; // Adjust padding as needed for expanded state
@@ -86,7 +99,6 @@ function toggleLessons(el) {
         lessonList.style.padding = '0px 12px'; // Adjust padding for collapsed state
     } else {
         // Expand the current module and collapse others (if any are open)
-        // This is primarily relevant for the "all modules" page.
         document.querySelectorAll('.module.active').forEach(openModule => {
             openModule.classList.remove('active');
             openModule.querySelector('.lesson-list').style.maxHeight = '0';
@@ -94,7 +106,6 @@ function toggleLessons(el) {
         });
 
         moduleDiv.classList.add('active');
-        // Calculate and set maxHeight to expand fully
         lessonList.style.maxHeight = lessonList.scrollHeight + 'px';
         lessonList.style.padding = '10px 12px'; // Adjust padding for expanded state
     }
@@ -102,7 +113,6 @@ function toggleLessons(el) {
 
 // Initial page load handler
 document.addEventListener('DOMContentLoaded', () => {
-    // Determine which container to target based on the page's structure
     const mainModulesContainer = document.getElementById('modules-container');
     const travelModulesContainer = document.getElementById('travel-modules-container');
 
@@ -113,8 +123,5 @@ document.addEventListener('DOMContentLoaded', () => {
         // This is a single module page (like travel/index.html),
         // it expects an inline script to call renderModules with the specific ID.
         // We'll leave the call to the inline script in travel/index.html.
-        // This block is more of a fallback/detection than a primary call for single pages.
-        // The inline script below handles the specific moduleId logic.
     }
-    // If neither container is found, no modules will be rendered by this script's default behavior.
 });
