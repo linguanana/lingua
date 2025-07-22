@@ -52,7 +52,7 @@ function renderSingleTopic(topicObj) {
     if (child.id !== "topic-nav") container.removeChild(child);
   });
 
-  // === 🎧 Create audio player dynamically ===
+  // 建立 audio player
   const epId = new URLSearchParams(window.location.search).get("id") || "1";
   const topicId = topicObj.topicId || "1";
   const filename = topicObj.mp3 || `ep${epId}_${topicId}.mp3`;
@@ -65,6 +65,9 @@ function renderSingleTopic(topicObj) {
   source.src = `./audio/${filename}`;
   source.type = "audio/mpeg";
   audio.appendChild(source);
+
+  container.appendChild(audio); // ← 把 audio 放進畫面上
+
 
   // 顯示該 topic 底下所有 scene
   topicObj.scenes.forEach((sceneObj) => {
