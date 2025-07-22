@@ -169,7 +169,7 @@ th, td {
 }
 
 .small-audio {
-  margin-left: 2em;  /* 模擬對話的內縮 */
+  margin-left: 1em;  /* 模擬對話的內縮 */
   margin-top: 1em;
   margin-bottom: 0;
   transform: scale(1, 0.85); /* x 不變，y 軸壓扁 */
