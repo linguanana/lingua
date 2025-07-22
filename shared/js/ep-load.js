@@ -66,6 +66,12 @@ function renderSingleTopic(topicObj) {
   source.type = "audio/mpeg";
   audio.appendChild(source);
 
+  // 🎧 加 label 和 audio
+  const label = document.createElement("p");
+  label.textContent = "🎧  Listening Practice";
+  label.className = "audio-label";
+
+  container.appendChild(label);   // 先加標籤
   container.appendChild(audio); // ← 把 audio 放進畫面上
 
 

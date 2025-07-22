@@ -170,10 +170,17 @@ th, td {
 
 .small-audio {
   margin-left: 2em;  /* 模擬對話的內縮 */
-  margin-top: 0;
+  margin-top: 1em;
   margin-bottom: 0;
   transform: scale(1, 0.85); /* x 不變，y 軸壓扁 */
   transform-origin: top;
+}
+
+.audio-label {
+  margin-left: 2em;
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.2em;
 }
 
 .current-lesson {
