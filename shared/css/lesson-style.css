@@ -176,13 +176,6 @@ th, td {
   transform-origin: top;
 }
 
-.audio-label {
-  margin-left: 2em;
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 0.2em;
-}
-
 .current-lesson {
   font-weight: 700;
   color: #0077cc;
