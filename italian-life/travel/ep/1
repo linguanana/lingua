@@ -1,0 +1,8 @@
+DEBUG: Script starting. Input SSML file path: mp3/ep1
+DEBUG: Starting synthesize_ssml_to_mp3 for path: mp3/ep1
+DEBUG: Google Cloud Text-to-Speech client initialized.
+DEBUG: Successfully read 84 lines from SSML file.
+DEBUG: Processing line 1: 'ep1_1.mp3 ========== (ep1 topic1)'
+DEBUG: Cleaned line for endswith check: 'ep1_1.mp3 ========== (ep1 topic1)'
+DEBUG: Does line end with '==========': False
+DEBUG: Raw line representation (repr): 'ep1_1.mp3 ========== (ep1 topic1)'
