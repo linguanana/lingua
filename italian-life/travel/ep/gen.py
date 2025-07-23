@@ -5,8 +5,10 @@ import sys # Import the sys module to access command-line arguments
 def generate_ssml_text(js_file_path):
     """
     Reads a JavaScript file containing episodeData, parses it,
-    and generates SSML-like text output for MP3 generation,
-    with <break time='2s' /> on its own line between scenes and topics.
+    and generates SSML-like text output, with a separate block
+    for each scene, including its MP3 filename header.
+    <break time='1s' /> is added after each dialogue line.
+    <break time='2s' /> is added between scenes and between topics.
 
     Args:
         js_file_path (str): The path to the JavaScript file (e.g., 'ep1.js').
@@ -41,46 +43,49 @@ def generate_ssml_text(js_file_path):
         return f"Error parsing JSON from JS file '{js_file_path}': {e}\nProblematic string snippet:\n{json_string[max(0, e.pos-50):e.pos+50]}"
 
     output_blocks = []
-    episode_id = episode_data.get('episodeId', 'UNKNOWN_EP')
+    episode_id = episode_data.get('episodeId', '1') # Default to '1' if not found
 
     topics_data = episode_data.get('topics', [])
     for topic_index, topic in enumerate(topics_data):
-        topic_id = topic.get('topicId', 'UNKNOWN_TOPIC')
+        # Use topicId from data, or generate one if missing
+        topic_id = topic.get('topicId', str(topic_index + 1))
 
-        # Start a new block for each topic, with its MP3 filename and header
-        topic_lines = []
-        topic_lines.append(f"ep{episode_id}_{topic_id}.mp3 ========== (ep{episode_id} topic{topic_id})")
+        scenes_data = topic.get('scenes', [])
+        for scene_index, scene in enumerate(scenes_data):
+            scene_lines = []
 
-        scenes = topic.get('scenes', [])
-        for scene_index, scene in enumerate(scenes):
+            # Construct the MP3 filename for THIS SPECIFIC SCENE
+            # This matches the frontend's auto-generated name
+            scene_mp3_filename = f"ep{episode_id}_topic{topic_id}_scene{scene_index + 1}.mp3"
+
+            # Add the header for this scene's MP3 block
+            scene_lines.append(f"{scene_mp3_filename} ========== (ep{episode_id} topic{topic_id} scene{scene_index + 1})")
+
             dialogues = scene.get('dialogue', [])
             for dialog_index, dialog in enumerate(dialogues):
                 # Each dialogue text followed by a 1-second break
-                topic_lines.append(f"{dialog['text']} <break time='1s' />")
+                scene_lines.append(f"{dialog['text']} <break time='1s' />")
 
-            # After all dialogues in a scene, if it's not the last scene in this topic,
-            # add a 2-second break on its own line.
-            if scene_index < len(scenes) - 1:
-                topic_lines.append("<break time='2s' />")
+            # After all dialogues in a scene, add a 2-second break
+            # if it's not the very last scene in the very last topic.
+            # This break will separate scenes for audio synthesis.
+            if not (topic_index == len(topics_data) - 1 and scene_index == len(scenes_data) - 1):
+                scene_lines.append("<break time='2s' />")
 
-        # After all scenes in a topic, if it's not the last topic in the episode,
-        # add a 2-second break on its own line to signify the end of the topic.
-        if topic_index < len(topics_data) - 1:
-            topic_lines.append("<break time='2s' />")
+            output_blocks.append("\n".join(scene_lines))
 
-        output_blocks.append("\n".join(topic_lines))
-
-        # Add an empty line between the full topic blocks for visual separation in the output
-        if topic_index < len(topics_data) - 1:
-            output_blocks.append("")
+            # Add an empty line between scene blocks for visual separation in the output file
+            # This is purely for readability of the generated text file
+            if not (topic_index == len(topics_data) - 1 and scene_index == len(scenes_data) - 1):
+                output_blocks.append("")
 
     return "\n".join(output_blocks)
 
 # --- Main execution block ---
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 generate_mp3text.py <js_file_path>")
-        print("Example: python3 generate_mp3text.py ep1.js")
+        print("Usage: python3 gen.py <js_file_path>")
+        print("Example: python3 gen.py ep1.js")
         sys.exit(1) # Exit with an error code
 
     js_file_name = sys.argv[1] # The first argument after the script name is the file path
