@@ -1,8 +1,10 @@
 const episodeData = {
+  ep_title: "ep",
   episodeId: 1,
   episode: "🇮🇹 Episode 1 – Al bar",
   title_en: "At the Coffee Bar",
   title_zh: "咖啡館",
+  toggle_title: "Scene",
   topics: [
     // --- TOPIC 1 (Existing) ---
     {
