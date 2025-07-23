@@ -80,32 +80,61 @@ function renderSingleTopic(topicObj) {
   const topicId = topicObj.topicId || "1"; // 仍然保留以備不時之需或用於 MP3 命名
 
   // 遍歷並顯示該 Topic 下的所有 Scene，並為其加上開合功能
-  topicObj.scenes.forEach((sceneObj) => {
+// ep-load.js (在 renderSingleTopic 函式內部)
+
+// 顯示該 topic 底下所有 scene，並為其加上開合功能
+// 注意：這裡的 forEach 迴圈要加上第二個參數 sceneIndex
+topicObj.scenes.forEach((sceneObj, sceneIndex) => { // <-- 這裡添加 sceneIndex
     const sceneDiv = document.createElement("div");
-    // 使用 'lesson-level' class 來應用開合樣式和行為
+    // !!! 關鍵修改：使用 'lesson-level' class 來應用開合樣式和行為 !!!
     sceneDiv.className = "scene-block lesson-level";
 
     const sceneTitle = document.createElement("h3");
-    sceneTitle.textContent = sceneObj.scene;
-    // 使用 'level-title' class 作為可點擊的標題
+    // 這裡使用 episodeData.toggle_title 和 sceneObj.scene
+    sceneTitle.textContent = episodeData.toggle_title + sceneObj.scene;
+    // !!! 關鍵修改：使用 'level-title' class !!!
     sceneTitle.className = "scene-title level-title";
     sceneDiv.appendChild(sceneTitle);
 
     // --- 為每個 Scene 創建獨立的 Audio Player ---
-    if (sceneObj.mp3) {
-        const sceneAudio = document.createElement("audio");
-        sceneAudio.setAttribute("controls", "");
-        sceneAudio.className = "small-audio scene-audio";
+    const sceneAudio = document.createElement("audio");
+    sceneAudio.setAttribute("controls", "");
+    sceneAudio.className = "small-audio scene-audio";
 
-        const sceneSource = document.createElement("source");
-        sceneSource.src = `./audio/${sceneObj.mp3}`;
-        sceneSource.type = "audio/mpeg";
-        sceneAudio.appendChild(sceneSource);
+    const sceneSource = document.createElement("source");
 
-        sceneDiv.appendChild(sceneAudio); // 將音頻播放器添加到 sceneDiv 內部
-    } else {
-        console.warn(`Warning: No MP3 defined for scene "${sceneObj.scene}"`);
-    }
+    // 構建預設的 MP3 檔案名：ep{episodeId}_topic{topicId}_scene{sceneIndex+1}.mp3
+    // 這裡使用 epId, topicId，和 sceneIndex (記得 +1 因為它是從 0 開始的)
+    const defaultMp3Filename = `ep${epId}_topic${topicId}_scene${sceneIndex + 1}.mp3`;
+
+    // 優先使用 sceneObj.mp3 中定義的檔案名，如果沒有定義，則使用預設構建的檔案名
+    const mp3FilenameToUse = sceneObj.mp3 || defaultMp3Filename;
+
+    sceneSource.src = `./audio/${mp3FilenameToUse}`;
+    sceneSource.type = "audio/mpeg";
+    sceneAudio.appendChild(sceneSource);
+
+    // 可選：如果檔案是預設生成且可能不存在，可以添加額外的樣式或提示
+    if (!sceneObj.mp3) {
+        // console.warn(`Warning: Scene "${sceneObj.scene}" using default MP3 filename: ${mp3FilenameToUse}`);
+        // 可以添加一個 class 讓 CSS 去處理，例如讓播放器變灰或顯示一個問號
+        sceneAudio.classList.add('generated-mp3-placeholder');
+    }
+
+    sceneDiv.appendChild(sceneAudio); // 將音頻播放器添加到 sceneDiv 內部
+    // --- 結束新增 ---
+
+    const dialogueList = document.createElement("div");
+    // !!! 關鍵修改：使用 'level-content' class !!!
+    dialogueList.className = "dialogue-box level-content";
+
+    // ... (其餘的對話內容渲染邏輯保持不變) ...
+
+    sceneDiv.appendChild(dialogueList);
+    container.appendChild(sceneDiv);
+
+    // ... (其餘的事件監聽器邏輯保持不變) ...
+}); // <-- 迴圈結束
     // --- 結束 Audio Player 創建 ---
 
     const dialogueList = document.createElement("div");
