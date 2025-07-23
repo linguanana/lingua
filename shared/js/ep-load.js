@@ -93,29 +93,35 @@ function renderSingleTopic(topicObj) {
     sceneDiv.appendChild(sceneTitle);
 
     // --- 為每個 Scene 創建獨立的 Audio Player ---
-    const sceneAudio = document.createElement("audio");
-    sceneAudio.setAttribute("controls", "");
-    sceneAudio.className = "small-audio scene-audio";
+    const sceneAudio = document.createElement("audio");
+    sceneAudio.setAttribute("controls", "");
+    sceneAudio.className = "small-audio scene-audio";
 
-    const sceneSource = document.createElement("source");
+    const sceneSource = document.createElement("source");
+    const defaultMp3Filename = `ep${epId}_topic${topicId}_scene${sceneIndex + 1}.mp3`;
+    const mp3FilenameToUse = sceneObj.mp3 || defaultMp3Filename;
 
-    // 構建預設的 MP3 檔案名：ep{episodeId}_topic{topicId}_scene{sceneIndex+1}.mp3
-    // 這裡使用 epId, topicId，和 sceneIndex (記得 +1 因為它是從 0 開始的)
-    const defaultMp3Filename = `ep${epId}_topic${topicId}_scene${sceneIndex + 1}.mp3`;
+    sceneSource.src = `./audio/${mp3FilenameToUse}`;
+    sceneSource.type = "audio/mpeg";
+    sceneAudio.appendChild(sceneSource);
 
-    // 優先使用 sceneObj.mp3 中定義的檔案名，如果沒有定義，則使用預設構建的檔案名
-    const mp3FilenameToUse = sceneObj.mp3 || defaultMp3Filename;
+    if (!sceneObj.mp3) {
+        sceneAudio.classList.add('generated-mp3-placeholder');
+    }
 
-    sceneSource.src = `./audio/${mp3FilenameToUse}`;
-    sceneSource.type = "audio/mpeg";
-    sceneAudio.appendChild(sceneSource);
+    // IMPORTANT CHANGE: Append sceneAudio to dialogueList (which is level-content)
+    // NOT directly to sceneDiv
+    const dialogueList = document.createElement("div"); // This is your .level-content div
+    dialogueList.className = "dialogue-box level-content";
 
-    // 可選：如果檔案是預設生成且可能不存在，可以添加額外的樣式或提示
-    if (!sceneObj.mp3) {
-        // console.warn(`Warning: Scene "${sceneObj.scene}" using default MP3 filename: ${mp3FilenameToUse}`);
-        // 可以添加一個 class 讓 CSS 去處理，例如讓播放器變灰或顯示一個問號
-        sceneAudio.classList.add('generated-mp3-placeholder');
-    }
+    dialogueList.appendChild(sceneAudio); // <-- Move the audio player HERE!
+    // --- 結束 Audio Player 創建 ---
+
+    // ... (rest of your dialogueList content and appending) ...
+
+    sceneObj.dialogue.forEach((line) => {
+      // ... dialogue rendering ...
+    });
 
     sceneDiv.appendChild(sceneAudio); // 將音頻播放器添加到 sceneDiv 內部
     // --- 結束新增 ---
