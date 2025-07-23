@@ -21,25 +21,26 @@ TEXT:
 Grazie – Thank you
 Grazie mille – Thank you very much
 Prego – – You’re welcome / Go ahead / Please speak
+Di niente – No problem / Don’t mention it
 Per favore – Please
 Scusa – Excuse me / Sorry (informal)
 Scusi – Excuse me / Sorry (formal)
 Mi scusi – Excuse me (more polite)
-Di niente – No problem / Don’t mention it
+
 Signore – Mr. / Sir
 Signora – Mrs. / Madam / older woman
 
 IT:
-Grazie {{pause=500}}
-Grazie mille {{pause=500}}
-Prego {{pause=500}}
-Per favore {{pause=500}}
-Scusa {{pause=500}}
-Scusi {{pause=500}}
-Mi scusi {{pause=500}}
-Di niente {{pause=500}}
-Signore {{pause=500}}}
-Signora {{pause=500}}
+Grazie {{pause=1000}}
+Grazie mille {{pause=1000}}
+Prego {{pause=1000}}
+Di niente {{pause=1000}}
+Per favore {{pause=1000}}
+Scusa {{pause=1000}}
+Scusi {{pause=1000}}
+Mi scusi {{pause=1000}}
+Signore {{pause=1000}}
+Signora {{pause=1000}}
 
 🩷🩷 Slide 3 *************************
  *************** TEXT: ***************
@@ -50,41 +51,43 @@ same as [slide-2] TEXT:
 EN:
 Let’s learn when to use each polite word in Italian. {{pause=1000}}
 
-{{pause=1000}}“Grazie”{{pause=1000}} and {{pause=1000}}“Grazie mille”{{pause=1000}}
-They both mean “thank you.” {{pause=500}}You can use either one — they’re both great! {{pause=1000}}
+{{pause=1000}}“Grazie”{{pause=500}} and {{pause=1000}}“Grazie mille”{{pause=1000}}
+They both mean “thank you.” {{pause=500}}You can use either one — they’re both great!{{pause=500}}
 
-{{pause=1000}}“Prego”{{pause=1000}}
+{{pause=1000}}“Prego”{{pause=500}}
 is the classic way to say “you’re welcome.”{{pause=500}}
 You’ll hear it right after you say {{pause=1000}} “Grazie.” {{pause=1000}}
 
-But actually, {{pause=1000}}Prego{{pause=1000}} can mean a few things. {{pause=500}}
+But actually, {{pause=500}}Prego{{pause=500}}can mean a few things. {{pause=500}}
 
-If someone holds a door and says {{pause=1000}}Prego{{pause=1000}} — it means “After you.” {{pause=500}}
+If someone holds a door and says {{pause=500}}Prego{{pause=500}} — it means “After you.” {{pause=500}}
 Or if you ask, “Can I sit here?”  {{pause=500}} they might say {{pause=1000}}Prego!{{pause=1000}} means “Go ahead!” {{pause=500}}
 
-And in cafés or shops, {{pause=1000}}Prego{{pause=1000}} can mean “Next!”
- {{pause=500}} means it’s your turn to order. {{pause=1000}}
+And in cafés or shops, {{pause=500}}Prego{{pause=500}} can mean “Next!”
+ {{pause=500}} means it’s your turn to order.{{pause=500}}
 
-{{pause=1000}}“Per favore”{{pause=1000}}
+ {{pause=1000}}“Di niente”{{pause=500}}
+ means “no problem” or “don’t mention it.” {{pause=500}}It’s another way to say “you’re welcome.” {{pause=500}}
+ It’s the kind of thing you say when you don’t want thanks to feel too serious. {{pause=1000}}
+ Like saying — “No worries. Happy to help!” {{pause=500}}
+
+{{pause=1000}}“Per favore”{{pause=500}}
 means “please.” Use it when you ask for something politely.{{pause=500}}
 
-{{pause=1000}}“Scusa”{{pause=1000}}It means “excuse me” or “sorry.” {{pause=500}}
-For example You bump into your friend {{pause=500}} just say: {{pause=1000}}Scusa!{{pause=1000}}
+{{pause=1000}}“Scusa”{{pause=500}}It means “excuse me” or “sorry.” {{pause=500}}
+For example You bump into your friend {{pause=500}} just say: {{pause=500}}}Scusa!{{pause=500}}
 
-{{pause=1000}}“Scusi”{{pause=1000}}is formal, use it with strangers on the street or older people.{{pause=1000}}
+{{pause=1000}}“Scusi”{{pause=500}}is formal, use it with strangers on the street or older people.{{pause=500}}
 
-{{pause=1000}}“Mi scusi”{{pause=1000}} is even more polite.
+{{pause=1000}}“Mi scusi”{{pause=500}} is even more polite.
 Use it when you’re trying to get someone’s attention. {{pause=1000}}
 
-so, If you bump into someone — just say {{pause=1000}}Scusa!{{pause=1000}}
-If you need to ask something politely — try {{pause=1000}} Mi scusi.” {{pause=1000}}
+so, If you bump into someone — just say {{pause=500}}Scusa!{{pause=500}}
+If you need to ask something politely — try {{pause=1000}} Mi scusi.” {{pause=500}}
 
-{{pause=1000}}“Di niente”{{pause=1000}}
-means “no problem” or “don’t mention it.” {{pause=500}}It’s another way to say “you’re welcome.” {{pause=500}}
-You might also hear people say this casually — after you thank them. {{pause=1000}}
 
-{{pause=1000}}“Signore”{{pause=1000}} means “Mr.” or “Sir.”{{pause=500}}
-{{pause=1000}}“Signora”{{pause=1000}} means “Mrs.” or “Ma’am.”{{pause=500}}
+{{pause=1000}}“Signore”{{pause=500}} means “Mr.” or “Sir.”{{pause=500}}
+{{pause=1000}}“Signora”{{pause=500}} means “Mrs.” or “Ma’am.”{{pause=500}}
 
 
 

@@ -49,7 +49,7 @@ def generate_ssml_text(js_file_path):
 
         # Start a new block for each topic, with its MP3 filename and header
         topic_lines = []
-        topic_lines.append(f"ep{episode_id}_{topic_id}.mp3 ======= (ep{episode_id} topic{topic_id})")
+        topic_lines.append(f"ep{episode_id}_{topic_id}.mp3 ========== (ep{episode_id} topic{topic_id})")
 
         scenes = topic.get('scenes', [])
         for scene_index, scene in enumerate(scenes):
