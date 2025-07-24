@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🇮🇹 Lesson 1 – Ciao! Missione al mercato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../shared/css/fonts.css">
+    <link rel="stylesheet" href="../../shared/css/lesson-style.css">
+</head>
+<body>
+    <div id="app">
+        Loading Lesson...
+    </div>
+
+    <script src="../../shared/js/lesson-load.js"></script>
+    <script>
+        // Set the lessonId for lesson-load.js
+        // This ensures that when lesson1.html is opened directly, it defaults to lessonId 1.
+        // If you were to have a generic lesson.html, you'd rely purely on URL parameters.
+        const urlParams = new URLSearchParams(window.location.search);
+        if (!urlParams.has('lessonId')) {
+            urlParams.set('lessonId', '1');
+            // Update URL in browser history (optional, but good for consistent URLs)
+            window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
+        }
+    </script>
+</body>
+</html>
