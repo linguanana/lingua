@@ -10,22 +10,7 @@
 </head>
 <body>
     <div id="app">
-        Loading Lesson...
-    </div>
-
-    <script src="../../shared/js/lesson-load.js"></script>
-        <script>
-            console.log("Inline script: Executing in lesson11.html.");
-            const urlParams = new URLSearchParams(window.location.search);
-            console.log("Inline script: Initial URL query string:", window.location.search);
-
-            if (!urlParams.has('lessonId')) {
-                urlParams.set('lessonId', '11'); // Ensure this is '11' for lesson11.html
-                window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
-                console.log("Inline script: Set lessonId to 11. New full URL:", window.location.href);
-            } else {
-                 console.log("Inline script: lessonId already present in URL:", urlParams.get('lessonId'));
-            }
-        </script>
+        </div>
+    <script src="shared/js/lesson-load.js"></script>
 </body>
 </html>

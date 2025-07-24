@@ -1,4 +1,4 @@
-// shared/js/lesson-load.js (UPDATED with new TIP structures rendering)
+// shared/js/lesson-load.js (UPDATED based on ep-load.js philosophy)
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("lesson-load.js: DOMContentLoaded event fired.");
@@ -8,24 +8,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!lessonId) {
         console.error("lesson-load.js: No lessonId found in URL. Displaying generic error.");
-        document.body.innerHTML = '<h1>Error: No lessonId provided.</h1>';
-        return; // Stop execution here if no lessonId
+        document.body.innerHTML = '<h1>Error: No lessonId provided. Please specify a lessonId in the URL (e.g., ?lessonId=1).</h1>';
+        return;
     }
 
     const script = document.createElement('script');
-    script.src = `lessons/lesson${lessonId}.js`; // This path is relative to the HTML file (e.g., lesson11.html)
+    script.src = `lessons/lesson${lessonId}.js`; // Path relative to the HTML file (e.g., lesson11.html)
+    script.async = true; // Use async to not block parsing, but `onload` will still fire
     console.log("lesson-load.js: Attempting to load dynamic script from:", script.src);
 
     script.onload = () => {
-        console.log("lesson-load.js: Dynamic lesson script LOADED.");
-        if (!window.lessonData) {
-            console.error("lesson-load.js: 'window.lessonData' is undefined after script load. This means lessonX.js didn't define it.");
-            document.body.innerHTML = `<h1>Error: lessonData not found for lessonId ${lessonId}.</h1>`;
+        console.log("lesson-load.js: Dynamic lesson script LOADED. Checking for window.lessonData...");
+
+        // After the script loads, lessonData should be available globally
+        if (typeof window.lessonData === 'undefined' || window.lessonData === null) {
+            console.error(`lesson-load.js: 'window.lessonData' is undefined or null after script load for lessonId ${lessonId}.
+                           This indicates lesson${lessonId}.js did not correctly define and expose 'lessonData'.
+                           Ensure your lesson file contains 'const lessonData = {...};' at the top level.`);
+            document.body.innerHTML = `<h1>Error: Lesson data not found or improperly defined for lessonId ${lessonId}. Please check console.</h1>`;
             return;
         }
+
         console.log("lesson-load.js: 'lessonData' found. Proceeding with rendering.");
 
         const appDiv = document.getElementById('app');
+        if (!appDiv) {
+            console.error("lesson-load.js: 'app' div not found in HTML. Cannot render lesson.");
+            document.body.innerHTML = '<h1>Error: Application root element (div id="app") not found.</h1>';
+            return;
+        }
         appDiv.innerHTML = ''; // Clear existing content
 
         const titleHeader = document.createElement('h1');
@@ -77,18 +88,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dialogueBoxDiv = document.createElement('div');
                     dialogueBoxDiv.className = "dialogue-box";
 
-                    // Function to get emoji based on speaker ID
                     const getSpeakerEmoji = (speakerId) => {
                         if (speakerId === "1") {
-                            return "👩🏻‍‍"; // Person 1 emoji
+                            return "👩🏻‍‍";
                         } else if (speakerId === "2") {
-                            return "🧑‍🍳"; // Person 2 emoji
+                            return "🧑‍🍳";
                         }
-                        // Add more conditions for other speaker IDs (e.g., "3", "4", etc.)
-                        return speakerId; // Default to showing the raw speaker ID if no emoji is mapped
+                        return speakerId;
                     };
 
-                    // Handle dialogue with explicit scenarios (lesson3.js style and Levels 2/3 of lesson1.js)
                     if (section.scenarios) {
                         section.scenarios.forEach(scenario => {
                             const scenarioTitle = document.createElement('strong');
@@ -97,14 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             scenario.lines.forEach(line => {
                                 const p = document.createElement('p');
                                 let lineContent = '';
-
-                                // Get the emoji based on the speaker ID
                                 const displaySpeaker = line.speaker ? getSpeakerEmoji(line.speaker) : '';
-
                                 if (displaySpeaker) lineContent += `${displaySpeaker} : `;
                                 lineContent += `<span class="italian-word">${line.text}</span>`;
-
-                                // Now using 'en' and 'zh' for translations
                                 if (line.en || line.zh) {
                                     lineContent += '<br>→ ';
                                     if (line.en) lineContent += line.en;
@@ -113,24 +116,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                 p.innerHTML = lineContent;
                                 dialogueBoxDiv.appendChild(p);
                             });
-                            dialogueBoxDiv.innerHTML += '<br>'; // Add a break between scenarios
+                            dialogueBoxDiv.innerHTML += '<br>';
                         });
                     } else if (section.lines) {
-                        // Handle simpler dialogue lines (Level 1 of lesson1.js)
                         section.lines.forEach(line => {
                             const p = document.createElement('p');
                             let lineContent = '';
-
-                            // Use original emoji from data, or map if speaker is a number
-                            let displaySpeakerEmoji = line.emoji; // Try to use existing emoji first
-                            if (!displaySpeakerEmoji && line.speaker) { // If no explicit emoji, but speaker ID exists
-                                displaySpeakerEmoji = getSpeakerEmoji(line.speaker); // Map numerical speaker to emoji
+                            let displaySpeakerEmoji = line.emoji;
+                            if (!displaySpeakerEmoji && line.speaker) {
+                                displaySpeakerEmoji = getSpeakerEmoji(line.speaker);
                             }
-
                             if (displaySpeakerEmoji) lineContent += `${displaySpeakerEmoji} `;
                             lineContent += `Say <span class="italian-word">${line.text}</span>`;
-
-                            // Now using 'en' and 'zh' for descriptions/translations
                             if (line.en) lineContent += ` – ${line.en}`;
                             if (line.zh) lineContent += `（${line.zh}）`;
                             p.innerHTML = lineContent;
@@ -150,9 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (item.emoji) pContent += `${item.emoji} `;
                             pContent += `<span class="italian-word">${item.text}</span>`;
                             if (item.en) pContent += ` ${item.en}`;
-                            // The original 'paragraph' type in lesson1.js sometimes had text_2/en_2/text_3/en_3
-                            // This code keeps compatibility for those specific simple paragraphs.
-                            // However, the refactored 'comparison_paragraph' and 'list_paragraph' are preferred.
                             if (item.text_2) pContent += ` <span class="italian-word">${item.text_2}</span>`;
                             if (item.en_2) pContent += ` ${item.en_2}`;
                             if (item.text_3) pContent += ` <span class="italian-word">${item.text_3}</span>`;
@@ -161,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             p.innerHTML = pContent;
                             tipBoxDiv.appendChild(p);
 
-                        } else if (item.type === "comparison_paragraph") { // NEW TYPE RENDERING
+                        } else if (item.type === "comparison_paragraph") {
                             const p = document.createElement('p');
                             let pContent = '';
                             if (item.emoji) pContent += `${item.emoji} `;
@@ -183,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             p.innerHTML = pContent;
                             tipBoxDiv.appendChild(p);
 
-                        } else if (item.type === "list_paragraph") { // NEW TYPE RENDERING
+                        } else if (item.type === "list_paragraph") {
                             const listContainer = document.createElement('div');
                             if (item.emoji) {
                                 const emojiSpan = document.createElement('span');
@@ -201,9 +195,110 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
 
                             const ul = document.createElement('ul');
-                            ul.className = "tip-list"; // Add a class for styling if needed
+                            ul.className = "tip-list";
                             item.items.forEach(listItem => {
                                 const li = document.createElement('li');
                                 li.innerHTML = `<span class="italian-word">${listItem.text}</span> – ${listItem.en}`;
                                 if (listItem.zh) li.innerHTML += `（${listItem.zh}）`;
-                                ul.
+                                ul.appendChild(li);
+                            });
+                            listContainer.appendChild(ul);
+                            tipBoxDiv.appendChild(listContainer);
+
+                        } else if (item.type === "categorized_phrases_tip") {
+                            const subTipContainer = document.createElement('div');
+                            subTipContainer.className = "sub-tip";
+                            const subTipTitle = document.createElement('h4');
+                            subTipTitle.innerHTML = item.title;
+                            subTipContainer.appendChild(subTipTitle);
+
+                            item.categories.forEach(category => {
+                                const categoryP = document.createElement('p');
+                                let categoryContent = '';
+                                if (category.emoji) categoryContent += `${category.emoji} `;
+                                categoryContent += `<strong>${category.context}</strong>`;
+                                if (category.context_en) categoryContent += ` (${category.context_en})`;
+                                if (category.context_zh) categoryContent += `（${category.context_zh}）`;
+                                categoryP.innerHTML = categoryContent;
+                                subTipContainer.appendChild(categoryP);
+
+                                if (category.phrases) {
+                                    const phraseList = document.createElement('ul');
+                                    phraseList.className = "example-list";
+                                    category.phrases.forEach(phrase => {
+                                        const phraseLi = document.createElement('li');
+                                        phraseLi.innerHTML = `<span class="italian-word">${phrase.text}</span> – ${phrase.en}`;
+                                        if (phrase.zh) phraseLi.innerHTML += `（${phrase.zh}）`;
+                                        phraseList.appendChild(phraseLi);
+                                    });
+                                    subTipContainer.appendChild(phraseList);
+                                }
+                            });
+                            tipBoxDiv.appendChild(subTipContainer);
+
+                        } else if (item.type === "nested-paragraph") {
+                            const p = document.createElement('p');
+                            p.className = "nested-tip";
+                            let pContent = '';
+                            if (item.text) pContent += item.text;
+                            if (item.en) pContent += ` ${item.en}`;
+                            if (item.zh) pContent += `（${item.zh}）`;
+                            if (item.example) pContent += `<br>Example: ${item.example}`;
+                            p.innerHTML = pContent;
+                            tipBoxDiv.appendChild(p);
+
+                        } else if (item.type === "nested-2-paragraph") {
+                            const p = document.createElement('p');
+                            p.className = "nested-tip-2";
+                            let pContent = '';
+                            if (item.text) pContent += item.text;
+                            if (item.zh) pContent += `（${item.zh}）`;
+                            p.innerHTML = pContent;
+                            tipBoxDiv.appendChild(p);
+
+                        } else if (item.type === "dialogue-example") {
+                            const p = document.createElement('p');
+                            p.className = "dialogue-example";
+                            p.innerHTML = `${item.speaker_a_emoji} ${item.speaker_a}: <span class="italian-word">${item.text_a}</span><br>${item.speaker_b_emoji} ${item.speaker_b}: <span class="italian-word">${item.text_b}</span>`;
+                            tipBoxDiv.appendChild(p);
+                        }
+                    });
+                    levelContentDiv.appendChild(tipBoxDiv);
+                }
+            });
+            appDiv.appendChild(levelDiv);
+        });
+    };
+
+    script.onerror = (e) => {
+        console.error(`lesson-load.js: ERROR loading dynamic script from ${script.src}:`, e);
+        document.body.innerHTML = `<h1>Error: Failed to load lesson data script for lessonId ${lessonId}. Please check your file path and the browser console for details.</h1>`;
+    };
+
+    document.head.appendChild(script);
+    console.log("lesson-load.js: Dynamic script append attempt complete.");
+
+    // This function needs to be in the global scope if it's called by inline onclick,
+    // or if it's generally a utility function meant for the entire script.
+    function toggleLessonLevel(levelId) {
+        const levelContent = document.getElementById(`level-content-${levelId}`);
+        const levelTitle = document.querySelector(`#level-${levelId} .level-title`);
+        const toggleIcon = levelTitle ? levelTitle.querySelector('.toggle-icon') : null;
+
+        if (!levelContent) {
+            console.warn(`toggleLessonLevel: levelContent for levelId ${levelId} not found.`);
+            return;
+        }
+
+        if (levelContent.classList.contains('hidden')) {
+            levelContent.classList.remove('hidden');
+            if (toggleIcon) toggleIcon.textContent = '−';
+        } else {
+            levelContent.classList.add('hidden');
+            if (toggleIcon) toggleIcon.textContent = '+';
+        }
+    }
+    // Make it available globally if needed by older inline event handlers,
+    // though adding event listeners is generally preferred.
+    window.toggleLessonLevel = toggleLessonLevel;
+});
