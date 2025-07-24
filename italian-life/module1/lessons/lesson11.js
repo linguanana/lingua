@@ -1,7 +1,7 @@
-// lessons/lesson1.js (UPDATED with 'en' and 'zh' for all translations)
+// lessons/lesson1.js (UPDATED with new TIP structures)
 
-const lessonData = {
-    lessonId: 11,
+window.lessonData = { // Added 'window.' to address declaration error
+    lessonId: 11, // Assuming this is lesson11.js based on your last input
     title_en: "Hello! Market mission",
     title_zh: "打招呼！市場任務",
     module: "Module 1",
@@ -49,15 +49,24 @@ const lessonData = {
                         { type: "paragraph", emoji: "☀️", text: "Buongiorno", en: "is 'good day' and used throughout the morning and early afternoon.", zh: "用於早上及下午初" },
                         { type: "paragraph", emoji: "🌆", text: "Buonasera", en: "is 'good evening' from late afternoon onwards.", zh: "用於下午末開始" },
                         { type: "paragraph", emoji: "🌙", text: "Buonanotte", en: "is strictly 'good night' before bed.", zh: "睡前才說" },
-                        { type: "subTip", title: "Which Goodbye Should You Use? (何時說再見？)",
-                            sections: [
-                                { emoji: "👋", context: "Arrivederci", context_zh: "標準的再見",
-                                    examples: [
+                        // Refactored Sub-Tip for "Which Goodbye"
+                        {
+                            type: "categorized_phrases_tip", // NEW TYPE: for tips with categorized phrases/examples
+                            title: "Which Goodbye Should You Use? (何時說再見？)",
+                            categories: [ // Renamed from 'sections' for clarity within a 'tip' item
+                                {
+                                    emoji: "👋",
+                                    context_en: "Standard Goodbye", // Added en context for clarity
+                                    context_zh: "標準的再見",
+                                    phrases: [ // Renamed from 'examples' to 'phrases'
                                         { text: "Arrivederci!", en: "Standard goodbye, polite.", zh: "標準有禮" }
                                     ]
                                 },
-                                { emoji: "😊", context: "Ciao", context_zh: "非正式的再見",
-                                    examples: [
+                                {
+                                    emoji: "😊",
+                                    context_en: "Informal Goodbye", // Added en context
+                                    context_zh: "非正式的再見",
+                                    phrases: [
                                         { text: "Ciao!", en: "Informal bye, used with friends/family.", zh: "與朋友家人" }
                                     ]
                                 }
@@ -114,11 +123,60 @@ const lessonData = {
                     type: "tip",
                     title: "📌 Tip",
                     content: [
-                        { type: "paragraph", emoji: "✨", text: "Come ti chiami?", en: "(informal) vs.", text_2: "Come si chiama?", en_2: "(formal).", zh: "非正式與正式" },
+                        // Refactored Comparison: Come ti chiami? vs. Come si chiama?
+                        {
+                            type: "comparison_paragraph", // NEW TYPE: for direct comparisons
+                            emoji: "✨",
+                            phrase1: "Come ti chiami?",
+                            phrase1_en: "(informal)",
+                            phrase1_zh: "(非正式)",
+                            vs_text: "vs.", // Explicit 'vs' field
+                            phrase2: "Come si chiama?",
+                            phrase2_en: "(formal).",
+                            phrase2_zh: "(正式)。",
+                            overall_note_zh: "非正式與正式"
+                        },
                         { type: "paragraph", emoji: "🗣️", text: "Piacere!", en: "is a quick way to say 'Nice to meet you!'", zh: "快速說法" },
-                        { type: "paragraph", emoji: "🤝", text: "Piacere di conoscerti", en: "(informal) vs.", text_2: "Piacere di conoscerla", en_2: "(formal) are more complete phrases.", zh: "更完整的說法" },
-                        { type: "paragraph", emoji: "💬", text: "Come va?", en: "is a more casual 'How are you?' than", text_2: "Come stai?", en_2: ".", zh: "更口語" },
-                        { type: "paragraph", emoji: "👍", text: "Molto bene", en: "(Very good) /", text_2: "Non c'è male", en_2: "(Not bad) /", text_3: "Così così", en_3: "(So-so) are common responses.", zh: "常見回答" }
+                        // Refactored Comparison: Piacere di conoscerti vs. Piacere di conoscerla
+                        {
+                            type: "comparison_paragraph",
+                            emoji: "🤝",
+                            phrase1: "Piacere di conoscerti",
+                            phrase1_en: "(informal)",
+                            phrase1_zh: "(非正式)",
+                            vs_text: "vs.",
+                            phrase2: "Piacere di conoscerla",
+                            phrase2_en: "(formal)",
+                            phrase2_zh: "(正式)",
+                            overall_note_en: "are more complete phrases.",
+                            overall_note_zh: "更完整的說法"
+                        },
+                        // Refactored Comparison: Come va? vs. Come stai?
+                        {
+                            type: "comparison_paragraph",
+                            emoji: "💬",
+                            phrase1: "Come va?",
+                            phrase1_en: "(casual)",
+                            phrase1_zh: "(口語)",
+                            vs_text: "vs.", // Explicit 'vs'
+                            phrase2: "Come stai?",
+                            phrase2_en: "(standard)",
+                            phrase2_zh: "(標準)",
+                            overall_note_en: " 'How are you?' - 'Come va?' is more casual.",
+                            overall_note_zh: "『你好嗎？』 - 『Come va？』更口語。"
+                        },
+                        // Refactored List: Molto bene / Non c'è male / Così così
+                        {
+                            type: "list_paragraph", // NEW TYPE: for lists of items/responses
+                            emoji: "👍",
+                            introduction_en: "are common responses.",
+                            introduction_zh: "常見回答",
+                            items: [ // Array of list items
+                                { text: "Molto bene", en: "(Very good)", zh: "非常好" },
+                                { text: "Non c'è male", en: "(Not bad)", zh: "還不錯" },
+                                { text: "Così così", en: "(So-so)", zh: "馬馬虎虎" }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -168,8 +226,30 @@ const lessonData = {
                     type: "tip",
                     title: "📌 Tip",
                     content: [
-                        { type: "paragraph", emoji: "🤵", text: "Signore", en: "(Mr./Sir),", text_2: "Signora", en_2: "(Mrs./Madam),", text_3: "Signorina", en_3: "(Miss) are formal titles.", zh: "正式稱謂" },
-                        { type: "paragraph", emoji: "👋", text: "A presto!", en: "(See you soon) /", text_2: "A dopo!", en_2: "(See you later) /", text_3: "Ci vediamo!", en_3: "(See you!) are common goodbyes depending on when you'll meet again.", zh: "根據再見時間使用" },
+                        // Refactored List: Formal Titles
+                        {
+                            type: "list_paragraph",
+                            emoji: "🤵",
+                            introduction_en: "are formal titles.",
+                            introduction_zh: "正式稱謂",
+                            items: [
+                                { text: "Signore", en: "(Mr./Sir)", zh: "先生" },
+                                { text: "Signora", en: "(Mrs./Madam)", zh: "女士" },
+                                { text: "Signorina", en: "(Miss)", zh: "小姐" }
+                            ]
+                        },
+                        // Refactored List: Common Goodbyes
+                        {
+                            type: "list_paragraph",
+                            emoji: "👋",
+                            introduction_en: "are common goodbyes depending on when you'll meet again.",
+                            introduction_zh: "根據再見時間使用",
+                            items: [
+                                { text: "A presto!", en: "(See you soon)", zh: "很快再見" },
+                                { text: "A dopo!", en: "(See you later)", zh: "稍後見" },
+                                { text: "Ci vediamo!", en: "(See you!)", zh: "再見！(常用)" }
+                            ]
+                        },
                         { type: "paragraph", emoji: "🎩", text: "Molto lieto/a", en: "(Very pleased to meet you) is a formal response.", zh: "正式回應" },
                         { type: "paragraph", emoji: "☀️", text: "Buona giornata!", en: "is used when parting during the day, wishing someone a good remainder of their day.", zh: "日間告別，祝願一天愉快" },
                         { type: "paragraph", emoji: "🌇", text: "Buona serata!", en: "is used when parting in the evening, wishing someone a good remainder of their evening.", zh: "晚間告別，祝願晚上愉快" }
