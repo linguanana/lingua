@@ -1,7 +1,7 @@
 // lessons/lesson1.js (UPDATED with 'en' and 'zh' for all translations)
 
 const lessonData = {
-    lessonId: 1,
+    lessonId: 11,
     title_en: "Hello! Market mission",
     title_zh: "打招呼！市場任務",
     module: "Module 1",
