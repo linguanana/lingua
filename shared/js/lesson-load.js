@@ -219,3 +219,44 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+
+// shared/js/lesson-load.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("lesson-load.js: DOMContentLoaded event fired.");
+
+    const lessonId = new URLSearchParams(window.location.search).get('lessonId');
+    console.log("lesson-load.js: Retrieved lessonId from URL:", lessonId);
+
+    if (!lessonId) {
+        console.error("lesson-load.js: No lessonId found in URL. Displaying generic error.");
+        document.body.innerHTML = '<h1>Error: No lessonId provided.</h1>';
+        return; // Stop execution here if no lessonId
+    }
+
+    // Now, confirm the script path building logic (which we previously confirmed is correct for your structure)
+    const script = document.createElement('script');
+    script.src = `lessons/lesson${lessonId}.js`; // This path is relative to the HTML file (e.g., lesson11.html)
+    console.log("lesson-load.js: Attempting to load dynamic script from:", script.src);
+
+    script.onload = () => {
+        console.log("lesson-load.js: Dynamic lesson script LOADED.");
+        if (!window.lessonData) {
+            console.error("lesson-load.js: 'window.lessonData' is undefined after script load. This means lessonX.js didn't define it.");
+            document.body.innerHTML = `<h1>Error: lessonData not found for lessonId ${lessonId}.</h1>`;
+            return;
+        }
+        console.log("lesson-load.js: 'lessonData' found. Proceeding with rendering.");
+        // ... (rest of your existing rendering code)
+    };
+
+    // Add an onerror handler to catch failed script loads
+    script.onerror = (e) => {
+        console.error("lesson-load.js: ERROR loading dynamic script:", script.src, e);
+        document.body.innerHTML = `<h1>Error: Failed to load lesson data script for lessonId ${lessonId}. Please check the console for details.</h1>`;
+    };
+
+    document.head.appendChild(script); // Append the script to the head to start loading
+    console.log("lesson-load.js: Dynamic script append attempt complete.");
+});
