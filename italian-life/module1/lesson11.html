@@ -20,7 +20,7 @@
         // If you were to have a generic lesson.html, you'd rely purely on URL parameters.
         const urlParams = new URLSearchParams(window.location.search);
         if (!urlParams.has('lessonId')) {
-            urlParams.set('lessonId', '1');
+            urlParams.set('lessonId', '11');
             // Update URL in browser history (optional, but good for consistent URLs)
             window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
         }

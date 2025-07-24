@@ -1,84 +1,114 @@
-ep1_1.mp3 ========== (ep1 topic1)
+ep1_topic1_scene1.mp3 ========== (ep1 topic1 scene1)
 Vorrei un caffè, per favore. <break time='1s' />
 Subito! Un espresso? <break time='1s' />
 Sì, un espresso va benissimo. <break time='1s' />
 <break time='2s' />
+
+ep1_topic1_scene2.mp3 ========== (ep1 topic1 scene2)
 Lo vuole grande o piccolo? <break time='1s' />
 Piccolo, grazie. <break time='1s' />
 Perfetto, un piccolo espresso. <break time='1s' />
 <break time='2s' />
+
+ep1_topic1_scene3.mp3 ========== (ep1 topic1 scene3)
 Con zucchero o senza? <break time='1s' />
 Senza zucchero, ma con un po’ di latte. <break time='1s' />
 Va bene, con latte, senza zucchero. <break time='1s' />
 <break time='2s' />
+
+ep1_topic1_scene4.mp3 ========== (ep1 topic1 scene4)
 Posso averlo un po’ più lungo? <break time='1s' />
 Certo, un caffè lungo. <break time='1s' />
 Grazie, preferisco così. <break time='1s' />
 <break time='2s' />
+
+ep1_topic1_scene5.mp3 ========== (ep1 topic1 scene5)
 Allora: piccolo, lungo, con latte e senza zucchero? <break time='1s' />
 Esatto, grazie mille! <break time='1s' />
 Arriva subito! <break time='1s' />
 <break time='2s' />
 
-ep1_2.mp3 ========== (ep1 topic2)
+ep1_topic2_scene1.mp3 ========== (ep1 topic2 scene1)
 Vorrei un cornetto, per favor. <break time='1s' />
 Lo vuole semplice o con cioccolato? <break time='1s' />
 Con cioccolato, grazie. <break time='1s' />
 <break time='2s' />
+
+ep1_topic2_scene2.mp3 ========== (ep1 topic2 scene2)
 Cosa mi consiglia? <break time='1s' />
 Il nostro tiramisù è molto buono! <break time='1s' />
 <break time='2s' />
+
+ep1_topic2_scene3.mp3 ========== (ep1 topic2 scene3)
 È molto dolce? <break time='1s' />
 È dolce, ma non troppo. <break time='1s' />
 <break time='2s' />
+
+ep1_topic2_scene4.mp3 ========== (ep1 topic2 scene4)
 Allora prendo anche un tiramisù. <break time='1s' />
 Perfetto, arrivo subito. <break time='1s' />
 <break time='2s' />
 
-ep1_3.mp3 ========== (ep1 topic3)
+ep1_topic3_scene1.mp3 ========== (ep1 topic3 scene1)
 Il caffè al tavolo costa di più? <break time='1s' />
 Sì, c'è un piccolo supplemento. <break time='1s' />
 Capito. Grazie. <break time='1s' />
 <break time='2s' />
+
+ep1_topic3_scene2.mp3 ========== (ep1 topic3 scene2)
 Posso sedermi? <break time='1s' />
 Sì, certo. <break time='1s' />
 Grazie. <break time='1s' />
 <break time='2s' />
+
+ep1_topic3_scene3.mp3 ========== (ep1 topic3 scene3)
 C'è un tavolo libero? <break time='1s' />
 Sì, prego. C'è un supplemento per il servizio al tavolo. <break time='1s' />
 Ah, capisco. Grazie. <break time='1s' />
 <break time='2s' />
+
+ep1_topic3_scene4.mp3 ========== (ep1 topic3 scene4)
 Posso sedermi a quel tavolo? <break time='1s' />
 Sì, certo, si accomodi pure. <break time='1s' />
 Grazie mille. <break time='1s' />
 <break time='2s' />
 
-ep1_4.mp3 ========== (ep1 topic4)
+ep1_topic4_scene1.mp3 ========== (ep1 topic4 scene1)
 Scusi, c'è un bagno? <break time='1s' />
 Sì, è in fondo a destra. <break time='1s' />
 Grazie. <break time='1s' />
 <break time='2s' />
+
+ep1_topic4_scene2.mp3 ========== (ep1 topic4 scene2)
 Il bagno è a chiave? <break time='1s' />
 Sì, ecco la chiave. <break time='1s' />
 Grazie mille. <break time='1s' />
 <break time='2s' />
+
+ep1_topic4_scene3.mp3 ========== (ep1 topic4 scene3)
 Ecco la chiave del bagno, grazie. <break time='1s' />
 Prego! <break time='1s' />
 <break time='2s' />
 
-ep1_5.mp3 ========== (ep1 topic5)
+ep1_topic5_scene1.mp3 ========== (ep1 topic5 scene1)
 Posso pagare? <break time='1s' />
 Certo, sono tre euro e cinquanta. <break time='1s' />
 Ecco a lei. <break time='1s' />
 <break time='2s' />
+
+ep1_topic5_scene2.mp3 ========== (ep1 topic5 scene2)
 Il conto, per favore. <break time='1s' />
 Subito! Ecco a lei. <break time='1s' />
 Grazie. <break time='1s' />
 <break time='2s' />
+
+ep1_topic5_scene3.mp3 ========== (ep1 topic5 scene3)
 Accettate carte di credito? <break time='1s' />
 Sì, certo. <break time='1s' />
 Grazie. <break time='1s' />
 <break time='2s' />
+
+ep1_topic5_scene4.mp3 ========== (ep1 topic5 scene4)
 Posso pagare in contanti? <break time='1s' />
 Sì, va bene. <break time='1s' />
 Ecco. <break time='1s' />
