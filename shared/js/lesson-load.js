@@ -1,8 +1,9 @@
-// shared/js/lesson-load.js (UPDATED based on ep-load.js philosophy)
+// shared/js/lesson-load.js (FINAL COMPREHENSIVE VERSION for Levels/Sections/Types)
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("lesson-load.js: DOMContentLoaded event fired.");
 
+    // Get lessonId from URL (e.g., ?lessonId=1)
     const lessonId = new URLSearchParams(window.location.search).get('lessonId');
     console.log("lesson-load.js: Retrieved lessonId from URL:", lessonId);
 
@@ -12,15 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+    // Dynamically create a script tag to load the specific lesson's data file
     const script = document.createElement('script');
-    script.src = `lessons/lesson${lessonId}.js`; // Path relative to the HTML file (e.g., lesson11.html)
-    script.async = true; // Use async to not block parsing, but `onload` will still fire
+    script.src = `lessons/lesson${lessonId}.js`; // This path should be relative to your lesson.html
+    script.async = true; // Load asynchronously
     console.log("lesson-load.js: Attempting to load dynamic script from:", script.src);
 
     script.onload = () => {
         console.log("lesson-load.js: Dynamic lesson script LOADED. Checking for window.lessonData...");
 
-        // After the script loads, lessonData should be available globally
+        // After the script loads, window.lessonData should be available globally
         if (typeof window.lessonData === 'undefined' || window.lessonData === null) {
             console.error(`lesson-load.js: 'window.lessonData' is undefined or null after script load for lessonId ${lessonId}.
                            This indicates lesson${lessonId}.js did not correctly define and expose 'lessonData'.
@@ -37,33 +39,61 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.innerHTML = '<h1>Error: Application root element (div id="app") not found.</h1>';
             return;
         }
-        appDiv.innerHTML = ''; // Clear existing content
+        appDiv.innerHTML = ''; // Clear existing 'Loading lesson content...' or any previous content
 
-        const titleHeader = document.createElement('h1');
-        titleHeader.innerHTML = `${lessonData.lesson} - ${lessonData.title_en} (${lessonData.title_zh})`;
-        appDiv.appendChild(titleHeader);
+        // --- Render Lesson Header (Module/Lesson Title and Info Text) ---
+        const moduleLessonHeader = document.createElement('h1');
+        moduleLessonHeader.title = lessonData.module_title_tooltip || `${lessonData.title_en} (${lessonData.title_zh})`; // Use tooltip if provided
+        moduleLessonHeader.innerHTML = `${lessonData.module_emoji || '🇮🇹'} Module ${lessonData.module_id || ''} – Lesson ${lessonData.lesson_id || ''}: ${lessonData.lesson_display_title || lessonData.title_en}`; // Example: 🇮🇹 Module 1 – Lesson 2: Come stai? Missione al mercato
+        appDiv.appendChild(moduleLessonHeader);
 
+        const infoText = document.createElement('p');
+        infoText.className = "info-text-size";
+        infoText.innerHTML = `
+            <strong>🎬 Theme:</strong> ${lessonData.theme || 'N/A'}<br>
+            <strong>📚 Lessons:</strong>
+            ${lessonData.lesson_navigation ? lessonData.lesson_navigation.map(link =>
+                `<a href="lesson.html?lessonId=${link.id}"${link.id == lessonId ? ' class="current-lesson"' : ''}>${link.label}</a>`
+            ).join(' | ') : ''}
+            <br><br>
+            <span class="start-with-word">${lessonData.level_guidance || 'Start with Level 1'}</span>
+        `;
+        appDiv.appendChild(infoText);
+
+
+        // --- Render Levels and Sections ---
         lessonData.levels.forEach(level => {
             const levelDiv = document.createElement('div');
-            levelDiv.className = 'level-box';
+            levelDiv.className = 'lesson-level'; // Matches your existing CSS class
             levelDiv.id = `level-${level.levelId}`;
 
             const levelTitle = document.createElement('h2');
+            levelTitle.className = 'level-title'; // Matches your existing CSS class
             levelTitle.innerHTML = `<span class="toggle-icon">+</span> ${level.title}`;
-            levelTitle.className = 'level-title';
-            levelTitle.onclick = () => toggleLessonLevel(level.levelId);
+            levelTitle.onclick = () => window.toggleLessonLevel(level.levelId); // Use global function
             levelDiv.appendChild(levelTitle);
 
             const levelContentDiv = document.createElement('div');
-            levelContentDiv.className = 'level-content hidden'; // Start hidden
+            levelContentDiv.className = 'level-content hidden'; // Matches your existing CSS class, start hidden
             levelContentDiv.id = `level-content-${level.levelId}`;
             levelDiv.appendChild(levelContentDiv);
 
+            // Iterate through each section within the current level
             level.sections.forEach(section => {
-                const sectionTitle = document.createElement('h3');
-                sectionTitle.innerHTML = section.title;
-                levelContentDiv.appendChild(sectionTitle);
+                const sectionContainer = document.createElement('div');
+                sectionContainer.className = 'section-container'; // Generic wrapper for section content
 
+                const sectionTitle = document.createElement('h3');
+                let sectionEmoji = '';
+                if (section.type === 'keyPhrase') sectionEmoji = '📗';
+                else if (section.type === 'dialogue') sectionEmoji = '🎯'; // Changed emoji for general dialogue/usage
+                else if (section.type === 'tip') sectionEmoji = '📌';
+                else if (section.type === 'task') sectionEmoji = '🤖'; // Re-added emoji for task
+
+                sectionTitle.innerHTML = `${sectionEmoji} ${section.title}`;
+                sectionContainer.appendChild(sectionTitle);
+
+                // Optional: Section-level audio player (if section.audio is present)
                 if (section.audio) {
                     const audioDiv = document.createElement('div');
                     audioDiv.className = "audio-controls";
@@ -71,216 +101,164 @@ document.addEventListener('DOMContentLoaded', () => {
                                               <source src="audio/${section.audio}" type="audio/mpeg">
                                               Your browser does not support the audio element.
                                             </audio>`;
-                    levelContentDiv.appendChild(audioDiv);
+                    sectionContainer.appendChild(audioDiv);
                 }
 
-                if (section.type === "keyPhrase") {
-                    const phraseList = document.createElement('ul');
-                    phraseList.className = "phrase-list";
-                    section.phrases.forEach(phrase => {
-                        const li = document.createElement('li');
-                        li.innerHTML = `<span class="italian-word">${phrase.text}</span> – ${phrase.en}（${phrase.zh}）`;
-                        phraseList.appendChild(li);
-                    });
-                    levelContentDiv.appendChild(phraseList);
-
-                } else if (section.type === "dialogue") {
-                    const dialogueBoxDiv = document.createElement('div');
-                    dialogueBoxDiv.className = "dialogue-box";
-
-                    const getSpeakerEmoji = (speakerId) => {
-                        if (speakerId === "1") {
-                            return "👩🏻‍‍";
-                        } else if (speakerId === "2") {
-                            return "🧑‍🍳";
+                // Render content based on section type
+                switch (section.type) {
+                    case "keyPhrase":
+                        if (section.phrases) {
+                            const phraseList = document.createElement('div');
+                            phraseList.className = "auto-list"; // Matches your HTML
+                            section.phrases.forEach(phrase => {
+                                const p = document.createElement('p'); // Using paragraph for each phrase for spacing
+                                p.innerHTML = `<span class="italian-word">${phrase.text}</span> – ${phrase.en} （${phrase.zh}）`;
+                                phraseList.appendChild(p);
+                            });
+                            sectionContainer.appendChild(phraseList);
                         }
-                        return speakerId;
-                    };
+                        break;
 
-                    if (section.scenarios) {
-                        section.scenarios.forEach(scenario => {
-                            const scenarioTitle = document.createElement('strong');
-                            scenarioTitle.innerHTML = scenario.title;
-                            dialogueBoxDiv.appendChild(scenarioTitle);
-                            scenario.lines.forEach(line => {
-                                const p = document.createElement('p');
-                                let lineContent = '';
-                                const displaySpeaker = line.speaker ? getSpeakerEmoji(line.speaker) : '';
-                                if (displaySpeaker) lineContent += `${displaySpeaker} : `;
-                                lineContent += `<span class="italian-word">${line.text}</span>`;
-                                if (line.en || line.zh) {
-                                    lineContent += '<br>→ ';
-                                    if (line.en) lineContent += line.en;
-                                    if (line.zh) lineContent += `（${line.zh}）`;
+                    case "dialogue":
+                        const dialogueBoxDiv = document.createElement('div');
+                        dialogueBoxDiv.className = "dialogue-box"; // Matches your HTML
+
+                        // Helper for simple speaker emojis (1, 2, or custom characters)
+                        const getSpeakerEmoji = (speakerChar) => {
+                            if (speakerChar === "1") return "👩🏻‍‍";
+                            if (speakerChar === "2") return "🧑‍🍳";
+                            // For custom characters like "🧸" or "👨"
+                            if (speakerChar === "🧸") return "🧸";
+                            if (speakerChar === "👨") return "👨";
+                            if (speakerChar === "👩‍🏫") return "👩‍🏫";
+                            if (speakerChar === "🧑") return "🧑";
+                            if (speakerChar === "👨‍🍳") return "👨‍🍳";
+                            if (speakerChar === "👩") return "👩";
+                            if (speakerChar === "👧") return "👧";
+                            if (speakerChar === "👦") return "👦";
+                            if (speakerChar === "🧑‍💻") return "🧑‍💻";
+                            if (speakerChar === "👩‍🎓") return "👩‍🎓";
+                            return speakerChar; // Fallback to original char if no specific emoji
+                        };
+
+
+                        if (section.dialogues && section.dialogues.length > 0) {
+                            // Handle sections with multiple titled dialogue blocks (like your market example)
+                            section.dialogues.forEach(dialogueBlock => {
+                                // Add a title for each dialogue block
+                                const dialogueBlockTitle = document.createElement('p');
+                                dialogueBlockTitle.innerHTML = `<strong>${dialogueBlock.emoji ? dialogueBlock.emoji + ' ' : ''}${dialogueBlock.title}</strong><br>`;
+                                dialogueBoxDiv.appendChild(dialogueBlockTitle);
+
+                                // Optional: Audio specific to this dialogue block
+                                if (dialogueBlock.audio) {
+                                    const blockAudioDiv = document.createElement('div');
+                                    blockAudioDiv.className = "audio-controls";
+                                    blockAudioDiv.innerHTML = `<audio controls class="small-audio">
+                                                                  <source src="audio/${dialogueBlock.audio}" type="audio/mpeg">
+                                                                  Your browser does not support the audio element.
+                                                                </audio>`;
+                                    dialogueBoxDiv.appendChild(blockAudioDiv);
                                 }
-                                p.innerHTML = lineContent;
+
+                                // Render individual lines
+                                dialogueBlock.lines.forEach(line => {
+                                    const p = document.createElement('p');
+                                    const displaySpeaker = line.speaker ? `${getSpeakerEmoji(line.speaker)} : ` : '';
+                                    p.innerHTML = `${displaySpeaker}<span class="italian-word">${line.text}</span><br>
+                                                   → ${line.en}${line.zh ? `（${line.zh}）` : ""}`;
+                                    dialogueBoxDiv.appendChild(p);
+                                });
+                                dialogueBoxDiv.appendChild(document.createElement('br')); // Add a break between dialogue blocks
+                            });
+                        } else if (section.lines && section.lines.length > 0) {
+                            // Handle simple dialogue (single, untitled block, like your "When to use" example if you had simple lines there)
+                            section.lines.forEach(line => {
+                                const p = document.createElement('p');
+                                const displaySpeaker = line.speaker ? `${getSpeakerEmoji(line.speaker)} ` : ''; // No colon for "When to use" type context
+                                p.innerHTML = `${displaySpeaker}<span class="italian-word">${line.text}</span><br>
+                                               ${line.en}${line.zh ? `（${line.zh}）` : ""}`;
                                 dialogueBoxDiv.appendChild(p);
                             });
-                            dialogueBoxDiv.innerHTML += '<br>';
-                        });
-                    } else if (section.lines) {
-                        section.lines.forEach(line => {
-                            const p = document.createElement('p');
-                            let lineContent = '';
-                            let displaySpeakerEmoji = line.emoji;
-                            if (!displaySpeakerEmoji && line.speaker) {
-                                displaySpeakerEmoji = getSpeakerEmoji(line.speaker);
-                            }
-                            if (displaySpeakerEmoji) lineContent += `${displaySpeakerEmoji} `;
-                            lineContent += `Say <span class="italian-word">${line.text}</span>`;
-                            if (line.en) lineContent += ` – ${line.en}`;
-                            if (line.zh) lineContent += `（${line.zh}）`;
-                            p.innerHTML = lineContent;
-                            dialogueBoxDiv.appendChild(p);
-                        });
-                    }
-                    levelContentDiv.appendChild(dialogueBoxDiv);
-
-                } else if (section.type === "tip") {
-                    const tipBoxDiv = document.createElement('div');
-                    tipBoxDiv.className = "tip-box";
-
-                    section.content.forEach(item => {
-                        if (item.type === "paragraph") {
-                            const p = document.createElement('p');
-                            let pContent = '';
-                            if (item.emoji) pContent += `${item.emoji} `;
-                            pContent += `<span class="italian-word">${item.text}</span>`;
-                            if (item.en) pContent += ` ${item.en}`;
-                            if (item.text_2) pContent += ` <span class="italian-word">${item.text_2}</span>`;
-                            if (item.en_2) pContent += ` ${item.en_2}`;
-                            if (item.text_3) pContent += ` <span class="italian-word">${item.text_3}</span>`;
-                            if (item.en_3) pContent += ` ${item.en_3}`;
-                            if (item.zh) pContent += `（${item.zh}）`;
-                            p.innerHTML = pContent;
-                            tipBoxDiv.appendChild(p);
-
-                        } else if (item.type === "comparison_paragraph") {
-                            const p = document.createElement('p');
-                            let pContent = '';
-                            if (item.emoji) pContent += `${item.emoji} `;
-                            pContent += `<span class="italian-word">${item.phrase1}</span> `;
-                            if (item.phrase1_en) pContent += `${item.phrase1_en} `;
-                            if (item.phrase1_zh) pContent += `（${item.phrase1_zh}）`;
-
-                            if (item.vs_text) pContent += ` <strong>${item.vs_text}</strong> `;
-
-                            pContent += `<span class="italian-word">${item.phrase2}</span>`;
-                            if (item.phrase2_en) pContent += ` ${item.phrase2_en}`;
-                            if (item.phrase2_zh) pContent += `（${item.phrase2_zh}）`;
-
-                            if (item.overall_note_en || item.overall_note_zh) {
-                                pContent += `<br>→ `;
-                                if (item.overall_note_en) pContent += item.overall_note_en;
-                                if (item.overall_note_zh) pContent += `（${item.overall_note_zh}）`;
-                            }
-                            p.innerHTML = pContent;
-                            tipBoxDiv.appendChild(p);
-
-                        } else if (item.type === "list_paragraph") {
-                            const listContainer = document.createElement('div');
-                            if (item.emoji) {
-                                const emojiSpan = document.createElement('span');
-                                emojiSpan.className = 'emoji-prefix';
-                                emojiSpan.textContent = item.emoji + ' ';
-                                listContainer.appendChild(emojiSpan);
-                            }
-                            if (item.introduction_en) {
-                                const introP = document.createElement('p');
-                                introP.textContent = item.introduction_en;
-                                if (item.introduction_zh) {
-                                    introP.textContent += `（${item.introduction_zh}）`;
-                                }
-                                listContainer.appendChild(introP);
-                            }
-
-                            const ul = document.createElement('ul');
-                            ul.className = "tip-list";
-                            item.items.forEach(listItem => {
-                                const li = document.createElement('li');
-                                li.innerHTML = `<span class="italian-word">${listItem.text}</span> – ${listItem.en}`;
-                                if (listItem.zh) li.innerHTML += `（${listItem.zh}）`;
-                                ul.appendChild(li);
+                        } else if (section.contexts && section.contexts.length > 0) {
+                            // Handles the "When to use" or contextual dialogues where lines are within a context
+                            section.contexts.forEach(context => {
+                                const p = document.createElement('p');
+                                let pContent = '';
+                                if (context.emoji) pContent += `${context.emoji} `;
+                                if (context.title) pContent += `${context.title}<br>`;
+                                if (context.phrase) pContent += `<span class="italian-word">${context.phrase}</span> – ${context.en || ''}${context.zh ? `（${context.zh}）` : ''}`;
+                                p.innerHTML = pContent;
+                                dialogueBoxDiv.appendChild(p);
                             });
-                            listContainer.appendChild(ul);
-                            tipBoxDiv.appendChild(listContainer);
-
-                        } else if (item.type === "categorized_phrases_tip") {
-                            const subTipContainer = document.createElement('div');
-                            subTipContainer.className = "sub-tip";
-                            const subTipTitle = document.createElement('h4');
-                            subTipTitle.innerHTML = item.title;
-                            subTipContainer.appendChild(subTipTitle);
-
-                            item.categories.forEach(category => {
-                                const categoryP = document.createElement('p');
-                                let categoryContent = '';
-                                if (category.emoji) categoryContent += `${category.emoji} `;
-                                categoryContent += `<strong>${category.context}</strong>`;
-                                if (category.context_en) categoryContent += ` (${category.context_en})`;
-                                if (category.context_zh) categoryContent += `（${category.context_zh}）`;
-                                categoryP.innerHTML = categoryContent;
-                                subTipContainer.appendChild(categoryP);
-
-                                if (category.phrases) {
-                                    const phraseList = document.createElement('ul');
-                                    phraseList.className = "example-list";
-                                    category.phrases.forEach(phrase => {
-                                        const phraseLi = document.createElement('li');
-                                        phraseLi.innerHTML = `<span class="italian-word">${phrase.text}</span> – ${phrase.en}`;
-                                        if (phrase.zh) phraseLi.innerHTML += `（${phrase.zh}）`;
-                                        phraseList.appendChild(phraseLi);
-                                    });
-                                    subTipContainer.appendChild(phraseList);
-                                }
-                            });
-                            tipBoxDiv.appendChild(subTipContainer);
-
-                        } else if (item.type === "nested-paragraph") {
-                            const p = document.createElement('p');
-                            p.className = "nested-tip";
-                            let pContent = '';
-                            if (item.text) pContent += item.text;
-                            if (item.en) pContent += ` ${item.en}`;
-                            if (item.zh) pContent += `（${item.zh}）`;
-                            if (item.example) pContent += `<br>Example: ${item.example}`;
-                            p.innerHTML = pContent;
-                            tipBoxDiv.appendChild(p);
-
-                        } else if (item.type === "nested-2-paragraph") {
-                            const p = document.createElement('p');
-                            p.className = "nested-tip-2";
-                            let pContent = '';
-                            if (item.text) pContent += item.text;
-                            if (item.zh) pContent += `（${item.zh}）`;
-                            p.innerHTML = pContent;
-                            tipBoxDiv.appendChild(p);
-
-                        } else if (item.type === "dialogue-example") {
-                            const p = document.createElement('p');
-                            p.className = "dialogue-example";
-                            p.innerHTML = `${item.speaker_a_emoji} ${item.speaker_a}: <span class="italian-word">${item.text_a}</span><br>${item.speaker_b_emoji} ${item.speaker_b}: <span class="italian-word">${item.text_b}</span>`;
-                            tipBoxDiv.appendChild(p);
                         }
-                    });
-                    levelContentDiv.appendChild(tipBoxDiv);
+                        sectionContainer.appendChild(dialogueBoxDiv);
+                        break;
+
+                    case "tip":
+                        if (section.content) {
+                            const tipBoxDiv = document.createElement('div');
+                            tipBoxDiv.className = section.className || "auto-list"; // Use section.className if specified, else auto-list
+
+                            section.content.forEach(item => {
+                                if (item.type === "paragraph") {
+                                    const p = document.createElement('p');
+                                    let pContent = '';
+                                    if (item.emoji) pContent += `${item.emoji} `;
+                                    pContent += `<span class="italian-word">${item.text}</span>`;
+                                    if (item.en) pContent += ` ${item.en}`;
+                                    if (item.zh) pContent += `（${item.zh}）`;
+                                    if (item.text_2) pContent += ` <span class="italian-word">${item.text_2}</span>`;
+                                    if (item.en_2) pContent += ` ${item.en_2}`;
+                                    if (item.zh_2) pContent += `（${item.zh_2}）`;
+                                    p.innerHTML = pContent;
+                                    tipBoxDiv.appendChild(p);
+                                } else if (item.type === "nested_paragraph") {
+                                    const p = document.createElement('p');
+                                    p.className = item.className || "tip-nested";
+                                    let pContent = '';
+                                    if (item.emoji) pContent += `${item.emoji} `;
+                                    if (item.strong) pContent += `<strong>${item.strong}</strong>`;
+                                    if (item.text) pContent += `<span class="italian-word">${item.text}</span>`;
+                                    if (item.en) pContent += ` ${item.en}`;
+                                    if (item.zh) pContent += `（${item.zh}）`;
+                                    p.innerHTML = pContent;
+                                    tipBoxDiv.appendChild(p);
+                                }
+                                // You can add more item.types for tips (e.g., 'list_item') if needed
+                            });
+                            sectionContainer.appendChild(tipBoxDiv);
+                        }
+                        break;
+
+                    case "task": // Re-added task handling
+                        if (section.content) {
+                            const taskDiv = document.createElement('div');
+                            taskDiv.className = section.className || "auto-list"; // Use section.className or default
+                            taskDiv.innerHTML = `<p>${section.content}</p>`; // Simple paragraph for task
+                            sectionContainer.appendChild(taskDiv);
+                        }
+                        break;
+
+                    default:
+                        console.warn(`Unknown section type: ${section.type}`);
+                        break;
                 }
+                levelContentDiv.appendChild(sectionContainer); // Append each section to the level's content div
             });
-            appDiv.appendChild(levelDiv);
+            appDiv.appendChild(levelDiv); // Append the whole level div to the appDiv
         });
-    };
+    }; // End of script.onload
 
     script.onerror = (e) => {
         console.error(`lesson-load.js: ERROR loading dynamic script from ${script.src}:`, e);
         document.body.innerHTML = `<h1>Error: Failed to load lesson data script for lessonId ${lessonId}. Please check your file path and the browser console for details.</h1>`;
     };
 
-    document.head.appendChild(script);
-    console.log("lesson-load.js: Dynamic script append attempt complete.");
+    document.head.appendChild(script); // Add the dynamic script to the document head
 
-    // This function needs to be in the global scope if it's called by inline onclick,
-    // or if it's generally a utility function meant for the entire script.
-    function toggleLessonLevel(levelId) {
+    // Global toggle function for lesson levels (accordions)
+    window.toggleLessonLevel = function(levelId) {
         const levelContent = document.getElementById(`level-content-${levelId}`);
         const levelTitle = document.querySelector(`#level-${levelId} .level-title`);
         const toggleIcon = levelTitle ? levelTitle.querySelector('.toggle-icon') : null;
@@ -292,13 +270,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (levelContent.classList.contains('hidden')) {
             levelContent.classList.remove('hidden');
-            if (toggleIcon) toggleIcon.textContent = '−';
+            if (toggleIcon) toggleIcon.textContent = '−'; // Change icon to minus
+            // Optional: for smooth animation, you might set a maxHeight
+            // levelContent.style.maxHeight = levelContent.scrollHeight + "px";
         } else {
             levelContent.classList.add('hidden');
-            if (toggleIcon) toggleIcon.textContent = '+';
+            if (toggleIcon) toggleIcon.textContent = '+'; // Change icon to plus
+            // Optional: for smooth animation, reset maxHeight
+            // levelContent.style.maxHeight = null;
         }
-    }
-    // Make it available globally if needed by older inline event handlers,
-    // though adding event listeners is generally preferred.
-    window.toggleLessonLevel = toggleLessonLevel;
-});
+    };
+}); // End of DOMContentLoaded
