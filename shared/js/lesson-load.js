@@ -1,32 +1,30 @@
-// shared/js/lesson-load.js (已根據您的要求修復並調整 Tip 區塊)
+// shared/js/lesson-load.js (已修復載入問題，並確保 Tip 區塊中的單字正確加粗)
+
 document.addEventListener('DOMContentLoaded', () => {
     console.log("lesson-load.js: DOMContentLoaded event fired.");
 
-    // Get lessonId from URL (e.g., ?lessonId=1)
     const lessonId = new URLSearchParams(window.location.search).get('lessonId');
     console.log("lesson-load.js: Retrieved lessonId from URL:", lessonId);
 
     if (!lessonId) {
         console.error("lesson-load.js: No lessonId found in URL. Displaying generic error.");
-        document.body.innerHTML = '<h1>Error: No lessonId provided. Please specify a lessonId in the URL (e.g., ?lessonId=1).</h1>';
+        document.body.innerHTML = '<h1>錯誤：未提供 lessonId。請在 URL 中指定 lessonId (例如：?lessonId=1)。</h1>';
         return;
     }
 
-    // Dynamically create a script tag to load the specific lesson's data file
     const script = document.createElement('script');
-    script.src = `lessons/lesson${lessonId}.js`; // This path should be relative to your lesson.html
-    script.async = true; // Load asynchronously
+    script.src = `lessons/lesson${lessonId}.js`;
+    script.async = true;
     console.log("lesson-load.js: Attempting to load dynamic script from:", script.src);
 
     script.onload = () => {
         console.log("lesson-load.js: Dynamic lesson script LOADED. Checking for window.lessonData...");
 
-        // After the script loads, window.lessonData should be available globally
         if (typeof window.lessonData === 'undefined' || window.lessonData === null) {
             console.error(`lesson-load.js: 'window.lessonData' is undefined or null after script load for lessonId ${lessonId}.
                                  This indicates lesson${lessonId}.js did not correctly define and expose 'lessonData'.
                                  Ensure your lesson file contains 'const lessonData = {...};' at the top level.`);
-            document.body.innerHTML = `<h1>Error: Lesson data not found or improperly defined for lessonId ${lessonId}. Please check console.</h1>`;
+            document.body.innerHTML = `<h1>錯誤：找不到課程資料或定義不正確，課程 ID ${lessonId}。請檢查控制台。</h1>`;
             return;
         }
 
@@ -35,15 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const appDiv = document.getElementById('app');
         if (!appDiv) {
             console.error("lesson-load.js: 'app' div not found in HTML. Cannot render lesson.");
-            document.body.innerHTML = '<h1>Error: Application root element (div id="app") not found.</h1>';
+            document.body.innerHTML = '<h1>錯誤：找不到應用程式根元素 (div id="app")。</h1>';
             return;
         }
-        appDiv.innerHTML = ''; // Clear existing 'Loading lesson content...' or any previous content
+        appDiv.innerHTML = '';
 
-        // --- Render Lesson Header (Module/Lesson Title and Info Text) ---
+        // --- Render Lesson Header ---
         const moduleLessonHeader = document.createElement('h1');
-        moduleLessonHeader.title = lessonData.module_title_tooltip || `${lessonData.title_en} (${lessonData.title_zh})`; // Use tooltip if provided
-        moduleLessonHeader.innerHTML = `${lessonData.module_emoji || '🇮🇹'} Module ${lessonData.module_id || ''} – Lesson ${lessonData.lesson_id || ''}: ${lessonData.lesson_display_title || lessonData.title_en}`; // Example: 🇮🇹 Module 1 – Lesson 2: Come stai? Missione al mercato
+        moduleLessonHeader.title = lessonData.module_title_tooltip || `${lessonData.title_en} (${lessonData.title_zh})`;
+        moduleLessonHeader.innerHTML = `${lessonData.module_emoji || '🇮🇹'} Module ${lessonData.module_id || ''} – Lesson ${lessonData.lesson_id || ''}: ${lessonData.lesson_display_title || lessonData.title_en}`;
         appDiv.appendChild(moduleLessonHeader);
 
         const infoText = document.createElement('p');
@@ -59,28 +57,26 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         appDiv.appendChild(infoText);
 
-
         // --- Render Levels and Sections ---
         lessonData.levels.forEach(level => {
             const levelDiv = document.createElement('div');
-            levelDiv.className = 'lesson-level'; // Matches your existing CSS class
+            levelDiv.className = 'lesson-level';
             levelDiv.id = `level-${level.levelId}`;
 
             const levelTitle = document.createElement('h2');
-            levelTitle.className = 'level-title'; // Matches your existing CSS class
+            levelTitle.className = 'level-title';
             levelTitle.innerHTML = `<span class="toggle-icon">+</span> ${level.title}`;
-            levelTitle.onclick = () => window.toggleLessonLevel(level.levelId); // Use global function
+            levelTitle.onclick = () => window.toggleLessonLevel(level.levelId);
             levelDiv.appendChild(levelTitle);
 
             const levelContentDiv = document.createElement('div');
-            levelContentDiv.className = 'level-content hidden'; // Matches your existing CSS class, start hidden
+            levelContentDiv.className = 'level-content hidden';
             levelContentDiv.id = `level-content-${level.levelId}`;
             levelDiv.appendChild(levelContentDiv);
 
-            // Iterate through each section within the current level
             level.sections.forEach(section => {
                 const sectionContainer = document.createElement('div');
-                sectionContainer.className = 'section-container'; // Generic wrapper for section content
+                sectionContainer.className = 'section-container';
 
                 const sectionTitle = document.createElement('h3');
                 let sectionEmoji = '';
@@ -92,25 +88,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 sectionTitle.innerHTML = `${sectionEmoji} ${section.title}`;
                 sectionContainer.appendChild(sectionTitle);
 
-                // Optional: Section-level audio player (if section.audio is present)
                 if (section.audio) {
                     const audioDiv = document.createElement('div');
                     audioDiv.className = "audio-controls";
                     audioDiv.innerHTML = `<audio controls class="small-audio">
                                             <source src="audio/${section.audio}" type="audio/mpeg">
-                                            Your browser does not support the audio element.
+                                            您的瀏覽器不支援音訊元素。
                                           </audio>`;
                     sectionContainer.appendChild(audioDiv);
                 }
 
-                // Render content based on section type
                 switch (section.type) {
                     case "keyPhrase":
                         if (section.phrases) {
                             const phraseList = document.createElement('div');
-                            phraseList.className = "auto-list"; // Matches your HTML
+                            phraseList.className = "auto-list";
                             section.phrases.forEach(phrase => {
-                                const p = document.createElement('p'); // Using paragraph for each phrase for spacing
+                                const p = document.createElement('p');
                                 p.innerHTML = `<span class="italian-word">${phrase.text}</span> – ${phrase.en} （${phrase.zh}）`;
                                 phraseList.appendChild(p);
                             });
@@ -120,9 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     case "dialogue":
                         const dialogueBoxDiv = document.createElement('div');
-                        dialogueBoxDiv.className = "dialogue-box"; // Matches your HTML
+                        dialogueBoxDiv.className = "dialogue-box";
 
-                        // Helper for simple speaker emojis (1, 2, or custom characters)
                         const getSpeakerEmoji = (speakerChar) => {
                             if (speakerChar === "1") return "👩🏻‍‍";
                             if (speakerChar === "2") return "🧑‍🍳";
@@ -136,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (speakerChar === "👦") return "👦";
                             if (speakerChar === "🧑‍💻") return "🧑‍💻";
                             if (speakerChar === "👩‍🎓") return "👩‍🎓";
-                            return speakerChar; // Fallback to original char if no specific emoji
+                            return speakerChar;
                         };
 
                         if (section.dialogues && section.dialogues.length > 0) {
@@ -150,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     blockAudioDiv.className = "audio-controls";
                                     blockAudioDiv.innerHTML = `<audio controls class="small-audio">
                                                                 <source src="audio/${dialogueBlock.audio}" type="audio/mpeg">
-                                                                Your browser does not support the audio element.
+                                                                您的瀏覽器不支援音訊元素。
                                                               </audio>`;
                                     dialogueBoxDiv.appendChild(blockAudioDiv);
                                 }
@@ -164,9 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 });
                                 dialogueBoxDiv.appendChild(document.createElement('br'));
                             });
-                        }
-                        // This part is for other dialogue types (not in lesson1.js, but kept for compatibility)
-                        else if (section.lines && section.lines.length > 0) {
+                        } else if (section.lines && section.lines.length > 0) {
                             section.lines.forEach(line => {
                                 const p = document.createElement('p');
                                 const displaySpeaker = line.speaker ? `${getSpeakerEmoji(line.speaker)} ` : '';
@@ -198,11 +189,10 @@ document.addEventListener('DOMContentLoaded', () => {
                                     const p = document.createElement('p');
                                     let pContent = '';
                                     if (item.emoji) pContent += `${item.emoji} `;
-                                    // *** 這裡修改以加粗義大利文單字 ***
+                                    // 已修復：將所有的義大利文單字用 <strong> 包裹，使其變為粗體
                                     if (item.text) pContent += `<strong>${item.text}</strong>`;
                                     if (item.en) pContent += ` ${item.en}`;
                                     if (item.zh) pContent += `（${item.zh}）`;
-                                    // 處理 text_2 和 text_3
                                     if (item.text_2) pContent += ` <strong>${item.text_2}</strong>`;
                                     if (item.en_2) pContent += ` ${item.en_2}`;
                                     if (item.zh_2) pContent += `（${item.zh_2}）`;
@@ -250,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     script.onerror = (e) => {
         console.error(`lesson-load.js: ERROR loading dynamic script from ${script.src}:`, e);
-        document.body.innerHTML = `<h1>Error: Failed to load lesson data script for lessonId ${lessonId}. Please check your file path and the browser console for details.</h1>`;
+        document.body.innerHTML = `<h1>錯誤：無法載入課程資料腳本，課程 ID ${lessonId}。請檢查檔案路徑和瀏覽器控制台。</h1>`;
     };
 
     document.head.appendChild(script);
