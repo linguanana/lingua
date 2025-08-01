@@ -1,3 +1,4 @@
+// lessons/lesson1.js
 const lessonData = {
   lessonId: 1,
   lesson_title: "🇫🇷 Lesson 1 – Say Hello",
@@ -93,5 +94,3 @@ const lessonData = {
     }
   ]
 };
-
-export default lessonData;
