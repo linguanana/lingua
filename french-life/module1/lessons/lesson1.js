@@ -1,4 +1,5 @@
 // lessons/lesson1.js
+// This object contains all the data for the lesson, including key phrases, dialogs, and tips.
 const lessonData = {
   lessonId: 1,
   lesson_title: "🇫🇷 Lesson 1 – Say Hello",
@@ -53,11 +54,11 @@ const lessonData = {
         }
       ],
       tips: [
-        { fr: "'Au revoir' est plus formel que 'Salut'.", en: "'Au revoir' is more formal than 'Salut'.", zh: "Au revoir 比 Salut 更正式。" },
-        { fr: "'Coucou' est très informel et mignon.", en: "'Coucou' is very informal and cute.", zh: "Coucou 非常非正式而且可愛。" },
-        { fr: "'Bonne soirée' est utilisé le soir.", en: "'Bonne soirée' is used in the evening.", zh: "晚上使用 Bonne soirée。" },
-        { fr: "'Bonne journée' est utilisé le matin ou début d'après-midi.", en: "'Bonne journée' is used in the morning or early afternoon.", zh: "早上或下午初使用 Bonne journée。" },
-        { fr: "'À plus' est une façon familière de dire 'à plus tard'.", en: "'À plus' is a casual way to say 'see you later'.", zh: "À plus 是 À plus tard 的口語說法。" }
+        { en: "'Au revoir' is more formal than 'Salut'.", zh: "Au revoir 比 Salut 更正式。" },
+        { en: "'Coucou' is very informal and cute.", zh: "Coucou 非常非正式而且可愛。" },
+        { en: "'Bonne soirée' is used in the evening.", zh: "晚上使用 Bonne soirée。" },
+        { en: "'Bonne journée' is used in the morning or early afternoon.", zh: "早上或下午初使用 Bonne journée。" },
+        { en: "'À plus' is a casual way to say 'see you later'.", zh: "À plus 是 À plus tard 的口語說法。" }
       ]
     },
     {
