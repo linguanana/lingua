@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!lessonId) {
         const appDiv = document.getElementById('app');
         if (appDiv) {
-            appDiv.innerHTML = '<div class="text-center text-red-500 font-semibold p-8">錯誤：請在 URL 中提供 lessonId。例如：lesson.html?lessonId=1</div>';
+            appDiv.innerHTML = '<div class="text-center text-red-500 font-semibold p-8">Error: Please provide a lessonId in the URL. For example: lesson.html?lessonId=1</div>';
         }
+        console.error("Error: lessonId is missing from the URL.");
         return;
     }
 
@@ -21,24 +22,30 @@ document.addEventListener('DOMContentLoaded', () => {
     script.src = `lessons/lesson${lessonId}.js`;
     script.async = true;
 
+    // Log the path we are attempting to load
+    console.log(`Attempting to load lesson data from: ${script.src}`);
+
     script.onload = () => {
         // After the script is loaded, window.lessonData should be available
         if (typeof window.lessonData === 'undefined') {
             const appDiv = document.getElementById('app');
             if (appDiv) {
-                appDiv.innerHTML = `<div class="text-center text-red-500 font-semibold p-8">錯誤：無法找到課程 ID ${lessonId} 的資料。</div>`;
+                appDiv.innerHTML = `<div class="text-center text-red-500 font-semibold p-8">Error: Cannot find data for lesson ID ${lessonId}.</div>`;
             }
+            console.error(`Error: The lesson data object 'lessonData' was not found for lesson ID ${lessonId}. Check the file for syntax errors or variable naming issues.`);
             return;
         }
 
+        console.log(`Successfully loaded data for lesson ID ${lessonId}.`);
         renderLesson(window.lessonData);
     };
 
     script.onerror = () => {
         const appDiv = document.getElementById('app');
         if (appDiv) {
-            appDiv.innerHTML = `<div class="text-center text-red-500 font-semibold p-8">錯誤：載入 lessons/lesson${lessonId}.js 失敗。請檢查檔案路徑。</div>`;
+            appDiv.innerHTML = `<div class="text-center text-red-500 font-semibold p-8">Error: Failed to load lessons/lesson${lessonId}.js. Please check the file path.</div>`;
         }
+        console.error(`Error: Failed to load script lessons/lesson${lessonId}.js. Check if the file exists and the path is correct.`);
     };
 
     document.head.appendChild(script);
@@ -76,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const keyPhraseSection = document.createElement('div');
                 keyPhraseSection.classList.add('section-container');
                 const title = document.createElement('h3');
-                title.textContent = '關鍵詞彙 (Key Phrases)';
+                title.textContent = 'Key Phrases';
                 keyPhraseSection.appendChild(title);
                 const list = document.createElement('ul');
                 list.classList.add('auto-list');
@@ -94,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dialogSection = document.createElement('div');
                 dialogSection.classList.add('section-container');
                 const title = document.createElement('h3');
-                title.textContent = '範例對話 (Dialog)';
+                title.textContent = 'Dialog';
                 dialogSection.appendChild(title);
 
                 level.dialog.forEach(dialogueBlock => {
@@ -116,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const tipsSection = document.createElement('div');
                 tipsSection.classList.add('section-container');
                 const title = document.createElement('h3');
-                title.textContent = '提示 (Tips)';
+                title.textContent = 'Tips';
                 tipsSection.appendChild(title);
                 const list = document.createElement('ul');
                 list.classList.add('auto-list');
