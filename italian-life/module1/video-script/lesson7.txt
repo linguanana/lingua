@@ -1,0 +1,198 @@
+🩷🩷 Slide 1 *************************
+ *************** TEXT: ***************
+[slide-1]
+TEXT:
+🎬 Lesson 7
+Italian Question Words
+
+Part 1: Come, Chi, Cosa, Dove
+Part 2: Quando, Perché, Quale, Quanto
+
+EN:
+Ciao! Welcome to Lesson 8. {{pause=1000}}
+Today we’re learning some of the most useful question words in Italian. {{pause=1000}}
+Things like “how,” “who,” “what,” and “where” — all the way to “when” and “why”! {{pause=1000}}
+These words will help you ask questions and understand conversations better. {{pause=1000}}
+
+🩷🩷 Slide 2 *************************
+ *************** TEXT: ***************
+[slide-2]
+TEXT:
+Come – How
+  👧 Come stai? – How are you?
+Chi – Who
+  👧 Chi è lei?  – Who is she?
+Cosa / Che cosa – What
+  👦 Cosa fai oggi? – What are you doing today?
+Dove – Where
+  👧 Dove vai?
+  👦 Dov’è il bagno?
+
+IT:
+Come {{pause=1000}}
+Come stai?
+Chi {{pause=1000}}
+Chi è lei?
+Cosa {{pause=1000}}
+Cosa fai oggi?
+Che cosa {{pause=1000}}
+Dove {{pause=1000}}
+Dove vai?
+Dov’è il bagno
+
+🩷🩷 Slide 3 *************************
+ *************** TEXT: ***************
+
+ [slide-3]
+ TEXT:
+ same as Slide 2
+
+ EN:
+ Let’s look at these question words in action: {{pause=1000}}
+
+ Come  {{pause=500}} this means “how.” {{pause=500}}
+ Use it to ask how someone is, or how something works. {{pause=1000}}
+ For example: {{pause=500}} Come stai? {{pause=500}} means “How are you?” {{pause=500}}
+ Use this to ask how someone is feeling. {{pause=1000}}
+
+  {{pause=500}}Chi  {{pause=500}} means “who.” {{pause=500}}
+ You’ll use this when asking about people. {{pause=500}}
+ Like: {{pause=500}} Chi è lei?  {{pause=500}} “Who is she?” {{pause=1000}}
+
+  {{pause=500}}Cosa  {{pause=500}} Che cosa  {{pause=500}} — both mean “what.” {{pause=500}}
+ They’re used to ask about things or actions. {{pause=500}}
+ For example: {{pause=500}}
+ Cosa fai oggi?  {{pause=500}} “What are you doing today?” {{pause=1000}}
+
+  {{pause=500}}Dove  {{pause=500}} means “where.” {{pause=500}}
+ Perfect for asking about places or destinations. {{pause=500}}
+ Like: {{pause=500}}
+ Dove vai?  {{pause=500}} “Where are you going?” {{pause=500}}
+ Or: {{pause=500}}
+ Dov’è il bagno?  {{pause=500}} “Where is the bathroom?” {{pause=1000}}
+
+ Keep practicing these — they’re some of the most useful words you’ll hear in Italy! {{pause=1000}}
+ 🩷🩷 Slide 4 *************************
+ *************** TEXT: ***************
+[slide-4]
+TEXT:
+🎬 Lesson 7
+Italian Question Words
+
+Part 1: Come, Chi, Cosa, Dove
+Part 2: Quando, Perché, Quale, Quanto
+
+EN:
+Great job s{{pause=500}}
+You’ve just completed Part 1 of Italian questions words lesson. 🎉 {{pause=500}}
+now let’s go a little deeper. {{pause=1000}}
+Sometimes you want to ask:
+“When does the train leave?”
+Or “Which gelato do you want?” 🍦
+That’s what we’ll cover next! {{pause=1000}}
+
+🩷🩷 Slide 5 *************************
+ *************** TEXT: ***************
+[slide-5]
+TEXT:
+🕒 Quando – when
+💬 Quando parte il treno? – When does the train leave?
+
+🤔 Perché – why
+💬 Perché sei triste? – Why are you sad?
+
+🍦 Quale – which
+💬 Quale gelato vuoi? – Which ice cream do you want?
+
+💰 Quanto | Quanta – how much (masculine | feminine singular)
+💬 Quanto costa? – How much does it cost?
+💧 Quanta acqua bevi? – How much water do you drink?
+
+👯 Quanti | Quante – how many (masculine | feminine plural)
+💬 Quanti amici hai? – How many friends do you have?
+🍎 Quante mele vuoi? – How many apples do you want?
+
+IT:
+Quando{{pause=1000}}
+Quando parte il treno?{{pause=1000}}
+Perché{{pause=1000}}
+Perché sei triste?{{pause=1000}}
+Quale{{pause=1000}}
+Quale gelato vuoi?{{pause=1000}}
+Quanto{{pause=1000}}
+Quanta{{pause=1000}}
+Quanto costa?{{pause=1000}}
+Quanta acqua bevi?{{pause=1000}}
+Quanti{{pause=1000}}
+Quante{{pause=1000}}
+Quanti amici hai? {{pause=1000}}
+Quante mele vuoi{{pause=1000}}
+
+🩷🩷 Slide 6 *************************
+ *************** TEXT: ***************
+[slide-6]
+TEXT:
+same as Slide 5
+
+EN:
+Let’s look at more essential Italian question words.
+We’ll go through them one by one — with examples.
+{pause=1000}
+
+First,
+{pause=500}Quando{pause=500} — it means “when.”
+You use it to ask about time.
+For example:
+{pause=500}Quando parte il treno?{pause=500}
+When does the train leave?
+{pause=1000}
+
+Next,
+{pause=500}Perché{pause=500} — this means “why.”
+Use it when you want to know the reason for something.
+For example:
+{pause=500}Perché sei triste?{pause=500}
+Why are you sad?
+{pause=1000}
+
+Now let’s look at:
+{pause=1000}Quale{pause=500} — which.
+This word is useful when you’re choosing between options.
+For example:
+{pause=500}Quale gelato vuoi?{pause=500}
+Which ice cream do you want?
+{pause=1000}
+
+Now let’s talk about “how much.”
+There are two forms, depending on gender.
+
+{pause=1000}Quanto{pause=500} — masculine singular.
+Use it for masculine and uncountable nouns.
+Example:
+{pause=500}Quanto costa?{pause=500}
+How much does it cost?
+{pause=1000}
+
+{pause=1000}Quanta{pause=500} — feminine singular.
+Use it with feminine uncountable nouns.
+Example:
+{pause=500}Quanta acqua bevi?{pause=500}
+How much water do you drink?
+{pause=1000}
+
+Now let’s talk about “how many.”
+These are used when the noun is countable — and plural.
+
+{pause=1000}Quanti{pause=500} — masculine plural.
+For example:
+{pause=500}Quanti amici hai?{pause=500}
+How many friends do you have?
+{pause=1000}
+
+{pause=1000}Quante{pause=500} — feminine plural.
+For example:
+{pause=500}Quante mele vuoi?{pause=500}
+How many apples do you want?
+{pause=1000}
+
+You’re doing great!

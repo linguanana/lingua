@@ -97,28 +97,28 @@ TEXT:
 same as Slide 5
 
 EN:
-{{pause=2000}}“Piacere!”{{pause=2000}}
-means “Nice to meet you!” {{pause=500}} it’s short and friendly. {{pause=1000}}
+{{pause=500}}“Piacere!” {{pause=500}}
+means “Nice to meet you!” {{pause=500}} It’s short and friendly. {{pause=1000}}
 
-{{pause=2000}}“Piacere di conoscerti”{{pause=2000}}
-is the full, informal version {{pause=500}} say it to someone your age or in casual settings. {{pause=1000}}
+{{pause=500}}“Piacere di conoscerti” {{pause=500}}
+is the full, informal version. {{pause=500}} Say it to someone your age or in casual settings. {{pause=1000}}
 
-{{pause=2000}}“Piacere di conoscerla”{{pause=2000}}
-is formal . For example:
-When meeting your boss, a teacher, someone older or during interview,
-you can say {{pause=1000}}“Piacere di conoscerla”{{pause=1000}} to show respect.
+{{pause=500}}“Piacere di conoscerla” {{pause=500}}
+is formal. For example:
+When meeting your boss, a teacher, someone older, or during an interview, {{pause=500}}
+you can say {{pause=500}}“Piacere di conoscerla” {{pause=500}} to show respect. {{pause=1000}}
 
-{{pause=2000}}“Anche a me”{{pause=2000}}
-means “Me too” — you can say this right after someone says {{pause=1000}}“Piacere.” {{pause=1000}}
+{{pause=500}}“Piacere mio” {{pause=500}}
+means “The pleasure is mine.” {{pause=500}} It’s a polite way to respond after someone says {{pause=500}}“Piacere.” {{pause=1000}}
 
-{{pause=2000}}“Come si scrive?”{{pause=2000}}
+{{pause=500}}“Anche a me” {{pause=500}}
+means “Me too.” {{pause=500}} You can also say this right after someone says {{pause=500}}“Piacere.” {{pause=1000}}
+
+{{pause=500}}“Come si scrive?” {{pause=500}}
 means “How do you spell it?” — use it if you didn’t catch their name clearly. {{pause=1000}}
 
-{{pause=2000}}“Che bel nome!”{{pause=2000}}
+{{pause=500}}“Che bel nome!” {{pause=500}}
 means “What a nice name!” {{pause=500}}
-It’s a sweet way to give someone a compliment. {{pause=1000}}
-If someone tells you their name and you like it, just smile and say {{pause=1000}}“Che bel nome!” 😊{{pause=1000}}
-
 
 
 🩷🩷 Slide 7 *************************

@@ -111,24 +111,36 @@ Here’s how to be polite in those situations. {{pause=1000}}
 🩷🩷 Slide 5 *************************
  *************** TEXT: ***************
  TEXT:
-Non capisco. – I don’t understand.
-Può ripetere, per favore? – Can you repeat, please? (formal)
-Mi dispiace. – I’m sorry.
-Mi dispiace molto. – I’m very sorry.
-Un momento, per favore. – One moment, please.
-Come si dice… in italiano? – How do you say… in Italian?
-Che significa…? – What does … mean?
-Non lo so. – I don’t know.
+ 😕 Non capisco. – I don’t understand.
+ 🤷 Non parlo italiano molto bene
+                             - I don't speak Italian very well
+
+ 🔁 Può ripetere, per favore? – Can you repeat, please?
+ 🙏 Mi può aiutare? – Can you help me?
+ 🙏 Potrebbe aiutarmi, per favore? – Could u help me, pls?
+ 🙋‍♀️ Posso chiederti una cosa? – Can I ask you something?
+
+ 😔 Mi dispiace. – I’m sorry.
+ 😔 Mi dispiace molto. – I’m very sorry.
+ ⏳ Un momento, per favore. – One moment, please.
+
+ 🙌 Con piacere! – With pleasure!
+ 😊 Lo apprezzo molto. – I really appreciate it.
 
  IT:
-Non capisco {{pause=1000}}
-Può ripetere, per favore? {{pause=1000}}
-Mi dispiace molto {{pause=1000}}
-Va bene {{pause=1000}}
-Certo! {{pause=1000}}
-Con piacere {{pause=1000}}
-Non lo so {{pause=1000}}
-Un momento, per favore {{pause=1000}}
+ Non capisco {{pause=1000}}
+ Non parlo italiano molto bene  {{pause=1000}}
+ Può ripetere, per favore? {{pause=1000}}
+ Mi può aiutare? {{pause=1000}}
+ Potrebbe aiutarmi, per favore? {{pause=1000}}
+ Posso chiederti una cosa? {{pause=1000}}
+
+ Mi dispiace {{pause=1000}}
+ Mi dispiace molto {{pause=1000}}
+
+ Un momento, per favore {{pause=1000}}
+ Con piacere! {{pause=1000}}
+ Lo apprezzo molto {{pause=500}}
 
 
 🩷🩷 Slide 6 *************************
@@ -137,35 +149,46 @@ TEXT:
 same as [slide-2]
 
 EN:
-Let’s practice some polite expressions in Italian. {{pause=1000}}
-{{pause=1000}}“Non capisco”{{pause=1000}} means “I don’t understand.” {{pause=500}}
-Use this when you’re confused — or when someone speaks too fast! {{pause=1000}}
+Now, we're diving into some incredibly useful Italian phrases  {{pause=500}} that'll help you communicate when you need a little assistance or just want to be polite.  {{pause=500}} Let's get started!"  {{pause=500}}
+First up, if you're ever in a situation where you hear something in Italian and it just 'don't understand,' you can say:
+{{pause=1000}}   Non capisco!{{pause=500}}
+That means 'I don't understand.' Think about it, if you're feeling a bit confused, or if someone's speaking just too fast, this phrase is super practical! {{pause=500}}
 
-{{pause=1000}}“Può ripetere, per favore?”{{pause=1000}} means “Can you repeat, please?”
-It’s a very polite way to ask someone to say it again.
-Perfect in shops, cafés, or on the street. {{pause=1000}}
+Sometimes, it's not just about not understanding one thing, but generally feeling that your Italian skills are still growing. For that, you can clearly say:
+{{pause=1000}}   Non parlo italiano molto bene.{{pause=500}}
+This means 'I don't speak Italian very well.' It's a great, honest way to let people know your level, so they might speak slower or even switch to English to help you out. {{pause=500}}
 
-{{pause=1000}}“Mi dispiace molto”{{pause=1000}} means “I’m very sorry.”
-It’s stronger than just “sorry.” You can use it when something bad happens, or to express sympathy. {{pause=1000}}
+Next, if you hope the other person can 'repeat' what they said, you can ask very politely:
+{{pause=1000}}   Può ripetere, per favore?{{pause=500}}
+That means 'Can you repeat, please?' It's a very, very polite way to ask someone to say it again. {{pause=500}}
 
-{{pause=1000}}Va bene{{pause=1000}} — “Alright” or “That’s fine.”
-You’ll hear this all the time. {{pause=1000}}
+And then, when you truly need help, you can just say this:
+{{pause=1000}}   Mi può aiutare?{{pause=500}}
+This phrase means 'Can you help me?' If you need directions, or any kind of assistance, just use this one. {{pause=500}}
 
-{{pause=1000}}Certo!{{pause=1000}} — “Of course!”
-It’s a short and friendly word. {{pause=1000}}
+For a slightly more formal or very polite way to ask for help, you can say:
+{{pause=1000}}   Potrebbe aiutarmi, per favore?{{pause=500}}
+This translates to 'Could you help me, please?' – a very respectful option for various situations. {{pause=500}}
 
-{{pause=1000}}Con piacere{{pause=1000}} — means “With pleasure.”
-Say it when you’re happy to help. {{pause=1000}}
+And if you simply want to ask someone something, perhaps to get information or just start a query, you can open with:
+{{pause=1000}}   Posso chiederti una cosa?{{pause=500}}
+This means, 'Can I ask you something?' It's perfect for politely approaching someone with a question. {{pause=500}}
 
-{{pause=1000}}Non lo so{{pause=1000}} — “I don’t know.”
-Simple and honest — it’s okay to say it! {{pause=1000}}
+Mi dispiace.{{pause=500}}
+This simply means 'I'm sorry.' You'll use this for everyday apologies. {{pause=500}}
 
-{{pause=1000}}Un momento, per favore{{pause=1000}} — “One moment, please.”
-Useful if you need a little time. {{pause=1000}}
+And if something is more serious, or you want to express deeper sympathy, you can add 'molto':
+{{pause=1000}}   Mi dispiace molto!{{pause=500}}
+{{pause=1000}}   Un momento, per favore.{{pause=500}}
+This means 'One moment, please.' It's incredibly handy when you need a little time to think, find something, or ask someone to wait briefly. {{pause=500}}
 
-These polite expressions are short, easy, and powerful. {{pause=1000}}
-They help you communicate — even when you don’t understand everything! {{pause=1000}}
-Well done — You’ve finished Lesson 3.{{pause=1000}}
+When you're happy to do something for someone, or enthusiastically agree, a lovely Italian phrase is:
+{{pause=1000}}   Con piacere!{{pause=500}}
+Literally, this means 'with pleasure.' So, when you're genuinely happy to offer assistance, this is the phrase to use! {{pause=500}}
+
+And finally, when someone has done something kind or helpful for you, and you want to show your sincere gratitude, say:
+{{pause=1000}}   Lo apprezzo molto.{{pause=500}}
+This means, 'I appreciate it very much!' It's a warm and heartfelt way to express thanks. {{pause=500}}
 
 🩷🩷 Slide 7 *************************
  *************** TEXT: ***************
