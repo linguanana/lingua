@@ -9,8 +9,8 @@ const modulesData = [
             { name: 'Lesson4: Waht is your name 你叫什麼名字？', link: 'module1/lesson4.html' },
             { name: 'Lesson5: Where are you from? 你從哪裡來', link: 'module1/lesson5.html' },
             { name: 'Lesson6: What are you doing? What is your job?（在做什麼？／你的職業是什麼)', link: 'module1/lesson6.html' },
-            { name: 'Lesson8: Italian Question Words ( how, who, what, where, when, why, which and how much/many)（學習義大利提問詞)', link: 'module1/lesson7.html' },
-            { name: 'Lesson9: Personal Pronouns and Possessives (Io, tu, lui, lei )人稱代名詞與所有格', link: 'module1/lesson8.html' },
+            { name: 'Lesson7: Italian Question Words ( how, who, what, where, when, why, which and how much/many)（學習義大利提問詞)', link: 'module1/lesson7.html' },
+            { name: 'Lesson8: Personal Pronouns and Possessives (Io, tu, lui, lei )人稱代名詞與所有格', link: 'module1/lesson8.html' },
         ]
     },
     {
