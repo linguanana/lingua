@@ -30,20 +30,18 @@
     <!-- Level 1 / 2 / 3 內容將注入此處 -->
   </div>
 
-  <!-- JS -->
+
+  <!-- js -->
   <script src="../../shared/js/render-lesson.js"></script>
   <script src="../../shared/js/module-load.js"></script>
+  <script src="../../shared/js/toggle-lesson-level-manual.js"></script>
   <script>
     const moduleId = new URLSearchParams(window.location.search).get("id") || "1";
     const script = document.createElement("script");
     script.src = `mod/mod${moduleId}.js`;
     script.onload = () => {
       renderModule(moduleData);
-
-      // ✅ Load toggle logic only after module is rendered
-      const toggleScript = document.createElement("script");
-      toggleScript.src = "../../shared/js/toggle-lesson-level.js";
-      document.body.appendChild(toggleScript);
+      activateLessonAccordion(); // ✅ 不影響 TagLesson，手動執行
     };
     document.body.appendChild(script);
   </script>
