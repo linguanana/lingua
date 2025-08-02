@@ -1,48 +1,54 @@
-// module-load.js (clean + accordion left to toggle-lesson-level.js)
+// shared/js/module-load.js
+
 function renderModule(moduleData) {
-    const lessonsContainer = document.getElementById("lessons-container");
-    const lessonTitle = document.getElementById("lesson-title");
-    const lessonTheme = document.getElementById("lesson-theme");
+  const lessonsContainer = document.getElementById("lessons-container");
+  const lessonTitle = document.getElementById("lesson-title");
+  const lessonTheme = document.getElementById("lesson-theme");
+  const lessonContainer = document.getElementById("lesson-container");
 
-    if (!lessonsContainer || !lessonTitle || !lessonTheme) {
-      console.error("Missing expected DOM elements.");
-      return;
-    }
-    // Clear everything
-    lessonsContainer.innerHTML = "";
-    if (lessonTheme) lessonTheme.textContent = "";
-    lessonContainer.innerHTML = "";
+  // 確保所有必要的 DOM 元素都存在
+  if (!lessonsContainer || !lessonTitle || !lessonTheme || !lessonContainer) {
+    console.error("Missing expected DOM elements.");
+    return;
+  }
 
-    moduleData.lessons.forEach((lesson, index) => {
-        const lessonBtn = document.createElement("button");
-        lessonBtn.textContent = (index + 1).toString();
+  // 清除舊內容
+  lessonsContainer.innerHTML = "";
+  lessonTitle.textContent = "";
+  lessonTheme.textContent = "";
+  lessonContainer.innerHTML = "";
 
-        lessonBtn.onclick = function () {
-          localStorage.removeItem("lastOpenLevelId");
+  // 建立課程按鈕
+  moduleData.lessons.forEach((lesson, index) => {
+    const lessonBtn = document.createElement("button");
+    lessonBtn.textContent = (index + 1).toString();
 
-          // Update the heading elements
-          lessonTitle.textContent = lesson.title || `Lesson ${index + 1}`;
-          lessonTheme.textContent = lesson.theme || "";
+    lessonBtn.onclick = function () {
+      localStorage.removeItem('lastOpenLevelId'); // 清除 accordion 記憶
 
-          // Render the lesson
-          renderLesson(lesson.levels);
+      // 更新標題與主題
+      lessonTitle.textContent = `Lesson ${lesson.lessonId} – ${lesson.theme || ""}`;
+      lessonTheme.textContent = ""; // 你已經在上面顯示完整了，不重複顯示
 
-          // Highlight active button
-          document.querySelectorAll("#lessons-container button").forEach((btn) =>
-            btn.classList.remove("active")
-          );
-          this.classList.add("active");
-        };
+      // 載入該課程的 levels
+      renderLesson(lesson.levels);
 
+      // 更新按鈕樣式
+      document.querySelectorAll('#lessons-container button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      this.classList.add('active');
+    };
 
-        lessonsContainer.appendChild(lessonBtn);
-    });
+    lessonsContainer.appendChild(lessonBtn);
+  });
 
-    // Auto-load first lesson (if you want to disable auto-load, comment this block out)
-    if (moduleData.lessons.length > 0) {
-        const firstLesson = moduleData.lessons[0];
-        lessonHeading.textContent = `Lesson ${firstLesson.lessonId} – ${firstLesson.theme || ''}`;
-        renderLesson(firstLesson.levels);
-        lessonsContainer.querySelector('button').classList.add('active');
-    }
+  // 預設載入第一課
+  if (moduleData.lessons.length > 0) {
+    const firstLesson = moduleData.lessons[0];
+    lessonTitle.textContent = `Lesson ${firstLesson.lessonId} – ${firstLesson.theme || ""}`;
+    lessonTheme.textContent = "";
+    renderLesson(firstLesson.levels);
+    lessonsContainer.querySelector('button')?.classList.add('active');
+  }
 }
