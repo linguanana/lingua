@@ -5,11 +5,12 @@
  * @param {object} moduleData 包含課程和級別的模組資料。
  */
 function renderModule(moduleData) {
+    // 修正：將 ID 更改為 "lessons-buttons-wrapper" 以匹配 HTML
     const lessonsContainer = document.getElementById("lessons-container");
     const lessonTitle = document.getElementById("lesson-title");
-    const lessonButtonsWrapper = document.getElementById("lesson-buttons-wrapper");
+    const lessonsButtonsWrapper = document.getElementById("lessons-buttons-wrapper");
 
-    if (!lessonsContainer || !lessonTitle || !lessonButtonsWrapper) {
+    if (!lessonsContainer || !lessonTitle || !lessonsButtonsWrapper) {
         console.error("Missing container elements. Check your HTML.");
         return;
     }
