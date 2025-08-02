@@ -37,7 +37,7 @@ function renderModule(moduleData) {
       // 把按鈕區塊加回來
       lessonsContainer.appendChild(lessonButtonsWrapper);
       // 產生這一課的內容
-      renderLesson(lesson);
+      renderLesson(lesson.levels);
     };
 
     lessonButtonsWrapper.appendChild(lessonBtn);
@@ -48,6 +48,6 @@ function renderModule(moduleData) {
     const firstLesson = moduleData.lessons[0];
     lessonTitle.textContent = firstLesson.title || "Lesson 1";
     lessonsContainer.appendChild(lessonButtonsWrapper);
-    renderLesson(firstLesson);
+    renderLesson(firstLesson.levels);
   }
 }
