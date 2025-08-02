@@ -26,8 +26,8 @@ function renderModule(moduleData) {
       localStorage.removeItem('lastOpenLevelId'); // 清除 accordion 記憶
 
       // 更新標題與主題
-      lessonTitle.textContent = `Lesson ${lesson.lessonId} – ${lesson.theme || ""}`;
-      lessonTheme.textContent = ""; // 你已經在上面顯示完整了，不重複顯示
+      lessonTitle.textContent = lesson.title || `Lesson ${index + 1}`;
+      lessonTheme.textContent = lesson.theme || '';
 
       // 載入該課程的 levels
       renderLesson(lesson.levels);
