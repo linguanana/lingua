@@ -1,26 +1,32 @@
-// shared/js/render-lesson.js
-
 function renderLesson(levels) {
-  const container = document.getElementById('lessons-container');
-  container.innerHTML = ''; // Clear previous content
+  const container = document.getElementById('lesson-container'); // 🟢 Use correct container
+  if (!container) {
+    console.error('Missing #lesson-container');
+    return;
+  }
+
+  container.innerHTML = ''; // Clear old content
+
+  // Optional guidance text
+  const infoText = document.createElement('p');
+  infoText.classList.add('info-text-size');
+  infoText.textContent = 'Start with Level 1 — come back for Level 2 or/and 3 as you progress.';
+  container.appendChild(infoText);
 
   levels.forEach((level, index) => {
-    // 建立外層容器
     const levelDiv = document.createElement('div');
     levelDiv.classList.add('lesson-level');
     levelDiv.id = `level-${index}`;
 
-    // 建立 level 標題
     const titleDiv = document.createElement('div');
     titleDiv.classList.add('level-title');
     titleDiv.textContent = level.title;
     levelDiv.appendChild(titleDiv);
 
-    // 建立 level 內容
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('level-content');
 
-    // 加入 key phrases
+    // Key Phrases
     if (level.keyPhrases && level.keyPhrases.length > 0) {
       const h3 = document.createElement('h3');
       h3.textContent = 'Key Phrases';
@@ -31,14 +37,14 @@ function renderLesson(levels) {
 
       level.keyPhrases.forEach(phrase => {
         const li = document.createElement('li');
-        li.innerHTML = `<span class="italian-word">${phrase.it}</span> – ${phrase.en}`;
+        li.innerHTML = `<span class="italian-word">${phrase.text}</span> – ${phrase.en} <span lang="zh-TW">(${phrase.zh})</span>`;
         ul.appendChild(li);
       });
 
       contentDiv.appendChild(ul);
     }
 
-    // 加入 dialogues
+    // Dialogue
     if (level.dialogues && level.dialogues.length > 0) {
       const h3 = document.createElement('h3');
       h3.textContent = 'Dialogue';
@@ -49,22 +55,24 @@ function renderLesson(levels) {
 
       level.dialogues.forEach(line => {
         const p = document.createElement('p');
-        p.innerHTML = `<strong>${line.speaker}:</strong> ${line.text}`;
+        p.innerHTML = `<span class="start-with-word">${line.speaker}:</span> <span lang="zh-TW">${line.zh}</span><br><strong>${line.text}</strong>`;
         dialogueBox.appendChild(p);
       });
 
       contentDiv.appendChild(dialogueBox);
     }
 
-    // 加入 tips（可選）
+    // Tips
     if (level.tips && level.tips.length > 0) {
       const tipBox = document.createElement('div');
       tipBox.classList.add('tip-box');
+
       level.tips.forEach(tip => {
         const p = document.createElement('p');
-        p.innerHTML = tip;
+        p.innerHTML = `<span class="italian-word">${tip.text}</span> <span lang="zh-TW">(${tip.zh})</span>`;
         tipBox.appendChild(p);
       });
+
       contentDiv.appendChild(tipBox);
     }
 
@@ -72,12 +80,6 @@ function renderLesson(levels) {
     container.appendChild(levelDiv);
   });
 
-  // ✅ 自動展開第一個 level（如果有的話）
-  const firstLevel = document.querySelector('.lesson-level');
-  if (firstLevel) {
-    firstLevel.classList.add('active');
-    const content = firstLevel.querySelector('.level-content');
-    content.style.maxHeight = content.scrollHeight + 'px';
-    content.style.padding = '3px 12px';
-  }
+  // ❌ Do NOT auto-expand anything here
+  // Leave accordion behavior entirely to toggle-lesson-level.js
 }
