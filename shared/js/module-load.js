@@ -13,7 +13,7 @@ function renderModule(moduleData) {
     }
     // Clear everything
     lessonsContainer.innerHTML = "";
-    lessonTheme.textContent = "";
+    if (lessonTheme) lessonTheme.textContent = "";
     lessonContainer.innerHTML = "";
 
     moduleData.lessons.forEach((lesson, index) => {
@@ -24,8 +24,7 @@ function renderModule(moduleData) {
             localStorage.removeItem('lastOpenLevelId'); // Reset accordion memory
 
             // Title + Theme
-            lessonTitle.textContent = `主題: ${lesson.title || `Lesson ${index + 1}`}`;
-            lessonTheme.textContent = `Theme: ${lesson.theme || ""}`;
+            lessonHeading.textContent = `Lesson ${lesson.lessonId} – ${lesson.theme || ''}`;
 
             // Render this lesson’s levels
             renderLesson(lesson.levels);
@@ -40,27 +39,11 @@ function renderModule(moduleData) {
         lessonsContainer.appendChild(lessonBtn);
     });
 
-    // Auto-load first lesson
+    // Auto-load first lesson (if you want to disable auto-load, comment this block out)
     if (moduleData.lessons.length > 0) {
         const firstLesson = moduleData.lessons[0];
-        lessonTitle.textContent = `主題: ${firstLesson.title}`;
-        lessonTheme.textContent = `Theme: ${firstLesson.theme || ""}`;
+        lessonHeading.textContent = `Lesson ${firstLesson.lessonId} – ${firstLesson.theme || ''}`;
         renderLesson(firstLesson.levels);
         lessonsContainer.querySelector('button').classList.add('active');
     }
-}
-
-
-function loadLesson(lessonData) {
-  const titleElem = document.getElementById("lesson-title");
-  const subtitleElem = document.getElementById("lesson-subtitle");
-  const themeElem = document.getElementById("lesson-theme");
-
-  // ✨ 設定標題與主題（根據你想要的樣子）
-  titleElem.textContent = `Lesson ${lessonData.lessonId}`;
-  subtitleElem.textContent = lessonData.title.replace(/^Lesson \d+ – /, '');
-  themeElem.textContent = lessonData.theme || ''; // 預設抓 theme，有就顯示
-
-  // 然後載入對應 level 的內容
-  renderLesson(lessonData.levels);
 }
