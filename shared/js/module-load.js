@@ -4,7 +4,7 @@ function renderModule(moduleData) {
 
   moduleData.lessons.forEach((lesson) => {
     const lessonBtn = document.createElement("button");
-    lessonBtn.textContent = lesson.title;
+    lessonBtn.textContent = lesson.lessonId.toString();
     lessonBtn.onclick = () => {
       const lessonTitleEl = document.getElementById("lesson-title");
       lessonTitleEl.textContent = `🎯 ${lesson.title}`;

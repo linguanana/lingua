@@ -1,13 +1,16 @@
 const moduleData = {
-  moduleTitle: "Module 1 – Greetings",
+  moduleId: "1",
+  lessonId: 1,
+  title: "Module 1 – Greetings",
   lessons: [
     {
       lessonId: 1,
-      title: "Ciao! Missione al mercato",
+      title: "Lesson 1 – Say Hello!",
       levels: [
         {
           levelId: 1,
           levelName: "Level 1 (A0)",
+          mp3: "lesson1_1.mp3",
           keyPhrases: [
             { text: "Ciao!", en: "Hi / Bye", zh: "嗨／掰" },
             { text: "Buongiorno!", en: "Good morning", zh: "早安" }
@@ -17,18 +20,13 @@ const moduleData = {
             { speaker: "2", text: "Ciao, come stai?", en: "Hi, how are you?", zh: "嗨，你好嗎？" }
           ],
           tips: [
-            { text: "Use Ciao with friends", zh: "Ciao 適合熟人" },
-            { text: "Buongiorno is polite before 5pm", zh: "早上用 Buongiorno 比較有禮貌" }
-          ],
-          mp3: "lesson1_1.mp3"
-        },
-        {
-          levelId: 2,
-          levelName: "Level 2 (A0+)",
-          ...
+            { text: "Ciao is for friends", zh: "Ciao 適合朋友" },
+            { text: "Buongiorno is polite", zh: "Buongiorno 比較正式" }
+          ]
         }
+        // 其他 Level...
       ]
-    },
-    ...
+    }
+    // 其他 Lesson...
   ]
 };
