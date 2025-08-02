@@ -5,18 +5,18 @@
  * @param {object} moduleData 包含課程和級別的模組資料。
  */
 function renderModule(moduleData) {
-    // 修正：現在會正確地尋找 ID 為 "lessons-buttons-wrapper" 的元素，以匹配 HTML
     const lessonsContainer = document.getElementById("lessons-container");
     const lessonTitle = document.getElementById("lesson-title");
     const lessonsButtonsWrapper = document.getElementById("lessons-buttons-wrapper");
+    const lessonTheme = document.getElementById("lesson-theme");
 
-    if (!lessonsContainer || !lessonTitle || !lessonsButtonsWrapper) {
+    if (!lessonsContainer || !lessonTitle || !lessonsButtonsWrapper || !lessonTheme) {
         console.error("Missing container elements. Check your HTML.");
         return;
     }
 
-    // 清空舊的按鈕
     lessonsContainer.innerHTML = "";
+    lessonTheme.textContent = "";
 
     // 建立每個課程的按鈕
     moduleData.lessons.forEach((lesson, index) => {
@@ -27,7 +27,10 @@ function renderModule(moduleData) {
             // 更新課程標題
             lessonTitle.textContent = `主題: ${lesson.title || `Lesson ${index + 1}`}`;
 
-            // 渲染新的課程內容
+            // 新增：更新主題文字
+            lessonTheme.textContent = `Theme: ${lesson.theme || ""}`;
+
+            // 渲染新的課程內容並設定手風琴效果
             renderLesson(lesson.levels);
 
             // 更新按鈕的 active 狀態
@@ -44,6 +47,7 @@ function renderModule(moduleData) {
     if (moduleData.lessons.length > 0) {
         const firstLesson = moduleData.lessons[0];
         lessonTitle.textContent = `主題: ${firstLesson.title || "Lesson 1"}`;
+        lessonTheme.textContent = `Theme: ${firstLesson.theme || ""}`;
         renderLesson(firstLesson.levels);
 
         // 設定第一個按鈕為 active
@@ -61,30 +65,26 @@ function renderLesson(levels) {
         console.error("Lesson container not found.");
         return;
     }
-    container.innerHTML = ''; // 清空舊的內容
+    container.innerHTML = '';
 
-    // 增加 level-toggle 前的說明文字
     const infoText = document.createElement('p');
     infoText.classList.add('info-text-size');
-    infoText.textContent = '從 Level 1 開始 — 隨著你的進度再回來學習 Level 2 或/和 3。';
+    infoText.textContent = 'Start with Level 1 — come back for Level 2 or/and 3 as you progress.';
     container.appendChild(infoText);
 
     levels.forEach((level, index) => {
-        // 建立 level 外層容器
         const levelDiv = document.createElement('div');
         levelDiv.classList.add('lesson-level');
+        levelDiv.id = `level-${index}`; // 為每個 level 區塊設定唯一的 ID
 
-        // 建立 level 標題
         const titleDiv = document.createElement('div');
         titleDiv.classList.add('level-title');
         titleDiv.textContent = level.title;
         levelDiv.appendChild(titleDiv);
 
-        // 建立 level 內容
         const contentDiv = document.createElement('div');
         contentDiv.classList.add('level-content');
 
-        // 加入 key phrases
         if (level.keyPhrases && level.keyPhrases.length > 0) {
             const h3 = document.createElement('h3');
             h3.textContent = 'Key Phrases';
@@ -92,7 +92,6 @@ function renderLesson(levels) {
 
             const ul = document.createElement('ul');
             ul.classList.add('auto-list');
-
             level.keyPhrases.forEach(phrase => {
                 const li = document.createElement('li');
                 li.innerHTML = `<span class="italian-word">${phrase.text}</span> – ${phrase.en} <span lang="zh-TW">(${phrase.zh})</span>`;
@@ -101,7 +100,6 @@ function renderLesson(levels) {
             contentDiv.appendChild(ul);
         }
 
-        // 加入 dialogues
         if (level.dialogues && level.dialogues.length > 0) {
             const h3 = document.createElement('h3');
             h3.textContent = 'Dialogue';
@@ -109,7 +107,6 @@ function renderLesson(levels) {
 
             const dialogueBox = document.createElement('div');
             dialogueBox.classList.add('dialogue-box');
-
             level.dialogues.forEach(line => {
                 const p = document.createElement('p');
                 p.innerHTML = `<span class="start-with-word">${line.speaker}:</span> <span lang="zh-TW">${line.zh}</span><br><strong>${line.text}</strong>`;
@@ -118,7 +115,6 @@ function renderLesson(levels) {
             contentDiv.appendChild(dialogueBox);
         }
 
-        // 加入 tips
         if (level.tips && level.tips.length > 0) {
             const tipBox = document.createElement('div');
             tipBox.classList.add('tip-box');
@@ -132,16 +128,68 @@ function renderLesson(levels) {
 
         levelDiv.appendChild(contentDiv);
         container.appendChild(levelDiv);
-
-        // 為每個標題添加收合功能
-        titleDiv.addEventListener('click', () => {
-            levelDiv.classList.toggle('active');
-        });
     });
 
-    // 預設展開第一個 level
-    const firstLevel = document.querySelector('.lesson-level');
-    if (firstLevel) {
-        firstLevel.classList.add('active');
+    // 在渲染所有課程內容後，設定手風琴效果
+    setupAccordion();
+}
+
+/**
+ * 設置 Level 區塊的手風琴 (Accordion) 功能。
+ * - 每次只展開一個區塊。
+ * - 使用 localStorage 記住使用者上次打開的區塊。
+ */
+function setupAccordion() {
+    const levelTitles = document.querySelectorAll('.level-title');
+    const lessonLevels = document.querySelectorAll('.lesson-level');
+
+    // Helper function to set max-height for smooth transitions
+    function setContentMaxHeight(contentElement, isActive) {
+        if (isActive) {
+            contentElement.style.maxHeight = contentElement.scrollHeight + 'px';
+        } else {
+            contentElement.style.maxHeight = null;
+        }
     }
+
+    // On Page Load: Try to restore the last open level
+    const lastOpenLevelId = localStorage.getItem('lastOpenLevelId');
+    if (lastOpenLevelId) {
+        const targetLevel = document.getElementById(lastOpenLevelId);
+        if (targetLevel) {
+            targetLevel.classList.add('active');
+            const content = targetLevel.querySelector('.level-content');
+            setContentMaxHeight(content, true);
+        }
+    }
+
+    // Click Event Listener for Level Titles
+    levelTitles.forEach(function(title) {
+        title.addEventListener('click', function() {
+            const currentLevel = this.closest('.lesson-level');
+            const content = currentLevel.querySelector('.level-content');
+            const currentLevelId = currentLevel.id;
+
+            if (currentLevel.classList.contains('active')) {
+                // Close it
+                currentLevel.classList.remove('active');
+                setContentMaxHeight(content, false);
+                localStorage.removeItem('lastOpenLevelId');
+            } else {
+                // If the clicked level is not active (closed), open it
+                // First, close any other open levels (accordion behavior)
+                lessonLevels.forEach(function(level) {
+                    if (level !== currentLevel && level.classList.contains('active')) {
+                        level.classList.remove('active');
+                        setContentMaxHeight(level.querySelector('.level-content'), false);
+                    }
+                });
+
+                // Then, open the clicked level
+                currentLevel.classList.add('active');
+                setContentMaxHeight(content, true);
+                localStorage.setItem('lastOpenLevelId', currentLevelId);
+            }
+        });
+    });
 }
