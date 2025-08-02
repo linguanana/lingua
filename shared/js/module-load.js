@@ -5,7 +5,7 @@
  * @param {object} moduleData 包含課程和級別的模組資料。
  */
 function renderModule(moduleData) {
-    // 修正：將 ID 更改為 "lessons-buttons-wrapper" 以匹配 HTML
+    // 修正：現在會正確地尋找 ID 為 "lessons-buttons-wrapper" 的元素，以匹配 HTML
     const lessonsContainer = document.getElementById("lessons-container");
     const lessonTitle = document.getElementById("lesson-title");
     const lessonsButtonsWrapper = document.getElementById("lessons-buttons-wrapper");
