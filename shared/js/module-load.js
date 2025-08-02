@@ -13,4 +13,11 @@ function renderModule(moduleData) {
     };
     container.appendChild(lessonBtn);
   });
+  
+  if (moduleData.lessons.length > 0) {
+  const firstLesson = moduleData.lessons[0];
+  document.getElementById("lesson-title").textContent = `🎯 ${firstLesson.title}`;
+  document.getElementById("lesson-container").innerHTML = '';
+  renderLesson(firstLesson.levels);
+  }
 }
