@@ -1,83 +1,83 @@
+// shared/js/render-lesson.js
+
 function renderLesson(levels) {
-  const container = document.getElementById("lesson-container");
+  const container = document.getElementById('lessons-container');
+  container.innerHTML = ''; // Clear previous content
 
-  levels.forEach((level) => {
-    const levelDiv = document.createElement("div");
-    levelDiv.className = "lesson-level";
-    levelDiv.id = `level-${level.levelId}`;
+  levels.forEach((level, index) => {
+    // 建立外層容器
+    const levelDiv = document.createElement('div');
+    levelDiv.classList.add('lesson-level');
+    levelDiv.id = `level-${index}`;
 
-    const title = document.createElement("h3");
-    title.className = "level-title";
-    title.textContent = level.levelName;
-    levelDiv.appendChild(title);
+    // 建立 level 標題
+    const titleDiv = document.createElement('div');
+    titleDiv.classList.add('level-title');
+    titleDiv.textContent = level.title;
+    levelDiv.appendChild(titleDiv);
 
-    const content = document.createElement("div");
-    content.className = "level-content";
+    // 建立 level 內容
+    const contentDiv = document.createElement('div');
+    contentDiv.classList.add('level-content');
 
-    // --- Audio ---
-    if (level.mp3) {
-      const audio = document.createElement("audio");
-      audio.controls = true;
-      const source = document.createElement("source");
-      source.src = `./audio/${level.mp3}`;
-      source.type = "audio/mpeg";
-      audio.appendChild(source);
-      content.appendChild(audio);
-    }
+    // 加入 key phrases
+    if (level.keyPhrases && level.keyPhrases.length > 0) {
+      const h3 = document.createElement('h3');
+      h3.textContent = 'Key Phrases';
+      contentDiv.appendChild(h3);
 
-    // --- Key Phrase ---
-    if (level.keyPhrases?.length) {
-      const keyTitle = document.createElement("h4");
-      keyTitle.textContent = "📗 Key Phrases";
-      content.appendChild(keyTitle);
+      const ul = document.createElement('ul');
+      ul.classList.add('auto-list');
 
-      const list = document.createElement("div");
-      list.className = "auto-list";
-      level.keyPhrases.forEach(kp => {
-        list.innerHTML += `<span class="italian-word">${kp.text}</span> – ${kp.en}（${kp.zh}）<br>`;
+      level.keyPhrases.forEach(phrase => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="italian-word">${phrase.it}</span> – ${phrase.en}`;
+        ul.appendChild(li);
       });
-      content.appendChild(list);
+
+      contentDiv.appendChild(ul);
     }
 
-    // --- Dialogue ---
-    if (level.dialogue?.length) {
-      const dialogTitle = document.createElement("h4");
-      dialogTitle.textContent = "🗣 Dialogue";
-      content.appendChild(dialogTitle);
+    // 加入 dialogues
+    if (level.dialogues && level.dialogues.length > 0) {
+      const h3 = document.createElement('h3');
+      h3.textContent = 'Dialogue';
+      contentDiv.appendChild(h3);
 
-      const box = document.createElement("div");
-      box.className = "dialogue-box";
-      level.dialogue.forEach(line => {
-        const emoji = line.speaker === "1" ? "👩🏻‍‍" : "🧑‍🍳";
-        box.innerHTML += `
-          <p><strong>${emoji} <span class="italian-word">${line.text}</span></strong><br>
-          <span class="translation">→ ${line.en}（${line.zh}）</span></p>`;
+      const dialogueBox = document.createElement('div');
+      dialogueBox.classList.add('dialogue-box');
+
+      level.dialogues.forEach(line => {
+        const p = document.createElement('p');
+        p.innerHTML = `<strong>${line.speaker}:</strong> ${line.text}`;
+        dialogueBox.appendChild(p);
       });
-      content.appendChild(box);
+
+      contentDiv.appendChild(dialogueBox);
     }
 
-    // --- Tips ---
-    if (level.tips?.length) {
-      const tipTitle = document.createElement("h4");
-      tipTitle.textContent = "📌 Tips";
-      content.appendChild(tipTitle);
-
-      const list = document.createElement("div");
-      list.className = "auto-list";
+    // 加入 tips（可選）
+    if (level.tips && level.tips.length > 0) {
+      const tipBox = document.createElement('div');
+      tipBox.classList.add('tip-box');
       level.tips.forEach(tip => {
-        list.innerHTML += `${tip.text}（${tip.zh}）<br>`;
+        const p = document.createElement('p');
+        p.innerHTML = tip;
+        tipBox.appendChild(p);
       });
-      content.appendChild(list);
+      contentDiv.appendChild(tipBox);
     }
 
-    levelDiv.appendChild(content);
+    levelDiv.appendChild(contentDiv);
     container.appendChild(levelDiv);
   });
 
-  // ⬅️ 讓 toggle-lesson-level.js 可以自動啟用展開功能
-  setTimeout(() => {
-    document.querySelectorAll('.level-title').forEach(btn => {
-      btn.click(); // 預設展開第一個
-    });
-  }, 100);
+  // ✅ 自動展開第一個 level（如果有的話）
+  const firstLevel = document.querySelector('.lesson-level');
+  if (firstLevel) {
+    firstLevel.classList.add('active');
+    const content = firstLevel.querySelector('.level-content');
+    content.style.maxHeight = content.scrollHeight + 'px';
+    content.style.padding = '3px 12px';
+  }
 }
