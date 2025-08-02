@@ -1,11 +1,19 @@
-// lessons/lesson1.js (已調整結構以匹配您的 lesson-load.js)
-const lessonData = {
+// lessons/lesson1.js
+// Lesson 1: Say Hello 的課程資料，包含多個等級
+export const lessonData = {
     lessonId: 1,
     title_en: "Hello! Market mission",
     title_zh: "打招呼！市場任務",
-    module: "Module 1",
-    lesson: "Lesson 1: Ciao! Missione al mercato",
+    module_emoji: '🇮🇹',
+    module_id: 1,
+    lesson_id: 1,
+    lesson_display_title: "Come stai? Missione al mercato",
     theme: "Greetings in everyday Italian",
+    lesson_navigation: [
+        { id: 1, label: "Lesson 1" },
+        { id: 2, label: "Lesson 2" }
+    ],
+    level_guidance: 'Start with Level 1',
     levels: [
         {
             levelId: 1,
@@ -35,12 +43,12 @@ const lessonData = {
                         {
                             title: "🩷 Informal & Formal Greetings (非正式與正式問候)",
                             lines: [
-                                { emoji: "🫂", text: "Ciao!", en: "Hello / Hi (informal)", zh: "你好" },
-                                { emoji: "☀️", text: "Buongiorno!", en: "Good morning / Good day", zh: "早安 / 你好" },
-                                { emoji: "🌆", text: "Buonasera!", en: "Good afternoon / Good evening", zh: "午安 / 晚上好" },
-                                { emoji: "🌙", text: "Buonanotte!", en: "Good night", zh: "晚安" },
-                                { emoji: "👋", text: "Arrivederci!", en: "Goodbye (formal & informal)", zh: "再見" },
-                                { emoji: "😊", text: "Ciao!", en: "Bye (informal)", zh: "再見，非正式" }
+                                { speaker: "🫂", text: "Ciao!", en: "Hello / Hi (informal)", zh: "你好" },
+                                { speaker: "☀️", text: "Buongiorno!", en: "Good morning / Good day", zh: "早安 / 你好" },
+                                { speaker: "🌆", text: "Buonasera!", en: "Good afternoon / Good evening", zh: "午安 / 晚上好" },
+                                { speaker: "🌙", text: "Buonanotte!", en: "Good night", zh: "晚安" },
+                                { speaker: "👋", text: "Arrivederci!", en: "Goodbye (formal & informal)", zh: "再見" },
+                                { speaker: "😊", text: "Ciao!", en: "Bye (informal)", zh: "再見，非正式" }
                             ]
                         }
                     ]
@@ -109,7 +117,7 @@ const lessonData = {
                         { type: "paragraph", emoji: "✨", text: "Come ti chiami", en: "is informal, while", text_2: "Come si chiama", en_2: "is formal.", zh: "是非正式的，而 是正式的。" },
                         { type: "paragraph", emoji: "🗣️", text: "Piacere!", en: "is a quick way to say 'Nice to meet you!'.", zh: "是「很高興認識你！」的快速說法。" },
                         { type: "paragraph", emoji: "🤝", text: "Piacere di conoscerti", en: "(informal) and", text_2: "Piacere di conoscerla", en_2: "(formal) are more complete phrases.", zh: "（非正式）和（正式）是更完整的說法。" },
-                        { type: "paragraph", emoji: "💬", text: "Come va?", en: "is a more casual 'How are you?' than", text_2: "Come stai?", zh: "是比 更口語化的「你好嗎？」" },
+                        { type: "paragraph", emoji: "💬", text: "Come va?", en: "is a more casual 'How are you?' than", text_2: "Come stai?", zh: "是比 更口語化的「你好嗎？" },
                         { type: "paragraph", emoji: "👍", text: "Molto bene", en: "(Very good),", text_2: "Non c'è male", en_2: "(Not bad), and", text_3: "Così così", en_3: "(So-so) are common responses.", zh: "（非常好）、（還不錯）和（馬馬虎虎）是常見的回答。" }
                     ]
                 }
