@@ -6,15 +6,30 @@
  */
 function renderModule(moduleData) {
     const lessonsContainer = document.getElementById("lessons-container");
-    const lessonTitle = document.getElementById("lesson-title");
-    const lessonsButtonsWrapper = document.getElementById("lessons-buttons-wrapper");
-    const lessonTheme = document.getElementById("lesson-theme");
-
-    if (!lessonsContainer || !lessonTitle || !lessonsButtonsWrapper || !lessonTheme) {
-        console.error("Missing container elements. Check your HTML.");
+    if (!lessonsContainer) {
+        console.error("Missing lessons-container element. Check your HTML.");
         return;
     }
 
+    const lessonTitle = document.getElementById("lesson-title");
+    if (!lessonTitle) {
+        console.error("Missing lesson-title element. Check your HTML.");
+        return;
+    }
+
+    const lessonTheme = document.getElementById("lesson-theme");
+    if (!lessonTheme) {
+        console.error("Missing lesson-theme element. Check your HTML.");
+        return;
+    }
+
+    const lessonContainer = document.getElementById('lesson-container');
+    if (!lessonContainer) {
+        console.error("Missing lesson-container element. Check your HTML.");
+        return;
+    }
+
+    // 清空現有內容
     lessonsContainer.innerHTML = "";
     lessonTheme.textContent = "";
 
@@ -24,10 +39,13 @@ function renderModule(moduleData) {
         lessonBtn.textContent = (index + 1).toString();
 
         lessonBtn.onclick = function () {
+            // 清除上次打開的 Level 狀態
+            localStorage.removeItem('lastOpenLevelId');
+
             // 更新課程標題
             lessonTitle.textContent = `主題: ${lesson.title || `Lesson ${index + 1}`}`;
 
-            // 新增：更新主題文字
+            // 更新主題文字
             lessonTheme.textContent = `Theme: ${lesson.theme || ""}`;
 
             // 渲染新的課程內容並設定手風琴效果
@@ -67,6 +85,7 @@ function renderLesson(levels) {
     }
     container.innerHTML = '';
 
+    // 將提示文字改為英文
     const infoText = document.createElement('p');
     infoText.classList.add('info-text-size');
     infoText.textContent = 'Start with Level 1 — come back for Level 2 or/and 3 as you progress.';
@@ -85,6 +104,7 @@ function renderLesson(levels) {
         const contentDiv = document.createElement('div');
         contentDiv.classList.add('level-content');
 
+        // 加入 key phrases
         if (level.keyPhrases && level.keyPhrases.length > 0) {
             const h3 = document.createElement('h3');
             h3.textContent = 'Key Phrases';
@@ -100,6 +120,7 @@ function renderLesson(levels) {
             contentDiv.appendChild(ul);
         }
 
+        // 加入 dialogues
         if (level.dialogues && level.dialogues.length > 0) {
             const h3 = document.createElement('h3');
             h3.textContent = 'Dialogue';
@@ -115,6 +136,7 @@ function renderLesson(levels) {
             contentDiv.appendChild(dialogueBox);
         }
 
+        // 加入 tips
         if (level.tips && level.tips.length > 0) {
             const tipBox = document.createElement('div');
             tipBox.classList.add('tip-box');
