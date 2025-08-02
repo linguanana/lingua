@@ -5,11 +5,12 @@ function renderModule(moduleData) {
     const lessonTheme = document.getElementById("lesson-theme");
     const lessonContainer = document.getElementById("lesson-container");
 
-    if (!lessonsContainer || !lessonTitle || !lessonTheme || !lessonContainer) {
-        console.error("Missing expected DOM elements.");
-        return;
-    }
+    const lessonHeading = document.getElementById("lesson-heading"); // 新 id
 
+    if (!lessonsContainer || !lessonHeading || !lessonContainer) {
+      console.error("Missing expected DOM elements.");
+      return;
+    }
     // Clear everything
     lessonsContainer.innerHTML = "";
     lessonTheme.textContent = "";
