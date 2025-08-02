@@ -3,11 +3,8 @@ function renderModule(moduleData) {
     const lessonsContainer = document.getElementById("lessons-container");
     const lessonTitle = document.getElementById("lesson-title");
     const lessonTheme = document.getElementById("lesson-theme");
-    const lessonContainer = document.getElementById("lesson-container");
 
-    const lessonHeading = document.getElementById("lesson-heading"); // 新 id
-
-    if (!lessonsContainer || !lessonHeading || !lessonContainer) {
+    if (!lessonsContainer || !lessonTitle || !lessonTheme) {
       console.error("Missing expected DOM elements.");
       return;
     }
@@ -21,20 +18,22 @@ function renderModule(moduleData) {
         lessonBtn.textContent = (index + 1).toString();
 
         lessonBtn.onclick = function () {
-            localStorage.removeItem('lastOpenLevelId'); // Reset accordion memory
+          localStorage.removeItem("lastOpenLevelId");
 
-            // Title + Theme
-            lessonHeading.textContent = `Lesson ${lesson.lessonId} – ${lesson.theme || ''}`;
+          // Update the heading elements
+          lessonTitle.textContent = lesson.title || `Lesson ${index + 1}`;
+          lessonTheme.textContent = lesson.theme || "";
 
-            // Render this lesson’s levels
-            renderLesson(lesson.levels);
+          // Render the lesson
+          renderLesson(lesson.levels);
 
-            // Highlight active button
-            document.querySelectorAll('#lessons-container button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            this.classList.add('active');
+          // Highlight active button
+          document.querySelectorAll("#lessons-container button").forEach((btn) =>
+            btn.classList.remove("active")
+          );
+          this.classList.add("active");
         };
+
 
         lessonsContainer.appendChild(lessonBtn);
     });
