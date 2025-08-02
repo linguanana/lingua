@@ -1,14 +1,12 @@
 // mod/mod1.js
-
-// 包含所有模組資料的常數
 const moduleData = {
     moduleId: "1",
-    lessonId: 1,
     title: "Module 1 – Greetings",
     lessons: [
         {
             lessonId: 1,
-            title: "Lesson 1 – Say Hello!",
+            title: "Lesson 1 – Ciao! Missione al mercato",
+            theme: "Greetings in everyday Italian",
             levels: [
                 {
                     levelId: 1,
@@ -40,8 +38,8 @@ const moduleData = {
                         { speaker: "B", text: "Mi chiamo Marco.", en: "My name is Marco.", zh: "我叫馬可。" }
                     ],
                     tips: [
-                        { text: "Come ti chiami is informal", zh: "Come ti chiami 是非正式的" },
-                        { text: "Mi chiamo is how you state your name", zh: "Mi chiamo 是用來介紹自己的" }
+                        { text: "Come ti chiami is informal", zh: "非正式的" },
+                        { text: "Mi chiamo is how you state your name", zh: "是用來介紹自己的" }
                     ]
                 }
             ]

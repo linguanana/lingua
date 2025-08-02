@@ -48,3 +48,18 @@ function renderModule(moduleData) {
         lessonsContainer.querySelector('button').classList.add('active');
     }
 }
+
+
+function loadLesson(lessonData) {
+  const titleElem = document.getElementById("lesson-title");
+  const subtitleElem = document.getElementById("lesson-subtitle");
+  const themeElem = document.getElementById("lesson-theme");
+
+  // ✨ 設定標題與主題（根據你想要的樣子）
+  titleElem.textContent = `Lesson ${lessonData.lessonId}`;
+  subtitleElem.textContent = lessonData.title.replace(/^Lesson \d+ – /, '');
+  themeElem.textContent = lessonData.theme || ''; // 預設抓 theme，有就顯示
+
+  // 然後載入對應 level 的內容
+  renderLesson(lessonData.levels);
+}

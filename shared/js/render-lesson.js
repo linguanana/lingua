@@ -88,7 +88,7 @@ function renderLesson(levels) {
     container.appendChild(levelDiv);
   });
 
-  // ✅ Auto-expand first level
+  // ✅ 自動展開第一個 level（如果有的話）
   const firstLevel = document.querySelector('.lesson-level');
   if (firstLevel) {
     firstLevel.classList.add('active');
