@@ -4,9 +4,8 @@ function renderModule(moduleData) {
   const lessonsContainer = document.getElementById("lessons-container");
   const lessonTitle = document.getElementById("lesson-title");
   const lessonTheme = document.getElementById("lesson-theme");
-  const lessonContainer = document.getElementById("lesson-container");
+  const lessonContainer = document.getElementById("lesson-container");  // ← 這一行不能少！
 
-  // 確保所有必要的 DOM 元素都存在
   if (!lessonsContainer || !lessonTitle || !lessonTheme || !lessonContainer) {
     console.error("Missing expected DOM elements.");
     return;
