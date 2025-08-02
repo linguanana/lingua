@@ -266,7 +266,7 @@ th, td {
   white-space: nowrap; /* Ensures "Topics:" text itself doesn't wrap */
 }
 
-#topic-nav button {
+#topic-nav button, #lesson-buttons button {
   padding: 6px 12px; /* button 大小 */
   border: 1px solid #ccc;
   background-color: #f0f0f0;
@@ -274,11 +274,12 @@ th, td {
   cursor: pointer;
 }
 
-#topic-nav button.active {
+#topic-nav button.active, #lesson-buttons button.active {
   background-color: #6a9acb; /* Blue for active button */
   color: white; /* White text for active button */
   border-color: #007bff;
 }
+
 
 /* return to back
 /* 1. Basic spacing for the navigation wrapper */
