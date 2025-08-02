@@ -19,7 +19,8 @@
   </div>
 
   <!-- 單一課程標題和主題合併成一句 -->
-  <h2 id="lesson-heading" class="spacer-md"></h2>
+  <h2 id="lesson-title" class="spacer-md"></h2>
+  <h3 id="lesson-theme" class="info-text-size"></h3>
   <p class="info-text-size">
     <span class="start-with-word">Start with Level 1</span> — come back for Level 2 or/and 3 as you progress.
   </p>
@@ -30,22 +31,27 @@
   </div>
 
   <!-- Scripts -->
-  <script src="../../shared/js/render-lesson.js"></script>
-  <script src="../../shared/js/module-load.js"></script>
-  <script>
-    const moduleId = new URLSearchParams(window.location.search).get("id") || "1";
-    const script = document.createElement("script");
-    script.src = `mod/mod${moduleId}.js`;
-    script.onload = () => {
+<script src="../../shared/js/render-lesson.js"></script>
+<script>
+  const moduleId = new URLSearchParams(window.location.search).get("id") || "1";
+  const script = document.createElement("script");
+  script.src = `mod/mod${moduleId}.js`;
+  script.onload = () => {
+    // ✅ Wait until moduleData is loaded
+    const moduleLoadScript = document.createElement("script");
+    moduleLoadScript.src = "../../shared/js/module-load.js";
+    moduleLoadScript.onload = () => {
       renderModule(moduleData);
 
-      // ✅ Load accordion script only after rendering
+      // ✅ Accordion after DOM is rendered
       const toggleScript = document.createElement("script");
       toggleScript.src = "../../shared/js/toggle-lesson-level-manual.js";
       document.body.appendChild(toggleScript);
     };
-    document.body.appendChild(script);
-  </script>
+    document.body.appendChild(moduleLoadScript);
+  };
+  document.body.appendChild(script);
+</script>
 
 </body>
 </html>
