@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🇮🇹 Module 1 – Greetings</title>
+  <link rel="stylesheet" href="../../shared/css/fonts.css">
+  <link rel="stylesheet" href="../../shared/css/lesson-style.css">
+</head>
+<body>
+
+  <h1>🇮🇹 Module 1 – Greetings</h1>
+
+  <!-- 課程按鈕容器 -->
+    <div id="lessons-buttons-wrapper">
+        <p>Lessons:</p>
+        <div id="lessons-container">
+            <!-- 課程按鈕將注入此處 -->
+        </div>
+    </div>
+    <!-- 目前課程標題 -->
+    <h2 id="lesson-title"></h2>
+
+    <!-- 課程內容容器 -->
+    <div id="lesson-container">
+        <!-- Level 1 / 2 / 3 內容將注入此處 -->
+    </div>
+
+  <!-- JS -->
+  <script src="../../shared/js/module-load.js"></script>
+  <script>
+    const moduleId = new URLSearchParams(window.location.search).get("id") || "1";
+    const script = document.createElement("script");
+    script.src = `mod/mod${moduleId}.js`;
+    script.onload = () => renderModule(moduleData);
+    document.body.appendChild(script);
+  </script>
+
+</body>
+</html>

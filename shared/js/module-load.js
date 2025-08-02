@@ -24,7 +24,7 @@ function renderModule(moduleData) {
 
         lessonBtn.onclick = function () {
             // 更新課程標題
-            lessonTitle.textContent = lesson.title || `Lesson ${index + 1}`;
+            lessonTitle.textContent = `主題: ${lesson.title || `Lesson ${index + 1}`}`;
 
             // 渲染新的課程內容
             renderLesson(lesson.levels);
@@ -42,7 +42,7 @@ function renderModule(moduleData) {
     // 預設顯示第一個課程
     if (moduleData.lessons.length > 0) {
         const firstLesson = moduleData.lessons[0];
-        lessonTitle.textContent = firstLesson.title || "Lesson 1";
+        lessonTitle.textContent = `主題: ${firstLesson.title || "Lesson 1"}`;
         renderLesson(firstLesson.levels);
 
         // 設定第一個按鈕為 active
@@ -61,6 +61,12 @@ function renderLesson(levels) {
         return;
     }
     container.innerHTML = ''; // 清空舊的內容
+
+    // 增加 level-toggle 前的說明文字
+    const infoText = document.createElement('p');
+    infoText.classList.add('info-text-size');
+    infoText.textContent = '從 Level 1 開始 — 隨著你的進度再回來學習 Level 2 或/和 3。';
+    container.appendChild(infoText);
 
     levels.forEach((level, index) => {
         // 建立 level 外層容器
