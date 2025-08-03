@@ -1,154 +1,172 @@
-// 🔧 Bold parser: Converts **bold** to <strong>bold</strong>
-function parseIT(text) {
-  if (!text) return "";
-  return text.replace(/\*\*(.+?)\*\*/g, '<span class="italian-word">$1</span>');
+// 🔧 Italic parser (currently for **...**) → colored word
+function parseWord(text) {
+ if (!text) return "";
+ return text.replace(/\*\*(.+?)\*\*/g, '<span class="italian-word">$1</span>');
 }
 
 function renderModule(moduleData) {
-  const lessonTitle = document.getElementById("lesson-title");
-  const lessonTheme = document.getElementById("lesson-theme");
-  const lessonContainer = document.getElementById("lesson-container");
+ const lessonTitle = document.getElementById("lesson-title");
+ const lessonTheme = document.getElementById("lesson-theme");
+ const lessonContainer = document.getElementById("lesson-container");
 
-  if (!lessonTitle || !lessonTheme || !lessonContainer) {
-    console.error("Missing expected DOM elements.");
-    return;
-  }
+ if (!lessonTitle || !lessonTheme || !lessonContainer) {
+   console.error("Missing expected DOM elements.");
+   return;
+ }
 
-  lessonTitle.textContent = "";
-  lessonTheme.textContent = "";
-  lessonContainer.innerHTML = "";
+ lessonTitle.textContent = "";
+ lessonTheme.textContent = "";
+ lessonContainer.innerHTML = "";
 
-  const nav = document.createElement("div");
-  nav.id = "lesson-buttons";
+ const nav = document.createElement("div");
+ nav.id = "lesson-buttons";
 
-  const label = document.createElement("p");
-  label.textContent = "📚 Lessons:";
-  nav.appendChild(label);
+ const label = document.createElement("p");
+ label.textContent = "📚 Lessons:";
+ nav.appendChild(label);
 
-  moduleData.lessons.forEach((lesson, index) => {
-    const btn = document.createElement("button");
-    btn.textContent = `${index + 1}`;
-    btn.onclick = () => {
-      localStorage.removeItem("lastOpenLevelId");
+ moduleData.lessons.forEach((lesson, index) => {
+   const btn = document.createElement("button");
+   btn.textContent = `${index + 1}`;
+   btn.onclick = () => {
+     localStorage.removeItem("lastOpenLevelId");
 
-      lessonTitle.innerHTML = `🎬 Lesson ${lesson.lessonId}:<span class="auto-list">${lesson.theme || ""}</span>`;
-      lessonTheme.textContent = "";
-      renderLesson(lesson.levels, moduleData.speakers);
+     window.currentModuleId = moduleData.moduleId || 1;
+     window.currentLessonId = lesson.lessonId;
 
-      nav.querySelectorAll("button").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-    };
+     lessonTitle.innerHTML = `🎬 Lesson ${lesson.lessonId}:<span class="auto-list">${lesson.theme || ""}</span>`;
+     lessonTheme.textContent = "";
+     renderLesson(lesson.levels, moduleData.speakers);
 
-    nav.appendChild(btn);
-  });
+     nav.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+     btn.classList.add("active");
+   };
 
-  lessonTitle.after(nav);
+   nav.appendChild(btn);
+ });
 
-  if (moduleData.lessons.length > 0) {
-    const firstLesson = moduleData.lessons[0];
-    lessonTitle.innerHTML = `🎬 Lesson ${firstLesson.lessonId}:<span class="auto-list">${firstLesson.theme || ""}</span>`;
-    lessonTheme.textContent = "";
-    renderLesson(firstLesson.levels, moduleData.speakers);
-    nav.querySelector("button")?.classList.add("active");
-  }
+ lessonTitle.after(nav);
+
+ if (moduleData.lessons.length > 0) {
+   const firstLesson = moduleData.lessons[0];
+   window.currentModuleId = moduleData.moduleId || 1;
+   window.currentLessonId = firstLesson.lessonId;
+
+   lessonTitle.innerHTML = `🎬 Lesson ${firstLesson.lessonId}:<span class="auto-list">${firstLesson.theme || ""}</span>`;
+   lessonTheme.textContent = "";
+   renderLesson(firstLesson.levels, moduleData.speakers);
+   nav.querySelector("button")?.classList.add("active");
+ }
 }
 
 function renderLesson(levels, moduleSpeakers = {}) {
-  const container = document.getElementById("lesson-container");
-  if (!container) return;
+ const container = document.getElementById("lesson-container");
+ if (!container) return;
 
-  container.innerHTML = "";
+ container.innerHTML = "";
 
-  const infoText = document.createElement("p");
-  infoText.className = "info-text-size";
-  infoText.innerHTML = `<span class="start-with-word">Start with Level 1</span> — come back for Level 2 or/and 3 as you progress.`;
-  container.appendChild(infoText);
+ const infoText = document.createElement("p");
+ infoText.className = "info-text-size";
+ infoText.innerHTML = `<span class="start-with-word">Start with Level 1</span> — come back for Level 2 or/and 3 as you progress.`;
+ container.appendChild(infoText);
 
-  levels.forEach((level, index) => {
-    const levelDiv = document.createElement("div");
-    levelDiv.className = "lesson-level";
-    levelDiv.id = `level-${index + 1}`;
+ const modId = window.currentModuleId;
+ const lesId = window.currentLessonId;
 
-    const titleEl = document.createElement("h2");
-    titleEl.className = "level-title";
-    titleEl.innerHTML = `✅ ${level.title}`;
-    levelDiv.appendChild(titleEl);
+ levels.forEach((level, index) => {
+   const levelDiv = document.createElement("div");
+   levelDiv.className = "lesson-level";
+   levelDiv.id = `level-${index + 1}`;
 
-    const contentEl = document.createElement("div");
-    contentEl.className = "level-content";
+   const titleEl = document.createElement("h2");
+   titleEl.className = "level-title";
+   titleEl.innerHTML = `✅ ${level.title}`;
+   levelDiv.appendChild(titleEl);
 
-    if (level.keyPhrases?.length) {
-      const h3 = document.createElement("h3");
-      h3.innerHTML = "📗 Key Phrase";
-      contentEl.appendChild(h3);
+   const contentEl = document.createElement("div");
+   contentEl.className = "level-content";
 
-      const ul = document.createElement("ul");
-      ul.className = "auto-list";
+   // 📗 Key Phrase + Audio
+   if (level.keyPhrases?.length) {
+     const h3 = document.createElement("h3");
+     h3.innerHTML = "📗 Key Phrase";
+     contentEl.appendChild(h3);
 
-      level.keyPhrases.forEach(p => {
-        const zh = p.zh ? `（${p.zh}）` : "";
-        const li = document.createElement("li");
-        li.innerHTML = `<span class="italian-word">${p.text || p.it}</span> – ${p.en || ""}${zh}`;
-        ul.appendChild(li);
-      });
+     const audio = document.createElement("audio");
+     audio.setAttribute("controls", "");
+     audio.className = "small-audio";
+     const source = document.createElement("source");
+     source.src = `./audio/mod${modId}-lesson${lesId}-keyphrase.mp3`;
+     source.type = "audio/mpeg";
+     audio.appendChild(source);
+     contentEl.appendChild(audio);
 
-      contentEl.appendChild(ul);
-    }
+     const ul = document.createElement("ul");
+     ul.className = "auto-list";
 
-    if (level.dialogues?.length) {
-      const h3 = document.createElement("h3");
-      h3.innerHTML = "🎯 Dialogue / When to use";
-      contentEl.appendChild(h3);
+     level.keyPhrases.forEach(p => {
+       const zh = p.zh ? `（${p.zh}）` : "";
+       const li = document.createElement("li");
+       li.innerHTML = `<span class="italian-word">${p.text || p.it}</span> – ${p.en || ""}${zh}`;
+       ul.appendChild(li);
+     });
 
-      if (level.mp3) {
-        const audio = document.createElement("audio");
-        audio.setAttribute("controls", "");
-        audio.className = "small-audio";
-        const source = document.createElement("source");
-        source.src = `./audio/${level.mp3}`;
-        source.type = "audio/mpeg";
-        audio.appendChild(source);
-        contentEl.appendChild(audio);
-      }
+     contentEl.appendChild(ul);
+   }
 
-      const dialogueBox = document.createElement("div");
-      dialogueBox.className = "dialogue-box";
+   // 🎯 Dialogue + Audio
+   if (level.dialogues?.length) {
+     const h3 = document.createElement("h3");
+     h3.innerHTML = "🎯 Dialogue / When to use";
+     contentEl.appendChild(h3);
 
-      level.dialogues.forEach(line => {
-        const p = document.createElement("p");
-        const emoji = moduleSpeakers[line.speaker] || "🗣";
-        const zhLine = line.zh ? `（${line.zh}）` : "";
-        const enLine = line.en ? `→ ${line.en} ${zhLine}` : zhLine;
-        p.innerHTML = `${emoji} : <span class="italian-word">${line.text}</span><br>${enLine}`;
-        dialogueBox.appendChild(p);
-      });
+     const audio = document.createElement("audio");
+     audio.setAttribute("controls", "");
+     audio.className = "small-audio";
+     const source = document.createElement("source");
+     source.src = `./audio/mod${modId}-lesson${lesId}-dialogue.mp3`;
+     source.type = "audio/mpeg";
+     audio.appendChild(source);
+     contentEl.appendChild(audio);
 
-      contentEl.appendChild(dialogueBox);
-    }
+     const dialogueBox = document.createElement("div");
+     dialogueBox.className = "dialogue-box";
 
-    if (level.tips?.length) {
-      const h3 = document.createElement("h3");
-      h3.innerHTML = "📌 Tip";
-      contentEl.appendChild(h3);
+     level.dialogues.forEach(line => {
+       const p = document.createElement("p");
+       const emoji = moduleSpeakers[line.speaker] || "🗣";
+       const zhLine = line.zh ? `（${line.zh}）` : "";
+       const enLine = line.en ? `→ ${line.en} ${zhLine}` : zhLine;
+       p.innerHTML = `${emoji} : <span class="italian-word">${line.text}</span><br>${enLine}`;
+       dialogueBox.appendChild(p);
+     });
 
-      const ul = document.createElement("ul");
-      ul.className = "auto-list";
+     contentEl.appendChild(dialogueBox);
+   }
 
-      level.tips.forEach(tip => {
-        const zh = tip.zh ? `（${tip.zh}）` : "";
-        const li = document.createElement("li");
-        li.innerHTML = `${parseIT(tip.en)}${zh}`;
-        ul.appendChild(li);
-      });
+   // 📌 Tip
+   if (level.tips?.length) {
+     const h3 = document.createElement("h3");
+     h3.innerHTML = "📌 Tip";
+     contentEl.appendChild(h3);
 
-      contentEl.appendChild(ul);
-    }
+     const ul = document.createElement("ul");
+     ul.className = "auto-list";
 
-    levelDiv.appendChild(contentEl);
-    container.appendChild(levelDiv);
-  });
+     level.tips.forEach(tip => {
+       const zh = tip.zh ? `（${tip.zh}）` : "";
+       const li = document.createElement("li");
+       li.innerHTML = `${parseWord(tip.en)}${zh}`;
+       ul.appendChild(li);
+     });
+
+     contentEl.appendChild(ul);
+   }
+
+   levelDiv.appendChild(contentEl);
+   container.appendChild(levelDiv);
+ });
 }
-
 
 // ✅ Export both functions to the global window:
 window.renderModule = renderModule;
