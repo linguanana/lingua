@@ -26,7 +26,6 @@
       const moduleLoadScript = document.createElement("script");
       moduleLoadScript.src = "../../shared/js/module-load.js";
       moduleLoadScript.onload = () => {
-        // ✅ renderModule must exist in module-load.js
         if (typeof renderModule === "function") {
           renderModule(moduleData);
 
@@ -41,3 +40,6 @@
     };
     document.body.appendChild(script);
   </script>
+
+</body>
+</html>
