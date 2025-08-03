@@ -84,6 +84,17 @@ h3 + .auto-list {
   margin-top: 0.1em; /* Reduce space between h3 and the list */
 }
 
+.auto-list {
+  line-height: 1.33;
+  margin-top: 0.05em;
+  font-size: 0.9rem; /* 可依需要微調字體大小 */
+}
+
+.auto-list li {
+  margin-bottom: 2px;  /* 行距小一點點，感覺更緊湊 */
+}
+
+
 .dialogue-box {
   background-color: #fafafa;
   border-left: 6px solid transparent; /* removed red bar */
@@ -127,16 +138,6 @@ h3 + .auto-list {
 .tip-box p {
   margin: 2px 0;              /* ✨ 控制行間距 */
   line-height: 1.35;          /* ✨ 和 auto-list 接近的行高 */
-}
-
-.auto-list {
-  line-height: 1.33;
-  margin-top: 0.05em;
-  font-size: 0.9rem; /* 可依需要微調字體大小 */
-}
-
-.auto-list li {
-  margin-bottom: 2px;  /* 行距小一點點，感覺更緊湊 */
 }
 
 
@@ -254,14 +255,14 @@ th, td {
 /* this is for lesson level and lesson context ========= */
 
 /* travel topic */
-#topic-nav {
+#topic-nav, #lesson-buttons {
   display: flex; /* Arranges children (label and buttons) in a row */
   align-items: center; /* Vertically aligns them in the middle */
   flex-wrap: nowrap; /* 🔥 THIS IS THE KEY: Prevents items from wrapping to the next line */
   gap: 8px; /* Space between items */
 }
 
-#topic-nav p {
+#topic-nav p, #lesson-buttons p {
   margin: 0; /* No extra space around the label */
   white-space: nowrap; /* Ensures "Topics:" text itself doesn't wrap */
 }
@@ -279,7 +280,6 @@ th, td {
   color: white; /* White text for active button */
   border-color: #007bff;
 }
-
 
 /* return to back
 /* 1. Basic spacing for the navigation wrapper */
