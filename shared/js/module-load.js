@@ -149,6 +149,7 @@ function renderLesson(levels, moduleSpeakers = {}) {
   });
 }
 
+
 // ✅ Export both functions to the global window:
 window.renderModule = renderModule;
 window.renderLesson = renderLesson;
