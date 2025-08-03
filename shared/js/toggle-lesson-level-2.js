@@ -46,5 +46,7 @@ function activateLessonAccordion() {
   });
 }
 
-// ✅ Make sure this is the last line:
-acti
+activateLessonAccordion();
+
+// ✅ Confirm the script runs
+console.log("Accordion script loaded");
