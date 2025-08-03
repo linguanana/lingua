@@ -22,27 +22,19 @@
   <!-- Scripts -->
   <script>
     const moduleId = new URLSearchParams(window.location.search).get("id") || "1";
-
     const script = document.createElement("script");
     script.src = `mod/mod${moduleId}.js`;
-
     script.onload = () => {
-      // 1️⃣ moduleData 載入完成後，載入 module-load.js
       const moduleLoadScript = document.createElement("script");
       moduleLoadScript.src = "../../shared/js/module-load.js";
-
       moduleLoadScript.onload = () => {
-        // 2️⃣ 等 module-load.js 完全載入後，呼叫 renderModule()
-        renderModule(moduleData);
+        renderModule(moduleData); // ← 這一行不能拿掉
 
-        // 3️⃣ 再載入 toggle-lesson-level-2.js，這樣 toggle 才能綁定成功
         const toggleScript = document.createElement("script");
         toggleScript.src = "../../shared/js/toggle-lesson-level-2.js";
         document.body.appendChild(toggleScript);
       };
-
       document.body.appendChild(moduleLoadScript);
     };
-
     document.body.appendChild(script);
   </script>
