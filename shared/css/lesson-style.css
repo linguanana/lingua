@@ -257,7 +257,7 @@ th, td {
 /* travel topic */
 #topic-nav, #lesson-buttons {
   font-family: inherit;
-  font-size: 1rem; I want this same as auto-list
+  font-size: 1rem; /* I want this same as auto-list */
   display: flex; /* Arranges children (label and buttons) in a row */
   align-items: center; /* Vertically aligns them in the middle */
   flex-wrap: nowrap; /* 🔥 THIS IS THE KEY: Prevents items from wrapping to the next line */
@@ -266,7 +266,7 @@ th, td {
 
 #topic-nav p, #lesson-buttons p {
   font-family: inherit;
-  font-size:1rem;
+  font-size:1rem; /* I want this same as auto-list */
   margin: 0; /* No extra space around the label */
   white-space: nowrap; /* Ensures "Topics:" text itself doesn't wrap */
 }
