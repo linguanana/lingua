@@ -131,7 +131,7 @@ function renderLesson(levels, moduleSpeakers = {}) {
       level.tips.forEach(tip => {
         const zh = tip.zh ? `（${tip.zh}）` : "";
         const li = document.createElement("li");
-        li.innerHTML = `<span class="italian-word">${tip.text}</span>${zh}`;
+        li.innerHTML = `${tip.en}${zh}`; // no italian-word span
         ul.appendChild(li);
       });
 

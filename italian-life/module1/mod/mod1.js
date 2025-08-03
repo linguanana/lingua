@@ -44,8 +44,8 @@ const moduleData = {
                         { speaker: "2", text: "Mi chiamo Marco.", en: "My name is Marco.", zh: "我叫馬可。" }
                     ],
                     tips: [
-                        { en: "Come ti chiami is informal", zh: "非正式的" },
-                        { en: "Mi chiamo is how you state your name", zh: "是用來介紹自己的" }
+                      { en: "**Come ti chiami** is informal", zh: "非正式的" },
+                      { en: "**Mi chiamo** is how you state your name", zh: "是用來介紹自己的" }
                     ]
                 }
             ]
