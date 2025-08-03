@@ -78,3 +78,6 @@ function renderLesson(levels) {
     container.appendChild(levelDiv);
   });
 }
+
+// ✅ Add this as the LAST line:
+window.renderLesson = renderLesson;
