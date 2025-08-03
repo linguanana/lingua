@@ -1,3 +1,47 @@
+function renderModule(moduleData) {
+  const lessonTitle = document.getElementById("lesson-title");
+  const lessonTheme = document.getElementById("lesson-theme");
+  const lessonContainer = document.getElementById("lesson-container");
+
+  if (!lessonTitle || !lessonTheme || !lessonContainer) {
+    console.error("Missing expected DOM elements.");
+    return;
+  }
+
+  lessonTitle.textContent = "";
+  lessonTheme.textContent = "";
+  lessonContainer.innerHTML = "";
+
+  const nav = document.createElement("span");
+  nav.className = "info-text-size";
+  nav.innerHTML = `<strong>📚 Lessons:</strong> `;
+
+  moduleData.lessons.forEach((lesson, index) => {
+    const btn = document.createElement("button");
+    btn.textContent = `${index + 1}`;
+    btn.onclick = () => {
+      localStorage.removeItem("lastOpenLevelId");
+      lessonTitle.textContent = `🎬 Lesson ${lesson.lessonId}: ${lesson.theme || ""}`;
+      lessonTheme.textContent = "";
+      renderLesson(lesson.levels);
+
+      nav.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    };
+    nav.appendChild(btn);
+  });
+
+  lessonTitle.after(nav);
+
+  if (moduleData.lessons.length > 0) {
+    const firstLesson = moduleData.lessons[0];
+    lessonTitle.textContent = `🎬 Lesson ${firstLesson.lessonId}: ${firstLesson.theme || ""}`;
+    lessonTheme.textContent = "";
+    renderLesson(firstLesson.levels);
+    nav.querySelector("button")?.classList.add("active");
+  }
+}
+
 function renderLesson(levels) {
   const container = document.getElementById("lesson-container");
   if (!container) return;
@@ -22,7 +66,6 @@ function renderLesson(levels) {
     const contentEl = document.createElement("div");
     contentEl.className = "level-content";
 
-    // 📗 Key Phrase
     if (level.keyPhrases?.length) {
       const h3 = document.createElement("h3");
       h3.innerHTML = "📗 Key Phrase";
@@ -41,7 +84,6 @@ function renderLesson(levels) {
       contentEl.appendChild(listDiv);
     }
 
-    // 🎯 Dialogue + audio
     if (level.dialogues?.length) {
       const h3 = document.createElement("h3");
       h3.innerHTML = "🎯 Dialogue / When to use";
@@ -71,7 +113,6 @@ function renderLesson(levels) {
       contentEl.appendChild(dialogueBox);
     }
 
-    // 📌 Tips
     if (level.tips?.length) {
       const h3 = document.createElement("h3");
       h3.innerHTML = "📌 Tip";
@@ -95,6 +136,6 @@ function renderLesson(levels) {
   });
 }
 
-// ✅ 匯出到全域，確保 HTML 可以呼叫
+// ✅ Export both functions to the global window:
 window.renderModule = renderModule;
 window.renderLesson = renderLesson;
