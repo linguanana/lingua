@@ -34,7 +34,7 @@ function renderModule(moduleData) {
      window.currentModuleId = moduleData.moduleId || 1;
      window.currentLessonId = lesson.lessonId;
 
-     lessonTitle.innerHTML = `🎬 Lesson ${lesson.lessonId}:<span class="auto-list">${lesson.theme || ""}</span>`;
+     lessonTitle.innerHTML = `🎬 Lesson ${lesson.lessonId}: <span class="info-text-size">${lesson.theme || ""}</span>`;
      lessonTheme.textContent = "";
      renderLesson(lesson.levels, moduleData.speakers);
 
