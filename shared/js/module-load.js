@@ -1,5 +1,6 @@
 // 🔧 Bold parser: Converts **bold** to <strong>bold</strong>
 function parseBold(text) {
+  if (!text) return "";
   return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
 }
 
