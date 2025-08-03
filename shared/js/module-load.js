@@ -27,6 +27,7 @@ function renderModule(moduleData) {
 
  moduleData.lessons.forEach((lesson, index) => {
    const btn = document.createElement("button");
+   btn.classList.add("info-text-size");
    btn.textContent = `${index + 1}`;
    btn.onclick = () => {
      localStorage.removeItem("lastOpenLevelId");
