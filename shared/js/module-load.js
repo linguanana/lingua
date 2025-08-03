@@ -1,3 +1,8 @@
+// 🔧 Bold parser: Converts **bold** to <strong>bold</strong>
+function parseBold(text) {
+  return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+
 function renderModule(moduleData) {
   const lessonTitle = document.getElementById("lesson-title");
   const lessonTheme = document.getElementById("lesson-theme");
@@ -45,10 +50,6 @@ function renderModule(moduleData) {
     renderLesson(firstLesson.levels, moduleData.speakers);
     nav.querySelector("button")?.classList.add("active");
   }
-}
-
-function parseBold(text) {
-  return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
 }
 
 function renderLesson(levels, moduleSpeakers = {}) {
