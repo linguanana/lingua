@@ -1,3 +1,5 @@
+// shared/js/render-lesson.js
+
 function renderLesson(levels) {
   const container = document.getElementById('lesson-container');
   if (!container) return;
@@ -88,7 +90,7 @@ function renderLesson(levels) {
     container.appendChild(levelDiv);
   });
 
-  // ✅ Expand first level
+  // ✅ 自動展開第一個 level
   const firstLevel = document.querySelector('.lesson-level');
   if (firstLevel) {
     firstLevel.classList.add('active');
@@ -97,8 +99,8 @@ function renderLesson(levels) {
     content.style.padding = '3px 12px';
   }
 
-  // ✅ Enable toggle after DOM is ready
-  if (typeof activateLessonAccordion === "function") {
+  // ✅ 加入手風琴功能
+  if (typeof activateLessonAccordion === 'function') {
     activateLessonAccordion();
   }
 }
