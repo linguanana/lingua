@@ -71,17 +71,17 @@ function renderLesson(levels) {
       h3.innerHTML = "📗 Key Phrase";
       contentEl.appendChild(h3);
 
-      const listDiv = document.createElement("div");
-      listDiv.className = "auto-list";
+      const ul = document.createElement("ul");
+      ul.className = "auto-list";
 
       level.keyPhrases.forEach(p => {
         const zh = p.zh ? `（${p.zh}）` : "";
-        const line = document.createElement("div");
-        line.innerHTML = `<span class="italian-word">${p.text || p.it}</span> – ${p.en || ""}${zh}`;
-        listDiv.appendChild(line);
+        const li = document.createElement("li");
+        li.innerHTML = `<span class="italian-word">${p.text || p.it}</span> – ${p.en || ""}${zh}`;
+        ul.appendChild(li);
       });
 
-      contentEl.appendChild(listDiv);
+      contentEl.appendChild(ul);
     }
 
     if (level.dialogues?.length) {
@@ -118,17 +118,17 @@ function renderLesson(levels) {
       h3.innerHTML = "📌 Tip";
       contentEl.appendChild(h3);
 
-      const tipsDiv = document.createElement("div");
-      tipsDiv.className = "auto-list";
+      const ul = document.createElement("ul");
+      ul.className = "auto-list";
 
       level.tips.forEach(tip => {
         const zh = tip.zh ? `（${tip.zh}）` : "";
-        const line = document.createElement("div");
-        line.innerHTML = `<span class="italian-word">${tip.text}</span>${zh}`;
-        tipsDiv.appendChild(line);
+        const li = document.createElement("li");
+        li.innerHTML = `<span class="italian-word">${tip.text}</span>${zh}`;
+        ul.appendChild(li);
       });
 
-      contentEl.appendChild(tipsDiv);
+      contentEl.appendChild(ul);
     }
 
     levelDiv.appendChild(contentEl);

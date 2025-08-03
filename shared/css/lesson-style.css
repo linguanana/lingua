@@ -129,16 +129,6 @@ h3 + .auto-list {
   line-height: 1.35;          /* ✨ 和 auto-list 接近的行高 */
 }
 
-.auto-list {
-  line-height: 1.33;
-  margin-top: 0.05em;
-  font-size: 0.9rem; /* 可依需要微調字體大小 */
-}
-
-.auto-list li {
-  margin-bottom: 2px;  /* 行距小一點點，感覺更緊湊 */
-}
-
 
 /* --- 連結顏色和過渡效果調整 --- */
 a {

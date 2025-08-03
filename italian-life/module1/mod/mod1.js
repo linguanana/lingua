@@ -34,12 +34,12 @@ const moduleData = {
                         { text: "Mi chiamo...", en: "My name is...", zh: "我叫..." }
                     ],
                     dialogues: [
-                        { speaker: "A", text: "Come ti chiami?", en: "What's your name?", zh: "你叫什麼名字？" },
-                        { speaker: "B", text: "Mi chiamo Marco.", en: "My name is Marco.", zh: "我叫馬可。" }
+                        { speaker: "1", text: "Come ti chiami?", en: "What's your name?", zh: "你叫什麼名字？" },
+                        { speaker: "2", text: "Mi chiamo Marco.", en: "My name is Marco.", zh: "我叫馬可。" }
                     ],
                     tips: [
-                        { text: "Come ti chiami is informal", zh: "非正式的" },
-                        { text: "Mi chiamo is how you state your name", zh: "是用來介紹自己的" }
+                        { en: "Come ti chiami is informal", zh: "非正式的" },
+                        { en: "Mi chiamo is how you state your name", zh: "是用來介紹自己的" }
                     ]
                 }
             ]
@@ -57,11 +57,11 @@ const moduleData = {
                         { text: "Di dove sei?", en: "Where are you from?", zh: "你來自哪裡？" }
                     ],
                     dialogues: [
-                        { speaker: "A", text: "Piacere, io sono Sofia.", en: "Nice to meet you, I'm Sofia.", zh: "很高興認識你，我是索非亞。" },
-                        { speaker: "B", text: "Piacere! Di dove sei?", en: "Nice to meet you! Where are you from?", zh: "很高興認識你！你來自哪裡？" }
+                        { speaker: "1", text: "Piacere, io sono Sofia.", en: "Nice to meet you, I'm Sofia.", zh: "很高興認識你，我是索非亞。" },
+                        { speaker: "2", text: "Piacere! Di dove sei?", en: "Nice to meet you! Where are you from?", zh: "很高興認識你！你來自哪裡？" }
                     ],
                     tips: [
-                        { text: "Piacere is a common and friendly greeting.", zh: "Piacere 是一個常見且友好的問候語。" }
+                        { en: "Piacere is a common and friendly greeting.", zh: "Piacere 是一個常見且友好的問候語。" }
                     ]
                 }
             ]
