@@ -1,3 +1,57 @@
+function renderModule(moduleData) {
+  const lessonTitle = document.getElementById("lesson-title");
+  const lessonTheme = document.getElementById("lesson-theme");
+  const lessonContainer = document.getElementById("lesson-container");
+
+  if (!lessonTitle || !lessonTheme || !lessonContainer) {
+    console.error("Missing expected DOM elements.");
+    return;
+  }
+
+  // 清除舊內容
+  lessonTitle.textContent = "";
+  lessonTheme.textContent = "";
+  lessonContainer.innerHTML = "";
+
+  // 建立右側內嵌 Lessons 切換按鈕
+  const nav = document.createElement("span");
+  nav.className = "info-text-size";
+  nav.innerHTML = `<strong>📚 Lessons:</strong> `;
+
+  moduleData.lessons.forEach((lesson, index) => {
+    const btn = document.createElement("button");
+    btn.textContent = `${index + 1}`;
+    btn.onclick = () => {
+      localStorage.removeItem('lastOpenLevelId');
+
+      // 更新標題與主題
+      lessonTitle.textContent = `🎬 Lesson ${lesson.lessonId}: ${lesson.theme || ""}`;
+      lessonTheme.textContent = "";
+
+      // 載入課程內容
+      renderLesson(lesson.levels);
+
+      // 按鈕樣式切換
+      nav.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    };
+    nav.appendChild(btn);
+  });
+
+  // 插入按鈕區塊在標題後方
+  lessonTitle.after(nav);
+
+  // 載入第一課
+  if (moduleData.lessons.length > 0) {
+    const firstLesson = moduleData.lessons[0];
+    lessonTitle.textContent = `🎬 Lesson ${firstLesson.lessonId}: ${firstLesson.theme || ""}`;
+    lessonTheme.textContent = "";
+    renderLesson(firstLesson.levels);
+    nav.querySelector("button")?.classList.add("active");
+  }
+}
+
+// ✅ 課程內容渲染
 function renderLesson(levels) {
   const container = document.getElementById('lesson-container');
   if (!container) return;
@@ -11,18 +65,15 @@ function renderLesson(levels) {
   container.appendChild(infoText);
 
   levels.forEach((level, index) => {
-    // 每個卡片
     const levelDiv = document.createElement('div');
     levelDiv.className = 'lesson-level';
-    levelDiv.id = `level-${index + 1}`; // 為了 localStorage 可用
+    levelDiv.id = `level-${index + 1}`;
 
-    // 標題 - 使用 <h2> 並帶上 ✅ emoji 和 class
     const titleEl = document.createElement('h2');
     titleEl.className = 'level-title';
     titleEl.innerHTML = `✅ ${level.title}`;
     levelDiv.appendChild(titleEl);
 
-    // 內容區塊 - 可以是 key phrases / dialogues / tips
     const contentEl = document.createElement('div');
     contentEl.className = 'level-content';
 
@@ -79,5 +130,6 @@ function renderLesson(levels) {
   });
 }
 
-// ✅ Add this as the LAST line:
+// ✅ Export to global scope
+window.renderModule = renderModule;
 window.renderLesson = renderLesson;
