@@ -9,39 +9,28 @@
 </head>
 <body>
 
+  <!-- 模組標題 -->
   <h1>🇮🇹 Module 1 – Greetings</h1>
 
-  <!-- 單一課程標題和主題 + inline lesson nav -->
-  <div class="spacer-md">
-    <h2 id="lesson-title" style="display: inline;"></h2>
-    <!-- 📚 Lessons buttons will be inserted here by JS -->
-  </div>
+  <!-- 單一課程標題 + 按鈕將插入在這裡 -->
+  <h2 id="lesson-title" class="spacer-md"></h2>
   <h3 id="lesson-theme" class="info-text-size"></h3>
 
-  <!-- 開始說明 -->
-  <p class="info-text-size">
-    <span class="start-with-word">Start with Level 1</span> — come back for Level 2 or/and 3 as you progress.
-  </p>
-
   <!-- 課程內容容器 -->
-  <div id="lesson-container">
-    <!-- Level 1 / 2 / 3 內容將注入此處 -->
-  </div>
+  <div id="lesson-container"><!-- Lesson levels injected here --></div>
 
   <!-- Scripts -->
-  <script src="../../shared/js/render-lesson.js"></script>
   <script>
     const moduleId = new URLSearchParams(window.location.search).get("id") || "1";
     const script = document.createElement("script");
     script.src = `mod/mod${moduleId}.js`;
     script.onload = () => {
-      // ✅ Wait until moduleData is loaded
       const moduleLoadScript = document.createElement("script");
       moduleLoadScript.src = "../../shared/js/module-load.js";
       moduleLoadScript.onload = () => {
         renderModule(moduleData);
 
-        // ✅ Accordion after DOM is rendered
+        // ✅ Accordion after content is injected
         const toggleScript = document.createElement("script");
         toggleScript.src = "../../shared/js/toggle-lesson-level-manual.js";
         document.body.appendChild(toggleScript);
