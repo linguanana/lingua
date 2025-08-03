@@ -1,6 +1,4 @@
-// shared/js/toggle-lesson-level.js
-
-document.addEventListener('DOMContentLoaded', function() {
+function activateLessonAccordion() {
   const levelTitles = document.querySelectorAll('.level-title');
   const lessonLevels = document.querySelectorAll('.lesson-level');
 
@@ -23,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   levelTitles.forEach(function(title) {
-    title.addEventListener('click', function() {
+    title.addEventListener('click', function () {
       const currentLevel = this.closest('.lesson-level');
       const content = currentLevel.querySelector('.level-content');
       const currentLevelId = currentLevel.id;
@@ -46,4 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-});
+}
+
+// ✅ Make sure this is the last line:
+acti
