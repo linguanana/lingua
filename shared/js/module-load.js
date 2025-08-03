@@ -26,6 +26,7 @@ function renderModule(moduleData) {
       localStorage.removeItem("lastOpenLevelId");
 
       lessonTitle.textContent = `🎬 Lesson ${lesson.lessonId}: ${lesson.theme || ""}`;
+      lessonTitle.innerHTML = `🎬 Lesson ${lesson.lessonId}:<span class="auto-list">${lesson.theme || ""}</span>`;
       lessonTheme.textContent = "";
       renderLesson(lesson.levels);
 
