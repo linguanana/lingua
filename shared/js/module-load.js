@@ -47,6 +47,10 @@ function renderModule(moduleData) {
   }
 }
 
+function parseBold(text) {
+  return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+
 function renderLesson(levels, moduleSpeakers = {}) {
   const container = document.getElementById("lesson-container");
   if (!container) return;
@@ -131,7 +135,7 @@ function renderLesson(levels, moduleSpeakers = {}) {
       level.tips.forEach(tip => {
         const zh = tip.zh ? `（${tip.zh}）` : "";
         const li = document.createElement("li");
-        li.innerHTML = `${tip.en}${zh}`; // no italian-word span
+        li.innerHTML = `${parseBold(tip.en)}${zh}`;
         ul.appendChild(li);
       });
 
