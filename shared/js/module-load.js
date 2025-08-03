@@ -1,7 +1,7 @@
 // 🔧 Bold parser: Converts **bold** to <strong>bold</strong>
-function parseBold(text) {
+function parseIT(text) {
   if (!text) return "";
-  return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  return text.replace(/\*\*(.+?)\*\*/g, '<span class="italian-word">$1</span>');
 }
 
 function renderModule(moduleData) {
@@ -137,7 +137,7 @@ function renderLesson(levels, moduleSpeakers = {}) {
       level.tips.forEach(tip => {
         const zh = tip.zh ? `（${tip.zh}）` : "";
         const li = document.createElement("li");
-        li.innerHTML = `${parseBold(tip.en)}${zh}`;
+        li.innerHTML = `${parseIT(tip.en)}${zh}`;
         ul.appendChild(li);
       });
 
