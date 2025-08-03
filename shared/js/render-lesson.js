@@ -64,7 +64,7 @@ function renderLesson(levels) {
       contentDiv.appendChild(dialogueBox);
     }
 
-    // ✅ Tips → now as auto-list
+    // ✅ Tips
     if (level.tips && level.tips.length > 0) {
       const h3 = document.createElement('h3');
       h3.textContent = 'Tips';
@@ -88,7 +88,7 @@ function renderLesson(levels) {
     container.appendChild(levelDiv);
   });
 
-  // ✅ 自動展開第一個 level（如果有的話）
+  // ✅ Expand first level
   const firstLevel = document.querySelector('.lesson-level');
   if (firstLevel) {
     firstLevel.classList.add('active');
@@ -96,10 +96,9 @@ function renderLesson(levels) {
     content.style.maxHeight = content.scrollHeight + 'px';
     content.style.padding = '3px 12px';
   }
-}
 
-// ✅ Enable accordion toggle behavior after rendering
-if (typeof activateLessonAccordion === "function") {
-  activateLessonAccordion();
-}
+  // ✅ Enable toggle after DOM is ready
+  if (typeof activateLessonAccordion === "function") {
+    activateLessonAccordion();
+  }
 }
