@@ -97,3 +97,9 @@ function renderLesson(levels) {
     content.style.padding = '3px 12px';
   }
 }
+
+// ✅ Enable accordion toggle behavior after rendering
+if (typeof activateLessonAccordion === "function") {
+  activateLessonAccordion();
+}
+}
