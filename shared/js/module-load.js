@@ -12,15 +12,19 @@ function renderModule(moduleData) {
   lessonTheme.textContent = "";
   lessonContainer.innerHTML = "";
 
-  const nav = document.createElement("span");
-  nav.className = "info-text-size";
-  nav.innerHTML = `<strong>📚 Lessons:</strong> `;
+  const nav = document.createElement("div");
+  nav.id = "lesson-buttons";
+
+  const label = document.createElement("p");
+  label.textContent = "📚 Lessons:";
+  nav.appendChild(label);
 
   moduleData.lessons.forEach((lesson, index) => {
     const btn = document.createElement("button");
     btn.textContent = `${index + 1}`;
     btn.onclick = () => {
       localStorage.removeItem("lastOpenLevelId");
+
       lessonTitle.textContent = `🎬 Lesson ${lesson.lessonId}: ${lesson.theme || ""}`;
       lessonTheme.textContent = "";
       renderLesson(lesson.levels);
@@ -28,6 +32,7 @@ function renderModule(moduleData) {
       nav.querySelectorAll("button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
     };
+
     nav.appendChild(btn);
   });
 
