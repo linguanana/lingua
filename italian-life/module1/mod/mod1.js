@@ -2,6 +2,12 @@
 const moduleData = {
     moduleId: "1",
     title: "Module 1 – Greetings",
+    speakers: {
+    "1": "👩",
+    "2": "👨",
+    "3": "👩",
+    "4": "👨"
+    },
     lessons: [
         {
             lessonId: 1,

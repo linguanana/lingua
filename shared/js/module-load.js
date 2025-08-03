@@ -27,7 +27,7 @@ function renderModule(moduleData) {
 
       lessonTitle.innerHTML = `🎬 Lesson ${lesson.lessonId}:<span class="auto-list">${lesson.theme || ""}</span>`;
       lessonTheme.textContent = "";
-      renderLesson(lesson.levels);
+      renderLesson(lesson.levels, moduleData.speakers);
 
       nav.querySelectorAll("button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
@@ -40,14 +40,14 @@ function renderModule(moduleData) {
 
   if (moduleData.lessons.length > 0) {
     const firstLesson = moduleData.lessons[0];
-    lessonTitle.textContent = `🎬 Lesson ${firstLesson.lessonId}: ${firstLesson.theme || ""}`;
+    lessonTitle.innerHTML = `🎬 Lesson ${firstLesson.lessonId}:<span class="auto-list">${firstLesson.theme || ""}</span>`;
     lessonTheme.textContent = "";
-    renderLesson(firstLesson.levels);
+    renderLesson(firstLesson.levels, moduleData.speakers);
     nav.querySelector("button")?.classList.add("active");
   }
 }
 
-function renderLesson(levels) {
+function renderLesson(levels, moduleSpeakers = {}) {
   const container = document.getElementById("lesson-container");
   if (!container) return;
 
@@ -110,8 +110,10 @@ function renderLesson(levels) {
 
       level.dialogues.forEach(line => {
         const p = document.createElement("p");
-        const zh = line.zh ? `<br><span lang="zh-TW">${line.zh}</span>` : "";
-        p.innerHTML = `🗣 ${line.speaker}<br><span class="italian-word">${line.text}</span>${zh}`;
+        const emoji = moduleSpeakers[line.speaker] || "🗣";
+        const zhLine = line.zh ? `（${line.zh}）` : "";
+        const enLine = line.en ? `→ ${line.en} ${zhLine}` : zhLine;
+        p.innerHTML = `${emoji} : <span class="italian-word">${line.text}</span><br>${enLine}`;
         dialogueBox.appendChild(p);
       });
 
