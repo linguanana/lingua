@@ -35,7 +35,7 @@ function renderModule(moduleData) {
       window.currentModuleId = moduleData.moduleId || 1;
       window.currentLessonId = lesson.lessonId;
 
-      lessonTitle.innerHTML = `🎬 Lesson ${lesson.lessonId}: <span class="info-text-size">${lesson.theme || ""}</span>`;
+      lessonTitle.innerHTML = `<span class="info-text-size">🎬 Lesson ${lesson.lessonId}: ${lesson.theme || ""}</span>`;
       lessonTheme.textContent = "";
       renderLesson(lesson.levels, moduleData.speakers);
       activateLessonAccordion();
