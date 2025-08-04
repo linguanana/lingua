@@ -179,7 +179,7 @@ th, td {
 
 .current-lesson {
   font-weight: 700;
-  color: #0077cc;
+  /*color: #0077cc;*/
   background-color: #e6f2ff;
   padding: 2px 6px;
   border-radius: 4px;
