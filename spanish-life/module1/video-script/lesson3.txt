@@ -1,0 +1,203 @@
+🩷🩷 Slide 1
+
+********** TEXT **********
+🎬 Lección 3
+Palabras y Expresiones de Cortesía en Español
+
+Parte 1: Palabras de cortesía cotidianas
+Parte 2: Responder con cortesía y dirigirse a otros
+
+********** EN Script (talking script) **********
+Welcome! {{pause=1000}}
+Today we’re learning how to be polite in Spanish — with simple, everyday words and respectful phrases. {{pause=1000}}
+Perfect for greetings, small talk, and good manners! {{pause=1000}}
+🩷🩷 Slide 2
+
+********** TEXT **********
+Gracias – Thank you
+Muchas gracias – Thank you very much
+De nada – You're welcome / Go ahead
+No hay de qué – No problem / Don't mention it
+Por favor – Please
+Disculpa – Excuse me / Sorry (informal)
+Disculpe – Excuse me / Sorry (formal)
+Discúlpeme – Excuse me (more polite)
+
+Señor – Mr. / Sir
+Señora – Mrs. / Madam / older woman
+
+********** EN Script (talking script) **********
+Gracias {{pause=1000}}
+Muchas gracias {{pause=1000}}
+De nada {{pause=1000}}
+No hay de qué {{pause=1000}}
+Por favor {{pause=1000}}
+Disculpa {{pause=1000}}
+Disculpe {{pause=1000}}
+Discúlpeme {{pause=1000}}
+Señor {{pause=1000}}
+Señora {{pause=1000}}
+🩷🩷 Slide 3
+
+********** TEXT **********
+same as [slide-2] TEXT:
+
+********** EN Script (talking script) **********
+Let’s learn when to use each polite word in Spanish. {{pause=1000}}
+
+{{pause=500}}“Gracias”{{pause=500}} and {{pause=500}}“Muchas gracias”{{pause=500}}
+They both mean “thank you.” {{pause=500}}You can use either one — they’re both great!{{pause=500}}
+
+{{pause=500}}“De nada”{{pause=500}}
+is the classic way to say “you’re welcome.”{{pause=500}}
+You’ll hear it right after you say {{pause=500}} “Gracias.” {{pause=500}}
+
+But actually, {{pause=500}}De nada{{pause=500}} can also mean "you're welcome" in a very casual way.{{pause=500}}
+
+Another common phrase you'll hear is {{pause=500}}“No hay de qué”{{pause=500}}.
+It's similar to "No worries" or "Don't mention it." {{pause=500}}It’s another great way to say “you’re welcome.” {{pause=500}}
+
+{{pause=500}}“Por favor”{{pause=500}}
+means “please.” Use it when you ask for something politely.{{pause=500}}
+
+{{pause=500}}“Disculpa”{{pause=500}} It means “excuse me” or “sorry.” {{pause=500}}
+For example You bump into your friend {{pause=500}} just say: {{pause=500}}Disculpa!{{pause=500}}
+
+{{pause=500}}“Disculpe”{{pause=500}}is formal, use it with strangers on the street or older people.{{pause=1000}}
+
+{{pause=500}}“Discúlpeme”{{pause=500}} is even more polite.
+Use it when you’re trying to get someone’s attention. {{pause=500}}
+
+So, If you bump into someone — just say {{pause=500}}Disculpa!{{pause=500}}
+If you need to ask something politely — try {{pause=500}} Discúlpeme.” {{pause=1000}}
+
+{{pause=500}}“Señor”{{pause=500}} means “Mr.” or “Sir.”{{pause=500}}
+{{pause=500}}“Señora”{{pause=500}} means “Mrs.” or “Ma’am.”{{pause=500}}
+🩷🩷 Slide 4
+
+********** TEXT **********
+🎬 Lección 3
+Palabras y Expresiones de Cortesía en Español
+
+Parte 2: Responding Politely & Meeting People
+
+********** EN Script (talking script) **********
+Great job so far! {{pause=500}}
+You’ve just completed Part 1 of our polite words lesson. 🎉 {{pause=500}}
+Let’s keep going with more polite ways to respond in Spanish. {{pause=1500}}
+Sometimes you don’t understand something, or you meet someone for the first time.
+Here’s how to be polite in those situations. {{pause=1000}}
+🩷🩷 Slide 5
+
+********** TEXT **********
+TEXT:
+😕 No entiendo. – I don’t understand.
+🤷 No hablo español muy bien
+
+    I don't speak Spanish very well
+
+🔁 ¿Puede repetir, por favor? – Can you repeat, please?
+🙏 ¿Me puede ayudar? – Can you help me?
+🙏 ¿Podría ayudarme, por favor? – Could you help me, pls?
+🙋‍♀️ ¿Puedo preguntarte algo? – Can I ask you something?
+
+😔 Lo siento. – I’m sorry.
+😔 Lo siento mucho. – I’m very sorry.
+⏳ Un momento, por favor. – One moment, please.
+
+🙌 ¡Con gusto! – With pleasure!
+😊 Lo aprecio mucho. – I really appreciate it.
+
+********** EN Script (talking script) **********
+No entiendo {{pause=1000}}
+No hablo español muy bien {{pause=1000}}
+¿Puede repetir, por favor? {{pause=1000}}
+¿Me puede ayudar? {{pause=1000}}
+¿Podría ayudarme, por favor? {{pause=1000}}
+¿Puedo preguntarte algo? {{pause=1000}}
+
+Lo siento {{pause=1000}}
+Lo siento mucho {{pause=1000}}
+
+Un momento, por favor {{pause=1000}}
+¡Con gusto! {{pause=1000}}
+Lo aprecio mucho {{pause=500}}
+🩷🩷 Slide 6
+
+********** TEXT **********
+same as [slide-2]
+
+********** EN Script (talking script) **********
+Now, we're diving into some incredibly useful Spanish phrases {{pause=500}} that'll help you communicate when you need a little assistance or just want to be polite. {{pause=500}} Let's get started!" {{pause=500}}
+First up, if you're ever in a situation where you hear something in Spanish and it just 'don't understand,' you can say:
+{{pause=1000}}     No entiendo.{{pause=500}}
+That means 'I don't understand.' Think about it, if you're feeling a bit confused, or if someone's speaking just too fast, this phrase is super practical! {{pause=500}}
+
+Sometimes, it's not just about not understanding one thing, but generally feeling that your Spanish skills are still growing. For that, you can clearly say:
+{{pause=1000}}     No hablo español muy bien.{{pause=500}}
+This means 'I don't speak Spanish very well.' It's a great, honest way to let people know your level, so they might speak slower or even switch to English to help you out. {{pause=500}}
+
+Next, if you hope the other person can 'repeat' what they said, you can ask very politely:
+{{pause=1000}}     ¿Puede repetir, por favor?{{pause=500}}
+That means 'Can you repeat, please?' It's a very, very polite way to ask someone to say it again. {{pause=500}}
+
+And then, when you truly need help, you can just say this:
+{{pause=1000}}     ¿Me puede ayudar?{{pause=500}}
+This phrase means 'Can you help me?' If you need directions, or any kind of assistance, just use this one. {{pause=500}}
+
+For a slightly more formal or very polite way to ask for help, you can say:
+{{pause=1000}}     ¿Podría ayudarme, por favor?{{pause=500}}
+This translates to 'Could you help me, please?' – a very respectful option for various situations. {{pause=500}}
+
+And if you simply want to ask someone something, perhaps to get information or just start a query, you can open with:
+{{pause=1000}}     ¿Puedo preguntarte algo?{{pause=500}}
+This means, 'Can I ask you something?' It's perfect for politely approaching someone with a question. {{pause=500}}
+
+Lo siento.{{pause=500}}
+This simply means 'I'm sorry.' You'll use this for everyday apologies. {{pause=500}}
+
+And if something is more serious, or you want to express deeper sympathy, you can add 'mucho':
+{{pause=1000}}     Lo siento mucho.{{pause=500}}
+{{pause=1000}}     Un momento, por favor.{{pause=500}}
+This means 'One moment, please.' It's incredibly handy when you need a little time to think, find something, or ask someone to wait briefly. {{pause=500}}
+
+When you're happy to do something for someone, or enthusiastically agree, a lovely Spanish phrase is:
+{{pause=1000}}     ¡Con gusto!{{pause=500}}
+Literally, this means 'with pleasure.' So, when you're genuinely happy to offer assistance, this is the phrase to use! {{pause=500}}
+
+And finally, when someone has done something kind or helpful for you, and you want to show your sincere gratitude, say:
+{{pause=1000}}     Lo aprecio mucho.{{pause=500}}
+This means, 'I appreciate it very much!' It's a warm and heartfelt way to express thanks. {{pause=500}}
+🩷🩷 Slide 7
+
+********** TEXT **********
+🎬 Lección 3
+Palabras y Expresiones de Cortesía en Español
+
+¡Excelente!
+Thanks for learning with me!
+
+Don't forget:
+subscribe, put a like, and check out the next videos!
+
+Bye, thank you, see you!
+
+********** EN Script (talking script) **********
+Excellent! {{pause=1000}}
+Thanks for learning with me! {{pause=800}}
+Don't forget: subscribe, put a like, and check out the next videos! {{pause=1000}}
+Goodbye, thank you, see you soon! {{pause=1000}}
+🩷🩷 Slide 8
+
+********** TEXT **********
+🎬 Lección 3
+Palabras y Expresiones de Cortesía en Español
+
+🎵 ¡Practica con la canción!
+y escucha —
+¡la recordarás de forma natural!
+
+********** EN Script (talking script) **********
+Take a little break — click the song video {{pause=500}}and sing along!
+Listen a few times and the words will stay with you. {{pause=500}}
+Let's go {{pause=500}}
