@@ -54,7 +54,7 @@ function renderModule(moduleData) {
     window.currentModuleId = moduleData.moduleId || 1;
     window.currentLessonId = firstLesson.lessonId;
 
-    lessonTitle.innerHTML = `🎬 Lesson ${firstLesson.lessonId}:<span class="info-text-size">${firstLesson.theme || ""}</span>`;
+    lessonTitle.innerHTML = `🎬 Lesson ${firstLesson.lessonId}: <span class="info-text-size">${firstLesson.theme || ""}</span>`;
     lessonTheme.textContent = "";
     renderLesson(firstLesson.levels, moduleData.speakers);
     nav.querySelector("button")?.classList.add("active");
@@ -230,7 +230,7 @@ function renderDialogueLine(line, emoji) {
   const enLine = line.en ? `→ ${line.en} ${zhLine}` : zhLine;
   let html = "";
   if (line.when) {
-    html += `<div class="dialogue-context">🕓 <span class="when-label">When:</span> ${line.when}</div>`;
+    html += `<div class="dialogue-context">🕓<span class="when-label">When:</span> ${line.when}</div>`;
   }
   html += `${emoji} : <span class="italian-word">${line.text}</span><br>${enLine}`;
   p.innerHTML = html;
