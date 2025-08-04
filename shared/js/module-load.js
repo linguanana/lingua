@@ -22,7 +22,7 @@ function renderModule(moduleData) {
   nav.id = "lesson-buttons";
 
   const label = document.createElement("p");
-  label.textContent = "📚 Lessons:";
+  label.innerHTML = `<span class="info-text-size">📚 Lessons:</span>`;
   nav.appendChild(label);
 
   moduleData.lessons.forEach((lesson, index) => {
@@ -54,7 +54,7 @@ function renderModule(moduleData) {
     window.currentModuleId = moduleData.moduleId || 1;
     window.currentLessonId = firstLesson.lessonId;
 
-    lessonTitle.innerHTML = `🎬 Lesson ${firstLesson.lessonId}:<span class="auto-list">${firstLesson.theme || ""}</span>`;
+    lessonTitle.innerHTML = `🎬 Lesson ${firstLesson.lessonId}:<span class="info-text-size">${firstLesson.theme || ""}</span>`;
     lessonTheme.textContent = "";
     renderLesson(firstLesson.levels, moduleData.speakers);
     nav.querySelector("button")?.classList.add("active");
