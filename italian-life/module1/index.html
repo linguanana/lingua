@@ -35,9 +35,7 @@
            const toggleScript = document.createElement("script");
            toggleScript.src = "../../shared/js/toggle-lesson-level-2.js";
            toggleScript.onload = () => {
-             if (typeof activateLessonAccordion === "function") {
-               activateLessonAccordion();
-             }
+             activateLessonAccordion();
            };
            document.body.appendChild(toggleScript);
          } else {
