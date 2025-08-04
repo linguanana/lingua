@@ -189,12 +189,12 @@ const moduleData = {
             { text: "Può parlare più lentamente?", en: "Can you speak more slowly?" }
           ],
           dialogues: [
-            { speaker: "1", when: "👧 Asking politely", text: "Scusi, posso fare una domanda?", en: "Excuse me, can I ask a question?" },
-            { speaker: "2", when: "🤹 Friendly response", text: "Certo! Dimmi pure.", en: "Of course! Go ahead and ask." },
-            { speaker: "1", when: "👧 Needing repetition", text: "Non capisco... Può ripetere, per favore?", en: "I don’t understand… Can you repeat, please?" },
-            { speaker: "2", when: "🤹 Clarifying", text: "Sì! Ripeto lentamente.", en: "Yes! I’ll repeat slowly." },
-            { speaker: "1", when: "👧 Now understanding", text: "Ah! Capisco, grazie mille!", en: "Ah! I understand, thank you very much!" },
-            { speaker: "2", when: "🤹 Polite closing", text: "Prego!", en: "You’re welcome!" }
+            { speaker: "1", text: "Scusi, posso fare una domanda?", en: "Excuse me, can I ask a question?" },
+            { speaker: "2", text: "Certo! Dimmi pure.", en: "Of course! Go ahead and ask." },
+            { speaker: "1", text: "Non capisco... Può ripetere, per favore?", en: "I don’t understand… Can you repeat, please?" },
+            { speaker: "2", text: "Sì! Ripeto lentamente.", en: "Yes! I’ll repeat slowly." },
+            { speaker: "1", text: "Ah! Capisco, grazie mille!", en: "Ah! I understand, thank you very much!" },
+            { speaker: "2", text: "Prego!", en: "You’re welcome!" }
           ],
           tips: []
         },
@@ -222,6 +222,84 @@ const moduleData = {
         }
       ]
     },
+    {
+      lessonId: 1,
+      title: "Lesson 1 – Ciao! Missione al mercato",
+      theme: "Greetings in everyday Italian",
+      levels: [
+        {
+          levelId: 1,
+          title: "Level 1 (A0): Basic name introduction",
+          keyPhrases: [
+            { text: "Come ti chiami?", en: "What’s your name?", zh: "你叫什麼名字？" },
+            { text: "Mi chiamo Marco.", en: "My name is Marco.", zh: "我叫 Marco" },
+            { text: "E tu?", en: "And you?", zh: "你呢？" },
+          ],
+          dialogues: [
+            { speaker: "1", text: "Ciao! Come ti chiami?", en: "Hi! What’s your name?", zh: "嗨！你叫什麼名字？" },
+            { speaker: "2", text: "Mi chiamo Marco. E tu?", en: "My name is Marco. And you?", zh: "我叫 Marco。你呢？" },
+            { speaker: "1", text: "Mi chiamo Laura.", en: "My name is Laura.", zh: "我叫 Laura。" },
+          ],
+          tips: [
+            {
+              en: "**Come ti chiami?** →\n- *Come* = how\n- *ti* = yourself\n- *chiami* = you call\nUsed to ask someone's name.",
+              zh: "用來問「你叫…？」"
+            },
+            {
+              en: "**Mi chiamo...** →\n- *mi* = myself\n- *chiamo* = I call\nUsed to say your name.",
+              zh: "用來介紹自己的名字"
+            }
+          ]
+        },
+        {
+          levelId: 2,
+          title: "Level 2 (A1): Formal version and polite expressions",
+          keyPhrases: [
+            { text: "Come si chiama?", en: "What’s your name? (formal)", zh: "您貴姓？" },
+            { text: "Mi chiamo Giovanni Rossi.", en: "My name is Giovanni Rossi.", zh: "我叫 Giovanni Rossi" },
+            { text: "Piacere!", en: "Nice to meet you.", zh: "很高興認識你" },
+            { text: "Il piacere è mio", en: "The pleasure is mine.", zh: "我也很高興認識你" },
+          ],
+          dialogues: [
+            { speaker: "1", text: "Buongiorno! Come si chiama?", en: "Good morning! What’s your name?", zh: "早安！您貴姓？" },
+            { speaker: "2", text: "Mi chiamo Maria Verdi. E Lei?", en: "My name is Maria Verdi. And you?", zh: "我叫 Maria Verdi。您呢？" },
+            { speaker: "1", text: "Mi chiamo Giovanni Rossi. Piacere!", en: "My name is Giovanni Rossi. Nice to meet you!", zh: "我叫 Giovanni Rossi。很高興認識您！" },
+            { speaker: "2", text: "Il piacere è mio!", en: "The pleasure is mine!", zh: "我也很高興認識您！" },
+          ],
+          tips: [
+            {
+              en: "**Come si chiama?** → Used in formal situations.\n**E Lei?** = formal version of 'E tu?'\n**Piacere** = pleasure, standard greeting.\n**Il piacere è mio** = the pleasure is mine.",
+              zh: "正式場合中使用的禮貌說法。"
+            }
+          ]
+        },
+        {
+          levelId: 3,
+          title: "Level 3 (A1): Say “Nice to meet you” in different ways",
+          keyPhrases: [
+            { text: "Piacere di conoscerti", en: "Nice to meet you (informal)", zh: "認識你很高興" },
+            { text: "Piacere di conoscerla", en: "Nice to meet you (formal)", zh: "認識您很高興" },
+            { text: "Molto lieto / Molto lieta", en: "Very pleased to meet you", zh: "非常榮幸" },
+            { text: "Piacere mio", en: "The pleasure is mine", zh: "我也很高興" }
+          ],
+          dialogues: [
+            { speaker: "1", when: "Meeting someone informally", text: "Ciao! Io sono Giulia.", en: "Hi! I'm Giulia.", zh: "你好，我是 Giulia" },
+            { speaker: "1", when: "", text: "Piacere di conoscerti!", en: "Nice to meet you (informal).", zh: "很高興認識你" },
+            { speaker: "2", when: "", text: "Piacere mio!", en: "My pleasure!", zh: "我也很高興" },
+            { speaker: "1", when: "You meet someone formally", text: "Piacere di conoscerla.", en: "Nice to meet you (formal).", zh: "很高興認識您" },
+            { speaker: "2", when: "You want to sound very polite (male)", text: "Molto lieto!", en: "Very pleased (formal).", zh: "男生說：非常榮幸" },
+            { speaker: "1", when: "You want to sound very polite (female)", text: "Molto lieta!", en: "Very pleased (formal).", zh: "女生說：非常榮幸" },
+            { speaker: "1", when: "You meet a classmate or neighbor", text: "Piacere di conoscerti!", en: "Nice to meet you (informal and friendly)", zh: "認識你很高興" },
+            { speaker: "2", when: "Someone says “Piacere!” to you", text: "Piacere mio!", en: "The pleasure is mine", zh: "我也很高興" },
+          ],
+          tips: [
+            {en: "**conoscerti** = to meet you (informal)\n**conoscerla** = to meet you (formal)",zh: "你 / 您"},
+            {en: "**Piacere di conoscerti** = Pleasure to meet you\n- *Piacere* = pleasure\n- *di* = to\n- *conoscerti* = know you",zh: "很高興認識你"},
+            {en: "**Molto lieto! / Molto lieta!** → Said when you want to be very polite",zh: "表示非常榮幸"}
+          ]
+        }
+      ]
+    }
     // new lesson
   ]
 };
