@@ -329,3 +329,18 @@ nav {
     margin-right: auto;
     padding: 0 10px; /* This provides the essential horizontal spacing for all content */
 }
+
+#language-switcher button {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  padding: 6px 12px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#language-switcher button:hover {
+  background-color: #ddd;
+}

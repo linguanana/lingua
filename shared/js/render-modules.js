@@ -3,6 +3,8 @@
 // This function will render modules based on a target container ID and an optional filter.
 // - targetContainerId: The ID of the HTML div where the modules will be rendered (e.g., 'modules-container' or 'travel-modules-container').
 // - moduleIdToRender: (Optional) If provided, only the module with this ID will be rendered. If null, all modules are rendered.
+let currentLanguage = 'en'; // or 'zh'
+
 function renderModules(targetContainerId, moduleIdToRender = null) {
     const modulesContainer = document.getElementById(targetContainerId);
 
@@ -34,7 +36,7 @@ function renderModules(targetContainerId, moduleIdToRender = null) {
         moduleDiv.id = moduleData.moduleId;
 
         const h2 = document.createElement('h2');
-        h2.textContent = moduleData.title;
+        h2.textContent = currentLanguage === 'zh' && moduleData.title_zh ? moduleData.title_zh : moduleData.title;
         h2.onclick = function() { toggleLessons(this); };
 
         const lessonListDiv = document.createElement('div');
@@ -61,7 +63,7 @@ function renderModules(targetContainerId, moduleIdToRender = null) {
                 // --- End of Dynamic Link Path Adjustment ---
 
                 a.href = finalLink; // Use the adjusted link
-                a.textContent = lesson.name;
+                a.textContent = currentLanguage === 'zh' && lesson.name_zh ? lesson.name_zh : lesson.name;
                 lessonListDiv.appendChild(a);
             });
         } else {
@@ -112,16 +114,37 @@ function toggleLessons(el) {
 }
 
 // Initial page load handler
-document.addEventListener('DOMContentLoaded', () => {
-    const mainModulesContainer = document.getElementById('modules-container');
-    const travelModulesContainer = document.getElementById('travel-modules-container');
+let currentLanguage = 'en'; // Default language is English
 
-    if (mainModulesContainer) {
-        // This is the main index.html page, render all modules
-        renderModules('modules-container');
-    } else if (travelModulesContainer) {
-        // This is a single module page (like travel/index.html),
-        // it expects an inline script to call renderModules with the specific ID.
-        // We'll leave the call to the inline script in travel/index.html.
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  const mainModulesContainer = document.getElementById('modules-container');
+  const travelModulesContainer = document.getElementById('travel-modules-container');
+
+  // Add language switch buttons only on main index
+  if (mainModulesContainer) {
+    const switcher = document.createElement('div');
+    switcher.id = 'language-switcher';
+    switcher.style = 'position:absolute; top:10px; right:10px; z-index:100;';
+    switcher.innerHTML = `
+      <button id="lang-en">English</button>
+      <button id="lang-zh">中文</button>
+    `;
+    document.body.appendChild(switcher);
+
+    // Add event listeners to buttons
+    document.getElementById('lang-en').addEventListener('click', () => {
+      currentLanguage = 'en';
+      renderModules('modules-container');
+    });
+
+    document.getElementById('lang-zh').addEventListener('click', () => {
+      currentLanguage = 'zh';
+      renderModules('modules-container');
+    });
+
+    // Initial load
+    renderModules('modules-container');
+  } else if (travelModulesContainer) {
+    // Leave this to the inline script in travel/index.html
+  }
 });

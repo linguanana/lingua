@@ -1,6 +1,6 @@
 const modulesData = [
   {
-     title: '🇫🇷🇹 Module 1 – Greeting 問候',
+     title: '🇪🇸 Module 1 – Greeting 問候',
      moduleId: 'm1',
      lessons: [
        { name: 'Lesson1: Say Hello', name_zh: '第1課：打招呼', link: 'module1/lesson1.html' },
@@ -9,12 +9,12 @@ const modulesData = [
        { name: 'Lesson4: What is Your Name?', name_zh: '第4課：你叫什麼名字？', link: 'module1/lesson4.html' },
        { name: 'Lesson5: Where Are You From?', name_zh: '第5課：你從哪裡來', link: 'module1/lesson5.html' },
        { name: 'Lesson6: What Are You Doing? What is Your Job?', name_zh: '第6課：你在做什麼？／你的職業是什麼', link: 'module1/lesson6.html' },
-       { name: 'Lesson7: French Question Words', name_zh: '第7課：義大利提問詞（how, who, what, where, when, why, which, how much/many）', link: 'module1/lesson7.html' },
+       { name: 'Lesson7: Italian Question Words', name_zh: '第7課：義大利提問詞（how, who, what, where, when, why, which, how much/many）', link: 'module1/lesson7.html' },
        { name: 'Lesson8: Personal Pronouns and Possessives', name_zh: '第8課：人稱代名詞與所有格（Io, tu, lui, lei）', link: 'module1/lesson8.html' },
      ]
    },
    {
-     title: '✈️ French Travel Phrases Survival French 旅行法國語精選',
+     title: '✈️ Spanish Travel Phrases Survival Spanish 旅行西班牙語精選',
      moduleId: 'travel1',
      lessons: [
        { name: 'Episode 1: At the Coffee Bar', name_zh: '第1集：咖啡吧體驗', link: 'travel/ep.html?id=1' },
@@ -33,7 +33,7 @@ const modulesData = [
      title: '🇮🇹 Module 2 – Order at a Café 買咖啡早餐',
      moduleId: 'm2',
      lessons: [
-       { name: 'Lesson1: The French Bar & Coffee Basics', name_zh: '第1課：義式咖啡館', link: 'module2/lesson1.html' },
+       { name: 'Lesson1: The Italian Bar & Coffee Basics', name_zh: '第1課：義式咖啡館', link: 'module2/lesson1.html' },
        { name: 'Lesson2: Ordering Pastries & Drinks', name_zh: '第2課：點心與其他飲品', link: 'module2/lesson2.html' },
        { name: 'Lesson3: Making Special Requests', name_zh: '第3課：客製化需求', link: 'module2/lesson3.html' },
        { name: 'Lesson4: Asking for the Bill & Paying', name_zh: '第4課：結帳與付款', link: 'module2/lesson4.html' },
