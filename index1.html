@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinguaNana – Your Language Learning Partner</title>
+  <style>
+    /* 保持原有的 CSS 樣式不變 */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #fceabb, #f8b500);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      margin-top: 40px;
+      font-size: 2.8rem;
+      color: #1a1a1a;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      color: #444;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+      border-bottom: 2px solid rgba(0,0,0,0.1);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .card {
+      background-color: #fff8dc;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+      color: #333;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .tool-card {
+      background-color: #4CAF50; /* A vibrant green for the tool */
+      color: white;
+      border: 3px solid #388E3C;
+    }
+    .tool-card h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .tool-card p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    .language-card h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LinguaNana – Your Language Learning Partner</h1>
+    <p class="subtitle">From custom tools to engaging lessons, we're here to help you master a new language.</p>
+
+    <h2 class="section-title">My AI Translation Tool</h2>
+    <div class="card-grid">
+      <a href="https://theparroto.com" class="card tool-card">
+        <h2>🦜 Parroto</h2>
+        <p>Transcribe and translate your audio with our AI-powered tool. Perfect for creators and learners!</p>
+      </a>
+    </div>
+
+    <h2 class="section-title">Start Learning Today!</h2>
+    <div class="card-grid" id="language-grid">
+      </div>
+
+    <h2 class="section-title">Learn with Music!</h2>
+    <div class="card-grid" id="music-grid">
+      </div>
+  </div>
+
+  <script>
+    // 語言課程的資料陣列
+    const languages = [
+      { name: 'French', flag: '🇫🇷', url: './french-life/' },
+      { name: 'Italian', flag: '🇮🇹', url: './italian-life/' },
+      { name: 'Spanish', flag: '🇪🇸', url: './spanish-life/' },
+    ];
+
+    // 音樂歌曲的資料陣列
+    const songs = [
+      { name: 'Italian Songs', flag: '🇮🇹', url: './italian/index.html' },
+      { name: 'French Songs', flag: '🇫🇷', url: './french/index.html' },
+      { name: 'Spanish Songs', flag: '🇪🇸', url: './spanish/index.html' },
+    ];
+
+    // 生成語言課程卡片
+    const languageGrid = document.getElementById('language-grid');
+    languages.forEach(item => {
+      const cardHtml = `
+        <a href="${item.url}" class="card language-card">
+          <h2>${item.flag} ${item.name}</h2>
+        </a>
+      `;
+      languageGrid.innerHTML += cardHtml;
+    });
+
+    // 生成音樂歌曲卡片
+    const musicGrid = document.getElementById('music-grid');
+    songs.forEach(item => {
+      const cardHtml = `
+        <a href="${item.url}" class="card language-card">
+          <h2>${item.flag} ${item.name}</h2>
+        </a>
+      `;
+      musicGrid.innerHTML += cardHtml;
+    });
+
+  </script>
+</body>
+</html>
