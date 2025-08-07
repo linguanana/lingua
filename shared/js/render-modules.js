@@ -114,8 +114,6 @@ function toggleLessons(el) {
 }
 
 // Initial page load handler
-let currentLanguage = 'en'; // Default language is English
-
 document.addEventListener('DOMContentLoaded', () => {
   const mainModulesContainer = document.getElementById('modules-container');
   const travelModulesContainer = document.getElementById('travel-modules-container');
