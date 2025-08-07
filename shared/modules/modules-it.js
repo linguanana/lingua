@@ -1,6 +1,6 @@
 const modulesData = [
   {
-     title: '🇫🇷🇹 Module 1 – Greeting 問候',
+     title: '🇮🇹 Module 1 – Greeting 問候',
      moduleId: 'm1',
      lessons: [
        { name: 'Lesson1: Say Hello', name_zh: '第1課：打招呼', link: 'module1/index.html' },
@@ -51,7 +51,7 @@ const modulesData = [
     { title: 'Module 11 – Open a Bank Account 開戶對話 (Coming Soon! )', moduleId: 'm11', lessons: [] },
     { title: 'Module 12 – Navigate Bureaucracy 處理行政 (Coming Soon! )', moduleId: 'm12', lessons: [] },
     {
-        title: 'Module 13 – Make Friends & Introduce Yourself 認識朋友與自我介紹',
+        title: '🇮🇹 Module 13 – Make Friends & Introduce Yourself 認識朋友與自我介紹',
         moduleId: 'm13',
         lessons: [
           { name: 'Lesson1: Sharing More About Yourself', name_zh: '第1課：更深入介紹自己（', link: 'module13/index.html' },
@@ -61,13 +61,13 @@ const modulesData = [
           { name: 'Lesson5: Basic Personality & Adjectives', name_zh: '第5課：基本個性與形容詞', link: 'module13/index.html' }
         ]
     },
-    { title: 'Module 14 – Express Opinions 表達想法 (Coming Soon! )', moduleId: 'm14', lessons: [] },
-    { title: 'Module 15 – Festival Market Chat 市集聊天 (Coming Soon! )', moduleId: 'm15', lessons: [] },
-    { title: 'Module 16 – Emergencies & Help 緊急狀況 (Coming Soon! )', moduleId: 'm16', lessons: [] },
-    { title: 'Module 17 – Plans and Time 任務與時間 (Coming Soon! )', moduleId: 'm17', lessons: [] },
-    { title: 'Module 18 – Daily Errands 日常生活 (Coming Soon! )', moduleId: 'm18', lessons: [] },
-    { title: 'Module 19 – Appearance & Feelings 外觀與感受 (Coming Soon! )', moduleId: 'm19', lessons: [] },
-    { title: 'Module 20 – Weather 天氣任務 (Coming Soon! )', moduleId: 'm20', lessons: [] },
-    { title: 'Module 21 – Make a Reservation 預約任務 (Coming Soon! )', moduleId: 'm21', lessons: [] },
-    { title: 'Module 22 – Ask for Clarification 理解與確認 (Coming Soon! )', moduleId: 'm22', lessons: [] },
+    { title: '🇮🇹 Module 14 – Express Opinions 表達想法 (Coming Soon! )', moduleId: 'm14', lessons: [] },
+    { title: '🇮🇹 Module 15 – Festival Market Chat 市集聊天 (Coming Soon! )', moduleId: 'm15', lessons: [] },
+    { title: '🇮🇹 Module 16 – Emergencies & Help 緊急狀況 (Coming Soon! )', moduleId: 'm16', lessons: [] },
+    { title: '🇮🇹 Module 17 – Plans and Time 任務與時間 (Coming Soon! )', moduleId: 'm17', lessons: [] },
+    { title: '🇮🇹 Module 18 – Daily Errands 日常生活 (Coming Soon! )', moduleId: 'm18', lessons: [] },
+    { title: '🇮🇹 Module 19 – Appearance & Feelings 外觀與感受 (Coming Soon! )', moduleId: 'm19', lessons: [] },
+    { title: '🇮🇹 Module 20 – Weather 天氣任務 (Coming Soon! )', moduleId: 'm20', lessons: [] },
+    { title: '🇮🇹 Module 21 – Make a Reservation 預約任務 (Coming Soon! )', moduleId: 'm21', lessons: [] },
+    { title: '🇮🇹 Module 22 – Ask for Clarification 理解與確認 (Coming Soon! )', moduleId: 'm22', lessons: [] },
 ];
