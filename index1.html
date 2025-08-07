@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LinguaNana – Your Language Learning Partner</title>
+
   <link rel="stylesheet" href="./shared/css/fonts.css">
   <link rel="stylesheet" href="./shared/css/module-style.css">
 
   <style>
-    /* 新增首頁專用的樣式 */
+    /* 新增首頁專用的樣式，繼承並覆蓋 module-style 的部分樣式 */
     body {
-      /* 沿用 module-style.css 的 body 樣式 */
       background-color: var(--light-grey);
     }
 
@@ -22,7 +22,8 @@
 
     .intro-title {
       text-align: center;
-      font-size: 2rem;
+      font-size: 2.2rem; /* 標題字體加大 */
+      font-weight: 700; /* 加粗字體 */
       color: var(--primary-color);
       margin-top: 40px;
       margin-bottom: 10px;
@@ -35,14 +36,18 @@
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
+      font-weight: 400;
     }
 
     .section-title {
       font-size: 1.5rem;
-      font-weight: 600;
+      font-weight: 600; /* 區塊標題加粗 */
       color: #111;
       margin: 30px 0 15px;
       text-align: left;
+      /* 加強視覺層次 */
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 5px;
     }
 
     .card-grid {
@@ -66,14 +71,14 @@
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 16px var(--shadow-color);
+      transform: translateY(-8px); /* 懸停時位移效果更明顯 */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* 陰影效果更明顯 */
     }
 
     .card h2 {
       margin: 0;
       font-size: 1.2rem;
-      font-weight: 600;
+      font-weight: 600; /* 卡片標題加粗 */
       color: var(--primary-color);
     }
 
@@ -81,6 +86,7 @@
       margin-top: 8px;
       font-size: 0.9rem;
       line-height: 1.5;
+      color: #555; /* 描述文字顏色略淺 */
     }
 
     .tool-card {
@@ -88,6 +94,7 @@
       border: 1px solid var(--border-color);
       text-align: center;
       padding: 30px;
+      font-size: 1.2em; /* 工具卡片的字體稍微大一些 */
     }
 
     .tool-card:hover {
@@ -125,16 +132,16 @@
   <script>
     // 語言課程的資料陣列
     const languages = [
-      { name: 'French Life', flag: '🇫🇷', url: './french/index.html' },
-      { name: 'Italian Life', flag: '🇮🇹', url: './italian-life/index.html' },
-      { name: 'Spanish Life', flag: '🇪🇸', url: './spanish-life/index.html' },
+      { name: 'French Life', flag: '🇫🇷', url: './french/index.html', desc: 'Real-life conversations and scenarios to get you speaking fast.' },
+      { name: 'Italian Life', flag: '🇮🇹', url: './italian-life/index.html', desc: 'Step into daily Italian life — Italian, as it truly is.' },
+      { name: 'Spanish Life', flag: '🇪🇸', url: './spanish-life/index.html', desc: 'Practical phrases and cultural insights to help you navigate Spain.' },
     ];
 
     // 音樂歌曲的資料陣列
     const songs = [
-      { name: 'Italian Songs', flag: '🇮🇹', url: './italian/index.html' },
-      { name: 'French Songs', flag: '🇫🇷', url: './french/index.html' },
-      { name: 'Spanish Songs', flag: '🇪🇸', url: './spanish/index.html' },
+      { name: 'Italian Songs', flag: '🇮🇹', url: './italian/index.html', desc: 'Learn new vocabulary and pronunciation with popular Italian songs.' },
+      { name: 'French Songs', flag: '🇫🇷', url: './french/index.html', desc: 'Dive into French culture through timeless and modern melodies.' },
+      { name: 'Spanish Songs', flag: '🇪🇸', url: './spanish/index.html', desc: 'Master Spanish rhythms and lyrics with our song lessons.' },
     ];
 
     // 生成語言課程卡片
@@ -143,7 +150,7 @@
       const cardHtml = `
         <a href="${item.url}" class="card">
           <h2>${item.flag} ${item.name}</h2>
-          <p>Real-life conversations and scenarios to get you speaking fast.</p>
+          <p>${item.desc}</p>
         </a>
       `;
       languageGrid.innerHTML += cardHtml;
@@ -155,7 +162,7 @@
       const cardHtml = `
         <a href="${item.url}" class="card">
           <h2>🎵 ${item.name}</h2>
-          <p>Learn new vocabulary and pronunciation with popular songs.</p>
+          <p>${item.desc}</p>
         </a>
       `;
       musicGrid.innerHTML += cardHtml;
