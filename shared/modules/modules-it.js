@@ -3,14 +3,14 @@ const modulesData = [
      title: '🇫🇷🇹 Module 1 – Greeting 問候',
      moduleId: 'm1',
      lessons: [
-       { name: 'Lesson1: Say Hello', name_zh: '第1課：打招呼', link: 'module1/lesson1.html' },
-       { name: 'Lesson2: Ask “How are you?”', name_zh: '第2課：最近如何', link: 'module1/lesson2.html' },
-       { name: 'Lesson3: Polite Words & Ask for Help', name_zh: '第3課：客氣詞、理解與請求', link: 'module1/lesson3.html' },
-       { name: 'Lesson4: What is Your Name?', name_zh: '第4課：你叫什麼名字？', link: 'module1/lesson4.html' },
-       { name: 'Lesson5: Where Are You From?', name_zh: '第5課：你從哪裡來', link: 'module1/lesson5.html' },
-       { name: 'Lesson6: What Are You Doing? What is Your Job?', name_zh: '第6課：你在做什麼？／你的職業是什麼', link: 'module1/lesson6.html' },
-       { name: 'Lesson7: French Question Words', name_zh: '第7課：義大利提問詞（how, who, what, where, when, why, which, how much/many）', link: 'module1/lesson7.html' },
-       { name: 'Lesson8: Personal Pronouns and Possessives', name_zh: '第8課：人稱代名詞與所有格（Io, tu, lui, lei）', link: 'module1/lesson8.html' },
+       { name: 'Lesson1: Say Hello', name_zh: '第1課：打招呼', link: 'module1/index.html' },
+       { name: 'Lesson2: Ask “How are you?”', name_zh: '第2課：最近如何', link: 'module1/index.html' },
+       { name: 'Lesson3: Polite Words & Ask for Help', name_zh: '第3課：客氣詞、理解與請求', link: 'module1/index.html' },
+       { name: 'Lesson4: What is Your Name?', name_zh: '第4課：你叫什麼名字？', link: 'module1/index.html' },
+       { name: 'Lesson5: Where Are You From?', name_zh: '第5課：你從哪裡來', link: 'module1/index.html' },
+       { name: 'Lesson6: What Are You Doing? What is Your Job?', name_zh: '第6課：你在做什麼？／你的職業是什麼', link: 'module1/index.html' },
+       { name: 'Lesson7: French Question Words', name_zh: '第7課：義大利提問詞（how, who, what, where, when, why, which, how much/many）', link: 'module1/index.html' },
+       { name: 'Lesson8: Personal Pronouns and Possessives', name_zh: '第8課：人稱代名詞與所有格（Io, tu, lui, lei）', link: 'module1/index.html' },
      ]
    },
    {
@@ -33,11 +33,11 @@ const modulesData = [
      title: '🇮🇹 Module 2 – Order at a Café 買咖啡早餐',
      moduleId: 'm2',
      lessons: [
-       { name: 'Lesson1: The French Bar & Coffee Basics', name_zh: '第1課：義式咖啡館', link: 'module2/lesson1.html' },
-       { name: 'Lesson2: Ordering Pastries & Drinks', name_zh: '第2課：點心與其他飲品', link: 'module2/lesson2.html' },
-       { name: 'Lesson3: Making Special Requests', name_zh: '第3課：客製化需求', link: 'module2/lesson3.html' },
-       { name: 'Lesson4: Asking for the Bill & Paying', name_zh: '第4課：結帳與付款', link: 'module2/lesson4.html' },
-       { name: 'Lesson5: Cafe Small Talk', name_zh: '第5課：咖啡館簡短閒聊', link: 'module2/lesson5.html' }
+       { name: 'Lesson1: The French Bar & Coffee Basics', name_zh: '第1課：義式咖啡館', link: 'module2/index.html' },
+       { name: 'Lesson2: Ordering Pastries & Drinks', name_zh: '第2課：點心與其他飲品', link: 'module2/index.html' },
+       { name: 'Lesson3: Making Special Requests', name_zh: '第3課：客製化需求', link: 'module2/index.html' },
+       { name: 'Lesson4: Asking for the Bill & Paying', name_zh: '第4課：結帳與付款', link: 'module2/index.html' },
+       { name: 'Lesson5: Cafe Small Talk', name_zh: '第5課：咖啡館簡短閒聊', link: 'module2/index.html' }
      ]
    },
     { title: 'Module 3 – Buy Fruits at the Market 買水果 (Coming Soon!)', moduleId: 'm3',lessons: [] },
@@ -54,11 +54,11 @@ const modulesData = [
         title: 'Module 13 – Make Friends & Introduce Yourself 認識朋友與自我介紹',
         moduleId: 'm13',
         lessons: [
-          { name: 'Lesson1: Sharing More About Yourself', name_zh: '第1課：更深入介紹自己（', link: 'module13/lesson1.html' },
-          { name: 'Lesson2: Talking About Where You Live', name_zh: '第2課：談論你住在哪裡', link: 'module13/lesson2.html' },
-          { name: 'Lesson3: What I Like and What I Don’t', name_zh: '第3課：我喜歡什麼、不喜歡什麼（', link: 'module13/lesson3.html' },
-          { name: 'Lesson4: Describing Your Family', name_zh: '第4課：介紹你的家庭', link: 'module13/lesson4.html' },
-          { name: 'Lesson5: Basic Personality & Adjectives', name_zh: '第5課：基本個性與形容詞', link: 'module13/lesson5.html' }
+          { name: 'Lesson1: Sharing More About Yourself', name_zh: '第1課：更深入介紹自己（', link: 'module13/index.html' },
+          { name: 'Lesson2: Talking About Where You Live', name_zh: '第2課：談論你住在哪裡', link: 'module13/index.html' },
+          { name: 'Lesson3: What I Like and What I Don’t', name_zh: '第3課：我喜歡什麼、不喜歡什麼（', link: 'module13/index.html' },
+          { name: 'Lesson4: Describing Your Family', name_zh: '第4課：介紹你的家庭', link: 'module13/index.html' },
+          { name: 'Lesson5: Basic Personality & Adjectives', name_zh: '第5課：基本個性與形容詞', link: 'module13/index.html' }
         ]
     },
     { title: 'Module 14 – Express Opinions 表達想法 (Coming Soon! )', moduleId: 'm14', lessons: [] },
