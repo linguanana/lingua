@@ -4,94 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LinguaNana – Your Language Learning Partner</title>
+  <link rel="stylesheet" href="./shared/css/fonts.css">
+  <link rel="stylesheet" href="./shared/css/module-style.css">
+
   <style>
-    /* 保持原有的 CSS 樣式不變 */
+    /* 新增首頁專用的樣式 */
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(120deg, #fceabb, #f8b500);
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      color: #333;
+      /* 沿用 module-style.css 的 body 樣式 */
+      background-color: var(--light-grey);
     }
-    .container {
+
+    .homepage-container {
       max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+      margin: 15px auto;
+      padding: 12px;
     }
-    h1 {
-      margin-top: 40px;
-      font-size: 2.8rem;
-      color: #1a1a1a;
-      text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
-    }
-    p.subtitle {
-      font-size: 1.2rem;
-      font-weight: 300;
-      margin-bottom: 3rem;
-      color: #444;
-    }
-    .section-title {
+
+    .intro-title {
+      text-align: center;
       font-size: 2rem;
-      margin-top: 3rem;
-      margin-bottom: 1.5rem;
-      color: #333;
-      border-bottom: 2px solid rgba(0,0,0,0.1);
-      display: inline-block;
-      padding-bottom: 5px;
+      color: var(--primary-color);
+      margin-top: 40px;
+      margin-bottom: 10px;
     }
+    .intro-subtitle {
+      text-align: center;
+      font-size: 1rem;
+      color: var(--text-color);
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #111;
+      margin: 30px 0 15px;
+      text-align: left;
+    }
+
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       margin-bottom: 3rem;
     }
+
     .card {
-      background-color: #fff8dc;
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px var(--shadow-color);
+      transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
       cursor: pointer;
       display: block;
       text-decoration: none;
-      color: #333;
+      color: var(--text-color);
+      padding: 20px;
+      text-align: left;
     }
+
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 16px var(--shadow-color);
     }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .card p {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
     .tool-card {
-      background-color: #4CAF50; /* A vibrant green for the tool */
-      color: white;
-      border: 3px solid #388E3C;
+      background-color: var(--secondary-color);
+      border: 1px solid var(--border-color);
+      text-align: center;
+      padding: 30px;
     }
+
+    .tool-card:hover {
+      box-shadow: 0 6px 18px var(--shadow-color);
+    }
+
     .tool-card h2 {
-      margin: 0;
       font-size: 1.8rem;
-    }
-    .tool-card p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-    .language-card h2 {
-      margin: 0;
-      font-size: 1.5rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>LinguaNana – Your Language Learning Partner</h1>
-    <p class="subtitle">From custom tools to engaging lessons, we're here to help you master a new language.</p>
-
-    <h2 class="section-title">My AI Translation Tool</h2>
-    <div class="card-grid">
-      <a href="https://theparroto.com" class="card tool-card">
-        <h2>🦜 Parroto</h2>
-        <p>Transcribe and translate your audio with our AI-powered tool. Perfect for creators and learners!</p>
-      </a>
-    </div>
+  <div class="homepage-container">
+    <h1 class="intro-title">LinguaNana – Your Language Learning Partner</h1>
+    <p class="intro-subtitle">Discover our courses, learn with music, and create your own content with our AI tool.</p>
 
     <h2 class="section-title">Start Learning Today!</h2>
     <div class="card-grid" id="language-grid">
@@ -100,14 +111,23 @@
     <h2 class="section-title">Learn with Music!</h2>
     <div class="card-grid" id="music-grid">
       </div>
+
+    <h2 class="section-title">Like what you see?</h2>
+    <p>This entire website was created and translated using our own AI-powered tool.</p>
+    <div class="card-grid">
+      <a href="https://theparroto.com" class="card tool-card">
+        <h2>🦜 Parroto</h2>
+        <p>Start creating your own multilingual content now!</p>
+      </a>
+    </div>
   </div>
 
   <script>
     // 語言課程的資料陣列
     const languages = [
-      { name: 'French', flag: '🇫🇷', url: './french-life/' },
-      { name: 'Italian', flag: '🇮🇹', url: './italian-life/' },
-      { name: 'Spanish', flag: '🇪🇸', url: './spanish-life/' },
+      { name: 'French Life', flag: '🇫🇷', url: './french/index.html' },
+      { name: 'Italian Life', flag: '🇮🇹', url: './italian-life/index.html' },
+      { name: 'Spanish Life', flag: '🇪🇸', url: './spanish-life/index.html' },
     ];
 
     // 音樂歌曲的資料陣列
@@ -121,8 +141,9 @@
     const languageGrid = document.getElementById('language-grid');
     languages.forEach(item => {
       const cardHtml = `
-        <a href="${item.url}" class="card language-card">
+        <a href="${item.url}" class="card">
           <h2>${item.flag} ${item.name}</h2>
+          <p>Real-life conversations and scenarios to get you speaking fast.</p>
         </a>
       `;
       languageGrid.innerHTML += cardHtml;
@@ -132,13 +153,13 @@
     const musicGrid = document.getElementById('music-grid');
     songs.forEach(item => {
       const cardHtml = `
-        <a href="${item.url}" class="card language-card">
-          <h2>${item.flag} ${item.name}</h2>
+        <a href="${item.url}" class="card">
+          <h2>🎵 ${item.name}</h2>
+          <p>Learn new vocabulary and pronunciation with popular songs.</p>
         </a>
       `;
       musicGrid.innerHTML += cardHtml;
     });
-
   </script>
 </body>
 </html>
