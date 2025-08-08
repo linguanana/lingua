@@ -77,12 +77,18 @@
         if (sectionTitles[0]) sectionTitles[0].textContent = '立即開始學習！';
         if (sectionTitles[1]) sectionTitles[1].textContent = '從音樂中學習！';
         if (sectionTitles[2]) sectionTitles[2].textContent = '喜歡我們的網站嗎？';
+        if (aiToolDesc) aiToolDesc.textContent = '本網站的所有內容皆由我們自研的 AI 工具創作與翻譯。';
+        if (parrotoTitle) parrotoTitle.textContent = '🦜 Parroto';
+        if (parrotoDesc) parrotoDesc.textContent = '立即開始創作你的多語言內容！透過多語內容拓展全球市場 — AI 鸚鵡替你發聲！';
       } else {
         if (introTitle) introTitle.textContent = 'Speak like a local — real-life lessons in multiple languages 🌍';
         if (introSubtitle) introSubtitle.textContent = 'Explore our language courses, enjoy music, and create your own content with our AI tool.';
         if (sectionTitles[0]) sectionTitles[0].textContent = 'Start Learning Today!';
         if (sectionTitles[1]) sectionTitles[1].textContent = 'Learn with Music!';
         if (sectionTitles[2]) sectionTitles[2].textContent = 'Like what you see?';
+        if (aiToolDesc) aiToolDesc.textContent = 'This entire website was created and translated using our own AI-powered tool.';
+        if (parrotoTitle) parrotoTitle.textContent = '🦜 Parroto';
+        if (parrotoDesc) parrotoDesc.textContent = 'Start creating your own multilingual content now! Expand your global reach with multilingual content — AI parrot speaks for you';
       }
       renderCards(document.getElementById('language-grid'), languages);
       renderCards(document.getElementById('music-grid'), songs);

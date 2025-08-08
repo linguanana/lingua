@@ -41,7 +41,7 @@ h3 {
   font-weight: normal; /* removes default bold */
   margin-bottom: 0.2em;
   font-size: 0.95rem;
-  font-weight: bold;
+  font-weight: normal;
   color: #333; /* 三級標題使用接近內文的顏色 */
 }
 
@@ -51,12 +51,11 @@ h3 {
   覆蓋掉從父元素（例如 h2）繼承來的藍色。
 */
 .info-text-size {
-   font-family: 'Noto Sans TC', 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans TC', 'Noto Sans', sans-serif;
   font-size: 0.98rem;
   line-height: 1.4;
   margin-bottom: 0.2em;
   color: #333; /* <-- 新增：強制設定為黑色 */
-  font-family: 'Noto Sans TC', 'Noto Sans', sans-serif; /* <-- 新增：確保字型一致 */
 }
 
 .info-text-size a {
