@@ -1,6 +1,6 @@
-// 🔧 Italic parser (currently for **...**) → colored word
 window.currentLanguage = window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
 
+// 🔧 Italic parser (currently for **...**) → colored word
 function parseWord(text) {
   if (!text) return "";
   return text.replace(/\*\*(.+?)\*\*/g, '<span class="italian-word">$1</span>');
@@ -168,21 +168,20 @@ function renderLesson(levels, moduleSpeakers = {}) {
 
       level.tips.forEach(tip => {
         const li = document.createElement("li");
-        let text = "";
 
+        let text = "";
         if (lang === "zh" && tip.zh) {
           text = `💡 ${tip.zh}`;
         } else if (tip.en) {
           text = `💡 ${tip.en}`;
         }
 
-        li.innerHTML = text;
+        li.innerHTML = parseWord(text);  // ✅ Apply coloring
         ul.appendChild(li);
       });
 
-  contentEl.appendChild(ul);
-}
-
+      contentEl.appendChild(ul);
+    }
 
     levelDiv.appendChild(contentEl);
     container.appendChild(levelDiv);
