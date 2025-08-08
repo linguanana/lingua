@@ -288,7 +288,7 @@ th, td {
 #topic-nav button, #lesson-buttons button {
   font-family: inherit;
   font-size: 0.98rem;
-  padding: 5px 10px; /* button 大小 */
+  padding: 4px 8px; /* button 大小 */
   border: 1px solid #ccc;
   background-color: #f0f0f0;
   border-radius: 5px;
