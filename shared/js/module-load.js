@@ -24,7 +24,7 @@ function renderModule(moduleData) {
   nav.id = "lesson-buttons";
 
   const label = document.createElement("p");
-  label.innerHTML = `<span class="info-text-size">📚 Lessons:</span>`;
+  label.innerHTML = `<span class="info-text-size">📚 ${i18n.lessons[currentLanguage]}</span>`;
   nav.appendChild(label);
 
   moduleData.lessons.forEach((lesson, index) => {
@@ -37,7 +37,7 @@ function renderModule(moduleData) {
       window.currentModuleId = moduleData.moduleId || 1;
       window.currentLessonId = lesson.lessonId;
 
-      const lessonLabel = window.currentLanguage === 'zh' ? '課程' : 'Lesson';
+      const lessonLabel = i18n.lesson[currentLanguage];
       lessonTitle.innerHTML = `<span class="info-text-size">🎬 ${lessonLabel} ${lesson.lessonId}: ${lesson.theme || ""}</span>`;
 
       lessonTheme.textContent = "";
@@ -76,7 +76,7 @@ function renderLesson(levels, moduleSpeakers = {}) {
 
   const infoText = document.createElement("p");
   infoText.className = "info-text-size";
-  infoText.innerHTML = `<span class="start-with-word">Start with Level 1</span> — come back for Level 2 or/and 3 as you progress.`;
+  infoText.innerHTML = `<span class="info-text-size">${i18n.startWithLevel1[currentLanguage]}</span>`;
   container.appendChild(infoText);
 
   const modId = window.currentModuleId;
@@ -98,7 +98,8 @@ function renderLesson(levels, moduleSpeakers = {}) {
     // 📗 Key Phrase + Audio
     if (level.keyPhrases?.length) {
       const h3 = document.createElement("h3");
-      h3.innerHTML = "📗 Key Phrase";
+      //h3.innerHTML = "📗 Key Phrase";
+      h3.innerHTML = i18n.keyPhrase[currentLanguage];
       contentEl.appendChild(h3);
 
       const audio = document.createElement("audio");
