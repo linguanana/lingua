@@ -47,6 +47,7 @@ h3 {
   覆蓋掉從父元素（例如 h2）繼承來的藍色。
 */
 .info-text-size {
+   font-family: 'Noto Sans TC', 'Noto Sans', sans-serif;
   font-size: 0.98rem;
   line-height: 1.4;
   margin-bottom: 0.2em;
@@ -55,7 +56,7 @@ h3 {
 }
 
 .info-text-size a {
-  font-size: 1.05rem;  /* 你可以改成 1.1rem 或 1.2rem，看你喜歡多大 */
+  font-size: 1.12rem;  /* 你可以改成 1.1rem 或 1.2rem，看你喜歡多大 */
   font-weight: 500;     /* 字體變稍微粗一點 */
   line-height: 1.6;
 }
