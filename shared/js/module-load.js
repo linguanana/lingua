@@ -160,10 +160,7 @@ function renderLesson(levels, moduleSpeakers = {}) {
       h3.innerHTML = "📌 Tip";
       contentEl.appendChild(h3);
 
-      const ul = document.createElement("ul");
-      ul.className = "auto-list";
-
-      tips.forEach(tip => {
+      level.tips.forEach(tip => {
         const p = document.createElement("p");
         p.className = "tip";
 
@@ -173,8 +170,6 @@ function renderLesson(levels, moduleSpeakers = {}) {
         p.innerHTML = `💡 ${text}`;
         contentEl.appendChild(p);
       });
-
-      contentEl.appendChild(ul);
     }
 
     levelDiv.appendChild(contentEl);

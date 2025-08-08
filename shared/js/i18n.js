@@ -5,6 +5,10 @@ window.i18n = {
     en: "⬅️ Back to All Modules",
     zh: "⬅️ 返回模組列表"
   },
+  backToHome: {
+    en: "⬅️ Back to Home",
+    zh: "⬅️ 返回主頁"
+  },
   lesson: {
     en: "Lesson",
     zh: "課程"
@@ -19,7 +23,7 @@ window.i18n = {
   },
   keyPhrase: {
     en: "📗 Key Phrase",
-    zh: "📗 重要句型"
+    zh: "📗 重點句型"
   },
   dialogue: {
     en: "🎯 Dialogue / When to use",
