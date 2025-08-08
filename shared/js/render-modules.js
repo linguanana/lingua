@@ -133,14 +133,46 @@ document.addEventListener('DOMContentLoaded', () => {
         // 這裡我們保留你原本的事件監聽器，但增加了更新 active 樣式的邏輯
         document.getElementById('lang-en').addEventListener('click', () => {
             currentLanguage = 'en';
+            localStorage.setItem('userLanguage', 'en'); // <-- 修正點1: 儲存語言到 localStorage
+            const activeModuleId = document.querySelector('.module.active')?.id;
             renderModules('modules-container');
+
+            // 修正點：在重新渲染後，恢復展開的模組
+            if (activeModuleId) {
+              const newActiveModule = document.getElementById(activeModuleId);
+              if (newActiveModule) {
+                newActiveModule.classList.add('active');
+                const lessonList = newActiveModule.querySelector('.lesson-list');
+                if (lessonList) {
+                  lessonList.style.maxHeight = lessonList.scrollHeight + 'px';
+                  lessonList.style.padding = '10px 12px';
+                }
+              }
+            }
+
             document.getElementById('lang-en').classList.add('active');
             document.getElementById('lang-zh').classList.remove('active');
         });
 
         document.getElementById('lang-zh').addEventListener('click', () => {
             currentLanguage = 'zh';
+            localStorage.setItem('userLanguage', 'zh');
+            const activeModuleId = document.querySelector('.module.active')?.id;
             renderModules('modules-container');
+
+            // 修正點：在重新渲染後，恢復展開的模組
+            if (activeModuleId) {
+              const newActiveModule = document.getElementById(activeModuleId);
+              if (newActiveModule) {
+                newActiveModule.classList.add('active');
+                const lessonList = newActiveModule.querySelector('.lesson-list');
+                if (lessonList) {
+                  lessonList.style.maxHeight = lessonList.scrollHeight + 'px';
+                  lessonList.style.padding = '10px 12px';
+                }
+              }
+            }
+
             document.getElementById('lang-zh').classList.add('active');
             document.getElementById('lang-en').classList.remove('active');
         });

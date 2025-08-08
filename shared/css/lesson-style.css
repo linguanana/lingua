@@ -330,29 +330,30 @@ nav {
     padding: 0 10px; /* This provides the essential horizontal spacing for all content */
 }
 
-#language-switcher {
-    text-align: right;
-    margin-bottom: 20px;
+/* for lang switch */
+#language-switcher-container {
+    display: flex;
+    justify-content: flex-end; /* 將按鈕對齊到右邊 */
+    align-items: center;
+    gap: 6px; /* 按鈕之間的間距縮小 */
+    margin-bottom: 2em; /* 和下方內容的間距 */
 }
 
-#language-switcher button {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+#language-switcher-container button {
+    font-family: inherit;
+    font-size: 0.85rem; /* 字體大小縮小 */
+    padding: 5px 10px; /* 按鈕大小縮小 */
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
     border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 0.85rem;
-    font-weight: 500;
     cursor: pointer;
-    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+    /* 確保文字顏色和過渡效果 */
+    color: inherit; /* 繼承父元素的顏色 */
+    transition: all 0.3s ease;
 }
 
-#language-switcher button:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-#language-switcher button.active {
-    background-color: var(--primary-color);
-    color: #fff;
+#language-switcher-container button.active {
+    background-color: #6a9acb; /* 啟動狀態的藍色 */
+    color: white; /* 啟動狀態的白色文字 */
+    border-color: #007bff;
 }
