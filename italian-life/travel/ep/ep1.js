@@ -16,28 +16,26 @@ const episodeData = {
           scene_zh: "第 1 天 — 在吧台點濃縮咖啡",
           dialogue: [
             { speaker: "1", text: "Buongiorno!", en: "Good morning!", zh: "早安！" },
-            { speaker: "2", text: "Buongiorno! Cosa prende?", en: "Good morning! What would you like?", zh: "早安！您要點什麼？" },
-            { speaker: "1", text: "Vorrei un espresso, per favore.", en: "I’d like an espresso, please.", zh: "我想要一杯濃縮咖啡，謝謝。" },
-            { speaker: "2", text: "Subito. Lo vuole qui o da portare via?", en: "Right away. For here or to go?", zh: "馬上來。內用還是外帶？" },
-            { speaker: "1", text: "Qui, grazie.", en: "For here, thank you.", zh: "內用，謝謝。" },
-            { speaker: "2", text: "Perfetto. Ecco il suo caffè.", en: "Perfect. Here’s your coffee.", zh: "好的。這是您的咖啡。" },
-            { speaker: "1", text: "Grazie mille!", en: "Thanks a lot!", zh: "非常感謝！" },
-            { speaker: "2", text: "Prego! A presto!", en: "You’re welcome! See you soon!", zh: "不客氣！回頭見！" }
-          ]
+            { speaker: "2", text: "Buongiorno! Un caffè, per favore.", en: "Good morning! An espresso, please.", zh: "早安！一杯濃縮咖啡，謝謝。" },
+            { speaker: "1", text: "Subito!", en: "Right away!", zh: "馬上來！" },
+            { speaker: "1", text: "Ecco il caffè. Altro?", en: "Here’s your coffee. Anything else?", zh: "您的咖啡。還需要別的嗎？" },
+            { speaker: "2", text: "No, grazie. Quanto costa?", en: "No, thanks. How much is it?", zh: "不用了，謝謝。多少錢？" },
+            { speaker: "1", text: "Un euro e dieci.", en: "One euro ten.", zh: "一歐元一角。" },
+            { speaker: "2", text: "Ecco a lei. Grazie!", en: "Here you go. Thank you!", zh: "給您，謝謝！" },
+            { speaker: "1", text: "Grazie a lei. Arrivederci!", en: "Thanks to you. Goodbye!", zh: "也謝謝您，再見！" }
         },
         {
           scene: "Day 2 – Asking for sugar and milk",
           scene_zh: "第 2 天 — 詢問要糖和牛奶",
           dialogue: [
             { speaker: "1", text: "Salve! Che bella giornata!", en: "Hello! What a lovely day!", zh: "您好！今天天氣真好！" },
-            { speaker: "2", text: "Salve a lei! Cosa posso prepararle?", en: "Hello to you! What can I get for you?", zh: "您也好！要喝點什麼呢？" },
-            { speaker: "1", text: "Un caffè con due zuccheri, per favore.", en: "A coffee with two sugars, please.", zh: "請給我一杯咖啡，加兩包糖。" },
-            { speaker: "2", text: "Due zuccheri... perfetto!", en: "Two sugars... perfect!", zh: "兩包糖……好的！" },
-            { speaker: "1", text: "E posso avere anche un bicchiere d’acqua, per cortesia?", en: "And may I have a glass of water too, please?", zh: "也可以給我一杯水嗎？麻煩你了。" },
-            { speaker: "2", text: "Subito! Acqua naturale o frizzante?", en: "Right away! Still or sparkling water?", zh: "馬上來！您要礦泉水還是氣泡水？" },
-            { speaker: "1", text: "Naturale, grazie mille.", en: "Still, thank you very much.", zh: "礦泉水，謝謝你。" },
-            { speaker: "2", text: "Con piacere! Ecco a lei.", en: "With pleasure! Here you go.", zh: "不客氣！給您。" },
-            { speaker: "1", text: "Molto gentile. Alla prossima!", en: "Very kind. See you next time!", zh: "您人真好。下次見囉！" },
+            { speaker: "1", text: "Un cappuccino, per favore.", en: "A cappuccino, please.", zh: "一杯卡布奇諾，謝謝。" },
+            { speaker: "2", text: "Con zucchero?", en: "With sugar?", zh: "要加糖嗎？" },
+            { speaker: "1", text: "Sì, grazie.", en: "Yes, thanks.", zh: "要，謝謝。" },
+            { speaker: "2", text: "Con latte?", en: "With milk?", zh: "要加牛奶嗎？" },
+            { speaker: "1", text: "No, senza latte.", en: "No, without milk.", zh: "不要，不加牛奶。" },
+            { speaker: "2", text: "Va bene. Sono due euro.", en: "Alright. That’s two euros.", zh: "好的，兩歐元。" },
+            { speaker: "1", text: "Ecco. Alla prossima!", en: "Here you go. See you next time!!", zh: "給您，下次見囉！" },
             { speaker: "2", text: "A presto! Buona giornata!", en: "See you soon! Have a great day!", zh: "下次見！祝您有個美好的一天！" }
           ]
         },
@@ -47,13 +45,14 @@ const episodeData = {
           dialogue: [
             { speaker: "1", text: "Ciao amici!", en: "Hey friends!", zh: "嗨朋友們！" },
             { speaker: "2", text: "Ciao! Benvenuta!", en: "Hi! Welcome!", zh: "哈囉！歡迎光臨！" },
-            { speaker: "1", text: "Vorrei un espresso con un po’ di latte.", en: "I’d like an espresso with a bit of milk.", zh: "我想要一杯濃縮，加一點牛奶。" },
-            { speaker: "2", text: "Va bene. Lo vuoi caldo o freddo?", en: "Alright. Do you want it hot or cold?", zh: "好的。您要熱的還是冷的？" },
-            { speaker: "1", text: "Caldo, grazie.", en: "Hot, thank you.", zh: "熱的，謝謝。" },
-            { speaker: "2", text: "Con zucchero o senza?", en: "With sugar or without?", zh: "加糖還是不加糖？" },
-            { speaker: "1", text: "Senza zucchero, per favore.", en: "Without sugar, please.", zh: "不加糖，謝謝。" }
-            { speaker: "2", text: "Perfetto. Ecco a te.", en: "Perfect. Here you go.", zh: "完美。給您。" },
-            { speaker: "1", text: "Grazie! A dopo!", en: "Thanks! See you later!", zh: "謝謝！待會見！" }
+            { speaker: "1", text: "Vorrei un caffè macchiato, per favore.", en: "I would like a macchiato, please.", zh: "我想要一杯瑪奇朵，謝謝。" },
+            { speaker: "2", text: "Per qui o da portare via?", en: "For here or to take away?", zh: "這裡喝還是外帶？" },
+            { speaker: "1", text: "Da portare via, grazie.", en: "To take away, thanks.", zh: "外帶，謝謝。" },
+            { speaker: "2", text: "Con zucchero?", en: "With sugar?", zh: "要加糖嗎？" },
+            { speaker: "1", text: "No, grazie.", en: "No, thanks.", zh: "不用，謝謝。" },
+            { speaker: "2", text: "Va bene. Sono un euro e cinquanta.", en: "Alright. That’s one euro fifty.", zh: "好的，一歐五角。" },
+            { speaker: "1", text: "Ecco. Buona giornata!", en: "Here you go. Have a nice day!", zh: "給您，祝您有美好的一天！" },
+            { speaker: "1", text: "Anche a lei!", en: "You too!", zh: "您也是！" }
           ]
         },
         {
@@ -88,12 +87,17 @@ const episodeData = {
           ]
         },
         {
-          scene: "Day 6: Paying with Cash",
-          scene_zh: "第 6 天 — 現金付款",
+          scene: "Day 6: Paying for Coffee",
+          scene_zh: "第 6 天 — 付款（現金或刷卡）",
           dialogue: [
             { speaker: "1", text: "Quanto costa il caffè?", en: "How much is the coffee?", zh: "這杯咖啡多少錢？" },
             { speaker: "2", text: "Un euro e cinquanta.", en: "One euro fifty.", zh: "一歐五。" },
-            { speaker: "1", text: "Ecco due euro.", en: "Here’s two euros.", zh: "這裡是兩歐。" },
+            { speaker: "1", text: "Posso pagare con la carta?", en: "Can I pay by card?", zh: "可以刷卡嗎？" },
+            { speaker: "2", text: "Sì, accettiamo carte.", en: "Yes, we accept cards.", zh: "是的，我們接受刷卡。" },
+            { speaker: "1", text: "Perfetto. Grazie mille!", en: "Perfect. Thank you so much!", zh: "太好了，非常感謝！" },
+            { speaker: "2", text: "Vuoi la ricevuta?", en: "Do you want the receipt?", zh: "您要收據嗎？" },
+            { speaker: "1", text: "No, grazie.", en: "No, thanks.", zh: "不用了，謝謝。" },
+            { speaker: "1", text: "O... ecco due euro.", en: "Or... here’s two euros.", zh: "或者... 這裡是兩歐。" },
             { speaker: "2", text: "Hai bisogno del resto?", en: "Do you need change?", zh: "需要找零嗎？" },
             { speaker: "1", text: "No, va bene così. Grazie!", en: "No, it's fine like this. Thanks!", zh: "不用了，這樣就好。謝謝！" },
             { speaker: "2", text: "Grazie a te! Buona giornata!", en: "Thanks to you! Have a nice day!", zh: "也謝謝您！祝您有個美好的一天！" }
@@ -103,12 +107,19 @@ const episodeData = {
           scene: "Day 7: Paying by Card",
           scene_zh: "第 7 天 — 刷卡付款",
           dialogue: [
-            { speaker: "1", text: "Buongiorno! Posso avere un caffè macchiato?", en: "Good morning! Can I have a macchiato?", zh: "早安！我可以來杯瑪奇朵嗎？" },
+            { speaker: "1", text: "Buongiorno!", en: "Good morning!", zh: "早安！" },
+            { speaker: "2", text: "Buongiorno! Desidera?", en: "Good morning! What would you like?", zh: "早安！您想要什麼？" },
+            { speaker: "1", text: "Vorrei un caffè macchiato, per favore.", en: "I’d like a macchiato, please.", zh: "我想要一杯瑪奇朵，謝謝。" },
+            { speaker: "2", text: "Con zucchero o latte?", en: "With sugar or milk?", zh: "加糖還是加奶？" },
+            { speaker: "1", text: "Con un po’ di zucchero, grazie.", en: "With a little sugar, thanks.", zh: "加一點糖，謝謝。" },
+            { speaker: "2", text: "Perfetto, arrivo subito.", en: "Perfect, coming right up.", zh: "好的，馬上來。" },
+            { speaker: "2", text: "Ecco il suo caffè macchiato.", en: "Here’s your macchiato.", zh: "您的瑪奇朵好了。" },
             { speaker: "1", text: "Posso pagare con la carta?", en: "Can I pay by card?", zh: "可以刷卡嗎？" },
             { speaker: "2", text: "Sì, accettiamo carte.", en: "Yes, we accept cards.", zh: "是的，我們接受刷卡。" },
             { speaker: "1", text: "Perfetto. Grazie mille!", en: "Perfect. Thank you so much!", zh: "太好了，非常感謝！" },
             { speaker: "2", text: "Prego. Vuoi la ricevuta?", en: "You're welcome. Do you want the receipt?", zh: "不客氣。您要收據嗎？" },
-            { speaker: "1", text: "No, grazie.", en: "No, thanks.", zh: "不用了，謝謝。" }
+            { speaker: "1", text: "No, grazie.", en: "No, thanks.", zh: "不用了，謝謝。" },
+            { speaker: "2", text: "Grazie a te! Buona giornata!", en: "Thanks to you! Have a nice day!", zh: "也謝謝您！祝您有個美好的一天！" }
           ]
         },
         {
