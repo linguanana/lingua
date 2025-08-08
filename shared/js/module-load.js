@@ -115,9 +115,12 @@ function renderLesson(levels, moduleSpeakers = {}) {
       ul.className = "auto-list";
 
       level.keyPhrases.forEach(p => {
-        const zh = p.zh ? `（${p.zh}）` : "";
         const li = document.createElement("li");
-        li.innerHTML = `<span class="italian-word">${p.text || p.it}</span> – ${p.en || ""}${zh}`;
+        const lang = window.currentLanguage || 'en';
+        let translation = "";
+
+        if (lang === 'zh') {translation = p.zh || "";} else {translation = `${p.en || ""} ${p.zh ? `（${p.zh}）` : ""}`;}
+        li.innerHTML = `<span class="italian-word">${p.text || p.it}</span> – ${translation}`;
         ul.appendChild(li);
       });
 
@@ -160,11 +163,15 @@ function renderLesson(levels, moduleSpeakers = {}) {
       const ul = document.createElement("ul");
       ul.className = "auto-list";
 
-      level.tips.forEach(tip => {
-        const zh = tip.zh ? `（${tip.zh}）` : "";
-        const li = document.createElement("li");
-        li.innerHTML = `${parseWord(tip.en)}${zh}`;
-        ul.appendChild(li);
+      tips.forEach(tip => {
+        const p = document.createElement("p");
+        p.className = "tip";
+
+        const lang = window.currentLanguage || 'en';
+        const text = tip[lang] || tip.text || "";
+
+        p.innerHTML = `💡 ${text}`;
+        contentEl.appendChild(p);
       });
 
       contentEl.appendChild(ul);
@@ -235,7 +242,7 @@ function renderDialogueLine(line, emoji) {
   const p = document.createElement("p");
   const lang = window.currentLanguage || 'en';
 
-  const zhLine = line.zh ? `（${line.zh}）` : "";
+  const zhLine = line.zh ? `→ ${line.zh}` : "";
   const enLine = line.en ? `→ ${line.en}` : "";
 
   let html = "";
