@@ -1,0 +1,127 @@
+/*
+ * 這是首頁專用的 CSS 樣式
+ * 它包含了語言切換器和首頁卡片的樣式
+ */
+
+/* --- 新增的語言切換器樣式 --- */
+#language-switcher-container {
+    font-family: inherit;
+    font-size: 0.98rem;
+    display: flex;
+    justify-content: flex-end; /* 靠右對齊 */
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 2em; /* 和下方內容的間距 */
+    gap: 6px; /* 連結之間的間距 */
+}
+
+#language-switcher-container a {
+    color: #6a9acb; /* 藍色連結文字 */
+    text-decoration: none; /* 移除底線 */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#language-switcher-container a.active {
+    color: #333; /* 啟動狀態的顏色，變成深灰色 */
+    font-weight: 500;
+    cursor: default; /* 啟動狀態時，滑鼠變成預設箭頭 */
+}
+
+#language-switcher-container a:not(.active):hover {
+    color: #007bff; /* 非啟動狀態的連結，滑鼠懸停時變色 */
+}
+
+/* --- 其餘的首頁樣式 --- */
+body {
+    background-color: var(--light-grey);
+}
+
+.homepage-container {
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 12px;
+}
+
+.intro-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.intro-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111;
+    margin: 30px 0 15px;
+    text-align: left;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px var(--shadow-color);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 20px;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.card p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.tool-card {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 30px;
+    font-size: 1.2em;
+}
+
+.tool-card:hover {
+    box-shadow: 0 6px 18px var(--shadow-color);
+}
+
+.tool-card h2 {
+    font-size: 1.8rem;
+}

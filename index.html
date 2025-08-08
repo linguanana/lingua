@@ -7,105 +7,17 @@
 
   <link rel="stylesheet" href="./shared/css/fonts.css">
   <link rel="stylesheet" href="./shared/css/module-style.css">
+  <link rel="stylesheet" href="./shared/css/home-style.css">
 
-  <style>
-    /* 新增首頁專用的樣式，繼承並覆蓋 module-style 的部分樣式 */
-    body {
-      background-color: var(--light-grey);
-    }
-
-    .homepage-container {
-      max-width: 900px;
-      margin: 15px auto;
-      padding: 12px;
-    }
-
-    .intro-title {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--text-color); /* 不用主色，避免太強調 */
-    margin-top: 20px;
-    }
-    .intro-subtitle {
-      text-align: center;
-      font-size: 1rem;
-      color: var(--text-color);
-      margin-bottom: 40px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      font-weight: 400;
-    }
-
-    .section-title {
-      font-size: 1.5rem;
-      font-weight: 600; /* 區塊標題加粗 */
-      color: #111;
-      margin: 30px 0 15px;
-      text-align: left;
-      /* 加強視覺層次 */
-      border-bottom: 2px solid var(--border-color);
-      padding-bottom: 5px;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
-
-    .card {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px var(--shadow-color);
-      transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-      cursor: pointer;
-      display: block;
-      text-decoration: none;
-      color: var(--text-color);
-      padding: 20px;
-      text-align: left;
-    }
-
-    .card:hover {
-      transform: translateY(-8px); /* 懸停時位移效果更明顯 */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* 陰影效果更明顯 */
-    }
-
-    .card h2 {
-      margin: 0;
-      font-size: 1.2rem;
-      font-weight: 600; /* 卡片標題加粗 */
-      color: var(--primary-color);
-    }
-
-    .card p {
-      margin-top: 8px;
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: #555; /* 描述文字顏色略淺 */
-    }
-
-    .tool-card {
-      background-color: var(--secondary-color);
-      border: 1px solid var(--border-color);
-      text-align: center;
-      padding: 30px;
-      font-size: 1.2em; /* 工具卡片的字體稍微大一些 */
-    }
-
-    .tool-card:hover {
-      box-shadow: 0 6px 18px var(--shadow-color);
-    }
-
-    .tool-card h2 {
-      font-size: 1.8rem;
-    }
-  </style>
 </head>
 <body>
   <div class="homepage-container">
+    <div id="language-switcher-container">
+    <a href="#" id="lang-en" class="active">EN</a>
+    <span class="separator"> | </span>
+    <a href="#" id="lang-zh">中文</a>
+    </div>
+
     <h1 class="intro-title">Speak like a local — real-life lessons in multiple languages 🌍</h1>
     <p class="intro-subtitle">Explore our language courses, enjoy music, and create your own content with our AI tool.</p>
 
