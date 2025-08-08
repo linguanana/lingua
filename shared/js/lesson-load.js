@@ -1,5 +1,8 @@
 // shared/js/lesson-load.js (已修復載入問題，並確保 Tip 區塊中的單字正確加粗)
 
+window.currentLanguage = window.currentLanguage || localStorage.getItem('lessonLang') || 'en';
+const currentLanguage = window.currentLanguage;
+
 document.addEventListener('DOMContentLoaded', () => {
     console.log("lesson-load.js: DOMContentLoaded event fired.");
 
@@ -41,13 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- Render Lesson Header ---
         const moduleLessonHeader = document.createElement('h1');
         moduleLessonHeader.title = lessonData.module_title_tooltip || `${lessonData.title_en} (${lessonData.title_zh})`;
-        moduleLessonHeader.innerHTML = `${lessonData.module_emoji || '🇮🇹'} Module ${lessonData.module_id || ''} – Lesson ${lessonData.lesson_id || ''}: ${lessonData.lesson_display_title || lessonData.title_en}`;
+        // zh and en
+        const displayTitle = lessonData.lesson_display_title || (currentLanguage === 'zh' ? lessonData.title_zh : lessonData.title_en);
+        moduleLessonHeader.innerHTML = `${lessonData.module_emoji || '🇮🇹'} Module ${lessonData.module_id || ''} – Lesson ${lessonData.lesson_id || ''}: ${displayTitle}`;
         appDiv.appendChild(moduleLessonHeader);
 
         const infoText = document.createElement('p');
         infoText.className = "info-text-size";
         infoText.innerHTML = `
-            <strong>🎬 Theme:</strong> ${lessonData.theme || 'N/A'}<br>
+            <strong>🎬 Theme:</strong> ${currentLanguage === 'zh' ? lessonData.theme_zh || lessonData.theme : lessonData.theme || 'N/A'}<br>
             <strong>📚 Lessons:</strong>
             ${lessonData.lesson_navigation ? lessonData.lesson_navigation.map(link =>
                 `<a href="lesson.html?lessonId=${link.id}"${link.id == lessonId ? ' class="current-lesson"' : ''}>${link.label}</a>`
@@ -65,7 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const levelTitle = document.createElement('h2');
             levelTitle.className = 'level-title';
-            levelTitle.innerHTML = `<span class="toggle-icon">+</span> ${level.title}`;
+
+            const levelTitleText = currentLanguage === 'zh' ? level.title_zh || level.title : level.title;
+            levelTitle.innerHTML = `<span class="toggle-icon">+</span> ${levelTitleText}`;
             levelTitle.onclick = () => window.toggleLessonLevel(level.levelId);
             levelDiv.appendChild(levelTitle);
 
@@ -85,7 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 else if (section.type === 'tip') sectionEmoji = '📌';
                 else if (section.type === 'task') sectionEmoji = '🤖';
 
-                sectionTitle.innerHTML = `${sectionEmoji} ${section.title}`;
+                const sectionTitleText = currentLanguage === 'zh' ? section.title_zh || section.title : section.title;
+                sectionTitle.innerHTML = `${sectionEmoji} ${sectionTitleText}`;
+
                 sectionContainer.appendChild(sectionTitle);
 
                 if (section.audio) {
@@ -105,7 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             phraseList.className = "auto-list";
                             section.phrases.forEach(phrase => {
                                 const p = document.createElement('p');
-                                p.innerHTML = `<span class="italian-word">${phrase.text}</span> – ${phrase.en} （${phrase.zh}）`;
+                                const meaning = currentLanguage === 'zh' ? `（${phrase.zh}）` : `– ${phrase.en}`;
+                                p.innerHTML = `<span class="italian-word">${phrase.text}</span> ${meaning}`;
                                 phraseList.appendChild(p);
                             });
                             sectionContainer.appendChild(phraseList);
@@ -151,8 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 dialogueBlock.lines.forEach(line => {
                                     const p = document.createElement('p');
                                     const displaySpeaker = line.speaker ? `${getSpeakerEmoji(line.speaker)} : ` : '';
-                                    p.innerHTML = `${displaySpeaker}<span class="italian-word">${line.text}</span><br>
-                                                   → ${line.en}${line.zh ? `（${line.zh}）` : ""}`;
+                                    const meaning = currentLanguage === 'zh' ? `（${line.zh}）` : `→ ${line.en}`;
+                                    p.innerHTML = `${displaySpeaker}<span class="italian-word">${line.text}</span><br>${meaning}`;
                                     dialogueBoxDiv.appendChild(p);
                                 });
                                 dialogueBoxDiv.appendChild(document.createElement('br'));
