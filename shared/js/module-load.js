@@ -117,10 +117,11 @@ function renderLesson(levels, moduleSpeakers = {}) {
       level.keyPhrases.forEach(p => {
         const li = document.createElement("li");
         const lang = window.currentLanguage || 'en';
-        let translation = "";
 
-        if (lang === 'zh') {translation = p.zh || "";} else {translation = `${p.en || ""} ${p.zh ? `（${p.zh}）` : ""}`;}
-        li.innerHTML = `<span class="italian-word">${p.text || p.it}</span> – ${translation}`;
+        let translation = "";
+        if (lang === "zh" && p.zh) {translation = ` – ${p.zh}`;} else if (lang === "en" && p.en) {translation = ` – ${p.en}`;}
+
+        li.innerHTML = `<span class="italian-word">${p.text || p.it}</span>${translation}`;
         ul.appendChild(li);
       });
 
