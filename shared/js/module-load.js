@@ -58,7 +58,9 @@ function renderModule(moduleData) {
     window.currentModuleId = moduleData.moduleId || 1;
     window.currentLessonId = firstLesson.lessonId;
 
-    lessonTitle.innerHTML = `<span class="info-text-size">🎬 Lesson ${firstLesson.lessonId}: ${firstLesson.theme || ""}</span>`;
+    const lessonLabel = window.currentLanguage === 'zh' ? '課程' : 'Lesson';
+    lessonTitle.innerHTML = `<span class="info-text-size">🎬 ${lessonLabel} ${firstLesson.lessonId}: ${firstLesson.theme || ""}</span>`;
+
     lessonTheme.textContent = "";
     renderLesson(firstLesson.levels, moduleData.speakers);
     nav.querySelector("button")?.classList.add("active");
