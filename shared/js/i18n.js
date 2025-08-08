@@ -18,13 +18,13 @@ window.i18n = {
     zh: "課程列表："
   },
   startWithPrefix: {
-  en: "Start with Level 1",
-  zh: "從第 1 階段開始"
+    en: "Start with Level 1",
+    zh: "從第 1 階段開始"
   },
   startWithSuffix: {
-  en: "— come back for Level 2 or/and 3 as you progress.",
-  zh: "，之後可以回來挑戰第 2 或 3 階段喔！"
-  }
+    en: "— come back for Level 2 or/and 3 as you progress.",
+    zh: "，之後可以回來挑戰第 2 或 3 階段喔！"
+  },
   keyPhrase: {
     en: "📗 Key Phrase",
     zh: "📗 重點句型"
