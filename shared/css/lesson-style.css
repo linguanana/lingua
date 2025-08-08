@@ -57,6 +57,12 @@ h3 {
   font-family: 'Noto Sans TC', 'Noto Sans', sans-serif; /* <-- 新增：確保字型一致 */
 }
 
+.info-text-size a {
+  font-size: 1.05rem;  /* 你可以改成 1.1rem 或 1.2rem，看你喜歡多大 */
+  font-weight: 500;     /* 字體變稍微粗一點 */
+  line-height: 1.6;
+}
+
 /* 粗體， 加底色，往後移*/
 .start-with-word{
   font-weight: bold;
