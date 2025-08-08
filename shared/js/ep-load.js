@@ -1,5 +1,5 @@
 // ep-load.js
-onst currentLanguage = window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
+const currentLanguage = window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
 // Function 1: Renders the episode header and topic navigation buttons
 function renderEpisodeHeaderAndTopics(episodeData) {
     const titleEl = document.getElementById("ep-title");
