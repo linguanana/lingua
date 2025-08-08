@@ -288,7 +288,7 @@ th, td {
 #topic-nav button, #lesson-buttons button {
   font-family: inherit;
   font-size: 0.98rem;
-  padding: 7px 13px; /* button 大小 */
+  padding: 5px 10px; /* button 大小 */
   border: 1px solid #ccc;
   background-color: #f0f0f0;
   border-radius: 5px;
@@ -307,7 +307,6 @@ th, td {
 nav {
     margin-top: 20px;     /* Space above the nav */
     margin-bottom: 5px;  /* Space below the nav */
-    padding-left: 5px;
     /* Removed padding-left, relying on .container for overall page padding */
 }
 
