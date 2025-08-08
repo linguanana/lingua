@@ -38,7 +38,9 @@ function renderModule(moduleData) {
       window.currentLessonId = lesson.lessonId;
 
       const lessonLabel = i18n.lesson[currentLanguage];
-      lessonTitle.innerHTML = `<span class="info-text-size">🎬 ${lessonLabel} ${lesson.lessonId}: ${lesson.theme || ""}</span>`;
+      const lessonThemeText = currentLanguage === "zh" ? lesson.theme_zh : lesson.theme;
+      lessonTitle.innerHTML = `<span class="info-text-size">🎬 ${lessonLabel} ${lesson.lessonId}: ${lessonThemeText || ""}</span>`;
+
 
       lessonTheme.textContent = "";
       renderLesson(lesson.levels, moduleData.speakers);
@@ -132,7 +134,8 @@ function renderLesson(levels, moduleSpeakers = {}) {
     // 🎯 Dialogue + Audio
     if (level.dialogues?.length) {
       const h3 = document.createElement("h3");
-      h3.innerHTML = "🎯 Dialogue / When to use";
+      //h3.innerHTML = "🎯 Dialogue / When to use";
+      h3.innerHTML = i18n.dialogueLabel?.[currentLanguage] || "🎯 Dialogue / When to use";
       contentEl.appendChild(h3);
 
       const audio = document.createElement("audio");
@@ -159,7 +162,8 @@ function renderLesson(levels, moduleSpeakers = {}) {
     // 📌 Tip
     if (level.tips?.length) {
       const h3 = document.createElement("h3");
-      h3.innerHTML = "📌 Tip";
+      //h3.innerHTML = "📌 Tip";
+      h3.innerHTML = i18n.dialogueLabel?.[currentLanguage] || "🎯 Dialogue / When to use";
       contentEl.appendChild(h3);
 
       const ul = document.createElement("ul");
