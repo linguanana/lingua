@@ -39,8 +39,8 @@ function renderModule(moduleData) {
 
       const lessonLabel = i18n.lesson[currentLanguage];
       const lessonThemeText = currentLanguage === "zh" ? lesson.theme_zh : lesson.theme;
-      lessonTitle.innerHTML = `<span class="info-text-size">🎬 ${lessonLabel} ${lesson.lessonId}: ${lessonThemeText || ""}</span>`;
-
+      //lessonTitle.innerHTML = `<span class="info-text-size">🎬 ${lessonLabel} ${lesson.lessonId}: ${lessonThemeText || ""}</span>`;
+      lessonTitle.innerHTML = `🎬 ${lessonLabel} ${lesson.lessonId}: ${lessonThemeText || ""}`;
 
       lessonTheme.textContent = "";
       renderLesson(lesson.levels, moduleData.speakers);
