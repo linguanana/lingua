@@ -38,6 +38,7 @@ h2 {
   color: #6a9acb; /* 二級標題使用主頁的藍色 */
 }
 h3 {
+  font-weight: normal; /* removes default bold */
   margin-bottom: 0.2em;
   font-size: 0.95rem;
   font-weight: bold;
