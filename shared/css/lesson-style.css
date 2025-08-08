@@ -16,7 +16,7 @@ body {
   /* --- 主要修改結束 --- */
 }
 body *:lang(zh-TW) {
-  font-size: 0.7rem; /* 從 0.92rem 調整為 0.7rem，約縮小 20% */
+  font-size: 0.9rem; /* 從 0.92rem 調整為 0.7rem，約縮小 20% */
 }
 
 h1, h2, h3 {
