@@ -46,10 +46,8 @@ function renderModules(targetContainerId, moduleIdToRender = null) {
                 let finalLink = lesson.link;
                 const currentPathname = window.location.pathname;
 
-                if (currentPathname.includes('/travel/') && !currentPathname.endsWith('/italian-life/')) {
-                    if (finalLink.startsWith('travel/')) {
-                        finalLink = finalLink.substring('travel/'.length);
-                    }
+                if (window.lessonLinkPrefixToStrip && finalLink.startsWith(window.lessonLinkPrefixToStrip)) {
+                    finalLink = finalLink.substring(window.lessonLinkPrefixToStrip.length);
                 }
 
                 a.href = finalLink;

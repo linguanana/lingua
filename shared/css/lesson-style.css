@@ -21,7 +21,7 @@ body *:lang(zh-TW) {
 
 h1, h2, h3 {
   margin-top: 0.5em;
-  font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC', 'Montserrat', sans-serif;
   font-weight: 600;
   color: #222;
 }
@@ -54,7 +54,7 @@ h3 {
   line-height: 1.4;
   margin-bottom: 0.2em;
   color: #333; /* <-- 新增：強制設定為黑色 */
-  font-family: 'Noto Sans', 'Noto Sans TC', sans-serif; /* <-- 新增：確保字型一致 */
+  font-family: 'Noto Sans TC', 'Noto Sans', sans-serif; /* <-- 新增：確保字型一致 */
 }
 
 /* 粗體， 加底色，往後移*/
