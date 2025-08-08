@@ -115,34 +115,46 @@ function toggleLessons(el) {
 
 // Initial page load handler
 document.addEventListener('DOMContentLoaded', () => {
-  const mainModulesContainer = document.getElementById('modules-container');
-  const travelModulesContainer = document.getElementById('travel-modules-container');
+    // 獲取語言切換的容器
+    const languageSwitcherContainer = document.getElementById('language-switcher-container');
+    const mainModulesContainer = document.getElementById('modules-container');
 
-  // Add language switch buttons only on main index
-  if (mainModulesContainer) {
-    const switcher = document.createElement('div');
-    switcher.id = 'language-switcher';
-    switcher.style = 'position:absolute; top:10px; right:10px; z-index:100;';
-    switcher.innerHTML = `
-      <button id="lang-en">English</button>
-      <button id="lang-zh">中文</button>
-    `;
-    document.body.appendChild(switcher);
+    if (languageSwitcherContainer && mainModulesContainer) {
+        const languages = [
+            { id: 'lang-en', text: 'English', code: 'en' },
+            { id: 'lang-zh', text: '中文', code: 'zh' }
+        ];
 
-    // Add event listeners to buttons
-    document.getElementById('lang-en').addEventListener('click', () => {
-      currentLanguage = 'en';
-      renderModules('modules-container');
-    });
+        // 動態生成按鈕
+        languages.forEach(lang => {
+            const button = document.createElement('button');
+            button.id = lang.id;
+            button.textContent = lang.text;
+            languageSwitcherContainer.appendChild(button);
+        });
 
-    document.getElementById('lang-zh').addEventListener('click', () => {
-      currentLanguage = 'zh';
-      renderModules('modules-container');
-    });
+        // 使用事件委託 (Event Delegation) 監聽按鈕點擊
+        languageSwitcherContainer.addEventListener('click', (event) => {
+            const clickedButton = event.target;
+            const languageCode = clickedButton.dataset.langCode;
 
-    // Initial load
-    renderModules('modules-container');
-  } else if (travelModulesContainer) {
-    // Leave this to the inline script in travel/index.html
-  }
+            if (languageCode) {
+                // 更新當前語言
+                currentLanguage = languageCode;
+                renderModules('modules-container');
+
+                // 更新按鈕的 active 狀態
+                languageSwitcherContainer.querySelectorAll('button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                clickedButton.classList.add('active');
+            }
+        });
+
+        // 初始載入時設定預設語言
+        const defaultLang = languages[0].code;
+        currentLanguage = defaultLang;
+        renderModules('modules-container');
+        document.getElementById(languages[0].id).classList.add('active');
+    }
 });

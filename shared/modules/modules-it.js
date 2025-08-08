@@ -14,7 +14,7 @@ const modulesData = [
      ]
    },
    {
-     title: '✈️ French Travel Phrases Survival French 旅行法國語精選',
+     title: '✈️ Italian Travel Phrases Survival Italian 旅行法國語精選',
      moduleId: 'travel1',
      lessons: [
        { name: 'Episode 1: At the Coffee Bar', name_zh: '第1集：咖啡吧體驗', link: 'travel/ep.html?id=1' },
