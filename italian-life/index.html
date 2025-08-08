@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>🇮🇹 Your Real Italian Life</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../shared/js/language-initializer.js"></script>
     <link rel="stylesheet" href="../shared/css/fonts.css">
     <link rel="stylesheet" href="../shared/css/module-style.css">
 </head>
@@ -14,16 +15,13 @@
 
         <div id="modules-container"></div>
     </div>
-    <script src="../shared/js/language-initializer.js"></script>
     <script src="../shared/modules/modules-it.js"></script>
     <script src="../shared/js/render-modules.js"></script>
 
     <script>
-        const renderPage = () => {
-            renderModules('modules-container');
-        };
-        document.addEventListener('DOMContentLoaded', renderPage);
-        window.addEventListener('language-changed', renderPage);
+      const renderPage = () => renderModules('modules-container');
+      document.addEventListener('DOMContentLoaded', renderPage);
+      window.addEventListener('language-changed', renderPage);
     </script>
     <footer>
         <p>&copy; 2024 Your Language App</p>

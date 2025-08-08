@@ -3,7 +3,7 @@
 
 // 'currentLanguage' is assumed to be a global variable, set by another script.
 // If you don't have a separate language script, you can declare it here:
-let currentLanguage = 'en';
+const currentLanguage = window.currentLanguage || 'en';
 
 function renderModules(targetContainerId, moduleIdToRender = null) {
     const modulesContainer = document.getElementById(targetContainerId);
@@ -84,3 +84,7 @@ function toggleLessons(el) {
         moduleDiv.classList.add('active');
     }
 }
+
+window.addEventListener('language-changed', () => {
+    renderModules('modules-container');
+});
