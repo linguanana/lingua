@@ -82,7 +82,7 @@ const episodeData = {
             { speaker: "1", text: "Interessante! Allora prendo un caffè shakerato.", en: "Interesting! Then I’ll take a caffè shakerato.", zh: "有趣！那我來一杯 caffè shakerato。" },
             { speaker: "2", text: "Perfetto! Lo preparo subito.", en: "Perfect! I’ll make it right away.", zh: "好的，我馬上幫您準備。" },
             { speaker: "1", text: "Grazie mille!", en: "Thanks a lot!", zh: "非常感謝！" },
-            { speaker: "2", text: "Ecco qua. Buon fresco!", en: "Here you go. Stay cool!", zh: "給您。消暑一下吧！" }
+            { speaker: "2", text: "Ecco qua. Buon fresco!", en: "Here you go. Stay cool!", zh: "給您。消暑一下吧！" },
             { speaker: "2", text: "A presto! Goditi il fresco!", en: "See you soon! Enjoy the cool!", zh: "下次見！好好消暑喔！" }
           ]
         },
