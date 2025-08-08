@@ -102,7 +102,7 @@ const modulesData = [
        title_zh: '🇮🇹 模組 12 – 處理行政 (即將推出!)',
        moduleId: 'm12',
        lessons: []
-   }
+   }，
     {
         title: '🇮🇹 Module 13 – Make Friends & Introduce Yourself ',
         title_zh: '🇮🇹 模組 13 – 認識朋友與自我介紹 (即將推出!)',
