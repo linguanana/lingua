@@ -16,6 +16,10 @@ body {
   padding: 0;
   line-height: 1.4;
   font-size: 14px;
+
+  /* === 新增以下兩行來改善字體清晰度 === */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {

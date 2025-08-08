@@ -13,7 +13,10 @@ body {
   padding: 20px 25px; /* 左右內邊距稍微多一點，讓內容不頂到邊 */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* 增加柔和的陰影 */
   border-radius: 10px; /* 增加圓角 */
-  /* --- 主要修改結束 --- */
+
+  /* === 新增以下兩行來改善字體清晰度 === */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3 {
