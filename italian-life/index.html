@@ -17,15 +17,14 @@
     <script src="../shared/js/language-initializer.js"></script>
     <script src="../shared/modules/modules-it.js"></script>
     <script src="../shared/js/render-modules.js"></script>
-    <script>
-    // //  it loads the saved language
-    const renderPage = () => {
-        renderModules('modules-container');
-    };
-    document.addEventListener('DOMContentLoaded', renderPage);
-    window.addEventListener('language-changed', renderPage);
-   </script>
 
+    <script>
+        const renderPage = () => {
+            renderModules('modules-container');
+        };
+        document.addEventListener('DOMContentLoaded', renderPage);
+        window.addEventListener('language-changed', renderPage);
+    </script>
     <footer>
         <p>&copy; 2024 Your Language App</p>
     </footer>
