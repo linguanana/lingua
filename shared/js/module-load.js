@@ -238,25 +238,26 @@ function activateLessonAccordion() {
 // ✅ Render dialogue lines with `when` above the speaker
 function renderDialogueLine(line, emoji) {
   const p = document.createElement("p");
-  const lang = window.currentLanguage || 'en';
-
-  const zhLine = line.zh ? `→ ${line.zh}` : "";
-  const enLine = line.en ? `→ ${line.en}` : "";
-
   let html = "";
 
-  // Show 'when' context always in English (or you can localize it later)
+  // ⏰ When context (optional)
   if (line.when) {
     html += `<div class="dialogue-context">🕓<span class="when-label">When:</span> ${line.when}</div>`;
   }
 
-  html += `${emoji} : <span class="italian-word">${line.text}</span><br>`;
-  if (lang === 'zh') {html += zhLine;} else {html += `${enLine} ${zhLine}`;}
+  // 💬 Main text (Italian)
+  html += `${emoji} : <span class="italian-word">${line.text}</span>`;
+
+  // 🌍 Translation (only one line, based on lang)
+  const lang = window.currentLanguage || 'en';
+  const translated = (lang === 'zh') ? line.zh : line.en;
+  if (translated) {
+    html += `<br>→ ${translated}`;
+  }
 
   p.innerHTML = html;
   return p;
 }
-
 
 // ✅ Export to global
 window.renderModule = renderModule;
