@@ -156,7 +156,6 @@ function renderLesson(levels, moduleSpeakers = {}) {
     }
 
     // 📌 Tip
-    // 📌 Tip
     if (level.tips?.length) {
       const h3 = document.createElement("h3");
       h3.innerHTML = "📌 Tip";
@@ -165,16 +164,25 @@ function renderLesson(levels, moduleSpeakers = {}) {
       const ul = document.createElement("ul");
       ul.className = "auto-list";
 
+      const lang = window.currentLanguage || 'en';
+
       level.tips.forEach(tip => {
         const li = document.createElement("li");
-        const zh = (tip.zh && tip.zh.trim() !== "") ? tip.zh : null;
-        const textToShow = zh || tip.en || "";
-        li.innerHTML = `💡 ${parseWord(textToShow)}`;
+        let text = "";
+
+        if (lang === "zh" && tip.zh) {
+          text = `💡 ${tip.zh}`;
+        } else if (tip.en) {
+          text = `💡 ${tip.en}`;
+        }
+
+        li.innerHTML = text;
         ul.appendChild(li);
       });
 
-      contentEl.appendChild(ul);
-    }
+  contentEl.appendChild(ul);
+}
+
 
     levelDiv.appendChild(contentEl);
     container.appendChild(levelDiv);
