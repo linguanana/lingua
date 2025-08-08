@@ -312,7 +312,7 @@ nav {
 
 /* 2. Styling for the actual "Back" link */
 .back-link {
-    font-size: 0.9em;      /* Adjust this for size (e.g., 1em for regular text size) */
+    font-size: 0.8em;      /* Adjust this for size (e.g., 1em for regular text size) */
     color: #007bff;         /* A standard blue for links */
     text-decoration: none;  /* REMOVE the default underline */
     cursor: pointer;        /* Keep this to indicate it's clickable */

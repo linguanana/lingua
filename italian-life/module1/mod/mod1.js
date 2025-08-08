@@ -103,7 +103,7 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "Ask 'How are you?'",
+          title: "Level 1 (A0): Ask 'How are you?'",
           keyPhrases: [
             // Changed "it" key to "text" for consistency with other data
             { text: "Come stai?", en: "How are you?", zh: "你好嗎？" },
@@ -130,7 +130,7 @@ const moduleData = {
         },
         {
           levelId: 2,
-          title: "More Emotional Replies",
+          title: "Level 2 (A0): More Emotional Replies",
           keyPhrases: [
             // Changed "it" key to "text" for consistency
             { text: "Sto benissimo!", en: "I’m great!", zh: "我非常好" },
@@ -175,7 +175,7 @@ const moduleData = {
         },
         {
           levelId: 2,
-          title: "Level 2 (A0+): Requests & understanding",
+          title: "Level 2 (A1): Requests & understanding",
           keyPhrases: [
             { text: "Capisco / Non capisco", en: "I understand / I don’t understand" },
             { text: "Posso...?", en: "Can I...?" },
@@ -229,7 +229,7 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "Basic name introduction",
+          title: "Level 1 (A0): Basic name introduction",
           title_zh: "基本名字介紹",
           keyPhrases: [
             { text: "Come ti chiami?", en: "What’s your name?", zh: "你叫什麼名字？" },
@@ -248,7 +248,7 @@ const moduleData = {
         },
         {
           levelId: 2,
-          title: "Formal version and polite expressions",
+          title: "Level 2 (A0): Formal version and polite expressions",
           title_zh: "正式版本與禮貌表達",
           keyPhrases: [
             { text: "Come si chiama?", en: "What’s your name? (formal)", zh: "您貴姓？" },
@@ -272,7 +272,7 @@ const moduleData = {
         },
         {
           levelId: 3,
-          title: "Say “Nice to meet you” in different ways",
+          title: "Level 3 (A0): Say “Nice to meet you” in different ways",
           title_zh: "用不同方式說「很高興認識你」",
           keyPhrases: [
             { text: "Piacere di conoscerti", en: "Nice to meet you (informal)", zh: "認識你很高興" },
@@ -307,8 +307,8 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          levelTitle: "Ask where someone is from",
-          levelTitle_zh: "✅ Level 1 (A0): 詢問某人來自哪裡",
+          title: "Level 1 (A0): Ask where someone is from",
+          title_zh: "Level 1 (A0): 詢問某人來自哪裡",
           keyPhrases: [
             {text: "Di dove sei?", en: "Where are you from?", zh: "你來自哪裡？"},
             {text: "Sono di Roma.", en: "I’m from Rome.", zh: "我來自羅馬"},
@@ -329,8 +329,8 @@ const moduleData = {
         },
         {
           levelId: 2,
-          levelTitle: "Talking about country and current city",
-          levelTitle_zh: "✅ Level 2 (A0+): 談論國家和目前居住的城市",
+          title: "Level 2 (A1): Talking about country and current city",
+          title_zh: "Level 2 (A1): 談論國家和目前居住的城市",
           keyPhrases: [
             {text: "Vengo da Parigi.", en: "I come from Paris.", zh: "我來自巴黎"},
             {text: "Abito a Firenze.", en: "I live in Florence.", zh: "我住在佛羅倫斯"},
@@ -375,8 +375,8 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          levelTitle: "Ask what someone is doing now",
-          levelTitle_zh: "✅ Level 1 (A0): 詢問某人現在在做什麼",
+          title: "Level 1 (A1): Ask what someone is doing now",
+          title_zh: "Level 1 (A1): 詢問某人現在在做什麼",
           keyPhrases: [
             {text: "Che cosa fai?", en: "What are you doing?", zh: "你現在在做什麼？"},
             {text: "Cosa fai?", en: "What are you doing?", zh: "你在幹嘛？（比較口語）"},
@@ -412,8 +412,8 @@ const moduleData = {
         },
         {
           levelId: 2,
-          levelTitle: "Ask and answer about professions",
-          levelTitle_zh: "✅ Level 2 (A0+): 詢問和回答關於職業",
+          title: "Level 2 (A1): Ask and answer about professions",
+          title_zh: "Level 2 (A1): 詢問和回答關於職業",
           keyPhrases: [
             {text: "Che lavoro fai?", en: "What do you do for work?", zh: "你是做什麼的？"},
             {text: "Faccio l'insegnante.", en: "I’m a teacher.", zh: "我是老師"},
@@ -439,8 +439,8 @@ const moduleData = {
         },
         {
           levelId: 3,
-          levelTitle: "Understand that 'Cosa fai?' can mean different things",
-          levelTitle_zh: "✅ Level 3 (A1): 理解「Cosa fai?」可以代表不同意思",
+          title: "Level 1 (A1): Understand that 'Cosa fai?' can mean different things",
+          title_zh: "Level 3 (A1): 理解「Cosa fai?」可以代表不同意思",
           keyPhrases: [
             {text: "Cosa fai?", en: "What are you doing? / What do you do?", zh: "你現在做什麼？／你做什麼工作？"},
             {text: "Che lavoro fai?", en: "What job do you do?", zh: "你做什麼工作"},
@@ -472,8 +472,8 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          levelTitle: "Le domande base – Basic Question Words",
-          levelTitle_zh: "✅ Level 1 (A0): 基本提問詞",
+          title: "Level 1 (A1): Le domande base – Basic Question Words",
+          title_zh: "Level 1 (A0): 基本提問詞",
           keyPhrases: [
             {text: "Come", en: "How", zh: "怎麼樣"},
             {text: "Chi", en: "Who", zh: "誰"},
@@ -496,8 +496,8 @@ const moduleData = {
         },
         {
           levelId: 2,
-          levelTitle: "Le domande in più – More Question Words",
-          levelTitle_zh: "✅ Level 2 (A0+): 更多提問詞",
+          title: "Level 2 (A1): Le domande in più – More Question Words",
+          title_zh: "Level 2 (A1): 更多提問詞",
           keyPhrases: [
             {text: "Quando", en: "When", zh: "何時"},
             {text: "Perché", en: "Why", zh: "為什麼"},
@@ -524,8 +524,8 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          levelTitle: "Introducing Yourself and Others",
-          levelTitle_zh: "✅ Level 1 (A0): 介紹自己和他人",
+          title: "Level 1 (A1): Introducing Yourself and Others",
+          title_zh: "Level 1 (A1): 介紹自己和他人",
           keyPhrases: [
             {text: "Io sono...", en: "I am...", zh: "我是..."},
             {text: "Sono...", en: "I'm... - *subject omitted*", zh: "我是... 主詞可省略"},
@@ -547,9 +547,8 @@ const moduleData = {
         },
         {
           levelId: 2,
-          levelTitle: "Meet the Italian Subject Pronouns",
-          levelTitle_zh: "✅ Level 2 (A0+): 認識義大利主詞代名詞",
-
+          title: "Level 2 (A1):Meet the Italian Subject Pronouns",
+          title_zh: "Level 2 (A1):: 認識義大利主詞代名詞",
           keyPronouns: [
             {text: "io", en: "I", zh: "我"},
             {text: "io sono...", en: "I am...", zh: "我是..."},
@@ -595,9 +594,8 @@ const moduleData = {
         },
         {
           levelId: 3,
-          levelTitle: "Possessive Pronouns",
-          levelTitle_zh: "✅ Level 3 (A1): 所有格代名詞",
-
+          title: "Level 3 (A1): Possessive Pronouns",
+          title_zh: "Level 3 (A1): 所有格代名詞",
           keyPhrases: [
             {title: "Masculine Singular / Feminine Singular"},
             {text: "il mio / la mia", en: "my + Singular", zh: "我的"},
