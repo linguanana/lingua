@@ -233,16 +233,25 @@ function activateLessonAccordion() {
 // ✅ Render dialogue lines with `when` above the speaker
 function renderDialogueLine(line, emoji) {
   const p = document.createElement("p");
+  const lang = window.currentLanguage || 'en';
+
   const zhLine = line.zh ? `（${line.zh}）` : "";
-  const enLine = line.en ? `→ ${line.en} ${zhLine}` : zhLine;
+  const enLine = line.en ? `→ ${line.en}` : "";
+
   let html = "";
+
+  // Show 'when' context always in English (or you can localize it later)
   if (line.when) {
     html += `<div class="dialogue-context">🕓<span class="when-label">When:</span> ${line.when}</div>`;
   }
-  html += `${emoji} : <span class="italian-word">${line.text}</span><br>${enLine}`;
+
+  html += `${emoji} : <span class="italian-word">${line.text}</span><br>`;
+  if (lang === 'zh') {html += zhLine;} else {html += `${enLine} ${zhLine}`;}
+
   p.innerHTML = html;
   return p;
 }
+
 
 // ✅ Export to global
 window.renderModule = renderModule;
