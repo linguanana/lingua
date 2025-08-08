@@ -1,4 +1,6 @@
 // 🔧 Italic parser (currently for **...**) → colored word
+window.currentLanguage = window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
+
 function parseWord(text) {
   if (!text) return "";
   return text.replace(/\*\*(.+?)\*\*/g, '<span class="italian-word">$1</span>');
@@ -35,7 +37,9 @@ function renderModule(moduleData) {
       window.currentModuleId = moduleData.moduleId || 1;
       window.currentLessonId = lesson.lessonId;
 
-      lessonTitle.innerHTML = `<span class="info-text-size">🎬 Lesson ${lesson.lessonId}: ${lesson.theme || ""}</span>`;
+      const lessonLabel = window.currentLanguage === 'zh' ? '課程' : 'Lesson';
+      lessonTitle.innerHTML = `<span class="info-text-size">🎬 ${lessonLabel} ${lesson.lessonId}: ${lesson.theme || ""}</span>`;
+
       lessonTheme.textContent = "";
       renderLesson(lesson.levels, moduleData.speakers);
       activateLessonAccordion();
