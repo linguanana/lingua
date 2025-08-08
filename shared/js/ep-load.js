@@ -69,9 +69,12 @@ function renderSingleTopic(topicObj) {
         sceneDiv.className = "scene-block lesson-level";
 
         const sceneTitle = document.createElement("h3");
-        // Use episodeData.toggle_title and sceneObj.scene
-        sceneTitle.textContent = episodeData.toggle_title + ": " + sceneObj.scene;
-        // Use 'level-title' class for the clickable title
+        // 根據語言切換場景名稱
+        const sceneName = (window.currentLanguage === 'zh' && sceneObj.scene_zh)
+          ? sceneObj.scene_zh
+          : sceneObj.scene;
+
+        sceneTitle.textContent = episodeData.toggle_title + ": " + sceneName;
         sceneTitle.className = "scene-title level-title";
         sceneDiv.appendChild(sceneTitle);
 
