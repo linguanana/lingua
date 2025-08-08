@@ -23,6 +23,7 @@ const episodeData = {
             { speaker: "1", text: "Un euro e dieci.", en: "One euro ten.", zh: "一歐元一角。" },
             { speaker: "2", text: "Ecco a lei. Grazie!", en: "Here you go. Thank you!", zh: "給您，謝謝！" },
             { speaker: "1", text: "Grazie a lei. Arrivederci!", en: "Thanks to you. Goodbye!", zh: "也謝謝您，再見！" }
+          ]
         },
         {
           scene: "Day 2 – Asking for sugar and milk",
@@ -72,7 +73,6 @@ const episodeData = {
           scene: "Day 5: Iced Coffee Options",
           scene_zh: "第 5 天 — 冰咖啡選項",
           dialogue: [
-
             { speaker: "1", text: "Salve! Fa caldo oggi!", en: "Hello! It’s hot today!", zh: "哈囉！今天好熱啊！" },
             { speaker: "2", text: "Verissimo! Vuoi qualcosa di fresco?", en: "Very true! Want something cold?", zh: "真的！您要來點冰的嗎？" },
             { speaker: "1", text: "Avete caffè freddo?", en: "Do you have iced coffee?", zh: "你們有冰咖啡嗎？" },
