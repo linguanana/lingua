@@ -36,7 +36,7 @@ function renderModules(targetContainerId, moduleIdToRender = null) {
         moduleDiv.id = moduleData.moduleId;
 
         const h2 = document.createElement('h2');
-        h2.textContent = currentLanguage === 'zh' && moduleData.title_zh ? moduleData.title_zh : moduleData.title;
+        h2.textContent = currentLanguage === 'zh' ? moduleData.title_zh : moduleData.title;
         h2.onclick = function() { toggleLessons(this); };
 
         const lessonListDiv = document.createElement('div');
