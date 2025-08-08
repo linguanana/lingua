@@ -1,5 +1,5 @@
 // ep-load.js
-
+onst currentLanguage = window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
 // Function 1: Renders the episode header and topic navigation buttons
 function renderEpisodeHeaderAndTopics(episodeData) {
     const titleEl = document.getElementById("ep-title");
@@ -107,8 +107,12 @@ function renderSingleTopic(topicObj) {
             const lineEl = document.createElement("p");
             const emoji = line.speaker === "1" ? "👩🏻‍‍" : "🧑‍🍳";
             lineEl.innerHTML = `
-                <strong>${emoji} <span class="italian-word">${line.text}</span></strong><br>
-                <span class="translation">→ ${line.en}${line.zh ? ` (${line.zh})` : ""}</span>
+              <strong>${emoji} <span class="italian-word">${line.text}</span></strong><br>
+              <span class="translation">→ ${
+                currentLanguage === 'zh'
+                  ? (line.zh || line.en || "")
+                  : (line.en || line.zh || "")
+              }</span>
             `;
             dialogueList.appendChild(lineEl);
         });
