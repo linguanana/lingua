@@ -1,7 +1,6 @@
 // shared/js/lesson-load.js (已修復載入問題，並確保 Tip 區塊中的單字正確加粗)
 
 window.currentLanguage = window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
-const currentLanguage = window.currentLanguage;
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("lesson-load.js: DOMContentLoaded event fired.");
