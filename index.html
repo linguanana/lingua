@@ -29,7 +29,7 @@
     </div>
 
     <h2 class="section-title">Like what you see?</h2>
-    <p>This entire website was created and translated using our own AI-powered tool.</p>
+    <p id="ai-description">This entire website was created and translated using our own AI-powered tool.</p>
     <div class="card-grid">
       <a href="https://theparroto.com" class="card tool-card">
         <h2>🦜 Parroto</h2>
@@ -71,6 +71,9 @@
       const introTitle = document.querySelector('.intro-title');
       const introSubtitle = document.querySelector('.intro-subtitle');
       const sectionTitles = document.querySelectorAll('.section-title');
+      const aiToolDesc = document.querySelector('#ai-description');
+      const parrotoTitle = document.querySelector('.tool-card h2');
+      const parrotoDesc = document.querySelector('.tool-card p');
       if (window.currentLanguage === 'zh') {
         if (introTitle) introTitle.textContent = '像當地人一樣說話 — 實用多國語言課程 🌍';
         if (introSubtitle) introSubtitle.textContent = '探索我們的語言課程、享受音樂，並使用我們的 AI 工具創造你自己的內容。';
