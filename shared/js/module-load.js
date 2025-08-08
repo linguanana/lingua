@@ -76,7 +76,8 @@ function renderLesson(levels, moduleSpeakers = {}) {
 
   const infoText = document.createElement("p");
   infoText.className = "info-text-size";
-  infoText.innerHTML = `<span class="info-text-size">${i18n.startWithLevel1[currentLanguage]}</span>`;
+  const lang = window.currentLanguage || 'en';
+  infoText.innerHTML = `<span class="start-with-word">${i18n.startWithPrefix[lang]}</span> ${i18n.startWithSuffix[lang]}`;
   container.appendChild(infoText);
 
   const modId = window.currentModuleId;
