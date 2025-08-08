@@ -13,9 +13,9 @@
 <body>
   <div class="homepage-container">
     <div id="language-switcher-container">
-    <a href="#" id="lang-en" class="active">EN</a>
-    <span class="separator"> | </span>
-    <a href="#" id="lang-zh">中文</a>
+      <a href="#" id="lang-en" class="active">EN</a>
+      <span class="separator"> | </span>
+      <a href="#" id="lang-zh">中文</a>
     </div>
 
     <h1 class="intro-title">Speak like a local — real-life lessons in multiple languages 🌍</h1>
@@ -23,11 +23,11 @@
 
     <h2 class="section-title">Start Learning Today!</h2>
     <div class="card-grid" id="language-grid">
-      </div>
+    </div>
 
     <h2 class="section-title">Learn with Music!</h2>
     <div class="card-grid" id="music-grid">
-      </div>
+    </div>
 
     <h2 class="section-title">Like what you see?</h2>
     <p>This entire website was created and translated using our own AI-powered tool.</p>
@@ -42,41 +42,56 @@
   <script>
     // 語言課程的資料陣列
     const languages = [
-      { name: 'Italian Life', flag: '🇮🇹', url: './italian-life/index.html', desc: 'Step into daily Italian life — Italian, as it truly is.' },
-      { name: 'French Life', flag: '🇫🇷', url: './french-life/index.html', desc: 'Real-life conversations and scenarios to get you speaking fast.' },
-      { name: 'Spanish Life', flag: '🇪🇸', url: './spanish-life/index.html', desc: 'Practical phrases and cultural insights to help you navigate Spain.' },
+      { name: 'Italian Life', name_zh: '義大利生活', flag: '🇮🇹', url: './italian-life/index.html', desc: 'Step into daily Italian life — Italian, as it truly is.', desc_zh: '走進真實的義大利日常生活，學習道地的義大利語。' },
+      { name: 'French Life', name_zh: '法國生活', flag: '🇫🇷', url: './french-life/index.html', desc: 'Real-life conversations and scenarios to get you speaking fast.', desc_zh: '透過實際對話與情境，讓你快速掌握法語。' },
+      { name: 'Spanish Life', name_zh: '西班牙生活', flag: '🇪🇸', url: './spanish-life/index.html', desc: 'Practical phrases and cultural insights to help you navigate Spain.', desc_zh: '實用短語與文化見解，幫助你遊覽西班牙。' },
     ];
-
     // 音樂歌曲的資料陣列
     const songs = [
-      { name: 'Italian Songs', flag: '🇮🇹', url: './italian-song/index.html', desc: 'Learn new vocabulary and pronunciation with popular Italian songs.' },
-      { name: 'French Songs', flag: '🇫🇷', url: './french-song/index.html', desc: 'Dive into French culture through timeless and modern melodies.' },
-      { name: 'Spanish Songs', flag: '🇪🇸', url: './spanish-song/index.html', desc: 'Master Spanish rhythms and lyrics with our song lessons.' },
+      { name: 'Italian Songs', name_zh: '義大利歌曲', flag: '🇮🇹', url: './italian-song/index.html', desc: 'Learn new vocabulary and pronunciation with popular Italian songs.', desc_zh: '透過熱門義大利歌曲，學習新詞彙與發音。' },
+      { name: 'French Songs', name_zh: '法國歌曲', flag: '🇫🇷', url: './french-song/index.html', desc: 'Dive into French culture through timeless and modern melodies.', desc_zh: '透過經典與現代旋律，深入法國文化。' },
+      { name: 'Spanish Songs', name_zh: '西班牙歌曲', flag: '🇪🇸', url: './spanish-song/index.html', desc: 'Master Spanish rhythms and lyrics with our song lessons.', desc_zh: '藉由我們的歌曲課程，掌握西班牙語的節奏與歌詞。' },
     ];
 
-    // 生成語言課程卡片
-    const languageGrid = document.getElementById('language-grid');
-    languages.forEach(item => {
-      const cardHtml = `
-        <a href="${item.url}" class="card">
-          <h2>${item.flag} ${item.name}</h2>
-          <p>${item.desc}</p>
-        </a>
-      `;
-      languageGrid.innerHTML += cardHtml;
-    });
+    function renderCards(grid, data) {
+      grid.innerHTML = '';
+      data.forEach(item => {
+        const title = window.currentLanguage === 'zh' ? item.name_zh : item.name;
+        const desc = window.currentLanguage === 'zh' ? item.desc_zh : item.desc;
+        const cardHtml = `
+          <a href="${item.url}" class="card">
+            <h2>${item.flag} ${title}</h2>
+            <p>${desc}</p>
+          </a>
+        `;
+        grid.innerHTML += cardHtml;
+      });
+    }
 
-    // 生成音樂歌曲卡片
-    const musicGrid = document.getElementById('music-grid');
-    songs.forEach(item => {
-      const cardHtml = `
-        <a href="${item.url}" class="card">
-          <h2>🎵 ${item.name}</h2>
-          <p>${item.desc}</p>
-        </a>
-      `;
-      musicGrid.innerHTML += cardHtml;
-    });
+    function renderHomepage() {
+      const introTitle = document.querySelector('.intro-title');
+      const introSubtitle = document.querySelector('.intro-subtitle');
+      const sectionTitles = document.querySelectorAll('.section-title');
+      if (window.currentLanguage === 'zh') {
+        if (introTitle) introTitle.textContent = '像當地人一樣說話 — 實用多國語言課程 🌍';
+        if (introSubtitle) introSubtitle.textContent = '探索我們的語言課程、享受音樂，並使用我們的 AI 工具創造你自己的內容。';
+        if (sectionTitles[0]) sectionTitles[0].textContent = '立即開始學習！';
+        if (sectionTitles[1]) sectionTitles[1].textContent = '從音樂中學習！';
+        if (sectionTitles[2]) sectionTitles[2].textContent = '喜歡我們的網站嗎？';
+      } else {
+        if (introTitle) introTitle.textContent = 'Speak like a local — real-life lessons in multiple languages 🌍';
+        if (introSubtitle) introSubtitle.textContent = 'Explore our language courses, enjoy music, and create your own content with our AI tool.';
+        if (sectionTitles[0]) sectionTitles[0].textContent = 'Start Learning Today!';
+        if (sectionTitles[1]) sectionTitles[1].textContent = 'Learn with Music!';
+        if (sectionTitles[2]) sectionTitles[2].textContent = 'Like what you see?';
+      }
+      renderCards(document.getElementById('language-grid'), languages);
+      renderCards(document.getElementById('music-grid'), songs);
+    }
+    document.addEventListener('DOMContentLoaded', renderHomepage);
+    window.addEventListener('language-changed', renderHomepage);
   </script>
+
+  <script src="./shared/js/language-initializer.js"></script>
 </body>
 </html>
