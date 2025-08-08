@@ -13,7 +13,7 @@ function renderEpisodeHeaderAndTopics(episodeData) {
     const nav = document.createElement("div");
     nav.id = "topic-nav";
 
-    const label = document.createElement("p");
+    const label = document.createElement("div");
     label.className = "info-text-size";
     label.innerHTML = `<strong>📚 Topics:</strong> `;
     nav.appendChild(label);
