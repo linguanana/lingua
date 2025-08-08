@@ -163,7 +163,7 @@ function renderLesson(levels, moduleSpeakers = {}) {
     if (level.tips?.length) {
       const h3 = document.createElement("h3");
       //h3.innerHTML = "📌 Tip";
-      h3.innerHTML = i18n.dialogueLabel?.[currentLanguage] || "🎯 Dialogue / When to use";
+      h3.innerHTML = i18n.dialogueLabel?.[currentLanguage] || "📌 Tip";
       contentEl.appendChild(h3);
 
       const ul = document.createElement("ul");
