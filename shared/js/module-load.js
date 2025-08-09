@@ -92,7 +92,11 @@ function renderLesson(levels, moduleSpeakers = {}) {
 
     const titleEl = document.createElement("h2");
     titleEl.className = "level-title";
-    titleEl.innerHTML = `✅ ${level.title}`;
+    const levelTitleText =
+    (window.currentLanguage === 'zh')
+      ? (level.title_zh || level.title)
+      : level.title;
+      titleEl.innerHTML = `✅ ${levelTitleText}`;
     levelDiv.appendChild(titleEl);
 
     const contentEl = document.createElement("div");
