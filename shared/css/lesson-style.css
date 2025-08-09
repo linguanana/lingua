@@ -232,6 +232,11 @@ th, td {
     transition: transform 0.3s ease;
 }
 
+/* ep 的 topic 場景標題的藍色樣式 */
+h3.scene-title {
+  color: #6a9acb;
+}
+
 /* 當一個手風琴區塊被打開時 */
 .lesson-level.active .level-title {
   background-color: #e8e8e8; /* 打開時背景顏色略深 */
