@@ -14,7 +14,7 @@ function renderEpisodeHeaderAndTopics(episodeData) {
   titleEl.setAttribute("title", `${episodeData.title_en} (${episodeData.title_zh})`);
 
   // ✅ Insert topic header (ABOVE the Topics nav)
-  const topicHeader = document.createElement('h2');
+  const topicHeader = document.createElement('p');
   topicHeader.id = 'topic-header';
   topicHeader.className = 'info-text-size';
   const firstTopic = episodeData.topics[0];
