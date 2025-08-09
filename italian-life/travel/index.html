@@ -1,35 +1,32 @@
+<!-- ep.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>✈️ Travel Survival Italian</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>window.lessonLinkPrefixToStrip = 'travel/';</script>
-    <link rel="stylesheet" href="../../shared/css/fonts.css">
-    <link rel="stylesheet" href="../../shared/css/module-style.css">
+  <meta charset="UTF-8">
+  <title id="page-title">Episode</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../shared/js/language-initializer.js"></script>
+  <script>window.lessonLinkPrefixToStrip = 'travel/';</script>
+  <link rel="stylesheet" href="../../shared/css/fonts.css">
+  <link rel="stylesheet" href="../../shared/css/lesson-style.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="../index.html" class="back-link">⬅️ Back to All Modules</a>
-        </nav>
-        <h1>✈️ Travel Survival Italian</h1>
-        <p class="course-intro">Master essential Italian phrases for your travels.</p>
-        <div id="travel-modules-container"></div>
-    </div>
 
-    <script src="../../shared/modules/modules-it.js"></script>
-    <script src="../../shared/js/render-modules.js"></script>
+  <h1 id="ep-title">Loading…</h1>
+  <nav>
+      <a href="index1.html" class="back-link">⬅️ Back to All Episodes</a>
+  </nav>
+  <div id="topics"></div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const requestedModuleId = 'travel1';
-            // Call the shared renderModules function, specifying the target container and the module ID
-            renderModules('travel-modules-container', requestedModuleId);
-        });
-    </script>
-    <footer>
-        <p>&copy; 2025 Your Language App</p>
-    </footer>
+  <!-- ✅ Load helper functions first -->
+  <script src="../../shared/js/ep-load.js"></script>
+  <!-- ✅ Then load the episode-specific data -->
+  <script>
+    const script = document.createElement("script");
+    const id = new URLSearchParams(window.location.search).get("id") || "1";
+    script.src = `ep/ep${id}.js`;
+    script.onload = () => renderEpisodeHeaderAndTopics(episodeData);
+    document.body.appendChild(script);
+  </script>
 </body>
 </html>
