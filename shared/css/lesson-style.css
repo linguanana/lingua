@@ -8,7 +8,6 @@ body {
   max-width: 650px;
   margin: 0 auto;  /* ⬅️ 自動左右置中 */
   padding: 20px;
-  /* --- 以下是主要的修改 --- */
   margin: 10px auto;  /* 上下留白更多，左右自動置中 */
   padding: 20px 25px; /* 左右內邊距稍微多一點，讓內容不頂到邊 */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* 增加柔和的陰影 */
@@ -203,13 +202,13 @@ th, td {
  .spacer-md { margin-top: 12px; }
  .spacer-lg { margin-top: 20px; }
 
-/* this is for lesson level and lesson context ========= */
-
+/* this is for module-use lesson level and lesson context ========= */
 .lesson-level {
   margin-bottom: 0.5px;
 }
 
 .level-title {
+    font-family: 'Noto Sans TC', 'Noto Sans', sans-serif;
     font-size: 0.88rem; /* 原本是 0.92rem，可再小一點點 */
     cursor: pointer; /* Indicates it's clickable */
     user-select: none; /* Prevents text selection on double-click */

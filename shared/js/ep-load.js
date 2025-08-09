@@ -10,7 +10,7 @@ function renderEpisodeHeaderAndTopics(episodeData) {
   const topicsContainer = document.getElementById("topics");
 
   // Display title
-  titleEl.textContent = `🎬 ${episodeData.episode}`;
+  titleEl.textContent = `${episodeData.episode}`;
   titleEl.setAttribute("title", `${episodeData.title_en} (${episodeData.title_zh})`);
 
   // ✅ Insert topic header (ABOVE the Topics nav)

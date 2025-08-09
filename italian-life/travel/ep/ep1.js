@@ -1,15 +1,14 @@
 const episodeData = {
   ep_title: "ep",
   episodeId: 1,
-  episode: "🇮🇹 Episode – Travel to Italy",
-  title_en: "Italian Travel Conversations",
-  title_zh: "義大利旅遊大補帖",
+  episode: "🇮🇹 Episode – Italian Travel Conversations",
+  episode_zh: "🇮🇹 特別篇 - 義大利旅遊大補帖",
   toggle_title: "Scenes",
   topics: [
     {
       topicId: 1,
-      topic: "☕ 10 Ways to Order Coffee",
-      topic_zh: "☕10 種義大利咖啡點法",
+      topic: "☕ 10 Ways to Order Coffee - One Example a Day",
+      topic_zh: "☕10 種義大利咖啡點法 - 每天一個例子",
       scenes: [
         {
           scene: "Day 1 – Ordering an espresso at the bar",
@@ -155,7 +154,8 @@ const episodeData = {
     },
     {
       topicId: 6,
-      topic: "🍰 10 Italian Desserts You Must Try",
+      topic: "10 Italian Desserts 🍰 You Must Try - One Example a Day",
+      topic_zh: "10 款必嚐的義大利甜點 🍰 - 每天一個例子",
       scenes: [
         {
           scene: "Day 1: Tiramisù – 酒精？自製？",
