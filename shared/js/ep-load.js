@@ -16,6 +16,7 @@ function renderEpisodeHeaderAndTopics(episodeData) {
   // ✅ Insert topic header (ABOVE the Topics nav)
   const topicHeader = document.createElement('h2');
   topicHeader.id = 'topic-header';
+  topicHeader.className = 'info-text-size';
   const firstTopic = episodeData.topics[0];
   topicHeader.textContent = currentLanguage === 'zh'
     ? `🎬 主題 ${firstTopic.topicId}: ${firstTopic.topic_zh || firstTopic.topic}`
