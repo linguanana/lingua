@@ -11,7 +11,7 @@ const modulesData = [
             { name: 'Lesson5: Where Are You From?', name_zh: '第5課：你從哪裡來', link: 'module1/index.html' },
             { name: 'Lesson6: What Are You Doing? What is Your Job?', name_zh: '第6課：你在做什麼？／你的職業是什麼', link: 'module1/index.html' },
             { name: 'Lesson7: French Question Words', name_zh: '第7課：義大利提問詞（怎麼樣、誰、什麼、哪裡、何時、為什麼、哪一個以及多少）', link: 'module1/index.html' },
-            { name: 'Lesson8: Personal Pronouns and Possessives', name_zh: '第8課：人稱代名詞與所有格（我,你,他,她／您）', link: 'module1/index.html' },
+            { name: 'Lesson8: Personal Pronouns and Possessives', name_zh: '第8課：人稱代名詞與所有格（我,你,他）', link: 'module1/index.html' },
         ]
     },
     {
@@ -19,16 +19,16 @@ const modulesData = [
         title_zh: '✈️ 旅行模組（A1) – 旅行用義大利語精選',
         moduleId: 'travel1',
         lessons: [
-            { name: 'Episode 1: At the Coffee Bar', name_zh: '第1集：咖啡吧體驗', link: 'travel/ep.html?id=1' },
-            { name: 'Episode 2: Dining at a Restaurant', name_zh: '第2集：餐廳用餐', link: 'travel/ep.html?id=2' },
-            { name: 'Episode 3: Buying a Train Ticket', name_zh: '第3集：買火車票任務', link: 'travel/ep.html?id=3' },
-            { name: 'Episode 4: Asking for Directions', name_zh: '第4集：問路與尋找洗手間', link: 'travel/ep.html?id=4' },
-            { name: 'Episode 5: Hotel Check-in', name_zh: '第5集：入住旅館對話', link: 'travel/ep.html?id=5' },
-            { name: 'Episode 6: Taking the Bus or Taxi', name_zh: '第6集：搭乘公車與計程車', link: 'travel/ep.html?id=6' },
-            { name: 'Episode 7: Shopping at a Market', name_zh: '第7集：市場購物對話', link: 'travel/ep.html?id=7' },
-            { name: 'Episode 8: Visiting Monuments & Plazas', name_zh: '第8集：尋找景點與名勝', link: 'travel/ep.html?id=8' },
-            { name: 'Episode 9: At the Pharmacy', name_zh: '第9集：藥局購買常備品', link: 'travel/ep.html?id=9' },
-            { name: 'Episode 10: Making Friends & Small Talk', name_zh: '第10集：交朋友與閒聊', link: 'travel/ep.html?id=10' }
+            { name: 'Episode 1: At the Coffee Bar', name_zh: '第1集：咖啡吧體驗', link: 'travel/index.htmll?id=1' },
+            { name: 'Episode 2: Dining at a Restaurant', name_zh: '第2集：餐廳用餐', link: 'travel/index.htmll?id=2' },
+            { name: 'Episode 3: Buying a Train Ticket', name_zh: '第3集：買火車票任務', link: 'travel/index.htmll?id=3' },
+            { name: 'Episode 4: Asking for Directions', name_zh: '第4集：問路與尋找洗手間', link: 'travel/index.htmll?id=4' },
+            { name: 'Episode 5: Hotel Check-in', name_zh: '第5集：入住旅館對話', link: 'travel/index.htmll?id=5' },
+            { name: 'Episode 6: Taking the Bus or Taxi', name_zh: '第6集：搭乘公車與計程車', link: 'travel/index.htmll?id=6' },
+            { name: 'Episode 7: Shopping at a Market', name_zh: '第7集：市場購物對話', link: 'travel/index.htmll?id=7' },
+            { name: 'Episode 8: Visiting Monuments & Plazas', name_zh: '第8集：尋找景點與名勝', link: 'travel/index.htmll?id=8' },
+            { name: 'Episode 9: At the Pharmacy', name_zh: '第9集：藥局購買常備品', link: 'travel/index.htmll?id=9' },
+            { name: 'Episode 10: Making Friends & Small Talk', name_zh: '第10集：交朋友與閒聊', link: 'travel/index.htmll?id=10' }
         ]
     },
     {

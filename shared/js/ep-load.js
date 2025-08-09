@@ -150,6 +150,14 @@ function renderSingleTopic(topicObj) {
         currentSceneContainer.classList.remove('active');
         contentToToggle.style.maxHeight = null;
       } else {
+        // 先收起「同一個 topics 容器裡」的其他場景
+        document.querySelectorAll('#topics .lesson-level.active').forEach(lv => {
+          if (lv !== currentSceneContainer) {
+            lv.classList.remove('active');
+            const c = lv.querySelector('.level-content');
+            if (c) c.style.maxHeight = null;
+          }
+        });
         currentSceneContainer.classList.add('active');
         contentToToggle.style.maxHeight = contentToToggle.scrollHeight + 'px';
       }
