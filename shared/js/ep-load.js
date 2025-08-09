@@ -1,5 +1,6 @@
 // ep-load.js
 const currentLanguage = window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
+const topicLabel = lang === 'zh' ? '🎬 主題' : '🎬 Topic';
 // Function 1: Renders the episode header and topic navigation buttons
 function renderEpisodeHeaderAndTopics(episodeData) {
     const titleEl = document.getElementById("ep-title");
@@ -52,10 +53,20 @@ function renderEpisodeHeaderAndTopics(episodeData) {
 function renderSingleTopic(topicObj) {
     const container = document.getElementById("topics");
 
-    // Clear all content except the topic navigation area (id="topic-nav")
+    // 清掉舊的內容，但保留 📚 Topics 導航列
     [...container.children].forEach(child => {
         if (child.id !== "topic-nav") container.removeChild(child);
     });
+
+    // 在場景之前插入 🎬 Topic 標題
+    const topicTitleEl = document.createElement("h2");
+    if (window.currentLanguage === 'zh') {
+        topicTitleEl.textContent = `🎬 主題 ${topicObj.topicId}: ${topicObj.topic_zh || topicObj.topic}`;
+    } else {
+        topicTitleEl.textContent = `🎬 Topic ${topicObj.topicId}: ${topicObj.topic}`;
+    }
+    topicTitleEl.className = "topic-title";
+    container.appendChild(topicTitleEl);
 
     // epId and topicId are defined here as they are used for constructing MP3 filenames
     const epId = new URLSearchParams(window.location.search).get("id") || "1";
