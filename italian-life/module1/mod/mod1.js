@@ -19,7 +19,7 @@ const moduleData = {
         {
           levelId: 1,
           title: "Level 1 (A0+): Say Hello!",
-          title_zh: "第一級（A0+）：打招呼！",
+          title_zh: "第一級（A0+）: 打招呼！",
           keyPhrases: [
             { text: "Ciao!", en: "Hi / Bye!", zh: "嗨／掰" },
             { text: "Buongiorno!", en: "Good morning!", zh: "早安／你好" },
@@ -45,7 +45,7 @@ const moduleData = {
         {
           levelId: 2,
           title: "Level 2 (A0+): More Greetings & Goodbyes",
-          title_zh: "第二級（A0+）：更多問候與道別",
+          title_zh: "第二級（A0+）: 更多問候與道別",
           keyPhrases: [
             { text: "Buon pomeriggio!", en: "Good afternoon", zh: "午安" },
             { text: "Buonanotte!", en: "Good night", zh: "晚安（睡前說）" },
@@ -75,7 +75,7 @@ const moduleData = {
         {
           levelId: 3,
           title: "Level 3 (A0+): Even More Ways to Say Goodbye",
-          title_zh: "第三級（A0+）：更多道別方式",
+          title_zh: "第三級（A0+）: 更多道別方式",
           keyPhrases: [],
           dialogues: [
             { speaker: "3", when: "Wrapping up a conversation?", text: "A dopo!", en: "See you later", zh: "待會見" },
@@ -108,7 +108,7 @@ const moduleData = {
         {
           levelId: 1,
           title: "第一級（A0）: Ask 'How are you?'",
-          title_zh: "第一級（A0）：詢問「你最近好嗎？」",
+          title_zh: "第一級（A0）: 詢問「你最近好嗎？」",
           keyPhrases: [
             // Changed "it" key to "text" for consistency with other data
             { text: "Come stai?", en: "How are you?", zh: "你好嗎？" },
@@ -127,16 +127,16 @@ const moduleData = {
             { speaker: "1", when: "Not feeling great", text: "Non molto bene", en: "Not so good.", zh: "不太好" }
           ],
           tips: [
-            { en: "Try asking someone: **Come stai?** – 'How are you?'", zh: "試著問別人：**Come stai?** – 你最近好嗎？" },
-            { en: "When replying, say: **Sto bene.** – 'I’m fine.'", zh: "回覆時可以說：**Sto bene.** – 我很好。" },
+            { en: "Try asking someone: **Come stai?** – 'How are you?'", zh: "試著問別人: **Come stai?** – 你最近好嗎？" },
+            { en: "When replying, say: **Sto bene.** – 'I’m fine.'", zh: "回覆時可以說: **Sto bene.** – 我很好。" },
             { en: "**Sto** comes from **stare** (to be / to stay), and **bene** means 'well'.", zh: "**Sto** 來自 **stare**（表示『是／停留』），而 **bene** 的意思是『好』。" },
-            { en: "You can also reply simply with **Bene** or **Così così**", zh: "你也可以簡單回：**Bene**（很好）或 **Così così**（馬馬虎虎）。" }
+            { en: "You can also reply simply with **Bene** or **Così così**", zh: "你也可以簡單回: **Bene**（很好）或 **Così così**（馬馬虎虎）。" }
           ]
         },
         {
           levelId: 2,
           title: "Level 2 (A0): Answer 'How are you?'",
-          title_zh: "第二級（A0）：回答「你最近好嗎？」",
+          title_zh: "第二級（A0）: 回答「你最近好嗎？」",
           keyPhrases: [
             // Changed "it" key to "text" for consistency
             { text: "Sto benissimo!", en: "I’m great!", zh: "我非常好" },
@@ -166,7 +166,7 @@ const moduleData = {
         {
           levelId: 1,
           title: "第一級（A0）: Basic polite words",
-          title_zh: "第一級（A0）：基礎禮貌用語",
+          title_zh: "第一級（A0）: 基礎禮貌用語",
           keyPhrases: [
             { text: "Grazie", en: "Thank you", zh: "謝謝" },
             { text: "Prego", en: "You’re welcome / Please go ahead", zh: "不客氣 / 請先請" },
@@ -183,7 +183,7 @@ const moduleData = {
         {
           levelId: 2,
           title: "Level 2 (A1): Requests & understanding",
-          title_zh: "第二級（A1）：請求與表達理解",
+          title_zh: "第二級（A1）: 請求與表達理解",
           keyPhrases: [
             { text: "Capisco / Non capisco", en: "I understand / I don’t understand", zh: "我懂 / 我不懂" },
             { text: "Posso...?", en: "Can I...?", zh: "我可以……嗎？" },
@@ -207,7 +207,7 @@ const moduleData = {
         {
           levelId: 3,
           title: "Level 3 (A1): Real-life polite requests",
-          title_zh: "第三級（A1）：真實情境中的禮貌請求",
+          title_zh: "第三級（A1）: 真實情境中的禮貌請求",
           keyPhrases: [
             { text: "Vorrei...", en: "I would like...", zh: "我想要……" },
             { text: "C'è...? / Ci sono...?", en: "Is there...? / Are there...?", zh: "有……嗎？ / 有……嗎？（複數）" },
@@ -259,7 +259,7 @@ const moduleData = {
         {
           levelId: 2,
           title: "Level 2 (A0): Formal version and polite expressions",
-          title_zh: "第二級（A0）：正式版本與禮貌用語",
+          title_zh: "第二級（A0）: 正式版本與禮貌用語",
           keyPhrases: [
             { text: "Come si chiama?", en: "What’s your name? (formal)", zh: "您貴姓？" },
             { text: "Mi chiamo Giovanni Rossi.", en: "My name is Giovanni Rossi.", zh: "我叫 Giovanni Rossi。" },
@@ -283,10 +283,10 @@ const moduleData = {
         {
           levelId: 3,
           title: "Level 3 (A0): Say “Nice to meet you” in different ways",
-          title_zh: "第三級（A0）：用不同方式說「很高興認識你」",
+          title_zh: "第三級（A0）: 用不同方式說「很高興認識你」",
           keyPhrases: [
             { text: "Piacere di conoscerti", en: "Nice to meet you (informal)", zh: "認識你很高興" },
-            { text: "Piacere di conoscerla", en: "Nice to meet you (formal)", zh: "認識您很高興" },
+            { text: "Piacere di conoscerla", en: "Nice to meet you (formal)", zh: "認識您很高興(更正式)" },
             { text: "Molto lieto / Molto lieta", en: "Very pleased to meet you", zh: "非常榮幸" },
             { text: "Piacere mio", en: "The pleasure is mine", zh: "我也很高興" }
           ],
@@ -302,8 +302,8 @@ const moduleData = {
           ],
           tips: [
             { en: "**Piacere di conoscerti** vs **Piacere di conoscerla** : **conoscerti** = to meet you (informal 'you') | **conoscerla** = to meet you (formal 'you') | Use **conoscerti ** with friends;", zh: "**conoscerti** = 認識你（非正式）(你) • **conoscerla** = 認識您（正式）(您） • 和朋友一起用 **conoscerti**；" },
-            { en: "What does **Piacere di conoscerti** mean? **Piacere** = pleasure • **di** = to • **conoscerti** = know you → The full phrase means: “Nice to meet you”", zh: "**Piacere** = 高興 • **di** = 相當於英文的 'to' • **conoscerti** = 認識你 → 全句意思是：「很高興認識你」" },
-            { en: "**Molto lieto!** = Very pleased! . Female version: **Molto lieta!** ", zh: "男生： **Molto lieto!**。 女生說法是：Molto lieta！" }
+            { en: "What does **Piacere di conoscerti** mean? **Piacere** = pleasure • **di** = to • **conoscerti** = know you → The full phrase means: “Nice to meet you”", zh: "**Piacere** = 高興 • **di** = 相當於英文的 'to' • **conoscerti** = 認識你 → 全句意思是: 「很高興認識你」" },
+            { en: "**Molto lieto!** = Very pleased! . Female version: **Molto lieta!** ", zh: "男生:  **Molto lieto!**。 女生說法是: Molto lieta！" }
           ]
         }
       ]
@@ -318,7 +318,7 @@ const moduleData = {
         {
           levelId: 1,
           title: "第一級（A0）: Ask where someone is from",
-          title_zh: "第一級（A0）：詢問某人來自哪裡",
+          title_zh: "第一級（A0）: 詢問某人來自哪裡",
           keyPhrases: [
             {text: "Di dove sei?", en: "Where are you from?", zh: "你來自哪裡？"},
             {text: "Sono di Roma.", en: "I’m from Rome.", zh: "我來自羅馬"},
@@ -333,15 +333,15 @@ const moduleData = {
           ],
           tips: [
             { en: "When someone asks **Di dove sei?**, you can answer in different ways: (1) **Sono di Milano** = I'm from Milan (2) **Vengo dall'Italia** = I come from Italy (3) **Abito a Firenze** = I live in Florence",
-              zh: "當有人問「**Di dove sei?**」，你可以用不同方式回答：(1) **Sono di Milano** = 我來自米蘭 (2) **Vengo dall'Italia** = 我來自義大利 (3) **Abito a Firenze** = 我住在佛羅倫斯" },
+              zh: "當有人問「**Di dove sei?**」，你可以用不同方式回答: (1) **Sono di Milano** = 我來自米蘭 (2) **Vengo dall'Italia** = 我來自義大利 (3) **Abito a Firenze** = 我住在佛羅倫斯" },
             { en: "Grammar mini-notes: (1) **sei** = are (you) (2) **di** = from — used with cities for origin (**Sono di...**) (3) **da** = from — used with countries for origin (**dalla Francia**) (4) **a** = in/to — used with cities for current living location (**Abito a...**)",
-              zh: "文法小筆記：(1) **sei** = 你是 (2) **di** = 從／來自 — 用於城市的來源（**Sono di...**）(3) **da** = 從／來自 — 用於國家的來源（**dalla Francia**）(4) **a** = 在／到 — 用於表示現居的城市（**Abito a...**）"}
+              zh: "文法小筆記: (1) **sei** = 你是 (2) **di** = 從／來自 — 用於城市的來源（**Sono di...**）(3) **da** = 從／來自 — 用於國家的來源（**dalla Francia**）(4) **a** = 在／到 — 用於表示現居的城市（**Abito a...**）"}
           ]
         },
         {
           levelId: 2,
           title: "Level 2 (A1): Talking about country and current city",
-          title_zh: "第二級（A1）：談論國家和目前居住的城市",
+          title_zh: "第二級（A1）: 談論國家和目前居住的城市",
           keyPhrases: [
             {text: "Vengo da Parigi.", en: "I come from Paris.", zh: "我來自巴黎"},
             {text: "Abito a Firenze.", en: "I live in Florence.", zh: "我住在佛羅倫斯"},
@@ -354,17 +354,17 @@ const moduleData = {
             {speaker: "5", text: "Che bello! Firenze è bellissima!", en: "How nice! Florence is beautiful!", zh: "太美了！佛羅倫斯很美！"}
           ],
           tips: [
-            { en: "You can use three main phrases to talk about where you are from or live:", zh: "你可以用這三種主要句型來表達你來自哪裡或住在哪裡：" },
-            { en: "Use **Sono di** + city (e.g., **Sono di Milano**) → I’m from a city.", zh: "使用 **Sono di** + 城市（例：**Sono di Milano**）→ 表示來自某城市。" },
-            { en: "Use **Vengo da** + country (e.g., **Vengo dalla Francia**) → I come from a country.", zh: "使用 **Vengo da** + 國家（例：**Vengo dalla Francia**）→ 表示來自某國家。" },
-            { en: "Use **Abito a** + city (e.g., **Abito a Firenze**) → I live in a city.", zh: "使用 **Abito a** + 城市（例：**Abito a Firenze**）→ 表示住在某城市。" },
+            { en: "You can use three main phrases to talk about where you are from or live:", zh: "你可以用這三種主要句型來表達你來自哪裡或住在哪裡: " },
+            { en: "Use **Sono di** + city (e.g., **Sono di Milano**) → I’m from a city.", zh: "使用 **Sono di** + 城市（例: **Sono di Milano**）→ 表示來自某城市。" },
+            { en: "Use **Vengo da** + country (e.g., **Vengo dalla Francia**) → I come from a country.", zh: "使用 **Vengo da** + 國家（例: **Vengo dalla Francia**）→ 表示來自某國家。" },
+            { en: "Use **Abito a** + city (e.g., **Abito a Firenze**) → I live in a city.", zh: "使用 **Abito a** + 城市（例: **Abito a Firenze**）→ 表示住在某城市。" },
 
-            { en: "Reminder about Prepositions:", zh: "前置詞提醒：" },
+            { en: "Reminder about Prepositions:", zh: "前置詞提醒: " },
             { en: "**di** — from a city, casual and commonly used", zh: "**di** — 來自城市，口語且常用" },
             { en: "**da** — from a country or origin, more formal or precise", zh: "**da** — 來自國家或來源，較正式或精確" },
             { en: "**a** — in/to (commonly with the verb 'abitare')", zh: "**a** — 在／到（常用於動詞 **abitare**）" },
 
-            { en: "Common Countries and their Prepositions:", zh: "常見國家與前置詞：" },
+            { en: "Common Countries and their Prepositions:", zh: "常見國家與前置詞: " },
             { en: "**dalla** — used for feminine singular countries.", zh: "**dalla** — 用於陰性單數國家。" },
             { en: "**dal** — used for masculine singular countries.", zh: "**dal** — 用於陽性單數國家。" },
 
@@ -389,7 +389,7 @@ const moduleData = {
         {
           levelId: 1,
           title: "Level 1 (A1): Ask what someone is doing now",
-          title_zh: "第一級（A1）：詢問某人現在在做什麼",
+          title_zh: "第一級（A1）: 詢問某人現在在做什麼",
           keyPhrases: [
             {text: "Che cosa fai?", en: "What are you doing?", zh: "你現在在做什麼？"},
             {text: "Cosa fai?", en: "What are you doing?", zh: "你在幹嘛？（比較口語）"},
@@ -418,7 +418,7 @@ const moduleData = {
           tips: [
             { en: "**Cosa fai?** — used for casual questions.", zh: "**Cosa fai?** — 用於比較口語、非正式的提問。" },
             { en: "Use present tense verbs to describe what you’re doing now.", zh: "用現在式動詞來描述你現在正在做的事情。" },
-            { en: "Many activities don’t need an object: **Studio**, **Lavoro** = I study, I work.", zh: "許多活動不需要受詞：**Studio**（我學習）、**Lavoro**（我工作）。" },
+            { en: "Many activities don’t need an object: **Studio**, **Lavoro** = I study, I work.", zh: "許多活動不需要受詞: **Studio**（我學習）、**Lavoro**（我工作）。" },
             { en: "For ongoing actions, use **sto** + verb = I am ...", zh: "對於正在進行的動作，使用 **sto** + 動詞 = 我正在……" },
             { en: "**Niente di speciale** — means 'nothing much' or 'just chilling'.", zh: "**Niente di speciale** — 表示「沒什麼特別的事」或「隨便放鬆一下」。" }
           ]
@@ -426,7 +426,7 @@ const moduleData = {
         {
           levelId: 2,
           title: "Level 2 (A1): Ask and answer about professions",
-          title_zh: "第二級（A1)：詢問和回答關於職業",
+          title_zh: "第二級（A1): 詢問和回答關於職業",
           keyPhrases: [
             {text: "Che lavoro fai?", en: "What do you do for work?", zh: "你是做什麼的？"},
             {text: "Faccio l'insegnante.", en: "I’m a teacher.", zh: "我是老師"},
@@ -445,15 +445,15 @@ const moduleData = {
           tips: [
             { en: "**Che lavoro fai?** — used to ask someone’s job or profession.", zh: "**Che lavoro fai?** — 用來詢問對方的職業。" },
             { en: "You can answer with **Sono...** or **Faccio...**", zh: "你可以用 **Sono...** 或 **Faccio...** 回答。" },
-            { en: "**Sono** (I am) — generally used with professions (e.g., **Sono un insegnante** = I am a teacher).", zh: "**Sono**（我是）通常用於職業（例如：**Sono un insegnante** = 我是老師）。" },
-            { en: "**Faccio** (I do/make) — often used to describe the type of work (e.g., **Faccio il medico** = I am a doctor; **Faccio l'insegnante di inglese** = I am an English teacher).", zh: "**Faccio**（我做）通常用於描述工作類型（例如：**Faccio il medico** = 我是醫生；**Faccio l'insegnante di inglese** = 我是英文老師）。" },
+            { en: "**Sono** (I am) — generally used with professions (e.g., **Sono un insegnante** = I am a teacher).", zh: "**Sono**（我是）通常用於職業（例如: **Sono un insegnante** = 我是老師）。" },
+            { en: "**Faccio** (I do/make) — often used to describe the type of work (e.g., **Faccio il medico** = I am a doctor; **Faccio l'insegnante di inglese** = I am an English teacher).", zh: "**Faccio**（我做）通常用於描述工作類型（例如: **Faccio il medico** = 我是醫生；**Faccio l'insegnante di inglese** = 我是英文老師）。" },
             { en: "**Cosa fai?** — can also mean 'What’s your job?' depending on the context.", zh: "**Cosa fai?** 根據上下文，也可以表示「你的工作是什麼？」" }
           ]
         },
         {
           levelId: 3,
           title: "Level 1 (A1): Understand that 'Cosa fai?' can mean different things",
-          title_zh: "第一級（A1）：理解「Cosa fai?」可以代表不同意思",
+          title_zh: "第一級（A1）: 理解「Cosa fai?」可以代表不同意思",
           keyPhrases: [
             {text: "Cosa fai?", en: "What are you doing? / What do you do?", zh: "你現在做什麼？／你做什麼工作？"},
             {text: "Che lavoro fai?", en: "What job do you do?", zh: "你做什麼工作"},
@@ -538,7 +538,7 @@ const moduleData = {
         {
           levelId: 1,
           title: "Level 1 (A1): Introducing Yourself and Others",
-          title_zh: "第一級（A1）：介紹自己和他人",
+          title_zh: "第一級（A1）: 介紹自己和他人",
           keyPhrases: [
             {text: "Io sono...", en: "I am...", zh: "我是..."},
             {text: "Sono...", en: "I'm... - *subject omitted*", zh: "我是... 主詞可省略"},
@@ -553,15 +553,15 @@ const moduleData = {
           ],
           tips: [
             { en: "In Italian, people often drop **io** because the verb already shows who’s speaking.", zh: "在義大利語中，人們常省略 **io**，因為動詞變化已經透露主詞是誰。" },
-            { en: "Example: **Io sono Anna → Sono Anna**", zh: "例子：**Io sono Anna** → **Sono Anna**" },
-            { en: "In a question, you can just use the verb: **Sei Marco?** instead of '**Tu sei Marco?**", zh: "在問句中，你可以只用動詞：**Sei Marco?** 取代 **Tu sei Marco?**" },
+            { en: "Example: **Io sono Anna → Sono Anna**", zh: "例子: **Io sono Anna** → **Sono Anna**" },
+            { en: "In a question, you can just use the verb: **Sei Marco?** instead of '**Tu sei Marco?**", zh: "在問句中，你可以只用動詞: **Sei Marco?** 取代 **Tu sei Marco?**" },
             { en: "**Sei Marco?** (Are you Marco?) is more common.", zh: "「**Sei Marco?**」（你是馬可嗎？）比較常見。" }
           ]
         },
         {
           levelId: 2,
           title: "Level 2 (A1): Meet the Italian Subject Pronouns",
-          title_zh: "第二級（A1）：認識義大利主詞代名詞",
+          title_zh: "第二級（A1）: 認識義大利主詞代名詞",
           keyPronouns: [
             {text: "io", en: "I", zh: "我"},
             {text: "io sono...", en: "I am...", zh: "我是..."},
@@ -601,14 +601,14 @@ const moduleData = {
           tasks: [],
           tips: [
             { en: "In Italian, subject pronouns are often dropped because the verb form already shows who’s speaking.", zh: "在義大利語中，主詞常被省略，因為動詞本身就能看出是誰。" },
-            { en: "Example: **(Io) sono Laura**, **(Lui) è Marco**.", zh: "例子：**（Io）sono Laura**，**（Lui）è Marco**。" },
+            { en: "Example: **(Io) sono Laura**, **(Lui) è Marco**.", zh: "例子: **（Io）sono Laura**，**（Lui）è Marco**。" },
             { en: "Capitalized **'Lei'** (formal “you”) is the same as “she” **'lei'** — context matters!", zh: "大寫的 **Lei**（正式的「您」）與小寫的 **lei**（「她」）拼法相同，需要靠語境來判斷。" }
           ]
         },
         {
           levelId: 3,
           title: "Level 3 (A1): Possessive Pronouns",
-          title_zh: "第三級（A1）：所有格代名詞",
+          title_zh: "第三級（A1）: 所有格代名詞",
           keyPhrases: [
             {title: "Masculine Singular / Feminine Singular"},
             {text: "il mio / la mia", en: "my + Singular", zh: "我的"},
@@ -639,9 +639,9 @@ const moduleData = {
             { en: "Possessive words change based on the thing you are talking about, not who owns it.", zh: "所有格形容詞的性別與所修飾的名詞一致，而不是與擁有者一致。" },
             { en: "**la mia borsa** (my bag – feminine word), **il mio libro** (my book – masculine word).", zh: "**la mia borsa**（我的包包——陰性名詞）、**il mio libro**（我的書——陽性名詞）。" },
             { en: "Most of the time, you also add **il / la / i / le** before the possessive.", zh: "大多數時候，所有格形容詞前會加上 **il / la / i / le**。" },
-            { en: "But for singular family members, you usually skip the article:", zh: "但對於單數的家庭成員，通常會省略冠詞：" },
+            { en: "But for singular family members, you usually skip the article:", zh: "但對於單數的家庭成員，通常會省略冠詞: " },
             { en: "**mia madre** (my mother), **tuo fratello** (your brother).", zh: "**mia madre**（我的媽媽）、**tuo fratello**（你的哥哥／弟弟）。" },
-            { en: "If it's plural or has an adjective, you add the article: **i miei genitori** (my parents), **il mio fratello maggiore** (my older brother).", zh: "如果是複數或帶有形容詞，則會加上冠詞：**i miei genitori**（我的父母）、**il mio fratello maggiore**（我的哥哥／弟弟）。" }
+            { en: "If it's plural or has an adjective, you add the article: **i miei genitori** (my parents), **il mio fratello maggiore** (my older brother).", zh: "如果是複數或帶有形容詞，則會加上冠詞: **i miei genitori**（我的父母）、**il mio fratello maggiore**（我的哥哥／弟弟）。" }
           ]
         }
       ]

@@ -82,10 +82,6 @@ strong {
   font-weight: bold;
 }
 
-.auto-list li .italian-word {
-  color: #44b03a;
-  font-weight: bold;
-}
 .tip-box .italian-word {
   color: #44b03a;
   font-weight: bold;
@@ -103,8 +99,14 @@ h3 + .auto-list {
 
 .auto-list li {
   margin-bottom: 2px;  /* 行距小一點點，感覺更緊湊 */
+  padding-left: 1.5em; /* 整段右移 */
+  text-indent: -1.5em; /* 第一行符號拉回來 */
 }
 
+.auto-list li .italian-word {
+  color: #44b03a;
+  font-weight: bold;
+}
 
 .dialogue-box {
   background-color: #fafafa;
