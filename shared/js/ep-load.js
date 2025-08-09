@@ -10,6 +10,16 @@ function renderEpisodeHeaderAndTopics(episodeData) {
     titleEl.textContent = `🎬 ${episodeData.episode}`;
     titleEl.setAttribute("title", `${episodeData.title_en} (${episodeData.title_zh})`);
 
+    // ✅ 在這裡插入主題標題
+    const topicHeader = document.createElement('h2');
+    topicHeader.id = 'topic-header';
+    const firstTopic = episodeData.topics[0];
+    topicHeader.textContent = currentLanguage === 'zh'
+      ? `🎬 主題 ${firstTopic.topicId}: ${firstTopic.topic_zh || firstTopic.topic}`
+      : `🎬 Topic ${firstTopic.topicId}: ${firstTopic.topic}`;
+    topicsContainer.appendChild(topicHeader);
+
+    
     // Create Topic buttons area
     const nav = document.createElement("div");
     nav.id = "topic-nav";
