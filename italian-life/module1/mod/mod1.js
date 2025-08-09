@@ -11,7 +11,7 @@ const moduleData = {
     "G_girl": "👧",          // 小女孩
     "B_boy": "👦🏻‍🎨",       // 小男孩
     "A_bear": "🧸",          // 熊
-    "A_fish": "🐳"           // 魚
+    "A_llama": "🦙"           // 魚
   },
   lessons: [
     {
@@ -353,9 +353,9 @@ const moduleData = {
           ],
           dialogues: [
             {speaker: "A_bear", text: "Ciao! Di dove sei?", en: "Hi! Where are you from?", zh: "你來自哪裡？"},
-            {speaker: "A_fish", text: "Sono di Milano. E tu?", en: "I’m from Milan. And you?", zh: "我來自米蘭，你呢？"},
+            {speaker: "A_llama", text: "Sono di Milano. E tu?", en: "I’m from Milan. And you?", zh: "我來自米蘭，你呢？"},
             {speaker: "A_bear", text: "Io vengo da Parigi. Ora abito a Firenze.", en: "I come from Paris. Now I live in Florence.", zh: "我來自巴黎，現在住在佛羅倫斯"},
-            {speaker: "A_fish", text: "Che bello! Firenze è bellissima!", en: "How nice! Florence is beautiful!", zh: "太美了！佛羅倫斯很美！"}
+            {speaker: "A_llama", text: "Che bello! Firenze è bellissima!", en: "How nice! Florence is beautiful!", zh: "太美了！佛羅倫斯很美！"}
           ],
           tips: [
             { en: "You can use three main phrases to talk about where you are from or live:", zh: "你可以用這三種主要句型來表達你來自哪裡或住在哪裡: " },
