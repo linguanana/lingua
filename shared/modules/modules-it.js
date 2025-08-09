@@ -15,8 +15,8 @@ const modulesData = [
         ]
     },
     {
-        title: '✈️ Italian Travel Phrases Survival Italian （A1) ',
-        title_zh: '✈️ 旅行模組（A1) – 旅行用義大利語精選',
+        title: '✈️ Special Episode (A1): Survival Italian – Essential Travel Phrases',
+        title_zh: '✈️ 特別篇（A1）– 義大利旅行必備用語精選',
         moduleId: 'travel1',
         lessons: [
             { name: 'Episode 1: At the Coffee Bar', name_zh: '第1集：咖啡吧體驗', link: 'travel/index.html?id=1' },

@@ -126,18 +126,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         dialogueBoxDiv.className = "dialogue-box";
 
                         const getSpeakerEmoji = (speakerChar) => {
-                            if (speakerChar === "1") return "👩🏻‍‍";
-                            if (speakerChar === "2") return "🧑‍🍳";
-                            if (speakerChar === "🧸") return "🧸";
-                            if (speakerChar === "👨") return "👨";
-                            if (speakerChar === "👩‍🏫") return "👩‍🏫";
-                            if (speakerChar === "🧑") return "🧑";
-                            if (speakerChar === "👨‍🍳") return "👨‍🍳";
-                            if (speakerChar === "👩") return "👩";
-                            if (speakerChar === "👧") return "👧";
-                            if (speakerChar === "👦") return "👦";
-                            if (speakerChar === "🧑‍💻") return "🧑‍💻";
-                            if (speakerChar === "👩‍🎓") return "👩‍🎓";
+                            if (speakerChar === "1") return "👩🏻‍🦰‍‍";
+                            if (speakerChar === "2") return "👨🏻‍🍳";
+                            if (speakerChar === "3") return "🧑";
+                            if (speakerChar === "4") return "🧸";
+                            if (speakerChar === "5") return "🦄";
+                            if (speakerChar === "6") return "🧑";
+                            if (speakerChar === "7") return "👧";
+                            if (speakerChar === "8") return "👦🏻‍🎨";
                             return speakerChar;
                         };
 
