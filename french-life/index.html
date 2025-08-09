@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🇮🇹 Your Real Italian Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../shared/js/language-initializer.js"></script>
+    <link rel="stylesheet" href="../shared/css/fonts.css">
+    <link rel="stylesheet" href="../shared/css/module-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🇫🇷 Your Real French Life</h1>
+        <p class="course-intro">Real-life conversations and scenarios to get you speaking fast</p>
+        <nav><a href="../index.html" class="back-link">⬅️ Back to Home</a></nav>
+        <br>
+        <div id="modules-container"></div>
+    </div>
+    <script src="../shared/modules/modules-fr.js"></script>
+    <script src="../shared/js/render-modules.js"></script>
+
+    <script>
+      const renderPage = () => renderModules('modules-container');
+      document.addEventListener('DOMContentLoaded', renderPage);
+      window.addEventListener('language-changed', renderPage);
+    </script>
+    <footer>
+        <p>&copy; 2024 Your Language App</p>
+    </footer>
+</body>
+</html>
