@@ -209,7 +209,8 @@ th, td {
 
 .level-title {
     font-family: 'Noto Sans TC', 'Noto Sans', sans-serif;
-    font-size: 0.88rem; /* 原本是 0.92rem，可再小一點點 */
+    font-size: 0.92rem; /* 原本是 0.92rem，可再小一點點 */
+    font-weight: 300; /* 加粗一點點 */
     cursor: pointer; /* Indicates it's clickable */
     user-select: none; /* Prevents text selection on double-click */
     /* Add any other styling for your clickable title, e.g., padding, background */
