@@ -1,5 +1,22 @@
 // ep-load.js
+// ============================
+const DEFAULT_SPEAKERS = {
+  Female: "👩",
+  Male: "🧑",
+  M_chef: "👨🏻‍🍳",
+  Girl: "👧",
+  Boy: "👦🏻‍🎨",
+  F_llama: "🦙",
+  M_llama: "🦙",
+  M_bear: "🧸",
+  F_bear: "🧸",
+};
 
+// 取得表情（支援每集覆寫）
+function getSpeakerEmoji(speakerKey, epSpeakers) {
+  const map = { ...DEFAULT_SPEAKERS, ...(epSpeakers || {}) };
+  return map[speakerKey] || "🗣"; // 預設 fallback
+}
 // Language helpers
 const currentLanguage =
   window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
@@ -124,9 +141,11 @@ function renderSingleTopic(topicObj) {
     dialogueList.appendChild(sceneAudio);
 
     // Dialogue lines
+    // Dialogue lines
     sceneObj.dialogue.forEach((line) => {
+      const emoji = episodeData.speakers?.[line.speaker] || "🗣";
       const lineEl = document.createElement("p");
-      const emoji = line.speaker === "1" ? "👩🏻‍‍" : "🧑‍🍳";
+
       lineEl.innerHTML = `
         <strong>${emoji} <span class="italian-word">${line.text}</span></strong><br>
         <span class="translation">→ ${
@@ -135,6 +154,7 @@ function renderSingleTopic(topicObj) {
             : (line.en || line.zh || "")
         }</span>
       `;
+
       dialogueList.appendChild(lineEl);
     });
 
