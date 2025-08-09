@@ -18,7 +18,8 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Say Hello!",
+          title: "Level 1 (A0+): Say Hello!",
+          title_zh: "第一級（A0+）：打招呼！",
           keyPhrases: [
             { text: "Ciao!", en: "Hi / Bye!", zh: "嗨／掰" },
             { text: "Buongiorno!", en: "Good morning!", zh: "早安／你好" },
@@ -44,6 +45,7 @@ const moduleData = {
         {
           levelId: 2,
           title: "Level 2 (A0+): More Greetings & Goodbyes",
+          title_zh: "第二級（A0+）：更多問候與道別",
           keyPhrases: [
             { text: "Buon pomeriggio!", en: "Good afternoon", zh: "午安" },
             { text: "Buonanotte!", en: "Good night", zh: "晚安（睡前說）" },
@@ -73,6 +75,7 @@ const moduleData = {
         {
           levelId: 3,
           title: "Level 3 (A0+): Even More Ways to Say Goodbye",
+          title_zh: "第三級（A0+）：更多道別方式",
           keyPhrases: [],
           dialogues: [
             { speaker: "3", when: "Wrapping up a conversation?", text: "A dopo!", en: "See you later", zh: "待會見" },
