@@ -15,7 +15,7 @@ const DEFAULT_SPEAKERS = {
 // 取得表情（支援每集覆寫）
 function getSpeakerEmoji(speakerKey, epSpeakers) {
   const map = { ...DEFAULT_SPEAKERS, ...(epSpeakers || {}) };
-  return map[speakerKey] || "🗣"; // 預設 fallback
+  return map[speakerKey] || "🦙"; // 預設 fallback
 }
 // Language helpers
 const currentLanguage =
@@ -141,9 +141,8 @@ function renderSingleTopic(topicObj) {
     dialogueList.appendChild(sceneAudio);
 
     // Dialogue lines
-    // Dialogue lines
     sceneObj.dialogue.forEach((line) => {
-      const emoji = episodeData.speakers?.[line.speaker] || "🗣";
+      const emoji = getSpeakerEmoji(line.speaker, episodeData.speakers); 
       const lineEl = document.createElement("p");
 
       lineEl.innerHTML = `
