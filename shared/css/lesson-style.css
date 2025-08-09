@@ -234,7 +234,8 @@ th, td {
 
 /* ep 的 topic 場景標題的藍色樣式 */
 h3.scene-title {
-  color: #6a9acb;
+  color: #e65c00; /* 比 #ff6600 稍深 */
+  font-weight: 300; /* 加粗一點點 */
 }
 
 /* 當一個手風琴區塊被打開時 */
