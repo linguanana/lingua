@@ -1,15 +1,6 @@
 """
 ### 如何使用
 請在終端機中，以以下格式執行此腳本：
-$ python3 /home/shared/tools/gen_ep.py /home/italian-life/travel/ep/ep1.js
-$ python3 shared/tools/gen_ep_list.py italian-life/travel/ep/ep1.js > output.txt
-
-$ python3 gen_ep_audio.py output.txt ../../italian-life/travel/audio/
-"""
-
-"""
-### 如何使用
-請在終端機中，以以下格式執行此腳本：
 
 首先，請使用 gen_ep.py 和 gen_ep_list.py 來生成 SSML 腳本檔案（例如 output.txt）。
 然後，執行此腳本：
@@ -27,7 +18,7 @@ from speaker_config import SPEAKER_CONFIG
 
 def _synthesize_and_save(client, mp3_filename, ssml_content, output_directory):
     """
-    使用 Google Cloud TTS API 合成 SSML 內容並將其儲存為 MP3 檔案。
+    使用 Google Cloud TTS API 合成 SSML 內容或純文字並將其儲存為 MP3 檔案。
     """
     print(f"DEBUG: Processing '{mp3_filename}'")
 
@@ -46,24 +37,28 @@ def _synthesize_and_save(client, mp3_filename, ssml_content, output_directory):
     lang_match = re.search(r"<speak\s+lang=['\"](.*?)['\"]>", ssml_content)
     language_code = lang_match.group(1) if lang_match else "en-US"
 
-    # 修正語音名稱格式以符合 Google Cloud TTS
-    if not voice_id.startswith(f'{language_code}-'):
-        full_voice_name = f"{language_code}-{voice_id}"
+    # 檢查說話者的 voice_id 是否為 Chirp3-HD 系列，並據此決定輸入類型
+    if 'Chirp3-HD' in voice_id:
+        # Chirp3-HD 不支援 SSML，因此需要提取純文字
+        # 移除 SSML 標籤
+        text_content = re.sub(r'<[^>]+>', '', ssml_content)
+        synthesis_input = texttospeech.SynthesisInput(text=text_content)
+        print(f"DEBUG: Using text-only input for Chirp3-HD voice: {voice_id}")
     else:
-        full_voice_name = voice_id
+        # 其他語音支援 SSML
+        # 將無效的說話者標籤替換為有效的語音名稱標籤
+        cleaned_ssml = re.sub(
+            r"<voice\s+speaker=['\"].*?['\"]>",
+            f"<voice name='{language_code}-{voice_id}'>",
+            ssml_content
+        )
+        synthesis_input = texttospeech.SynthesisInput(ssml=cleaned_ssml)
+        print(f"DEBUG: Using SSML input for voice: {voice_id}")
 
-    # 將無效的說話者標籤替換為有效的語音名稱標籤
-    cleaned_ssml = re.sub(
-        r"<voice\s+speaker=['\"].*?['\"]>",
-        f"<voice name='{full_voice_name}'>",
-        ssml_content
-    )
-
-    synthesis_input = texttospeech.SynthesisInput(ssml=cleaned_ssml)
 
     voice = texttospeech.VoiceSelectionParams(
         language_code=language_code,
-        name=full_voice_name
+        name=f"{language_code}-{voice_id}"
     )
 
     audio_config = texttospeech.AudioConfig(

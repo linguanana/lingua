@@ -1,0 +1,14 @@
+
+
+python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > out
+python3 gen_ep_audio.py out ../../italian-life/travel/audio/
+
+
+python3 gen_mod_list.py ../../italian-life/module1/mod/mod1.js > mod_output.txt
+python3 gen_mod_audio.py mod_output.txt ../../italian-life/module1/audio/
+
+
+
+afplay -r 0.75 ../../italian-life/travel/audio/ep1_topic1_scene3.mp3
+rm -rf ../../italian-life/travel/audio/ep1_topic1_scene3_slow.mp3; ffmpeg -i ../../italian-life/travel/audio/ep1_topic1_scene3.mp3 -filter:a "atempo=0.8,atempo=0.8" ../../italian-life/travel/audio/ep1_topic1_scene3_slow.mp3
+afplay ../../italian-life/travel/audio/ep1_topic1_scene3_slow.mp3
