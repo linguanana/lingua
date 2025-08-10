@@ -6,13 +6,15 @@ const moduleData = {
   voice: "IT",
   /* move this to module-load.js
   speakers: {
-    "Female": "👩",       // 女遊客
-    "M_chef": "👨🏻‍🍳",   // 男咖啡師
-    "Men": "🧑",        // 男店員
-    "G_girl": "👧",          // 小女孩
-    "B_boy": "👦🏻‍🎨",       // 小男孩
-    "A_bear": "🧸",          // 熊
-    "A_llama": "🦙"           // 魚
+    Female: "👩",
+    Male: "🧑",
+    M_chef: "👨🏻‍🍳",
+    Girl: "👧",
+    Boy: "👦🏻‍🎨",
+    F_llama: "🦙",
+    M_llama: "🦙",
+    M_bear: "🧸",
+    F_bear: "🧸",
   },
   */
   lessons: [
@@ -62,14 +64,14 @@ const moduleData = {
             { text: "Ciao ciao!", en: "Bye-bye!", zh: "掰掰（可愛口吻）" }
           ],
           dialogues: [
-            { speaker: "Men", when: "Early afternoon and want to be polite?", text: "Buon pomeriggio!", en: "Good afternoon", zh: "午安" },
-            { speaker: "Men", when: "Heading to bed?", text: "Buonanotte!", en: "Good night", zh: "睡前說晚安" },
-            { speaker: "Men", when: "Leaving formally (e.g., restaurant or meeting)?", text: "Arrivederci!", en: "Goodbye (formal)", zh: "正式的再見" },
-            { speaker: "Men", when: "Saying goodbye for now but will meet later today?", text: "A dopo!", en: "See you later today", zh: "今天稍後見" },
-            { speaker: "Men", when: "Ending a quick conversation or short visit?", text: "A presto!", en: "See you soon", zh: "很快再見" },
-            { speaker: "Men", when: "Parting ways until tomorrow?", text: "A domani!", en: "See you tomorrow", zh: "明天見" },
-            { speaker: "Men", when: "Meeting someone for the first time?", text: "Piacere!", en: "Nice to meet you", zh: "初次見面" },
-            { speaker: "Men", when: "Saying bye with a cute or friendly tone?", text: "Ciao ciao!", en: "Bye-bye!", zh: "可愛口吻的掰掰" }
+            { speaker: "F_bear", when: "Early afternoon and want to be polite?", text: "Buon pomeriggio!", en: "Good afternoon", zh: "午安" },
+            { speaker: "F_bear", when: "Heading to bed?", text: "Buonanotte!", en: "Good night", zh: "睡前說晚安" },
+            { speaker: "F_bear", when: "Leaving formally (e.g., restaurant or meeting)?", text: "Arrivederci!", en: "Goodbye (formal)", zh: "正式的再見" },
+            { speaker: "F_bear", when: "Saying goodbye for now but will meet later today?", text: "A dopo!", en: "See you later today", zh: "今天稍後見" },
+            { speaker: "F_bear", when: "Ending a quick conversation or short visit?", text: "A presto!", en: "See you soon", zh: "很快再見" },
+            { speaker: "F_bear", when: "Parting ways until tomorrow?", text: "A domani!", en: "See you tomorrow", zh: "明天見" },
+            { speaker: "F_bear", when: "Meeting someone for the first time?", text: "Piacere!", en: "Nice to meet you", zh: "初次見面" },
+            { speaker: "F_bear", when: "Saying bye with a cute or friendly tone?", text: "Ciao ciao!", en: "Bye-bye!", zh: "可愛口吻的掰掰" }
           ],
           tips: [
             { en: "**Buonanotte** is only for bedtime 🌙", zh: "**Buonanotte** 只在睡前說 🌙" },
@@ -84,19 +86,19 @@ const moduleData = {
           title_zh: "第三級（A0+）: 更多道別方式",
           keyPhrases: [],
           dialogues: [
-            { speaker: "Men", when: "Wrapping up a conversation?", text: "A dopo!", en: "See you later", zh: "待會見" },
-            { speaker: "Men", when: "🧑Saying goodbye to a group of friends?", text: "A dopo ragazzi!", en: "See you later, guys!", zh: "大家待會見" },
-            { speaker: "Men", when: "Meeting again later today?", text: "A più tardi!", en: "See you later today", zh: "今天稍後見" },
-            { speaker: "Men", when: "🙋Planning to see someone in person?", text: "Ci vediamo!", en: "See you in person", zh: "到時見" },
-            { speaker: "Men", when: "Scheduled to meet tomorrow?", text: "Ci vediamo domani!", en: "See you tomorrow", zh: "明天見面" },
-            { speaker: "Men", when: "Will contact again soon?", text: "Ci sentiamo!", en: "Talk soon", zh: "再聯絡" },
-            { speaker: "Men", when: "Planning to call or message tomorrow?", text: "Ci sentiamo domani!", en: "Talk to you tomorrow", zh: "明天再聯絡" },
-            { speaker: "Men", when: "Really soon – like within the hour?", text: "A prestissimo!", en: "See you very soon", zh: "非常快再見" },
-            { speaker: "Men", when: "Saying goodbye in the evening?", text: "Buona serata!", en: "Have a nice evening", zh: "祝你今晚愉快" },
-            { speaker: "Men", when: "Saying goodbye in the morning or early afternoon?", text: "Buona giornata!", en: "Have a good day", zh: "祝你今天愉快" },
-            { speaker: "Men", when: "Ending for now, but you’ll meet again?", text: "Alla prossima!", en: "See you next time", zh: "下次見" },
-            { speaker: "Men", when: "Meeting again next week?", text: "Alla prossima settimana!", en: "See you next week", zh: "下週見" },
-            { speaker: "Men", when: "No date planned, but you'll reconnect later?", text: "Alla prossima volta!", en: "Until next time", zh: "等下次見面" }
+            { speaker: "Female", when: "Wrapping up a conversation?", text: "A dopo!", en: "See you later", zh: "待會見" },
+            { speaker: "Female", when: "🧑Saying goodbye to a group of friends?", text: "A dopo ragazzi!", en: "See you later, guys!", zh: "大家待會見" },
+            { speaker: "Female", when: "Meeting again later today?", text: "A più tardi!", en: "See you later today", zh: "今天稍後見" },
+            { speaker: "Female", when: "🙋Planning to see someone in person?", text: "Ci vediamo!", en: "See you in person", zh: "到時見" },
+            { speaker: "Female", when: "Scheduled to meet tomorrow?", text: "Ci vediamo domani!", en: "See you tomorrow", zh: "明天見面" },
+            { speaker: "Female", when: "Will contact again soon?", text: "Ci sentiamo!", en: "Talk soon", zh: "再聯絡" },
+            { speaker: "Female", when: "Planning to call or message tomorrow?", text: "Ci sentiamo domani!", en: "Talk to you tomorrow", zh: "明天再聯絡" },
+            { speaker: "Female", when: "Really soon – like within the hour?", text: "A prestissimo!", en: "See you very soon", zh: "非常快再見" },
+            { speaker: "Female", when: "Saying goodbye in the evening?", text: "Buona serata!", en: "Have a nice evening", zh: "祝你今晚愉快" },
+            { speaker: "Female", when: "Saying goodbye in the morning or early afternoon?", text: "Buona giornata!", en: "Have a good day", zh: "祝你今天愉快" },
+            { speaker: "Female", when: "Ending for now, but you’ll meet again?", text: "Alla prossima!", en: "See you next time", zh: "下次見" },
+            { speaker: "Female", when: "Meeting again next week?", text: "Alla prossima settimana!", en: "See you next week", zh: "下週見" },
+            { speaker: "Female", when: "No date planned, but you'll reconnect later?", text: "Alla prossima volta!", en: "Until next time", zh: "等下次見面" }
           ],
           tips: [
             { en: "**Ci vediamo** is used when you expect to meet in person", zh: "**Ci vediamo** 用在預計會當面見面的情況" },
@@ -202,11 +204,11 @@ const moduleData = {
           ],
           dialogues: [
             { speaker: "Female", text: "Scusi, posso fare una domanda?", en: "Excuse me, can I ask a question?", zh: "不好意思，我可以問一個問題嗎？" },
-            { speaker: "Men", text: "Certo! Dimmi pure.", en: "Of course! Go ahead and ask.", zh: "當然！儘管問吧。" },
+            { speaker: "Male", text: "Certo! Dimmi pure.", en: "Of course! Go ahead and ask.", zh: "當然！儘管問吧。" },
             { speaker: "Female", text: "Non capisco... Può ripetere, per favore?", en: "I don’t understand… Can you repeat, please?", zh: "我不明白……可以請您再說一遍嗎？" },
-            { speaker: "Men", text: "Sì! Ripeto lentamente.", en: "Yes! I’ll repeat slowly.", zh: "好的！我會慢慢重複。" },
+            { speaker: "Male", text: "Sì! Ripeto lentamente.", en: "Yes! I’ll repeat slowly.", zh: "好的！我會慢慢重複。" },
             { speaker: "Female", text: "Ah! Capisco, grazie mille!", en: "Ah! I understand, thank you very much!", zh: "啊！我懂了，非常感謝！" },
-            { speaker: "Men", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
+            { speaker: "Male", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
           ],
           tips: []
         },
@@ -226,11 +228,11 @@ const moduleData = {
 
           dialogues: [
             { speaker: "Female", text: "Mi scusi, Signora, posso chiederle un’informazione?", en: "Excuse me, Madam, may I ask you for some information?", zh: "不好意思，女士，我可以問您一個問題嗎？" },
-            { speaker: "Men", text: "Certamente, prego!", en: "Certainly, please go ahead!", zh: "當然，請說！" },
+            { speaker: "Male", text: "Certamente, prego!", en: "Certainly, please go ahead!", zh: "當然，請說！" },
             { speaker: "Female", text: "Vorrei comprare un souvenir. C’è un negozio di souvenir qui vicino?", en: "I’d like to buy a souvenir. Is there a souvenir shop nearby?", zh: "我想買一個紀念品。這附近有紀念品商店嗎？" },
-            { speaker: "Men", text: "Sì, c’è un negozio lì, a destra.", en: "Yes, there’s a shop there, to the right.", zh: "有的，那邊有一家商店，在右邊。" },
+            { speaker: "Male", text: "Sì, c’è un negozio lì, a destra.", en: "Yes, there’s a shop there, to the right.", zh: "有的，那邊有一家商店，在右邊。" },
             { speaker: "Female", text: "Grazie mille!", en: "Thank you very much!", zh: "非常感謝！" },
-            { speaker: "Men", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
+            { speaker: "Male", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
           ],
           tips: []
         }
@@ -254,7 +256,7 @@ const moduleData = {
           ],
           dialogues: [
             { speaker: "Female", text: "Ciao! Come ti chiami?", en: "Hi! What’s your name?", zh: "嗨！你叫什麼名字？" },
-            { speaker: "Men", text: "Mi chiamo Marco. E tu?", en: "My name is Marco. And you?", zh: "我叫 Marco。你呢？" },
+            { speaker: "Male", text: "Mi chiamo Marco. E tu?", en: "My name is Marco. And you?", zh: "我叫 Marco。你呢？" },
             { speaker: "Female", text: "Mi chiamo Laura.", en: "My name is Laura.", zh: "我叫 Laura。" }
           ],
           tips: [
@@ -274,9 +276,9 @@ const moduleData = {
           ],
           dialogues: [
             { speaker: "Female", text: "Buongiorno! Come si chiama?", en: "Good morning! What’s your name?", zh: "早安！您貴姓？" },
-            { speaker: "Men", text: "Mi chiamo Maria Verdi. E Lei?", en: "My name is Maria Verdi. And you?", zh: "我叫 Maria Verdi。您呢？" },
+            { speaker: "Male", text: "Mi chiamo Maria Verdi. E Lei?", en: "My name is Maria Verdi. And you?", zh: "我叫 Maria Verdi。您呢？" },
             { speaker: "Female", text: "Mi chiamo Giovanni Rossi. Piacere!", en: "My name is Giovanni Rossi. Nice to meet you!", zh: "我叫 Giovanni Rossi。很高興認識您！" },
-            { speaker: "Men", text: "Il piacere è mio!", en: "The pleasure is mine!", zh: "我也很高興認識您！" }
+            { speaker: "Male", text: "Il piacere è mio!", en: "The pleasure is mine!", zh: "我也很高興認識您！" }
           ],
           tips: [
             { en: "Use **Come si chiama?** for formal situations", zh: "在正式場合使用 **Come si chiama?**" },
@@ -298,13 +300,13 @@ const moduleData = {
           ],
           dialogues: [
             { speaker: "Female", text: "Ciao! Io sono Giulia.", en: "Hi! I'm Giulia.", zh: "你好，我是 Giulia。" },
-            { speaker: "Men", text: "Piacere di conoscerti!", en: "Nice to meet you (informal).", zh: "很高興認識你。" },
+            { speaker: "Male", text: "Piacere di conoscerti!", en: "Nice to meet you (informal).", zh: "很高興認識你。" },
             { speaker: "Female", text: "Piacere mio!", en: "My pleasure!", zh: "我也很高興。" },
             { speaker: "Female", when: "You meet someone formally", text: "Piacere di conoscerla.", en: "Nice to meet you (formal and polite).", zh: "很高興認識您。" },
-            { speaker: "Men", when: "You want to sound very polite (said by a man)", text: "Molto lieto!", en: "Very pleased (formal).", zh: "非常榮幸。" },
+            { speaker: "Male", when: "You want to sound very polite (said by a man)", text: "Molto lieto!", en: "Very pleased (formal).", zh: "非常榮幸。" },
             { speaker: "Female", when: "You want to sound very polite (said by a woman)", text: "Molto lieta!", en: "Very pleased (formal).", zh: "非常榮幸。" },
             { speaker: "Female", when: "You meet a classmate or neighbor", text: "Piacere di conoscerti!", en: "Nice to meet you (informal and friendly).", zh: "認識你很高興。" },
-            { speaker: "Men", when: "Someone says “Piacere!” to you", text: "Piacere mio!", en: "The pleasure is mine.", zh: "我也很高興。" }
+            { speaker: "Male", when: "Someone says “Piacere!” to you", text: "Piacere mio!", en: "The pleasure is mine.", zh: "我也很高興。" }
           ],
           tips: [
             { en: "**Piacere di conoscerti** vs **Piacere di conoscerla** : **conoscerti** = to meet you (informal 'you') | **conoscerla** = to meet you (formal 'you') | Use **conoscerti ** with friends;", zh: "**conoscerti** = 認識你（非正式）(你) • **conoscerla** = 認識您（正式）(您） • 和朋友一起用 **conoscerti**；" },
@@ -333,9 +335,9 @@ const moduleData = {
           ],
           dialogues: [
             {speaker: "Female", text: "Ciao! Di dove sei?", en: "Hi! Where are you from?", zh: "你來自哪裡？"},
-            {speaker: "Men", text: "Sono di Milano. E tu?", en: "I’m from Milan. And you?", zh: "我來自米蘭，你呢？"},
+            {speaker: "Male", text: "Sono di Milano. E tu?", en: "I’m from Milan. And you?", zh: "我來自米蘭，你呢？"},
             {speaker: "Female", text: "Sono di Roma!", en: "I’m from Rome!", zh: "我來自羅馬！"},
-            {speaker: "Men", text: "Io abito a Firenze ora.", en: "I live in Florence now.", zh: "我現在住在佛羅倫斯"}
+            {speaker: "Male", text: "Io abito a Firenze ora.", en: "I live in Florence now.", zh: "我現在住在佛羅倫斯"}
           ],
           tips: [
             { en: "When someone asks **Di dove sei?**, you can answer in different ways: (1) **Sono di Milano** = I'm from Milan (2) **Vengo dall'Italia** = I come from Italy (3) **Abito a Firenze** = I live in Florence",
@@ -354,10 +356,10 @@ const moduleData = {
             {text: "E tu?", en: "And you?", zh: "你呢？"}
           ],
           dialogues: [
-            {speaker: "A_bear", text: "Ciao! Di dove sei?", en: "Hi! Where are you from?", zh: "你來自哪裡？"},
-            {speaker: "A_llama", text: "Sono di Milano. E tu?", en: "I’m from Milan. And you?", zh: "我來自米蘭，你呢？"},
-            {speaker: "A_bear", text: "Io vengo da Parigi. Ora abito a Firenze.", en: "I come from Paris. Now I live in Florence.", zh: "我來自巴黎，現在住在佛羅倫斯"},
-            {speaker: "A_llama", text: "Che bello! Firenze è bellissima!", en: "How nice! Florence is beautiful!", zh: "太美了！佛羅倫斯很美！"}
+            {speaker: "F_bear", text: "Ciao! Di dove sei?", en: "Hi! Where are you from?", zh: "你來自哪裡？"},
+            {speaker: "M_llama", text: "Sono di Milano. E tu?", en: "I’m from Milan. And you?", zh: "我來自米蘭，你呢？"},
+            {speaker: "F_bear", text: "Io vengo da Parigi. Ora abito a Firenze.", en: "I come from Paris. Now I live in Florence.", zh: "我來自巴黎，現在住在佛羅倫斯"},
+            {speaker: "M_llama", text: "Che bello! Firenze è bellissima!", en: "How nice! Florence is beautiful!", zh: "太美了！佛羅倫斯很美！"}
           ],
           tips: [
             { en: "You can use three main phrases to talk about where you are from or live:", zh: "你可以用這三種主要句型來表達你來自哪裡或住在哪裡: " },
@@ -414,12 +416,12 @@ const moduleData = {
           ],
           dialogues: [
             {speaker: "Female", text: "Cosa fai?", en: "What are you doing?", zh: "你在幹嘛？"},
-            {speaker: "Men", text: "Cucino. E tu?", en: "I’m cooking. And you?", zh: "我在做飯，你呢？"},
-            {speaker: "4", text: "Guardo la TV.", en: "I’m watching TV.", zh: "我在看電視"},
-            {speaker: "Men", text: "Faccio cena.", en: "I’m making dinner.", zh: "我在做晚餐"},
-            {speaker: "6", text: "Studio l'italiano.", en: "I’m studying Italian.", zh: "我在學習義大利語"},
-            {speaker: "7", text: "Navigo in internet.", en: "I’m surfing the internet.", zh: "我在上網"},
-            {speaker: "8", text: "Niente di speciale.", en: "Nothing special.", zh: "沒什麼特別的"}
+            {speaker: "Male", text: "Cucino. E tu?", en: "I’m cooking. And you?", zh: "我在做飯，你呢？"},
+            {speaker: "Female", text: "Guardo la TV.", en: "I’m watching TV.", zh: "我在看電視"},
+            {speaker: "F_llama", text: "Faccio cena.", en: "I’m making dinner.", zh: "我在做晚餐"},
+            {speaker: "F_llama", text: "Studio l'italiano.", en: "I’m studying Italian.", zh: "我在學習義大利語"},
+            {speaker: "F_llama", text: "Navigo in internet.", en: "I’m surfing the internet.", zh: "我在上網"},
+            {speaker: "F_llama", text: "Niente di speciale.", en: "Nothing special.", zh: "沒什麼特別的"}
           ],
           tips: [
             { en: "**Cosa fai?** — used for casual questions.", zh: "**Cosa fai?** — 用於比較口語、非正式的提問。" },
@@ -443,9 +445,9 @@ const moduleData = {
           ],
           dialogues: [
             {speaker: "Female", text: "Che lavoro fai?", en: "What do you do?", zh: "你是做什麼的？"},
-            {speaker: "Men", text: "Lavoro in banca.", en: "I work in a bank.", zh: "我在銀行工作"},
+            {speaker: "Male", text: "Lavoro in banca.", en: "I work in a bank.", zh: "我在銀行工作"},
             {speaker: "Female", text: "Io sono insegnante. E tu?", en: "I’m a teacher. And you?", zh: "我是老師，你呢？"},
-            {speaker: "Men", text: "Faccio la designer grafica.", en: "I’m a graphic designer.", zh: "我是幾何設計師"},
+            {speaker: "Male", text: "Faccio la designer grafica.", en: "I’m a graphic designer.", zh: "我是幾何設計師"},
             {speaker: "Female", text: "Io sono studente.", en: "I’m a student.", zh: "我是學生"}
           ],
           tips: [
@@ -470,10 +472,10 @@ const moduleData = {
           ],
           dialogues: [
             {speaker: "Female", text: "Cosa fai?", en: "What do you do?", zh: "你是做什麼的？"},
-            {speaker: "Men", text: "Sono un ingegnere. E tu?", en: "I’m an engineer. And you?", zh: "我是工程師，你呢？"},
+            {speaker: "Male", text: "Sono un ingegnere. E tu?", en: "I’m an engineer. And you?", zh: "我是工程師，你呢？"},
             {speaker: "Female", text: "Io lavoro in una scuola materna.", en: "I work in a preschool.", zh: "我在幼兒園工作"},
-            {speaker: "Men", text: "Io sono disoccupata al momento.", en: "I’m currently unemployed.", zh: "我現在沒在工作"},
-            {speaker: "4", text: "Io studio, non lavoro ancora.", en: "I’m studying, not working yet.", zh: "我還在唸書，還沒工作"}
+            {speaker: "F_bear", text: "Io sono disoccupata al momento.", en: "I’m currently unemployed.", zh: "我現在沒在工作"},
+            {speaker: "F_bear", text: "Io studio, non lavoro ancora.", en: "I’m studying, not working yet.", zh: "我還在唸書，還沒工作"}
           ],
           tips: [
             { en: "**Cosa fai?** — can mean 'What are you doing now?' or 'What do you do for a living?'", zh: "**Cosa fai?** 可以表示「你現在在做什麼？」或「你的職業是什麼？」" },
@@ -553,9 +555,9 @@ const moduleData = {
           ],
           dialogues: [
             {speaker: "Female", text: "Sei Marco?", en: "Are you Marco?", zh: "你是馬可嗎？"},
-            {speaker: "Men", text: "Sì, sono Marco.", en: "Yes, I'm Marco.", zh: "對，我是馬可"},
+            {speaker: "Male", text: "Sì, sono Marco.", en: "Yes, I'm Marco.", zh: "對，我是馬可"},
             {speaker: "Female", text: "E tu?", en: "And you?", zh: "那你呢？"},
-            {speaker: "Men", text: "Sono Laura.", en: "I'm Laura.", zh: "我是勞拉"}
+            {speaker: "Male", text: "Sono Laura.", en: "I'm Laura.", zh: "我是勞拉"}
           ],
           tips: [
             { en: "In Italian, people often drop **io** because the verb already shows who’s speaking.", zh: "在義大利語中，人們常省略 **io**，因為動詞變化已經透露主詞是誰。" },
@@ -587,22 +589,22 @@ const moduleData = {
             {text: "loro sono...", en: "They are...", zh: "他們/她們是..."}
           ],
           dialogues: [
-            {speaker: "Men", text: "Tu sei Maria?", en: "Are you Maria?", zh: "你是瑪麗亞嗎？"},
+            {speaker: "Male", text: "Tu sei Maria?", en: "Are you Maria?", zh: "你是瑪麗亞嗎？"},
             {speaker: "Female", text: "Sì, io sono Maria.", en: "Yes, I am Maria.", zh: "對，我是瑪麗亞"},
-            {speaker: "Men", text: "Sei pronto?", en: "Are you ready?", zh: "你準備好了嗎？"},
+            {speaker: "Male", text: "Sei pronto?", en: "Are you ready?", zh: "你準備好了嗎？"},
             {speaker: "Female", text: "Sì, sono pronto.", en: "Yes, I am ready.", zh: "對，我準備好了"},
             {speaker: "Female", text: "Lui è Luca?", en: "Is he Luca?", zh: "他是路卡嗎？"},
-            {speaker: "Men", text: "Sì, lui è Luca.", en: "Yes, he is Luca.", zh: "對，他是路卡"},
+            {speaker: "Male", text: "Sì, lui è Luca.", en: "Yes, he is Luca.", zh: "對，他是路卡"},
             {speaker: "Female", text: "Lei è italiana?", en: "Is she Italian?", zh: "她是義大利人嗎？"},
-            {speaker: "Men", text: "Sì, lei è italiana.", en: "Yes, she is Italian.", zh: "對，她是義大利人"},
+            {speaker: "Male", text: "Sì, lei è italiana.", en: "Yes, she is Italian.", zh: "對，她是義大利人"},
             {speaker: "Female", text: "Scusi, Lei è il signor Bianchi?", en: "Excuse me, are you Mr. Bianchi? (Formal)", zh: "打擾了，您是比安奇先生嗎？"},
-            {speaker: "Men", text: "Sì, sono io.", en: "Yes, it's me.", zh: "對，是我"},
+            {speaker: "Male", text: "Sì, sono io.", en: "Yes, it's me.", zh: "對，是我"},
             {speaker: "Female", text: "Noi siamo amici?", en: "Are we friends?", zh: "我們是朋友嗎？"},
-            {speaker: "Men", text: "Sì, siamo amici.", en: "Yes, we are friends.", zh: "對，我們是朋友"},
+            {speaker: "Male", text: "Sì, siamo amici.", en: "Yes, we are friends.", zh: "對，我們是朋友"},
             {speaker: "Female", text: "Voi siete turisti?", en: "Are you all tourists?", zh: "你們是遊客嗎？"},
-            {speaker: "Men", text: "Sì, siamo turisti", en: "Yes, we are tourists.", zh: "對，我們是遊客"},
+            {speaker: "Male", text: "Sì, siamo turisti", en: "Yes, we are tourists.", zh: "對，我們是遊客"},
             {speaker: "Female", text: "Loro sono americani?", en: "Are they American?", zh: "他們是美國人嗎？"},
-            {speaker: "Men", text: "Sì, sono americani.", en: "Yes, they are American.", zh: "對，他們是美國人"}
+            {speaker: "Male", text: "Sì, sono americani.", en: "Yes, they are American.", zh: "對，他們是美國人"}
           ],
           tasks: [],
           tips: [
@@ -633,13 +635,13 @@ const moduleData = {
           ],
           dialogues: [
             {speaker: "Female", text: "È la tua borsa?", en: "Is it your bag?", zh: "這是你的包包嗎？"},
-            {speaker: "Men", text: "Sì, è la mia borsa.", en: "Yes, it’s my bag.", zh: "對，是我的包包"},
+            {speaker: "Male", text: "Sì, è la mia borsa.", en: "Yes, it’s my bag.", zh: "對，是我的包包"},
             {speaker: "Female", text: "Dov’è il suo telefono?", en: "Where is his/her phone?", zh: "他的/她的手機在哪？"},
-            {speaker: "Men", text: "Ecco il suo telefono.", en: "Here’s his/her phone.", zh: "這是他的/她的手機"},
+            {speaker: "Male", text: "Ecco il suo telefono.", en: "Here’s his/her phone.", zh: "這是他的/她的手機"},
             {speaker: "Female", text: "È la vostra macchina?", en: "Is this your (plural) car?", zh: "這是你們的車嗎？"},
-            {speaker: "Men", text: "Sì, è la nostra macchina.", en: "Yes, it’s our car.", zh: "對，是我們的車"},
+            {speaker: "Male", text: "Sì, è la nostra macchina.", en: "Yes, it’s our car.", zh: "對，是我們的車"},
             {speaker: "Female", text: "Sono le loro chiavi?", en: "Are these their keys?", zh: "這些是他們的鑰匙嗎？"},
-            {speaker: "Men", text: "No, non sono le loro chiavi. Sono le mie.", en: "No, they aren't their keys. They are mine.", zh: "不，那些不是他們的鑰匙。是我的。"}
+            {speaker: "Male", text: "No, non sono le loro chiavi. Sono le mie.", en: "No, they aren't their keys. They are mine.", zh: "不，那些不是他們的鑰匙。是我的。"}
           ],
           tips: [
             { en: "Possessive words change based on the thing you are talking about, not who owns it.", zh: "所有格形容詞的性別與所修飾的名詞一致，而不是與擁有者一致。" },
