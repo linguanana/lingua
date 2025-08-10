@@ -12,6 +12,7 @@ const episodeData = {
       topic_zh: "☕10 種義大利咖啡點法 - 每天一個例子",
       scenes: [
         {
+          sceneId: 1,
           scene: "Day 1 – Ordering an espresso at the bar",
           scene_zh: "第 1 天 — 在吧台點濃縮咖啡",
           dialogue: [
@@ -26,6 +27,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 2,
           scene: "Day 2 – Asking for sugar and milk",
           scene_zh: "第 2 天 — 詢問要糖和牛奶",
           dialogue: [
@@ -41,6 +43,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 3,
           scene: "Day 3: With Milk, hot and no sugar",
           scene_zh: "第 3 天 — 加牛奶、要熱、不加糖",
           dialogue: [
@@ -57,6 +60,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 4,
           scene: "Day 4: Large Size",
           scene_zh: "第 4 天 — 大杯尺寸",
           dialogue: [
@@ -70,6 +74,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 5,
           scene: "Day 5: Iced Coffee Options",
           scene_zh: "第 5 天 — 冰咖啡選項",
           dialogue: [
@@ -87,6 +92,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 6,
           scene: "Day 6: Paying for Coffee",
           scene_zh: "第 6 天 — 付款（現金或刷卡）",
           dialogue: [
@@ -104,6 +110,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 7,
           scene: "Day 7: Paying by Card",
           scene_zh: "第 7 天 — 刷卡付款",
           dialogue: [
@@ -123,6 +130,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 8,
           scene: "Day 8: To Go",
           scene_zh: "第 8 天 — 外帶",
           dialogue: [
@@ -133,6 +141,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 9,
           scene: "Day 9: Asking for Recommendations",
           scene_zh: "第 9 天 — 詢問推薦",
           dialogue: [
@@ -142,6 +151,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 10,
           scene: "Day 10: Adding a Pastry",
           scene_zh: "第 10 天 — 再加一份點心",
           dialogue: [
@@ -159,6 +169,7 @@ const episodeData = {
       topic_zh: "10 款必嚐的義大利甜點 🍰 - 每天一個例子",
       scenes: [
         {
+          sceneId: 1,
           scene: "Day 1: Tiramisù – 酒精？自製？",
           dialogue: [
             { speaker: "Female", text: "Buongiorno! Avete il tiramisù oggi?", en: "Good morning! Do you have tiramisù today?", zh: "早安！你們今天有提拉米蘇嗎？" },
@@ -169,6 +180,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 2,
           scene: "Day 2: Cannoli – 口味選擇",
           dialogue: [
             { speaker: "Female", text: "Buonasera! Che tipo di cannoli avete?", en: "Good evening! What kinds of cannoli do you have?", zh: "晚安！你們有什麼口味的卡諾里？" },
@@ -178,6 +190,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 3,
           scene: "Day 3: Affogato – 咖啡淋冰淇淋",
           dialogue: [
             { speaker: "Female", text: "Ciao! Cos’è l’affogato al caffè?", en: "Hi! What is affogato al caffè?", zh: "嗨！什麼是 affogato 咖啡淋冰淇淋？" },
@@ -186,6 +199,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 4,
           scene: "Day 4: Panna Cotta – 選醬料",
           dialogue: [
             { speaker: "Female", text: "Buongiorno! Che salse avete per la panna cotta?", en: "Good morning! What sauces do you have for panna cotta?", zh: "早安！你們的奶酪有什麼醬料可選？" },
@@ -194,6 +208,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 5,
           scene: "Day 5: Gelato – 冰淇淋口味與餅乾杯",
           dialogue: [
             { speaker: "Female", text: "Ciao! Che gusti di gelato ci sono oggi?", en: "Hi! What gelato flavors do you have today?", zh: "嗨！今天有什麼口味的義式冰淇淋？" },
@@ -204,6 +219,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 6,
           scene: "Day 6: Babà al rum – 含酒味甜點",
           dialogue: [
             { speaker: "Female", text: "Buongiorno! Com’è il babà al rum?", en: "Good morning! How’s the babà al rum?", zh: "早安！請問這個蘭姆酒蛋糕怎麼樣？" },
@@ -212,6 +228,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 7,
           scene: "Day 7: Crostata – 義式果醬派",
           dialogue: [
             { speaker: "Female", text: "Ciao! Quali crostate avete oggi?", en: "Hi! What crostatas do you have today?", zh: "嗨！今天有什麼口味的果醬派？" },
@@ -220,6 +237,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 8,
           scene: "Day 8: Profiteroles – 奶油泡芙",
           dialogue: [
             { speaker: "Female", text: "Buonasera! Avete i profiteroles?", en: "Good evening! Do you have profiteroles?", zh: "晚上好！你們有奶油泡芙嗎？" },
@@ -228,6 +246,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 9,
           scene: "Day 9: Sfogliatella – 酥不酥脆？",
           dialogue: [
             { speaker: "Female", text: "Salve! La sfogliatella è croccante?", en: "Hi! Is the sfogliatella crunchy?", zh: "您好！這個千層酥脆嗎？" },
@@ -236,6 +255,7 @@ const episodeData = {
           ]
         },
         {
+          sceneId: 10,
           scene: "Day 10: Zeppole – 炸甜點，限節日？",
           dialogue: [
             { speaker: "Female", text: "Avete le zeppole oggi?", en: "Do you have zeppole today?", zh: "今天有炸泡芙嗎？" },
