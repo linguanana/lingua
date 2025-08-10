@@ -102,7 +102,7 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Ask 'How are you?'",
+          title: "Level 1 (A0+): Ask 'How are you?'",
           title_zh: "第一級（A0）: 詢問「你最近好嗎？」",
           keyPhrases: [
             // Changed "it" key to "text" for consistency with other data
@@ -160,7 +160,7 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Basic polite words",
+          title: "Level 1 (A0): Basic polite words",
           title_zh: "第一級（A0）: 基礎禮貌用語",
           keyPhrases: [
             { text: "Grazie", en: "Thank you", zh: "謝謝" },
@@ -234,7 +234,7 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Basic name introduction",
+          title: "Level 1 (A0): Basic name introduction",
           title_zh: "第一級（A0）: 基本名字介紹",
           keyPhrases: [
             { text: "Come ti chiami?", en: "What’s your name?", zh: "你叫什麼名字？" },
@@ -312,7 +312,7 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Ask where someone is from",
+          title: "Level 1 (A0): Ask where someone is from",
           title_zh: "第一級（A0）: 詢問某人來自哪裡",
           keyPhrases: [
             {text: "Di dove sei?", en: "Where are you from?", zh: "你來自哪裡？"},
