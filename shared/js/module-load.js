@@ -1,3 +1,23 @@
+// ep-load.js
+// ============================
+const DEFAULT_SPEAKERS = {
+  Female: "👩",
+  Male: "🧑",
+  M_chef: "👨🏻‍🍳",
+  Girl: "👧",
+  Boy: "👦🏻‍🎨",
+  F_llama: "🦙",
+  M_llama: "🦙",
+  M_bear: "🧸",
+  F_bear: "🧸",
+};
+
+// 取得表情（支援每集覆寫）
+function getSpeakerEmoji(speakerKey, epSpeakers) {
+  const map = { ...DEFAULT_SPEAKERS, ...(epSpeakers || {}) };
+  return map[speakerKey] || "🦙"; // 預設 fallback
+}
+
 window.currentLanguage = window.currentLanguage || localStorage.getItem('userLanguage') || 'en';
 
 // 🔧 Italic parser (currently for **...**) → colored word
@@ -155,7 +175,7 @@ function renderLesson(levels, moduleSpeakers = {}) {
       dialogueBox.className = "dialogue-box";
 
       level.dialogues.forEach(line => {
-        const emoji = moduleSpeakers[line.speaker] || "🗣";
+        const emoji = getSpeakerEmoji(line.speaker, moduleSpeakers); // ✅ use helper
         const p = renderDialogueLine(line, emoji);
         dialogueBox.appendChild(p);
       });

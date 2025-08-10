@@ -4,6 +4,7 @@ const moduleData = {
   title: "Module 1 – Greetings",
   title_zh: "模組 1 – 打招呼",
   voice: "IT",
+  /* move this to module-load.js
   speakers: {
     "Female": "👩",       // 女遊客
     "M_chef": "👨🏻‍🍳",   // 男咖啡師
@@ -13,6 +14,7 @@ const moduleData = {
     "A_bear": "🧸",          // 熊
     "A_llama": "🦙"           // 魚
   },
+  */
   lessons: [
     {
       lessonId: 1,
