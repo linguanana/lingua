@@ -47,16 +47,16 @@ const episodeData = {
           scene: "Day 3: With Milk, hot and no sugar",
           scene_zh: "第 3 天 — 加牛奶、要熱、不加糖",
           dialogue: [
-            { speaker: "F_wave", text: "Ciao amici!", en: "Hey friends!", zh: "嗨朋友們！" },
-            { speaker: "M_wave", text: "Ciao! Benvenuta!", en: "Hi! Welcome!", zh: "哈囉！歡迎光臨！" },
-            { speaker: "F_wave", text: "Vorrei un caffè macchiato, per favore.", en: "I would like a macchiato, please.", zh: "我想要一杯瑪奇朵，謝謝。" },
-            { speaker: "M_wave", text: "Per qui o da portare via?", en: "For here or to take away?", zh: "這裡喝還是外帶？" },
-            { speaker: "F_wave", text: "Da portare via, grazie.", en: "To take away, thanks.", zh: "外帶，謝謝。" },
-            { speaker: "M_wave", text: "Con zucchero?", en: "With sugar?", zh: "要加糖嗎？" },
-            { speaker: "F_wave", text: "No, grazie.", en: "No, thanks.", zh: "不用，謝謝。" },
-            { speaker: "M_wave", text: "Va bene. Sono un euro e cinquanta.", en: "Alright. That’s one euro fifty.", zh: "好的，一歐五角。" },
-            { speaker: "F_wave", text: "Ecco. Buona giornata!", en: "Here you go. Have a nice day!", zh: "給您，祝您有美好的一天！" },
-            { speaker: "F_wave", text: "Anche a lei!", en: "You too!", zh: "您也是！" }
+            { speaker: "F_hd", text: "Ciao amici!", en: "Hey friends!", zh: "嗨朋友們！" },
+            { speaker: "M_hd", text: "Ciao! Benvenuta!", en: "Hi! Welcome!", zh: "哈囉！歡迎光臨！" },
+            { speaker: "F_hd", text: "Vorrei un caffè macchiato, per favore.", en: "I would like a macchiato, please.", zh: "我想要一杯瑪奇朵，謝謝。" },
+            { speaker: "M_hd", text: "Per qui o da portare via?", en: "For here or to take away?", zh: "這裡喝還是外帶？" },
+            { speaker: "F_hd", text: "Da portare via, grazie.", en: "To take away, thanks.", zh: "外帶，謝謝。" },
+            { speaker: "M_hd", text: "Con zucchero?", en: "With sugar?", zh: "要加糖嗎？" },
+            { speaker: "F_hd", text: "No, grazie.", en: "No, thanks.", zh: "不用，謝謝。" },
+            { speaker: "M_hd", text: "Va bene. Sono un euro e cinquanta.", en: "Alright. That’s one euro fifty.", zh: "好的，一歐五角。" },
+            { speaker: "F_hd", text: "Ecco. Buona giornata!", en: "Here you go. Have a nice day!", zh: "給您，祝您有美好的一天！" },
+            { speaker: "F_hd", text: "Anche a lei!", en: "You too!", zh: "您也是！" }
           ]
         },
         {

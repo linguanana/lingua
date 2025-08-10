@@ -8,6 +8,8 @@ const DEFAULT_SPEAKERS = {
   Boy: "👦🏻‍🎨",
   F_std: "🦙",
   M_std: "🧸",
+  F_hd: "👩🏻‍🦰",
+  M_hd: "🧑🏻‍🦱",
   F_wave: "🦙",
   F_wave: "🧸",
 };
