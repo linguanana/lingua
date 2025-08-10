@@ -127,7 +127,7 @@ function renderSingleTopic(topicObj) {
     sceneAudio.className = "small-audio scene-audio";
 
     const sceneSource = document.createElement("source");
-    const defaultMp3Filename = `ep${epId}_topic${topicId}_scene${sceneObj.sceneId}.mp3`;
+    const defaultMp3Filename = `ep${epId}_topic${topicId}_scene${sceneIndex + 1}.mp3`;
     const mp3FilenameToUse = sceneObj.mp3 || defaultMp3Filename;
 
     sceneSource.src = `./audio/${mp3FilenameToUse}`;
@@ -142,7 +142,7 @@ function renderSingleTopic(topicObj) {
 
     // Dialogue lines
     sceneObj.dialogue.forEach((line) => {
-      const emoji = getSpeakerEmoji(line.speaker, episodeData.speakers);
+      const emoji = getSpeakerEmoji(line.speaker, episodeData.speakers); // ← 用這個
       const lineEl = document.createElement("p");
 
       lineEl.innerHTML = `
