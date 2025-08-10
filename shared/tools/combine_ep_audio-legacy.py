@@ -1,4 +1,3 @@
-# combine_ep_audio.py (complete and corrected script)
 import os
 import re
 import sys
@@ -16,7 +15,7 @@ def combine_scene_audio(audio_dir):
 
     scenes = {}
 
-    # NEW REGEX: Match the new filename format
+    # CORRECTED REGEX: Match the new filename format (e.g., ep1_topic1_scene1_d1.mp3)
     dialogue_pattern = re.compile(r'(ep\d+_topic\d+_scene\d+)_d(\d+)\.mp3')
 
     for filename in os.listdir(audio_dir):
@@ -45,6 +44,7 @@ def combine_scene_audio(audio_dir):
                 if combined_audio is None:
                     combined_audio = audio
                 else:
+                    # Add a small pause between dialogues
                     combined_audio += AudioSegment.silent(duration=200)
                     combined_audio += audio
             except Exception as e:

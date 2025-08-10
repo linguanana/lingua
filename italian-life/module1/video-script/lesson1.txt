@@ -1,14 +1,14 @@
 🎬 Italian Lesson 1 – Greetings & Goodbyes (Level 1)
 
 
-🩷🩷 Slide 1 *************************
- *************** TEXT: ***************
+🩷🩷 Slide 1
+********** TEXT **********
 🎬 Lesson 1
 Greetings in Everyday Italian
 Part 1: Say Hello
 Part 2: Goodbyes
 
-EN (English narration): ~~~~~~~~~~~~~~
+********** EN Script (talking script) **********
 Welcome to your first Italian lesson! {{pause=500}} How exciting! {{pause=500}}
 You’re about to learn real phrases Italians use every single day. {{pause=500}}
 
@@ -22,8 +22,9 @@ you’ll be able to start any conversation with confidence. {{pause=500}}
 So — let’s go to Italy, discover what these beautiful words mean…
 and say them together! {{pause=500}}
 
-🩷🩷 Slide 2 *************************
- *************** TEXT: ***************
+
+🩷🩷 Slide 2
+********** TEXT **********
 Ciao! – Hi / Hello / Bye
 Salve – Hi (neutral)
 Buongiorno! – Good morning / Good day
@@ -31,7 +32,7 @@ Buon pomeriggio! – Good afternoon
 Buonasera! – Good evening
 Buonanotte! – Good night
 
-IT (Italian voiceover):~~~~~~~~~~~~~~
+********** IT Script (talking script) **********
 Ciao! {{pause=500}}
 Salve! {{pause=500}}
 Buongiorno! {{pause=500}}
@@ -39,12 +40,12 @@ Buon pomeriggio! {{pause=500}}
 Buonasera! {{pause=500}}
 Buonanotte! {{pause=500}}
 
-🩷🩷 Slide 3 *************************
- *************** TEXT: ***************
+
+🩷🩷 Slide 3
+********** TEXT **********
 (Same as Slide 2)
 
-EN (English narration):~~~~~~~~~~~~~~
-
+********** IT Script (talking script) **********
 {{control=happy,2}} Ciao! {{control=happy,2}}
 This is the most famous Italian word — and you’ll hear it everywhere. {{pause=500}}
 It’s super casual, and guess what? It means both “hi” and “bye”! {{control=happy,1}}
@@ -76,22 +77,23 @@ This one means “Good night.” {{pause=500}}
 Say it when someone’s going to bed — it’s not for casual goodbyes. {{pause=500}}
 It’s warm, soft, and full of care. {{control=happy,1}}
 
-🩷🩷 Slide 4 *************************
- *************** TEXT: ***************
-Lesson 1
-Greetings in Everyday Italian
 
+🩷🩷 Slide 4
+********** TEXT **********
+🎬 Lesson 1
+Greetings in Everyday Italian
 Part 1: Say Hello
 Part 2: Goodbyes
 
-EN (English narration):~~~~~~~~~~~~~~
+********** EN Script (talking script) **********
 Great job today! {{pause=500}}
 You’ve just completed your first Italian lesson. 🎉 {{pause=500}}
 Up next: we’ll learn 12 different ways to say goodbye in Italian. {{pause=500}}
 Are you ready? {{pause=300}} Let’s discover them together! 🇮🇹 {{pause=500}}
 
-🩷🩷 Slide 5 *************************
- *************** TEXT: ***************
+
+🩷🩷 Slide 5
+********** TEXT *********
 👋 Arrivederci – Goodbye
 👋 Ciao – Bye (informal)
 🙋‍♀️ A dopo – See you later (today)
@@ -105,7 +107,7 @@ Are you ready? {{pause=300}} Let’s discover them together! 🇮🇹 {{pause=50
 🌞 Buona giornata! – Have a good day
 🌆 Buona serata! – Have a good evening
 
-IT (Italian voiceover):~~~~~~~~~~~~~~
+********** IT Script (talking script) **********
 Arrivederci {{pause=1000}}
 Ciao ciao {{pause=1000}}
 A dopo {{pause=1000}}
@@ -121,11 +123,12 @@ Ci sentiamo {{pause=1000}}
 Buona giornata {{pause=1000}}
 Buona serata {{pause=1000}}
 
-🩷🩷 Slide 6 *************************
- *************** TEXT: ***************
+
+🩷🩷 Slide 6
+********** TEXT *********
 (Same as Slide 5)
 
-EN (English narration):~~~~~~~~~~~~~~
+********** EN Script (talking script) **********
 {{pause=1000}}Arrivederci {{pause=1000}} is a very common goodbye. {{pause=500}}
 You’ll hear it everywhere — on the street, in stores, even when leaving a café. {{pause=1000}}
 It’s polite and neutral, so you can use it with anyone, anytime. {{pause=1000}}
@@ -136,7 +139,6 @@ It talks about saying goodbye to the city,
 and to someone you’ve just met… under the Roman sky. {{pause=1000}}
 So when you say {{pause=1000}}Arrivederci{{pause=1000}}
 you’re not just being polite , you’re speaking with a bit of Italian soul.
-
 
 {{pause=1000}}Ciao{{pause=1000}} This one is casual — perfect with friends. {{pause=1000}}
 
@@ -166,17 +168,15 @@ If you want to add when, you can say:
 {{pause=1000}}Ci vediamo domani {{pause=1000}} — See you tomorrow. {{pause=1000}}
 Or {{pause=1000}}Ci vediamo presto{{pause=1000}} — See you soon. {{pause=1000}}
 
-
 {{pause=1000}}Ci sentiamo{{pause=1000}} — for calls or messages. Like “Talk soon!” {{pause=1000}}
-
 {{pause=1000}}Buona giornata!{{pause=1000}} — say it when someone’s heading out for the day. {{pause=1000}}
 
 {{pause=1000}}Buona serata!{{pause=1000}} — say this in the evening. Polite and warm. {{pause=1000}}
 
-🩷🩷 Slide 7 *************************
- *************** TEXT: ***************
-Lesson 1
-Greetings in Everyday Italian
+
+🩷🩷 Slide 7
+********** TEXT *********
+Lesson
 
 Bravo!!
 Thanks for learning with me!
@@ -187,22 +187,23 @@ subscribe, put a like, and check out the next videos!
 Bye, thank you, see you!
 
 
-IT (Italian voiceover):~~~~~~~~~~~~~~
+********** IT Script (talking script) **********
 Bravissimo! {{pause=1000}}
 Grazie per aver imparato con me! {{pause=800}}
 Non dimenticare: Iscriviti, metti un like, e guarda i prossimi video! {{pause=1000}}
 Ciao ciao, grazie, arrivederci! {{pause=1000}}
 
-🩷🩷 Slide 8 *************************
- *************** TEXT: ***************
-Lesson 1
-Greetings in Everyday Italian
+
+🩷🩷 Slide 8
+********** TEXT *********
+
 
 🎵 Click the practice song
 and listen —
 you’ll remember it naturally!
 
-EN (English narration):
+
+********** EN Script (talking script) **********
 In this lesson, we taught you many different ways to say goodbye —
 but don’t worry, you don’t need to remember them all right now. {{pause=1000}}
 

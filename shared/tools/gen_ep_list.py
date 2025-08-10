@@ -16,22 +16,37 @@ $ python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > output.txt
 這個檔案將作為 gen_audio.py 腳本的輸入。
 
 """
-# gen_ep_list.py (完整檔案)
+"""
+## gen_ep.py 腳本使用說明 (中文)
+
+### 腳本功能
+它是一個「文字整理工具」，專門為語音網站做準備。
+1. 讓語音網站知道這段要念什麼，停頓多久。
+2. 然後這個音檔要叫什麼名字。
+3. 同時支援不同語言和特定人物的語音。
+
+### 如何使用
+請在終端機中，以以下格式執行此腳本：
+$ python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > output.txt
+
+### 輸出結果
+腳本執行後，會將轉換後的文字（包含 SSML 標籤）儲存到 output.txt 檔案中。
+這個檔案將作為 gen_audio.py 腳本的輸入。
+
+"""
 import json
 import re
 import sys
-
-# 從 speaker_config 檔案中導入語音設定
-from speaker_config import SPEAKER_PROSODY_MAP
-
-# gen_ep_list.py (corrected generate_ssml_text function)
+from speaker_config import SPEAKER_CONFIG
 
 def generate_ssml_text(js_file_path):
-    """
-    Reads a JavaScript file, parses it, and generates SSML text output
-    structured by individual dialogue lines.
-    """
-    # ... (code to read and parse the JS file remains the same)
+    try:
+        with open(js_file_path, 'r', encoding='utf-8') as f:
+            js_content = f.read()
+    except FileNotFoundError:
+        return f"Error: File not found at '{js_file_path}'."
+    except Exception as e:
+        return f"Error reading file '{js_file_path}': {e}"
 
     match = re.search(r'const episodeData = ({.*?});', js_content, re.DOTALL)
     if not match:
@@ -49,45 +64,44 @@ def generate_ssml_text(js_file_path):
 
     output_blocks = []
     episode_id = episode_data.get('episodeId', '1')
+    speaking_rate = episode_data.get('speaking_rate', '1.0')
     language_code = episode_data.get('voice', 'en-US')
-    speaking_rate = episode_data.get('speaking_rate', '0.5')
 
-    topics_data = episode_data.get('topics', [])
-    for topic_index, topic in enumerate(topics_data):
-        # We now use the full topicId string
-        topic_id = topic.get('topicId', f"topic{topic_index + 1}")
-        scenes_data = topic.get('scenes', [])
+    topics = episode_data.get('topics', [])
+    for topic in topics:
+        topic_id = topic.get('topicId', '1')
 
-        for scene_index, scene in enumerate(scenes_data):
-            # We now use the full sceneId string
-            scene_id = scene.get('sceneId', f"scene{scene_index + 1}")
-            dialogues = scene.get('dialogue', [])
+        scenes = topic.get('scenes', [])
+        for scene in scenes:
+            scene_id = scene.get('sceneId', '1')
 
-            for dialogue_index, dialog in enumerate(dialogues):
-                speaker = dialog.get('speaker', 'default')
-                text = dialog.get('text', '')
+            dialogue = scene.get('dialogue', [])
+            for i, line in enumerate(dialogue):
+                dialog_id = i + 1
 
-                prosody_settings = SPEAKER_PROSODY_MAP.get(speaker, SPEAKER_PROSODY_MAP['default'])
+                speaker_name = line.get('speaker', 'default')
+
+                speaker_info = SPEAKER_CONFIG.get(speaker_name, SPEAKER_CONFIG['default'])
+                prosody_settings = speaker_info['prosody']
+
                 rate = prosody_settings.get("rate", "100%")
                 pitch = prosody_settings.get("pitch", "0st")
+                text = line.get("text", "")
 
-                ssml_text = f"<voice speaker='{speaker}'><prosody rate='{rate}' pitch='{pitch}'>{text}</prosody></voice>"
+                # CORRECTED FILENAME FORMAT
+                mp3_filename = f"ep{episode_id}_topic{topic_id}_scene{scene_id}_d{dialog_id}.mp3"
 
-                ssml_content_lines = [f"<speak lang='{language_code}'>", f"  {ssml_text} <break time='1s' />", "</speak>"]
+                break_tag = "<break time='1s'/>"
+                ssml_content = f"<speak lang='{language_code}'><voice speaker='{speaker_name}'><prosody rate='{rate}' pitch='{pitch}'>{text}{break_tag}</prosody></voice></speak>"
 
-                # New filename format using full topic and scene IDs
-                mp3_filename = f"ep{episode_id}_{topic_id}_{scene_id}_d{dialogue_index + 1}.mp3"
-
-                output_blocks.append(f"{mp3_filename} ========== (rate={speaking_rate} ep{episode_id} {topic_id} {scene_id} dialog{dialogue_index + 1})")
-
-                output_blocks.append("\n".join(ssml_content_lines))
+                output_blocks.append(f"{mp3_filename} ========== (rate={speaking_rate} ep{episode_id} topic{topic_id} scene{scene_id} dialog{dialog_id})")
+                output_blocks.append(ssml_content)
 
     return "\n\n".join(output_blocks)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python3 gen_ep_list.py <js_file>")
-        print("Example: python3 gen_ep_list.py ep1.js > output.txt")
         sys.exit(1)
 
     js_file_name = sys.argv[1]

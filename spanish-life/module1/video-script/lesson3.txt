@@ -1,11 +1,11 @@
 🩷🩷 Slide 1
 
 ********** TEXT **********
-🎬 Lección 3
-Palabras y Expresiones de Cortesía en Español
+🎬 Lesson 3
+Polite Words & Courteous Expressions in Spanish
 
-Parte 1: Palabras de cortesía cotidianas
-Parte 2: Responder con cortesía y dirigirse a otros
+Parte 1: Everyday Polite Words
+Parte 2: Responding Politely & Addressing Others
 
 ********** EN Script (talking script) **********
 Welcome! {{pause=1000}}
@@ -128,12 +128,15 @@ Lo aprecio mucho {{pause=500}}
 same as [slide-2]
 
 ********** EN Script (talking script) **********
-Now, we're diving into some incredibly useful Spanish phrases {{pause=500}} that'll help you communicate when you need a little assistance or just want to be polite. {{pause=500}} Let's get started!" {{pause=500}}
+Now, we're diving into some incredibly useful Spanish phrases {{pause=500}} that'll help you communicate when you need a little assistance or just want to be polite.
+{{pause=500}} Let's get started!" {{pause=500}}
+
 First up, if you're ever in a situation where you hear something in Spanish and it just 'don't understand,' you can say:
 {{pause=1000}}     No entiendo.{{pause=500}}
 That means 'I don't understand.' Think about it, if you're feeling a bit confused, or if someone's speaking just too fast, this phrase is super practical! {{pause=500}}
 
-Sometimes, it's not just about not understanding one thing, but generally feeling that your Spanish skills are still growing. For that, you can clearly say:
+Sometimes, it's not just about not understanding one thing, but generally feeling that your Spanish skills are still growing.
+For that, you can clearly say:
 {{pause=1000}}     No hablo español muy bien.{{pause=500}}
 This means 'I don't speak Spanish very well.' It's a great, honest way to let people know your level, so they might speak slower or even switch to English to help you out. {{pause=500}}
 

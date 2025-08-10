@@ -17,7 +17,6 @@ const episodeData = {
           scene: "Day 1 – Ordering an espresso at the bar",
           scene_zh: "第 1 天 — 在吧台點濃縮咖啡",
           dialogue: [
-            { speaker: "Female", text: "Buongiorno!", en: "Good morning!", zh: "早安！" },
             { speaker: "Female", text: "Buongiorno! Un caffè, per favore.", en: "Good morning! An espresso, please.", zh: "早安！一杯濃縮咖啡，謝謝。" },
             { speaker: "M_chef", text: "Subito!", en: "Right away!", zh: "馬上來！" },
             { speaker: "M_chef", text: "Ecco il caffè. Altro?", en: "Here’s your coffee. Anything else?", zh: "您的咖啡。還需要別的嗎？" },
@@ -32,15 +31,15 @@ const episodeData = {
           scene: "Day 2 – Asking for sugar and milk",
           scene_zh: "第 2 天 — 詢問要糖和牛奶",
           dialogue: [
-            { speaker: "F_hd", text: "Salve! Che bella giornata!", en: "Hello! What a lovely day!", zh: "您好！今天天氣真好！" },
-            { speaker: "F_hd", text: "Un cappuccino, per favore.", en: "A cappuccino, please.", zh: "一杯卡布奇諾，謝謝。" },
-            { speaker: "M_hd", text: "Con zucchero?", en: "With sugar?", zh: "要加糖嗎？" },
-            { speaker: "F_hd", text: "Sì, grazie.", en: "Yes, thanks.", zh: "要，謝謝。" },
-            { speaker: "M_hd", text: "Con latte?", en: "With milk?", zh: "要加牛奶嗎？" },
-            { speaker: "F_hd", text: "No, senza latte.", en: "No, without milk.", zh: "不要，不加牛奶。" },
-            { speaker: "M_hd", text: "Va bene. Sono due euro.", en: "Alright. That’s two euros.", zh: "好的，兩歐元。" },
-            { speaker: "F_hd", text: "Ecco. Alla prossima!", en: "Here you go. See you next time!!", zh: "給您，下次見囉！" },
-            { speaker: "M_hd", text: "A presto! Buona giornata!", en: "See you soon! Have a great day!", zh: "下次見！祝您有個美好的一天！" }
+            { speaker: "F_std", text: "Salve! Che bella giornata!", en: "Hello! What a lovely day!", zh: "您好！今天天氣真好！" },
+            { speaker: "F_std", text: "Un cappuccino, per favore.", en: "A cappuccino, please.", zh: "一杯卡布奇諾，謝謝。" },
+            { speaker: "M_std", text: "Con zucchero?", en: "With sugar?", zh: "要加糖嗎？" },
+            { speaker: "F_std", text: "Sì, grazie.", en: "Yes, thanks.", zh: "要，謝謝。" },
+            { speaker: "M_std", text: "Con latte?", en: "With milk?", zh: "要加牛奶嗎？" },
+            { speaker: "F_std", text: "No, senza latte.", en: "No, without milk.", zh: "不要，不加牛奶。" },
+            { speaker: "M_std", text: "Va bene. Sono due euro.", en: "Alright. That’s two euros.", zh: "好的，兩歐元。" },
+            { speaker: "F_std", text: "Ecco. Alla prossima!", en: "Here you go. See you next time!!", zh: "給您，下次見囉！" },
+            { speaker: "M_std", text: "A presto! Buona giornata!", en: "See you soon! Have a great day!", zh: "下次見！祝您有個美好的一天！" }
           ]
         },
         {
@@ -48,16 +47,16 @@ const episodeData = {
           scene: "Day 3: With Milk, hot and no sugar",
           scene_zh: "第 3 天 — 加牛奶、要熱、不加糖",
           dialogue: [
-            { speaker: "F_std", text: "Ciao amici!", en: "Hey friends!", zh: "嗨朋友們！" },
-            { speaker: "M_std", text: "Ciao! Benvenuta!", en: "Hi! Welcome!", zh: "哈囉！歡迎光臨！" },
-            { speaker: "F_std", text: "Vorrei un caffè macchiato, per favore.", en: "I would like a macchiato, please.", zh: "我想要一杯瑪奇朵，謝謝。" },
-            { speaker: "M_std", text: "Per qui o da portare via?", en: "For here or to take away?", zh: "這裡喝還是外帶？" },
-            { speaker: "F_std", text: "Da portare via, grazie.", en: "To take away, thanks.", zh: "外帶，謝謝。" },
-            { speaker: "M_std", text: "Con zucchero?", en: "With sugar?", zh: "要加糖嗎？" },
-            { speaker: "F_std", text: "No, grazie.", en: "No, thanks.", zh: "不用，謝謝。" },
-            { speaker: "M_std", text: "Va bene. Sono un euro e cinquanta.", en: "Alright. That’s one euro fifty.", zh: "好的，一歐五角。" },
-            { speaker: "F_std", text: "Ecco. Buona giornata!", en: "Here you go. Have a nice day!", zh: "給您，祝您有美好的一天！" },
-            { speaker: "F_std", text: "Anche a lei!", en: "You too!", zh: "您也是！" }
+            { speaker: "F_wave", text: "Ciao amici!", en: "Hey friends!", zh: "嗨朋友們！" },
+            { speaker: "M_wave", text: "Ciao! Benvenuta!", en: "Hi! Welcome!", zh: "哈囉！歡迎光臨！" },
+            { speaker: "F_wave", text: "Vorrei un caffè macchiato, per favore.", en: "I would like a macchiato, please.", zh: "我想要一杯瑪奇朵，謝謝。" },
+            { speaker: "M_wave", text: "Per qui o da portare via?", en: "For here or to take away?", zh: "這裡喝還是外帶？" },
+            { speaker: "F_wave", text: "Da portare via, grazie.", en: "To take away, thanks.", zh: "外帶，謝謝。" },
+            { speaker: "M_wave", text: "Con zucchero?", en: "With sugar?", zh: "要加糖嗎？" },
+            { speaker: "F_wave", text: "No, grazie.", en: "No, thanks.", zh: "不用，謝謝。" },
+            { speaker: "M_wave", text: "Va bene. Sono un euro e cinquanta.", en: "Alright. That’s one euro fifty.", zh: "好的，一歐五角。" },
+            { speaker: "F_wave", text: "Ecco. Buona giornata!", en: "Here you go. Have a nice day!", zh: "給您，祝您有美好的一天！" },
+            { speaker: "F_wave", text: "Anche a lei!", en: "You too!", zh: "您也是！" }
           ]
         },
         {
