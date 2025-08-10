@@ -4,7 +4,8 @@ const episodeData = {
   episode: "🇮🇹 Episode – Italian Travel Conversations",
   episode_zh: "🇮🇹 特別篇 - 義大利旅遊大補帖",
   toggle_title: "Scenes",
-  voice: "IT",
+  voice: "it-IT",
+  speaking_rate: "0.8",
   topics: [
     {
       topicId: 1,
