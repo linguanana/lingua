@@ -133,7 +133,8 @@ function renderLesson(levels, moduleSpeakers = {}) {
       audio.setAttribute("controls", "");
       audio.className = "small-audio";
       const source = document.createElement("source");
-      source.src = `./audio/mod${modId}-lesson${lesId}-keyphrase.mp3`;
+      const lvlId = level.levelId;
+      source.src = `./audio/mod${modId}-lesson${lesId}-level${lvlId}-keyphrase.mp3`;
       source.type = "audio/mpeg";
       audio.appendChild(source);
       contentEl.appendChild(audio);
@@ -166,7 +167,8 @@ function renderLesson(levels, moduleSpeakers = {}) {
       audio.setAttribute("controls", "");
       audio.className = "small-audio";
       const source = document.createElement("source");
-      source.src = `./audio/mod${modId}-lesson${lesId}-dialogue.mp3`;
+      const lvlId = level.levelId;
+      source.src = `./audio/mod${modId}-lesson${lesId}-level${lvlId}-dialogue.mp3`;
       source.type = "audio/mpeg";
       audio.appendChild(source);
       contentEl.appendChild(audio);
