@@ -1,91 +1,258 @@
-# gen_mod_list.py
+# -*- coding: utf-8 -*-
+# Usage:
+#   python3 gen_module_list.py path/to/mod1.js --lang it-IT > out.txt
+# Optional:
+#   --kp_speaker Female
+#   --break 0.7s
+
+import argparse
 import json
 import re
 import sys
-from speaker_config import SPEAKER_PROSODY_MAP
+import os
 
-def generate_mod_ssml_text(js_file_path):
-    """
-    Reads a JavaScript file for a module, parses it, and generates
-    SSML for key phrases and dialogues, grouped by lesson.
-    """
+# --- robust import for speaker config (same folder) ---
+try:
+    import speaker_conf as _sc
+except ImportError:
     try:
-        with open(js_file_path, 'r', encoding='utf-8') as f:
-            js_content = f.read()
-    except FileNotFoundError:
-        return f"Error: File not found at '{js_file_path}'"
-    except Exception as e:
-        return f"Error reading file '{js_file_path}': {e}"
+        import speaker_config as _sc
+    except ImportError:
+        print("Error: cannot import speaker_conf.py or speaker_config.py (must be next to this script).")
+        sys.exit(2)
 
-    match = re.search(r'const moduleData = ({.*?});', js_content, re.DOTALL)
-    if not match:
-        return f"Error: Could not find 'moduleData' object in the JS file '{js_file_path}'."
+SPEAKER_MAP = None
+for name in ("SPEAKER_CONFIG", "SPAKER_CONFIG", "EAKER_CONFIG"):
+    if hasattr(_sc, name):
+        SPEAKER_MAP = getattr(_sc, name)
+        break
+if SPEAKER_MAP is None:
+    print("Error: speaker_conf/config.py missing SPEAKER_CONFIG / SPAKER_CONFIG / EAKER_CONFIG")
+    sys.exit(2)
 
-    json_string = match.group(1)
-    json_string = re.sub(r'//.*?\n|/\*.*?\*/', '', json_string, flags=re.DOTALL)
-    json_string = re.sub(r',\s*([}\]])', r'\1', json_string)
-    json_string = re.sub(r'([{,]\s*)(\w+)(\s*:\s*)', r'\1"\2"\3', json_string)
+# --- constants ---
+LANG_MAP = {
+    "IT": "it-IT",
+    "EN": "en-US",
+    "ZH": "zh-TW",
+}
 
+DEFAULT_BREAK = "1s"
+
+# --- helpers ---
+def js_obj_to_json_string_safe(s: str) -> str:
+    # Remove invisible characters
+    for ch in ("\ufeff", "\u200b", "\u200c", "\u200d", "\u00a0"):
+        s = s.replace(ch, " ")
+
+    # Strip comments (string-aware)
+    out, i, n, in_s, esc, q = [], 0, len(s), False, False, ""
+    while i < n:
+        c = s[i]
+        if in_s:
+            out.append(c)
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == q:
+                in_s, q = False, ""
+            i += 1
+            continue
+        if c in ("'", '"'):
+            in_s, q = True, c
+            out.append(c)
+            i += 1
+            continue
+        if c == "/" and i+1 < n and s[i+1] == "/":
+            i += 2
+            while i < n and s[i] != "\n": i += 1
+            continue
+        if c == "/" and i+1 < n and s[i+1] == "*":
+            i += 2
+            while i+1 < n and not (s[i] == "*" and s[i+1] == "/"): i += 1
+            i += 2
+            continue
+        out.append(c)
+        i += 1
+    s = "".join(out)
+
+    # Remove trailing commas (string-aware)
+    out, i, n, in_s, esc, q = [], 0, len(s), False, False, ""
+    while i < n:
+        c = s[i]
+        if in_s:
+            out.append(c)
+            esc = (not esc and c == "\\")
+            if not esc and c == q:
+                in_s = False
+            i += 1
+            continue
+        if c in ("'", '"'):
+            in_s, q = True, c
+            out.append(c)
+            i += 1
+            continue
+        if c == ",":
+            j = i+1
+            while j < n and s[j].isspace(): j += 1
+            if j < n and s[j] in "]}":
+                i += 1
+                continue  # skip this comma
+        out.append(c)
+        i += 1
+    s = "".join(out)
+
+    # Quote bare keys (string-aware)
+    out, i, n, in_s, esc, q = [], 0, len(s), False, False, ""
+    while i < n:
+        c = s[i]
+        if in_s:
+            out.append(c)
+            esc = (not esc and c == "\\")
+            if not esc and c == q:
+                in_s = False
+            i += 1
+            continue
+        if c in ("'", '"'):
+            in_s, q = True, c
+            out.append(c)
+            i += 1
+            continue
+        if c in "{,":
+            out.append(c)
+            i += 1
+            while i < n and s[i].isspace():
+                out.append(s[i])
+                i += 1
+            start = i
+            while i < n and (s[i].isalnum() or s[i] in "_$"):
+                i += 1
+            key = s[start:i]
+            j = i
+            while j < n and s[j].isspace():
+                j += 1
+            if key and j < n and s[j] == ":":
+                out.append(f'"{key}"')
+            else:
+                out.append(s[start:i])
+            i = j
+            continue
+        out.append(c)
+        i += 1
+    return "".join(out)
+
+def load_module_data(js_path: str):
+    import re, json
+    with open(js_path, "r", encoding="utf-8") as f:
+        raw = f.read()
+    m = re.search(r'const\s+moduleData\s*=\s*({.*?});', raw, re.DOTALL)
+    if not m:
+        raise ValueError("Cannot find `const moduleData = {...};` in JS file.")
+    cleaned = js_obj_to_json_string_safe(m.group(1))
     try:
-        module_data = json.loads(json_string)
+        return json.loads(cleaned)
     except json.JSONDecodeError as e:
-        return f"Error parsing JSON from JS file '{js_file_path}': {e}\nProblematic string snippet:\n{json_string[max(0, e.pos-50):e.pos+50]}"
+        start = max(0, e.pos - 60)
+        end = min(len(cleaned), e.pos + 60)
+        snippet = cleaned[start:end]
+        raise ValueError(
+            f"JSON parse failed at line {e.lineno} col {e.colno} pos {e.pos}\n"
+            f"Context:\n{snippet}"
+        ) from e
 
-    output_blocks = []
-    module_id = module_data.get('moduleId', '1')
-    language_code = module_data.get('voice', 'en-US')
 
-    lessons = module_data.get('lessons', [])
+def resolve_lang_code(vc: str | None, override: str | None) -> str:
+    if override:
+        return override
+    if not vc:
+        return "it-IT"
+    return LANG_MAP.get(vc, vc)
+
+def get_voice_spec(speaker_name: str):
+    conf = SPEAKER_MAP.get(speaker_name) or SPEAKER_MAP.get("default", {})
+    voice_id = conf.get("voice_id", "")
+    prosody = conf.get("prosody", {})
+    rate = prosody.get("rate", "100%")
+    pitch = prosody.get("pitch", "0st")
+    resolved = speaker_name if speaker_name in SPEAKER_MAP else "default"
+    return voice_id, rate, pitch, resolved
+
+def make_ssml(text: str, speaker_name: str, lang_code: str, break_time: str):
+    voice_id, rate, pitch, resolved = get_voice_spec(speaker_name)
+    # Keep your existing structure (<voice speaker='...'>). If your TTS expects name=voice_id, swap attributes.
+    return (
+        f"<speak lang='{lang_code}'>"
+        f"<voice speaker='{resolved}'>"
+        f"<prosody rate='{rate}' pitch='{pitch}'>"
+        f"{text}<break time='{break_time}'/>"
+        f"</prosody></voice></speak>"
+    ), voice_id, resolved
+
+# --- main generation ---
+def generate_for_module(module: dict, lang_code: str, kp_speaker: str, break_time: str) -> str:
+    module_id = str(module.get("moduleId", "1"))
+    lessons = module.get("lessons", [])
+    speaking_rate = module.get("speaking_rate", "1.0")
+
+    out_lines = []
+
     for lesson in lessons:
-        lesson_id = lesson.get('lessonId', '1')
+        les_id = lesson.get("lessonId", 1)
+        levels = lesson.get("levels", [])
 
-        all_key_phrases = []
-        all_dialogues = []
-
-        # Gather all key phrases and dialogues from all levels
-        levels = lesson.get('levels', [])
         for level in levels:
-            key_phrases = level.get('keyPhrases', [])
-            dialogues = level.get('dialogues', [])
-            all_key_phrases.extend(key_phrases)
-            all_dialogues.extend(dialogues)
+            lvl_id = level.get("levelId", 1)
 
-        # Generate SSML for all key phrases in this lesson
-        if all_key_phrases:
-            ssml_content = f"<speak lang='{language_code}'>"
-            for phrase in all_key_phrases:
-                ssml_content += f"<voice speaker='default'><prosody rate='100%' pitch='0st'>{phrase['text']}</prosody></voice><break time='1s' />"
-            ssml_content += "</speak>"
+            # (1) KeyPhrases (single voice)
+            kps = level.get("keyPhrases", [])
+            for i, kp in enumerate(kps, start=1):
+                it_text = (kp.get("text") or "").strip()
+                if not it_text:
+                    continue
+                ssml, voice_id, resolved_speaker = make_ssml(it_text, kp_speaker, lang_code, break_time)
+                fn = f"mod{module_id}-lesson{les_id}-level{lvl_id}-keyphrase{i}.mp3"
+                header = (f"{fn} ========== (type=keyphrase rate={speaking_rate} "
+                          f"mod{module_id} lesson{les_id} level{lvl_id} idx{i} "
+                          f"speaker={resolved_speaker} voice_id={voice_id})")
+                out_lines.append(header)
+                out_lines.append(ssml)
+                out_lines.append("")
 
-            mp3_filename = f"mod{module_id}-lesson{lesson_id}-keyphrase.mp3"
-            output_blocks.append(f"{mp3_filename} ========== (rate=0.5 mod{module_id} lesson{lesson_id} keyphrase)")
-            output_blocks.append(ssml_content)
+            # (2) Dialogues (per-line speaker)
+            dlgs = level.get("dialogues", [])
+            for j, line in enumerate(dlgs, start=1):
+                it_text = (line.get("text") or "").strip()
+                if not it_text:
+                    continue
+                spk = (line.get("speaker") or "default").strip()
+                ssml, voice_id, resolved_speaker = make_ssml(it_text, spk, lang_code, break_time)
+                fn = f"mod{module_id}-lesson{les_id}-level{lvl_id}-dialogue{j}.mp3"
+                header = (f"{fn} ========== (type=dialog rate={speaking_rate} "
+                          f"mod{module_id} lesson{les_id} level{lvl_id} line{j} "
+                          f"speaker={resolved_speaker} voice_id={voice_id})")
+                out_lines.append(header)
+                out_lines.append(ssml)
+                out_lines.append("")
 
-        # Generate SSML for all dialogues in this lesson
-        if all_dialogues:
-            ssml_content = f"<speak lang='{language_code}'>"
-            for dialog in all_dialogues:
-                speaker = dialog.get('speaker', 'default')
-                text = dialog.get('text', '')
-                prosody_settings = SPEAKER_PROSODY_MAP.get(speaker, SPEAKER_PROSODY_MAP['default'])
-                rate = prosody_settings.get("rate", "100%")
-                pitch = prosody_settings.get("pitch", "0st")
+    return "\n".join(out_lines).strip()
 
-                ssml_content += f"<voice speaker='{speaker}'><prosody rate='{rate}' pitch='{pitch}'>{text}</prosody></voice><break time='1s' />"
-            ssml_content += "</speak>"
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("js_file", help="Path to modX.js (contains const moduleData = {...})")
+    ap.add_argument("--kp_speaker", default="Female", help="Default keyphrase voice (e.g., Female/Male)")
+    ap.add_argument("--break", dest="break_time", default=DEFAULT_BREAK, help="SSML break time (e.g., 1s, 0.5s)")
+    ap.add_argument("--lang", dest="lang_override", default=None, help="Override language code (e.g., it-IT)")
+    args = ap.parse_args()
 
-            mp3_filename = f"mod{module_id}-lesson{lesson_id}-dialogue.mp3"
-            output_blocks.append(f"{mp3_filename} ========== (rate=0.5 mod{module_id} lesson{lesson_id} dialogue)")
-            output_blocks.append(ssml_content)
+    try:
+        module = load_module_data(args.js_file)
+    except Exception as e:
+        print(f"Error parsing {args.js_file}: {e}")
+        sys.exit(2)
 
-    return "\n\n".join(output_blocks)
+    lang_code = resolve_lang_code(module.get("voice"), args.lang_override)
+    print(generate_for_module(module, lang_code, args.kp_speaker, args.break_time))
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python3 gen_mod_list.py <js_file>")
-        print("Example: python3 gen_mod_list.py mod1.js > output.txt")
-        sys.exit(1)
-
-    js_file_name = sys.argv[1]
-    generated_text = generate_mod_ssml_text(js_file_name)
-    print(generated_text)
+    main()
