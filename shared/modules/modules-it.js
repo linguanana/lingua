@@ -21,8 +21,8 @@ const modulesData = [
         lessons: [
             { name: 'Episode 1: At the Coffee Bar', name_zh: '第1集：咖啡吧體驗', link: 'travel/index.html?id=1' },
             { name: 'Episode 2: Dining at a Restaurant', name_zh: '第2集：餐廳用餐', link: 'travel/index.html?id=2' },
-            { name: 'Episode 3: Buying a Train Ticket', name_zh: '第3集：買火車票任務', link: 'travel/index.html?id=3' },
-            { name: 'Episode 4: Asking for Directions', name_zh: '第4集：問路與尋找洗手間', link: 'travel/index.html?id=4' },
+            { name: 'Episode 3: Asking for Directions', name_zh: '第3集：問路與尋找地標', link: 'travel/index.html?id=3' },
+            { name: 'Episode 4: Buying a Train Ticket & Finding a Restroom', name_zh: '第4集：買火車票與尋找洗手間', link: 'travel/index.html?id=4' },
             { name: 'Episode 5: Hotel Check-in', name_zh: '第5集：入住旅館對話', link: 'travel/index.html?id=5' },
             { name: 'Episode 6: Taking the Bus or Taxi', name_zh: '第6集：搭乘公車與計程車', link: 'travel/index.html?id=6' },
             { name: 'Episode 7: Shopping at a Market', name_zh: '第7集：市場購物對話', link: 'travel/index.html?id=7' },

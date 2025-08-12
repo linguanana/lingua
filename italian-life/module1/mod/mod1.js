@@ -3,7 +3,7 @@ const moduleData = {
   moduleId: "1",
   title: "Module 1 – Greetings",
   title_zh: "模組 1 – 打招呼",
-  voice: "IT",
+  voice: "it-IT",
   lessons: [
     {
       lessonId: 1,
@@ -22,12 +22,12 @@ const moduleData = {
             { text: "Salve!", en: "Hello (formal or neutral)", zh: "您好" }
           ],
           dialogues: [
-            { speaker: "Female", when: "Talking to friends or classmates", text: "Ciao!", en: "Hi!", zh: "嗨！" },
-            { speaker: "Female", when: "Morning at a hotel or store", text: "Buongiorno!", en: "Good morning!", zh: "早安！" },
-            { speaker: "Female", when: "Evening at a restaurant", text: "Buonasera!", en: "Good evening!", zh: "晚上好！" },
-            { speaker: "Female", when: "Not sure what to say", text: "Salve!", en: "Hello!", zh: "您好！" }, // 移除了一個隱藏字元
-            { speaker: "Female", when: "Leaving a chat", text: "A presto!", en: "See you soon!", zh: "待會見！" },
-            { speaker: "Female", when: "Greeting a group", text: "Ciao a tutti!", en: "Hi everyone!", zh: "大家好！" }
+            { speaker: "Female", when: "Talking to friends or classmates", text: "Ciao!", en: "Hi!", zh: "嗨！" },
+            { speaker: "Female", when: "Morning at a hotel or store", text: "Buongiorno!", en: "Good morning!", zh: "早安！" },
+            { speaker: "Female", when: "Evening at a restaurant", text: "Buonasera!", en: "Good evening!", zh: "晚上好！" },
+            { speaker: "Female", when: "Not sure what to say", text: "Salve!", en: "Hello!", zh: "您好！" }, // 移除了一個隱藏字元
+            { speaker: "Female", when: "Leaving a chat", text: "A presto!", en: "See you soon!", zh: "待會見！" },
+            { speaker: "Female", when: "Greeting a group", text: "Ciao a tutti!", en: "Hi everyone!", zh: "大家好！" }
           ],
           tips: [
             { en: "**Ciao** is informal and very common in Italy.", zh: "**Ciao** 是非正式且在義大利非常常見的用法。" },
@@ -173,55 +173,67 @@ const moduleData = {
             { text: "Signore / Signora / Signori", en: "Sir / Ma’am / Ladies and gentlemen", zh: "先生 / 女士 / 各位先生女士" }
           ],
           dialogues: [],
-          tips: []
+          tips: [
+            { en: "Use **Scusi** for strangers or in formal settings, and **Scusa** only with friends or people you know well.", zh: "對陌生人或在正式場合使用 **Scusi**，而 **Scusa** 僅用於朋友或熟人之間。" },
+            { en: "**Prego** is versatile; it can mean 'you're welcome,' 'please come in,' or 'go ahead.'", zh: "**Prego** 的用途廣泛；它可以表示「不客氣」、「請進」或「請便」。" },
+            { en: "Italians often use these phrases frequently, so don't be shy about saying 'Grazie' and 'Prego' often!", zh: "義大利人常使用這些詞彙，所以大方地多說 **Grazie** 和 **Prego** 吧！" }
+          ]
         },
         {
           levelId: 2,
-          title: "Level 2 (A1): Requests & understanding",
-          title_zh: "第二級（A1）: 請求與表達理解",
+          title: "Level 2 (A1): Asking for information and making requests",
+          title_zh: "第二級（A1）: 詢問資訊與提出請求",
           keyPhrases: [
-            { text: "Capisco / Non capisco", en: "I understand / I don’t understand", zh: "我懂 / 我不懂" },
             { text: "Posso...?", en: "Can I...?", zh: "我可以……嗎？" },
             { text: "Può...?", en: "Can you...? (formal)", zh: "您可以……嗎？（正式）" },
-            { text: "Può ripetere, per favore?", en: "Can you repeat, please?", zh: "請您再說一遍，好嗎？" },
-            { text: "Posso entrare?", en: "Can I come in?", zh: "我可以進來嗎？" },
-            { text: "Posso usare il bagno?", en: "Can I use the bathroom?", zh: "我可以用洗手間嗎？" },
-            { text: "Non capisco bene l’italiano.", en: "I don’t understand Italian well", zh: "我不太懂義大利語" },
-            { text: "Può parlare più lentamente?", en: "Can you speak more slowly?", zh: "您可以說慢一點嗎？" }
-          ],
-          dialogues: [
-            { speaker: "Female", text: "Scusi, posso fare una domanda?", en: "Excuse me, can I ask a question?", zh: "不好意思，我可以問一個問題嗎？" },
-            { speaker: "Male", text: "Certo! Dimmi pure.", en: "Of course! Go ahead and ask.", zh: "當然！儘管問吧。" },
-            { speaker: "Female", text: "Non capisco... Può ripetere, per favore?", en: "I don’t understand… Can you repeat, please?", zh: "我不明白……可以請您再說一遍嗎？" },
-            { speaker: "Male", text: "Sì! Ripeto lentamente.", en: "Yes! I’ll repeat slowly.", zh: "好的！我會慢慢重複。" },
-            { speaker: "Female", text: "Ah! Capisco, grazie mille!", en: "Ah! I understand, thank you very much!", zh: "啊！我懂了，非常感謝！" },
-            { speaker: "Male", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
-          ],
-          tips: []
-        },
-        {
-          levelId: 3,
-          title: "Level 3 (A1): Real-life polite requests",
-          title_zh: "第三級（A1）: 真實情境中的禮貌請求",
-          keyPhrases: [
             { text: "Vorrei...", en: "I would like...", zh: "我想要……" },
             { text: "C'è...? / Ci sono...?", en: "Is there...? / Are there...?", zh: "有……嗎？ / 有……嗎？（複數）" },
             { text: "Le / Ti posso aiutare?", en: "Can I help you? (formal / informal)", zh: "我可以幫您嗎？（正式）/ 我可以幫你嗎？（非正式）" },
-            { text: "Certamente / Certo", en: "Certainly / Of course", zh: "當然" },
-            { text: "Volentieri", en: "Gladly / With pleasure", zh: "樂意之至 / 很願意" },
-            { text: "Mi dispiace", en: "I’m sorry", zh: "我很抱歉" },
-            { text: "Con permesso", en: "Excuse me (to pass by / interrupt)", zh: "不好意思（用於通過或打斷時）" }
+            { text: "Con permesso", en: "Excuse me (to pass by / interrupt)", zh: "不好意思（用於通過或打斷時）" },
+            { text: "Posso usare il bagno?", en: "Can I use the bathroom?", zh: "我可以用洗手間嗎？" }
           ],
-
           dialogues: [
-            { speaker: "Female", text: "Mi scusi, Signora, posso chiederle un’informazione?", en: "Excuse me, Madam, may I ask you for some information?", zh: "不好意思，女士，我可以問您一個問題嗎？" },
-            { speaker: "Male", text: "Certamente, prego!", en: "Certainly, please go ahead!", zh: "當然，請說！" },
-            { speaker: "Female", text: "Vorrei comprare un souvenir. C’è un negozio di souvenir qui vicino?", en: "I’d like to buy a souvenir. Is there a souvenir shop nearby?", zh: "我想買一個紀念品。這附近有紀念品商店嗎？" },
-            { speaker: "Male", text: "Sì, c’è un negozio lì, a destra.", en: "Yes, there’s a shop there, to the right.", zh: "有的，那邊有一家商店，在右邊。" },
-            { speaker: "Female", text: "Grazie mille!", en: "Thank you very much!", zh: "非常感謝！" },
-            { speaker: "Male", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
+            { speaker: "Male", text: "Con permesso! Mi scusi, Signora, posso chiederle un’informazione?", en: "Excuse me! Excuse me, Madam, may I ask you for some information?", zh: "不好意思，女士，我可以向您詢問資訊嗎？" },
+            { speaker: "Female", text: "Certamente, Le posso aiutare?", en: "Certainly, can I help you?", zh: "當然，我可以幫您嗎？" },
+            { speaker: "Male", text: "Vorrei comprare un souvenir. C’è un negozio qui vicino?", en: "I'd like to buy a souvenir. Is there a shop nearby?", zh: "我想要買個紀念品。這附近有商店嗎？" },
+            { speaker: "Female", text: "Sì, c’è un negozio lì, a destra.", en: "Yes, there’s a shop there, to the right.", zh: "有的，那邊有一家商店，在右邊。" },
+            { speaker: "Male", text: "Grazie mille! E posso usare il bagno, per favore?", en: "Thank you very much! And can I use the bathroom, please?", zh: "非常感謝！還有，我可以用洗手間嗎？" },
+            { speaker: "Female", text: "Sì, il bagno è là in fondo.", en: "Yes, the bathroom is over there at the end.", zh: "好的，洗手間在裡面盡頭處。" },
+            { speaker: "Male", text: "Grazie!", en: "Thank you!", "zh": "謝謝！" },
+            { speaker: "Female", text: "Prego!", en: "You're welcome!", zh: "不客氣！" }
           ],
-          tips: []
+          tips: [
+            { en: "Use **Vorrei...** (I would like...) to make a request politely, as it's less direct than **Voglio...** (I want...).", zh: "使用 **Vorrei...** (我想要...) 來禮貌地提出請求，它比 **Voglio...** (我想要...) 更不直接。" },
+            { en: "**Posso...?** is for asking permission for yourself, while **Può...?** is for asking someone else to do something (formally).", zh: "**Posso...?** 用於為自己尋求許可，而 **Può...?** 則用於（正式地）請他人做某事。" },
+            { en: "Always add **per favore** (please) to the end of a request to sound more polite.", zh: "在請求後加上 **per favore** (請)，會聽起來更禮貌。" }
+          ]
+        },
+        {
+          levelId: 3,
+          title: "Level 3 (A1): Understanding, clarifying and responding",
+          title_zh: "第三級（A1）: 理解、澄清與回應",
+          keyPhrases: [
+            { text: "Capisco / Non capisco", en: "I understand / I don’t understand", zh: "我懂 / 我不懂" },
+            { text: "Può ripetere, per favore?", en: "Can you repeat, please?", zh: "請您再說一遍，好嗎？" },
+            { text: "Può parlare più lentamente?", en: "Can you speak more slowly?", zh: "您可以說慢一點嗎？" },
+            { text: "Mi dispiace", en: "I’m sorry", zh: "我很抱歉" },
+            { text: "Certamente / Certo", en: "Certainly / Of course", zh: "當然" },
+            { text: "Volentieri", en: "Gladly / With pleasure", zh: "樂意之至 / 很願意" }
+          ],
+          dialogues: [
+            { speaker: "Female", text: "Scusi, posso fare una domanda? C'è un treno per Firenze?", en: "Excuse me, can I ask a question? Is there a train to Florence?", zh: "不好意思，我可以問一個問題嗎？有去佛羅倫斯的火車嗎？" },
+            { speaker: "Male", text: "Certo! Volentieri! Il treno delle 14:30 parte dal binario nove. È il Frecciarossa.", en: "Of course! Gladly! The 2:30 PM train leaves from platform nine. It's the Frecciarossa.", zh: "當然！樂意之至！下午兩點半的火車從第九月台出發。是紅箭特快。" },
+            { speaker: "Female", text: "Mi dispiace, non capisco bene l’italiano... Può parlare più lentamente, per favore?", en: "I'm sorry, I don't understand Italian well... Can you speak more slowly, please?", zh: "我很抱歉，我不太懂義大利語……可以請您說慢一點嗎？" },
+            { speaker: "Male", text: "Ah, certo! Il treno parte alle quattordici e trenta. Dal binario numero nove.", en: "Oh, of course! The train leaves at fourteen thirty. From platform number nine.", zh: "啊，好的！火車會在十四點三十分發車。從第九月台。" },
+            { speaker: "Female", text: "Può ripetere il numero del binario?", en: "Can you repeat the platform number?", zh: "您可以再重複一次月台號碼嗎？" },
+            { speaker: "Male", text: "Sì, binario nove. E il treno è il Frecciarossa.", en: "Yes, platform nine. And the train is the Frecciarossa.", zh: "好的，第九月台。火車是紅箭特快。" },
+            { speaker: "Female", text: "Ah! Capisco, grazie mille!", en: "Ah! I understand, thank you very much!", zh: "啊！我懂了，非常感謝！" }
+          ],
+          tips: [
+            { en: "It's completely normal to not understand, especially with fast speech. Using phrases like **Può ripetere?** shows you are engaged and trying to learn.", zh: "不理解是很正常的，特別是當對方說話很快時。使用 **Può ripetere?** 這樣的句子表明你正在專心並努力學習。" },
+            { en: "There's a subtle difference: **Mi dispiace** is for apologizing, while **Scusi** is for excusing yourself or getting someone's attention.", zh: "**Mi dispiace** 用於道歉，而 **Scusi** 則用於致歉或引起他人注意。" },
+            { en: "You can combine phrases, such as **Non capisco, mi dispiace.** (I don't understand, I'm sorry).", zh: "你可以將句子組合起來使用，例如 **Non capisco, mi dispiace.** (我不懂，很抱歉)。" }
+          ]
         }
       ]
     },
