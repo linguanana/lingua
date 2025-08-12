@@ -204,17 +204,31 @@ def generate_for_module(module: dict, lang_code: str, kp_speaker: str, break_tim
         for level in levels:
             lvl_id = level.get("levelId", 1)
 
-            # (1) KeyPhrases (single voice)
+            # (1) KeyPhrases — merge per level (single voice)
             kps = level.get("keyPhrases", [])
-            for i, kp in enumerate(kps, start=1):
-                it_text = (kp.get("text") or "").strip()
-                if not it_text:
-                    continue
-                ssml, voice_id, resolved_speaker = make_ssml(it_text, kp_speaker, lang_code, break_time)
-                fn = f"mod{module_id}-lesson{les_id}-level{lvl_id}-keyphrase{i}.mp3"
-                header = (f"{fn} ========== (type=keyphrase rate={speaking_rate} "
-                          f"mod{module_id} lesson{les_id} level{lvl_id} idx{i} "
-                          f"speaker={resolved_speaker} voice_id={voice_id})")
+            kp_texts = [(kp.get("text") or "").strip() for kp in kps]
+            kp_texts = [t for t in kp_texts if t]
+            if kp_texts:
+                # prosody from SPEAKER_MAP for the chosen keyphrase voice
+                voice_id, rate, pitch, resolved_speaker = get_voice_spec(kp_speaker)
+
+                # stitch phrases with internal breaks; no trailing extra break
+                merged_body = "".join(f"{t}<break time='{break_time}'/>" for t in kp_texts)
+
+                ssml = (
+                    f"<speak lang='{lang_code}'>"
+                    f"<voice speaker='{resolved_speaker}'>"
+                    f"<prosody rate='{rate}' pitch='{pitch}'>"
+                    f"{merged_body}"
+                    f"</prosody></voice></speak>"
+                )
+
+                fn = f"mod{module_id}-lesson{les_id}-level{lvl_id}-keyphrase.mp3"
+                header = (
+                    f"{fn} ========== (type=keyphrases_merged "
+                    f"mod{module_id} lesson{les_id} level{lvl_id} "
+                    f"speaker={resolved_speaker} voice_id={voice_id})"
+                )
                 out_lines.append(header)
                 out_lines.append(ssml)
                 out_lines.append("")

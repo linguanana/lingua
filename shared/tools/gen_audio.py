@@ -184,7 +184,44 @@ def combine_scene_audio(audio_dir):
             print("正在刪除原始對話檔案...")
             for _, filename in dialogue_files:
                 os.remove(os.path.join(audio_dir, filename))
-            print("清理完成。")
+            print("Ep清理完成。")
+
+        # ==== 新增：Module 對話合併 ====
+    # ---------- Module 合併（新增，注意縮排＆位置） ----------
+    mod_pattern = re.compile(r'^(mod\d+-lesson\d+-level\d+)-dialogue(\d+)\.mp3$')
+    mod_groups = {}
+
+    for filename in os.listdir(audio_dir):
+        m = mod_pattern.match(filename)
+        if m:
+            base, num = m.group(1), int(m.group(2))
+            mod_groups.setdefault(base, []).append((num, filename))
+
+    if not mod_groups:
+        print("[MOD] 沒找到可合併的 module 對話檔（*dialogueN.mp3）。")
+    for base, items in mod_groups.items():
+        items.sort(key=lambda x: x[0])
+        combined = None
+        print(f"\n[MOD] 合併：{base}-dialogue  檔案：{[f for _, f in items]}")
+        for _, fname in items:
+            path = os.path.join(audio_dir, fname)
+            try:
+                seg = AudioSegment.from_mp3(path)
+                combined = seg if combined is None else combined + AudioSegment.silent(duration=200) + seg
+            except Exception as e:
+                print(f"警告：無法載入 {fname}，跳過。錯誤：{e}")
+        if combined:
+            out_path = os.path.join(audio_dir, f"{base}-dialogue.mp3")
+            combined.export(out_path, format="mp3")
+            print(f"[MOD] 匯出：{out_path}")
+            # 如需刪除逐句檔，取消以下註解：
+            for _, fname in items:
+                 try:
+                     os.remove(os.path.join(audio_dir, fname))
+                 except Exception as e:
+                     print(f"警告：刪除 {fname} 失敗：{e}")
+            print("Mod 清理完成。")
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:

@@ -4,8 +4,8 @@ python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > out
 python3 gen_ep_audio.py out ../../italian-life/travel/audio/
 
 
-python3 gen_mod_list.py ../../italian-life/module1/mod/mod1.js > mod_output.txt
-python3 gen_mod_audio.py mod_output.txt ../../italian-life/module1/audio/
+python3 gen_mod_list.py ../../italian-life/module1/mod/mod1.js > mod
+python3 gen_ep_audio.py mod ../../italian-life/module1/audio/
 
 
 
