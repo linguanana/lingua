@@ -67,7 +67,7 @@ const episodeData = {
             { speaker: "Female", text: "Allora posso avere anche un espresso?", en: "then can I also have an espresso?", zh: "那我可以再來一杯濃縮咖啡嗎？" },
             { speaker: "M_chef", text: "Per un caffè normale, usiamo solo tazza piccola.", en: "For a normal espresso, we only use a small cup.", zh: "對於濃縮咖啡，我們只用小杯喔。" },
             { speaker: "Female", text: "Ah, capisco. Allora prendo una tazza piccola. Grazie!", en: "Ah, I understand. I'll take a small cup then. Thanks!", zh: "啊，我懂了。那我來一杯小杯的。謝謝！" },
-            { speaker: "M_chef", text: "Prego. Ecco a lei.", en: "You're welcome. Here you go.", zh: "不客氣。這給您。" }
+            { speaker: "M_chef", text: "Prego. Ecco a lei.", en: "You're welcome. Here you go.", zh: "不客氣。這給您。" },
             { speaker: "Female", text: "Grazie! A dopo!", en: "Thank you. See you later!", zh: "謝謝！待會見！" }
           ]
         },
