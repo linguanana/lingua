@@ -599,7 +599,7 @@ const moduleData = {
           ],
           dialogues: [
             { speaker: "A", text: "C'est ton livre ?", en: "Is this your book?", zh: "這是你的書嗎？" },
-            { speaker: "B", text: "Non, ce n'est pas mon livre. C'est son livre, à lui. Et ça, c'est ta voiture ?", en: "No, this is not my book. It's his book. And this, is it your car?", zh: "不，這不是我的書。那是他的書。那台是你的車嗎？" },
+            { speaker: "B", text: "Non, ce n'est pas mon livre. C'est son livre, à lui. Et ça, c'est ta voiture ?", "en": "No, this is not my book. It's his book. And this, is it your car?", zh: "不，這不是我的書。那是他的書。那台是你的車嗎？" },
             { speaker: "A", text: "Oui, c'est ma nouvelle voiture. Notre maison est là-bas. Tu vois nos vélos ?", en: "Yes, it's my new car. Our house is over there. Do you see our bikes?", zh: "對，這是我的新車。我們的房子在那邊。你有看到我們的腳踏車嗎？" },
             { speaker: "B", text: "Oui, je vois leurs vélos. Leurs vélos sont très beaux !", en: "Yes, I see their bikes. Their bikes are very nice!", zh: "有，我看到他們的腳踏車。他們的腳踏車很漂亮！" }
           ],
