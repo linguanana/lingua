@@ -17,12 +17,12 @@ const episodeData = {
           scene: "Day 1 – Ordering an espresso at the bar",
           scene_zh: "第 1 天 — 在吧台點濃縮咖啡",
           dialogue: [
-            { "speaker": "Female", "text": "Buongiorno! Un caffè, per favore.", "en": "Good morning! An espresso, please.", "zh": "早安！一杯濃縮咖啡，謝謝。" },
-            { "speaker": "M_chef", "text": "Subito! Al banco?", "en": "Right away! At the counter?", "zh": "馬上來！在吧台喝嗎？" },
-            { "speaker": "Female", "text": "Sì, grazie. Prendo anche un po' d'acqua.", "en": "Yes, thanks. I'll also have a bit of water.", "zh": "是的，謝謝。我也來一點水。" },
-            { "speaker": "M_chef", "text": "Perfetto. Un caffè e acqua. Sono un euro e dieci.", "en": "Perfect. One espresso and water. That's one euro ten.", "zh": "好的。一杯咖啡和水。總共是一歐元一角。" },
-            { "speaker": "Female", "text": "Ecco. Grazie mille!", "en": "Here you go. Thank you so much!", "zh": "給您。非常感謝！" },
-            { "speaker": "M_chef", "text": "Grazie a lei. Buona giornata!", "en": "Thanks to you. Have a nice day!", "zh": "也謝謝您。祝您有個美好的一天！" }
+            { speaker: "Female", text: "Buongiorno! Un caffè, per favore.", "en": "Good morning! An espresso, please.", "zh": "早安！一杯濃縮咖啡，謝謝。" },
+            { speaker: "M_chef", text: "Subito! Al banco?", "en": "Right away! At the counter?", "zh": "馬上來！在吧台喝嗎？" },
+            { speaker: "Female", text: "Sì, grazie. Prendo anche un po' d'acqua.", "en": "Yes, thanks. I'll also have a bit of water.", "zh": "是的，謝謝。我也來一點水。" },
+            { speaker: "M_chef", text: "Perfetto. Un caffè e acqua. Sono un euro e dieci.", "en": "Perfect. One espresso and water. That's one euro ten.", "zh": "好的。一杯咖啡和水。總共是一歐元一角。" },
+            { speaker: "Female", text: "Ecco. Grazie mille!", "en": "Here you go. Thank you so much!", "zh": "給您。非常感謝！" },
+            { speaker: "M_chef", text: "Grazie a lei. Buona giornata!", "en": "Thanks to you. Have a nice day!", "zh": "也謝謝您。祝您有個美好的一天！" }
           ]
         },
         {
