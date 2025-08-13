@@ -13,7 +13,7 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "Niveau 1 (A0+) : Dire bonjour !",
+          title: "Niveau 1 (A0+): Dire bonjour !",
           title_zh: "第一級（A0+）: 打招呼！",
           keyPhrases: [
             { text: "Salut !", en: "Hi / Bye!", zh: "嗨／掰" },
@@ -39,7 +39,7 @@ const moduleData = {
         },
         {
           levelId: 2,
-          title: "Niveau 2 (A0+) : Plus de salutations et d'adieux",
+          title: "Niveau 2 (A0+): Plus de salutations et d'adieux",
           title_zh: "第二級（A0+）: 更多問候與道別",
           keyPhrases: [
             { text: "Bonne journée !", en: "Have a good day!", zh: "祝你今天愉快" },
@@ -69,7 +69,7 @@ const moduleData = {
         },
         {
           levelId: 3,
-          title: "Niveau 3 (A0+) : D'autres façons de dire au revoir",
+          title: "Niveau 3 (A0+): D'autres façons de dire au revoir",
           title_zh: "第三級（A0+）: 更多道別方式",
           keyPhrases: [
             { text: "À plus tard !", en: "See you later", zh: "待會見" },
@@ -137,7 +137,7 @@ const moduleData = {
         },
         {
           levelId: 2,
-          title: "Level 2 (A0+) : Responding 'How are you?'",
+          title: "Level 2 (A0+): Responding 'How are you?'",
           title_zh: "第二級（A0+）: 回答「你最近好嗎？」",
           keyPhrases: [
             { text: "Je vais très bien !", en: "I'm very well!", zh: "我非常好！" },
@@ -245,7 +245,7 @@ const moduleData = {
     },
     {
       lessonId: 4,
-      title: "Lesson 4 - What is your name?",
+      title: "Lesson 4 – What is your name?",
       title_zh: "第 4 課 – 你叫什麼名字？",
       theme: "Greet someone naturally and simply",
       theme_zh: "自然且簡單地向某人問好",
@@ -324,7 +324,7 @@ const moduleData = {
     },
     {
       lessonId: 5,
-      title: "Lesson 5 - Where are you from?",
+      title: "Lesson 5 – Where are you from?",
       title_zh: "第 5 課 – 你來自哪裡？",
       theme: "Ask where someone is from and where they live",
       theme_zh: "詢問某人來自哪裡以及他們住在哪裡",
@@ -334,11 +334,11 @@ const moduleData = {
           title: "Level 1 (A0): Asking about origin (informal)",
           title_zh: "第一級（A0）: 詢問來自哪裡（非正式）",
           keyPhrases: [
-            {text: "D'où viens-tu ?", en: "Where are you from? (informal)", zh: "你來自哪裡？（非正式）"},
-            {text: "Je viens de Paris.", en: "I'm from Paris.", zh: "我來自巴黎"},
-            {text: "Tu es d'où ?", en: "Where are you from? (informal)", zh: "你來自哪裡？（非正式）"},
-            {text: "Je suis de Rome.", en: "I'm from Rome.", zh: "我來自羅馬"},
-            {text: "Et toi ?", en: "And you?", zh: "你呢？"}
+            { text: "D'où viens-tu ?", en: "Where are you from? (informal)", zh: "你來自哪裡？（非正式）" },
+            { text: "Je viens de Paris.", en: "I'm from Paris.", zh: "我來自巴黎" },
+            { text: "Tu es d'où ?", en: "Where are you from? (informal)", zh: "你來自哪裡？（非正式）" },
+            { text: "Je suis de Rome.", en: "I'm from Rome.", zh: "我來自羅馬" },
+            { text: "Et toi ?", en: "And you?", zh: "你呢？" }
           ],
           dialogues: [
             { speaker: "Female", text: "Salut ! Tu es d'où ?", "en": "Hi! Where are you from?", zh: "嗨！你來自哪裡？" },
@@ -346,7 +346,7 @@ const moduleData = {
             { speaker: "Female", text: "Moi, je suis de Rome. Mais j'habite à Lyon maintenant.", en: "Me, I'm from Rome. But I live in Lyon now.", zh: "我來自羅馬。但我現在住在里昂。" },
             { speaker: "Male", text: "Ah, c'est super ! Tu es de Rome mais tu habites à Lyon... C'est loin !", en: "Oh, that's great! You are from Rome but you live in Lyon... That's far!", zh: "啊，太棒了！你來自羅馬但住在里昂…這很遠呢！" },
             { speaker: "Female", text: "Oui, mais j'aime beaucoup la France. Et toi, tu habites toujours à Milan ?", en: "Yes, but I like France a lot. And you, do you still live in Milan?", zh: "是的，但我很喜歡法國。你呢，你還住在米蘭嗎？" }
-          ]
+          ],
           tips: [
             { en: "In French, you can use two common verbs to talk about your origin: **être** (to be) or **venir** (to come from).", zh: "在法語中，你可以用兩種常見動詞來表達你的來源：**être**（是）或 **venir**（來自）。" },
             { en: "The phrases **Tu es d'où ?** and **D'où viens-tu ?** are both common informal ways to ask where someone is from.", zh: "**Tu es d'où ?** 和 **D'où viens-tu ?** 都是常見的非正式問法。" },
@@ -358,17 +358,17 @@ const moduleData = {
           title: "Level 2 (A0+): Asking about residence and formal versions",
           title_zh: "第二級（A0+）: 詢問居住地與正式說法",
           keyPhrases: [
-            {text: "Où habites-tu ?", en: "Where do you live? (informal)", zh: "你住在哪裡？（非正式）"},
-            {text: "J'habite à Lyon.", en: "I live in Lyon.", zh: "我住在里昂"},
-            {text: "Vous êtes d'où ?", en: "Where are you from? (formal)", zh: "您來自哪裡？（正式）"},
-            {text: "J'habite à Paris maintenant.", en: "I live in Paris now.", zh: "我現在住在巴黎"},
-            {text: "Et vous ?", en: "And you? (formal)", zh: "您呢？"}
+            { text: "Où habites-tu ?", en: "Where do you live? (informal)", zh: "你住在哪裡？（非正式）" },
+            { text: "J'habite à Lyon.", en: "I live in Lyon.", zh: "我住在里昂" },
+            { text: "Vous êtes d'où ?", en: "Where are you from? (formal)", zh: "您來自哪裡？（正式）" },
+            { text: "J'habite à Paris maintenant.", en: "I live in Paris now.", zh: "我現在住在巴黎" },
+            { text: "Et vous ?", en: "And you? (formal)", zh: "您呢？" }
           ],
           dialogues: [
-            {speaker: "Female", text: "Bonjour ! Vous êtes d'où ?", en: "Hello! Where are you from? (formal)", zh: "您好！您來自哪裡？"},
-            {speaker: "Male", text: "Je suis de Milan. Et vous ?", en: "I'm from Milan. And you?", zh: "我來自米蘭，您呢？"},
-            {speaker: "Female", text: "Je suis de Paris. Et où habitez-vous ?", en: "I'm from Paris. And where do you live?", zh: "我來自巴黎。您住在哪裡？"},
-            {speaker: "Male", text: "J'habite à Lyon.", en: "I live in Lyon.", zh: "我住在里昂。"}
+            { speaker: "Female", text: "Bonjour ! Vous êtes d'où ?", en: "Hello! Where are you from? (formal)", zh: "您好！您來自哪裡？" },
+            { speaker: "Male", text: "Je suis de Milan. Et vous ?", en: "I'm from Milan. And you?", zh: "我來自米蘭，您呢？" },
+            { speaker: "Female", text: "Je suis de Paris. Et où habitez-vous ?", en: "I'm from Paris. And where do you live?", zh: "我來自巴黎。您住在哪裡？" },
+            { speaker: "Male", text: "J'habite à Lyon.", en: "I live in Lyon.", zh: "我住在里昂。" }
           ],
           tips: [
             { en: "Use **Où habites-tu ?** (informal) or **Où habitez-vous ?** (formal) to ask where someone lives.", zh: "使用 **Où habites-tu ?**（非正式）或 **Où habitez-vous ?**（正式）來詢問某人住在何處。" },
@@ -381,17 +381,17 @@ const moduleData = {
           title: "Level 3 (A1): Talking about countries and prepositions",
           title_zh: "第三級（A1）: 談論國家與前置詞",
           keyPhrases: [
-            {text: "Je viens du Japon.", en: "I come from Japan.", zh: "我來自日本"},
-            {text: "Je viens de Chine.", en: "I come from China.", zh: "我來自中國"},
-            {text: "Je viens des États-Unis.", en: "I come from the United States.", zh: "我來自美國"},
-            {text: "Je suis français(e).", en: "I am French.", zh: "我是法國人"}
+            { text: "Je viens du Japon.", en: "I come from Japan.", zh: "我來自日本" },
+            { text: "Je viens de Chine.", en: "I come from China.", zh: "我來自中國" },
+            { text: "Je viens des États-Unis.", en: "I come from the United States.", zh: "我來自美國" },
+            { text: "Je suis français(e).", en: "I am French.", zh: "我是法國人" }
           ],
           dialogues: [
-            {speaker: "Female", text: "Bonjour ! De quel pays venez-vous ?", en: "Hello! Which country are you from?", zh: "您好！您來自哪個國家？"},
-            {speaker: "Male", text: "Je viens de France, et vous ?", en: "I'm from France, and you?", zh: "我來自法國，您呢？"},
-            {speaker: "Female", text: "Je viens des États-Unis.", en: "I'm from the United States.", zh: "我來自美國。"},
-            {speaker: "Male", text: "Ah, et vous êtes où en ce moment ?", en: "Oh, and where are you right now?", zh: "哦，那你現在在哪裡？"},
-            {speaker: "Female", text: "J'habite à Lyon maintenant.", en: "I live in Lyon now.", zh: "我現在住在里昂。"}
+            { speaker: "Female", text: "Bonjour ! De quel pays venez-vous ?", en: "Hello! Which country are you from?", zh: "您好！您來自哪個國家？" },
+            { speaker: "Male", text: "Je viens de France, et vous ?", en: "I'm from France, and you?", zh: "我來自法國，您呢？" },
+            { speaker: "Female", text: "Je viens des États-Unis.", en: "I'm from the United States.", zh: "我來自美國。" },
+            { speaker: "Male", text: "Ah, et vous êtes où en ce moment ?", en: "Oh, and where are you right now?", zh: "哦，那你現在在哪裡？" },
+            { speaker: "Female", text: "J'habite à Lyon maintenant.", en: "I live in Lyon now.", zh: "我現在住在里昂。" }
           ],
           tips: [
             { en: "When talking about your home country, the preposition changes based on the country's gender and number:", zh: "當談論你的國家時，前置詞會根據國家的性別和單複數而變化：" },
@@ -488,19 +488,19 @@ const moduleData = {
         {
           levelId: 1,
           title: "Level 1 (A1): Les questions de base – Basic Question Words",
-          title_zh: "第一級（A1）: 基本疑問詞",
+          title_zh: "第一級（A1）：基本疑問詞",
           keyPhrases: [
-            {text: "Comment", en: "How", zh: "怎麼樣"},
-            {text: "Qui", en: "Who", zh: "誰"},
-            {text: "Qu'est-ce que / Que", en: "What", zh: "什麼"},
-            {text: "Où", en: "Where", zh: "哪裡"}
+            { text: "Comment", en: "How", zh: "怎麼樣" },
+            { text: "Qui", en: "Who", zh: "誰" },
+            { text: "Qu'est-ce que / Que", en: "What", zh: "什麼" },
+            { text: "Où", en: "Where", zh: "哪裡" }
           ],
           dialogues: [
-            {speaker: "Female", text: "Comment ça va?", en: "How are you?", zh: "你好嗎？"},
-            {speaker: "Female", text: "Qui est-ce?", en: "Who is this?", zh: "這是誰？"},
-            {speaker: "Female", text: "Qu'est-ce que tu fais aujourd'hui?", en: "What are you doing today?", zh: "你今天做什麼？"},
-            {speaker: "Female", text: "Où vas-tu?", en: "Where are you going?", zh: "你去哪裡？"},
-            {speaker: "Female", text: "Où sont les toilettes?", en: "Where is the bathroom?", zh: "洗手間在哪裡？"}
+            { speaker: "Female", text: "Comment ça va?", en: "How are you?", zh: "你好嗎？" },
+            { speaker: "Female", text: "Qui est-ce?", en: "Who is this?", zh: "這是誰？" },
+            { speaker: "Female", text: "Qu'est-ce que tu fais aujourd'hui?", en: "What are you doing today?", zh: "你今天做什麼？" },
+            { speaker: "Female", text: "Où vas-tu?", en: "Where are you going?", zh: "你去哪裡？" },
+            { speaker: "Female", text: "Où sont les toilettes?", en: "Where is the bathroom?", zh: "洗手間在哪裡？" }
           ],
           tips: [
             { en: "**Comment** — used to ask about manner or condition, like asking 'how' someone is.", zh: "**Comment** — 用來詢問方式或狀態，相當於中文的「怎麼樣、如何」。" },
@@ -512,29 +512,29 @@ const moduleData = {
         {
           levelId: 2,
           title: "Level 2 (A1): Plus de questions – More Question Words",
-          title_zh: "Level 2 (A1): 更多疑問詞",
+          title_zh: "第二級（A1）：更多疑問詞",
           keyPhrases: [
-            {text: "Quand", en: "When", zh: "何時"},
-            {text: "Pourquoi", en: "Why", zh: "為什麼"},
-            {text: "Quel / Quelle", en: "Which", zh: "哪一個"},
-            {text: "Combien", en: "How much / How many", zh: "多少"}
+            { text: "Quand", en: "When", zh: "何時" },
+            { text: "Pourquoi", en: "Why", zh: "為什麼" },
+            { text: "Quel / Quelle", en: "Which", zh: "哪一個" },
+            { text: "Combien", en: "How much / How many", zh: "多少" }
           ],
           dialogues: [
-            {speaker: "Female", text: "Quand part le train?", en: "When does the train leave?", zh: "火車什麼時候開？"},
-            {speaker: "Female", text: "Pourquoi n'es-tu pas venu ce matin?", en: "Why didn’t you come this morning?", zh: "你今天早上為什麼沒來？"},
-            {speaker: "Female", text: "Quel gâteau veux-tu?", en: "Which cake do you want?", zh: "你想要哪一種蛋糕？"},
-            {speaker: "Female", text: "Combien d'amis as-tu en France?", en: "How many friends do you have in France?", zh: "你在法國有幾個朋友？"},
-            {speaker: "Female", text: "Pourquoi aimes-tu tant le café?", en: "Why do you like coffee so much?", zh: "你為什麼這麼喜歡咖啡？"}
+            { speaker: "Female", text: "Quand part le train?", en: "When does the train leave?", zh: "火車什麼時候開？" },
+            { speaker: "Female", text: "Pourquoi n'es-tu pas venu ce matin?", en: "Why didn’t you come this morning?", zh: "你今天早上為什麼沒來？" },
+            { speaker: "Female", text: "Quel gâteau veux-tu?", en: "Which cake do you want?", zh: "你想要哪一種蛋糕？" },
+            { speaker: "Female", text: "Combien d'amis as-tu en France?", en: "How many friends do you have in France?", zh: "你在法國有幾個朋友？" },
+            { speaker: "Female", text: "Pourquoi aimes-tu tant le café?", en: "Why do you like coffee so much?", zh: "你為什麼這麼喜歡咖啡？" }
           ],
           tips: [
             { en: "**Quand** — for asking about time or a specific moment.", zh: "**Quand** — 用來詢問時間或特定時刻。" },
             { en: "**Pourquoi** — for asking the reason for something. The answer often starts with *parce que* (because).", zh: "**Pourquoi** — 用來詢問原因，回答時通常會用 *parce que*（因為）開頭。" },
             { en: "**Quel / Quelle** — a pronoun that must agree in gender with the noun it refers to. **Quel** is for masculine nouns, **Quelle** is for feminine nouns.", zh: "**Quel / Quelle** — 這個疑問詞要根據後面的名詞來變化陰陽性。**Quel** 用於陽性名詞，**Quelle** 用於陰性名詞。" },
-            { en: "**Combien** — used for quantity. If followed by a noun, you must add *de* (of) after it, like *Combien de*.", zh: "**Combien** — 用來詢問數量。如果後面接名詞，必須加上 *de*，例如 *Combien de*。" }
+            { en: "**Combien** — used for quantity. If followed by a noun, you must add *de* (of) after it, like *Combien de*.", zh": "**Combien** — 用來詢問數量。如果後面接名詞，必須加上 *de*，例如 *Combien de*。" }
           ]
         }
       ]
-    }，
+    },
     {
       lessonId: 8,
       title: "Lesson 8 - The Verb 'être' & Pronouns",
@@ -545,11 +545,11 @@ const moduleData = {
         {
           levelId: 1,
           title: "Level 1 (A1): Introducing Yourself and Others",
-          title_zh: "第一級（A1）: 介紹自己和他人",
+          title_zh: "第一級（A1）：介紹自己和他人",
           keyPhrases: [
             { text: "Je suis...", en: "I am...", zh: "我是..." },
             { text: "Tu es...?", en: "Are you...?", zh: "你是...嗎？" },
-            { text: "C'est...", en: "This is... / He is... / She is...", zh: "這是... / 他是... / 她是..." },
+            { text: "C'est...", en: "This is...", zh: "這是..." },
             { text: "Qui est-ce ?", en: "Who is this?", zh: "這是誰？" }
           ],
           dialogues: [
@@ -560,13 +560,13 @@ const moduleData = {
           ],
           tips: [
             { en: "The verb **être** (to be) is one of the most important verbs in French. Here is the conjugation for the pronouns we've learned: **Je suis** (I am), **Tu es** (You are), **Il/Elle est** (He/She is).", zh: "動詞 **être** (是) 是法語中最重要的動詞之一。這是我們學過的主詞代名詞變化：**Je suis** (我是), **Tu es** (你是), **Il/Elle est** (他/她是)。" },
-            { en: "Use **C'est...** to introduce someone or something. It literally means 'it is', but can also mean 'he is' or 'she is' in an introductory context.", zh: "用 **C'est...** 來介紹某人或某物。字面上是「它是」，但在介紹情境中也可以指「他是」或「她是」。" }
+            { en: "Use **C'est...** to introduce someone or something. It literally means 'it is' or 'this is'. In an introductory context, it can refer to a person.", zh: "用 **C'est...** 來介紹某人或某物。字面上是「這是」或「它是」，但在介紹情境中也可以指「他是」或「她是」。" }
           ]
         },
         {
           levelId: 2,
           title: "Level 2 (A1): Meet the French Subject Pronouns",
-          title_zh: "第二級（A1）: 認識法語主詞代名詞",
+          title_zh: "第二級（A1）：認識法語主詞代名詞",
           keyPhrases: [
             { text: "je suis", en: "I am", zh: "我是" },
             { text: "tu es", en: "you are (informal)", zh: "你是（非正式）" },
@@ -575,7 +575,7 @@ const moduleData = {
             { text: "vous êtes", en: "you are (formal / plural)", zh: "你是（正式）／你們是" },
             { text: "ils / elles sont", en: "they are", zh: "他們／她們是" }
           ],
-          dialogues: [
+          dialogues": [
             { speaker: "A", text: "Nous sommes des étudiants, et vous ?", en: "We are students, and you?", zh: "我們是學生，你們呢？" },
             { speaker: "B", text: "Nous sommes aussi étudiants. Il est français et elle est belge. Et vous, d'où êtes-vous ?", en: "We are also students. He is French and she is Belgian. And you, where are you from?", zh: "我們也是學生。他是法國人，她是比利時人。你們呢，來自哪裡？" },
             { speaker: "A", text: "Moi, je suis chinois et elle est taïwanaise. Nous sommes tous les deux des étudiants en échange.", en: "Me, I am Chinese and she is Taiwanese. We are both exchange students.", zh: "我，我是中國人，而她是台灣人。我們都是交換學生。" }
@@ -588,7 +588,7 @@ const moduleData = {
         {
           levelId: 3,
           title: "Level 3 (A1): Possessive Adjectives",
-          title_zh: "第三級（A1）: 所有格形容詞",
+          title_zh: "第三級（A1）：所有格形容詞",
           keyPhrases: [
             { text: "mon / ma / mes", en: "my", zh: "我的" },
             { text: "ton / ta / tes", en: "your (informal)", zh: "你的（非正式）" },
@@ -606,7 +606,7 @@ const moduleData = {
           tips: [
             { en: "In French, the choice of possessive adjective (**mon / ma / mes**) depends on the gender and number of the noun that is being owned, not the gender of the owner.", zh: "在法語中，所有格形容詞（**mon / ma / mes**）的選擇取決於被擁有的名詞的性別和單複數，而不是擁有者的性別。" },
             { en: "For example: **mon livre** (my book - masculine noun), but **ma voiture** (my car - feminine noun).", zh: "例如：**mon livre** (我的書—陽性名詞)，但 **ma voiture** (我的車—陰性名詞)。" },
-            { en: "Special rule: Use **mon** instead of **ma** before a feminine noun that starts with a vowel (e.g., **mon amie** - my female friend).", zh: "特殊規則：在以母音開頭的陰性名詞前，用 **mon** 來取代 **ma**（例如：**mon amie** - 我的女性朋友）。" }
+            { en: "Special rule: Use **mon** instead of **ma** before a feminine noun that starts with a vowel (e.g., **mon amie** - my female friend).", zh": "特殊規則：在以母音開頭的陰性名詞前，用 **mon** 來取代 **ma**（例如：**mon amie** - 我的女性朋友）。" }
           ]
         }
       ]
