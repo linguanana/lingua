@@ -480,61 +480,66 @@ const moduleData = {
     },
     {
       lessonId: 7,
-      title: "Lesson 7 – Le Domande (Question Words)",
-      title_zh: "學習義大利提問詞",
+      title: "Lesson 7 – Les Questions (Question Words)",
+      title_zh: "學習法語疑問詞",
       theme: "how, who, what, where, when, why, which and how much/many",
       theme_zh: "怎麼樣、誰、什麼、哪裡、何時、為什麼、哪一個以及多少",
       levels: [
         {
           levelId: 1,
-          title: "Level 1 (A1): Le domande base – Basic Question Words",
-          title_zh: "第一級（A0）: 基本提問詞",
+          title: "Level 1 (A1): Les questions de base – Basic Question Words",
+          title_zh: "第一級（A1）: 基本疑問詞",
           keyPhrases: [
-            {text: "Come", en: "How", zh: "怎麼樣"},
-            {text: "Chi", en: "Who", zh: "誰"},
-            {text: "Cosa / Che cosa", en: "What", zh: "什麼"},
-            {text: "Dove", en: "Where", zh: "哪裡"}
+            {text: "Comment", en: "How", zh: "怎麼樣"},
+            {text: "Qui", en: "Who", zh: "誰"},
+            {text: "Qu'est-ce que / Que", en: "What", zh: "什麼"},
+            {text: "Où", en: "Where", zh: "哪裡"}
           ],
           dialogues: [
-            {speaker: "Female", text: "Come stai?", en: "How are you?", zh: "你好嗎？"},
-            {speaker: "Female", text: "Chi è lei?", en: "Who is she?", zh: "她是誰？"},
-            {speaker: "Female", text: "Cosa fai oggi?", en: "What are you doing today?", zh: "你今天做什麼？"},
-            {speaker: "Female", text: "Dove vai?", en: "Where are you going?", zh: "你去哪裡？"},
-            {speaker: "Female", text: "Dove è il bagno?", en: "Where is the bathroom?", zh: "洗手間在哪裡？"}
+            {speaker: "Female", text: "Comment ça va?", en: "How are you?", zh: "你好嗎？"},
+            {speaker: "Female", text: "Qui est-ce?", en: "Who is this?", zh: "這是誰？"},
+            {speaker: "Female", text: "Qu'est-ce que tu fais aujourd'hui?", en: "What are you doing today?", zh: "你今天做什麼？"},
+            {speaker: "Female", text: "Où vas-tu?", en: "Where are you going?", zh: "你去哪裡？"},
+            {speaker: "Female", text: "Où sont les toilettes?", en: "Where is the bathroom?", zh: "洗手間在哪裡？"}
           ],
           tips: [
-            { en: "**Come** — asks about manner or condition, like 'how' someone feels.", zh: "**Come** — 用來詢問方式或狀態，例如詢問一個人感覺如何。" },
-            { en: "**Chi** — used to ask about a person.", zh: "**Chi** — 用來詢問人是誰。" },
-            { en: "**Cosa / Che cosa** — means 'what'. You can use either.", zh: "**Cosa / Che cosa** — 意思是「什麼」，兩者都可以用。" },
-            { en: "**Dove** — used for locations or destinations.", zh: "**Dove** — 用來詢問地點或目的地。" }
+            { en: "**Comment** — used to ask about manner or condition, like asking 'how' someone is.", zh: "**Comment** — 用來詢問方式或狀態，相當於中文的「怎麼樣、如何」。" },
+            { en: "**Qui** — used to ask about a person. It's for the subject of the sentence.", zh: "**Qui** — 用來詢問人是誰，作為句子的主語。" },
+            { en: "**Qu'est-ce que / Que** — means 'what'. Use *Qu'est-ce que* for full sentences, or *Que* in a more formal style or when the object is at the end.", zh: "**Qu'est-ce que / Que** — 意思是「什麼」。通常在完整句子中使用 **Qu'est-ce que**，而 **Que** 較常用於正式語境或當「什麼」是句子的受詞時。" },
+            { en: "**Où** — used for locations or destinations.", zh: "**Où** — 用來詢問地點或目的地，相當於中文的「哪裡」。" }
           ]
         },
         {
           levelId: 2,
-          title: "Level 2 (A1): Le domande in più – More Question Words",
-          title_zh: "Level 2 (A1): 更多提問詞",
+          title: "Level 2 (A1): Plus de questions – More Question Words",
+          title_zh: "Level 2 (A1): 更多疑問詞",
           keyPhrases: [
-            {text: "Quando", en: "When", zh: "何時"},
-            {text: "Perché", en: "Why", zh: "為什麼"},
-            {text: "Quale", en: "Which", zh: "哪一個"},
-            {text: "Quanto / Quanti", en: "How much / How many", zh: "多少"}
+            {text: "Quand", en: "When", zh: "何時"},
+            {text: "Pourquoi", en: "Why", zh: "為什麼"},
+            {text: "Quel / Quelle", en: "Which", zh: "哪一個"},
+            {text: "Combien", en: "How much / How many", zh: "多少"}
           ],
           dialogues: [
-            {speaker: "Female", text: "Quando parte il treno?", en: "When does the train leave?", zh: "火車什麼時候開？"},
-            {speaker: "Female", text: "Perché non sei venuto stamattina?", en: "Why didn’t you come this morning?", zh: "你今天早上為什麼沒來？"},
-            {speaker: "Female", text: "Quale gelato vuoi?", en: "Which ice cream do you want?", zh: "你想要哪一種冰淇淋？"},
-            {speaker: "Female", text: "Quanti amici hai in Italia?", en: "How many friends do you have in Italy?", zh: "你在義大利有幾個朋友？"},
-            {speaker: "Female", text: "Perché ti piace tanto il caffè?", en: "Why do you like coffee so much?", zh: "你為什麼這麼喜歡咖啡？"}
+            {speaker: "Female", text: "Quand part le train?", en: "When does the train leave?", zh: "火車什麼時候開？"},
+            {speaker: "Female", text: "Pourquoi n'es-tu pas venu ce matin?", en: "Why didn’t you come this morning?", zh: "你今天早上為什麼沒來？"},
+            {speaker: "Female", text: "Quel gâteau veux-tu?", en: "Which cake do you want?", zh: "你想要哪一種蛋糕？"},
+            {speaker: "Female", text: "Combien d'amis as-tu en France?", en: "How many friends do you have in France?", zh: "你在法國有幾個朋友？"},
+            {speaker: "Female", text: "Pourquoi aimes-tu tant le café?", en: "Why do you like coffee so much?", zh: "你為什麼這麼喜歡咖啡？"}
           ],
-          tips: []
+          tips: [
+            { en: "**Quand** — for asking about time or a specific moment.", zh: "**Quand** — 用來詢問時間或特定時刻。" },
+            { en: "**Pourquoi** — for asking the reason for something. The answer often starts with *parce que* (because).", zh: "**Pourquoi** — 用來詢問原因，回答時通常會用 *parce que*（因為）開頭。" },
+            { en: "**Quel / Quelle** — a pronoun that must agree in gender with the noun it refers to. **Quel** is for masculine nouns, **Quelle** is for feminine nouns.", zh: "**Quel / Quelle** — 這個疑問詞要根據後面的名詞來變化陰陽性。**Quel** 用於陽性名詞，**Quelle** 用於陰性名詞。" },
+            { en: "**Combien** — used for quantity. If followed by a noun, you must add *de* (of) after it, like *Combien de*.", zh: "**Combien** — 用來詢問數量。如果後面接名詞，必須加上 *de*，例如 *Combien de*。" }
+          ]
         }
       ]
-    },
+    }，
     {
       lessonId: 8,
-      title: "Lesson 8 – The Verb 'Essere' & Pronouns",
-      title_zh: "動詞 essere 與代名詞",
-      theme: "Introducing Yourself and Others, Subject Pronouns, and Possessive Pronouns",
+      title: "Lesson 8 - The Verb 'être' & Pronouns",
+      title_zh: "第八課 - 動詞 'être' 與代名詞",
+      theme: "Introducing yourself and others, subject pronouns, and possessive pronouns",
       theme_zh: "介紹自己與他人、主詞代名詞、所有格代名詞",
       levels: [
         {
@@ -542,108 +547,66 @@ const moduleData = {
           title: "Level 1 (A1): Introducing Yourself and Others",
           title_zh: "第一級（A1）: 介紹自己和他人",
           keyPhrases: [
-            {text: "Io sono...", en: "I am...", zh: "我是..."},
-            {text: "Sono...", en: "I'm... - *subject omitted*", zh: "我是... 主詞可省略"},
-            {text: "Tu sei...", en: "You are...", zh: "你是..."},
-            {text: "Sei...?", en: "Are you...? - *subject omitted*", zh: "你是...嗎？主詞可省略"}
+            { text: "Je suis...", en: "I am...", zh: "我是..." },
+            { text: "Tu es...?", en: "Are you...?", zh: "你是...嗎？" },
+            { text: "C'est...", en: "This is... / He is... / She is...", zh: "這是... / 他是... / 她是..." },
+            { text: "Qui est-ce ?", en: "Who is this?", zh: "這是誰？" }
           ],
           dialogues: [
-            {speaker: "Female", text: "Sei Marco?", en: "Are you Marco?", zh: "你是馬可嗎？"},
-            {speaker: "Male", text: "Sì, sono Marco.", en: "Yes, I'm Marco.", zh: "對，我是馬可"},
-            {speaker: "Male", text: "E tu?", en: "And you?", zh: "那你呢？"},
-            {speaker: "Female", text: "Sono Laura.", en: "I'm Laura.", zh: "我是勞拉"}
+            { speaker: "A", text: "Salut ! Tu es Paul ?", en: "Hi! Are you Paul?", zh: "嗨！你是保羅嗎？" },
+            { speaker: "B", text: "Oui, je suis Paul. Et toi, tu es Emma ?", en: "Yes, I am Paul. And you, are you Emma?", zh: "對，我是保羅。你呢，你是艾瑪嗎？" },
+            { speaker: "A", text: "Oui, c'est ça, je suis Emma. Et qui est-ce ? C'est ton ami ?", en: "Yes, that's right, I'm Emma. And who is this? Is he your friend?", zh: "對，沒錯，我是艾瑪。這是誰？他是你朋友嗎？" },
+            { speaker: "B", text: "Oui, c'est mon ami Marc. Marc, c'est Emma.", en: "Yes, this is my friend Marc. Marc, this is Emma.", zh: "對，這是我朋友馬克。馬克，這是艾瑪。" }
           ],
           tips: [
-            { en: "In Italian, people often drop **io** because the verb already shows who’s speaking.", zh: "在義大利語中，人們常省略 **io**，因為動詞變化已經透露主詞是誰。" },
-            { en: "Example: **Io sono Anna → Sono Anna**", zh: "例子: **Io sono Anna** → **Sono Anna**" },
-            { en: "In a question, you can just use the verb: **Sei Marco?** instead of '**Tu sei Marco?**", zh: "在問句中，你可以只用動詞: **Sei Marco?** 取代 **Tu sei Marco?**" },
-            { en: "**Sei Marco?** (Are you Marco?) is more common.", zh: "「**Sei Marco?**」（你是馬可嗎？）比較常見。" }
+            { en: "The verb **être** (to be) is one of the most important verbs in French. Here is the conjugation for the pronouns we've learned: **Je suis** (I am), **Tu es** (You are), **Il/Elle est** (He/She is).", zh: "動詞 **être** (是) 是法語中最重要的動詞之一。這是我們學過的主詞代名詞變化：**Je suis** (我是), **Tu es** (你是), **Il/Elle est** (他/她是)。" },
+            { en: "Use **C'est...** to introduce someone or something. It literally means 'it is', but can also mean 'he is' or 'she is' in an introductory context.", zh: "用 **C'est...** 來介紹某人或某物。字面上是「它是」，但在介紹情境中也可以指「他是」或「她是」。" }
           ]
         },
         {
           levelId: 2,
-          title: "Level 2 (A1): Meet the Italian Subject Pronouns",
-          title_zh: "第二級（A1）: 認識義大利主詞代名詞",
-          keyPronouns: [
-            {text: "io", en: "I", zh: "我"},
-            {text: "io sono...", en: "I am...", zh: "我是..."},
-            {text: "tu", en: "you (informal)", zh: "你"},
-            {text: "tu sei...", en: "You are...", zh: "你、非正式單數"},
-            {text: "lui", en: "he", zh: "他"},
-            {text: "lui è...", en: "He is...", zh: "他是..."},
-            {text: "lei", en: "she", zh: "她"},
-            {text: "lei è...", en: "She is...", zh: "她是..."},
-            {text: "Lei", en: "you (formal)", zh: "您，正式"},
-            {text: "Lei è...", en: "You are...", zh: "您、正式單數"},
-            {text: "noi", en: "we", zh: "我們"},
-            {text: "noi siamo...", en: "We are...", zh: "我們是..."},
-            {text: "voi", en: "you all", zh: "你們"},
-            {text: "voi siete...", en: "You all are...", zh: "你們是..."},
-            {text: "loro", en: "they", zh: "他們 / 她們"},
-            {text: "loro sono...", en: "They are...", zh: "他們/她們是..."}
+          title: "Level 2 (A1): Meet the French Subject Pronouns",
+          title_zh: "第二級（A1）: 認識法語主詞代名詞",
+          keyPhrases: [
+            { text: "je suis", en: "I am", zh: "我是" },
+            { text: "tu es", en: "you are (informal)", zh: "你是（非正式）" },
+            { text: "il / elle est", en: "he / she is", zh: "他／她是" },
+            { text: "nous sommes", en: "we are", zh: "我們是" },
+            { text: "vous êtes", en: "you are (formal / plural)", zh: "你是（正式）／你們是" },
+            { text: "ils / elles sont", en: "they are", zh: "他們／她們是" }
           ],
           dialogues: [
-            {speaker: "Male", text: "Tu sei Maria?", en: "Are you Maria?", zh: "你是瑪麗亞嗎？"},
-            {speaker: "Female", text: "Sì, io sono Maria.", en: "Yes, I am Maria.", zh: "對，我是瑪麗亞"},
-            {speaker: "Male", text: "Sei pronto?", en: "Are you ready?", zh: "你準備好了嗎？"},
-            {speaker: "Female", text: "Sì, sono pronto.", en: "Yes, I am ready.", zh: "對，我準備好了"},
-            {speaker: "Female", text: "Lui è Luca?", en: "Is he Luca?", zh: "他是路卡嗎？"},
-            {speaker: "Male", text: "Sì, lui è Luca.", en: "Yes, he is Luca.", zh: "對，他是路卡"},
-            {speaker: "Female", text: "Lei è italiana?", en: "Is she Italian?", zh: "她是義大利人嗎？"},
-            {speaker: "Male", text: "Sì, lei è italiana.", en: "Yes, she is Italian.", zh: "對，她是義大利人"},
-            {speaker: "Female", text: "Scusi, Lei è il signor Bianchi?", en: "Excuse me, are you Mr. Bianchi? (Formal)", zh: "打擾了，您是比安奇先生嗎？"},
-            {speaker: "Male", text: "Sì, sono io.", en: "Yes, it's me.", zh: "對，是我"},
-            {speaker: "Female", text: "Noi siamo amici?", en: "Are we friends?", zh: "我們是朋友嗎？"},
-            {speaker: "Male", text: "Sì, siamo amici.", en: "Yes, we are friends.", zh: "對，我們是朋友"},
-            {speaker: "Female", text: "Voi siete turisti?", en: "Are you all tourists?", zh: "你們是遊客嗎？"},
-            {speaker: "Male", text: "Sì, siamo turisti", en: "Yes, we are tourists.", zh: "對，我們是遊客"},
-            {speaker: "Female", text: "Loro sono americani?", en: "Are they American?", zh: "他們是美國人嗎？"},
-            {speaker: "Male", text: "Sì, sono americani.", en: "Yes, they are American.", zh: "對，他們是美國人"}
+            { speaker: "A", text: "Nous sommes des étudiants, et vous ?", en: "We are students, and you?", zh: "我們是學生，你們呢？" },
+            { speaker: "B", text: "Nous sommes aussi étudiants. Il est français et elle est belge. Et vous, d'où êtes-vous ?", en: "We are also students. He is French and she is Belgian. And you, where are you from?", zh: "我們也是學生。他是法國人，她是比利時人。你們呢，來自哪裡？" },
+            { speaker: "A", text: "Moi, je suis chinois et elle est taïwanaise. Nous sommes tous les deux des étudiants en échange.", en: "Me, I am Chinese and she is Taiwanese. We are both exchange students.", zh: "我，我是中國人，而她是台灣人。我們都是交換學生。" }
           ],
-          tasks: [],
           tips: [
-            { en: "In Italian, subject pronouns are often dropped because the verb form already shows who’s speaking.", zh: "在義大利語中，主詞常被省略，因為動詞本身就能看出是誰。" },
-            { en: "Example: **(Io) sono Laura**, **(Lui) è Marco**.", zh: "例子: **（Io）sono Laura**，**（Lui）è Marco**。" },
-            { en: "Capitalized **'Lei'** (formal “you”) is the same as “she” **'lei'** — context matters!", zh: "大寫的 **Lei**（正式的「您」）與小寫的 **lei**（「她」）拼法相同，需要靠語境來判斷。" }
+            { en: "The verb **être** has a different form for each subject pronoun. You need to memorize all of them: **suis**, **es**, **est**, **sommes**, **êtes**, **sont**.", zh: "動詞 **être** 的每個人稱都有不同的形式。你需要將它們全部記住：**suis**, **es**, **est**, **sommes**, **êtes**, **sont**。" },
+            { en: "Use **vous** when speaking to more than one person, or to a single person in a formal context (e.g., a boss, a stranger). Use **tu** for friends and family.", zh: "當你與一個以上的人說話，或是在正式場合（例如老闆、陌生人）對單獨一人說話時，使用 **vous**。對朋友和家人則使用 **tu**。" }
           ]
         },
         {
           levelId: 3,
-          title: "Level 3 (A1): Possessive Pronouns",
-          title_zh: "第三級（A1）: 所有格代名詞",
+          title: "Level 3 (A1): Possessive Adjectives",
+          title_zh: "第三級（A1）: 所有格形容詞",
           keyPhrases: [
-            {title: "Masculine Singular / Feminine Singular"},
-            {text: "il mio / la mia", en: "my + Singular", zh: "我的"},
-            {text: "il tuo / la tua", en: "your (informal) + Singular", zh: "你的"},
-            {text: "il suo / la sua", en: "his / her / your (formal)", zh: "他/她/您的"},
-            {text: "il nostro / la nostra", en: "our", zh: "我們的"},
-            {text: "il vostro / la vostra", en: "your", zh: "你們的"},
-            {text: "il loro / la loro", en: "their / your (formal)", zh: "他們/她們/您們的"},
-            {title: "Masculine Plural / Feminine Plural"},
-            {text: "i miei / le mie", en: "my + Plural", zh: "我的"},
-            {text: "i tuoi / le tue", en: "your (informal) + Plural", zh: "你的"},
-            {text: "i suoi / le sue", en: "his / her / your (formal)", zh: "他/她/您的"},
-            {text: "i nostri / le nostre", en: "our", zh: "我們的"},
-            {text: "i vostri / le vostre", en: "your", zh: "你們的"},
-            {text: "i loro / le loro", en: "their / your (formal)", zh: "他們/她們/您們的"}
+            { text: "mon / ma / mes", en: "my", zh: "我的" },
+            { text: "ton / ta / tes", en: "your (informal)", zh: "你的（非正式）" },
+            { text: "son / sa / ses", en: "his / her / its", zh: "他／她／它的" },
+            { text: "notre / nos", en: "our", zh: "我們的" },
+            { text: "votre / vos", en: "your (formal / plural)", zh: "你／你們的" },
+            { text: "leur / leurs", en: "their", zh: "他們／她們的" }
           ],
           dialogues: [
-            {speaker: "Female", text: "È la tua borsa?", en: "Is it your bag?", zh: "這是你的包包嗎？"},
-            {speaker: "Male", text: "Sì, è la mia borsa.", en: "Yes, it’s my bag.", zh: "對，是我的包包"},
-            {speaker: "Female", text: "Dov’è il suo telefono?", en: "Where is his/her phone?", zh: "他的/她的手機在哪？"},
-            {speaker: "Male", text: "Ecco il suo telefono.", en: "Here’s his/her phone.", zh: "這是他的/她的手機"},
-            {speaker: "Female", text: "È la vostra macchina?", en: "Is this your (plural) car?", zh: "這是你們的車嗎？"},
-            {speaker: "Male", text: "Sì, è la nostra macchina.", en: "Yes, it’s our car.", zh: "對，是我們的車"},
-            {speaker: "Female", text: "Sono le loro chiavi?", en: "Are these their keys?", zh: "這些是他們的鑰匙嗎？"},
-            {speaker: "Male", text: "No, non sono le loro chiavi. Sono le mie.", en: "No, they aren't their keys. They are mine.", zh: "不，那些不是他們的鑰匙。是我的。"}
+            { speaker: "A", text: "C'est ton livre ?", en: "Is this your book?", zh: "這是你的書嗎？" },
+            { speaker: "B", text: "Non, ce n'est pas mon livre. C'est son livre, à lui. Et ça, c'est ta voiture ?", en: "No, this is not my book. It's his book. And this, is it your car?", zh: "不，這不是我的書。那是他的書。那台是你的車嗎？" },
+            { speaker: "A", text: "Oui, c'est ma nouvelle voiture. Notre maison est là-bas. Tu vois nos vélos ?", en: "Yes, it's my new car. Our house is over there. Do you see our bikes?", zh: "對，這是我的新車。我們的房子在那邊。你有看到我們的腳踏車嗎？" },
+            { speaker: "B", text: "Oui, je vois leurs vélos. Leurs vélos sont très beaux !", en: "Yes, I see their bikes. Their bikes are very nice!", zh: "有，我看到他們的腳踏車。他們的腳踏車很漂亮！" }
           ],
           tips: [
-            { en: "Possessive words change based on the thing you are talking about, not who owns it.", zh: "所有格形容詞的性別與所修飾的名詞一致，而不是與擁有者一致。" },
-            { en: "**la mia borsa** (my bag – feminine word), **il mio libro** (my book – masculine word).", zh: "**la mia borsa**（我的包包——陰性名詞）、**il mio libro**（我的書——陽性名詞）。" },
-            { en: "Most of the time, you also add **il / la / i / le** before the possessive.", zh: "大多數時候，所有格形容詞前會加上 **il / la / i / le**。" },
-            { en: "But for singular family members, you usually skip the article:", zh: "但對於單數的家庭成員，通常會省略冠詞: " },
-            { en: "**mia madre** (my mother), **tuo fratello** (your brother).", zh: "**mia madre**（我的媽媽）、**tuo fratello**（你的哥哥／弟弟）。" },
-            { en: "If it's plural or has an adjective, you add the article: **i miei genitori** (my parents), **il mio fratello maggiore** (my older brother).", zh: "如果是複數或帶有形容詞，則會加上冠詞: **i miei genitori**（我的父母）、**il mio fratello maggiore**（我的哥哥／弟弟）。" }
+            { en: "In French, the choice of possessive adjective (**mon / ma / mes**) depends on the gender and number of the noun that is being owned, not the gender of the owner.", zh: "在法語中，所有格形容詞（**mon / ma / mes**）的選擇取決於被擁有的名詞的性別和單複數，而不是擁有者的性別。" },
+            { en: "For example: **mon livre** (my book - masculine noun), but **ma voiture** (my car - feminine noun).", zh: "例如：**mon livre** (我的書—陽性名詞)，但 **ma voiture** (我的車—陰性名詞)。" },
+            { en: "Special rule: Use **mon** instead of **ma** before a feminine noun that starts with a vowel (e.g., **mon amie** - my female friend).", zh: "特殊規則：在以母音開頭的陰性名詞前，用 **mon** 來取代 **ma**（例如：**mon amie** - 我的女性朋友）。" }
           ]
         }
       ]
