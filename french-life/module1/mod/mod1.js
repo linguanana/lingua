@@ -575,7 +575,7 @@ const moduleData = {
             { text: "vous êtes", en: "you are (formal / plural)", zh: "你是（正式）／你們是" },
             { text: "ils / elles sont", en: "they are", zh: "他們／她們是" }
           ],
-          dialogues": [
+          dialogues: [
             { speaker: "A", text: "Nous sommes des étudiants, et vous ?", en: "We are students, and you?", zh: "我們是學生，你們呢？" },
             { speaker: "B", text: "Nous sommes aussi étudiants. Il est français et elle est belge. Et vous, d'où êtes-vous ?", en: "We are also students. He is French and she is Belgian. And you, where are you from?", zh: "我們也是學生。他是法國人，她是比利時人。你們呢，來自哪裡？" },
             { speaker: "A", text: "Moi, je suis chinois et elle est taïwanaise. Nous sommes tous les deux des étudiants en échange.", en: "Me, I am Chinese and she is Taiwanese. We are both exchange students.", zh: "我，我是中國人，而她是台灣人。我們都是交換學生。" }
