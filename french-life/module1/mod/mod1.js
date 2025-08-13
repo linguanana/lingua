@@ -1,264 +1,274 @@
 // mod/mod1.js
 const moduleData = {
   moduleId: "1",
-  title: "Module 1 – Greetings",
+  title: "Module 1 – Salutations",
   title_zh: "模組 1 – 打招呼",
-  voice: "IT", 
-  speakers: {
-    "1": "👩",
-    "2": "👨🏻‍🍳",
-    "3": "🧑",
-    "4": "🧸",
-    "5": "🐳",
-    "6": "🧸",
-    "7": "👧",
-    "8": "👦🏻‍🎨"
-  },
+  voice: "fr-FR",
   lessons: [
     {
       lessonId: 1,
-      title: "Lesson 1 – Ciao! Missione al mercato",
-      theme: "Greetings in everyday Italian",
-      theme_zh: "日常義大利語的問候語",
+      title: "Leçon 1 – Salut ! Mission au marché",
+      theme: "Les salutations dans la vie quotidienne française",
+      theme_zh: "日常法語的問候語",
       levels: [
         {
           levelId: 1,
-          title: "Level 1 (A0+): Say Hello!",
+          title: "Niveau 1 (A0+) : Dire bonjour !",
           title_zh: "第一級（A0+）: 打招呼！",
           keyPhrases: [
-            { text: "Ciao!", en: "Hi / Bye!", zh: "嗨／掰" },
-            { text: "Buongiorno!", en: "Good morning!", zh: "早安／你好" },
-            { text: "Buonasera!", en: "Good evening!", zh: "晚上好" },
-            { text: "Salve!", en: "Hello (formal or neutral)", zh: "您好" }
+            { text: "Salut !", en: "Hi / Bye!", zh: "嗨／掰" },
+            { text: "Bonjour !", en: "Good morning / Hello", zh: "早安／你好" },
+            { text: "Bonsoir !", en: "Good evening", zh: "晚上好" },
+            { text: "Enchanté(e) !", en: "Nice to meet you!", zh: "很高興認識你" }
           ],
           dialogues: [
-            { speaker: "1", when: "Talking to friends or classmates", text: "Ciao!", en: "Hi!", zh: "嗨！" },
-            { speaker: "1", when: "Morning at a hotel or store", text: "Buongiorno!", en: "Good morning!", zh: "早安！" },
-            { speaker: "1", when: "Evening at a restaurant", text: "Buonasera!", en: "Good evening!", zh: "晚上好！" },
-            { speaker: "1", when: "‍Not sure what to say", text: "Salve!", en: "Hello!", zh: "您好！" },
-            { speaker: "1", when: "Leaving a chat", text: "A presto!", en: "See you soon!", zh: "待會見！" },
-            { speaker: "1", when: "Greeting a group", text: "Ciao a tutti!", en: "Hi everyone!", zh: "大家好！" }
+            { speaker: "Female", when: "Talking to friends or classmates", text: "Salut !", en: "Hi!", zh: "嗨！" },
+            { speaker: "Female", when: "Morning at a bakery or store", text: "Bonjour !", en: "Good morning!", zh: "早安！" },
+            { speaker: "Female", when: "Evening at a restaurant", text: "Bonsoir !", en: "Good evening!", zh: "晚上好！" },
+            { speaker: "Female", when: "Meeting someone for the first time", text: "Enchanté !", en: "Nice to meet you!", zh: "很高興認識你！" },
+            { speaker: "Female", when: "Leaving a chat", text: "À bientôt !", en: "See you soon!", zh: "待會見！" },
+            { speaker: "Female", when: "Greeting a group", text: "Salut tout le monde !", en: "Hi everyone!", zh: "大家好！" }
           ],
           tips: [
-            { en: "**Ciao** is informal and very common in Italy.", zh: "**Ciao** 是非正式且在義大利非常常見的用法。" },
-            { en: "**Buongiorno** is polite and used until about 5 p.m.", zh: "**Buongiorno** 較正式，通常在下午 5 點前使用。" },
-            { en: "**Buonasera** is for after 5–6 p.m.", zh: "**Buonasera** 用於下午 5-6 點之後的問候語。" },
-            { en: "**Salve** is a nice neutral option if you're unsure which to use.", zh: "**Salve** 如果不確定要用哪一個，這是一個很好的中性選項。" },
-            { en: "You can use **Ciao** for both greeting and saying goodbye!", zh: "**Ciao** 同時可以用於打招呼和說再見！" }
+            { en: "**Salut** is informal and very common in France.", zh: "**Salut** 是非正式且在法國非常常見的用法。" },
+            { en: "**Bonjour** is polite and used from the morning until about 6 p.m.", zh: "**Bonjour** 較正式，通常在下午 6 點前使用。" },
+            { en: "**Bonsoir** is for after 6 p.m.", zh: "**Bonsoir** 用於下午 6 點之後的問候語。" },
+            { en: "**Bonjour** is essential! Always say it when you enter a shop, café, or interact with a stranger.", zh: "**Bonjour** 是必須的！進入商店、咖啡廳或與陌生人互動時，務必先說這句話。" },
+            { en: "**Salut** can be used for both greeting and saying goodbye!", zh: "**Salut** 同時可以用於打招呼和說再見！" }
           ]
         },
         {
           levelId: 2,
-          title: "Level 2 (A0+): More Greetings & Goodbyes",
+          title: "Niveau 2 (A0+) : Plus de salutations et d'adieux",
           title_zh: "第二級（A0+）: 更多問候與道別",
           keyPhrases: [
-            { text: "Buon pomeriggio!", en: "Good afternoon", zh: "午安" },
-            { text: "Buonanotte!", en: "Good night", zh: "晚安（睡前說）" },
-            { text: "Arrivederci!", en: "Goodbye (formal)", zh: "正式的再見" },
-            { text: "A presto!", en: "See you soon", zh: "很快再見" },
-            { text: "A domani!", en: "See you tomorrow", zh: "明天見" },
-            { text: "Piacere!", en: "Nice to meet you", zh: "初次見面" },
-            { text: "Ciao ciao!", en: "Bye-bye!", zh: "掰掰（可愛口吻）" }
+            { text: "Bonne journée !", en: "Have a good day!", zh: "祝你今天愉快" },
+            { text: "Bonne soirée !", en: "Have a good evening!", zh: "祝你今晚愉快" },
+            { text: "Bonne nuit !", en: "Good night", zh: "晚安（睡前說）" },
+            { text: "Au revoir !", en: "Goodbye (formal)", zh: "再見（正式）" },
+            { text: "À bientôt !", en: "See you soon", zh: "很快再見" },
+            { text: "À demain !", en: "See you tomorrow", zh: "明天見" },
+            { text: "À plus !", en: "See you later (informal)", zh: "待會見（口語）" }
           ],
           dialogues: [
-            { speaker: "3", when: "Early afternoon and want to be polite?", text: "Buon pomeriggio!", en: "Good afternoon", zh: "午安" },
-            { speaker: "3", when: "Heading to bed?", text: "Buonanotte!", en: "Good night", zh: "睡前說晚安" },
-            { speaker: "3", when: "Leaving formally (e.g., restaurant or meeting)?", text: "Arrivederci!", en: "Goodbye (formal)", zh: "正式的再見" },
-            { speaker: "3", when: "Saying goodbye for now but will meet later today?", text: "A dopo!", en: "See you later today", zh: "今天稍後見" },
-            { speaker: "3", when: "Ending a quick conversation or short visit?", text: "A presto!", en: "See you soon", zh: "很快再見" },
-            { speaker: "3", when: "Parting ways until tomorrow?", text: "A domani!", en: "See you tomorrow", zh: "明天見" },
-            { speaker: "3", when: "Meeting someone for the first time?", text: "Piacere!", en: "Nice to meet you", zh: "初次見面" },
-            { speaker: "3", when: "Saying bye with a cute or friendly tone?", text: "Ciao ciao!", en: "Bye-bye!", zh: "可愛口吻的掰掰" }
+            { speaker: "Female", when: "Leaving a shop in the afternoon", text: "Bonne journée !", en: "Have a good day!", zh: "祝你今天愉快！" },
+            { speaker: "Female", when: "Leaving a restaurant in the evening", text: "Bonne soirée !", en: "Have a good evening!", zh: "祝你今晚愉快！" },
+            { speaker: "Female", when: "Heading to bed?", text: "Bonne nuit !", en: "Good night", zh: "晚安" },
+            { speaker: "Female", when: "Leaving formally (e.g., meeting or with a stranger)?", text: "Au revoir !", en: "Goodbye (formal)", zh: "再見（正式）" },
+            { speaker: "Female", when: "Ending a quick conversation or short visit?", text: "À bientôt !", en: "See you soon", zh: "很快再見" },
+            { speaker: "Female", when: "Parting ways until tomorrow?", text: "À demain !", en: "See you tomorrow", zh: "明天見" },
+            { speaker: "Female", when: "Saying bye to a friend you'll see later today?", text: "À plus tard !", en: "See you later today", zh: "今天稍後見" },
+            { speaker: "Female", when: "Saying goodbye with a cute or friendly tone?", text: "Salut, salut !", en: "Bye-bye!", zh: "再見再見" }
           ],
           tips: [
-            { en: "**Buonanotte** is only for bedtime 🌙", zh: "**Buonanotte** 只在睡前說 🌙" },
-            { en: "**Arrivederci** is more formal than **Ciao**", zh: "**Arrivederci** 比 **Ciao** 更正式" },
-            { en: "**A presto** and **A dopo** are good when you’ll see someone again soon", zh: "**A presto** 和 **A dopo** 適合用在很快會再見面的情況" },
-            { en: "**Piacere** is for first meetings", zh: "**Piacere** 用在第一次見面時" }
+            { en: "**Bonne nuit** is only for bedtime 🌙, while **Bonsoir** is a general evening greeting.", zh: "**Bonne nuit** 只在睡前說 🌙，而 **Bonsoir** 是一般的晚上問候語。" },
+            { en: "**Au revoir** is a very standard goodbye, more formal than **Salut**.", zh: "**Au revoir** 是一個非常標準的再見，比 **Salut** 更正式。" },
+            { en: "**À bientôt** is for seeing someone again soon, but without a specific time. **À tout à l'heure** is for seeing them later today.", zh: "**À bientôt** 用在很快會再見面但沒有具體時間的情況。**À tout à l'heure** 則是今天稍後會見面。" },
+            { en: "**Enchanté(e)** is for first meetings, but you can also just say **Bonjour** and then introduce yourself.", zh: "**Enchanté(e)** 用在第一次見面，但你也可以只說 **Bonjour** 然後自我介紹。" }
           ]
         },
         {
           levelId: 3,
-          title: "Level 3 (A0+): Even More Ways to Say Goodbye",
+          title: "Niveau 3 (A0+) : D'autres façons de dire au revoir",
           title_zh: "第三級（A0+）: 更多道別方式",
-          keyPhrases: [],
+          keyPhrases: [
+            { text: "À plus tard !", en: "See you later", zh: "待會見" },
+            { text: "À tout de suite !", en: "See you right away!", zh: "馬上見！" },
+            { text: "À la prochaine !", en: "See you next time", zh: "下次見" },
+            { text: "À la semaine prochaine !", en: "See you next week", zh: "下週見" },
+            { text: "À un de ces quatre !", en: "See you one of these days!", zh: "改天見！" },
+            { text: "Prenez soin de vous !", en: "Take care of yourself! (formal/plural)", zh: "請保重！" },
+            { text: "Fais attention !", en: "Take care! (informal)", zh: "小心/保重！" },
+            { text: "On se voit !", en: "We’ll see each other!", zh: "到時見（我們預計會見面）" },
+            { text: "On se parle !", en: "We’ll talk!", zh: "再聊（我們預計會聯絡）" }
+          ],
           dialogues: [
-            { speaker: "3", when: "Wrapping up a conversation?", text: "A dopo!", en: "See you later", zh: "待會見" },
-            { speaker: "3", when: "🧑Saying goodbye to a group of friends?", text: "A dopo ragazzi!", en: "See you later, guys!", zh: "大家待會見" },
-            { speaker: "3", when: "Meeting again later today?", text: "A più tardi!", en: "See you later today", zh: "今天稍後見" },
-            { speaker: "3", when: "🙋Planning to see someone in person?", text: "Ci vediamo!", en: "See you in person", zh: "到時見" },
-            { speaker: "3", when: "Scheduled to meet tomorrow?", text: "Ci vediamo domani!", en: "See you tomorrow", zh: "明天見面" },
-            { speaker: "3", when: "Will contact again soon?", text: "Ci sentiamo!", en: "Talk soon", zh: "再聯絡" },
-            { speaker: "3", when: "Planning to call or message tomorrow?", text: "Ci sentiamo domani!", en: "Talk to you tomorrow", zh: "明天再聯絡" },
-            { speaker: "3", when: "Really soon – like within the hour?", text: "A prestissimo!", en: "See you very soon", zh: "非常快再見" },
-            { speaker: "3", when: "Saying goodbye in the evening?", text: "Buona serata!", en: "Have a nice evening", zh: "祝你今晚愉快" },
-            { speaker: "3", when: "Saying goodbye in the morning or early afternoon?", text: "Buona giornata!", en: "Have a good day", zh: "祝你今天愉快" },
-            { speaker: "3", when: "Ending for now, but you’ll meet again?", text: "Alla prossima!", en: "See you next time", zh: "下次見" },
-            { speaker: "3", when: "Meeting again next week?", text: "Alla prossima settimana!", en: "See you next week", zh: "下週見" },
-            { speaker: "3", when: "No date planned, but you'll reconnect later?", text: "Alla prossima volta!", en: "Until next time", zh: "等下次見面" }
+            { speaker: "Female", when: "Wrapping up a conversation and will meet in a few hours", text: "À tout à l'heure !", en: "See you later today!", zh: "今天稍後見！" },
+            { speaker: "Female", when: "Meeting again later today", text: "On se voit plus tard !", en: "We’ll see each other later today!", zh: "我們今天晚點見！" },
+            { speaker: "Female", when: "You will contact again soon?", text: "On se parle bientôt !", en: "We’ll talk soon!", zh: "我們很快再聊！" },
+            { speaker: "Female", when: "Saying goodbye for a while, but no specific date", text: "À la prochaine !", en: "See you next time!", zh: "下次見！" },
+            { speaker: "Female", when: "Saying goodbye in the evening?", text: "Passe une bonne soirée !", en: "Have a nice evening!", zh: "祝你今晚愉快！" },
+            { speaker: "Female", when: "Saying goodbye in the morning or early afternoon?", text: "Passe une bonne journée !", en: "Have a good day!", zh: "祝你今天愉快！" },
+            { speaker: "Female", when: "When you really want to say goodbye for a long time or to someone sick", text: "Prenez soin de vous !", en: "Take care!", zh: "請保重！" }
           ],
           tips: [
-            { en: "**Ci vediamo** is used when you expect to meet in person", zh: "**Ci vediamo** 用在預計會當面見面的情況" },
-            { en: "**Ci sentiamo** is more for calls, messages, or emails", zh: "**Ci sentiamo** 比較常用在電話、訊息或電子郵件" }
+            { en: "**On se voit** is for when you expect to meet in person.", zh: "**On se voit** 用於預計會當面見面的情況。" },
+            { en: "**On se parle** is more for calls, messages, or emails.", zh: "**On se parle** 比較常用在電話、訊息或電子郵件。" },
+            { en: "The French often use verb conjugations for formal vs. informal. For example, use **Passe une bonne journée** (informal) vs **Passez une bonne journée** (formal).", zh: "法語常透過動詞變位來區分正式與非正式。例如，使用 **Passe une bonne journée** (非正式) 對比 **Passez une bonne journée** (正式)。" },
+            { en: "**À tout de suite** is for 'right away' or 'in just a moment.'", zh: "**À tout de suite** 用在「馬上」或「很快」就會再見面的情況。" }
           ]
         }
       ]
     },
     {
       lessonId: 2,
-      title: "Lesson 2 – Come stai? Missione al mercato",
-      theme: "How are you? Feelings and responses",
+      title: "Leçon 2 – Comment ça va ? Mission au marché",
+      theme: "Comment vas-tu ? Sentiments et réponses",
       theme_zh: "你好嗎？感受與回應",
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Ask 'How are you?'",
-          title_zh: "第一級（A0）: 詢問「你最近好嗎？」",
+          title: "Level 1 (A0+): Asking 'How are you?'",
+          title_zh: "第一級（A1）: 詢問「你最近好嗎？」",
           keyPhrases: [
-            // Changed "it" key to "text" for consistency with other data
-            { text: "Come stai?", en: "How are you?", zh: "你好嗎？" },
-            { text: "Come sta?", en: "How are you? (formal)", zh: "您好嗎？" },
-            { text: "Come va?", en: "How’s it going?", zh: "最近如何？" },
-            { text: "Bene", en: "I’m good / Fine", zh: "我很好" },
-            { text: "Così così", en: "So-so", zh: "普普通通" }
+            { text: "Comment ça va ?", en: "How are you? / How's it going?", zh: "你好嗎？／最近如何？" },
+            { text: "Comment vas-tu ?", en: "How are you? (informal)", zh: "你好嗎？（非正式）" },
+            { text: "Comment allez-vous ?", en: "How are you? (formal)", zh: "您好嗎？（正式）" },
+            { text: "Ça va bien.", en: "I'm good / Fine", zh: "我很好" },
+            { text: "Ça va, merci.", en: "I'm fine, thanks.", zh: "我很好，謝謝" },
+            { text: "Comme ci, comme ça.", en: "So-so", zh: "普普通通" }
           ],
           dialogues: [
-            // The 'en' and 'zh' fields here might need to be filled with direct translations instead of descriptions
-            { speaker: "1", when: "Greeting a friend casually", text: "Come stai?", en: "Informal, friendly.", zh: "非正式，朋友間使用" },
-            { speaker: "1", when: "Talking to a teacher or someone older", text: "Come sta?", en: "Formal version.", zh: "正式版本，用於老師或年長者" },
-            { speaker: "1", when: "Meeting someone at a café", text: "Come va?", en: "Neutral and common.", zh: "中性且常用" },
-            { speaker: "1", when: "Feeling good", text: "Bene!", en: "Good.", zh: "很好" },
-            { speaker: "1", when: "Feeling okay", text: "Così così", en: "Just so-so.", zh: "馬馬虎虎／普普通通" },
-            { speaker: "1", when: "Not feeling great", text: "Non molto bene", en: "Not so good.", zh: "不太好" }
+            { speaker: "Female", when: "Greeting a friend casually", text: "Salut ! Comment ça va ?", en: "Hi! How's it going?", zh: "嗨！最近如何？" },
+            { speaker: "Male", when: "Replying to a friend", text: "Ça va bien, merci ! Et toi ?", en: "I'm good, thanks! And you?", zh: "我很好，謝謝！你呢？" },
+            { speaker: "Female", when: "Talking to a teacher or someone older", text: "Bonjour ! Comment allez-vous ?", en: "Hello! How are you? (formal)", zh: "您好！您好嗎？" },
+            { speaker: "Male", when: "Meeting a friend at a café", text: "Comment vas-tu ?", en: "How are you?", zh: "你好嗎？" },
+            { speaker: "Female", when: "Feeling good", text: "Ça va super bien !", en: "I'm doing great!", zh: "我非常好！" },
+            { speaker: "Male", when: "Feeling okay", text: "Comme ci, comme ça.", en: "Just so-so.", zh: "普普通通" },
+            { speaker: "Female", when: "Not feeling great", text: "Ça ne va pas très bien.", en: "I'm not doing very well.", zh: "我不太好" }
           ],
           tips: [
-            { en: "Try asking someone: **Come stai?** – 'How are you?'", zh: "試著問別人: **Come stai?** – 你最近好嗎？" },
-            { en: "When replying, say: **Sto bene.** – 'I’m fine.'", zh: "回覆時可以說: **Sto bene.** – 我很好。" },
-            { en: "**Sto** comes from **stare** (to be / to stay), and **bene** means 'well'.", zh: "**Sto** 來自 **stare**（表示『是／停留』），而 **bene** 的意思是『好』。" },
-            { en: "You can also reply simply with **Bene** or **Così così**", zh: "你也可以簡單回: **Bene**（很好）或 **Così così**（馬馬虎虎）。" }
+            { en: "**Comment ça va ?** is the most common and versatile way to ask 'How are you?'. You can reply with just **Ça va**!", zh: "**Comment ça va ?** 是最常見且萬用的問法。你可以直接用 **Ça va** 來回答！" },
+            { en: "**Comment vas-tu ?** is the informal version, and **Comment allez-vous ?** is the formal version.", zh: "**Comment vas-tu ?** 是非正式用法，而 **Comment allez-vous ?** 是正式用法。" },
+            { en: "**Merci** means 'thank you'. It's polite to add it after your reply.", zh: "**Merci** 是「謝謝」的意思。回答後加上它會比較有禮貌。" },
+            { en: "You can also reply simply with **Bien** or **Super bien** for 'great', or **Pas mal** for 'not bad'.", zh: "你也可以簡單回答 **Bien** 或 **Super bien**（非常好），或 **Pas mal**（還不錯）。" },
+            { en: "**Comme ci, comme ça** literally means 'like this, like that,' and is used for 'so-so'.", zh: "**Comme ci, comme ça** 字面意思為「這樣、那樣」，用於表示「普普通通」。" }
           ]
         },
         {
           levelId: 2,
-          title: "Level 2 (A0): Answer 'How are you?'",
-          title_zh: "第二級（A0）: 回答「你最近好嗎？」",
+          title: "Level 2 (A0+) : Responding 'How are you?'",
+          title_zh: "第二級（A0+）: 回答「你最近好嗎？」",
           keyPhrases: [
-            // Changed "it" key to "text" for consistency
-            { text: "Sto benissimo!", en: "I’m great!", zh: "我非常好" },
-            { text: "Così così.", en: "So-so", zh: "馬馬虎虎" },
-            { text: "Non molto bene.", en: "Not very well", zh: "不太好" },
-            { text: "Sono stanco / stanca.", en: "I’m tired", zh: "我累了" },
-            { text: "E tu?", en: "And you?", zh: "你呢？" }
+            { text: "Je vais très bien !", en: "I'm very well!", zh: "我非常好！" },
+            { text: "Ça va pas mal.", en: "I'm not bad.", zh: "我還不錯" },
+            { text: "Je suis fatigué(e).", en: "I'm tired.", zh: "我累了" },
+            { text: "Et toi ?", en: "And you? (informal)", zh: "你呢？" },
+            { text: "Et vous ?", en: "And you? (formal)", zh: "您呢？" }
           ],
           dialogues: [],
           tips: [
-            // The first tip here seems to be a question, not a statement.
-            { en: "Use **Sto benissimo** when you're feeling great.", zh: "當你感覺非常好時，可以用 **Sto benissimo**。" },
-            { en: "Use **benissimo** after something great — like good news or a perfect day.", zh: "在發生很棒的事情後，例如好消息或完美的一天，可以用 **benissimo**。" },
-            { en: "Use **Così così** if you feel just okay.", zh: "如果只是覺得普普通通，可以用 **Così così**。" },
-            { en: "**Sono stanco** – I’m tired (male speaker)", zh: "**Sono stanco** – 我很累（男性說法）" },
-            { en: "**Sono stanca** – I’m tired (female speaker)", zh: "**Sono stanca** – 我很累（女性說法）" }
+            { en: "To express you are feeling great, you can say **Je vais très bien !** (I'm very well!).", zh: "要表達你感覺非常好，你可以說 **Je vais très bien !**（我非常好！）" },
+            { en: "**Fatigué** is for male speakers, and **fatiguée** is for female speakers. Remember to add the 'e'!", zh: "男性用 **fatigué**，女性用 **fatiguée**。別忘了加上 'e'！" },
+            { en: "**Pas mal** is a common and casual way to say you are doing okay.", zh: "**Pas mal** 是一個常用且隨性的說法，表示你還不錯。" },
+            { en: "**Et toi ?** is for friends and people your age, while **Et vous ?** is for strangers, teachers, or elders.", zh: "**Et toi ?** 用於朋友或同輩之間，而 **Et vous ?** 則用於陌生人、老師或長輩。" },
+            { en: "The verb **aller** (to go) is used to talk about how you are doing, e.g., **Je vais bien** = I'm going well.", zh: "動詞 **aller**（去）用於談論你的近況，例如：**Je vais bien** = 我很好。" }
           ]
         }
       ]
     },
     {
       lessonId: 3,
-      title: "Lesson 3 – Essere gentili! Missione alla stazione",
+      title: "Lesson 3 – Être poli ! Mission à la gare",
       theme: "Being polite and asking for help",
       theme_zh: "禮貌用語&請求幫忙",
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Basic polite words",
+          title: "Level 1 (A0): Basic polite words",
           title_zh: "第一級（A0）: 基礎禮貌用語",
           keyPhrases: [
-            { text: "Grazie", en: "Thank you", zh: "謝謝" },
-            { text: "Prego", en: "You’re welcome / Please go ahead", zh: "不客氣 / 請先請" },
-            { text: "Per favore", en: "Please", zh: "請" },
-            { text: "Scusa", en: "Excuse me / Sorry (informal)", zh: "不好意思 / 對不起（非正式）" },
-            { text: "Scusi", en: "Excuse me / Sorry (formal)", zh: "不好意思 / 對不起（正式）" },
-            { text: "Mi scusi", en: "Excuse me (very polite)", zh: "不好意思（非常禮貌）" },
-            { text: "Di niente", en: "No problem / Don’t mention it", zh: "沒關係 / 別客氣" },
-            { text: "Signore / Signora / Signori", en: "Sir / Ma’am / Ladies and gentlemen", zh: "先生 / 女士 / 各位先生女士" }
+            { text: "Merci", en: "Thank you", zh: "謝謝" },
+            { text: "De rien", en: "You’re welcome / No problem", zh: "不客氣 / 沒關係" },
+            { text: "S'il vous plaît", en: "Please (formal)", zh: "請（正式）" },
+            { text: "S'il te plaît", en: "Please (informal)", zh: "請（非正式）" },
+            { text: "Pardon", en: "Excuse me / Sorry", zh: "不好意思 / 對不起" },
+            { text: "Excusez-moi", en: "Excuse me (formal)", zh: "不好意思（正式）" },
+            { text: "Excuse-moi", en: "Excuse me (informal)", zh: "不好意思（非正式）" },
+            { text: "Monsieur / Madame", en: "Sir / Ma’am", zh: "先生 / 女士" }
           ],
           dialogues: [],
-          tips: []
+          tips: [
+            { en: "Use **S'il vous plaît** in formal settings or with strangers, and **S'il te plaît** only with friends or people you know well.", zh: "對陌生人或在正式場合使用 **S'il vous plaît**，而 **S'il te plaît** 僅用於朋友或熟人之間。" },
+            { en: "**Pardon** is a versatile and common option, good for getting attention or apologizing for a small mistake.", zh: "**Pardon** 是一個萬用且常見的選項，適合用來引起注意或為小錯誤道歉。" },
+            { en: "**De rien** literally means 'of nothing' and is a casual way to say 'you're welcome'. **Je vous en prie** is a more formal option.", zh: "**De rien** 的字面意思是「沒什麼」，是一種隨意的「不客氣」。**Je vous en prie** 則更為正式。" },
+            { en: "The French often use these phrases frequently, so don't be shy about saying 'Merci' and 'S'il vous plaît' often!", zh: "法國人常使用這些詞彙，所以大方地多說 **Merci** 和 **S'il vous plaît** 吧！" }
+          ]
         },
         {
           levelId: 2,
-          title: "Level 2 (A1): Requests & understanding",
-          title_zh: "第二級（A1）: 請求與表達理解",
+          title: "Level 2 (A1): Asking for information and making requests",
+          title_zh: "第二級（A1）: 詢問資訊與提出請求",
           keyPhrases: [
-            { text: "Capisco / Non capisco", en: "I understand / I don’t understand", zh: "我懂 / 我不懂" },
-            { text: "Posso...?", en: "Can I...?", zh: "我可以……嗎？" },
-            { text: "Può...?", en: "Can you...? (formal)", zh: "您可以……嗎？（正式）" },
-            { text: "Può ripetere, per favore?", en: "Can you repeat, please?", zh: "請您再說一遍，好嗎？" },
-            { text: "Posso entrare?", en: "Can I come in?", zh: "我可以進來嗎？" },
-            { text: "Posso usare il bagno?", en: "Can I use the bathroom?", zh: "我可以用洗手間嗎？" },
-            { text: "Non capisco bene l’italiano.", en: "I don’t understand Italian well", zh: "我不太懂義大利語" },
-            { text: "Può parlare più lentamente?", en: "Can you speak more slowly?", zh: "您可以說慢一點嗎？" }
+            { text: "Puis-je...?", en: "Can I...?", zh: "我可以……嗎？" },
+            { text: "Pouvez-vous...?", en: "Can you...? (formal)", zh: "您可以……嗎？（正式）" },
+            { text: "Je voudrais...", en: "I would like...", zh: "我想要……" },
+            { text: "Il y a...?", en: "Is there...? / Are there...?", zh: "有……嗎？" },
+            { text: "Puis-je vous aider ?", en: "Can I help you? (formal)", zh: "我可以幫您嗎？（正式）" },
+            { text: "Excusez-moi", en: "Excuse me (to pass by / interrupt)", zh: "不好意思（用於通過或打斷時）" },
+            { text: "Puis-je utiliser les toilettes ?", en: "Can I use the bathroom?", zh: "我可以用洗手間嗎？" }
           ],
           dialogues: [
-            { speaker: "1", text: "Scusi, posso fare una domanda?", en: "Excuse me, can I ask a question?", zh: "不好意思，我可以問一個問題嗎？" },
-            { speaker: "2", text: "Certo! Dimmi pure.", en: "Of course! Go ahead and ask.", zh: "當然！儘管問吧。" },
-            { speaker: "1", text: "Non capisco... Può ripetere, per favore?", en: "I don’t understand… Can you repeat, please?", zh: "我不明白……可以請您再說一遍嗎？" },
-            { speaker: "2", text: "Sì! Ripeto lentamente.", en: "Yes! I’ll repeat slowly.", zh: "好的！我會慢慢重複。" },
-            { speaker: "1", text: "Ah! Capisco, grazie mille!", en: "Ah! I understand, thank you very much!", zh: "啊！我懂了，非常感謝！" },
-            { speaker: "2", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
+            { speaker: "Male", text: "Excusez-moi ! Monsieur, puis-je vous demander un renseignement ?", en: "Excuse me! Sir, may I ask you for some information?", zh: "不好意思，先生，我可以向您詢問資訊嗎？" },
+            { speaker: "Female", text: "Bien sûr, je peux vous aider ?", en: "Certainly, can I help you?", zh: "當然，我可以幫您嗎？" },
+            { speaker: "Male", text: "Je voudrais acheter un souvenir. Y a-t-il un magasin par ici ?", en: "I'd like to buy a souvenir. Is there a shop nearby?", zh: "我想要買個紀念品。這附近有商店嗎？" },
+            { speaker: "Female", text: "Oui, il y a un magasin là-bas, à droite.", en: "Yes, there’s a shop over there, to the right.", zh: "有的，那邊有一家商店，在右邊。" },
+            { speaker: "Male", text: "Merci beaucoup ! Et puis-je utiliser les toilettes, s'il vous plaît ?", en: "Thank you very much! And can I use the bathroom, please?", zh: "非常感謝！還有，我可以用洗手間嗎？" },
+            { speaker: "Female", text: "Oui, les toilettes sont là, au fond.", en: "Yes, the bathroom is over there at the end.", zh: "好的，洗手間在裡面盡頭處。" },
+            { speaker: "Male", text: "Merci !", en: "Thank you!", "zh": "謝謝！" },
+            { speaker: "Female", text: "De rien !", en: "You're welcome!", zh: "不客氣！" }
           ],
-          tips: []
+          tips: [
+            { en: "Use **Je voudrais...** (I would like...) to make a request politely, as it's much less direct than **Je veux...** (I want...).", zh: "使用 **Je voudrais...** (我想要...) 來禮貌地提出請求，它比 **Je veux...** (我想要...) 更加委婉。" },
+            { en: "**Puis-je...?** is for asking permission for yourself, while **Pouvez-vous...?** is for asking someone else to do something (formally).", zh: "**Puis-je...?** 用於為自己尋求許可，而 **Pouvez-vous...?** 則用於（正式地）請他人做某事。" },
+            { en: "Always add **s'il vous plaît** (please) to the end of a request to sound more polite.", zh: "在請求後加上 **s'il vous plaît** (請)，會聽起來更禮貌。" }
+          ]
         },
         {
           levelId: 3,
-          title: "Level 3 (A1): Real-life polite requests",
-          title_zh: "第三級（A1）: 真實情境中的禮貌請求",
+          title: "Level 3 (A1): Understanding, clarifying and responding",
+          title_zh: "第三級（A1）: 理解、澄清與回應",
           keyPhrases: [
-            { text: "Vorrei...", en: "I would like...", zh: "我想要……" },
-            { text: "C'è...? / Ci sono...?", en: "Is there...? / Are there...?", zh: "有……嗎？ / 有……嗎？（複數）" },
-            { text: "Le / Ti posso aiutare?", en: "Can I help you? (formal / informal)", zh: "我可以幫您嗎？（正式）/ 我可以幫你嗎？（非正式）" },
-            { text: "Certamente / Certo", en: "Certainly / Of course", zh: "當然" },
-            { text: "Volentieri", en: "Gladly / With pleasure", zh: "樂意之至 / 很願意" },
-            { text: "Mi dispiace", en: "I’m sorry", zh: "我很抱歉" },
-            { text: "Con permesso", en: "Excuse me (to pass by / interrupt)", zh: "不好意思（用於通過或打斷時）" }
+            { text: "Je comprends / Je ne comprends pas", en: "I understand / I don’t understand", zh: "我懂 / 我不懂" },
+            { text: "Pouvez-vous répéter, s'il vous plaît ?", en: "Can you repeat, please?", zh: "請您再說一遍，好嗎？" },
+            { text: "Pouvez-vous parler plus lentement ?", en: "Can you speak more slowly?", zh: "您可以說慢一點嗎？" },
+            { text: "Je suis désolé(e)", en: "I’m sorry", zh: "我很抱歉" },
+            { text: "Bien sûr / Bien entendu", en: "Certainly / Of course", zh: "當然" },
+            { text: "Avec plaisir", en: "Gladly / With pleasure", zh: "樂意之至 / 很願意" }
           ],
-
           dialogues: [
-            { speaker: "1", text: "Mi scusi, Signora, posso chiederle un’informazione?", en: "Excuse me, Madam, may I ask you for some information?", zh: "不好意思，女士，我可以問您一個問題嗎？" },
-            { speaker: "2", text: "Certamente, prego!", en: "Certainly, please go ahead!", zh: "當然，請說！" },
-            { speaker: "1", text: "Vorrei comprare un souvenir. C’è un negozio di souvenir qui vicino?", en: "I’d like to buy a souvenir. Is there a souvenir shop nearby?", zh: "我想買一個紀念品。這附近有紀念品商店嗎？" },
-            { speaker: "2", text: "Sì, c’è un negozio lì, a destra.", en: "Yes, there’s a shop there, to the right.", zh: "有的，那邊有一家商店，在右邊。" },
-            { speaker: "1", text: "Grazie mille!", en: "Thank you very much!", zh: "非常感謝！" },
-            { speaker: "2", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
+            { speaker: "Female", text: "Excusez-moi, je peux poser une question ? Il y a un train pour Paris ?", en: "Excuse me, can I ask a question? Is there a train to Paris?", zh: "不好意思，我可以問一個問題嗎？有去巴黎的火車嗎？" },
+            { speaker: "Male", text: "Bien sûr ! Avec plaisir ! Le train de 14h30 part de la voie neuf. C'est le TGV.", en: "Of course! Gladly! The 2:30 PM train leaves from platform nine. It's the TGV.", zh: "當然！樂意之至！下午兩點半的火車從第九月台出發。是高速列車。" },
+            { speaker: "Female", text: "Je suis désolé, je ne comprends pas bien le français... Pouvez-vous parler plus lentement, s'il vous plaît ?", en: "I'm sorry, I don't understand French well... Can you speak more slowly, please?", zh: "我很抱歉，我不太懂法語……可以請您說慢一點嗎？" },
+            { speaker: "Male", text: "Ah, bien sûr ! Le train part à quatorze heures trente. De la voie numéro neuf.", en: "Oh, of course! The train leaves at fourteen thirty. From platform number nine.", zh: "啊，好的！火車會在十四點三十分發車。從第九月台。" },
+            { speaker: "Female", text: "Pouvez-vous répéter le numéro de la voie ?", en: "Can you repeat the platform number?", zh: "您可以再重複一次月台號碼嗎？" },
+            { speaker: "Male", text: "Oui, voie neuf. Et le train est le TGV.", en: "Yes, platform nine. And the train is the TGV.", zh: "好的，第九月台。火車是高速列車。" },
+            { speaker: "Female", text: "Ah ! Je comprends, merci beaucoup !", en: "Ah! I understand, thank you very much!", zh: "啊！我懂了，非常感謝！" }
           ],
-          tips: []
+          tips: [
+            { en: "It's completely normal to not understand, especially with fast speech. Using phrases like **Pouvez-vous répéter ?** shows you are engaged and trying to learn.", zh: "不理解是很正常的，特別是當對方說話很快時。使用 **Pouvez-vous répéter ?** 這樣的句子表明你正在專心並努力學習。" },
+            { en: "There's a subtle difference: **Je suis désolé(e)** is for apologizing, while **Excusez-moi** is for excusing yourself or getting someone's attention.", zh: "**Je suis désolé(e)** 用於道歉，而 **Excusez-moi** 則用於致歉或引起他人注意。" },
+            { en: "You can combine phrases, such as **Je ne comprends pas, je suis désolé.** (I don't understand, I'm sorry).", zh: "你可以將句子組合起來使用，例如 **Je ne comprends pas, je suis désolé.** (我不懂，很抱歉)。" }
+          ]
         }
       ]
     },
     {
       lessonId: 4,
-      title: "Lesson 4 – Come ti chiami?",
+      title: "Lesson 4 - What is your name?",
       title_zh: "第 4 課 – 你叫什麼名字？",
-      theme: "Greet someone at the market naturally and simply",
-      theme_zh: "在市場上自然且簡單地向某人問好",
+      theme: "Greet someone naturally and simply",
+      theme_zh: "自然且簡單地向某人問好",
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Basic name introduction",
+          title: "Level 1 (A0): Basic name introduction",
           title_zh: "第一級（A0）: 基本名字介紹",
           keyPhrases: [
-            { text: "Come ti chiami?", en: "What’s your name?", zh: "你叫什麼名字？" },
-            { text: "Mi chiamo Marco.", en: "My name is Marco.", zh: "我叫 Marco。" },
-            { text: "E tu?", en: "And you?", zh: "你呢？" }
+            { text: "Comment tu t'appelles ?", en: "What’s your name? (informal)", zh: "你叫什麼名字？（非正式）" },
+            { text: "Je m'appelle...", en: "My name is...", zh: "我叫……" },
+            { text: "Et toi ?", en: "And you? (informal)", zh: "你呢？" },
+            { text: "Moi, c'est...", en: "I'm... (informal)", zh: "我呀，是……" }
           ],
           dialogues: [
-            { speaker: "1", text: "Ciao! Come ti chiami?", en: "Hi! What’s your name?", zh: "嗨！你叫什麼名字？" },
-            { speaker: "2", text: "Mi chiamo Marco. E tu?", en: "My name is Marco. And you?", zh: "我叫 Marco。你呢？" },
-            { speaker: "1", text: "Mi chiamo Laura.", en: "My name is Laura.", zh: "我叫 Laura。" }
+            { speaker: "Female", text: "Salut ! Comment tu t'appelles ?", en: "Hi! What’s your name?", zh: "嗨！你叫什麼名字？" },
+            { speaker: "Male", text: "Je m'appelle Marc. Et toi ?", en: "My name is Marc. And you?", zh: "我叫馬克。你呢？" },
+            { speaker: "Female", text: "Moi, c'est Laura.", en: "My name is Laura.", zh: "我呀，是蘿拉。" }
           ],
           tips: [
-            { en: "**Come ti chiami?** — **Come** = how • **ti** = yourself (to you) • **chiami** = you call → used to ask 'What’s your name?'", zh: "**Come** = 怎麼／如何 • **ti** = 你自己 • **chiami** = 你叫 → 用來問「你叫什麼名字？」" },
-            { en: "**Mi chiamo ...** — **mi** = myself • **chiamo** = I call → used to say 'My name is...'", zh: "**mi** = 我自己 • **chiamo** = 我叫（叫做） → 用來回答「我叫……」" }
+            { en: "**Comment tu t'appelles ?** literally means 'How do you call yourself?'. It's the most common informal way to ask for a name.", zh: "**Comment tu t'appelles ?** 的字面意思是「你如何稱呼自己？」。這是最常見的非正式問法。" },
+            { en: "**Je m'appelle...** means 'I call myself...' and is the standard reply.", zh: "**Je m'appelle...** 的意思是「我稱呼自己是……」，是標準的回答方式。" },
+            { en: "In French, you can also use **Moi, c'est...** as a very common and informal way to introduce yourself.", zh: "在法語中，你也可以用 **Moi, c'est...** 來做非常口語且非正式的自我介紹。" }
           ]
         },
         {
@@ -266,217 +276,204 @@ const moduleData = {
           title: "Level 2 (A0): Formal version and polite expressions",
           title_zh: "第二級（A0）: 正式版本與禮貌用語",
           keyPhrases: [
-            { text: "Come si chiama?", en: "What’s your name? (formal)", zh: "您貴姓？" },
-            { text: "Mi chiamo Giovanni Rossi.", en: "My name is Giovanni Rossi.", zh: "我叫 Giovanni Rossi。" },
-            { text: "Piacere!", en: "Nice to meet you.", zh: "很高興認識您。" },
-            { text: "Il piacere è mio (piacere mio)", en: "The pleasure is mine.", zh: "我也很高興認識您。" }
+            { text: "Comment vous vous appelez ?", en: "What is your name? (formal)", zh: "您貴姓？" },
+            { text: "Je m'appelle Jean Dupont.", en: "My name is Jean Dupont.", zh: "我叫尚．杜邦。" },
+            { text: "Enchanté(e) !", en: "Nice to meet you! (masc./fem.)", zh: "很高興認識您！" },
+            { text: "Et vous ?", en: "And you? (formal)", zh: "您呢？" },
+            { text: "Moi de même.", en: "Me too. / Likewise.", zh: "我也是。" }
           ],
           dialogues: [
-            { speaker: "1", text: "Buongiorno! Come si chiama?", en: "Good morning! What’s your name?", zh: "早安！您貴姓？" },
-            { speaker: "2", text: "Mi chiamo Maria Verdi. E Lei?", en: "My name is Maria Verdi. And you?", zh: "我叫 Maria Verdi。您呢？" },
-            { speaker: "1", text: "Mi chiamo Giovanni Rossi. Piacere!", en: "My name is Giovanni Rossi. Nice to meet you!", zh: "我叫 Giovanni Rossi。很高興認識您！" },
-            { speaker: "2", text: "Il piacere è mio!", en: "The pleasure is mine!", zh: "我也很高興認識您！" }
+            { speaker: "Male", text: "Bonjour ! Comment vous vous appelez ?", en: "Good morning! What’s your name?", zh: "早安！您貴姓？" },
+            { speaker: "Female", text: "Je m'appelle Marie Duval. Et vous ?", en: "My name is Marie Duval. And you?", zh: "我叫瑪麗．杜瓦。您呢？" },
+            { speaker: "Male", text: "Je m'appelle Jean Dupont. Enchanté !", en: "My name is Jean Dupont. Nice to meet you!", zh: "我叫尚．杜邦。很高興認識您！" },
+            { speaker: "Female", text: "Enchantée !", en: "Nice to meet you too! (female speaker)", zh: "我也很高興！" }
           ],
           tips: [
-            { en: "Use **Come si chiama?** for formal situations", zh: "在正式場合使用 **Come si chiama?**" },
-            { en: "**E Lei?** is the formal version of **E tu?**", zh: "**E Lei?** 是**E tu?** 的正式版本" },
-            { en: "**Piacere** = pleasure, the standard way to say nice to meet you", zh: "**Piacere**= 榮幸、高興，是說「很高興認識你」的標準方式" },
-            { en: "**Il piacere** = the pleasure → **Il** is the masculine article. The phrase means “The pleasure is mine.”", zh: "**Il piacere**= 榮幸 → **Il** 是陽性冠詞。這句話的意思是「我也很高興」" },
-            { en: "You can simply say **Piacere mio**", zh: "你也可以簡單地說**Piacere mio**" }
+            { en: "Use **Comment vous vous appelez ?** for formal situations, like with a stranger, a boss, or an older person.", zh: "在正式場合（例如與陌生人、老闆或長輩），使用 **Comment vous vous appelez ?**。" },
+            { en: "The verb `appeler` (to call) is a reflexive verb, so it requires **vous vous** in the formal 'you' form.", zh: "動詞 `appeler`（呼叫）是反身動詞，所以在正式的「您」形式中需要使用 **vous vous**。" },
+            { en: "**Enchanté** is for male speakers, and **Enchantée** (with an extra 'e') is for female speakers.", zh: "男性說 **Enchanté**，而女性則要多加一個 'e' 變成 **Enchantée**。" },
+            { en: "You can simply reply with **Moi de même** (me too) to reciprocate the sentiment.", zh: "你也可以簡單地用 **Moi de même** (我也是) 來回應同樣的心情。" }
           ]
         },
         {
           levelId: 3,
-          title: "Level 3 (A0): Say “Nice to meet you” in different ways",
+          title: "Level 3 (A0): Say 'Nice to meet you' in different ways",
           title_zh: "第三級（A0）: 用不同方式說「很高興認識你」",
           keyPhrases: [
-            { text: "Piacere di conoscerti", en: "Nice to meet you (informal)", zh: "認識你很高興" },
-            { text: "Piacere di conoscerla", en: "Nice to meet you (formal)", zh: "認識您很高興(更正式)" },
-            { text: "Molto lieto / Molto lieta", en: "Very pleased to meet you", zh: "非常榮幸" },
-            { text: "Piacere mio", en: "The pleasure is mine", zh: "我也很高興" }
+            { text: "Ravi(e) de te connaître", en: "Happy to know you (informal)", zh: "很高興認識你（非正式）" },
+            { text: "Ravi(e) de vous connaître", en: "Happy to know you (formal)", zh: "很高興認識您（正式）" },
+            { text: "Très heureux / Très heureuse", en: "Very pleased (masc. / fem.)", zh: "非常榮幸" },
+            { text: "Le plaisir est pour moi", en: "The pleasure is mine", zh: "這是我的榮幸" }
           ],
           dialogues: [
-            { speaker: "1", text: "Ciao! Io sono Giulia.", en: "Hi! I'm Giulia.", zh: "你好，我是 Giulia。" },
-            { speaker: "3", text: "Piacere di conoscerti!", en: "Nice to meet you (informal).", zh: "很高興認識你。" },
-            { speaker: "1", text: "Piacere mio!", en: "My pleasure!", zh: "我也很高興。" },
-            { speaker: "1", when: "You meet someone formally", text: "Piacere di conoscerla.", en: "Nice to meet you (formal and polite).", zh: "很高興認識您。" },
-            { speaker: "2", when: "You want to sound very polite (said by a man)", text: "Molto lieto!", en: "Very pleased (formal).", zh: "非常榮幸。" },
-            { speaker: "1", when: "You want to sound very polite (said by a woman)", text: "Molto lieta!", en: "Very pleased (formal).", zh: "非常榮幸。" },
-            { speaker: "1", when: "You meet a classmate or neighbor", text: "Piacere di conoscerti!", en: "Nice to meet you (informal and friendly).", zh: "認識你很高興。" },
-            { speaker: "2", when: "Someone says “Piacere!” to you", text: "Piacere mio!", en: "The pleasure is mine.", zh: "我也很高興。" }
+            { speaker: "Female", text: "Salut ! Moi, c'est Julie.", en: "Hi! I'm Julie.", zh: "嗨！我是茱莉。" },
+            { speaker: "Female", text: "Ravi de te connaître !", en: "Happy to know you! (informal)", zh: "很高興認識你！" },
+            { speaker: "Male", text: "Moi de même !", en: "Me too!", zh: "我也是！" },
+            { speaker: "Female", text: "Ravi de vous connaître.", en: "Happy to know you (formal and polite).", zh: "很高興認識您。" },
+            { speaker: "Male", text: "Très heureux !", en: "Very pleased! (male speaker)", zh: "非常榮幸！" },
+            { speaker: "Female", text: "Très heureuse !", en: "Very pleased! (female speaker)", zh: "非常榮幸！" },
+            { speaker: "Male", text: "Le plaisir est pour moi !", en: "The pleasure is mine!", zh: "這是我的榮幸！" }
           ],
           tips: [
-            { en: "**Piacere di conoscerti** vs **Piacere di conoscerla** : **conoscerti** = to meet you (informal 'you') | **conoscerla** = to meet you (formal 'you') | Use **conoscerti ** with friends;", zh: "**conoscerti** = 認識你（非正式）(你) • **conoscerla** = 認識您（正式）(您） • 和朋友一起用 **conoscerti**；" },
-            { en: "What does **Piacere di conoscerti** mean? **Piacere** = pleasure • **di** = to • **conoscerti** = know you → The full phrase means: “Nice to meet you”", zh: "**Piacere** = 高興 • **di** = 相當於英文的 'to' • **conoscerti** = 認識你 → 全句意思是: 「很高興認識你」" },
-            { en: "**Molto lieto!** = Very pleased! . Female version: **Molto lieta!** ", zh: "男生:  **Molto lieto!**。 女生說法是: Molto lieta！" }
+            { en: "In French, **Ravi(e) de te connaître** is a friendly and casual way to say 'Nice to meet you', while **Ravi(e) de vous connaître** is the formal version.", zh: "在法語中，**Ravi(e) de te connaître** 是隨和且友好的「很高興認識你」，而 **Ravi(e) de vous connaître** 則是正式版本。" },
+            { en: "**Ravi** (masculine) and **ravie** (feminine) are adjectives that must agree with the speaker's gender.", zh: "**Ravi**（陽性）和 **ravie**（陰性）是形容詞，必須與說話者的性別一致。" },
+            { en: "The phrase **Très heureux/heureuse** is a strong and formal way to express pleasure at meeting someone.", zh: "**Très heureux/heureuse** 是一個非常強烈且正式的方式，來表達認識某人感到非常榮幸。" }
           ]
         }
       ]
     },
     {
       lessonId: 5,
-      title: "Lesson 5 – Di dove sei?",
+      title: "Lesson 5 - Where are you from?",
       title_zh: "第 5 課 – 你來自哪裡？",
       theme: "Ask where someone is from and where they live",
       theme_zh: "詢問某人來自哪裡以及他們住在哪裡",
       levels: [
         {
           levelId: 1,
-          title: "第一級（A0）: Ask where someone is from",
-          title_zh: "第一級（A0）: 詢問某人來自哪裡",
+          title: "Level 1 (A0): Asking about origin (informal)",
+          title_zh: "第一級（A0）: 詢問來自哪裡（非正式）",
           keyPhrases: [
-            {text: "Di dove sei?", en: "Where are you from?", zh: "你來自哪裡？"},
-            {text: "Sono di Roma.", en: "I’m from Rome.", zh: "我來自羅馬"},
-            {text: "E tu?", en: "And you?", zh: "你呢？"},
-            {text: "Io abito a <city>", en: "I live in...", zh: "我住在...<城市>"}
+            {text: "D'où viens-tu ?", en: "Where are you from? (informal)", zh: "你來自哪裡？（非正式）"},
+            {text: "Je viens de Paris.", en: "I'm from Paris.", zh: "我來自巴黎"},
+            {text: "Tu es d'où ?", en: "Where are you from? (informal)", zh: "你來自哪裡？（非正式）"},
+            {text: "Je suis de Rome.", en: "I'm from Rome.", zh: "我來自羅馬"},
+            {text: "Et toi ?", en: "And you?", zh: "你呢？"}
           ],
           dialogues: [
-            {speaker: "1", text: "Ciao! Di dove sei?", en: "Hi! Where are you from?", zh: "你來自哪裡？"},
-            {speaker: "3", text: "Sono di Milano. E tu?", en: "I’m from Milan. And you?", zh: "我來自米蘭，你呢？"},
-            {speaker: "1", text: "Sono di Roma!", en: "I’m from Rome!", zh: "我來自羅馬！"},
-            {speaker: "3", text: "Io abito a Firenze ora.", en: "I live in Florence now.", zh: "我現在住在佛羅倫斯"}
-          ],
+            { speaker: "Female", text: "Salut ! Tu es d'où ?", "en": "Hi! Where are you from?", zh: "嗨！你來自哪裡？" },
+            { speaker: "Male", text: "Je suis de Milan. C'est une ville magnifique ! Et toi ?", en: "I'm from Milan. It's a beautiful city! And you?", zh: "我來自米蘭。那是一個很美的城市！你呢？" },
+            { speaker: "Female", text: "Moi, je suis de Rome. Mais j'habite à Lyon maintenant.", en: "Me, I'm from Rome. But I live in Lyon now.", zh: "我來自羅馬。但我現在住在里昂。" },
+            { speaker: "Male", text: "Ah, c'est super ! Tu es de Rome mais tu habites à Lyon... C'est loin !", en: "Oh, that's great! You are from Rome but you live in Lyon... That's far!", zh: "啊，太棒了！你來自羅馬但住在里昂…這很遠呢！" },
+            { speaker: "Female", text: "Oui, mais j'aime beaucoup la France. Et toi, tu habites toujours à Milan ?", en: "Yes, but I like France a lot. And you, do you still live in Milan?", zh: "是的，但我很喜歡法國。你呢，你還住在米蘭嗎？" }
+          ]
           tips: [
-            { en: "When someone asks **Di dove sei?**, you can answer in different ways: (1) **Sono di Milano** = I'm from Milan (2) **Vengo dall'Italia** = I come from Italy (3) **Abito a Firenze** = I live in Florence",
-              zh: "當有人問「**Di dove sei?**」，你可以用不同方式回答: (1) **Sono di Milano** = 我來自米蘭 (2) **Vengo dall'Italia** = 我來自義大利 (3) **Abito a Firenze** = 我住在佛羅倫斯" },
-            { en: "Grammar mini-notes: (1) **sei** = are (you) (2) **di** = from — used with cities for origin (**Sono di...**) (3) **da** = from — used with countries for origin (**dalla Francia**) (4) **a** = in/to — used with cities for current living location (**Abito a...**)",
-              zh: "文法小筆記: (1) **sei** = 你是 (2) **di** = 從／來自 — 用於城市的來源（**Sono di...**）(3) **da** = 從／來自 — 用於國家的來源（**dalla Francia**）(4) **a** = 在／到 — 用於表示現居的城市（**Abito a...**）"}
+            { en: "In French, you can use two common verbs to talk about your origin: **être** (to be) or **venir** (to come from).", zh: "在法語中，你可以用兩種常見動詞來表達你的來源：**être**（是）或 **venir**（來自）。" },
+            { en: "The phrases **Tu es d'où ?** and **D'où viens-tu ?** are both common informal ways to ask where someone is from.", zh: "**Tu es d'où ?** 和 **D'où viens-tu ?** 都是常見的非正式問法。" },
+            { en: "To say you are from a city, use the preposition **de**. For example, **Je suis de Rome** (I am from Rome).", zh: "要說你來自某城市，使用前置詞 **de**。例如：**Je suis de Rome**（我來自羅馬）。" }
           ]
         },
         {
           levelId: 2,
-          title: "Level 2 (A1): Talking about country and current city",
-          title_zh: "第二級（A1）: 談論國家和目前居住的城市",
+          title: "Level 2 (A0+): Asking about residence and formal versions",
+          title_zh: "第二級（A0+）: 詢問居住地與正式說法",
           keyPhrases: [
-            {text: "Vengo da Parigi.", en: "I come from Paris.", zh: "我來自巴黎"},
-            {text: "Abito a Firenze.", en: "I live in Florence.", zh: "我住在佛羅倫斯"},
-            {text: "E tu?", en: "And you?", zh: "你呢？"}
+            {text: "Où habites-tu ?", en: "Where do you live? (informal)", zh: "你住在哪裡？（非正式）"},
+            {text: "J'habite à Lyon.", en: "I live in Lyon.", zh: "我住在里昂"},
+            {text: "Vous êtes d'où ?", en: "Where are you from? (formal)", zh: "您來自哪裡？（正式）"},
+            {text: "J'habite à Paris maintenant.", en: "I live in Paris now.", zh: "我現在住在巴黎"},
+            {text: "Et vous ?", en: "And you? (formal)", zh: "您呢？"}
           ],
           dialogues: [
-            {speaker: "4", text: "Ciao! Di dove sei?", en: "Hi! Where are you from?", zh: "你來自哪裡？"},
-            {speaker: "5", text: "Sono di Milano. E tu?", en: "I’m from Milan. And you?", zh: "我來自米蘭，你呢？"},
-            {speaker: "4", text: "Io vengo da Parigi. Ora abito a Firenze.", en: "I come from Paris. Now I live in Florence.", zh: "我來自巴黎，現在住在佛羅倫斯"},
-            {speaker: "5", text: "Che bello! Firenze è bellissima!", en: "How nice! Florence is beautiful!", zh: "太美了！佛羅倫斯很美！"}
+            {speaker: "Female", text: "Bonjour ! Vous êtes d'où ?", en: "Hello! Where are you from? (formal)", zh: "您好！您來自哪裡？"},
+            {speaker: "Male", text: "Je suis de Milan. Et vous ?", en: "I'm from Milan. And you?", zh: "我來自米蘭，您呢？"},
+            {speaker: "Female", text: "Je suis de Paris. Et où habitez-vous ?", en: "I'm from Paris. And where do you live?", zh: "我來自巴黎。您住在哪裡？"},
+            {speaker: "Male", text: "J'habite à Lyon.", en: "I live in Lyon.", zh: "我住在里昂。"}
           ],
           tips: [
-            { en: "You can use three main phrases to talk about where you are from or live:", zh: "你可以用這三種主要句型來表達你來自哪裡或住在哪裡: " },
-            { en: "Use **Sono di** + city (e.g., **Sono di Milano**) → I’m from a city.", zh: "使用 **Sono di** + 城市（例: **Sono di Milano**）→ 表示來自某城市。" },
-            { en: "Use **Vengo da** + country (e.g., **Vengo dalla Francia**) → I come from a country.", zh: "使用 **Vengo da** + 國家（例: **Vengo dalla Francia**）→ 表示來自某國家。" },
-            { en: "Use **Abito a** + city (e.g., **Abito a Firenze**) → I live in a city.", zh: "使用 **Abito a** + 城市（例: **Abito a Firenze**）→ 表示住在某城市。" },
-
-            { en: "Reminder about Prepositions:", zh: "前置詞提醒: " },
-            { en: "**di** — from a city, casual and commonly used", zh: "**di** — 來自城市，口語且常用" },
-            { en: "**da** — from a country or origin, more formal or precise", zh: "**da** — 來自國家或來源，較正式或精確" },
-            { en: "**a** — in/to (commonly with the verb 'abitare')", zh: "**a** — 在／到（常用於動詞 **abitare**）" },
-
-            { en: "Common Countries and their Prepositions:", zh: "常見國家與前置詞: " },
-            { en: "**dalla** — used for feminine singular countries.", zh: "**dalla** — 用於陰性單數國家。" },
-            { en: "**dal** — used for masculine singular countries.", zh: "**dal** — 用於陽性單數國家。" },
-
-            { en: "**Giappone** (Japan) → **dal Giappone**", zh: "日本 → **dal Giappone**" },
-            { en: "**Cina** (China) → **dalla Cina**", zh: "中國 → **dalla Cina**" },
-            { en: "**Francia** (France) → **dalla Francia**", zh: "法國 → **dalla Francia**" },
-            { en: "**Stati Uniti** (USA) → **dagli Stati Uniti**", zh: "美國 → **dagli Stati Uniti**" },
-            { en: "**Italia** (Italy) → **dall'Italia**", zh: "義大利 → **dall'Italia**" },
-            { en: "**Germania** (Germany) → **dalla Germania**", zh: "德國 → **dalla Germania**" },
-            { en: "**Spagna** (Spain) → **dalla Spagna**", zh: "西班牙 → **dalla Spagna**" }
+            { en: "Use **Où habites-tu ?** (informal) or **Où habitez-vous ?** (formal) to ask where someone lives.", zh: "使用 **Où habites-tu ?**（非正式）或 **Où habitez-vous ?**（正式）來詢問某人住在何處。" },
+            { en: "The preposition **à** is used with the verb **habiter** (to live) when you mention a city. For example, **J'habite à Lyon** (I live in Lyon).", zh: "動詞 **habiter**（居住）後面接城市時，使用前置詞 **à**。例如：**J'habite à Lyon**（我住在里昂）。" },
+            { en: "To ask someone 'Where are you from?' in a formal way, use **Vous êtes d'où ?**", zh: "要以正式的方式詢問某人「來自哪裡？」，使用 **Vous êtes d'où ?**。" }
+          ]
+        },
+        {
+          levelId: 3,
+          title: "Level 3 (A1): Talking about countries and prepositions",
+          title_zh: "第三級（A1）: 談論國家與前置詞",
+          keyPhrases: [
+            {text: "Je viens du Japon.", en: "I come from Japan.", zh: "我來自日本"},
+            {text: "Je viens de Chine.", en: "I come from China.", zh: "我來自中國"},
+            {text: "Je viens des États-Unis.", en: "I come from the United States.", zh: "我來自美國"},
+            {text: "Je suis français(e).", en: "I am French.", zh: "我是法國人"}
+          ],
+          dialogues: [
+            {speaker: "Female", text: "Bonjour ! De quel pays venez-vous ?", en: "Hello! Which country are you from?", zh: "您好！您來自哪個國家？"},
+            {speaker: "Male", text: "Je viens de France, et vous ?", en: "I'm from France, and you?", zh: "我來自法國，您呢？"},
+            {speaker: "Female", text: "Je viens des États-Unis.", en: "I'm from the United States.", zh: "我來自美國。"},
+            {speaker: "Male", text: "Ah, et vous êtes où en ce moment ?", en: "Oh, and where are you right now?", zh: "哦，那你現在在哪裡？"},
+            {speaker: "Female", text: "J'habite à Lyon maintenant.", en: "I live in Lyon now.", zh: "我現在住在里昂。"}
+          ],
+          tips: [
+            { en: "When talking about your home country, the preposition changes based on the country's gender and number:", zh: "當談論你的國家時，前置詞會根據國家的性別和單複數而變化：" },
+            { en: "**de** — used for feminine countries (e.g., **de France**)", zh: "**de** — 用於陰性國家（例如：**de France**）" },
+            { en: "**du** — used for masculine countries (e.g., **du Japon**)", zh: "**du** — 用於陽性國家（例如：**du Japon**）" },
+            { en: "**des** — used for plural countries (e.g., **des États-Unis**)", zh: "**des** — 用於複數國家（例如：**des États-Unis**）" },
+            { en: "**d'** — used before a vowel or mute 'h' (e.g., **d'Iran**)", zh: "**d'** — 用於母音或無聲 'h' 開頭的國家（例如：**d'Iran**）" },
+            { en: "You can also describe your nationality directly. For example, **Je suis français** (male) or **Je suis française** (female).", zh: "你也可以直接描述你的國籍。例如，**Je suis français**（男性）或 **Je suis française**（女性）。" }
           ]
         }
       ]
     },
     {
       lessonId: 6,
-      title: "Lesson 6 – Cosa fai? / Che lavoro fai?",
-      title_zh: "你在做什麼？／你的職業是什麼",
-      theme: "Ask what someone is doing now and what their job is",
-      theme_zh: "詢問某人現在在做什麼以及他們的職業是什麼",
+      title: "Lesson 6 - What are you doing? / What is your job?",
+      title_zh: "第六課 - 你在做什麼？/ 你的職業是什麼？",
+      theme: "Ask what someone is doing and what their job is",
+      theme_zh: "詢問某人正在做什麼以及他們的職業",
       levels: [
         {
           levelId: 1,
-          title: "Level 1 (A1): Ask what someone is doing now",
-          title_zh: "第一級（A1）: 詢問某人現在在做什麼",
+          title: "Level 1 (A0): Asking about current activities",
+          title_zh: "第一級（A0）: 詢問現在的活動",
           keyPhrases: [
-            {text: "Che cosa fai?", en: "What are you doing?", zh: "你現在在做什麼？"},
-            {text: "Cosa fai?", en: "What are you doing?", zh: "你在幹嘛？（比較口語）"},
-            {text: "Studio.", en: "I’m studying.", zh: "我在學習"},
-            {text: "Lavoro.", en: "I’m working.", zh: "我在工作"},
-            {text: "Guardo la TV.", en: "I’m watching TV.", zh: "我在看電視"},
-            {text: "Leggo un libro.", en: "I’m reading a book.", zh: "我在讀書"},
-            {text: "Cucino.", en: "I’m cooking.", zh: "我在做飯"},
-            {text: "Mi rilasso.", en: "I’m relaxing.", zh: "我在放鬆"},
-            {text: "Faccio colazione", en: "I’m having breakfast", zh: "我在吃早餐"},
-            {text: "Faccio pranzo.", en: "I’m having lunch.", zh: "我在吃午餐"},
-            {text: "Faccio cena.", en: "I’m having dinner.", zh: "我在吃晚餐"},
-            {text: "Niente (di speciale).", en: "Nothing (special).", zh: "沒什麼特別的"},
-            {text: "Sto studiando l'italiano.", en: "I’m studying Italian.", zh: "我在學習義大利語"},
-            {text: "Sto navigando in internet.", en: "I’m surfing the internet.", zh: "我在上網"}
+            { text: "Qu'est-ce que tu fais ?", en: "What are you doing?", zh: "你正在做什麼？" },
+            { text: "Je travaille.", en: "I'm working.", zh: "我在工作" },
+            { text: "J'étudie.", en: "I'm studying.", zh: "我在學習" },
+            { text: "Je lis un livre.", en: "I'm reading a book.", zh: "我在讀書" },
+            { text: "Je regarde la télé.", en: "I'm watching TV.", zh: "我在看電視" },
+            { text: "Je cuisine.", en: "I'm cooking.", zh: "我在做飯" },
+            { text: "Je me détends.", en: "I'm relaxing.", zh: "我在放鬆" },
+            { text: "Rien de spécial.", en: "Nothing special.", zh: "沒什麼特別的" }
           ],
           dialogues: [
-            {speaker: "1", text: "Cosa fai?", en: "What are you doing?", zh: "你在幹嘛？"},
-            {speaker: "3", text: "Cucino. E tu?", en: "I’m cooking. And you?", zh: "我在做飯，你呢？"},
-            {speaker: "4", text: "Guardo la TV.", en: "I’m watching TV.", zh: "我在看電視"},
-            {speaker: "5", text: "Faccio cena.", en: "I’m making dinner.", zh: "我在做晚餐"},
-            {speaker: "6", text: "Studio l'italiano.", en: "I’m studying Italian.", zh: "我在學習義大利語"},
-            {speaker: "7", text: "Navigo in internet.", en: "I’m surfing the internet.", zh: "我在上網"},
-            {speaker: "8", text: "Niente di speciale.", en: "Nothing special.", zh: "沒什麼特別的"}
+            { speaker: "A", text: "Salut Marc ! Qu'est-ce que tu fais en ce moment ?", en: "Hi Marc! What are you doing right now?", zh: "嗨，馬克！你現在在做什麼？" },
+            { speaker: "B", text: "Salut Julie ! Je suis en train de cuisiner pour ce soir. C'est un plat italien que je n'ai jamais fait. Et toi, tu fais quoi de beau ?", en: "Hi Julie! I'm cooking for tonight. It's an Italian dish I've never made before. And you, what are you up to?", zh: "嗨，茱莉！我正在準備今晚的晚餐。這是一道我從沒做過的義大利菜。你呢，你在忙什麼？" },
+            { speaker: "A", text: "Pas grand-chose. Je regarde un film très intéressant à la télé. J'ai aussi un peu étudié le français ce matin, après le petit-déjeuner.", en: "Not much. I'm watching a very interesting movie on TV. I also studied a bit of French this morning, after breakfast.", zh: "沒什麼。我在看一部很有趣的電影。今天早上吃完早餐後，我也稍微學了點法語。" },
+            { speaker: "B", text: "C'est super ! Mon plat est presque prêt. J'espère que c'est bon ! On se parle plus tard, d'accord ?", en: "That's great! My dish is almost ready. I hope it tastes good! We'll talk later, okay?", zh: "太棒了！我的菜快做好了。希望味道不錯！我們晚點再聊，好嗎？" }
           ],
           tips: [
-            { en: "**Cosa fai?** — used for casual questions.", zh: "**Cosa fai?** — 用於比較口語、非正式的提問。" },
-            { en: "Use present tense verbs to describe what you’re doing now.", zh: "用現在式動詞來描述你現在正在做的事情。" },
-            { en: "Many activities don’t need an object: **Studio**, **Lavoro** = I study, I work.", zh: "許多活動不需要受詞: **Studio**（我學習）、**Lavoro**（我工作）。" },
-            { en: "For ongoing actions, use **sto** + verb = I am ...", zh: "對於正在進行的動作，使用 **sto** + 動詞 = 我正在……" },
-            { en: "**Niente di speciale** — means 'nothing much' or 'just chilling'.", zh: "**Niente di speciale** — 表示「沒什麼特別的事」或「隨便放鬆一下」。" }
+            { en: "The phrase **Qu'est-ce que tu fais ?** is a versatile way to ask about a current activity.", zh: "片語 **Qu'est-ce que tu fais ?** 是詢問當前活動的一種多用途方式。" },
+            { en: "You can use the simple present tense to describe what you are doing. For example, **Je lis** (I am reading) or **Je travaille** (I am working).", zh: "你可以直接使用簡單現在式來描述你正在做的事情。例如，**Je lis** (我在讀書) 或 **Je travaille** (我在工作)。" }
           ]
         },
         {
           levelId: 2,
-          title: "Level 2 (A1): Ask and answer about professions",
-          title_zh: "第二級（A1): 詢問和回答關於職業",
+          title: "Level 2 (A1): Asking about profession",
+          title_zh: "第二級（A1）: 詢問職業",
           keyPhrases: [
-            {text: "Che lavoro fai?", en: "What do you do for work?", zh: "你是做什麼的？"},
-            {text: "Faccio l'insegnante.", en: "I’m a teacher.", zh: "我是老師"},
-            {text: "Faccio il medico.", en: "I’m a doctor.", zh: "我是醫生"},
-            {text: "Lavoro in un ufficio.", en: "I work in an office.", zh: "我在辦公室工作"},
-            {text: "Sono studente/studentessa.", en: "I’m a student.", zh: "我是學生"},
-            {text: "Sono disoccupato/a.", en: "I’m unemployed.", zh: "我沒有工作"}
+            { text: "Quel est ton métier ?", en: "What is your job? (informal)", zh: "你的工作是什麼？" },
+            { text: "Je suis professeur.", en: "I am a teacher.", zh: "我是老師" },
+            { text: "Je travaille dans un bureau.", en: "I work in an office.", zh: "我在辦公室工作" },
+            { text: "Je suis étudiant(e).", en: "I am a student.", zh: "我是學生" }
           ],
           dialogues: [
-            {speaker: "1", text: "Che lavoro fai?", en: "What do you do?", zh: "你是做什麼的？"},
-            {speaker: "3", text: "Lavoro in banca.", en: "I work in a bank.", zh: "我在銀行工作"},
-            {speaker: "1", text: "Io sono insegnante. E tu?", en: "I’m a teacher. And you?", zh: "我是老師，你呢？"},
-            {speaker: "4", text: "Faccio la designer grafica.", en: "I’m a graphic designer.", zh: "我是幾何設計師"},
-            {speaker: "5", text: "Io sono studente.", en: "I’m a student.", zh: "我是學生"}
+            { speaker: "A", text: "Alors, quel est ton métier ?", en: "So, what is your job?", zh: "那麼，你的工作是什麼？" },
+            { speaker: "B", text: "Je travaille dans une banque comme conseiller financier. C'est assez stressant, mais j'aime aider les clients avec leurs investissements. Et toi, tu fais quoi dans la vie ?", en: "I work in a bank as a financial advisor. It's quite stressful, but I enjoy helping clients with their investments. And you, what do you do for a living?", zh: "我在銀行工作，擔任理財顧問。壓力有點大，但我喜歡幫助客戶進行投資。那你呢，你是做什麼的？" },
+            { speaker: "A", text: "Je suis professeur d'histoire dans un lycée. C'est un travail passionnant. Je trouve ça gratifiant d'enseigner aux jeunes et de voir leurs progrès.", en: "I am a history teacher at a high school. It's a fascinating job. I find it rewarding to teach young people and see their progress.", zh: "我是高中歷史老師。這是一份充滿熱情的工作。我覺得教導年輕人並看到他們的進步很有成就感。" }
           ],
           tips: [
-            { en: "**Che lavoro fai?** — used to ask someone’s job or profession.", zh: "**Che lavoro fai?** — 用來詢問對方的職業。" },
-            { en: "You can answer with **Sono...** or **Faccio...**", zh: "你可以用 **Sono...** 或 **Faccio...** 回答。" },
-            { en: "**Sono** (I am) — generally used with professions (e.g., **Sono un insegnante** = I am a teacher).", zh: "**Sono**（我是）通常用於職業（例如: **Sono un insegnante** = 我是老師）。" },
-            { en: "**Faccio** (I do/make) — often used to describe the type of work (e.g., **Faccio il medico** = I am a doctor; **Faccio l'insegnante di inglese** = I am an English teacher).", zh: "**Faccio**（我做）通常用於描述工作類型（例如: **Faccio il medico** = 我是醫生；**Faccio l'insegnante di inglese** = 我是英文老師）。" },
-            { en: "**Cosa fai?** — can also mean 'What’s your job?' depending on the context.", zh: "**Cosa fai?** 根據上下文，也可以表示「你的工作是什麼？」" }
+            { en: "You can use **Quel est ton métier ?** (informal) or **Quel est votre métier ?** (formal) to ask someone about their job.", zh: "你可以用 **Quel est ton métier ?**（非正式）或 **Quel est votre métier ?**（正式）來詢問某人的工作。" },
+            { en: "Use **Je suis...** to state your profession directly (e.g., **Je suis professeur**). You can also use **Je travaille comme...** (I work as a...) to be more specific.", zh: "用 **Je suis...** 直接說明你的職業（例如：**Je suis professeur**）。你也可以用 **Je travaille comme...**（我擔任...）來更具體地說明。" }
           ]
         },
         {
           levelId: 3,
-          title: "Level 1 (A1): Understand that 'Cosa fai?' can mean different things",
-          title_zh: "第一級（A1）: 理解「Cosa fai?」可以代表不同意思",
+          title: "Level 3 (A1): The two meanings of 'Qu'est-ce que tu fais?'",
+          title_zh: "第三級（A1）: 「Qu'est-ce que tu fais?」的兩種意思",
           keyPhrases: [
-            {text: "Cosa fai?", en: "What are you doing? / What do you do?", zh: "你現在做什麼？／你做什麼工作？"},
-            {text: "Che lavoro fai?", en: "What job do you do?", zh: "你做什麼工作"},
-            {text: "Faccio l’infermiera.", en: "I’m a nurse.", zh: "我是護士"},
-            {text: "Lavoro in una scuola.", en: "I work in a school.", zh: "我在學校工作"},
-            {text: "Sono un ingegnere.", en: "I’m an engineer.", zh: "我是工程師"},
-            {text: "Sono disoccupata.", en: "I’m unemployed.", zh: "我目前沒工作"}
+            { text: "Qu'est-ce que tu fais ?", en: "What are you doing? / What do you do?", zh: "你現在做什麼？／你做什麼工作？" },
+            { text: "Je suis ingénieur.", en: "I'm an engineer.", zh: "我是工程師" },
+            { text: "Je travaille dans une école.", en: "I work in a school.", zh: "我在學校工作" }
           ],
           dialogues: [
-            {speaker: "1", text: "Cosa fai?", en: "What do you do?", zh: "你是做什麼的？"},
-            {speaker: "2", text: "Sono un ingegnere. E tu?", en: "I’m an engineer. And you?", zh: "我是工程師，你呢？"},
-            {speaker: "1", text: "Io lavoro in una scuola materna.", en: "I work in a preschool.", zh: "我在幼兒園工作"},
-            {speaker: "3", text: "Io sono disoccupata al momento.", en: "I’m currently unemployed.", zh: "我現在沒在工作"},
-            {speaker: "4", text: "Io studio, non lavoro ancora.", en: "I’m studying, not working yet.", zh: "我還在唸書，還沒工作"}
+            { speaker: "A", text: "Salut ! Ça va ? Qu'est-ce que tu fais ?", en: "Hi! How are you? What are you up to?", zh: "嗨！你好嗎？你在幹嘛？" },
+            { speaker: "B", text: "Ça va, merci. Je me détends, je ne fais rien de spécial. Et toi, qu'est-ce que tu fais dans la vie ?", en: "I'm good, thanks. I'm relaxing, nothing special. And you, what do you do for a living?", zh: "我很好，謝謝。我在放鬆，沒什麼特別的。那你平時是做什麼的呢？" },
+            { speaker: "A", text: "Je suis ingénieur. Je travaille dans le développement de logiciels. C'est passionnant, surtout quand on crée quelque chose de nouveau.", en: "I'm an engineer. I work in software development. It's fascinating, especially when you create something new.", zh: "我是工程師。我在軟體開發領域工作。這很吸引人，特別是當你創造出新東西的時候。" },
+            { speaker: "B", text: "Ah, c'est super ! Moi, je travaille dans une école maternelle, je suis assistante de direction. C'est un travail qui demande beaucoup de patience et d'énergie, mais c'est très gratifiant.", en: "Oh, that's great! I work in a preschool, I'm an executive assistant. It's a job that requires a lot of patience and energy, but it's very rewarding.", zh: "啊，太好了！我則是在幼兒園工作，我是行政助理。這份工作需要很多耐心和精力，但很有回報。" }
           ],
           tips: [
-            { en: "**Cosa fai?** — can mean 'What are you doing now?' or 'What do you do for a living?'", zh: "**Cosa fai?** 可以表示「你現在在做什麼？」或「你的職業是什麼？」" },
-            { en: "It's common to ask just **Cosa fai?** and the reply depends on the conversation.", zh: "很常用 **Cosa fai?** 來提問，而回答取決於上下文。" }
+            { en: "The phrase **Qu'est-ce que tu fais ?** can be confusing because it can mean 'What are you doing right now?' or 'What do you do for a living?'.", zh: "**Qu'est-ce que tu fais ?** 這個句子可能會讓人困惑，因為它既可以指「你現在正在做什麼？」，也可以指「你的職業是什麼？」" },
+            { en: "The context and the tone of the conversation usually help clarify the meaning. You can also use **Qu'est-ce que tu fais dans la vie ?** to specifically ask about a job.", zh: "上下文和語氣通常有助於釐清意思。你也可以用 **Qu'est-ce que tu fais dans la vie ?** 來明確地詢問職業。" }
           ]
         }
       ]
@@ -499,11 +496,11 @@ const moduleData = {
             {text: "Dove", en: "Where", zh: "哪裡"}
           ],
           dialogues: [
-            {speaker: "1", text: "Come stai?", en: "How are you?", zh: "你好嗎？"},
-            {speaker: "1", text: "Chi è lei?", en: "Who is she?", zh: "她是誰？"},
-            {speaker: "1", text: "Cosa fai oggi?", en: "What are you doing today?", zh: "你今天做什麼？"},
-            {speaker: "1", text: "Dove vai?", en: "Where are you going?", zh: "你去哪裡？"},
-            {speaker: "1", text: "Dove è il bagno?", en: "Where is the bathroom?", zh: "洗手間在哪裡？"}
+            {speaker: "Female", text: "Come stai?", en: "How are you?", zh: "你好嗎？"},
+            {speaker: "Female", text: "Chi è lei?", en: "Who is she?", zh: "她是誰？"},
+            {speaker: "Female", text: "Cosa fai oggi?", en: "What are you doing today?", zh: "你今天做什麼？"},
+            {speaker: "Female", text: "Dove vai?", en: "Where are you going?", zh: "你去哪裡？"},
+            {speaker: "Female", text: "Dove è il bagno?", en: "Where is the bathroom?", zh: "洗手間在哪裡？"}
           ],
           tips: [
             { en: "**Come** — asks about manner or condition, like 'how' someone feels.", zh: "**Come** — 用來詢問方式或狀態，例如詢問一個人感覺如何。" },
@@ -523,11 +520,11 @@ const moduleData = {
             {text: "Quanto / Quanti", en: "How much / How many", zh: "多少"}
           ],
           dialogues: [
-            {speaker: "1", text: "Quando parte il treno?", en: "When does the train leave?", zh: "火車什麼時候開？"},
-            {speaker: "1", text: "Perché non sei venuto stamattina?", en: "Why didn’t you come this morning?", zh: "你今天早上為什麼沒來？"},
-            {speaker: "1", text: "Quale gelato vuoi?", en: "Which ice cream do you want?", zh: "你想要哪一種冰淇淋？"},
-            {speaker: "1", text: "Quanti amici hai in Italia?", en: "How many friends do you have in Italy?", zh: "你在義大利有幾個朋友？"},
-            {speaker: "1", text: "Perché ti piace tanto il caffè?", en: "Why do you like coffee so much?", zh: "你為什麼這麼喜歡咖啡？"}
+            {speaker: "Female", text: "Quando parte il treno?", en: "When does the train leave?", zh: "火車什麼時候開？"},
+            {speaker: "Female", text: "Perché non sei venuto stamattina?", en: "Why didn’t you come this morning?", zh: "你今天早上為什麼沒來？"},
+            {speaker: "Female", text: "Quale gelato vuoi?", en: "Which ice cream do you want?", zh: "你想要哪一種冰淇淋？"},
+            {speaker: "Female", text: "Quanti amici hai in Italia?", en: "How many friends do you have in Italy?", zh: "你在義大利有幾個朋友？"},
+            {speaker: "Female", text: "Perché ti piace tanto il caffè?", en: "Why do you like coffee so much?", zh: "你為什麼這麼喜歡咖啡？"}
           ],
           tips: []
         }
@@ -551,10 +548,10 @@ const moduleData = {
             {text: "Sei...?", en: "Are you...? - *subject omitted*", zh: "你是...嗎？主詞可省略"}
           ],
           dialogues: [
-            {speaker: "1", text: "Sei Marco?", en: "Are you Marco?", zh: "你是馬可嗎？"},
-            {speaker: "2", text: "Sì, sono Marco.", en: "Yes, I'm Marco.", zh: "對，我是馬可"},
-            {speaker: "1", text: "E tu?", en: "And you?", zh: "那你呢？"},
-            {speaker: "2", text: "Sono Laura.", en: "I'm Laura.", zh: "我是勞拉"}
+            {speaker: "Female", text: "Sei Marco?", en: "Are you Marco?", zh: "你是馬可嗎？"},
+            {speaker: "Male", text: "Sì, sono Marco.", en: "Yes, I'm Marco.", zh: "對，我是馬可"},
+            {speaker: "Male", text: "E tu?", en: "And you?", zh: "那你呢？"},
+            {speaker: "Female", text: "Sono Laura.", en: "I'm Laura.", zh: "我是勞拉"}
           ],
           tips: [
             { en: "In Italian, people often drop **io** because the verb already shows who’s speaking.", zh: "在義大利語中，人們常省略 **io**，因為動詞變化已經透露主詞是誰。" },
@@ -586,22 +583,22 @@ const moduleData = {
             {text: "loro sono...", en: "They are...", zh: "他們/她們是..."}
           ],
           dialogues: [
-            {speaker: "3", text: "Tu sei Maria?", en: "Are you Maria?", zh: "你是瑪麗亞嗎？"},
-            {speaker: "2", text: "Sì, io sono Maria.", en: "Yes, I am Maria.", zh: "對，我是瑪麗亞"},
-            {speaker: "3", text: "Sei pronto?", en: "Are you ready?", zh: "你準備好了嗎？"},
-            {speaker: "1", text: "Sì, sono pronto.", en: "Yes, I am ready.", zh: "對，我準備好了"},
-            {speaker: "1", text: "Lui è Luca?", en: "Is he Luca?", zh: "他是路卡嗎？"},
-            {speaker: "3", text: "Sì, lui è Luca.", en: "Yes, he is Luca.", zh: "對，他是路卡"},
-            {speaker: "1", text: "Lei è italiana?", en: "Is she Italian?", zh: "她是義大利人嗎？"},
-            {speaker: "3", text: "Sì, lei è italiana.", en: "Yes, she is Italian.", zh: "對，她是義大利人"},
-            {speaker: "1", text: "Scusi, Lei è il signor Bianchi?", en: "Excuse me, are you Mr. Bianchi? (Formal)", zh: "打擾了，您是比安奇先生嗎？"},
-            {speaker: "3", text: "Sì, sono io.", en: "Yes, it's me.", zh: "對，是我"},
-            {speaker: "1", text: "Noi siamo amici?", en: "Are we friends?", zh: "我們是朋友嗎？"},
-            {speaker: "3", text: "Sì, siamo amici.", en: "Yes, we are friends.", zh: "對，我們是朋友"},
-            {speaker: "1", text: "Voi siete turisti?", en: "Are you all tourists?", zh: "你們是遊客嗎？"},
-            {speaker: "3", text: "Sì, siamo turisti", en: "Yes, we are tourists.", zh: "對，我們是遊客"},
-            {speaker: "1", text: "Loro sono americani?", en: "Are they American?", zh: "他們是美國人嗎？"},
-            {speaker: "3", text: "Sì, sono americani.", en: "Yes, they are American.", zh: "對，他們是美國人"}
+            {speaker: "Male", text: "Tu sei Maria?", en: "Are you Maria?", zh: "你是瑪麗亞嗎？"},
+            {speaker: "Female", text: "Sì, io sono Maria.", en: "Yes, I am Maria.", zh: "對，我是瑪麗亞"},
+            {speaker: "Male", text: "Sei pronto?", en: "Are you ready?", zh: "你準備好了嗎？"},
+            {speaker: "Female", text: "Sì, sono pronto.", en: "Yes, I am ready.", zh: "對，我準備好了"},
+            {speaker: "Female", text: "Lui è Luca?", en: "Is he Luca?", zh: "他是路卡嗎？"},
+            {speaker: "Male", text: "Sì, lui è Luca.", en: "Yes, he is Luca.", zh: "對，他是路卡"},
+            {speaker: "Female", text: "Lei è italiana?", en: "Is she Italian?", zh: "她是義大利人嗎？"},
+            {speaker: "Male", text: "Sì, lei è italiana.", en: "Yes, she is Italian.", zh: "對，她是義大利人"},
+            {speaker: "Female", text: "Scusi, Lei è il signor Bianchi?", en: "Excuse me, are you Mr. Bianchi? (Formal)", zh: "打擾了，您是比安奇先生嗎？"},
+            {speaker: "Male", text: "Sì, sono io.", en: "Yes, it's me.", zh: "對，是我"},
+            {speaker: "Female", text: "Noi siamo amici?", en: "Are we friends?", zh: "我們是朋友嗎？"},
+            {speaker: "Male", text: "Sì, siamo amici.", en: "Yes, we are friends.", zh: "對，我們是朋友"},
+            {speaker: "Female", text: "Voi siete turisti?", en: "Are you all tourists?", zh: "你們是遊客嗎？"},
+            {speaker: "Male", text: "Sì, siamo turisti", en: "Yes, we are tourists.", zh: "對，我們是遊客"},
+            {speaker: "Female", text: "Loro sono americani?", en: "Are they American?", zh: "他們是美國人嗎？"},
+            {speaker: "Male", text: "Sì, sono americani.", en: "Yes, they are American.", zh: "對，他們是美國人"}
           ],
           tasks: [],
           tips: [
@@ -631,14 +628,14 @@ const moduleData = {
             {text: "i loro / le loro", en: "their / your (formal)", zh: "他們/她們/您們的"}
           ],
           dialogues: [
-            {speaker: "1", text: "È la tua borsa?", en: "Is it your bag?", zh: "這是你的包包嗎？"},
-            {speaker: "3", text: "Sì, è la mia borsa.", en: "Yes, it’s my bag.", zh: "對，是我的包包"},
-            {speaker: "1", text: "Dov’è il suo telefono?", en: "Where is his/her phone?", zh: "他的/她的手機在哪？"},
-            {speaker: "3", text: "Ecco il suo telefono.", en: "Here’s his/her phone.", zh: "這是他的/她的手機"},
-            {speaker: "1", text: "È la vostra macchina?", en: "Is this your (plural) car?", zh: "這是你們的車嗎？"},
-            {speaker: "3", text: "Sì, è la nostra macchina.", en: "Yes, it’s our car.", zh: "對，是我們的車"},
-            {speaker: "1", text: "Sono le loro chiavi?", en: "Are these their keys?", zh: "這些是他們的鑰匙嗎？"},
-            {speaker: "3", text: "No, non sono le loro chiavi. Sono le mie.", en: "No, they aren't their keys. They are mine.", zh: "不，那些不是他們的鑰匙。是我的。"}
+            {speaker: "Female", text: "È la tua borsa?", en: "Is it your bag?", zh: "這是你的包包嗎？"},
+            {speaker: "Male", text: "Sì, è la mia borsa.", en: "Yes, it’s my bag.", zh: "對，是我的包包"},
+            {speaker: "Female", text: "Dov’è il suo telefono?", en: "Where is his/her phone?", zh: "他的/她的手機在哪？"},
+            {speaker: "Male", text: "Ecco il suo telefono.", en: "Here’s his/her phone.", zh: "這是他的/她的手機"},
+            {speaker: "Female", text: "È la vostra macchina?", en: "Is this your (plural) car?", zh: "這是你們的車嗎？"},
+            {speaker: "Male", text: "Sì, è la nostra macchina.", en: "Yes, it’s our car.", zh: "對，是我們的車"},
+            {speaker: "Female", text: "Sono le loro chiavi?", en: "Are these their keys?", zh: "這些是他們的鑰匙嗎？"},
+            {speaker: "Male", text: "No, non sono le loro chiavi. Sono le mie.", en: "No, they aren't their keys. They are mine.", zh: "不，那些不是他們的鑰匙。是我的。"}
           ],
           tips: [
             { en: "Possessive words change based on the thing you are talking about, not who owns it.", zh: "所有格形容詞的性別與所修飾的名詞一致，而不是與擁有者一致。" },
