@@ -205,7 +205,7 @@ const moduleData = {
             { speaker: "Female", text: "Oui, il y a un magasin là-bas, à droite.", en: "Yes, there’s a shop over there, to the right.", zh: "有的，那邊有一家商店，在右邊。" },
             { speaker: "Male", text: "Merci beaucoup ! Et puis-je utiliser les toilettes, s'il vous plaît ?", en: "Thank you very much! And can I use the bathroom, please?", zh: "非常感謝！還有，我可以用洗手間嗎？" },
             { speaker: "Female", text: "Oui, les toilettes sont là, au fond.", en: "Yes, the bathroom is over there at the end.", zh: "好的，洗手間在裡面盡頭處。" },
-            { speaker: "Male", text: "Merci !", en: "Thank you!", "zh": "謝謝！" },
+            { speaker: "Male", text: "Merci !", en: "Thank you!", zh: "謝謝！" },
             { speaker: "Female", text: "De rien !", en: "You're welcome!", zh: "不客氣！" }
           ],
           tips: [
@@ -530,7 +530,7 @@ const moduleData = {
             { en: "**Quand** — for asking about time or a specific moment.", zh: "**Quand** — 用來詢問時間或特定時刻。" },
             { en: "**Pourquoi** — for asking the reason for something. The answer often starts with *parce que* (because).", zh: "**Pourquoi** — 用來詢問原因，回答時通常會用 *parce que*（因為）開頭。" },
             { en: "**Quel / Quelle** — a pronoun that must agree in gender with the noun it refers to. **Quel** is for masculine nouns, **Quelle** is for feminine nouns.", zh: "**Quel / Quelle** — 這個疑問詞要根據後面的名詞來變化陰陽性。**Quel** 用於陽性名詞，**Quelle** 用於陰性名詞。" },
-            { en: "**Combien** — used for quantity. If followed by a noun, you must add *de* (of) after it, like *Combien de*.", zh": "**Combien** — 用來詢問數量。如果後面接名詞，必須加上 *de*，例如 *Combien de*。" }
+            { en: "**Combien** — used for quantity. If followed by a noun, you must add *de* (of) after it, like *Combien de*.", zh: "**Combien** — 用來詢問數量。如果後面接名詞，必須加上 *de*，例如 *Combien de*。" }
           ]
         }
       ]
@@ -606,7 +606,7 @@ const moduleData = {
           tips: [
             { en: "In French, the choice of possessive adjective (**mon / ma / mes**) depends on the gender and number of the noun that is being owned, not the gender of the owner.", zh: "在法語中，所有格形容詞（**mon / ma / mes**）的選擇取決於被擁有的名詞的性別和單複數，而不是擁有者的性別。" },
             { en: "For example: **mon livre** (my book - masculine noun), but **ma voiture** (my car - feminine noun).", zh: "例如：**mon livre** (我的書—陽性名詞)，但 **ma voiture** (我的車—陰性名詞)。" },
-            { en: "Special rule: Use **mon** instead of **ma** before a feminine noun that starts with a vowel (e.g., **mon amie** - my female friend).", zh": "特殊規則：在以母音開頭的陰性名詞前，用 **mon** 來取代 **ma**（例如：**mon amie** - 我的女性朋友）。" }
+            { en: "Special rule: Use **mon** instead of **ma** before a feminine noun that starts with a vowel (e.g., **mon amie** - my female friend).", zh: "特殊規則：在以母音開頭的陰性名詞前，用 **mon** 來取代 **ma**（例如：**mon amie** - 我的女性朋友）。" }
           ]
         }
       ]
