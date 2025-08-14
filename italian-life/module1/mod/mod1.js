@@ -140,7 +140,14 @@ const moduleData = {
             { text: "Sono stanco / stanca.", en: "I’m tired", zh: "我累了" },
             { text: "E tu?", en: "And you?", zh: "你呢？" }
           ],
-          dialogues: [],
+          dialogues: [
+            { speaker: "A", text: "Ciao! Come stai oggi?", en: "Hi! How are you today?", zh: "嗨！你今天好嗎？" },
+            { speaker: "B", text: "Sto benissimo! Ho appena finito le vacanze. E tu?", en: "I’m great! I just finished my vacation. And you?", zh: "我非常好！我剛放完假。你呢？" },
+            { speaker: "A", text: "Così così. Ho molto lavoro da fare.", en: "So-so. I have a lot of work to do.", zh: "馬馬虎虎，我有很多工作要做。" },
+            { speaker: "B", text: "Oh, capisco. Io invece sono stanco oggi.", en: "Oh, I understand. I’m tired today.", zh: "哦，我懂。我今天反而很累。" },
+            { speaker: "A", text: "Non molto bene, allora. Ti serve un caffè?", en: "Not very well then. Do you need a coffee?", zh: "那就不太好了。你需要一杯咖啡嗎？" },
+            { speaker: "B", text: "Sì, grazie! Un caffè mi aiuterà.", en: "Yes, thank you! A coffee will help me.", zh: "好啊，謝謝！一杯咖啡會幫助我。" }
+          ],
           tips: [
             // The first tip here seems to be a question, not a statement.
             { en: "Use **Sto benissimo** when you're feeling great.", zh: "當你感覺非常好時，可以用 **Sto benissimo**。" },
