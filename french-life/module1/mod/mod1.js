@@ -13,7 +13,7 @@ const moduleData = {
       levels: [
         {
           levelId: 1,
-          title: "Niveau 1 (A0+): Dire bonjour !",
+          title: "Level 1 (A0+): Saying hello!",
           title_zh: "第一級（A0+）: 打招呼！",
           keyPhrases: [
             { text: "Salut !", en: "Hi / Bye!", zh: "嗨／掰" },
@@ -39,8 +39,8 @@ const moduleData = {
         },
         {
           levelId: 2,
-          title: "Niveau 2 (A0+): Plus de salutations et d'adieux",
-          title_zh: "第二級（A0+）: 更多問候與道別",
+          title: "Level 2 (A0+): More greetings and farewells",
+          title_zh: "第2級（A0+）: 更多問候與道別",
           keyPhrases: [
             { text: "Bonne journée !", en: "Have a good day!", zh: "祝你今天愉快" },
             { text: "Bonne soirée !", en: "Have a good evening!", zh: "祝你今晚愉快" },
@@ -69,7 +69,7 @@ const moduleData = {
         },
         {
           levelId: 3,
-          title: "Niveau 3 (A0+): D'autres façons de dire au revoir",
+          title: "Level 3 (A0+): Other ways to say goodbye",
           title_zh: "第三級（A0+）: 更多道別方式",
           keyPhrases: [
             { text: "À plus tard !", en: "See you later", zh: "待會見" },
@@ -103,7 +103,7 @@ const moduleData = {
     {
       lessonId: 2,
       title: "Leçon 2 – Comment ça va ? Mission au marché",
-      theme: "Comment vas-tu ? Sentiments et réponses",
+      theme: "How are you? Feelings and responses",
       theme_zh: "你好嗎？感受與回應",
       levels: [
         {
@@ -426,10 +426,10 @@ const moduleData = {
             { text: "Rien de spécial.", en: "Nothing special.", zh: "沒什麼特別的" }
           ],
           dialogues: [
-            { speaker: "A", text: "Salut Marc ! Qu'est-ce que tu fais en ce moment ?", en: "Hi Marc! What are you doing right now?", zh: "嗨，馬克！你現在在做什麼？" },
-            { speaker: "B", text: "Salut Julie ! Je suis en train de cuisiner pour ce soir. C'est un plat italien que je n'ai jamais fait. Et toi, tu fais quoi de beau ?", en: "Hi Julie! I'm cooking for tonight. It's an Italian dish I've never made before. And you, what are you up to?", zh: "嗨，茱莉！我正在準備今晚的晚餐。這是一道我從沒做過的義大利菜。你呢，你在忙什麼？" },
-            { speaker: "A", text: "Pas grand-chose. Je regarde un film très intéressant à la télé. J'ai aussi un peu étudié le français ce matin, après le petit-déjeuner.", en: "Not much. I'm watching a very interesting movie on TV. I also studied a bit of French this morning, after breakfast.", zh: "沒什麼。我在看一部很有趣的電影。今天早上吃完早餐後，我也稍微學了點法語。" },
-            { speaker: "B", text: "C'est super ! Mon plat est presque prêt. J'espère que c'est bon ! On se parle plus tard, d'accord ?", en: "That's great! My dish is almost ready. I hope it tastes good! We'll talk later, okay?", zh: "太棒了！我的菜快做好了。希望味道不錯！我們晚點再聊，好嗎？" }
+            { speaker: "Female", text: "Salut Marc ! Qu'est-ce que tu fais en ce moment ?", en: "Hi Marc! What are you doing right now?", zh: "嗨，馬克！你現在在做什麼？" },
+            { speaker: "Male", text: "Salut Julie ! Je suis en train de cuisiner pour ce soir. C'est un plat italien que je n'ai jamais fait. Et toi, tu fais quoi de beau ?", en: "Hi Julie! I'm cooking for tonight. It's an Italian dish I've never made before. And you, what are you up to?", zh: "嗨，茱莉！我正在準備今晚的晚餐。這是一道我從沒做過的義大利菜。你呢，你在忙什麼？" },
+            { speaker: "Female", text: "Pas grand-chose. Je regarde un film très intéressant à la télé. J'ai aussi un peu étudié le français ce matin, après le petit-déjeuner.", en: "Not much. I'm watching a very interesting movie on TV. I also studied a bit of French this morning, after breakfast.", zh: "沒什麼。我在看一部很有趣的電影。今天早上吃完早餐後，我也稍微學了點法語。" },
+            { speaker: "Male", text: "C'est super ! Mon plat est presque prêt. J'espère que c'est bon ! On se parle plus tard, d'accord ?", en: "That's great! My dish is almost ready. I hope it tastes good! We'll talk later, okay?", zh: "太棒了！我的菜快做好了。希望味道不錯！我們晚點再聊，好嗎？" }
           ],
           tips: [
             { en: "The phrase **Qu'est-ce que tu fais ?** is a versatile way to ask about a current activity.", zh: "片語 **Qu'est-ce que tu fais ?** 是詢問當前活動的一種多用途方式。" },
@@ -447,9 +447,9 @@ const moduleData = {
             { text: "Je suis étudiant(e).", en: "I am a student.", zh: "我是學生" }
           ],
           dialogues: [
-            { speaker: "A", text: "Alors, quel est ton métier ?", en: "So, what is your job?", zh: "那麼，你的工作是什麼？" },
-            { speaker: "B", text: "Je travaille dans une banque comme conseiller financier. C'est assez stressant, mais j'aime aider les clients avec leurs investissements. Et toi, tu fais quoi dans la vie ?", en: "I work in a bank as a financial advisor. It's quite stressful, but I enjoy helping clients with their investments. And you, what do you do for a living?", zh: "我在銀行工作，擔任理財顧問。壓力有點大，但我喜歡幫助客戶進行投資。那你呢，你是做什麼的？" },
-            { speaker: "A", text: "Je suis professeur d'histoire dans un lycée. C'est un travail passionnant. Je trouve ça gratifiant d'enseigner aux jeunes et de voir leurs progrès.", en: "I am a history teacher at a high school. It's a fascinating job. I find it rewarding to teach young people and see their progress.", zh: "我是高中歷史老師。這是一份充滿熱情的工作。我覺得教導年輕人並看到他們的進步很有成就感。" }
+            { speaker: "Female", text: "Alors, quel est ton métier ?", en: "So, what is your job?", zh: "那麼，你的工作是什麼？" },
+            { speaker: "Male", text: "Je travaille dans une banque comme conseiller financier. C'est assez stressant, mais j'aime aider les clients avec leurs investissements. Et toi, tu fais quoi dans la vie ?", en: "I work in a bank as a financial advisor. It's quite stressful, but I enjoy helping clients with their investments. And you, what do you do for a living?", zh: "我在銀行工作，擔任理財顧問。壓力有點大，但我喜歡幫助客戶進行投資。那你呢，你是做什麼的？" },
+            { speaker: "Female", text: "Je suis professeur d'histoire dans un lycée. C'est un travail passionnant. Je trouve ça gratifiant d'enseigner aux jeunes et de voir leurs progrès.", en: "I am a history teacher at a high school. It's a fascinating job. I find it rewarding to teach young people and see their progress.", zh: "我是高中歷史老師。這是一份充滿熱情的工作。我覺得教導年輕人並看到他們的進步很有成就感。" }
           ],
           tips: [
             { en: "You can use **Quel est ton métier ?** (informal) or **Quel est votre métier ?** (formal) to ask someone about their job.", zh: "你可以用 **Quel est ton métier ?**（非正式）或 **Quel est votre métier ?**（正式）來詢問某人的工作。" },
@@ -466,10 +466,10 @@ const moduleData = {
             { text: "Je travaille dans une école.", en: "I work in a school.", zh: "我在學校工作" }
           ],
           dialogues: [
-            { speaker: "A", text: "Salut ! Ça va ? Qu'est-ce que tu fais ?", en: "Hi! How are you? What are you up to?", zh: "嗨！你好嗎？你在幹嘛？" },
-            { speaker: "B", text: "Ça va, merci. Je me détends, je ne fais rien de spécial. Et toi, qu'est-ce que tu fais dans la vie ?", en: "I'm good, thanks. I'm relaxing, nothing special. And you, what do you do for a living?", zh: "我很好，謝謝。我在放鬆，沒什麼特別的。那你平時是做什麼的呢？" },
-            { speaker: "A", text: "Je suis ingénieur. Je travaille dans le développement de logiciels. C'est passionnant, surtout quand on crée quelque chose de nouveau.", en: "I'm an engineer. I work in software development. It's fascinating, especially when you create something new.", zh: "我是工程師。我在軟體開發領域工作。這很吸引人，特別是當你創造出新東西的時候。" },
-            { speaker: "B", text: "Ah, c'est super ! Moi, je travaille dans une école maternelle, je suis assistante de direction. C'est un travail qui demande beaucoup de patience et d'énergie, mais c'est très gratifiant.", en: "Oh, that's great! I work in a preschool, I'm an executive assistant. It's a job that requires a lot of patience and energy, but it's very rewarding.", zh: "啊，太好了！我則是在幼兒園工作，我是行政助理。這份工作需要很多耐心和精力，但很有回報。" }
+            { speaker: "Female", text: "Salut ! Ça va ? Qu'est-ce que tu fais ?", en: "Hi! How are you? What are you up to?", zh: "嗨！你好嗎？你在幹嘛？" },
+            { speaker: "Male", text: "Ça va, merci. Je me détends, je ne fais rien de spécial. Et toi, qu'est-ce que tu fais dans la vie ?", en: "I'm good, thanks. I'm relaxing, nothing special. And you, what do you do for a living?", zh: "我很好，謝謝。我在放鬆，沒什麼特別的。那你平時是做什麼的呢？" },
+            { speaker: "Female", text: "Je suis ingénieur. Je travaille dans le développement de logiciels. C'est passionnant, surtout quand on crée quelque chose de nouveau.", en: "I'm an engineer. I work in software development. It's fascinating, especially when you create something new.", zh: "我是工程師。我在軟體開發領域工作。這很吸引人，特別是當你創造出新東西的時候。" },
+            { speaker: "Male", text: "Ah, c'est super ! Moi, je travaille dans une école maternelle, je suis assistante de direction. C'est un travail qui demande beaucoup de patience et d'énergie, mais c'est très gratifiant.", en: "Oh, that's great! I work in a preschool, I'm an executive assistant. It's a job that requires a lot of patience and energy, but it's very rewarding.", zh: "啊，太好了！我則是在幼兒園工作，我是行政助理。這份工作需要很多耐心和精力，但很有回報。" }
           ],
           tips: [
             { en: "The phrase **Qu'est-ce que tu fais ?** can be confusing because it can mean 'What are you doing right now?' or 'What do you do for a living?'.", zh: "**Qu'est-ce que tu fais ?** 這個句子可能會讓人困惑，因為它既可以指「你現在正在做什麼？」，也可以指「你的職業是什麼？」" },
@@ -553,10 +553,10 @@ const moduleData = {
             { text: "Qui est-ce ?", en: "Who is this?", zh: "這是誰？" }
           ],
           dialogues: [
-            { speaker: "A", text: "Salut ! Tu es Paul ?", en: "Hi! Are you Paul?", zh: "嗨！你是保羅嗎？" },
-            { speaker: "B", text: "Oui, je suis Paul. Et toi, tu es Emma ?", en: "Yes, I am Paul. And you, are you Emma?", zh: "對，我是保羅。你呢，你是艾瑪嗎？" },
-            { speaker: "A", text: "Oui, c'est ça, je suis Emma. Et qui est-ce ? C'est ton ami ?", en: "Yes, that's right, I'm Emma. And who is this? Is he your friend?", zh: "對，沒錯，我是艾瑪。這是誰？他是你朋友嗎？" },
-            { speaker: "B", text: "Oui, c'est mon ami Marc. Marc, c'est Emma.", en: "Yes, this is my friend Marc. Marc, this is Emma.", zh: "對，這是我朋友馬克。馬克，這是艾瑪。" }
+            { speaker: "Female", text: "Salut ! Tu es Paul ?", en: "Hi! Are you Paul?", zh: "嗨！你是保羅嗎？" },
+            { speaker: "Male", text: "Oui, je suis Paul. Et toi, tu es Emma ?", en: "Yes, I am Paul. And you, are you Emma?", zh: "對，我是保羅。你呢，你是艾瑪嗎？" },
+            { speaker: "Female", text: "Oui, c'est ça, je suis Emma. Et qui est-ce ? C'est ton ami ?", en: "Yes, that's right, I'm Emma. And who is this? Is he your friend?", zh: "對，沒錯，我是艾瑪。這是誰？他是你朋友嗎？" },
+            { speaker: "Male", text: "Oui, c'est mon ami Marc. Marc, c'est Emma.", en: "Yes, this is my friend Marc. Marc, this is Emma.", zh: "對，這是我朋友馬克。馬克，這是艾瑪。" }
           ],
           tips: [
             { en: "The verb **être** (to be) is one of the most important verbs in French. Here is the conjugation for the pronouns we've learned: **Je suis** (I am), **Tu es** (You are), **Il/Elle est** (He/She is).", zh: "動詞 **être** (是) 是法語中最重要的動詞之一。這是我們學過的主詞代名詞變化：**Je suis** (我是), **Tu es** (你是), **Il/Elle est** (他/她是)。" },
@@ -576,9 +576,12 @@ const moduleData = {
             { text: "ils / elles sont", en: "they are", zh: "他們／她們是" }
           ],
           dialogues: [
-            { speaker: "A", text: "Nous sommes des étudiants, et vous ?", en: "We are students, and you?", zh: "我們是學生，你們呢？" },
-            { speaker: "B", text: "Nous sommes aussi étudiants. Il est français et elle est belge. Et vous, d'où êtes-vous ?", en: "We are also students. He is French and she is Belgian. And you, where are you from?", zh: "我們也是學生。他是法國人，她是比利時人。你們呢，來自哪裡？" },
-            { speaker: "A", text: "Moi, je suis chinois et elle est taïwanaise. Nous sommes tous les deux des étudiants en échange.", en: "Me, I am Chinese and she is Taiwanese. We are both exchange students.", zh: "我，我是中國人，而她是台灣人。我們都是交換學生。" }
+            { speaker: "Female", text: "Bonjour, je suis Marie. Et toi, tu es qui ?", en: "Hello, I am Marie. And you, who are you?", zh: "你好，我是瑪麗。你是誰？" },
+            { speaker: "Male", text: "Je suis Paul. Nous sommes dans la même classe.", en: "I am Paul. We are in the same class.", zh: "我是保羅。我們在同一個班。" },
+            { speaker: "Female", text: "Ah oui, il est mon voisin en classe.", en: "Ah yes, he is my class neighbor.", zh: "啊對，他是我在教室旁邊的同學。" },
+            { speaker: "Male", text: "Et elle est ta copine ?", en: "And is she your friend?", zh: "那她是你的朋友嗎？" },
+            { speaker: "Female", text: "Oui, elle est gentille. Nous sommes amis depuis longtemps.", en: "Yes, she is nice. We have been friends for a long time.", zh: "是的，她很友善。我們認識很久了。" },
+            { speaker: "Male", text: "Super ! Ils sont très sympas aussi.", en: "Great! They are very nice too.", zh: "太好了！他們也很友善。" }
           ],
           tips: [
             { en: "The verb **être** has a different form for each subject pronoun. You need to memorize all of them: **suis**, **es**, **est**, **sommes**, **êtes**, **sont**.", zh: "動詞 **être** 的每個人稱都有不同的形式。你需要將它們全部記住：**suis**, **es**, **est**, **sommes**, **êtes**, **sont**。" },
@@ -598,10 +601,12 @@ const moduleData = {
             { text: "leur / leurs", en: "their", zh: "他們／她們的" }
           ],
           dialogues: [
-            { speaker: "A", text: "C'est ton livre ?", en: "Is this your book?", zh: "這是你的書嗎？" },
-            { speaker: "B", text: "Non, ce n'est pas mon livre. C'est son livre, à lui. Et ça, c'est ta voiture ?", "en": "No, this is not my book. It's his book. And this, is it your car?", zh: "不，這不是我的書。那是他的書。那台是你的車嗎？" },
-            { speaker: "A", text: "Oui, c'est ma nouvelle voiture. Notre maison est là-bas. Tu vois nos vélos ?", en: "Yes, it's my new car. Our house is over there. Do you see our bikes?", zh: "對，這是我的新車。我們的房子在那邊。你有看到我們的腳踏車嗎？" },
-            { speaker: "B", text: "Oui, je vois leurs vélos. Leurs vélos sont très beaux !", en: "Yes, I see their bikes. Their bikes are very nice!", zh: "有，我看到他們的腳踏車。他們的腳踏車很漂亮！" }
+            { speaker: "Female", text: "C’est ton sac ?", en: "Is that your bag?", zh: "那是你的包嗎？" },
+            { speaker: "Male", text: "Non, ce n’est pas mon sac. C’est son sac.", en: "No, that’s not my bag. It’s his bag.", zh: "不，那不是我的包。那是他的包。" },
+            { speaker: "Female", text: "Où est ta montre ?", en: "Where is your watch?", zh: "你的手錶在哪裡？" },
+            { speaker: "Male", text: "Ma montre est dans notre chambre.", en: "My watch is in our room.", zh: "我的手錶在我們的房間裡。" },
+            { speaker: "Female", text: "Je vois vos livres. Ce sont vos livres de français ?", en: "I see your books. Are they your French books?", zh: "我看到你們的書。那些是你們的法文書嗎？" },
+            { speaker: "Male", text: "Oui, et là-bas, ce sont leurs cahiers.", en: "Yes, and over there, those are their notebooks.", zh: "對，然後那邊是他們的筆記本。" }
           ],
           tips: [
             { en: "In French, the choice of possessive adjective (**mon / ma / mes**) depends on the gender and number of the noun that is being owned, not the gender of the owner.", zh: "在法語中，所有格形容詞（**mon / ma / mes**）的選擇取決於被擁有的名詞的性別和單複數，而不是擁有者的性別。" },
