@@ -141,12 +141,12 @@ const moduleData = {
             { text: "E tu?", en: "And you?", zh: "你呢？" }
           ],
           dialogues: [
-            { speaker: "A", text: "Ciao! Come stai oggi?", en: "Hi! How are you today?", zh: "嗨！你今天好嗎？" },
-            { speaker: "B", text: "Sto benissimo! Ho appena finito le vacanze. E tu?", en: "I’m great! I just finished my vacation. And you?", zh: "我非常好！我剛放完假。你呢？" },
-            { speaker: "A", text: "Così così. Ho molto lavoro da fare.", en: "So-so. I have a lot of work to do.", zh: "馬馬虎虎，我有很多工作要做。" },
-            { speaker: "B", text: "Oh, capisco. Io invece sono stanco oggi.", en: "Oh, I understand. I’m tired today.", zh: "哦，我懂。我今天反而很累。" },
-            { speaker: "A", text: "Non molto bene, allora. Ti serve un caffè?", en: "Not very well then. Do you need a coffee?", zh: "那就不太好了。你需要一杯咖啡嗎？" },
-            { speaker: "B", text: "Sì, grazie! Un caffè mi aiuterà.", en: "Yes, thank you! A coffee will help me.", zh: "好啊，謝謝！一杯咖啡會幫助我。" }
+            { speaker: "Female", text: "Ciao! Come stai oggi?", en: "Hi! How are you today?", zh: "嗨！你今天好嗎？" },
+            { speaker: "M_chef", text: "Sto benissimo! Ho appena finito le vacanze. E tu?", en: "I’m great! I just finished my vacation. And you?", zh: "我非常好！我剛放完假。你呢？" },
+            { speaker: "Female", text: "Così così. Ho molto lavoro da fare.", en: "So-so. I have a lot of work to do.", zh: "馬馬虎虎，我有很多工作要做。" },
+            { speaker: "M_chef", text: "Oh, capisco. Io invece sono stanco oggi.", en: "Oh, I understand. I’m tired today.", zh: "哦，我懂。我今天反而很累。" },
+            { speaker: "Female", text: "Non molto bene, allora. Ti serve un caffè?", en: "Not very well then. Do you need a coffee?", zh: "那就不太好了。你需要一杯咖啡嗎？" },
+            { speaker: "M_chef", text: "Sì, grazie! Un caffè mi aiuterà.", en: "Yes, thank you! A coffee will help me.", zh: "好啊，謝謝！一杯咖啡會幫助我。" }
           ],
           tips: [
             // The first tip here seems to be a question, not a statement.
@@ -200,14 +200,27 @@ const moduleData = {
             { text: "Posso usare il bagno?", en: "Can I use the bathroom?", zh: "我可以用洗手間嗎？" }
           ],
           dialogues: [
-            { speaker: "Male", text: "Con permesso! Mi scusi, Signora, posso chiederle un’informazione?", en: "Excuse me! Excuse me, Madam, may I ask you for some information?", zh: "不好意思，女士，我可以向您詢問資訊嗎？" },
-            { speaker: "Female", text: "Certamente, Le posso aiutare?", en: "Certainly, can I help you?", zh: "當然，我可以幫您嗎？" },
-            { speaker: "Male", text: "Vorrei comprare un souvenir. C’è un negozio qui vicino?", en: "I'd like to buy a souvenir. Is there a shop nearby?", zh: "我想要買個紀念品。這附近有商店嗎？" },
-            { speaker: "Female", text: "Sì, c’è un negozio lì, a destra.", en: "Yes, there’s a shop there, to the right.", zh: "有的，那邊有一家商店，在右邊。" },
-            { speaker: "Male", text: "Grazie mille! E posso usare il bagno, per favore?", en: "Thank you very much! And can I use the bathroom, please?", zh: "非常感謝！還有，我可以用洗手間嗎？" },
-            { speaker: "Female", text: "Sì, il bagno è là in fondo.", en: "Yes, the bathroom is over there at the end.", zh: "好的，洗手間在裡面盡頭處。" },
-            { speaker: "Male", text: "Grazie!", en: "Thank you!", "zh": "謝謝！" },
-            { speaker: "Female", text: "Prego!", en: "You're welcome!", zh: "不客氣！" }
+            { text: "", en: "Example 1: Asking direction", zh: "例子 1: 問路 + 廁所" },
+            { speaker: "Female", text: "Con permesso! Può aiutarmi?", en: "Excuse me! Can you help me?", zh: "不好意思！您可以幫我嗎？" },
+            { speaker: "M_chef", text: "Sì, certo!", en: "Yes, of course!", zh: "可以，當然！" },
+            { speaker: "Female", text: "C’è un bar qui vicino?", en: "Is there a bar nearby?", zh: "這附近有酒吧嗎？" },
+            { speaker: "M_chef", text: "Sì, è lì, a sinistra.", en: "Yes, it’s there, on the left.", zh: "有，在那裡，左邊。" },
+            { speaker: "Female", text: "Posso usare il bagno?", en: "Can I use the bathroom?", zh: "我可以用洗手間嗎？" },
+            { speaker: "M_chef", text: "Sì, in fondo al corridoio.", en: "Yes, at the end of the corridor.", zh: "可以，在走廊盡頭。" },
+            { text: "", en: "Example 2: ordering food", zh: "例子 2: 點餐" },
+            { speaker: "Female", text: "Con permesso! Posso sedermi qui?", en: "Excuse me! Can I sit here?", zh: "不好意思！我可以坐這裡嗎？" },
+            { speaker: "M_chef", text: "Sì, certo.", en: "Yes, of course.", zh: "可以，當然。" },
+            { speaker: "Female", text: "Vorrei un caffè e un cornetto.", en: "I would like a coffee and a croissant.", zh: "我想要一杯咖啡和一個可頌。" },
+            { speaker: "M_chef", text: "Va bene. C’è altro?", en: "Okay. Is there anything else?", zh: "好的，還要別的嗎？" },
+            { speaker: "Female", text: "No, grazie! E posso usare il bagno?", en: "No, thanks! And can I use the bathroom?", zh: "不用了，謝謝！還有我可以用洗手間嗎？" },
+            { speaker: "M_chef", text: "Sì, è vicino alla porta.", en: "Yes, it’s near the door.", zh: "可以，就在門旁邊。" },
+            { text: "", en: "Example 3: Shopping", zh: "例子 3: 買東西" },
+            { speaker: "Female", text: "Con permesso! Ti posso aiutare?", en: "Excuse me! Can I help you?", zh: "不好意思！我可以幫你嗎？" },
+            { speaker: "M_chef", text: "Sì, vorrei una bottiglia d’acqua.", en: "Yes, I’d like a bottle of water.", zh: "好啊，我想要一瓶水。" },
+            { speaker: "Female", text: "C’è acqua frizzante?", en: "Is there sparkling water?", zh: "有氣泡水嗎？" },
+            { speaker: "M_chef", text: "Sì, ci sono bottiglie piccole e grandi.", en: "Yes, there are small and large bottles.", zh: "有，小瓶和大瓶的。" },
+            { speaker: "Female", text: "Prendo una grande, grazie!", en: "I’ll take a large one, thank you!", zh: "我要一瓶大的，謝謝！" },
+            { speaker: "M_chef", text: "Perfetto. Sono 2 euro.", en: "Perfect. That’s 2 euros.", zh: "好，兩歐元。" }
           ],
           tips: [
             { en: "Use **Vorrei...** (I would like...) to make a request politely, as it's less direct than **Voglio...** (I want...).", zh: "使用 **Vorrei...** (我想要...) 來禮貌地提出請求，它比 **Voglio...** (我想要...) 更不直接。" },
@@ -224,16 +237,16 @@ const moduleData = {
             { text: "Può ripetere, per favore?", en: "Can you repeat, please?", zh: "請您再說一遍，好嗎？" },
             { text: "Può parlare più lentamente?", en: "Can you speak more slowly?", zh: "您可以說慢一點嗎？" },
             { text: "Mi dispiace", en: "I’m sorry", zh: "我很抱歉" },
-            { text: "Certamente / Certo", en: "Certainly / Of course", zh: "當然" },
-            { text: "Volentieri", en: "Gladly / With pleasure", zh: "樂意之至 / 很願意" }
+            { text: "Certo", en: "Of course", zh: "當然" },
+            { text: "Volentieri", en: "Gladly", zh: "樂意之至" }
           ],
           dialogues: [
-            { speaker: "Female", text: "Scusi, posso fare una domanda? C'è un treno per Firenze?", en: "Excuse me, can I ask a question? Is there a train to Florence?", zh: "不好意思，我可以問一個問題嗎？有去佛羅倫斯的火車嗎？" },
-            { speaker: "Male", text: "Certo! Volentieri! Il treno delle 14:30 parte dal binario nove. È il Frecciarossa.", en: "Of course! Gladly! The 2:30 PM train leaves from platform nine. It's the Frecciarossa.", zh: "當然！樂意之至！下午兩點半的火車從第九月台出發。是紅箭特快。" },
-            { speaker: "Female", text: "Mi dispiace, non capisco bene l’italiano... Può parlare più lentamente, per favore?", en: "I'm sorry, I don't understand Italian well... Can you speak more slowly, please?", zh: "我很抱歉，我不太懂義大利語……可以請您說慢一點嗎？" },
-            { speaker: "Male", text: "Ah, certo! Il treno parte alle quattordici e trenta. Dal binario numero nove.", en: "Oh, of course! The train leaves at fourteen thirty. From platform number nine.", zh: "啊，好的！火車會在十四點三十分發車。從第九月台。" },
-            { speaker: "Female", text: "Può ripetere il numero del binario?", en: "Can you repeat the platform number?", zh: "您可以再重複一次月台號碼嗎？" },
-            { speaker: "Male", text: "Sì, binario nove. E il treno è il Frecciarossa.", en: "Yes, platform nine. And the train is the Frecciarossa.", zh: "好的，第九月台。火車是紅箭特快。" },
+            { speaker: "Female", text: "Scusi, c’è un treno per Firenze?", en: "Excuse me, is there a train to Florence?", zh: "不好意思，有去佛羅倫斯的火車嗎？" },
+            { speaker: "Male", text: "Certo! Il treno delle 14:30 dal binario nove.", en: "Of course! The 2:30 PM train from platform nine.", zh: "當然！下午兩點半從第九月台出發。" },
+            { speaker: "Female", text: "Mi dispiace, non capisco… Può parlare più lentamente?", en: "I’m sorry, I don’t understand… Can you speak more slowly?", zh: "不好意思，我不太懂……您可以說慢一點嗎？" },
+            { speaker: "Male", text: "Certo. Parte alle 14:30. Binario nove.", en: "Of course. Leaves at 2:30. Platform nine.", zh: "好的。兩點半發車。第九月台。" },
+            { speaker: "Female", text: "Può ripetere il binario?", en: "Can you repeat the platform?", zh: "您可以再說一次月台嗎？" },
+            { speaker: "Male", text: "Binario nove. Frecciarossa.", en: "Platform nine. Frecciarossa.", zh: "第九月台。紅箭特快。" },
             { speaker: "Female", text: "Ah! Capisco, grazie mille!", en: "Ah! I understand, thank you very much!", zh: "啊！我懂了，非常感謝！" }
           ],
           tips: [
