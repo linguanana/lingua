@@ -1,11 +1,14 @@
 
 
 python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > out
-python3 gen_ep_audio.py out ../../italian-life/travel/audio/
+python3 gen_audio.py out ../../italian-life/travel/audio/
 
 
 python3 gen_mod_list.py ../../italian-life/module1/mod/mod1.js > mod
-python3 gen_ep_audio.py mod ../../italian-life/module1/audio/
+$ python3 gen_mod_list.py 3 ../../italian-life/module1/mod/mod1.js > mod
+$ python3 gen_mod_list.py 2,4 ../../italian-life/module1/mod/mod1.js > mod
+$ python3 gen_mod_list.py 2-4 ../../italian-life/module1/mod/mod1.js > mod
+python3 gen_audio.py mod ../../italian-life/module1/audio/
 
 
 

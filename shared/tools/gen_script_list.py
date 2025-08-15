@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 使用方法
+# $ python3 gen_script_list.py --foreign-lang fr-FR --input ../../french-life/module1/video-script/lesson1.txt > script
 
 import argparse, json, re, sys, ast, os
 from typing import Dict, List
 
+# we are not using this , we use one in inout file
 DEFAULT_SPEAKER_CONFIG = {
-    "en-US": {"voice_id": "en-US-Standard-E", "prosody": {"rate": "70%", "pitch": "1st"}},
+    "en-US": {"voice_id": "en-US-Standard-H", "prosody": {"rate": "90%", "pitch": "2st"}},
     "fr-FR": {"voice_id": "fr-FR-Standard-E", "prosody": {"rate": "60%", "pitch": "2st"}},
-    "it-IT": {"voice_id": "it-IT-Standard-E", "prosody": {"rate": "60%", "pitch": "1st"}},
+    "it-IT": {"voice_id": "it-IT-Standard-E", "prosody": {"rate": "60%", "pitch": "2st"}},
 }
+
+# 設定外語單字前後的停頓時間（毫秒)
+FOREIGN_PAUSE_MS = 500
 
 FILENAME_RE = re.compile(r"^\s*(lesson\d+-part\d+\.mp3)\s*:?\s*$", re.IGNORECASE)
 END_RE = re.compile(r"^\s*===end\s*$", re.IGNORECASE)
@@ -105,79 +111,110 @@ def escape_text(s: str) -> str:
     return s
 
 def insert_punctuation_breaks(s: str) -> str:
-    # sentence endings
-    s = re.sub(r"([\.!?])(\s+)", r"\1<break time='550ms'/>\2", s)
-    # commas/semicolons
-    s = re.sub(r"(,|;)(\s+)", r"\1<break time='250ms'/>\2", s)
-    # colon
-    s = re.sub(r"(:)(\s+)", r"\1<break time='300ms'/>\2", s)
-    # double newlines => paragraph pause
-    s = re.sub(r"\n{2,}", r"<break time='650ms'/>", s)
-    # single newlines => space
-    s = re.sub(r"\n", " ", s)
-    return s
+    # 1. 處理連續換行符號 (段落停頓)
+    # 必須在處理單個換行符號之前執行
+    s = re.sub(r'\n{2,}', r'<break time="1000ms"/>', s)
+
+    # 2. 處理單個換行符號 (長停頓)
+    s = re.sub(r'\n', r'<break time="1000ms"/>', s)
+
+    # 3. 處理句點、問號、驚嘆號
+    s = re.sub(r'([\.!?])', r'\1<break time="550ms"/>', s)
+
+    # 4. 處理逗號、分號
+    s = re.sub(r'(,;)', r'\1<break time="250ms"/>', s)
+
+    # 5. 處理冒號
+    s = re.sub(r'(:)', r'\1<break time="300ms"/>', s)
+
+    # 6. 最後將多餘的空白字元替換成單一空格
+    s = re.sub(r'\s+', ' ', s)
+
+    return s.strip()
+
 
 def autotag_asterisks_as_foreign(s: str, foreign_lang: str) -> str:
     """
-    ***word*** or **word** -> [FR]word[/FR] markers (temporary)
-    We'll convert markers to <lang> with 500ms breaks around later.
+    ***word*** or **word** -> temporary markers for foreign content.
     """
-    def repl(m): return f"[FR]{m.group(1).strip()}[/FR]"
+    # Use a unique temporary marker to avoid collisions
+    def repl(m): return f"[[{foreign_lang}]]{m.group(1).strip()}[[/]]"
     s = re.sub(r"\*\*\*(.+?)\*\*\*", repl, s, flags=re.DOTALL)
     s = re.sub(r"\*\*(.+?)\*\*", repl, s, flags=re.DOTALL)
     return s
 
-def convert_markers_to_lang(s: str, foreign_lang: str) -> str:
-    # ensure spacing around markers (add 0.5s before & after)
-    s = s.replace("[FR]", f"<break time='500ms'/><lang xml:lang='{foreign_lang}'>")
-    s = s.replace("[/FR]", f"</lang><break time='500ms'/>")
-    return s
-
-def wrap_with_voice(ssml_inner: str, base_voice: str, base_rate: str, base_pitch: str) -> str:
-    return (
-        f"<speak>"
-        f"<voice name=\"{base_voice}\">"
-        f"<prosody rate=\"{base_rate}\" pitch=\"{base_pitch}\">"
-        f"{ssml_inner}"
-        f"</prosody></voice></speak>"
-    )
-
 def build_ssml_blocks(raw_text: str, base_lang: str, foreign_lang: str) -> List[Dict]:
     speaker_cfg = parse_speaker_config(raw_text)
-    base_cfg = speaker_cfg.get(base_lang, DEFAULT_SPEAKER_CONFIG[base_lang])
-    base_voice = base_cfg["voice_id"]
-    base_rate = base_cfg["prosody"].get("rate", "70%")
-    base_pitch = base_cfg["prosody"].get("pitch", "0st")
+    base_cfg = speaker_cfg.get(base_lang, DEFAULT_SPEAKER_CONFIG.get(base_lang, {}))
+    foreign_cfg = speaker_cfg.get(foreign_lang, DEFAULT_SPEAKER_CONFIG.get(foreign_lang, {}))
 
-    # extract audio blocks
+    if not base_cfg or not foreign_cfg:
+        print("錯誤: SPEAKER_CONFIG 中缺少基礎語言或外語設定。")
+        sys.exit(1)
+
+    # Extract audio blocks from the text file
     blocks = find_blocks(raw_text)
     out = []
 
     for b in blocks:
         body = b["body"]
 
-        # 1) auto-tag **…** as foreign markers
+        # 1) Auto-tag **...** as foreign markers
         body = autotag_asterisks_as_foreign(body, foreign_lang)
 
-        # 2) escape text (so literal < > don’t break SSML)
+        # 2) Escape text to be SSML-safe
         body = escape_text(body)
 
-        # 3) punctuation-based pauses + paragraph pauses
+        # 3) Insert punctuation-based pauses
         body = insert_punctuation_breaks(body)
 
-        # 4) convert [FR] markers to <lang xml:lang='fr-FR'>…</lang> with 500ms pads
-        body = convert_markers_to_lang(body, foreign_lang)
+        # 4) Split the text by the foreign language markers
+        parts = re.split(r"(\[\[" + re.escape(foreign_lang) + r"\]\](?:.+?)\[\[/\]\])", body)
 
-        # 5) produce final SSML (base voice; Google respects <lang> inside)
-        ssml = wrap_with_voice(body, base_voice, base_rate, base_pitch)
+        # 5) Build the SSML with separate voice tags for each language
+        ssml_inner = []
+        for part in parts:
+            if not part:
+                continue
 
-        out.append({"name": b["name"], "ssml": ssml})
+            m = re.match(r"\[\[(.+?)\]\](.+?)\[\[/\]\]", part)
+            if m:
+                # This is a foreign language segment
+                lang_code = m.group(1)
+                text_content = m.group(2).strip()
+                cfg = speaker_cfg.get(lang_code, {})
+                if not cfg:
+                    print(f"警告: 找不到語言 {lang_code} 的設定，使用基礎語言。")
+                    cfg = base_cfg
+
+                ssml_inner.append(
+                    f"<break time='{FOREIGN_PAUSE_MS}ms'/>"
+                    f"<voice name=\"{cfg['voice_id']}\">"
+                    f"<prosody rate=\"{cfg['prosody']['rate']}\" pitch=\"{cfg['prosody']['pitch']}\">"
+                    f"{text_content}"
+                    f"</prosody>"
+                    f"</voice>"
+                    f"<break time='{FOREIGN_PAUSE_MS}ms'/>"
+                )
+            else:
+                # This is the base language segment
+                ssml_inner.append(
+                    f"<voice name=\"{base_cfg['voice_id']}\">"
+                    f"<prosody rate=\"{base_cfg['prosody']['rate']}\" pitch=\"{base_cfg['prosody']['pitch']}\">"
+                    f"{part.strip()}"
+                    f"</prosody>"
+                    f"</voice>"
+                )
+
+        final_ssml = f"<speak>{''.join(ssml_inner)}</speak>"
+
+        out.append({"name": b["name"], "ssml": final_ssml})
 
     return out
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--lang", required=True, help="Base narration language (e.g., en-US)")
+    ap.add_argument("--lang", default="en-US", help="Base narration language (e.g., en-US)")
     ap.add_argument("--input", required=True, help="Path to lesson text")
     ap.add_argument("--out", default="script.json", help="Output JSON")
     ap.add_argument("--foreign-lang", default="fr-FR", help="Foreign language tag (for **…**)")
@@ -188,10 +225,10 @@ def main():
 
     items = build_ssml_blocks(text, args.lang, args.foreign_lang)
 
-    with open(args.out, "w", encoding="utf-8") as f:
-        json.dump(items, f, ensure_ascii=False, indent=2)
+    json.dump(items, sys.stdout, ensure_ascii=False, indent=2)
 
-    print(f"✓ Wrote {args.out} with {len(items)} item(s).")
+    print(f"\n✓ Generated {len(items)} item(s). Use ' > filename.json' to save.", file=sys.stderr)
+
 
 if __name__ == "__main__":
     main()

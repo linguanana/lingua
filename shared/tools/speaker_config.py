@@ -1,33 +1,30 @@
+#
+#en-US-Standard-H
+# female
+# france male fr-FR-Standard-G
+# en-US-Standard-F --rate 0.75 --pitch 1
+
 SPEAKER_CONFIG = {
+    # Italian
     "default": {
         "voice_id": "Standard-E",
-        "prosody": {"rate": "75%", "pitch": "2st"},
+        "prosody": {"rate": "55%", "pitch": "2st"},
         "emoji": "👱🏻‍♀️"
     },
     "Female": {
-        "voice_id": "Neural2-E",
-        "prosody": {"rate": "75%", "pitch": "2st"},
+        "voice_id": "Standard-E",
+        "prosody": {"rate": "55%", "pitch": "2st"},
         "emoji": "👩"
     },
     "Male": {
-        "voice_id": "Neural2-F",
-        "prosody": {"rate": "75%", "pitch": "2st"},
+        "voice_id": "Standard-D",
+        "prosody": {"rate": "55%", "pitch": "0st"},
         "emoji": "🧑"
     },
     "M_chef": {
-        "voice_id": "Neural2-C",
-        "prosody": {"rate": "75%", "pitch": "2st"},
+        "voice_id": "Standard-D",
+        "prosody": {"rate": "55%", "pitch": "0st"},
         "emoji": "👨🏻‍🍳"
-    },
-    "F_std": {
-        "voice_id": "Standard-E",
-        "prosody": {"rate": "75%", "pitch": "2st"},
-        "emoji": "👩"
-    },
-    "M_std": {
-        "voice_id": "Standard-F",
-        "prosody": {"rate": "75%", "pitch": "2st"},
-        "emoji": "🧑"
     },
     "F_hd": {
         "voice_id": "Chirp3-HD-Leda",
@@ -44,14 +41,21 @@ SPEAKER_CONFIG = {
         "prosody": {"rate": "100%", "pitch": "0st"}, # Chirp3-HD 語音的預設語速和音調可能不同，可以根據需要調整
         "emoji": "👨🏻‍🍳"
     },
-    "F_wave": {
-        "voice_id": "Wavenet-E",
-        "prosody": {"rate": "75%", "pitch": "2st"},
+
+    # FRENCH
+    "Female_FR": {
+        "voice_id": "Standard-E",
+        "prosody": {"rate": "50%", "pitch": "2st"},
         "emoji": "👩"
     },
-    "M_wave": {
-        "voice_id": "Wavenet-F",
-        "prosody": {"rate": "75%", "pitch": "2st"},
+    "Male_FR": {
+        "voice_id": "Standard-D",
+        "prosody": {"rate": "50%", "pitch": "1st"},
         "emoji": "🧑"
     },
+    "M_chef_FR": {
+        "voice_id": "Standard-D",
+        "prosody": {"rate": "50%", "pitch": "1st"},
+        "emoji": "👨🏻‍🍳"
+    }
 }

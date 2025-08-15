@@ -1,120 +1,157 @@
 🩷🩷 Slide 1
 ********** TEXT **********
 
-🎬 Lesson 5
-Where are you from? – Di dove sei?
+🎬 Lesson 6
+What are you doing? – Che cosa fai?
 
-Part 1: Ask and Answer Where You’re From
+Part 1: Asking What Someone Is Doing Now
 
 ********** EN Script (talking script) **********
 Ciao! {{pause=500}}
-Today you’ll learn how to ask and answer {{pause=500}}“Where are you from?” in Italian.
-We’ll also learn how to say where someone is from — casually or politely.
-Let’s begin! 🇮🇹
+Today we’ll learn how to ask {{pause=300}}and answer{{pause=300}} “What are you doing?” in Italian. {{pause=700}}
+We’ll use super common phrases you can say right away in real life. {{pause=700}}
+Ready? Let’s start! 🇮🇹
 
 🩷🩷 Slide 2
 ********** TEXT **********
-Di dove sei? – Where are you from? (informal)
-Di dov’è? – Where are you from? (formal)
-Io sono di Milano – I’m from Milan
-Vengo da New York – I come from New York
-Sei italiano / italiana? – Are you Italian?
-No, sono americano / americana – No, I’m American
+Che cosa fai? – What are you doing? (neutral)
+Cosa fai? – What are you doing? (more casual)
+Studio. – I’m studying.
+Lavoro. – I’m working.
+Faccio colazione. – I’m having breakfast.
+Faccio pranzo. – I’m having lunch.
+Faccio cena. – I’m having dinner.
+Niente (di speciale). – Nothing (special).
+Sto studiando l’italiano. – I’m studying Italian.
+Sto navigando in internet. – I’m surfing the internet.
 
 ********** IT Script (talking script) **********
-Di dove sei? {{pause=1000}}
-Di dov’è? {{pause=1000}}
-Io sono di Milano {{pause=1000}}
-Vengo da New York {{pause=1000}}
-Sei italiano? / italiana? {{pause=1000}}
-Sono americano / americana {{pause=1000}}
+Che cosa fai? {{pause=1000}}
+Cosa fai? {{pause=1000}}
+Studio. {{pause=1000}}
+Lavoro. {{pause=1000}}
+Faccio colazione. {{pause=1000}}
+Faccio pranzo. {{pause=1000}}
+Faccio cena. {{pause=1000}}
+Niente, {{pause=300}} (di speciale). {{pause=1000}}
+Sto studiando l’italiano. {{pause=1000}}
+Sto navigando in internet. {{pause=1000}}
 
 🩷🩷 Slide 3
 ********** TEXT **********
- same as Slide 2
+same as Slide 2
 
 ********** EN Script (talking script) **********
- {{pause=2000}}“Di dove sei?”{{pause=2000}}
- means “Where are you from?” — it’s used informally. {{pause=1000}}
+There are a few ways to ask and answer "What are you doing?" in Italian. {{pause=1000}}
 
- {{pause=2000}}“Di dov’è?”{{pause=2000}}
- is the formal version — use it with someone you don’t know well. {{pause=1000}}
+The most neutral way to ask is  {{pause=1000}}   “Che cosa fai?” {{pause=500}}
 
- You can say:
- {{pause=2000}}“Io sono di Milano”{{pause=2000}} — I’m from Milan.
- Use **"Sono di..."** when you’re talking about a city. {{pause=1000}}
+You'll often hear a shorter, more casual version:   {{pause=1000}}  Cosa fai?” {{pause=1000}}
 
- Or say:
- {{pause=2000}}“Vengo da Taiwan”{{pause=2000}} — I come from Taiwan.
- Use **"Vengo da..."** for countries or to emphasize where you come from. {{pause=1000}}
+Now, for how to answer. {{pause=1000}}
 
- Examples:
- {{pause=2000}}“Vengo da Taiwan”{{pause=2000}} — I come from Taiwan.
- {{pause=2000}}“Vengo dagli Stati Uniti”{{pause=2000}} — I come from the United States. {{pause=1000}}
+Sometimes, Italian uses the simple present tense to talk about what you're doing right now. {{pause=1000}}
 
- To ask if someone is Italian:
- {{pause=2000}}“Sei italiano?” {{pause=500}} or {{pause=500}} “italiana?”{{pause=2000}}
- depending on gender. {{pause=1000}}
+For example: {{pause=500}}
 
- If not, you might say:
- {{pause=2000}}“No, sono americano”{{pause=2000}} — I’m American.
- Or {{pause=2000}}“americana”{{pause=2000}} if you’re a woman.
+{{pause=500}}  Studio {{pause=500}}  means “I’m studying.”.” {{pause=1000}}
 
- 🩷🩷 Slide
+{{pause=500}}  Lavoro {{pause=500}}  means “I’m working.” {{pause=1000}}
+
+For other actions currently in progress, you can use a more specific structure.” {{pause=1000}}
+ {{pause=500}}   sto  {{pause=500}}plus the gerund form of the verb. {{pause=2000}}
+
+Like this: {{pause=500}}
+{{pause=500}}   “Sto studiando l’italiano  {{pause=500}}   means “I’m studying Italian.” {{pause=1000}}
+
+ {{pause=500}}  Sto navigando in internet  {{pause=500}}   means “I’m surfing the internet.” {{pause=1500}}
+
+Now, for talking about meals, it’s a bit different. {{pause=1000}}
+
+You use the verb  {{pause=500}}fare {{pause=500}} in the simple present tense. {{pause=1000}}
+
+ {{pause=500}}  Faccio colazione” {{pause=500}}  means “I’m having breakfast.” {{pause=800}}
+
+ {{pause=500}}  Faccio pranzo  {{pause=500}}   means “I’m having lunch.” {{pause=800}}
+
+And  {{pause=500}}  Faccio cena  {{pause=500}}  means “I’m having dinner.” {{pause=1500}}
+
+While you might sometimes hear  {{pause=500}}  sto facendo colazione, {{pause=500}}   the simple present version,  {{pause=500}}  faccio colazione, {{pause=500}}   is more common. {{pause=1000}}
+
+Finally, if you're not doing anything special, you can simply say: {{pause=1000}}
+
+” {{pause=500}}  Niente {{pause=500}} or  {{pause=500}}Niente di speciale {{pause=500}}
+
+This means, “Nothing special.” {{pause=1000}}
+
+🩷🩷 Slide 4
 ********** TEXT **********
 
-🎬 Lesson 5
-Where are you from? & Where do you live?
+🎬 Lesson 6
+What do you do for work? – Che lavoro fai?
 
-Part 2: Talking About Where You Live
+Part 2: Talking About Jobs
 
 ********** EN Script (talking script) **********
-You might feel like it’s a lot to remember —
-but don’t worry! {{pause=500}}
-We’re focusing on real-life conversations,
-so just listen for now — you don’t need to memorize everything! {{pause=1000}}
+Great! {{pause=400}} Now let’s talk about jobs. {{pause=600}}
+You’ll learn to ask someone what they do, and give a simple answer about your job or situation. {{pause=900}}
+No pressure to memorize everything—just listen first. The more you hear it, the more it sticks. 🎵 {{pause=900}}
+Andiamo! 🇮🇹
 
-Later, when you listen to the song again,
-these phrases will start to stick. 🎵 {{pause=500}}
-Once the music helps you remember,
-you can come back and review this part. 💡 {{pause=500}}
-
-Ready? Let’s go! 🇮🇹
-
-🩷🩷 Slide
+🩷🩷 Slide 5
 ********** TEXT **********
-Dove abiti? – Where do you live? (informal)
-Dove vive? – Where do you live? (formal)
-Abito a Roma – I live in Rome
-Anch’io abito lì – I live there too
-In quale zona? – In which area?
-Da quanto tempo? – For how long?
+Che lavoro fai? – What do you do for work?
+Che lavoro fa? -
+Faccio l’insegnante. – I’m a teacher.
+Faccio il medico. – I’m a doctor.
+Lavoro in un ufficio. – I work in an office.
+Sono studente / studentessa. – I’m a student.
+Sono disoccupato / disoccupata. – I’m unemployed.
 
 ********** IT Script (talking script) **********
-Dove abiti? {{pause=1000}}
-Dove vive? {{pause=1000}}
-Abito a Roma {{pause=1000}}
-Anch’io abito lì {{pause=1000}}
-In quale zona? {{pause=1000}}
-Da quanto tempo? {{pause=1000}}
+Che lavoro fai? {{pause=1000}}
+Che lavoro fa?
+Faccio l’insegnante. {{pause=1000}}
+Faccio il medico. {{pause=1000}}
+Lavoro in un ufficio. {{pause=1000}}
+Sono studente / studentessa. {{pause=1000}}
+Sono disoccupato / disoccupata. {{pause=1000}}
 
 🩷🩷 Slide 6
 ********** TEXT **********
 same as Slide 5
 
 ********** EN Script (talking script) **********
-To ask someone where they live, say:
-{{pause=2000}}“Dove abiti?”{{pause=2000}} — informal.
-Or
-{{pause=2000}}“Dove vive?”{{pause=2000}} — the formal version. {{pause=1000}}
+Let's learn how to talk about your job in Italian. {{pause=1000}}
 
-If you live in a city, say:
-{{pause=2000}}“Abito a Roma”{{pause=2000}} — I live in Rome.
-And to respond with “me too,” say:
-{{pause=2000}}“Anch’io abito lì”{{pause=2000}} — I live there too. {{pause=1000}}
+To ask someone what they do for a living, you can say: {{pause=1000}}
 
-Want to know more?
-Ask:
-{{pause=2000}}“In quale zona?”{{pause=2000}} — In which area?
-Or
-{{pause=2000}}“Da quanto tempo?”{{pause=2000}} — For how long have you lived there?
+ {{pause=500}}Che lavoro fai?”  {{pause=500}}
+This is the informal way to ask. {{pause=1000}}
+
+For a polite or formal situation, like with a stranger, you would say: {{pause=1000}}
+ {{pause=500}}Che lavoro fa?”  {{pause=500}}
+
+Now, let's look at how to answer. {{pause=1000}}
+
+The most common way to answer is with "faccio" plus the correct article and your profession. {{pause=1500}}
+
+For example: {{pause=500}}
+ {{pause=500}}Faccio l’insegnante. {{pause=500}} which means “I’m a teacher.” {{pause=1000}}
+ {{pause=500}}Faccio il medico. {{pause=500}}which means “I’m a doctor.” {{pause=1000}}
+
+If you are a student, the words change based on gender:  {{pause=500}}
+{{pause=500}}Sono studente.{{pause=500}} for a male student. {{pause=500}}
+{{pause=500}}Sono studentessa.{{pause=500}} for a female student. {{pause=1000}}
+
+You can also use  {{pause=500}}sono {{pause=500}} plus your profession. This is a bit simpler. {{pause=1500}}
+ {{pause=500}}Sono insegnante.” {{pause=800}}
+ {{pause=500}}Sono medico.” {{pause=1000}}
+
+If you want to talk about where you work, you can say: {{pause=1000}}
+{{pause=500}}Lavoro in un ufficio.{{pause=500}} meaning “I work in an office.” {{pause=1000}}
+
+
+If you’re currently between jobs, you would say: {{pause=1500}}
+{{pause=500}}Sono disoccupato.{{pause=500}} if you are male. {{pause=1000}}
+{{pause=500}}Sono disoccupata.{{pause=500}} if you are female. {{pause=1-00}}

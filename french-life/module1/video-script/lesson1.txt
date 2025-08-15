@@ -1,271 +1,66 @@
-🎬 French Lesson 1 – Greetings & Goodbyes (Level 1)
+SPEAKER_CONFIG = {
+    # FRENCH
+    "fr-FR": {
+        "voice_id": "fr-FR-Standard-E",
+        "prosody": {"rate": "60%", "pitch": "2st"},
+    },
+    "en-US": {
+        "voice_id": "en-US-Standard-H",
+        "prosody": {"rate": "90%", "pitch": "2st"},
+    },
+}
 
-🩷🩷 Slide 1 *************************
- *************** TEXT: ***************
-
-🎬 French Lesson 1 - Greetings & Goodbyes
-
+🎬 French Lesson 1 – Greetings & Goodbyes
 Part 1: Say Hello
 Part 2: Goodbye(s)
 
-==========🎤 English Voice (Script): ==========
-Welcome to your first French lesson! {{pause=500}}
-Exciting, isn’t it? {{pause=500}}
-
-Today, you’ll learn real phrases —
-the kind French speakers use every day. {{pause=500}}
-
-Just like in English,
-greetings in French change depending on the time of day, {{pause=500}}
-and whether you're being formal or just casual. {{pause=500}}
-
-Once you know these simple greetings,
-you’ll feel confident starting any conversation. {{pause=500}}
-
-So — let’s explore what these beautiful words mean…
-and say them out loud together! {{pause=800}}
-
-
-🩷🩷 Slide 2 *************************
- *************** TEXT: ***************
-
-Salut ! – Hi / Bye
+Part 1:
+Salut ! - Hi! / Bye! (informal)
 Coucou - Hi there! (playful, for close friends or kids)
-Bonjour ! – Good morning / Hello
-Bon après-midi ! – Good afternoon
-Bonsoir ! – Good evening
-Bonne nuit ! – Good night
-
-==========🎤 French Voice (講稿1)：==========
-Salut  {{pause=1000}}
-Coucou  {{pause=1000}}
-Bonjour  {{pause=1000}}
-Bon après-midi  {{pause=1000}}
-Bonsoir {{pause=1000}}
-Bonne nuit !{{pause=1000}}
-
-
-🩷🩷 Slide 3 *************************
- *************** TEXT: ***************
-如上
-
-==========🎤 English Voice (講稿)：==========
-In French, there are different ways to say “hello” — depending on the time of day. {{pause=500}}
-
-{{pause=1000}} Salut ! {{pause=1000}}
-— This is super casual. Like saying “Hey!” to a friend. {{pause=500}}
-
-{{pause=1000}} Coucou ! {{pause=1000}}
-— This one’s even cuter. You say it to close friends, kids, or someone you love. {{pause=500}}
-It’s like saying “Hi hi!” or “Peekaboo!” with a smile. {{pause=500}}
-
-{{pause=1000}} Bonjour ! {{pause=1000}}
-— Means “Good morning” or just “Hello” during the day. {{pause=500}}
-
-{{pause=1000}} Bon après-midi ! {{pause=1000}}
-— This means “Good afternoon,” but it’s not used to greet — it’s more for saying goodbye in the afternoon. {{pause=500}}
-
-{{pause=1000}} Bonsoir ! {{pause=1000}}
-— Use this in the evening, like “Good evening.” {{pause=500}}
-
-{{pause=1000}} Bonne nuit ! {{pause=1000}}
-— Say this only at night, when someone is going to sleep — like “Good night.” {{pause=500}}
-
-
-🩷🩷 Slide 4 *************************
- *************** TEXT: ***************
-
-Lesson 1
-Greetings in everyday French
-
-
-Wrap-up & What’s Next
-Part 2: Goodbyes
-
-==========🎤 English Voice (講稿)：==========
-
-Great job today! {{pause=500}}
-You’ve just completed your first French lesson. 🎉 {{pause=500}}
-
-Up next: we’ll learn 13 different ways to say goodbye in French {{pause=500}}
-Are you ready? {{pause=300}}  Let’s discover them together! 🇮🇹 {{pause=500}}
-
-
-🩷🩷 Slide 5 *************************
- *************** TEXT: ***************
-
-
- Au revoir – Goodbye (polite and standard)
- Salut – Bye (casual, also means "hi")
-
- À bientôt – See you soon
- À tout à l’heure – See you later (same day, certain)
- À plus tard – Catch you later (casual, maybe)
-
- À demain – See you tomorrow
- À la prochaine – Until next time
- À la semaine prochaine – See you next week
-
- On se voit – See you (in person)
- On se parle – Talk soon (by phone or message)
-
- Bonne journée – Have a good day
- Bonne soirée – Have a good evening
-
-
-
-
-
-==========🎤 English Voice (講稿)：==========
-
-Au revoir.{{pause=1000}}
-Salut !{{pause=1000}}
-À bientôt.{{pause=1000}}
-À tout à l’heure.{{pause=1000}}
-À plus tard.{{pause=1000}}
-À demain.{{pause=1000}}
-À la prochaine.{{pause=1000}}
-À la semaine prochaine.{{pause=1000}}
-On se voit.{{pause=1000}}
-On se parle.{{pause=1000}}
-Bonne journée.{{pause=1000}}
-Bonne soirée.{{pause=1000}}
-
-
-
-
-🩷🩷 Slide 6 *************************
- *************** TEXT: ***************
-
-如上
-
-==========🎤 English Voice (講稿)：==========
-
-{{pause=1000}}Au revoir{{pause=1000}}
-It means “Goodbye” — polite and formal.{{pause=500}}
-You use it when saying goodbye to someone you don’t know well {{pause=500}}
-like when you're checking out of a hotel, or after paying at a store. {{pause=1000}}
-You wouldn’t usually say this to your close friends  {{pause=500}}
-they’d just say  {{pause=500}}Salut {{pause=500}} or  {{pause=500}}À plus {{pause=500}} instead. {{pause=500}}
-
-{{pause=500}}Salut !{{pause=1000}}
-Hi or bye — friendly and casual. Use it with friends, like saying “Hey!” or “See ya!”{{pause=1000}}
-
-{{pause=500}}À bientôt{{pause=1000}}
-It means “See you soon.”{{pause=500}}
-Use it when you think you’ll see the person again — maybe in a few days.{{pause=1000}}
-For example, after lunch with a friend, you can say:{{pause=500}}
-“Thanks for today {{pause=500}}À bientôt!”{{pause=500}}
-
-
-{{pause=500}}À tout à l’heure{{pause=1000}}
-It means “See you later today.”{{pause=500}}
-Use it when you’re sure you’ll meet again — like this afternoon.{{pause=1000}}
-For example, in the morning at work, you might say:{{pause=500}}
-“Let’s talk again after lunch {{pause=500}} À tout à l’heure!”{{pause=500}}
-
-{{pause=1000}}À plus tard{{pause=1000}}
-It's like “Catch you later.”{{pause=800}}
-For example, after chatting with your neighbor on the street,
-you might say goodbye with a smile:{{pause=500}}“À plus tard !”{{pause=1000}}
-
-{{pause=500}}À demain{{pause=1000}}
-See you tomorrow {{pause=300}} when you know you’ll meet the next day, like after class or work.{{pause=1000}}
-
-{{pause=500}}À la prochaine{{pause=1000}}
-It means “Until next time.”{{pause=500}}
-Great for casual goodbyes — even if you don’t know when you’ll meet again.{{pause=1000}}
-
-{{pause=500}}À la semaine prochaine{{pause=1000}}
-It means “See you next week.”{{pause=500}}
-Use it if you’ll meet someone again next Monday, in class, or at work.{{pause=500}}
-
-{{pause=1000}}On se voit{{pause=1000}}
-It means “See you” {{pause=300}} casual and relaxed.{{pause=500}}
-You say it when you’ll probably see the person again soon,{{pause=500}}
-like a classmate, coworker, or neighbor. {{pause=500}}
-You don’t use it for formal goodbyes — it’s more for everyday situations.{{pause=1000}}
-
-{{pause=500}}On se parle{{pause=1000}}
-This means “We’ll talk soon.”{{pause=500}}
-You can say it after a text, a call, or a quick chat.{{pause=1000}}
-
-{{pause=500}}Bonne journée{{pause=1000}}
-It means “Have a good day.”{{pause=500}}
-Use it after buying coffee in the morning {{pause=300}} or when leaving a shop.{{pause=1000}}
-
-{{pause=500}}Bonne soirée{{pause=1000}}
-It means “Have a lovely evening.”{{pause=500}}
-Say it after dinner, at night, or when leaving an event.{{pause=1000}}
-
-
-🩷🩷 Slide 7*************************
- *************** TEXT: ***************
-
-Lesson 1
-Greetings in everyday French
-
-Super!!
-Thanks for learning with me!
-
-Don’t forget:
-subscribe, put a like, and check out the next videos!
-
-Bye, thank you, see you!
-
-
-🩷🩷 Slide 7*************************
- *************** TEXT: ***************
-
-Lesson 1
-Greetings in everyday French
-
-Super!!
-Thanks for learning with me!
-
-Don’t forget:
-subscribe, put a like, and check out the next videos!
-
-Bye, thank you, see you!
-
-
-==========🎤 French (講稿)：==========
-
-Lesson  (跟第一張一樣)
-x x x x x x x x x x x x
-
-
-Super ! {{pause=1000}}
-Merci d’avoir appris avec moi ! {{pause=800}}
-N’oublie pas : abonne-toi, mets un like, et regarde les prochaines vidéos ! {{pause=1000}}
-Salut, merci, à bientôt ! {{pause=1000}}
-
-
-🩷🩷 Slide 8 *************************
- *************** TEXT: ***************
-
- Lesson  (跟第一張一樣)
- x x x x x x x x x x x x
-
- Super!!
- Thanks for learning with me!
-
-Click the practice song
- and listen
-
-you’ll remember it naturally!
-
-==========🎤 English (講稿)：==========
-In this lesson, we taught you many different ways to say goodbye —
-but don’t worry, you don’t need to remember them all right now. {{pause=1000}}
-
-We’re just helping you hear how real conversations sound.
-You’re still a beginner — and that’s perfect. {{pause=800}}
-
-Now click the song video — and just sing it twice! 🎵 {{pause=500}}
-You’ll remember the phrases naturally. {{pause=500}}
-
-Later, come back to this video,
-and you’ll see — it’s the exact same words. {{pause=500}}
-Your ears will recognize them right away.
-see you soon ciao ciao
+Bonjour ! - Hello! / Good day!
+Bon après-midi ! - Good afternoon!
+Bonsoir ! - Good evening!
+Bonne nuit ! - Good night!
+
+lesson1-part1.mp3
+Today, we're going to learn some basic French greetings.
+First, the most common and simple greeting is ***Salut*** this means, Hi! and bye!. It's an informal greeting, best used with friends and family.
+For a very playful greeting, you can say ***Coucou!*** This is a very playful "Hi there!" and is only for close friends or kids .
+Next, for a more formal or general greeting ***Bonjour!*** This means "Hello!" or "Good day!" .You can use it from morning until late afternoon .
+If it's in the afternoon, you can say ***Bon après-midi*** This means "Good afternoon!" . However, this phrase is not very common in daily conversation . and is mostly used in more formal settings, such as in news broadcasts, or as a professional greeting .
+In the evening, we switch to ***Bonsoir!*** This means, Good evening! .
+Finally, when you're going to bed, you would say ***Bonne nuit***  This means "Good night!" and is only used to wish someone a good night's sleep .
+===end
+
+Part 2:
+au revoir - Goodbye
+Salut - Bye! (informal)
+À bientôt - See you soon
+À tout à l’heure - See you in a bit (later today)
+À plus tard - See you later
+À demain - See you tomorrow
+À la prochaine - Until next time
+À la semaine prochaine - See you next week
+On se voit - We'll see each other / See you around
+On se parle - We'll talk / Talk to you soon
+Bonne journée - Have a good day
+Bonne soirée - Have a good evening
+
+lesson1-part2.mp3:
+Now, let's move on to some common French farewells.
+The most common and formal way to say goodbye is **Au revoir** . This simply means, Goodbye.
+This is a safe choice to use with anyone you don't know well, such as after shopping or leaving a restaurant.
+For an informal farewell, just like with greetings, **Salut** can also be used.
+**Salut** means "Bye!" and is informal, you'd use this with friends or family.
+If you know you'll see the person again soon, you can say **À bientôt**. This means: See you soon.
+If you are seeing them again later on the same day, you would say **À tout à l’heure**, this means, See you in a little bit.
+A more general way to say, See you later is **À plus tard**. This means, See you later.
+If you know you'll see them tomorrow, say **À demain** This means, See you tomorrow.
+When you're not sure when you'll see them again, you can use **À la prochaine** this means, Until next time.
+If you know it's next week, you can be more specific **À la semaine prochaine** This means, See you next week.
+You can also use these two casual phrases **On se voit** This means, We'll see each other.
+and **On se parle** This means, We'll talk soon.
+Finally, you can also use wishes as farewells **Bonne journée**. This means, Have a good day.
+and **Bonne soirée**. This means, Have a good evening.
+These are all the basic ways to say goodbye in French!
+===end
