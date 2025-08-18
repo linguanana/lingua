@@ -11,29 +11,37 @@ import re
 import sys
 import os
 
-# --- robust import for speaker config (same folder) ---
+# --- robust import for speaker config (prefer multi-language file) ---
 try:
-    import speaker_conf as _sc
+    import speaker_config_lang as _sc      # 新：優先載入多語版
 except ImportError:
     try:
-        import speaker_config as _sc
+        import speaker_conf as _sc         # 舊：備援
     except ImportError:
-        print("Error: cannot import speaker_conf.py or speaker_config.py (must be next to this script).")
-        sys.exit(2)
+        try:
+            import speaker_config as _sc   # 舊：再備援
+        except ImportError:
+            print("Error: cannot import speaker_config_lang.py / speaker_conf.py / speaker_config.py (must be next to this script).")
+            sys.exit(2)
 
-SPEAKER_MAP = None
-for name in ("SPEAKER_CONFIG", "SPAKER_CONFIG", "EAKER_CONFIG"):
-    if hasattr(_sc, name):
-        SPEAKER_MAP = getattr(_sc, name)
-        break
-if SPEAKER_MAP is None:
-    print("Error: speaker_conf/config.py missing SPEAKER_CONFIG / SPAKER_CONFIG / EAKER_CONFIG")
-    sys.exit(2)
+# 期望 _sc 內有多語大表 SPEAKER_CONFIG = { "it-IT": {...}, "fr-FR": {...}, ... }
+if hasattr(_sc, "SPEAKER_CONFIG") and isinstance(_sc.SPEAKER_CONFIG, dict):
+    SPEAKER_MAP_LANG = _sc.SPEAKER_CONFIG
+else:
+    # 向後相容：若只有單層表，就套到多語鍵上（全語言共用同一份）
+    legacy = getattr(_sc, "SPEAKER_CONFIG", None)
+    if isinstance(legacy, dict):
+        SPEAKER_MAP_LANG = {"it-IT": legacy, "en-US": legacy, "fr-FR": legacy, "es-ES": legacy, "zh-TW": legacy}
+    else:
+        print("Error: missing SPEAKER_CONFIG in loaded speaker config module.")
+        sys.exit(2)
 
 # --- constants ---
 LANG_MAP = {
     "IT": "it-IT",
+    "FR": "fr-FR",
     "EN": "en-US",
+    "ES": "es-ES",
     "ZH": "zh-TW",
 }
 
@@ -196,25 +204,43 @@ def resolve_lang_code(vc: str | None, override: str | None) -> str:
         return "it-IT"
     return LANG_MAP.get(vc, vc)
 
-def get_voice_spec(speaker_name: str):
-    conf = SPEAKER_MAP.get(speaker_name) or SPEAKER_MAP.get("default", {})
+def get_voice_spec(speaker_name: str, lang_code: str):
+    # 取該語言的整份 speaker 表；若沒有該語言，給空表防呆
+    lang_map = SPEAKER_MAP_LANG.get(lang_code, {}) or {}
+
+    # 大小寫不敏感 + 將 '-' 正規化成 '_'
+    spk_raw = (speaker_name or "default").strip()
+    spk_key = spk_raw.replace("-", "_").lower()
+
+    # 建立 CI 索引表
+    ci_map = {k.lower(): v for k, v in lang_map.items()}
+
+    conf = ci_map.get(spk_key) or lang_map.get("default", {})
+    if not conf:
+        # 最後保險，避免 KeyError
+        conf = {"voice_id": "Standard-E", "prosody": {"rate": "100%", "pitch": "0st"}}
+
     voice_id = conf.get("voice_id", "")
     prosody = conf.get("prosody", {})
     rate = prosody.get("rate", "100%")
     pitch = prosody.get("pitch", "0st")
-    resolved = speaker_name if speaker_name in SPEAKER_MAP else "default"
+
+    # 回報實際使用到的 speaker 名（若 fallback 就標 'default'）
+    resolved = spk_raw if ci_map.get(spk_key) else "default"
     return voice_id, rate, pitch, resolved
 
+
 def make_ssml(text: str, speaker_name: str, lang_code: str, break_time: str):
-    voice_id, rate, pitch, resolved = get_voice_spec(speaker_name)
-    # Keep your existing structure (<voice speaker='...'>). If your TTS expects name=voice_id, swap attributes.
+    voice_id, rate, pitch, resolved = get_voice_spec(speaker_name, lang_code)
     return (
         f"<speak lang='{lang_code}'>"
         f"<voice speaker='{resolved}'>"
-        f"<prosody rate='{rate}' pitch='{pitch}'>"
-        f"{text}<break time='{break_time}'/>"
-        f"</prosody></voice></speak>"
+            f"<prosody rate='{rate}' pitch='{pitch}'>"
+                f"{text}<break time='{break_time}'/>"
+            f"</prosody>"
+        f"</voice></speak>"
     ), voice_id, resolved
+
 
 # --- main generation ---
 def generate_for_module(module: dict, lang_code: str, kp_speaker: str, break_time: str,
@@ -242,7 +268,7 @@ def generate_for_module(module: dict, lang_code: str, kp_speaker: str, break_tim
             kp_texts = [(kp.get("text") or "").strip() for kp in kps]
             kp_texts = [t for t in kp_texts if t]
             if kp_texts:
-                voice_id, rate, pitch, resolved_speaker = get_voice_spec(kp_speaker)
+                voice_id, rate, pitch, resolved_speaker = get_voice_spec(kp_speaker, lang_code)
                 merged_body = "".join(f"{t}<break time='{break_time}'/>" for t in kp_texts)
 
                 ssml = (

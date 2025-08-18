@@ -14,28 +14,34 @@ import re
 import sys
 from pydub import AudioSegment
 from google.cloud import texttospeech
-from speaker_config import SPEAKER_CONFIG
+# from file_name import
+from speaker_config_lang import SPEAKER_CONFIG
 
 def _synthesize_and_save(client, mp3_filename, ssml_content, output_directory):
     """
     使用 Google Cloud TTS API 合成 SSML 內容或純文字並將其儲存為 MP3 檔案。
     """
-    print(f"DEBUG: Processing '{mp3_filename}'")
+    print(f"DEBUG: fProcessing '{mp3_filename}'")
 
     # 從 SSML 內容中提取說話者名稱
     speaker_match = re.search(r"<voice\s+speaker=['\"](.*?)['\"]>", ssml_content)
     speaker_name = speaker_match.group(1) if speaker_match else "default"
 
-    if speaker_name not in SPEAKER_CONFIG:
-        print(f"WARNING: Speaker '{speaker_name}' not found in SPEAKER_CONFIG. Using 'default'.")
-        speaker_name = 'default'
-
-    speaker_info = SPEAKER_CONFIG[speaker_name]
-    voice_id = speaker_info['voice_id']
-
-    # 從 SSML 內容中提取語言代碼
+    # 從 SSML 抓語言代碼
     lang_match = re.search(r"<speak\s+lang=['\"](.*?)['\"]>", ssml_content)
     language_code = lang_match.group(1) if lang_match else "en-US"
+
+    # 從 config 用 language + speaker 找
+    lang_cfg = SPEAKER_CONFIG.get(language_code, {})
+    speaker_info = lang_cfg.get(speaker_name) or lang_cfg.get("default")
+
+    if not speaker_info:
+        print(f"WARNING: Speaker '{speaker_name}' not found in lang {language_code}, using global default.")
+        speaker_info = {"voice_id": "Standard-E", "prosody": {"rate": "100%", "pitch": "0st"}}
+
+    voice_id = speaker_info['voice_id']
+
+    print(f"DEBUG: speaker_info resolved for {language_code}/{speaker_name} → {speaker_info} | {voice_id}")
 
     # 檢查說話者的 voice_id 是否為 Chirp3-HD 系列，並據此決定輸入類型
     if 'Chirp3-HD' in voice_id:

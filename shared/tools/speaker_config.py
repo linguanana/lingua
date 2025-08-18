@@ -8,22 +8,22 @@ SPEAKER_CONFIG = {
     # Italian
     "default": {
         "voice_id": "Standard-E",
-        "prosody": {"rate": "55%", "pitch": "2st"},
+        "prosody": {"rate": "70%", "pitch": "2st"},
         "emoji": "👱🏻‍♀️"
     },
     "Female": {
         "voice_id": "Standard-E",
-        "prosody": {"rate": "55%", "pitch": "2st"},
+        "prosody": {"rate": "70%", "pitch": "2st"},
         "emoji": "👩"
     },
     "Male": {
         "voice_id": "Standard-D",
-        "prosody": {"rate": "55%", "pitch": "0st"},
+        "prosody": {"rate": "70%", "pitch": "0st"},
         "emoji": "🧑"
     },
     "M_chef": {
         "voice_id": "Standard-D",
-        "prosody": {"rate": "55%", "pitch": "0st"},
+        "prosody": {"rate": "70%", "pitch": "0st"},
         "emoji": "👨🏻‍🍳"
     },
     "F_hd": {
@@ -41,21 +41,4 @@ SPEAKER_CONFIG = {
         "prosody": {"rate": "100%", "pitch": "0st"}, # Chirp3-HD 語音的預設語速和音調可能不同，可以根據需要調整
         "emoji": "👨🏻‍🍳"
     },
-
-    # FRENCH
-    "Female_FR": {
-        "voice_id": "Standard-E",
-        "prosody": {"rate": "50%", "pitch": "2st"},
-        "emoji": "👩"
-    },
-    "Male_FR": {
-        "voice_id": "Standard-D",
-        "prosody": {"rate": "50%", "pitch": "1st"},
-        "emoji": "🧑"
-    },
-    "M_chef_FR": {
-        "voice_id": "Standard-D",
-        "prosody": {"rate": "50%", "pitch": "1st"},
-        "emoji": "👨🏻‍🍳"
-    }
 }

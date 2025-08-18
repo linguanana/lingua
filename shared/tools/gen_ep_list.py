@@ -1,25 +1,5 @@
 """
 ## gen_ep.py 腳本使用說明 (中文)
-
-### 腳本功能
-它是一個「文字整理工具」，專門為語音網站做準備。
-1. 讓語音網站知道這段要念什麼，停頓多久。
-2. 然後這個音檔要叫什麼名字。
-3. 同時支援不同語言和特定人物的語音。
-
-### 如何使用
-請在終端機中，以以下格式執行此腳本：
-$ python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > output.txt
-
-### 輸出結果
-腳本執行後，會將轉換後的文字（包含 SSML 標籤）儲存到 output.txt 檔案中。
-這個檔案將作為 gen_audio.py 腳本的輸入。
-
-"""
-"""
-## gen_ep.py 腳本使用說明 (中文)
-
-### 腳本功能
 它是一個「文字整理工具」，專門為語音網站做準備。
 1. 讓語音網站知道這段要念什麼，停頓多久。
 2. 然後這個音檔要叫什麼名字。
@@ -37,7 +17,7 @@ $ python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > output.txt
 import json
 import re
 import sys
-from speaker_config import SPEAKER_CONFIG
+from speaker_config_lang import SPEAKER_CONFIG
 
 def generate_ssml_text(js_file_path):
     try:
@@ -80,8 +60,10 @@ def generate_ssml_text(js_file_path):
                 dialog_id = i + 1
 
                 speaker_name = line.get('speaker', 'default')
-
-                speaker_info = SPEAKER_CONFIG.get(speaker_name, SPEAKER_CONFIG['default'])
+                speaker_info = SPEAKER_CONFIG.get(language_code, {}).get(
+                    speaker_name,
+                    SPEAKER_CONFIG.get(language_code, {}).get("default")
+                )
                 prosody_settings = speaker_info['prosody']
 
                 rate = prosody_settings.get("rate", "100%")
