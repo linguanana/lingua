@@ -15,7 +15,7 @@ const modulesData = [
         ]
     },
     {
-      title: '🇮🇹 Episode Pack (A0): French Starter Dialogues — Ep1–Ep5',
+      title: '👋 10 Italian Dialogues Series (A0): French Starter - Beginner Must-Know',
       title_zh: '🇮🇹 初學者法語對話（A0）— 第1至5集',
       moduleId: 'starter',
       lessons: [
@@ -27,7 +27,7 @@ const modulesData = [
       ]
     },
     {
-        title: '✈️ Special Episode (A1): Survival Italian – Essential Travel Phrases',
+        title: '✈️ 10 Italian Dialogues Series (A1): Survival French – Essential Travel Phrases',
         title_zh: '✈️ 特別篇（A1）– 法語旅行必備用語精選',
         moduleId: 'travel1',
         lessons: [

@@ -15,26 +15,21 @@ const modulesData = [
         ]
     },
     {
-        title: '🇮🇹 Episode (A0): Italian Starter Dialogues',
-        title_zh: '🇮🇹 初學者義大利語對話',
-        moduleId: 'starter1',
-        lessons: [
-            { name: 'Day 1: Morning greeting on the street', name_zh: '第1天：街上早安問候', link: 'starter/index.html?id=1' },
-            { name: 'Day 2: At school hallway', name_zh: '第2天：學校走廊', link: 'starter/index.html?id=2' },
-            { name: 'Day 3: Evening goodbye', name_zh: '第3天：晚間道別', link: 'starter/index.html?id=3' },
-            { name: 'Day 4: At a shop – polite request', name_zh: '第4天：商店禮貌請求', link: 'starter/index.html?id=4' },
-            { name: 'Day 5: Quick phone check-in', name_zh: '第5天：電話上的簡短問候', link: 'starter/index.html?id=5' },
-            { name: 'Day 6: On the street – sorry & help', name_zh: '第6天：街上道歉與求助', link: 'starter/index.html?id=6' },
-            { name: 'Day 7: On the bus – small courtesy', name_zh: '第7天：公車上的小小禮讓', link: 'starter/index.html?id=7' },
-            { name: 'Day 8: At the café – order & farewell', name_zh: '第8天：咖啡館點餐與道別', link: 'starter/index.html?id=8' },
-            { name: 'Day 9: Asking the time', name_zh: '第9天：問時間', link: 'starter/index.html?id=9' },
-            { name: 'Day 10: Review – many goodbyes', name_zh: '第10天：複習各種再見', link: 'starter/index.html?id=10' }
-        ]
+      title: '👋 10 Italian Dialogues Series (A0): Italian Starter - Beginner Must-Know',
+      title_zh: '👋 10個義大利語對話系列 (A0)：初學者必學對話',
+      moduleId: 'starter',
+      lessons: [
+        { name: 'Episode 1: Greetings & Polite Words', name_zh: '第1集：打招呼與禮貌用語', link: 'starter/index.html?id=1' },
+        { name: 'Episode 2: Self Introductions',        name_zh: '第2集：自我介紹與個人資訊', link: 'starter/index.html?id=2' },
+        { name: 'Episode 3: Daily Actions & Jobs',      name_zh: '第3集：日常行為與職業',     link: 'starter/index.html?id=3' },
+        { name: 'Episode 4: Question Words in Action',  name_zh: '第4集：疑問詞實戰',         link: 'starter/index.html?id=4' },
+        { name: 'Episode 5: Subject Pronouns & “Essere”', name_zh: '第5集：主語人稱與動詞 essere', link: 'starter/index.html?id=5' }
+      ]
     },
     {
-        title: '✈️ Special Episode (A1): Survival Italian – Essential Travel Phrases',
-        title_zh: '✈️ 特別篇（A1）– 義大利旅行必備用語精選',
-        moduleId: 'travel1',
+      title: '✈️ 10 Italian Dialogues Series (A1): Survival Italian – Essential Travel Phrases',
+      title_zh: '✈️ 10 個義大利對話系列 (A1)：旅行必備用語精選',
+      moduleId: 'travel1',
         lessons: [
             { name: 'Episode 1: At the Coffee Bar', name_zh: '第1集：咖啡吧體驗', link: 'travel/index.html?id=1' },
             { name: 'Episode 2: Dining at a Restaurant', name_zh: '第2集：餐廳用餐', link: 'travel/index.html?id=2' },
