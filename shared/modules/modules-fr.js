@@ -15,8 +15,8 @@ const modulesData = [
         ]
     },
     {
-      title: '👋 10 Italian Dialogues Series (A0): French Starter - Beginner Must-Know',
-      title_zh: '🇮🇹 初學者法語對話（A0）— 第1至5集',
+      title: '👋 10 French Dialogues Series (A0): French Starter - Beginner Must-Know',
+      title_zh: '👋 10 個法語對話系列 (A0)：初學者必學對話',
       moduleId: 'starter',
       lessons: [
         { name: 'Episode 1: Greetings & Polite Words', name_zh: '第1集：打招呼與禮貌用語', link: 'starter/index.html?id=1' },
@@ -27,8 +27,8 @@ const modulesData = [
       ]
     },
     {
-        title: '✈️ 10 Italian Dialogues Series (A1): Survival French – Essential Travel Phrases',
-        title_zh: '✈️ 特別篇（A1）– 法語旅行必備用語精選',
+        title: '✈️ 10 French Dialogues Series (A1): Survival French – Travel Phrases',
+        title_zh: '✈️ 10 個法語對話系列 (A1)：旅行必備用語精選',
         moduleId: 'travel1',
         lessons: [
             { name: 'Episode 1: At the Coffee Bar', name_zh: '第1集：咖啡吧體驗', link: 'travel/index.html?id=1' },

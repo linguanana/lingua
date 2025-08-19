@@ -27,7 +27,7 @@ const modulesData = [
       ]
     },
     {
-      title: '✈️ 10 Spanish Dialogues Series (A1): Survival Spanish – Essential Travel Phrases',
+      title: '✈️ 10 Spanish Dialogues Series (A1): Survival Spanish – Travel Phrases',
       title_zh: '✈️ 10 個西班牙對話系列 (A1)：旅行必備用語精選',
       moduleId: 'travel1',
         lessons: [

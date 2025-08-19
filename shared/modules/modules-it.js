@@ -27,7 +27,7 @@ const modulesData = [
       ]
     },
     {
-      title: '✈️ 10 Italian Dialogues Series (A1): Survival Italian – Essential Travel Phrases',
+      title: '✈️ 10 Italian Dialogues Series (A1): Survival Italian – Travel Phrases',
       title_zh: '✈️ 10 個義大利對話系列 (A1)：旅行必備用語精選',
       moduleId: 'travel1',
         lessons: [
