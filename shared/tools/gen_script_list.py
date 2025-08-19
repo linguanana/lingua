@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # 使用方法
 # $ python3 gen_script_list.py --foreign-lang fr-FR --input ../../french-life/module1/video-script/lesson1.txt > script
+# $ python3 gen_script_list.py --foreign-lang it-IT --input ../../italian-life/module1/video-script/lesson7.txt > script
 
 import argparse, json, re, sys, ast, os
 from typing import Dict, List
@@ -10,14 +11,15 @@ from typing import Dict, List
 DEFAULT_SPEAKER_CONFIG = {
     "en-US": {"voice_id": "en-US-Standard-H", "prosody": {"rate": "90%", "pitch": "2st"}},
     "fr-FR": {"voice_id": "fr-FR-Standard-E", "prosody": {"rate": "60%", "pitch": "2st"}},
-    "it-IT": {"voice_id": "it-IT-Standard-E", "prosody": {"rate": "60%", "pitch": "2st"}},
+    "it-IT": {"voice_id": "it-IT-Standard-E", "prosody": {"rate": "70%", "pitch": "2st"}},
 }
 
 # 設定外語單字前後的停頓時間（毫秒)
 FOREIGN_PAUSE_MS = 500
 
-FILENAME_RE = re.compile(r"^\s*(lesson\d+-part\d+\.mp3)\s*:?\s*$", re.IGNORECASE)
-END_RE = re.compile(r"^\s*===end\s*$", re.IGNORECASE)
+#FILENAME_RE = re.compile(r"^\s*(lesson\d+-part\d+\.mp3)\s*:?\s*$", re.IGNORECASE)
+FILENAME_RE = re.compile(r"^\s*([\w\-\_]+\.mp3)\s*:?\s*$", re.IGNORECASE)
+END_RE = re.compile(r"^\s*===\s*end\b.*$", re.IGNORECASE)
 
 def parse_speaker_config(text: str) -> Dict:
     """
@@ -111,27 +113,25 @@ def escape_text(s: str) -> str:
     return s
 
 def insert_punctuation_breaks(s: str) -> str:
-    # 1. 處理連續換行符號 (段落停頓)
-    # 必須在處理單個換行符號之前執行
-    s = re.sub(r'\n{2,}', r'<break time="1000ms"/>', s)
+    # 先標記段落（兩個以上換行）
+    s = re.sub(r'\n{1,}', r'<break time="1000ms"/>', s)
 
-    # 2. 處理單個換行符號 (長停頓)
-    s = re.sub(r'\n', r'<break time="1000ms"/>', s)
+    # 將單個換行轉空白（不再額外加 break，避免重複）
+    s = s.replace('\n', ' ')
 
-    # 3. 處理句點、問號、驚嘆號
-    s = re.sub(r'([\.!?])', r'\1<break time="550ms"/>', s)
+    # 句末停頓
+    s = re.sub(r'([\.!])(\s+)', r'\1<break time="500ms"/>\2', s)
+    #s = re.sub(r'([\.!?])(\s+)', r'\1<break time="550ms"/>\2', s)
 
-    # 4. 處理逗號、分號
-    s = re.sub(r'(,;)', r'\1<break time="250ms"/>', s)
+    # 逗號、分號：修正你的 ( ,; ) regex
+    #s = re.sub(r'([,;])(\s+)', r'\1<break time="250ms"/>\2', s)
 
-    # 5. 處理冒號
-    s = re.sub(r'(:)', r'\1<break time="300ms"/>', s)
+    # 冒號
+    #s = re.sub(r'(:)(\s+)', r'\1<break time="300ms"/>\2', s)
 
-    # 6. 最後將多餘的空白字元替換成單一空格
-    s = re.sub(r'\s+', ' ', s)
-
-    return s.strip()
-
+    # 合併多個空白
+    s = re.sub(r'\s+', ' ', s).strip()
+    return s
 
 def autotag_asterisks_as_foreign(s: str, foreign_lang: str) -> str:
     """

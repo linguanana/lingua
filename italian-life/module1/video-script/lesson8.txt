@@ -6,19 +6,18 @@ The Verb ESSERE – To Be
 Part 1: io, tu, lui, lei
 Part 2: Quando, Perché, Quale, Quanto
 
-********** EN Script (talking script) **********
-Ciao! Welcome to today’s lesson. {{pause=1000}}
-We’re learning one of the most important verbs in Italian — essere, which means “to be.” {{pause=1000}}
+lesson8-part1-intro.mp3
+Ciao! Welcome to today’s lesson.
+We’re learning one of the most important verbs in Italian — essere, which means “to be.”
 You’ll use this verb all the time to say things like:
-“I am,” “you are,” “She is,” and “he is.” {{pause=1000}}
+“I am,” “you are,” “She is,” and “he is.”
 Let’s start with the singular forms:
-I am, you are, She is, and he is. {{pause=1000}}
-You’ll see how simple and useful these are!{{pause=1000}}
+I am, you are, She is, and he is.
+You’ll see how simple and useful these are!
+Let’s learn the key forms — and how to use them in real conversation.
+===end
 
-Let’s learn the key forms — and how to use them in real conversation. {{pause=1000}}
-
-🩷🩷 Slide 2
-********** TEXT **********
+Part 1:
 🧍‍♀️ io – I（我）
 👉 io sono... – I am...（我是...）
    💬 Sono stanco. – I’m tired.
@@ -54,82 +53,46 @@ stanca {{pause=1000}}
 Tui Sei felice {{pause=1000}}
 
 
-🩷🩷 Slide 3
-********** TEXT **********
- same as Slide 2
-
-
-********** EN Script (talking script) **********
- Let’s look at how to use this.{{pause=500}}
- It’s one of the most important lessons in Italian grammar.{{pause=500}}
- We’re learning the verb “essere”, which means “to be.” {{pause=500}}
- It’s used in almost every conversation. {{pause=500}}
- So let’s take it step by step — with examples!{{pause=500}}
-
-{pause=500}Io{pause=500} — means “I.”
-Now add the verb:
-{pause=500}Io sono{pause=500} means I am.pause=500}
-For example:
-{pause=500}Io sono stanco{pause=500} — I’m tired.
-(That’s how a man would say it. For women, it’s:
-{pause=500}stanca{pause=500}.)
-But in real Italian, people often drop “io” and just say:
-{pause=500}Sono stanco.{pause=500}
+lesson8-part1-lesson.mp3
+Let’s look at how to use this.
+It’s one of the most important lessons in Italian grammar.
+We’re learning the verb **essere**, which means “to be.”
+It’s used in almost every conversation.
+So let’s take it step by step — with examples!
+**Io** — means “I.”
+Now add the verb **Io sono** means I am.
+For example, **Io sono stanco** , I’m tired.That’s how a man would say it.
+For women, it’s **stanca**.
+But in real Italian, people often drop **Io** and just say, **Sono stanco.**
 because the verb already tells you who’s speaking!
-{{pause=1000}}
-
-Now let’s look at “you”:
-{pause=500}Tu{pause=500} — this means “you.”
-{pause=500}Tu sei{pause=500} — you are.
-For example:
-{pause=500}Tu Sei felice.{pause=500} — You’re happy.
+Now let’s look at “you” **Tu** — this means “you.”
+**Tu sei** — you are.
+For example, **Tu sei felice.** — You’re happy.
 Again, the subject can be dropped.
-Most Italians would simply say:
-{pause=500}Sei felice.{pause=500}
-Sounds more natural that way.
-{{pause=1000}}
-
+Most Italians would simply say, **Sei felice.** Sounds more natural that way.
 Next:
-{pause=500}Lui{pause=500} is he.
-{pause=500}Lui è{pause=500} means he is.
-For example:
-{pause=500}Lui è alto.{pause=500} — He is tall.
-You can also say just:
-{pause=500}È alto.{pause=500}
-But “lui” helps make it clearer.
-{{pause=500}} because He and She start with the same verb. {pause=1000}
-
-And now:
-{pause=500}Lei{pause=500} is she.
-{pause=500}Lei è{pause=500} means she is.
-For Example:
-{pause=500}Lei è simpatica.{pause=500} — She is nice.
-Just like before, you can drop “lei” and say:
-{pause=500}È simpatica.{pause=500}
+**Lui** is he.
+**Lui è** means he is.
+For example, **Lui è alto.** — He is tall.
+You can also say just, **È alto.** . But **lui”** helps make it clearer, because He and She start with the same verb.
+And now, **Lei** is she. **Lei è** means she is.
+For example, **Lei è simpatica.** — She is nice.
+Just like before, you can drop **lei** and say, **È simpatica.**
 But when you want to be clear, keep it in.
-{{pause=1000}}
+
+===end
 
 
- 🩷🩷 Slide 4
- ********** TEXT **********
-TEXT:
-🎬 Lesson 7
-Italian Question Words
-
-Part 1: Come, Chi, Cosa, Dove
-Part 2: Quando, Perché, Quale, Quanto
-
-********** EN Script (talking script) **********
-Great job s{{pause=500}}
-You’ve just learned how to say I am, you are, he is, and she is in Italian. 🎉{{pause=500}}
-Now, let’s go a bit further.{{pause=1000}}
+lesson8-part2-intro.mp3
+Great jobs
+You’ve just learned how to say I am, you are, he is, and she is in Italian.
+Now, let’s go a bit further.
 What if you want to say we are, you all are, or they are?
 That’s exactly what we’ll cover next —
 Ready? Let’s dive in! 🇮
+===end
 
-
-🩷🩷 Slide 5
-********** TEXT **********
+part2:
 👫 noi – we
 👉 noi siamo... – We are...
 💬 Noi siamo amici. – We are friends.
@@ -158,59 +121,38 @@ siete simpatici {{pause=1000}}
 sono stanchi {{pause=1000}}
 
 
-🩷🩷 Slide 6
-********** TEXT **********
-same as Slide 5
-
-********** EN Script (talking script) **********
-Let’s keep going and look at three more important forms of the verb essere – to be.
+lesson8-part2-lesson.mp3
+Let’s keep going and look at three more important forms of the verb **essere** – to be.
 These are used when we’re talking about we, you all, and they.
-{{pause=1000}}
 
-{pause=500}Noi siamo{pause=500} means “We are.”{pause=500}
+**Noi siamo** means “We are.”
 Use it when you’re talking about yourself and at least one other person.
-For example:
-{pause=500}Noi siamo amici.{pause=500}
-That means: “We are friends.”
-{{pause=1000}}
+For example, **Noi siamo amici.** That means, “We are friends.”
 
 In Italian, just like before, you can drop the subject.
-So instead of saying:
-{pause=500}Noi siamo amici{pause=500}
-You can simply say:
-{pause=500}Siamo amici.{pause=500}
-And it still means “We are friends.”
-The verb form siamo already tells us it’s “we.”
-{{pause=1000}}
+So instead of saying **Noi siamo amici**
+You can simply say **Siamo amici.**
+And it still means “We are friends.
+The verb form **siamo** already tells us it’s “we.”
 
-Now let’s talk about {pause=500}voi {pause=500} this means “you all.”
+Now let’s talk about **voi** — this means “you all.”
 Use it when you’re talking to more than one person.
-{pause=500}Voi siete{pause=500} means “You all are.”
-For example:
-{pause=500}Voi siete simpatici.{pause=500}
-That means: “You all are nice.”
-{{pause=1000}}
+**Voi siete** means “You all are.”
+For example **Voi siete simpatici.** That means: “You all are nice.
 
 Again, just like before, the subject can be dropped.
-You can say:
-{pause=500}Siete simpatici.{pause=500}
+You can say **Siete simpatici.**
 And it still means “You all are nice.”
-{{pause=1000}}
 
-Finally, we have {pause=500}loro {pause=500} means “they.”
-{pause=500}Loro sono{pause=500} means “They are.”
-For example:
-{pause=500}Loro sono stanchi.{pause=500}
-That means: “They are tired.”
-{{pause=1000}}
+Finally, we have **loro** — it means “they.”
+**Loro sono** means “They are.”
+For example **Loro sono stanchi.** That means: “They are tired.”
 
-And once again, Italians often drop the subject:
-{pause=500}Sono stanchi.{pause=500}
-That still means “They are tired.”
-You know it’s “they” from the verb sono and the plural adjective.
-{{pause=1000}}
-
+And once again, Italians often drop the subject **Sono stanchi.** That still means “They are tired.”
+You know it’s “they” from the verb **sono** and the plural adjective.
 
 You’re doing great!
 Now you’ve learned all the major forms of “to be” in Italian.
-🎉 That’s fantastic — bravo to you! 🇮🇹✨
+That’s fantastic — bravo to you.
+
+===end

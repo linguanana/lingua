@@ -1,100 +1,128 @@
-🩷🩷 Slide 1
-********** TEXT **********
-🎬 Lesson 7
-Italian Question Words
+SPEAKER_CONFIG = {
+    # Italian
+    "it-IT": {
+        "voice_id": "it-IT-Standard-E",
+        "prosody": {"rate": "65%", "pitch": "2st"},
+    },
+    "en-US": {
+        "voice_id": "en-US-Standard-H",
+        "prosody": {"rate": "85%", "pitch": "3st"},
+    },
+}
 
+🎬 Lesson 7 – Italian Question Words
 Part 1: Come, Chi, Cosa, Dove
 Part 2: Quando, Perché, Quale, Quanto
 
-********** EN Script (talking script) **********
-Ciao! Welcome to Lesson 8. {{pause=1000}}
-Today we’re learning some of the most useful question words in Italian. {{pause=1000}}
-Things like “how,” “who,” “what,” and “where” — all the way to “when” and “why”! {{pause=1000}}
-These words will help you ask questions and understand conversations better. {{pause=1000}}
 
-🩷🩷 Slide 2
-********** TEXT **********
+lesson7-part1-intro.mp3
+Ciao! Welcome to Lesson 7
+Today we’re learning eight of the most useful question words in Italian. how, who, what, where, when, why, which, and how much.
+These words are super important, because they let you ask questions and understand conversations better.
+In this first part, we’ll focus on the first four: how, who, what, and where.
+Then in Part 2, we’ll continue with when, why, which, and how much.
+===end
+
+Part 1:
 Come – How
-  👧 Come stai? – How are you?
+👧 Come stai? – How are you?
+👦 Come ti chiami? – What’s your name?
+
 Chi – Who
-  👧 Chi è lei?  – Who is she?
+👧 Chi è lei? – Who is she?
+👦 Chi è lui? – Who is he?
+
 Cosa / Che cosa – What
-  👦 Cosa fai oggi? – What are you doing today?
+👦 Cosa fai oggi? – What are you doing today?
+👧 Che cosa significa? – What does it mean?
+
 Dove – Where
-  👧 Dove vai?
-  👦 Dov’è il bagno?
+👧 Dove vai? – Where are you going?
+👦 Dov’è il bagno? – Where is the bathroom?
 
-********** IT Script (talking script) **********
-Come {{pause=1000}}
-Come stai?
-Chi {{pause=1000}}
-Chi è lei?
-Cosa {{pause=1000}}
-Cosa fai oggi?
-Che cosa {{pause=1000}}
+
+Come{{pause=1000}}
+Come ti chiami?{{pause=1000}}
+Chi{{pause=1000}}
+Chi è lei? {{pause=1000}}
+Chi è lui? {{pause=1000}}
+Cosa . Che cosa {{pause=1000}}
+Cosa fai oggi? {{pause=1000}}
+Che cosa significa? {{pause=1000}}
 Dove {{pause=1000}}
+Dove vai? {{pause=1000}}
+Dov’è il bagno?{{pause=1000}}
+
+lesson7-part1-word.mp3
+**Come
+Come stai?
+Come ti chiami?
+Chi
+Chi è lei?
+Chi è lui?
+Cosa . Che cosa
+Cosa fai oggi?
+Che cosa significa?
+Dove
 Dove vai?
-Dov’è il bagno
-
-🩷🩷 Slide 3
-********** TEXT **********
- same as Slide 2
-
-********** EN Script (talking script) **********
- Let’s look at these question words in action: {{pause=1000}}
-
- Come  {{pause=500}} this means “how.” {{pause=500}}
- Use it to ask how someone is, or how something works. {{pause=1000}}
- For example: {{pause=500}} Come stai? {{pause=500}} means “How are you?” {{pause=500}}
- Use this to ask how someone is feeling. {{pause=1000}}
-
-  {{pause=500}}Chi  {{pause=500}} means “who.” {{pause=500}}
- You’ll use this when asking about people. {{pause=500}}
- Like: {{pause=500}} Chi è lei?  {{pause=500}} “Who is she?” {{pause=1000}}
-
-  {{pause=500}}Cosa  {{pause=500}} Che cosa  {{pause=500}} — both mean “what.” {{pause=500}}
- They’re used to ask about things or actions. {{pause=500}}
- For example: {{pause=500}}
- Cosa fai oggi?  {{pause=500}} “What are you doing today?” {{pause=1000}}
-
-  {{pause=500}}Dove  {{pause=500}} means “where.” {{pause=500}}
- Perfect for asking about places or destinations. {{pause=500}}
- Like: {{pause=500}}
- Dove vai?  {{pause=500}} “Where are you going?” {{pause=500}}
- Or: {{pause=500}}
- Dov’è il bagno?  {{pause=500}} “Where is the bathroom?” {{pause=1000}}
-
- Keep practicing these — they’re some of the most useful words you’ll hear in Italy! {{pause=1000}}
+Dov’è il bagno?**
+===end
 
 
- 🩷🩷 Slide 4
- ********** TEXT **********
-🎬 Lesson 7
-Italian Question Words
+lesson7-part1-lesson.mp3
+To get good at a language, learning how to ask questions is the absolute first step!
+Today we're going to look at a few super important Italian question words. They're like keys that can open the door to conversations with Italians.
 
-Part 1: Come, Chi, Cosa, Dove
-Part 2: Quando, Perché, Quale, Quanto
+First is **Come**, which means "how" or "like."
+This word is super versatile. You can use it to ask how someone is, or how something works.
+For example, **Come stai?**, which means "How are you?".
+Another very common one is **Come ti chiami?**, which means "What's your name?".
 
-********** EN Script (talking script) **********
-Great job s{{pause=500}}
-You’ve just completed Part 1 of Italian questions words lesson. 🎉 {{pause=500}}
-now let’s go a little deeper. {{pause=1000}}
-Sometimes you want to ask:
-“When does the train leave?”
-Or “Which gelato do you want?” 🍦
-That’s what we’ll cover next! {{pause=1000}}
+Next, we have **Chi**, which means "who."
+You use this when you want to ask about a person.
+For example, **Chi è lei?**, means "Who is she?".
+Or, **Chi è lui?**, which means "Who is he?".
+
+Another key word is **Cosa**, or **Che cosa**. Both mean "what."
+They are used to ask about things or actions.
+Now, here’s a small difference. **Cosa** is shorter, more common, and more casual. You'll hear this a lot in everyday conversation.
+**Che cosa** is a little longer, and it sounds a bit more formal or complete. But don't worry, both are correct, and Italians use both.
+For example, **Cosa fai oggi?**, means "What are you doing today?".
+And, **Che cosa significa?**, means "What does it mean?".
+
+Then we have **Dove**, which means "where."
+It's perfect for asking about places or destinations.
+For example, **Dove vai?**, means "Where are you going?".
+And, **Dov’è il bagno?**, which means "Where is the bathroom?".
+
+Keep practicing these! They are some of the most useful words you'll hear in Italy.
+
+===end
 
 
-🩷🩷 Slide 5
-********** TEXT **********
+lesson7-intro-2.mp3
+Great job! You’ve just finished Part 1 of the Italian question words lesson.
+Now let’s go a little deeper.
+Imagine you’re traveling in Italy and need to ask:
+‘When does the train leave?’
+Or you’re at the gelato shop deciding on a flavor and you ask:
+‘Which gelato do you want?’
+These are the kinds of questions we’ll cover in Part 2. Let's continue.
+
+===end
+
+part2:
 🕒 Quando – when
 💬 Quando parte il treno? – When does the train leave?
+💬 Quando arrivi? – When do you arrive?
 
 🤔 Perché – why
 💬 Perché sei triste? – Why are you sad?
+💬 Perché studi italiano? – Why are you studying Italian?
 
 🍦 Quale – which
 💬 Quale gelato vuoi? – Which ice cream do you want?
+💬 Quale libro leggi? – Which book are you reading?
 
 💰 Quanto | Quanta – how much (masculine | feminine singular)
 💬 Quanto costa? – How much does it cost?
@@ -104,13 +132,15 @@ That’s what we’ll cover next! {{pause=1000}}
 💬 Quanti amici hai? – How many friends do you have?
 🍎 Quante mele vuoi? – How many apples do you want?
 
-********** IT Script (talking script) **********
 Quando{{pause=1000}}
+Quando arrivi?{{pause=1000}}
 Quando parte il treno?{{pause=1000}}
 Perché{{pause=1000}}
 Perché sei triste?{{pause=1000}}
+erché studi italiano?{{pause=1000}}
 Quale{{pause=1000}}
 Quale gelato vuoi?{{pause=1000}}
+Quale libro leggi?{{pause=1000}}
 Quanto{{pause=1000}}
 Quanta{{pause=1000}}
 Quanto costa?{{pause=1000}}
@@ -121,69 +151,43 @@ Quanti amici hai? {{pause=1000}}
 Quante mele vuoi{{pause=1000}}
 
 
-🩷🩷 Slide 6
-********** TEXT **********
-same as Slide 5
-
-********** EN Script (talking script) **********
-Let’s look at more essential Italian question words.
+lesson7-part2-lesson.mp3
+Now, let’s move on to more essential Italian question words.
 We’ll go through them one by one — with examples.
-{pause=1000}
 
-First,
-{pause=500}Quando{pause=500} — it means “when.”
-You use it to ask about time.
-For example:
-{pause=500}Quando parte il treno?{pause=500}
-When does the train leave?
-{pause=1000}
+First, **Quando** — it means “when.” You use it to ask about time.
+For example: **Quando parte il treno?** means “When does the train leave?”
+Another example: **Quando arrivi?** means “When do you arrive?”
 
-Next,
-{pause=500}Perché{pause=500} — this means “why.”
-Use it when you want to know the reason for something.
-For example:
-{pause=500}Perché sei triste?{pause=500}
-Why are you sad?
-{pause=1000}
+Next, **Perché** — this means “why.” Use it when you want to know the reason for something.
+For example: **Perché sei triste?** means “Why are you sad?”
+Another example: **Perché studi italiano?** means “Why are you studying Italian?”
 
-Now let’s look at:
-{pause=1000}Quale{pause=500} — which.
+Now let’s look at **Quale** — which.
 This word is useful when you’re choosing between options.
-For example:
-{pause=500}Quale gelato vuoi?{pause=500}
-Which ice cream do you want?
-{pause=1000}
+For example: **Quale gelato vuoi?** means “Which ice cream do you want?”
+Another example: **Quale libro leggi?** means “Which book are you reading?”
 
 Now let’s talk about “how much.”
 There are two forms, depending on gender.
-
-{pause=1000}Quanto{pause=500} — masculine singular.
+**Quanto** — masculine singular.
 Use it for masculine and uncountable nouns.
-Example:
-{pause=500}Quanto costa?{pause=500}
-How much does it cost?
-{pause=1000}
-
-{pause=1000}Quanta{pause=500} — feminine singular.
+Example: **Quanto costa?** means “How much does it cost?”
+Another example: **Quanto zucchero vuoi?** means “How much sugar do you want?”
+**Quanta** — feminine singular.
 Use it with feminine uncountable nouns.
-Example:
-{pause=500}Quanta acqua bevi?{pause=500}
-How much water do you drink?
-{pause=1000}
+Example: **Quanta acqua bevi?** means “How much water do you drink?”
+Another example: **Quanta pasta cucini?** means “How much pasta are you cooking?”
 
 Now let’s talk about “how many.”
 These are used when the noun is countable — and plural.
-
-{pause=1000}Quanti{pause=500} — masculine plural.
-For example:
-{pause=500}Quanti amici hai?{pause=500}
-How many friends do you have?
-{pause=1000}
-
-{pause=1000}Quante{pause=500} — feminine plural.
-For example:
-{pause=500}Quante mele vuoi?{pause=500}
-How many apples do you want?
-{pause=1000}
+**Quanti** — masculine plural.
+For example: **Quanti amici hai?** means “How many friends do you have?”
+Another example: **Quanti studenti ci sono?** means “How many students are there?”
+**Quante** — feminine plural.
+For example: **Quante mele vuoi?** means “How many apples do you want?”
+Another example: **Quante persone ci sono?** means “How many people are there?”
 
 You’re doing great!
+
+===end

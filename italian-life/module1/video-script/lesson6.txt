@@ -140,13 +140,13 @@ For example: {{pause=500}}
  {{pause=500}}Faccio l’insegnante. {{pause=500}} which means “I’m a teacher.” {{pause=1000}}
  {{pause=500}}Faccio il medico. {{pause=500}}which means “I’m a doctor.” {{pause=1000}}
 
-If you are a student, the words change based on gender:  {{pause=500}}
-{{pause=500}}Sono studente.{{pause=500}} for a male student. {{pause=500}}
-{{pause=500}}Sono studentessa.{{pause=500}} for a female student. {{pause=1000}}
-
 You can also use  {{pause=500}}sono {{pause=500}} plus your profession. This is a bit simpler. {{pause=1500}}
  {{pause=500}}Sono insegnante.” {{pause=800}}
  {{pause=500}}Sono medico.” {{pause=1000}}
+
+ If you are a student, the words change based on gender:  {{pause=500}}
+ {{pause=500}}Sono studente.{{pause=500}} for a male student. {{pause=500}}
+ {{pause=500}}Sono studentessa.{{pause=500}} for a female student. {{pause=1000}}
 
 If you want to talk about where you work, you can say: {{pause=1000}}
 {{pause=500}}Lavoro in un ufficio.{{pause=500}} meaning “I work in an office.” {{pause=1000}}

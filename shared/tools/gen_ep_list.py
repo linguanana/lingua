@@ -7,7 +7,8 @@
 
 ### 如何使用
 請在終端機中，以以下格式執行此腳本：
-$ python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > output.txt
+$ python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > ep
+$ python3 gen_ep_list.py 2 ../../italian-life/travel/ep/ep1.js > ep2
 
 ### 輸出結果
 腳本執行後，會將轉換後的文字（包含 SSML 標籤）儲存到 output.txt 檔案中。
@@ -19,7 +20,7 @@ import re
 import sys
 from speaker_config_lang import SPEAKER_CONFIG
 
-def generate_ssml_text(js_file_path):
+def generate_ssml_text(js_file_path, topic_filter=None):
     try:
         with open(js_file_path, 'r', encoding='utf-8') as f:
             js_content = f.read()
@@ -49,7 +50,13 @@ def generate_ssml_text(js_file_path):
 
     topics = episode_data.get('topics', [])
     for topic in topics:
-        topic_id = topic.get('topicId', '1')
+        try:
+            topic_id = int(topic.get('topicId', 1))
+        except ValueError:
+            topic_id = 1
+
+        if topic_filter is not None and topic_id != topic_filter:
+            continue
 
         scenes = topic.get('scenes', [])
         for scene in scenes:
@@ -82,10 +89,18 @@ def generate_ssml_text(js_file_path):
     return "\n\n".join(output_blocks)
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python3 gen_ep_list.py <js_file>")
+    # 支援兩種用法：
+    # 1) python3 gen_ep_list.py <js_file>
+    # 2) python3 gen_ep_list.py <topic_number> <js_file>   # 僅輸出 ep[x]_topic<topic_number>
+    if len(sys.argv) == 2:
+        topic_filter = None
+        js_file_name = sys.argv[1]
+    elif len(sys.argv) == 3 and sys.argv[1].isdigit():
+        topic_filter = int(sys.argv[1])
+        js_file_name = sys.argv[2]
+    else:
+        print("Usage: python3 gen_ep_list.py [<topic_number>] <js_file>")
         sys.exit(1)
 
-    js_file_name = sys.argv[1]
-    generated_text = generate_ssml_text(js_file_name)
+    generated_text = generate_ssml_text(js_file_name, topic_filter)
     print(generated_text)
