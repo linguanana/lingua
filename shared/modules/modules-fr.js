@@ -15,6 +15,18 @@ const modulesData = [
         ]
     },
     {
+      title: '🇮🇹 Episode Pack (A0): French Starter Dialogues — Ep1–Ep5',
+      title_zh: '🇮🇹 初學者法語對話（A0）— 第1至5集',
+      moduleId: 'starter',
+      lessons: [
+        { name: 'Episode 1: Greetings & Polite Words', name_zh: '第1集：打招呼與禮貌用語', link: 'starter/index.html?id=1' },
+        { name: 'Episode 2: Self Introductions',        name_zh: '第2集：自我介紹與個人資訊', link: 'starter/index.html?id=2' },
+        { name: 'Episode 3: Daily Actions & Jobs',      name_zh: '第3集：日常行為與職業',     link: 'starter/index.html?id=3' },
+        { name: 'Episode 4: Question Words in Action',  name_zh: '第4集：疑問詞實戰',         link: 'starter/index.html?id=4' },
+        { name: 'Episode 5: Subject Pronouns & “Essere”', name_zh: '第5集：主語人稱與動詞 essere', link: 'starter/index.html?id=5' }
+      ]
+    },
+    {
         title: '✈️ Special Episode (A1): Survival Italian – Essential Travel Phrases',
         title_zh: '✈️ 特別篇（A1）– 法語旅行必備用語精選',
         moduleId: 'travel1',

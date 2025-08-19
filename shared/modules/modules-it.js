@@ -15,6 +15,23 @@ const modulesData = [
         ]
     },
     {
+        title: '🇮🇹 Episode (A0): Italian Starter Dialogues',
+        title_zh: '🇮🇹 初學者義大利語對話',
+        moduleId: 'starter1',
+        lessons: [
+            { name: 'Day 1: Morning greeting on the street', name_zh: '第1天：街上早安問候', link: 'starter/index.html?id=1' },
+            { name: 'Day 2: At school hallway', name_zh: '第2天：學校走廊', link: 'starter/index.html?id=2' },
+            { name: 'Day 3: Evening goodbye', name_zh: '第3天：晚間道別', link: 'starter/index.html?id=3' },
+            { name: 'Day 4: At a shop – polite request', name_zh: '第4天：商店禮貌請求', link: 'starter/index.html?id=4' },
+            { name: 'Day 5: Quick phone check-in', name_zh: '第5天：電話上的簡短問候', link: 'starter/index.html?id=5' },
+            { name: 'Day 6: On the street – sorry & help', name_zh: '第6天：街上道歉與求助', link: 'starter/index.html?id=6' },
+            { name: 'Day 7: On the bus – small courtesy', name_zh: '第7天：公車上的小小禮讓', link: 'starter/index.html?id=7' },
+            { name: 'Day 8: At the café – order & farewell', name_zh: '第8天：咖啡館點餐與道別', link: 'starter/index.html?id=8' },
+            { name: 'Day 9: Asking the time', name_zh: '第9天：問時間', link: 'starter/index.html?id=9' },
+            { name: 'Day 10: Review – many goodbyes', name_zh: '第10天：複習各種再見', link: 'starter/index.html?id=10' }
+        ]
+    },
+    {
         title: '✈️ Special Episode (A1): Survival Italian – Essential Travel Phrases',
         title_zh: '✈️ 特別篇（A1）– 義大利旅行必備用語精選',
         moduleId: 'travel1',
