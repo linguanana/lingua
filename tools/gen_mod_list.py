@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # Usage:
-#   python3 gen_module_list.py path/to/mod1.js --lang it-IT > out.txt
+#   (1) 先確定 speaker_config_lang.py
+#   python3 gen_module_list.py path/to/mod1.js --lang it-IT > mod
 # Optional:
 #   --kp_speaker Female
 #   --break 0.7s
