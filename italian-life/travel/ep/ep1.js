@@ -517,7 +517,8 @@ const episodeData = {
       scenes: [
         {
           sceneId: 1,
-          scene: "Day 1: Tiramisù – 酒精？自製？",
+          scene: "Day 1 – Tiramisù: with alcohol or homemade?",
+          scene_zh: "第 1 天 — 提拉米蘇：含酒精還是自製？",
           dialogue: [
             { speaker: "Female", text: "Buongiorno! Avete il tiramisù oggi?", en: "Good morning! Do you have tiramisù today?", zh: "早安！你們今天有提拉米蘇嗎？" },
             { speaker: "M_Chef", text: "Sì, certo! È fatto in casa.", en: "Yes, of course! It’s homemade.", zh: "有的，是我們自製的。" },
@@ -528,7 +529,8 @@ const episodeData = {
         },
         {
           sceneId: 2,
-          scene: "Day 2: Cannoli – 口味選擇",
+          scene: "Day 2 – Cannoli: flavor choices",
+          scene_zh: "第 2 天 — 卡諾里：口味選擇",
           dialogue: [
             { speaker: "Female", text: "Buonasera! Che tipo di cannoli avete?", en: "Good evening! What kinds of cannoli do you have?", zh: "晚安！你們有什麼口味的卡諾里？" },
             { speaker: "M_Chef", text: "Al cioccolato, alla ricotta e al pistacchio.", en: "Chocolate, ricotta, and pistachio.", zh: "有巧克力、乳酪、還有開心果口味。" },
@@ -538,7 +540,8 @@ const episodeData = {
         },
         {
           sceneId: 3,
-          scene: "Day 3: Affogato – 咖啡淋冰淇淋",
+          scene: "Day 3 – Affogato: espresso over gelato",
+          scene_zh: "第 3 天 — 阿佛加托：咖啡淋冰淇淋",
           dialogue: [
             { speaker: "Female", text: "Ciao! Cos’è l’affogato al caffè?", en: "Hi! What is affogato al caffè?", zh: "嗨！什麼是 affogato 咖啡淋冰淇淋？" },
             { speaker: "M_Chef", text: "È gelato alla vaniglia con espresso caldo versato sopra.", en: "It’s vanilla gelato with hot espresso poured over it.", zh: "是香草冰淇淋，上面澆熱濃縮咖啡。" },
@@ -547,7 +550,8 @@ const episodeData = {
         },
         {
           sceneId: 4,
-          scene: "Day 4: Panna Cotta – 選醬料",
+          scene: "Day 4 – Panna Cotta: sauce options",
+          scene_zh: "第 4 天 — 奶酪布丁：醬料選擇",
           dialogue: [
             { speaker: "Female", text: "Buongiorno! Che salse avete per la panna cotta?", en: "Good morning! What sauces do you have for panna cotta?", zh: "早安！你們的奶酪有什麼醬料可選？" },
             { speaker: "M_Chef", text: "Fragola, caramello o cioccolato.", en: "Strawberry, caramel, or chocolate.", zh: "草莓、焦糖或巧克力醬。" },
@@ -556,7 +560,8 @@ const episodeData = {
         },
         {
           sceneId: 5,
-          scene: "Day 5: Gelato – 冰淇淋口味與餅乾杯",
+          scene: "Day 5 – Gelato: flavors and cone or cup",
+          scene_zh: "第 5 天 — 義式冰淇淋：口味與餅乾杯",
           dialogue: [
             { speaker: "Female", text: "Ciao! Che gusti di gelato ci sono oggi?", en: "Hi! What gelato flavors do you have today?", zh: "嗨！今天有什麼口味的義式冰淇淋？" },
             { speaker: "M_Chef", text: "Limone, cioccolato, fragola e nocciola.", en: "Lemon, chocolate, strawberry, and hazelnut.", zh: "檸檬、巧克力、草莓、榛果。" },
@@ -567,7 +572,8 @@ const episodeData = {
         },
         {
           sceneId: 6,
-          scene: "Day 6: Babà al rum – 含酒味甜點",
+          scene: "Day 6 – Babà al rum: a boozy dessert",
+          scene_zh: "第 6 天 — 蘭姆酒巴巴：含酒甜點",
           dialogue: [
             { speaker: "Female", text: "Buongiorno! Com’è il babà al rum?", en: "Good morning! How’s the babà al rum?", zh: "早安！請問這個蘭姆酒蛋糕怎麼樣？" },
             { speaker: "M_Chef", text: "È molto soffice e con un gusto deciso di rum.", en: "It’s very soft with a strong rum flavor.", zh: "非常鬆軟，而且有濃濃的蘭姆酒味。" },
@@ -576,7 +582,8 @@ const episodeData = {
         },
         {
           sceneId: 7,
-          scene: "Day 7: Crostata – 義式果醬派",
+          scene: "Day 7 – Crostata: Italian jam tart",
+          scene_zh: "第 7 天 — 果醬派：義式傳統甜點",
           dialogue: [
             { speaker: "Female", text: "Ciao! Quali crostate avete oggi?", en: "Hi! What crostatas do you have today?", zh: "嗨！今天有什麼口味的果醬派？" },
             { speaker: "M_Chef", text: "Albicocca, frutti di bosco e mela.", en: "Apricot, berries, and apple.", zh: "杏桃、野莓和蘋果口味。" },
@@ -585,7 +592,8 @@ const episodeData = {
         },
         {
           sceneId: 8,
-          scene: "Day 8: Profiteroles – 奶油泡芙",
+          scene: "Day 8 – Profiteroles: cream puffs with chocolate",
+          scene_zh: "第 8 天 — 泡芙球：奶油與巧克力",
           dialogue: [
             { speaker: "Female", text: "Buonasera! Avete i profiteroles?", en: "Good evening! Do you have profiteroles?", zh: "晚上好！你們有奶油泡芙嗎？" },
             { speaker: "M_Chef", text: "Sì, con panna e copertura al cioccolato.", en: "Yes, with cream and chocolate topping.", zh: "有的，有奶油餡，淋上巧克力醬。" },
@@ -594,7 +602,8 @@ const episodeData = {
         },
         {
           sceneId: 9,
-          scene: "Day 9: Sfogliatella – 酥不酥脆？",
+          scene: "Day 9 – Sfogliatella: crispy or not?",
+          scene_zh: "第 9 天 — 千層貝殼酥：酥脆口感？",
           dialogue: [
             { speaker: "Female", text: "Salve! La sfogliatella è croccante?", en: "Hi! Is the sfogliatella crunchy?", zh: "您好！這個千層酥脆嗎？" },
             { speaker: "M_Chef", text: "Appena sfornata! Croccantissima!", en: "Just baked! Super crunchy!", zh: "剛出爐的！超酥脆！" },
@@ -603,7 +612,8 @@ const episodeData = {
         },
         {
           sceneId: 10,
-          scene: "Day 10: Zeppole – 炸甜點，限節日？",
+          scene: "Day 10 – Zeppole: festive fried sweets?",
+          scene_zh: "第 10 天 — 澤波萊：節日限定炸甜點？",
           dialogue: [
             { speaker: "Female", text: "Avete le zeppole oggi?", en: "Do you have zeppole today?", zh: "今天有炸泡芙嗎？" },
             { speaker: "M_Chef", text: "Sì, freschissime! Appena fatte.", en: "Yes, super fresh! Just made.", zh: "有的，非常新鮮！剛炸好的。" },

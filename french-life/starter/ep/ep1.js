@@ -31,8 +31,71 @@ const episodeData = {
         },
         {
           sceneId: 2,
-          scene: "Day 2 – At the park: small talk",
-          scene_zh: "第 2 天 — 公園閒聊",
+          scene: "Day 2 – Evening goodbye",
+          scene_zh: "第 2 天 — 晚上的道別",
+          dialogue: [
+            { speaker: "Male", text: "Bonsoir !", en: "Good evening!", zh: "晚上好！" },
+            { speaker: "Female", text: "Bonsoir ! Comment ça va ?", en: "Good evening! How are you?", zh: "晚上好！你好嗎？" },
+            { speaker: "Male", text: "Un peu fatigué.", en: "A little tired.", zh: "有點累。" },
+            { speaker: "Female", text: "Moi aussi.", en: "Me too.", zh: "我也是。" },
+            { speaker: "Male", text: "Bonne nuit !", en: "Good night!", zh: "晚安！" },
+            { speaker: "Female", text: "Bonne nuit ! À demain !", en: "Good night! See you tomorrow!", zh: "晚安！明天見！" },
+            { speaker: "Male", text: "Au revoir !", en: "Goodbye!", zh: "再見！" },
+            { speaker: "Female", text: "Salut !", en: "Bye!", zh: "掰掰！" }
+          ]
+        },
+        {
+          sceneId: 3,
+          scene: "Day 3 – Meeting again",
+          scene_zh: "第 3 天 — 再次見面",
+          dialogue: [
+            { speaker: "Female", text: "Salut !", en: "Hi!", zh: "嗨！" },
+            { speaker: "Male", text: "Bonjour !", en: "Good morning!", zh: "早安！" },
+            { speaker: "Female", text: "Comment ça va ?", en: "How are you?", zh: "你好嗎？" },
+            { speaker: "Male", text: "Ça va bien, merci. Et toi ?", en: "I’m good, thanks. And you?", zh: "我很好，謝謝。你呢？" },
+            { speaker: "Female", text: "Comme ci, comme ça.", en: "So-so.", zh: "馬馬虎虎。" },
+            { speaker: "Male", text: "Ah bon.", en: "Oh, okay.", zh: "啊，好吧。" },
+            { speaker: "Female", text: "À plus tard !", en: "See you later!", zh: "待會兒見！" },
+            { speaker: "Male", text: "À bientôt !", en: "See you soon!", zh: "很快見！" }
+          ]
+        },
+        {
+          sceneId: 4,
+          scene: "Day 4 – At the shop",
+          scene_zh: "第 4 天 — 在商店",
+          dialogue: [
+            { speaker: "Female", text: "Bonjour monsieur.", en: "Good morning, sir.", zh: "早安，先生。" },
+            { speaker: "Male", text: "Bonjour madame.", en: "Good morning, madam.", zh: "早安，女士。" },
+            { speaker: "Female", text: "Excusez-moi.", en: "Excuse me.", zh: "不好意思。" },
+            { speaker: "Female", text: "Où est l’eau, s’il vous plaît ?", en: "Where is the water, please?", zh: "請問水在哪裡？" },
+            { speaker: "Male", text: "Là-bas.", en: "Over there.", zh: "在那邊。" },
+            { speaker: "Female", text: "Merci beaucoup.", en: "Thank you very much.", zh: "非常感謝。" },
+            { speaker: "Male", text: "De rien.", en: "You’re welcome.", zh: "不客氣。" },
+            { speaker: "Female", text: "Au revoir !", en: "Goodbye!", zh: "再見！" },
+            { speaker: "Male", text: "Bonne journée !", en: "Have a nice day!", zh: "祝你有美好的一天！" }
+          ]
+        },
+        {
+          sceneId: 5,
+          scene: "Day 5 – Polite words review",
+          scene_zh: "第 5 天 — 禮貌用語複習",
+          dialogue: [
+            { speaker: "Male", text: "Bonjour !", en: "Good morning!", zh: "早安！" },
+            { speaker: "Female", text: "Salut !", en: "Hi!", zh: "嗨！" },
+            { speaker: "Male", text: "Merci !", en: "Thanks!", zh: "謝謝！" },
+            { speaker: "Female", text: "Merci beaucoup !", en: "Thank you very much!", zh: "非常感謝！" },
+            { speaker: "Male", text: "Pardon.", en: "Sorry.", zh: "不好意思。" },
+            { speaker: "Female", text: "Pas de problème.", en: "No problem.", zh: "沒關係。" },
+            { speaker: "Male", text: "Excusez-moi.", en: "Excuse me.", zh: "勞駕。" },
+            { speaker: "Female", text: "Oui ?", en: "Yes?", zh: "是嗎？" },
+            { speaker: "Male", text: "Au revoir !", en: "Goodbye!", zh: "再見！" },
+            { speaker: "Female", text: "À bientôt !", en: "See you soon!", zh: "很快見！" }
+          ]
+        },
+        {
+          sceneId: 6,
+          scene: "Day 6 – At the park: small talk",
+          scene_zh: "第 6 天 — 公園閒聊",
           dialogue: [
             { speaker: "Female", text: "Salut ! Ça va ?", en: "Hi! How are you?", zh: "嗨！你好吗？" },
             { speaker: "Male", text: "Salut ! Oui, ça va bien. Et toi ?", en: "Hi! Yes, I’m good. And you?", zh: "嗨！我很好。你呢？" },
@@ -47,9 +110,9 @@ const episodeData = {
           ]
         },
         {
-          sceneId: 3,
-          scene: "Day 3 – At a shop: polite requests",
-          scene_zh: "第 3 天 — 商店裡：禮貌請求",
+          sceneId: 7,
+          scene: "Day 7 – At a shop: polite requests",
+          scene_zh: "第 7 天 — 商店裡：禮貌請求",
           dialogue: [
             { speaker: "Female", text: "Bonjour, monsieur !", en: "Good day, sir!", zh: "您好，先生！" },
             { speaker: "Male", text: "Bonjour, madame. Vous allez bien ?", en: "Hello, madam. Are you well?", zh: "您好，女士。您還好嗎？" },
@@ -64,9 +127,9 @@ const episodeData = {
           ]
         },
         {
-          sceneId: 4,
-          scene: "Day 4 – Outside class: checking in",
-          scene_zh: "第 4 天 — 教室外：關心問候",
+          sceneId: 8,
+          scene: "Day 8 – Outside class: checking in",
+          scene_zh: "第 8 天 — 教室外：關心問候",
           dialogue: [
             { speaker: "Male", text: "Salut, Claire ! Comment vas-tu aujourd’hui ?", en: "Hi, Claire! How are you today?", zh: "嗨，克萊兒！妳今天好嗎？" },
             { speaker: "Female", text: "Pas très bien… je suis stressée.", en: "Not very well… I’m stressed.", zh: "不太好……我壓力很大。" },
@@ -81,9 +144,9 @@ const episodeData = {
           ]
         },
         {
-          sceneId: 5,
-          scene: "Day 5 – On the phone: quick check-in",
-          scene_zh: "第 5 天 — 電話中：快速問候",
+          sceneId: 9,
+          scene: "Day 9 – On the phone: quick check-in",
+          scene_zh: "第 9 天 — 電話中：快速問候",
           dialogue: [
             { speaker: "Female", text: "Allô ? Bonjour !", en: "Hello? Good day!", zh: "喂？你好！" },
             { speaker: "Male", text: "Bonjour ! C’est Paul. Ça va ?", en: "Hi! It’s Paul. How are you?", zh: "你好！我是保羅。你好吗？" },
@@ -98,9 +161,9 @@ const episodeData = {
           ]
         },
         {
-          sceneId: 6,
-          scene: "Day 6 – On the street: sorry & help",
-          scene_zh: "第 6 天 — 街上：道歉與求助",
+          sceneId: 10,
+          scene: "Day 10 – On the street: sorry & help",
+          scene_zh: "第 10 天 — 街上：道歉與求助",
           dialogue: [
             { speaker: "Male", text: "Oh pardon !", en: "Oh sorry!", zh: "喔，不好意思！" },
             { speaker: "Female", text: "Pas de problème.", en: "No problem.", zh: "沒關係。" },
@@ -113,69 +176,6 @@ const episodeData = {
             { speaker: "Female", text: "Là-bas, à gauche.", en: "Over there, on the left.", zh: "在那邊，左邊。" },
             { speaker: "Male", text: "Merci beaucoup ! Au revoir !", en: "Thank you very much! Goodbye!", zh: "非常感謝！再見！" },
             { speaker: "Female", text: "Au revoir ! Bonne journée !", en: "Goodbye! Have a nice day!", zh: "再見！祝你有美好的一天！" }
-          ]
-        },
-        {
-          sceneId: 7,
-          scene: "Day 7 – Meeting again",
-          scene_zh: "第 7 天 — 再次見面",
-          dialogue: [
-            { speaker: "Female", text: "Salut !", en: "Hi!", zh: "嗨！" },
-            { speaker: "Male", text: "Bonjour !", en: "Good morning!", zh: "早安！" },
-            { speaker: "Female", text: "Comment ça va ?", en: "How are you?", zh: "你好嗎？" },
-            { speaker: "Male", text: "Ça va bien, merci. Et toi ?", en: "I’m good, thanks. And you?", zh: "我很好，謝謝。你呢？" },
-            { speaker: "Female", text: "Comme ci, comme ça.", en: "So-so.", zh: "馬馬虎虎。" },
-            { speaker: "Male", text: "Ah bon.", en: "Oh, okay.", zh: "啊，好吧。" },
-            { speaker: "Female", text: "À plus tard !", en: "See you later!", zh: "待會兒見！" },
-            { speaker: "Male", text: "À bientôt !", en: "See you soon!", zh: "很快見！" }
-          ]
-        },
-        {
-          sceneId: 8,
-          scene: "Day 8 – Evening goodbye",
-          scene_zh: "第 8 天 — 晚上的道別",
-          dialogue: [
-            { speaker: "Male", text: "Bonsoir !", en: "Good evening!", zh: "晚上好！" },
-            { speaker: "Female", text: "Bonsoir ! Comment ça va ?", en: "Good evening! How are you?", zh: "晚上好！你好嗎？" },
-            { speaker: "Male", text: "Un peu fatigué.", en: "A little tired.", zh: "有點累。" },
-            { speaker: "Female", text: "Moi aussi.", en: "Me too.", zh: "我也是。" },
-            { speaker: "Male", text: "Bonne nuit !", en: "Good night!", zh: "晚安！" },
-            { speaker: "Female", text: "Bonne nuit ! À demain !", en: "Good night! See you tomorrow!", zh: "晚安！明天見！" },
-            { speaker: "Male", text: "Au revoir !", en: "Goodbye!", zh: "再見！" },
-            { speaker: "Female", text: "Salut !", en: "Bye!", zh: "掰掰！" }
-          ]
-        },
-        {
-          sceneId: 9,
-          scene: "Day 9 – At the shop",
-          scene_zh: "第 9 天 — 在商店",
-          dialogue: [
-            { speaker: "Female", text: "Bonjour monsieur.", en: "Good morning, sir.", zh: "早安，先生。" },
-            { speaker: "Male", text: "Bonjour madame.", en: "Good morning, madam.", zh: "早安，女士。" },
-            { speaker: "Female", text: "Excusez-moi.", en: "Excuse me.", zh: "不好意思。" },
-            { speaker: "Female", text: "Où est l’eau, s’il vous plaît ?", en: "Where is the water, please?", zh: "請問水在哪裡？" },
-            { speaker: "Male", text: "Là-bas.", en: "Over there.", zh: "在那邊。" },
-            { speaker: "Female", text: "Merci beaucoup.", en: "Thank you very much.", zh: "非常感謝。" },
-            { speaker: "Male", text: "De rien.", en: "You’re welcome.", zh: "不客氣。" },
-            { speaker: "Female", text: "Au revoir !", en: "Goodbye!", zh: "再見！" },
-            { speaker: "Male", text: "Bonne journée !", en: "Have a nice day!", zh: "祝你有美好的一天！" }
-          ]
-        },
-        {
-          sceneId: 10,
-          scene: "Day 10 – Polite words review",
-          scene_zh: "第 10 天 — 禮貌用語複習",
-          dialogue: [
-            { speaker: "Male", text: "Bonjour !", en: "Good morning!", zh: "早安！" },
-            { speaker: "Female", text: "Salut !", en: "Hi!", zh: "嗨！" },
-            { speaker: "Male", text: "Merci !", en: "Thanks!", zh: "謝謝！" },
-            { speaker: "Female", text: "Merci beaucoup !", en: "Thank you very much!", zh: "非常感謝！" },
-            { speaker: "Male", text: "Pardon.", en: "Sorry.", zh: "不好意思。" },
-            { speaker: "Female", text: "Pas de problème.", en: "No problem.", zh: "沒關係。" },
-            { speaker: "Male", text: "Excusez-moi.", en: "Excuse me.", zh: "勞駕。" },
-            { speaker: "Female", text: "Oui ?", en: "Yes?", zh: "是嗎？" },
-            { speaker: "Male", text: "Au revoir !", en: "Goodbye!", zh: "再見！" },
-            { speaker: "Female", text: "À bientôt !", en: "See you soon!", zh: "很快見！" }
           ]
         }
       ]

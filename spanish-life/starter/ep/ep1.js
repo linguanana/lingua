@@ -4,7 +4,7 @@ const episodeData = {
   episode: "🇪🇸 Episode – Spanish Starter Dialogues",
   episode_zh: "🇪🇸 特別篇 - 西班牙語入門對話",
   toggle_title: "Scenes",
-  voice: "es-ES",
+  voice: "es-US",
   speaking_rate: "0.7",
   topics: [
     {
@@ -17,15 +17,15 @@ const episodeData = {
           scene: "Day 1 – Morning greeting",
           scene_zh: "第1天 – 早晨打招呼",
           dialogue: [
-            { speaker: "F", text: "¡Buenos días!", en: "Good morning!", zh: "早安！" },
-            { speaker: "M", text: "¡Buenos días! ¿Cómo estás?", en: "Good morning! How are you?", zh: "早安！你好吗？" },
-            { speaker: "F", text: "Estoy bien, gracias. ¿Y tú?", en: "I’m fine, thanks. And you?", zh: "我很好，谢谢。你呢？" },
-            { speaker: "M", text: "Muy bien también.", en: "Very well too.", zh: "我也很好。" },
-            { speaker: "F", text: "Me alegro.", en: "I’m glad.", zh: "我很高兴。" },
-            { speaker: "M", text: "Que tengas un buen día.", en: "Have a good day.", zh: "祝你有美好的一天。" },
-            { speaker: "F", text: "Gracias, igualmente.", en: "Thanks, same to you.", zh: "谢谢，你也是。" },
-            { speaker: "M", text: "Hasta luego.", en: "See you later.", zh: "待会见。" },
-            { speaker: "F", text: "Adiós.", en: "Goodbye.", zh: "再见。" }
+            { speaker: "Female", text: "¡Buenos días!", en: "Good morning!", zh: "早安！" },
+            { speaker: "Male", text: "¡Buenos días! ¿Cómo estás?", en: "Good morning! How are you?", zh: "早安！你好吗？" },
+            { speaker: "Female", text: "Estoy bien, gracias. ¿Y tú?", en: "I’m fine, thanks. And you?", zh: "我很好，谢谢。你呢？" },
+            { speaker: "Male", text: "Muy bien también.", en: "Very well too.", zh: "我也很好。" },
+            { speaker: "Female", text: "Me alegro.", en: "I’m glad.", zh: "我很高兴。" },
+            { speaker: "Male", text: "Que tengas un buen día.", en: "Have a good day.", zh: "祝你有美好的一天。" },
+            { speaker: "Female", text: "Gracias, igualmente.", en: "Thanks, same to you.", zh: "谢谢，你也是。" },
+            { speaker: "Male", text: "Hasta luego.", en: "See you later.", zh: "待会见。" },
+            { speaker: "Female", text: "Adiós.", en: "Goodbye.", zh: "再见。" }
           ]
         },
         {
@@ -33,15 +33,15 @@ const episodeData = {
           scene: "Day 2 – Evening greeting",
           scene_zh: "第2天 – 晚上打招呼",
           dialogue: [
-            { speaker: "M", text: "¡Buenas tardes!", en: "Good afternoon!", zh: "午安！" },
-            { speaker: "F", text: "¡Buenas tardes! ¿Cómo te va?", en: "Good afternoon! How’s it going?", zh: "午安！过得怎么样？" },
-            { speaker: "M", text: "Más o menos, un poco cansado.", en: "So-so, a bit tired.", zh: "马马虎虎，有点累。" },
-            { speaker: "F", text: "Lo siento. ¿Quieres un café?", en: "I’m sorry. Do you want a coffee?", zh: "真不好意思。要喝咖啡吗？" },
-            { speaker: "M", text: "Sí, por favor.", en: "Yes, please.", zh: "好的，请。" },
-            { speaker: "F", text: "Aquí tienes.", en: "Here you go.", zh: "给你。" },
-            { speaker: "M", text: "Muchas gracias.", en: "Thanks a lot.", zh: "非常谢谢。" },
-            { speaker: "F", text: "De nada.", en: "You’re welcome.", zh: "不客气。" },
-            { speaker: "M", text: "Hasta mañana.", en: "See you tomorrow.", zh: "明天见。" }
+            { speaker: "Male", text: "¡Buenas tardes!", en: "Good afternoon!", zh: "午安！" },
+            { speaker: "Female", text: "¡Buenas tardes! ¿Cómo te va?", en: "Good afternoon! How’s it going?", zh: "午安！过得怎么样？" },
+            { speaker: "Male", text: "Más o menos, un poco cansado.", en: "So-so, a bit tired.", zh: "马马虎虎，有点累。" },
+            { speaker: "Female", text: "Lo siento. ¿Quieres un café?", en: "I’m sorry. Do you want a coffee?", zh: "真不好意思。要喝咖啡吗？" },
+            { speaker: "Male", text: "Sí, por favor.", en: "Yes, please.", zh: "好的，请。" },
+            { speaker: "Female", text: "Aquí tienes.", en: "Here you go.", zh: "给你。" },
+            { speaker: "Male", text: "Muchas gracias.", en: "Thanks a lot.", zh: "非常谢谢。" },
+            { speaker: "Female", text: "De nada.", en: "You’re welcome.", zh: "不客气。" },
+            { speaker: "Male", text: "Hasta mañana.", en: "See you tomorrow.", zh: "明天见。" }
           ]
         },
         {
@@ -49,15 +49,15 @@ const episodeData = {
           scene: "Day 3 – Asking how someone is",
           scene_zh: "第3天 – 询问近况",
           dialogue: [
-            { speaker: "F", text: "Hola, ¿qué tal?", en: "Hi, how’s it going?", zh: "嗨，你好吗？" },
-            { speaker: "M", text: "Bien, gracias. ¿Y tú?", en: "Fine, thanks. And you?", zh: "很好，谢谢。你呢？" },
-            { speaker: "F", text: "Regular. Un poco ocupada.", en: "So-so. A bit busy.", zh: "一般般。有点忙。" },
-            { speaker: "M", text: "Ah, lo entiendo.", en: "Ah, I understand.", zh: "啊，我懂了。" },
-            { speaker: "F", text: "Pero estoy contenta.", en: "But I’m happy.", zh: "不过我很开心。" },
-            { speaker: "M", text: "Me alegro mucho.", en: "I’m very glad.", zh: "我很高兴。" },
-            { speaker: "F", text: "Gracias. Eres amable.", en: "Thanks. You’re kind.", zh: "谢谢，你人真好。" },
-            { speaker: "M", text: "De nada. ¡Hasta pronto!", en: "You’re welcome. See you soon!", zh: "不客气。回头见！" },
-            { speaker: "F", text: "Chao.", en: "Bye.", zh: "拜拜。" }
+            { speaker: "Female", text: "Hola, ¿qué tal?", en: "Hi, how’s it going?", zh: "嗨，你好吗？" },
+            { speaker: "Male", text: "Bien, gracias. ¿Y tú?", en: "Fine, thanks. And you?", zh: "很好，谢谢。你呢？" },
+            { speaker: "Female", text: "Regular. Un poco ocupada.", en: "So-so. A bit busy.", zh: "一般般。有点忙。" },
+            { speaker: "Male", text: "Ah, lo entiendo.", en: "Ah, I understand.", zh: "啊，我懂了。" },
+            { speaker: "Female", text: "Pero estoy contenta.", en: "But I’m happy.", zh: "不过我很开心。" },
+            { speaker: "Male", text: "Me alegro mucho.", en: "I’m very glad.", zh: "我很高兴。" },
+            { speaker: "Female", text: "Gracias. Eres amable.", en: "Thanks. You’re kind.", zh: "谢谢，你人真好。" },
+            { speaker: "Male", text: "De nada. ¡Hasta pronto!", en: "You’re welcome. See you soon!", zh: "不客气。回头见！" },
+            { speaker: "Female", text: "Chao.", en: "Bye.", zh: "拜拜。" }
           ]
         },
         {
@@ -65,14 +65,14 @@ const episodeData = {
           scene: "Day 4 – Saying sorry",
           scene_zh: "第4天 – 道歉",
           dialogue: [
-            { speaker: "M", text: "Perdón, perdón.", en: "Sorry, sorry.", zh: "对不起，对不起。" },
-            { speaker: "F", text: "No pasa nada.", en: "It’s okay.", zh: "没关系。" },
-            { speaker: "M", text: "Lo siento, choqué contigo.", en: "I’m sorry, I bumped into you.", zh: "不好意思，我撞到你了。" },
-            { speaker: "F", text: "Tranquilo, está bien.", en: "Don’t worry, it’s fine.", zh: "别担心，没事的。" },
-            { speaker: "M", text: "Gracias por tu paciencia.", en: "Thanks for your patience.", zh: "谢谢你的体谅。" },
-            { speaker: "F", text: "Claro, de nada.", en: "Of course, you’re welcome.", zh: "当然，不客气。" },
-            { speaker: "M", text: "Que tengas una buena noche.", en: "Have a good night.", zh: "祝你晚安。" },
-            { speaker: "F", text: "Igualmente. Buenas noches.", en: "Same to you. Good night.", zh: "你也是。晚安。" }
+            { speaker: "Male", text: "Perdón, perdón.", en: "Sorry, sorry.", zh: "对不起，对不起。" },
+            { speaker: "Female", text: "No pasa nada.", en: "It’s okay.", zh: "没关系。" },
+            { speaker: "Male", text: "Lo siento, choqué contigo.", en: "I’m sorry, I bumped into you.", zh: "不好意思，我撞到你了。" },
+            { speaker: "Female", text: "Tranquilo, está bien.", en: "Don’t worry, it’s fine.", zh: "别担心，没事的。" },
+            { speaker: "Male", text: "Gracias por tu paciencia.", en: "Thanks for your patience.", zh: "谢谢你的体谅。" },
+            { speaker: "Female", text: "Claro, de nada.", en: "Of course, you’re welcome.", zh: "当然，不客气。" },
+            { speaker: "Male", text: "Que tengas una buena noche.", en: "Have a good night.", zh: "祝你晚安。" },
+            { speaker: "Female", text: "Igualmente. Buenas noches.", en: "Same to you. Good night.", zh: "你也是。晚安。" }
           ]
         },
         {
@@ -80,14 +80,14 @@ const episodeData = {
           scene: "Day 5 – Asking for help",
           scene_zh: "第5天 – 请求帮忙",
           dialogue: [
-            { speaker: "F", text: "Disculpe, ¿puede ayudarme?", en: "Excuse me, can you help me?", zh: "不好意思，可以帮我吗？" },
-            { speaker: "M", text: "Sí, claro. ¿Qué pasa?", en: "Yes, of course. What’s wrong?", zh: "好的，当然。怎么了？" },
-            { speaker: "F", text: "Busco la estación.", en: "I’m looking for the station.", zh: "我在找车站。" },
-            { speaker: "M", text: "Está cerca, a la derecha.", en: "It’s nearby, to the right.", zh: "就在附近，往右走。" },
-            { speaker: "F", text: "Ah, perfecto. Muchas gracias.", en: "Ah, perfect. Thank you very much.", zh: "啊，太好了。非常谢谢你。" },
-            { speaker: "M", text: "De nada, con gusto.", en: "You’re welcome, with pleasure.", zh: "不客气，很乐意。" },
-            { speaker: "F", text: "Hasta luego.", en: "See you later.", zh: "待会见。" },
-            { speaker: "M", text: "Adiós.", en: "Goodbye.", zh: "再见。" }
+            { speaker: "Female", text: "Disculpe, ¿puede ayudarme?", en: "Excuse me, can you help me?", zh: "不好意思，可以帮我吗？" },
+            { speaker: "Male", text: "Sí, claro. ¿Qué pasa?", en: "Yes, of course. What’s wrong?", zh: "好的，当然。怎么了？" },
+            { speaker: "Female", text: "Busco la estación.", en: "I’m looking for the station.", zh: "我在找车站。" },
+            { speaker: "Male", text: "Está cerca, a la derecha.", en: "It’s nearby, to the right.", zh: "就在附近，往右走。" },
+            { speaker: "Female", text: "Ah, perfecto. Muchas gracias.", en: "Ah, perfect. Thank you very much.", zh: "啊，太好了。非常谢谢你。" },
+            { speaker: "Male", text: "De nada, con gusto.", en: "You’re welcome, with pleasure.", zh: "不客气，很乐意。" },
+            { speaker: "Female", text: "Hasta luego.", en: "See you later.", zh: "待会见。" },
+            { speaker: "Male", text: "Adiós.", en: "Goodbye.", zh: "再见。" }
           ]
         },
         {
@@ -171,4 +171,4 @@ const episodeData = {
       ]
     }
   ]
-}
+};

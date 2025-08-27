@@ -114,7 +114,7 @@ def parse_voiced_sequence(full_ssml: str) -> List[Tuple[str, str]]:
     """
     Parse the SSML into an ordered list of (voice_name, fragment_ssml) where each fragment
     is a single-voice SSML <speak>...</speak> string. We attach any standalone <break/>
-    that appears between voices to the **preceding** fragment so pauses are preserved.
+    that appears between voices to the @@preceding@@ fragment so pauses are preserved.
     """
     s = full_ssml.strip()
     if s.lower().startswith("<speak>") and s.lower().endswith("</speak>"):

@@ -13,21 +13,21 @@ SPEAKER_CONFIG = {
     },
 
     "fr-FR": {
-        # Standard-F and Standard-G
-        "default":  {"voice_id": "Neural2-F", "prosody": {"rate": "62%", "pitch": "1st"}, "emoji": "👱🏻‍♀️"},
-        "Female":   {"voice_id": "Neural2-F", "prosody": {"rate": "62%", "pitch": "1st"}, "emoji": "👩"},
-        "Male":     {"voice_id": "Neural2-G", "prosody": {"rate": "62%", "pitch": "0st"}, "emoji": "🧑"},
-        "M_Chef":   {"voice_id": "Neural2-G", "prosody": {"rate": "62%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
+        # Standard-F and Standard-G fr-FR-Neural2-D
+        "default":  {"voice_id": "Standard-F", "prosody": {"rate": "65%", "pitch": "-1st"}, "emoji": "👱🏻‍♀️"},
+        "Female":   {"voice_id": "Standard-F", "prosody": {"rate": "65%", "pitch": "-1st"}, "emoji": "👩"},
+        "Male":     {"voice_id": "Standard-G", "prosody": {"rate": "65%", "pitch": "0st"}, "emoji": "🧑"},
+        "M_Chef":   {"voice_id": "Standard-G", "prosody": {"rate": "65%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
         "F_hd":     {"voice_id": "Chirp3-HD-Leda",   "prosody": {"rate": "85%", "pitch": "0st"}, "emoji": "👩🏻‍🦰"},
         "M_hd":     {"voice_id": "Chirp3-HD-Puck",   "prosody": {"rate": "85%", "pitch": "0st"}, "emoji": "🧑🏻‍🦱"},
         "M_Chef_hd":{"voice_id": "Chirp3-HD-Puck",   "prosody": {"rate": "85%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
     },
 
-    "es-ES": {
-        "default":  {"voice_id": "Standard-H", "prosody": {"rate": "68%", "pitch": "1st"}, "emoji": "👱🏻‍♀️"},
-        "Female":   {"voice_id": "Standard-H", "prosody": {"rate": "68%", "pitch": "1st"}, "emoji": "👩"},
-        "Male":     {"voice_id": "Standard-B", "prosody": {"rate": "68%", "pitch": "0st"}, "emoji": "🧑"},
-        "M_Chef":   {"voice_id": "Standard-B", "prosody": {"rate": "68%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
+    "es-US": {
+        "default":  {"voice_id": "Neural2-A", "prosody": {"rate": "68%", "pitch": "1st"}, "emoji": "👱🏻‍♀️"},
+        "Female":   {"voice_id": "Neural2-A", "prosody": {"rate": "68%", "pitch": "1st"}, "emoji": "👩"},
+        "Male":     {"voice_id": "Neural2-B", "prosody": {"rate": "68%", "pitch": "0st"}, "emoji": "🧑"},
+        "M_Chef":   {"voice_id": "Neural2-B", "prosody": {"rate": "68%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
         "F_hd":     {"voice_id": "Chirp3-HD-Leda",   "prosody": {"rate": "95%", "pitch": "0st"}, "emoji": "👩🏻‍🦰"},
         "M_hd":     {"voice_id": "Chirp3-HD-Puck",   "prosody": {"rate": "95%", "pitch": "0st"}, "emoji": "🧑🏻‍🦱"},
         "M_Chef_hd":{"voice_id": "Chirp3-HD-Puck",   "prosody": {"rate": "95%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},

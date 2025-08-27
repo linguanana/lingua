@@ -9,7 +9,7 @@ from typing import Dict, List
 
 # we are not using this , we use one in inout file
 DEFAULT_SPEAKER_CONFIG = {
-    "en-US": {"voice_id": "en-US-Standard-H", "prosody": {"rate": "90%", "pitch": "2st"}},
+    "en-US": {"voice_id": "en-US-Standard-H", "prosody": {"rate": "88%", "pitch": "2st"}},
     "fr-FR": {"voice_id": "fr-FR-Standard-E", "prosody": {"rate": "60%", "pitch": "2st"}},
     "it-IT": {"voice_id": "it-IT-Standard-E", "prosody": {"rate": "70%", "pitch": "2st"}},
 }
@@ -135,12 +135,19 @@ def insert_punctuation_breaks(s: str) -> str:
 
 def autotag_asterisks_as_foreign(s: str, foreign_lang: str) -> str:
     """
-    ***word*** or **word** -> temporary markers for foreign content.
+    Marks **word**, ***word***, or @@word@@ as foreign content.
     """
     # Use a unique temporary marker to avoid collisions
-    def repl(m): return f"[[{foreign_lang}]]{m.group(1).strip()}[[/]]"
-    s = re.sub(r"\*\*\*(.+?)\*\*\*", repl, s, flags=re.DOTALL)
-    s = re.sub(r"\*\*(.+?)\*\*", repl, s, flags=re.DOTALL)
+    def repl(text):
+        return f"[[{foreign_lang}]]{text.strip()}[[/]]"
+
+    # handle **word** and ***word***
+    s = re.sub(r"\*\*\*(.+?)\*\*\*", lambda m: repl(m.group(1)), s, flags=re.DOTALL)
+    s = re.sub(r"\*\*(.+?)\*\*",     lambda m: repl(m.group(1)), s, flags=re.DOTALL)
+
+    # handle @@word@@
+    s = re.sub(r"@@(.+?)@@",         lambda m: repl(m.group(1)), s, flags=re.DOTALL)
+
     return s
 
 def build_ssml_blocks(raw_text: str, base_lang: str, foreign_lang: str) -> List[Dict]:
@@ -159,7 +166,7 @@ def build_ssml_blocks(raw_text: str, base_lang: str, foreign_lang: str) -> List[
     for b in blocks:
         body = b["body"]
 
-        # 1) Auto-tag **...** as foreign markers
+        # 1) Auto-tag @@...@@ as foreign markers
         body = autotag_asterisks_as_foreign(body, foreign_lang)
 
         # 2) Escape text to be SSML-safe
@@ -217,7 +224,7 @@ def main():
     ap.add_argument("--lang", default="en-US", help="Base narration language (e.g., en-US)")
     ap.add_argument("--input", required=True, help="Path to lesson text")
     ap.add_argument("--out", default="script.json", help="Output JSON")
-    ap.add_argument("--foreign-lang", default="fr-FR", help="Foreign language tag (for **…**)")
+    ap.add_argument("--foreign-lang", default="fr-FR", help="Foreign language tag (for @@…@@)")
     args = ap.parse_args()
 
     with open(args.input, "r", encoding="utf-8") as f:

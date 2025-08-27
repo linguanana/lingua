@@ -72,6 +72,7 @@ def generate_ssml_text(js_file_path, topic_filter=None):
                     SPEAKER_CONFIG.get(language_code, {}).get("default")
                 )
                 prosody_settings = speaker_info['prosody']
+                voice_id = speaker_info.get('voice_id', "")
 
                 rate = prosody_settings.get("rate", "100%")
                 pitch = prosody_settings.get("pitch", "0st")
@@ -83,7 +84,7 @@ def generate_ssml_text(js_file_path, topic_filter=None):
                 break_tag = "<break time='1s'/>"
                 ssml_content = f"<speak lang='{language_code}'><voice speaker='{speaker_name}'><prosody rate='{rate}' pitch='{pitch}'>{text}{break_tag}</prosody></voice></speak>"
 
-                output_blocks.append(f"{mp3_filename} ========== (rate={speaking_rate} ep{episode_id} topic{topic_id} scene{scene_id} dialog{dialog_id})")
+                output_blocks.append(f"{mp3_filename} ========== (voice_id={voice_id} rate={speaking_rate} ep{episode_id} topic{topic_id} scene{scene_id} dialog{dialog_id})")
                 output_blocks.append(ssml_content)
 
     return "\n\n".join(output_blocks)
