@@ -140,17 +140,17 @@ const episodeData = {
         },
         {
           sceneId: 9,
-          scene: "Day 9 – Asking the time",
-          scene_zh: "第 9 天 — 問時間",
+          scene: "Day 9 – In a small shop (",
+          scene_zh: "第 9 天 — 商店",
           dialogue: [
-            { speaker: "Male", text: "Perdón, ¿qué hora es?", en: "Excuse me, what time is it?", zh: "不好意思，現在幾點？" },
-            { speaker: "Female", text: "Son las tres.", en: "It’s three o’clock.", zh: "三點。" },
-            { speaker: "Male", text: "Gracias.", en: "Thank you.", zh: "謝謝。" },
-            { speaker: "Female", text: "De nada.", en: "You’re welcome.", zh: "不客氣。" },
-            { speaker: "Male", text: "Lo siento, tengo prisa.", en: "Sorry, I’m in a hurry.", zh: "抱歉，我趕時間。" },
-            { speaker: "Female", text: "Está bien, ¡hasta luego!", en: "Alright, see you later!", zh: "好的，待會見！" },
-            { speaker: "Male", text: "¡Hasta pronto! ¡Chao!", en: "See you soon! Bye!", zh: "回頭見！掰！" },
-            { speaker: "Female", text: "¡Chao!", en: "Bye!", zh: "掰掰！" }
+            { speaker: "Female", text: "Perdón, ¿dónde está la leche?", en: "Excuse me, where is the milk?", zh: "不好意思，牛奶在哪裡？" },
+            { speaker: "Male",   text: "Allí, a la derecha.", en: "Over there, to the right.", zh: "在那邊，右邊。" },
+            { speaker: "Female", text: "Ah, perfecto. Muchas gracias.", en: "Ah, perfect. Thank you very much.", zh: "啊，太好了，非常感謝。" },
+            { speaker: "Male",   text: "De nada.", en: "You’re welcome.", zh: "不客氣。" },
+            { speaker: "Female", text: "¿Cuánto es?", en: "How much is it?", zh: "多少錢？" },
+            { speaker: "Male",   text: "Dos euros.", en: "Two euro.", zh: "2歐元。" },
+            { speaker: "Female", text: "Está bien. Aquí tiene.", en: "Alright. Here you go.", zh: "好的，給您。" },
+            { speaker: "Male",   text: "Gracias, ¡hasta luego!", en: "Thanks, see you later!", zh: "謝謝，待會見！" }
           ]
         },
         {

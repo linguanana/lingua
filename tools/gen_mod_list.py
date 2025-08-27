@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Usage:
-#   (1) 先確定 speaker_config_lang.py
+#   (1) 先確定 speaker_google.py
 #   python3 gen_module_list.py path/to/mod1.js --lang it-IT > mod
 # Optional:
 #   --kp_speaker Female
@@ -14,7 +14,7 @@ import os
 
 # --- robust import for speaker config (prefer multi-language file) ---
 try:
-    import speaker_config_lang as _sc      # 新：優先載入多語版
+    import speaker_google as _sc      # 新：優先載入多語版
 except ImportError:
     try:
         import speaker_conf as _sc         # 舊：備援
@@ -22,7 +22,7 @@ except ImportError:
         try:
             import speaker_config as _sc   # 舊：再備援
         except ImportError:
-            print("Error: cannot import speaker_config_lang.py / speaker_conf.py / speaker_config.py (must be next to this script).")
+            print("Error: cannot import speaker_google.py / speaker_conf.py / speaker_config.py (must be next to this script).")
             sys.exit(2)
 
 # 期望 _sc 內有多語大表 SPEAKER_CONFIG = { "it-IT": {...}, "fr-FR": {...}, ... }

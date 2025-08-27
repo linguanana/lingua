@@ -15,7 +15,7 @@ import sys
 from pydub import AudioSegment
 from google.cloud import texttospeech
 # from file_name import
-from speaker_config_lang import SPEAKER_CONFIG
+from speaker_google import SPEAKER_CONFIG
 
 def _synthesize_and_save(client, mp3_filename, ssml_content, output_directory):
     """

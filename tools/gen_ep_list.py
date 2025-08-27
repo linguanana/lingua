@@ -18,7 +18,7 @@ $ python3 gen_ep_list.py 2 ../../italian-life/travel/ep/ep1.js > ep2
 import json
 import re
 import sys
-from speaker_config_lang import SPEAKER_CONFIG
+from speaker_google import SPEAKER_CONFIG
 
 def generate_ssml_text(js_file_path, topic_filter=None):
     try:
