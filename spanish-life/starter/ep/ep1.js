@@ -1,8 +1,8 @@
 const episodeData = {
   ep_title: "ep",
   episodeId: 1,
-  episode: "🇪🇸 Episode – Spanish Starter Dialogues",
-  episode_zh: "🇪🇸 特別篇 - 西班牙語入門對話",
+  episode: "🇪🇸 Episode – Starter 01: Spanish Starter Dialogues",
+  episode_zh: "🇪🇸 特別篇 - 入門 01：西班牙語入門對話",
   toggle_title: "Scenes",
   voice: "es-US",
   speaking_rate: "0.7",
