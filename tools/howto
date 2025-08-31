@@ -1,14 +1,45 @@
+製作 ep
+
+1. SSML做出來
+python3 gen_ep_list.py ../italian-life/travel/ep/ep1.js > ep
+python3 gen_ep_list.py ../spanish-life/starter/ep/ep1.js > ep
+python3 gen_ep_list.py ../french-life/starter/ep/ep1.js > ep
+
+2. 音檔做出來
+python3 gen_audio.py ep ../italian-life/travel/audio/
+python3 gen_audio.py ep ../spanish-life/travel/audio/
+python3 gen_audio.py ep ../french-life/travel/audio/
+
+3. 英文
+python3 gen_en_intro.py ../italian-life/travel/ep/ep1.js ../../italian-life/travel/audio/
+
+4. 速度對的話就checkin
+afplay -r 0.75 ../italian-life/travel/audio/ep1_topic1_scene3.mp3
+
+$ git add -n ../italian-life/travel/audio/*_scene{1..10}.mp3
+$ git add ../italian-life/travel/audio/*_scene{1..10}.mp3
+
+5. 做出 ep1_topic1
+sh gen_ep_topic.sh ep1_topic1 ../../italian-life/travel/audio/
+
+6. 查速度
+sh mp3info.sh ../../italian-life/travel/audio//ep1_topic1_full.mp3
 
 
-python3 gen_ep_list.py ../../italian-life/travel/ep/ep1.js > out
-python3 gen_audio.py out ../../italian-life/travel/audio/
 
+製作 module
 
-python3 gen_mod_list.py ../../italian-life/module1/mod/mod1.js > mod
-$ python3 gen_mod_list.py 3 ../../italian-life/module1/mod/mod1.js > mod
-$ python3 gen_mod_list.py 2,4 ../../italian-life/module1/mod/mod1.js > mod
-$ python3 gen_mod_list.py 2-4 ../../italian-life/module1/mod/mod1.js > mod
-python3 gen_audio.py mod ../../italian-life/module1/audio/
+1. SSML做出來
+python3 gen_mod_list.py ../italian-life/module1/mod/mod1.js > mod
+python3 gen_mod_list.py 3 ../italian-life/module1/mod/mod1.js > mod
+python3 gen_mod_list.py 2-4 ../italian-life/module1/mod/mod1.js > mod
+
+2. 音檔做出來
+python3 gen_audio.py mod ../italian-life/module1/audio/
+
+3. 速度對的話就checkin
+afplay -r 0.75 ../../italian-life/travel/audio/ep1_topic1_scene3.mp3
+
 
 
 

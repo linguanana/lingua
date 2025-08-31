@@ -537,7 +537,7 @@ const moduleData = {
           levelId: 2,
           title: "Level 2 (A1): Meet the Spanish Subject Pronouns",
           title_zh: "第二級（A1）: 認識西班牙語主詞代名詞",
-          keyPronouns: [
+          keyPhrases: [
             { text: "yo", en: "I", zh: "我" },
             { text: "yo soy...", en: "I am...", zh: "我是..." },
             { text: "tú", en: "you (informal)", zh: "你（非正式）" },
@@ -583,7 +583,6 @@ const moduleData = {
           title: "Level 3 (A1): Possessives",
           title_zh: "第三級（A1）: 所有格",
           keyPhrases: [
-            { title: "Singular / Plural" },
             { text: "mi / mis", en: "my (sing./pl.)", zh: "我的（單／複）" },
             { text: "tu / tus", en: "your (informal) (sing./pl.)", zh: "你的（單／複）" },
             { text: "su / sus", en: "his/her/your (formal) (sing./pl.)", zh: "他/她/您的（單／複）" },

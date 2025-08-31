@@ -12,6 +12,7 @@ DEFAULT_SPEAKER_CONFIG = {
     "en-US": {"voice_id": "en-US-Standard-H", "prosody": {"rate": "88%", "pitch": "2st"}},
     "fr-FR": {"voice_id": "fr-FR-Standard-E", "prosody": {"rate": "60%", "pitch": "2st"}},
     "it-IT": {"voice_id": "it-IT-Standard-E", "prosody": {"rate": "70%", "pitch": "2st"}},
+    "es-ES": {"voice_id": "it-IT-Standard-E", "prosody": {"rate": "70%", "pitch": "2st"}},
 }
 
 # 設定外語單字前後的停頓時間（毫秒)
