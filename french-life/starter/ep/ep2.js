@@ -1,5 +1,5 @@
 // 🇫🇷 Paris (French) — Starter 02: Names, Origins & Work
-const episodeDataFr = {
+const episodeData = {
   ep_title: "ep_fr_paris",
   episodeId: 301,
   episode: "🇫🇷 Episode – Starter 02: Names, Origins & Work ",

@@ -14,10 +14,10 @@ SPEAKER_CONFIG = {
 
     "fr-FR": {
         # Standard-F and Standard-G fr-FR-Neural2-D
-        "default":  {"voice_id": "Standard-F", "prosody": {"rate": "65%", "pitch": "-1st"}, "emoji": "👱🏻‍♀️"},
-        "Female":   {"voice_id": "Standard-F", "prosody": {"rate": "65%", "pitch": "-1st"}, "emoji": "👩"},
-        "Male":     {"voice_id": "Standard-G", "prosody": {"rate": "65%", "pitch": "0st"}, "emoji": "🧑"},
-        "M_Chef":   {"voice_id": "Standard-G", "prosody": {"rate": "65%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
+        "default":  {"voice_id": "Standard-F", "prosody": {"rate": "62%", "pitch": "1st"}, "emoji": "👱🏻‍♀️"},
+        "Female":   {"voice_id": "Standard-F", "prosody": {"rate": "62%", "pitch": "1st"}, "emoji": "👩"},
+        "Male":     {"voice_id": "Standard-G", "prosody": {"rate": "62%", "pitch": "0st"}, "emoji": "🧑"},
+        "M_Chef":   {"voice_id": "Standard-G", "prosody": {"rate": "62%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
         "F_hd":     {"voice_id": "Chirp3-HD-Leda",   "prosody": {"rate": "85%", "pitch": "0st"}, "emoji": "👩🏻‍🦰"},
         "M_hd":     {"voice_id": "Chirp3-HD-Puck",   "prosody": {"rate": "85%", "pitch": "0st"}, "emoji": "🧑🏻‍🦱"},
         "M_Chef_hd":{"voice_id": "Chirp3-HD-Puck",   "prosody": {"rate": "85%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},

@@ -1,4 +1,4 @@
-const episodeDataIt = {
+const episodeData = {
   ep_title: "ep",
   episodeId: 2,
   episode: "🇮🇹 Episode – Starter 02: Names, Origins & Work",

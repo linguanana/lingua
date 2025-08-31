@@ -1,4 +1,3 @@
-// episode/starter02-es.js — Starter 02: Names, Origins & Work
 const episodeData = {
   ep_title: "ep",
   episodeId: 2,
