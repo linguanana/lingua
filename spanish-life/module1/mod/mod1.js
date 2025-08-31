@@ -3,7 +3,7 @@ const moduleData = {
   moduleId: "1",
   title: "Module 1 – Saludos",
   title_zh: "模組 1 – 打招呼（西班牙語）",
-  voice: "es-ES",
+  voice: "es-US",
   lessons: [
     // ===== Lesson 1 =====
     {
