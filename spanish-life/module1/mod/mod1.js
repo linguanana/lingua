@@ -67,7 +67,14 @@ const moduleData = {
           levelId: 3,
           title: "Level 3 (A0+): Even More Ways to Say Goodbye",
           title_zh: "第三級（A0+）: 更多道別方式",
-          keyPhrases: [],
+          keyPhrases: [
+            { text: "Nos vemos", en: "See you", zh: "到時見" },
+            { text: "Nos vemos pronto", en: "See you soon", zh: "很快再見" },
+            { text: "Hasta ya mismo", en: "See you very soon", zh: "馬上見" },
+            { text: "Que tengas buena tarde", en: "Have a nice afternoon", zh: "祝你午后愉快" },
+            { text: "Que tengas buen día", en: "Have a good day", zh: "祝你今天愉快" },
+            { text: "Hasta la próxima", en: "Until next time", zh: "下次見" }
+          ],
           dialogues: [
             { speaker: "Female", when: "Wrapping up a conversation", text: "Nos vemos", en: "See you", zh: "到時見" },
             { speaker: "Female", when: "Meeting again soon", text: "Nos vemos pronto", en: "See you soon", zh: "很快再見" },
