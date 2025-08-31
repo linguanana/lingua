@@ -1,7 +1,7 @@
 const episodeData = {
   ep_title: "ep",
   episodeId: 1,
-  episode: "🇫🇷 Episode – French Starter Dialogues",
+  episode: "🇫🇷 Episode – Starter 01: French Starter Dialogues",
   episode_zh: "🇫🇷 初學者法語對話",
   toggle_title: "Scenes",
   voice: "fr-FR",

@@ -19,11 +19,10 @@ const modulesData = [
       title_zh: '👋 10個西班牙語對話系列 (A0)：初學者必學對話',
       moduleId: 'starter',
       lessons: [
-        { name: 'Episode 1: Greetings & Polite Words', name_zh: '第1集：打招呼與禮貌用語', link: 'starter/index.html?id=1' },
-        { name: 'Episode 2: Self Introductions',        name_zh: '第2集：自我介紹與個人資訊', link: 'starter/index.html?id=2' },
-        { name: 'Episode 3: Daily Actions & Jobs',      name_zh: '第3集：日常行為與職業',     link: 'starter/index.html?id=3' },
-        { name: 'Episode 4: Question Words in Action',  name_zh: '第4集：疑問詞實戰',         link: 'starter/index.html?id=4' },
-        { name: 'Episode 5: Subject Pronouns & “Essere”', name_zh: '第5集：主語人稱與動詞 essere', link: 'starter/index.html?id=5' }
+        { name: 'Episode 1: Greetings & Polite Words',        name_zh: '第1集：打招呼與禮貌用語',               link: 'starter/index.html?id=1' },
+        { name: 'Episode 2: Self Introductions',               name_zh: '第2集：自我介紹與個人資訊',             link: 'starter/index.html?id=2' },
+        { name: 'Episode 3: Question Words in Action',         name_zh: '第3集：疑問詞實戰',                     link: 'starter/index.html?id=3' },
+        { name: 'Episode 4: Subject Pronouns & “Essere”',      name_zh: '第4集：主語人稱與動詞 essere',           link: 'starter/index.html?id=4' }
       ]
     },
     {
