@@ -227,5 +227,3 @@ const episodeData = {
     }
   ]
 };
-
-export default episodeData;

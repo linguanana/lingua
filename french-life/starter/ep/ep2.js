@@ -186,5 +186,21 @@ const episodeData = {
           dialogue: [
             { speaker: "Female", text: "Pardon, cette place est libre ?", en: "Excuse me, is this seat free?", zh: "不好意思，這個位子有人嗎？" },
             { speaker: "Male", text: "Oui, s’il vous plaît. Je m’appelle Lucas. Et vous ?", en: "Yes, please. I’m Lucas. And you?", zh: "請坐。我叫 Lucas。您呢？" },
-            { speaker: "Female", text: "Je m’appelle Emily. Enchantée.", en: "My name is Emily. Nice to meet you.", zh: "我叫 Emily。很高興認識你。" },
-            { speaker: "Male", text: "Enchanté, Emily. Vous venez d’où ?", en: "Nice to meet you, Emily. Where are you from?", zh: "很高興認識您，Emily。您
+            { speaker: "Female", text: "Je m’appelle Emily. Enchantée.", en: "My name is Emily. Nice to meet you.", zh: "我叫 Emily。很高興認識您。" },
+            { speaker: "Male", text: "Enchanté, Emily. Vous venez d’où ?", en: "Nice to meet you, Emily. Where are you from?", zh: "很高興認識您，Emily。您來自哪裡？" },
+            { speaker: "Female", text: "Je viens des États-Unis, de Californie. Et vous ?", en: "I’m from the United States, from California. And you?", zh: "我來自美國，加州。您呢？" },
+            { speaker: "Male", text: "Je viens de Lyon. Vous restez où à Lyon ?", en: "I’m from Lyon. Where are you staying in Lyon?", zh: "我來自里昂。您在里昂住哪裡？" },
+            { speaker: "Female", text: "Je reste dans un hôtel près de la gare.", en: "I’m staying at a hotel near the station.", zh: "我住在車站附近的一家飯店。" },
+            { speaker: "Male", text: "Parfait. Et maintenant, vous faites quoi dans le train ?", en: "Perfect. And what are you doing now on the train?", zh: "太好了。您現在在火車上做什麼？" },
+            { speaker: "Female", text: "Je lis un peu et j’écoute de la musique.", en: "I’m reading a bit and listening to music.", zh: "我看看書、聽聽音樂。" },
+            { speaker: "Male", text: "Et vous travaillez dans quel domaine ?", en: "And what field do you work in?", zh: "那您的工作領域是什麼？" },
+            { speaker: "Female", text: "Je travaille dans la tech. Et vous ?", en: "I work in tech. And you?", zh: "我在科技業。您呢？" },
+            { speaker: "Male", text: "Je suis designer. Aujourd’hui, je vais voir ma famille à Lyon.", en: "I’m a designer. Today I’m going to see my family in Lyon.", zh: "我是設計師。今天要回里昂看家人。" },
+            { speaker: "Female", text: "Très bien. Merci, Lucas. Bonne journée !", en: "Very good. Thank you, Lucas. Have a nice day!", zh: "太好了。謝謝你，Lucas。祝你有美好的一天！" },
+            { speaker: "Male", text: "De rien. Bon voyage !", en: "You’re welcome. Have a good trip!", zh: "不客氣。旅途愉快！" }
+          ]
+        }
+      ]
+    }
+  ]
+};
