@@ -1,18 +1,5 @@
 // ep-load.js
 // ============================
-const DEFAULT_SPEAKERS = {
-  Female: "👩",
-  Male: "🧑",
-  M_chef: "👨🏻‍🍳",
-  Girl: "👧",
-  Boy: "👦🏻‍🎨",
-  F_std: "🦙",
-  M_std: "🧸",
-  F_hd: "👩🏻‍🦰",
-  M_hd: "🧑🏻‍🦱",
-  F_wave: "🦙",
-  F_wave: "🧸",
-};
 
 // 取得表情（支援每集覆寫）
 function getSpeakerEmoji(speakerKey, epSpeakers) {
