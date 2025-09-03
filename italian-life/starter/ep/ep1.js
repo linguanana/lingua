@@ -9,7 +9,7 @@ const episodeData = {
   topics: [
     {
       topicId: 1,
-      topic: "👋 Saluti e frasi di cortesia",
+      topic: "👋 Greetings and Courtesy Expressions",
       topic_zh: "👋 打招呼與禮貌用語",
       scenes: [
         {
