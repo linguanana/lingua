@@ -1,0 +1,348 @@
+1
+00:00:00,000 --> 00:00:06,720
+1. Greetings and polite words.
+
+2
+00:00:06,720 --> 00:00:10,920
+2. Evening greetings.
+
+3
+00:00:10,920 --> 00:00:13,960
+Buonas tardes.
+
+4
+00:00:13,960 --> 00:00:18,160
+Buonas tardes. ¿Cómo te va?
+
+5
+00:00:18,160 --> 00:00:22,480
+Más o menos, un poco cansado.
+
+6
+00:00:22,480 --> 00:00:26,800
+Lo siento. Quieres un café?
+
+7
+00:00:26,800 --> 00:00:30,000
+Si, por favor.
+
+8
+00:00:30,000 --> 00:00:32,960
+Aquí tienes.
+
+9
+00:00:32,960 --> 00:00:36,080
+Muchas gracias.
+
+10
+00:00:36,080 --> 00:00:38,600
+De nada.
+
+11
+00:00:38,600 --> 00:00:41,240
+Hasta mañana.
+
+12
+00:00:41,240 --> 00:00:46,200
+Day 3 asking how someone is.
+
+13
+00:00:46,200 --> 00:00:49,360
+Hola, ¿qué tal?
+
+14
+00:00:49,360 --> 00:00:53,520
+Bien, gracias. ¿Y tú?
+
+15
+00:00:53,520 --> 00:00:57,960
+Regular, un poco occupata.
+
+16
+00:00:57,960 --> 00:01:01,080
+Ah, lo entiendo.
+
+17
+00:01:01,080 --> 00:01:04,440
+Pero estoy contenta.
+
+18
+00:01:04,440 --> 00:01:07,560
+Me alegro mucho.
+
+19
+00:01:07,560 --> 00:01:11,600
+Gracias. Eres amable.
+
+20
+00:01:11,600 --> 00:01:15,560
+De nada. Hasta pronto.
+
+21
+00:01:15,560 --> 00:01:17,600
+Chao.
+
+22
+00:01:17,600 --> 00:01:22,080
+Day 4 saying sorry.
+
+23
+00:01:22,080 --> 00:01:25,400
+Perdón, perdón.
+
+24
+00:01:25,400 --> 00:01:28,440
+No pasa nada.
+
+25
+00:01:28,440 --> 00:01:32,440
+Lo siento, choqué contigo.
+
+26
+00:01:32,440 --> 00:01:36,160
+Tranquilo, está bien.
+
+27
+00:01:36,160 --> 00:01:39,800
+Gracias por tu paciencia.
+
+28
+00:01:39,800 --> 00:01:43,120
+Claro, de nada.
+
+29
+00:01:43,120 --> 00:01:46,800
+Que tengas una buena noche.
+
+30
+00:01:46,800 --> 00:01:51,000
+Igualmente, buenas noches.
+
+31
+00:01:51,000 --> 00:01:55,400
+Day 5 asking for help.
+
+32
+00:01:55,400 --> 00:01:59,520
+Disculpe, puede ayudarme.
+
+33
+00:01:59,520 --> 00:02:03,720
+Si, claro. ¿Qué pasa?
+
+34
+00:02:03,720 --> 00:02:07,000
+Busco la estación.
+
+35
+00:02:07,000 --> 00:02:10,920
+Está cerca, a la derecha.
+
+36
+00:02:10,920 --> 00:02:15,880
+Ah, perfecto. Muchas gracias.
+
+37
+00:02:15,880 --> 00:02:19,400
+De nada, con gusto.
+
+38
+00:02:19,400 --> 00:02:22,160
+Hasta luego.
+
+39
+00:02:22,160 --> 00:02:24,520
+Adiós.
+
+40
+00:02:24,520 --> 00:02:27,800
+Day 6 on the street. Sorry and help.
+
+41
+00:02:27,800 --> 00:02:30,760
+Oh, perdón.
+
+42
+00:02:30,760 --> 00:02:33,880
+No hay problema.
+
+43
+00:02:33,880 --> 00:02:36,960
+Lo siento mucho.
+
+44
+00:02:36,960 --> 00:02:40,680
+Tranquilo, está bien.
+
+45
+00:02:40,680 --> 00:02:44,560
+Por favor, puede ayudarme.
+
+46
+00:02:44,560 --> 00:02:47,600
+Si, claro.
+
+47
+00:02:47,680 --> 00:02:50,760
+Donde está el metro?
+
+48
+00:02:50,760 --> 00:02:54,360
+Allí, a la izquierda.
+
+49
+00:02:54,360 --> 00:02:58,600
+Muchas gracias. Adiós.
+
+50
+00:02:58,600 --> 00:03:02,920
+Adiós. Que tenga un buen día.
+
+51
+00:03:02,920 --> 00:03:08,560
+Day 7 on the bus. Small courtesy.
+
+52
+00:03:08,560 --> 00:03:13,120
+Perdón, este asiento está libre.
+
+53
+00:03:13,120 --> 00:03:16,320
+Si, por favor.
+
+54
+00:03:16,400 --> 00:03:19,000
+Gracias.
+
+55
+00:03:19,000 --> 00:03:21,520
+De nada.
+
+56
+00:03:21,520 --> 00:03:25,920
+Disculpe, necesito bajar.
+
+57
+00:03:25,920 --> 00:03:29,360
+Claro, adelante.
+
+58
+00:03:29,360 --> 00:03:32,760
+Que tenga un buen día.
+
+59
+00:03:32,760 --> 00:03:36,360
+Hasta pronto, ciao.
+
+60
+00:03:36,360 --> 00:03:39,920
+Day 8 at the cafe. Order and farewell.
+
+61
+00:03:39,920 --> 00:03:45,040
+Buenos días. Un café, por favor.
+
+62
+00:03:45,040 --> 00:03:49,640
+Enseguida, en la barra o en la mesa.
+
+63
+00:03:49,640 --> 00:03:53,440
+En la barra, gracias.
+
+64
+00:03:53,440 --> 00:03:56,640
+Aquí tiene el café.
+
+65
+00:03:56,640 --> 00:04:00,600
+Perfecto, cuánto es?
+
+66
+00:04:00,600 --> 00:04:03,880
+Un euro con diez.
+
+67
+00:04:03,880 --> 00:04:08,360
+Aquí tiene, muchas gracias.
+
+68
+00:04:08,360 --> 00:04:13,280
+Gracias a usted, que tenga un buen día.
+
+69
+00:04:13,280 --> 00:04:15,520
+Adiós.
+
+70
+00:04:15,520 --> 00:04:20,560
+Day 9 in a small shop.
+
+71
+00:04:20,560 --> 00:04:24,720
+Perdón, ¿dónde está la leche?
+
+72
+00:04:24,720 --> 00:04:28,080
+Allí, a la derecha.
+
+73
+00:04:28,080 --> 00:04:33,040
+Ah, perfecto. Muchas gracias.
+
+74
+00:04:33,040 --> 00:04:35,560
+De nada.
+
+75
+00:04:35,560 --> 00:04:38,320
+Cuánto es?
+
+76
+00:04:38,320 --> 00:04:41,280
+Dos euros.
+
+77
+00:04:41,280 --> 00:04:45,280
+Está bien, aquí tiene.
+
+78
+00:04:45,280 --> 00:04:48,720
+Gracias, hasta luego.
+
+79
+00:04:48,720 --> 00:04:54,040
+Day 10 review, many goodbyes.
+
+80
+00:04:54,040 --> 00:04:57,680
+Hola, ¿cómo estás hoy?
+
+81
+00:04:57,680 --> 00:05:01,840
+Bien, gracias. ¿Y tú?
+
+82
+00:05:01,840 --> 00:05:04,800
+No está mal.
+
+83
+00:05:04,800 --> 00:05:07,560
+Tengo que irme.
+
+84
+00:05:07,560 --> 00:05:12,640
+Está bien, que tengas una buena tarde.
+
+85
+00:05:12,640 --> 00:05:16,720
+Gracias, hasta mañana.
+
+86
+00:05:16,720 --> 00:05:20,720
+Hasta pronto, adiós.
+
+87
+00:05:20,720 --> 00:05:23,160
+Ciao, ciao.
+

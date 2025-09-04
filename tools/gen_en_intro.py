@@ -1,7 +1,8 @@
-# gen_en_intros.py
+# gen_en_intro.py
 # Generate ONLY:
 # - ep{ep}_topic{topic}_intro.mp3 (topic intro, EN)
 # - ep{ep}_topic{topic}_scene{scene}_intro.mp3 (scene intro, EN)
+# python gen_en_intros.py path/to/episodeData.js out_dir/
 
 import re
 from pathlib import Path

@@ -14,8 +14,11 @@ FILES+=("${AUDIODIR}/${BASENAME}_intro.mp3")
 for i in $(seq 1 99); do
   INTRO="${AUDIODIR}/${BASENAME}_scene${i}_intro.mp3"
   MAIN="${AUDIODIR}/${BASENAME}_scene${i}.mp3"
-  if [[ -f "$INTRO" && -f "$MAIN" ]]; then
+
+  if [[ -f "$INTRO" ]]; then
     FILES+=("$INTRO")
+  fi
+  if [[ -f "$MAIN" ]]; then
     FILES+=("$MAIN")
   fi
 done
@@ -25,8 +28,10 @@ printf '  %s\n' "${FILES[@]}"
 
 TMPFILE=$(mktemp)
 for f in "${FILES[@]}"; do
-  echo "file '$(realpath "$f")'" >> "$TMPFILE"
+  abs_path=$(cd "$(dirname "$f")"; pwd)/$(basename "$f")
+  echo "file '$abs_path'" >> "$TMPFILE"
 done
+
 
 ffmpeg -f concat -safe 0 -i "$TMPFILE" -c copy "$OUTFILE"
 
