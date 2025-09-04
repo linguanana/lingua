@@ -270,17 +270,14 @@ const episodeData = {
             { speaker: "Female", text: "Molto bene, grazie. E tu, Carlo?", en: "Very well, thanks. And you, Carlo?", zh: "很好，謝謝。你呢，Carlo？" },
             { speaker: "Male", text: "Bene anch’io. Sei sempre all’Hotel Centrale?", en: "Good too. Are you still at Hotel Centrale?", zh: "也不錯。你還住在 Centrale 嗎？" },
             { speaker: "Female", text: "Sì, mi piace perché è vicino alla metro.", en: "Yes, I like it because it’s close to the metro.", zh: "是的，我喜歡它離地鐵很近。" },
-            { speaker: "Male", text: "Fantastico. Di quale città degli Stati Uniti sei?", en: "Great. What city in the U.S. are you from?", zh: "太好了。你在美國哪個城市？" },
-            { speaker: "Female", text: "Vengo da Los Angeles, ma ora vivo nel nord della California.", en: "I come from Los Angeles, but now I live in Northern California.", zh: "我來自洛杉磯，不過現在住在加州北部。" },
-            { speaker: "Male", text: "Interessante. Che programmi hai per oggi pomeriggio?", en: "Interesting. What’s your plan this afternoon?", zh: "有意思。你今天下午有什麼計畫？" },
+            { speaker: "Male", text: "Fantastico. Di dove sei?", en: "Great. Where are you from?", zh: "太好了。你來自哪裡？" },
+            { speaker: "Female", text: "Sono di Los Angeles.", en: "I’m from Los Angeles.", zh: "我來自洛杉磯。" },
+            { speaker: "Male", text: "Interessante. Cosa fai oggi pomeriggio?", en: "Interesting. What are you doing this afternoon?", zh: "有意思。你今天下午做什麼？" },
             { speaker: "Female", text: "Passeggiare in centro e visitare Piazza Navona.", en: "Walk around downtown and visit Piazza Navona.", zh: "在市中心走走，去納沃納廣場。" },
             { speaker: "Male", text: "Bel programma. Se hai bisogno di aiuto, dimmi.", en: "Good plan. If you need help, tell me.", zh: "不錯的計畫。需要幫忙就跟我說。" },
-            { speaker: "Female", text: "Grazie. A proposito, qual è il tuo nome completo?", en: "Thanks. By the way, what’s your full name?", zh: "謝謝。對了，你的全名是什麼？" },
-            { speaker: "Male", text: "Carlo Rossi. Piacere di nuovo.", en: "Carlo Rossi. Nice to meet you again.", zh: "Carlo Rossi。再次幸會。" },
-            { speaker: "Female", text: "Piacere, Carlo Rossi. Ci vediamo stasera!", en: "Nice to meet you, Carlo Rossi. See you tonight!", zh: "很高興認識你，Carlo Rossi。今晚見！" }
+            { speaker: "Female", text: "Grazie. A dopo!", en: "Thanks. See you later!", zh: "謝謝。待會見！" }
           ]
         },
-
         // Day 6 – Villa Borghese: what you do & what you’re doing now
         {
           sceneId: 6,
@@ -290,19 +287,18 @@ const episodeData = {
             { speaker: "Female", text: "Buongiorno, Carlo! Cosa fai oggi?", en: "Good morning, Carlo! What are you doing today?", zh: "早安，Carlo！你今天在做什麼？" },
             { speaker: "Male", text: "Passeggio a Villa Borghese. E tu?", en: "I’m strolling in Villa Borghese. And you?", zh: "我在博爾蓋塞別墅散步。你呢？" },
             { speaker: "Female", text: "Prendo un caffè e leggo un po’.", en: "I’m having a coffee and reading a bit.", zh: "我喝咖啡、看一下書。" },
-            { speaker: "Male", text: "Suona bene. A proposito, di cosa ti occupi?", en: "Sounds good. By the way, what do you do (for work)?", zh: "聽起來不錯。順便問一下，你做什麼工作？" },
-            { speaker: "Female", text: "Lavoro nella tecnologia. E tu?", en: "I work in tech. And you?", zh: "我在科技業。你呢？" },
+            { speaker: "Male", text: "Suona bene. Che lavoro fai?", en: "Sounds good. What’s your job?", zh: "聽起來不錯。你做什麼工作？" },
+            { speaker: "Female", text: "Sono insegnante. E tu?", en: "I’m a teacher. And you?", zh: "我是老師。你呢？" },
             { speaker: "Male", text: "Lavoro in ufficio e studio la sera.", en: "I work in an office and study in the evenings.", zh: "我在辦公室上班，傍晚去念書。" },
-            { speaker: "Female", text: "Interessante! Vivi qui a Roma?", en: "How interesting! Do you live here in Rome?", zh: "真有趣！你住在羅馬嗎？" },
+            { speaker: "Female", text: "Interessante! Vivi qui a Roma?", en: "Interesting! Do you live here in Rome?", zh: "真有趣！你住在羅馬嗎？" },
             { speaker: "Male", text: "Sì, vivo vicino a Termini. E tu dove stai adesso?", en: "Yes, I live near Termini. And where are you staying now?", zh: "是的，我住在特米尼附近。你現在住哪裡？" },
             { speaker: "Female", text: "All’Hotel Centrale, vicino alla metro.", en: "At Hotel Centrale, near the metro.", zh: "在 Centrale 飯店，靠近地鐵。" },
-            { speaker: "Male", text: "Perfetto per girare la città.", en: "Perfect for getting around the city.", zh: "很適合在城裡走動。" },
-            { speaker: "Female", text: "Sì. Poi vado ai Musei Vaticani.", en: "Yes. Later I’m going to the Vatican Museums.", zh: "是啊。等一下要去梵蒂岡博物館。" },
+            { speaker: "Male", text: "È comodo.", en: "It’s convenient.", zh: "很方便。" },
+            { speaker: "Female", text: "Sì. Poi vado in centro.", en: "Yes. Later I’m going downtown.", zh: "是啊。等一下要去市中心。" },
             { speaker: "Male", text: "Ottimo piano! Ci vediamo stasera in hotel.", en: "Great plan! See you tonight in the hotel.", zh: "好主意！今晚在飯店見。" },
             { speaker: "Female", text: "Va bene. A dopo!", en: "Alright. See you later!", zh: "好的。待會見！" }
           ]
         },
-
         // Day 7 – Hotel lobby: names & stay
         {
           sceneId: 7,
