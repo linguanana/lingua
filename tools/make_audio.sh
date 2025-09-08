@@ -49,7 +49,7 @@ if [[ "$style" == "starter" || "$style" == "travel" ]]; then
 
   run "python gen_ep_list.py $topic $base > ep-$style-$epname-$topic.txt"
   run "python gen_audio.py ep-$style-$epname-$topic.txt $audio"
-  run "python gen_en_intro.py $base $audio"
+  run "python gen_eng_intro.py $base $audio"
   run "./gen_ep_topic.sh ${epname}_topic$topic $audio/"
   run "python gen_srt_ep.py $base 4 $topic"
 
