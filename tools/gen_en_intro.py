@@ -41,7 +41,12 @@ def strip_emoji(s: str) -> str:
     return "".join(ch for ch in s if ch.isprintable() and unicodedata.category(ch) != "So")
 
 def clean_for_tts(s: str) -> str:
-    return strip_emoji(norm_quotes(s)).strip()
+    # Step 1: normalize punctuation and strip emoji
+    s = strip_emoji(norm_quotes(s)).strip()
+    # Step 2: remove anything inside parentheses (and the parentheses themselves)
+    s = re.sub(r"\([^)]*\)", "", s)
+    # Step 3: cleanup多餘空格
+    return " ".join(s.split())
 
 def ssml_with_breaks(text: str, pre_ms: int, post_ms: int) -> str:
     """Wrap a line with <speak>, adding pre & post breaks."""
