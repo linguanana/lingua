@@ -1,0 +1,174 @@
+1
+00:00:00,000 --> 00:00:16,500
+👱🏻‍♂️: Ciao, Anna! Come stai?
+👩: Bene, grazie. E tu, Marco?
+👱🏻‍♂️: Anch’io bene.
+👩: Ciao, Luca! Come va?
+
+2
+00:00:16,500 --> 00:00:33,000
+👱🏻‍♂️: Va bene, grazie. E tu?
+👩: Non c’è male.
+👱🏻‍♂️: Perfetto, ci vediamo stasera?
+👩: Sì, a dopo!
+
+3
+00:00:33,000 --> 00:00:49,500
+👩: Ciao! Come ti chiami?
+👱🏻‍♂️: Mi chiamo Paolo. E tu?
+👩: Mi chiamo Giulia.
+👱🏻‍♂️: Piacere di conoscerti, Giulia.
+
+4
+00:00:49,500 --> 00:01:06,000
+👩: Il piacere è mio.
+👱🏻‍♂️: Come si chiama il tuo amico?
+👩: Si chiama Luca.
+👱🏻‍♂️: Perfetto! Allora a presto.
+
+5
+00:01:06,000 --> 00:01:22,500
+👩: Professore, come si dice ‘apple’ in italiano?
+👱🏻‍♂️: Si dice ‘mela’.
+👩: E come si dice ‘pear’?
+👱🏻‍♂️: Si dice ‘pera’.
+
+6
+00:01:22,500 --> 00:01:39,000
+👩: Perfetto, grazie!
+👱🏻‍♂️: Prego. Vuoi un altro esempio?
+👩: Sì, come si dice ‘banana’?
+👱🏻‍♂️: Si dice ‘banana’. Facile!
+
+7
+00:01:39,000 --> 00:01:55,500
+👱🏻‍♂️: Com’è la pizza qui?
+👩: È buonissima!
+👱🏻‍♂️: Com’è il tuo professore?
+👩: È simpatico e gentile.
+
+8
+00:01:55,500 --> 00:02:12,000
+👱🏻‍♂️: Com’è la tua città?
+👩: È grande e bellissima.
+👱🏻‍♂️: Perfetto. Com’è la vita lì?
+👩: Tranquilla ma interessante.
+
+9
+00:02:12,000 --> 00:02:28,500
+👩: Ciao Marco! Come mai sei qui?
+👱🏻‍♂️: Sono venuto a trovarti.
+👩: Davvero? Che sorpresa!
+👱🏻‍♂️: Come mai non sei a scuola oggi?
+
+10
+00:02:28,500 --> 00:02:45,000
+👩: Perché è domenica!
+👱🏻‍♂️: Ah, giusto. E come mai sei così felice?
+👩: Perché domani vado in vacanza.
+👱🏻‍♂️: Fantastico! Buone vacanze!
+
+11
+00:02:45,000 --> 00:03:01,500
+👱🏻‍♂️: Ciao, Maria! Non sei a scuola oggi?
+👩: No, perché sono malata.
+👱🏻‍♂️: Oh no! Perché non vai dal dottore?
+👩: Perché non è grave.
+
+12
+00:03:01,500 --> 00:03:18,000
+👱🏻‍♂️: Capisco. Vuoi un tè caldo?
+👩: Sì, grazie mille.
+👱🏻‍♂️: E perché non chiami i tuoi genitori?
+👩: Perché vivono lontano.
+
+13
+00:03:18,000 --> 00:03:34,500
+👱🏻‍♂️: Va bene. Riposati!
+👩: Grazie, sei gentile.
+👱🏻‍♂️: Ci vediamo domani?
+👩: Spero di sì!
+
+14
+00:03:34,500 --> 00:03:51,000
+👩: Perché studi l’italiano?
+👱🏻‍♂️: Perché amo la cultura italiana.
+👩: Interessante! E perché non studi il francese?
+👱🏻‍♂️: Perché il francese è più difficile per me.
+
+15
+00:03:51,000 --> 00:04:07,500
+👩: Capisco. Perché ti piace Roma?
+👱🏻‍♂️: Perché è una città bellissima.
+👩: Bravo! E perché sei qui oggi?
+👱🏻‍♂️: Per seguire il corso.
+
+16
+00:04:07,500 --> 00:04:24,000
+👩: Perfetto! Allora buon studio.
+👱🏻‍♂️: Grazie! E tu, perché studi l’italiano?
+👩: Perché voglio viaggiare in Italia.
+👱🏻‍♂️: Bellissimo motivo!
+
+17
+00:04:24,000 --> 00:04:40,500
+👱🏻‍♂️: Andiamo al cinema stasera?
+👩: No, non posso.
+👱🏻‍♂️: Perché no?
+👩: Perché devo studiare.
+
+18
+00:04:40,500 --> 00:04:57,000
+👱🏻‍♂️: Capisco. E domani?
+👩: Domani lavoro tutto il giorno.
+👱🏻‍♂️: Allora quando sei libera?
+👩: Sabato pomeriggio.
+
+19
+00:04:57,000 --> 00:05:13,500
+👱🏻‍♂️: Perfetto, cinema sabato?
+👩: Va bene!
+👱🏻‍♂️: Grazie, non vedo l’ora.
+👩: Anch’io!
+
+20
+00:05:13,500 --> 00:05:30,000
+👩: Ti piace la pasta?
+👱🏻‍♂️: Sì, moltissimo.
+👩: Perché ti piace così tanto?
+👱🏻‍♂️: Perché è semplice e buona.
+
+21
+00:05:30,000 --> 00:05:46,500
+👩: Ti piace anche la pizza?
+👱🏻‍♂️: Certo!
+👩: E perché la pizza?
+👱🏻‍♂️: Perché è famosa in tutto il mondo.
+
+22
+00:05:46,500 --> 00:06:03,000
+👩: Capisco. Perché non ti piace il pesce?
+👱🏻‍♂️: Perché ha un odore forte.
+👩: Ah, interessante.
+👱🏻‍♂️: Sì, ognuno ha i suoi gusti.
+
+23
+00:06:03,000 --> 00:06:19,500
+👱🏻‍♂️: Parti domani?
+👩: Sì, vado a Firenze.
+👱🏻‍♂️: Perché vai a Firenze?
+👩: Perché ho un convegno.
+
+24
+00:06:19,500 --> 00:06:36,000
+👱🏻‍♂️: E poi?
+👩: Poi visito gli Uffizi.
+👱🏻‍♂️: Perfetto. Perché non vai anche a Pisa?
+👩: Perché non ho tempo.
+
+25
+00:06:36,000 --> 00:06:52,500
+👱🏻‍♂️: Capisco. Perché non rimandi il viaggio?
+👩: Perché devo lavorare la prossima settimana.
+👱🏻‍♂️: Allora buon viaggio!
+👩: Grazie, a presto!

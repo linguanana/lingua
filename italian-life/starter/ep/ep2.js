@@ -89,7 +89,7 @@ const episodeData = {
             { speaker: "Male", text: "Sì, sono di qui. E tu di dove sei?", en: "Yes, I’m from here. Where are you from?", zh: "是的，我在地人。你來自哪裡？" },
             { speaker: "Female", text: "Sono degli Stati Uniti. Vivo in California.", en: "I’m from the United States. I live in California.", zh: "我來自美國，住在加州。" },
             { speaker: "Male", text: "Che bello! Ti fermi vicino al centro?", en: "Nice! Are you staying near the center?", zh: "太好了！你住在市中心附近嗎？" },
-            { speaker: "Female", text: "Sì, all’Hotel Centrale, a due minuti da Piazza Venezia.", en: "Yes, at Hotel Centrale, two minutes from Piazza Venezia.", zh: "是的，住在 Centrale 飯店，離威尼斯廣場走路兩分鐘。" },
+            { speaker: "Female", text: "Sì, all’Hotel Centrale.", en: "Yes, at Hotel Centrale", zh: "是的，住在 Centrale 飯店。" },
             { speaker: "Male", text: "Perfetto. Quanti giorni resti a Roma?", en: "Perfect. How many days are you staying in Rome?", zh: "太好了。你在羅馬待幾天？" },
             { speaker: "Female", text: "Quattro giorni. Oggi riposo un po’.", en: "Four days. Today I’m just resting a bit.", zh: "四天。今天先休息一下。" },
             { speaker: "Male", text: "Capisco. Benvenuta e buona permanenza.", en: "I understand. Welcome and have a nice stay.", zh: "了解。歡迎你，祝你入住愉快。" },

@@ -1,0 +1,215 @@
+1
+00:00:00,000 --> 00:00:12,000
+👩🏻‍🚒: Ciao! Buongiorno.
+🕵🏼‍♂️: Buongiorno! Come ti chiami?
+👩🏻‍🚒: Mi chiamo Emily. E tu?
+🕵🏼‍♂️: Mi chiamo Carlo.
+
+2
+00:00:12,000 --> 00:00:24,000
+👩🏻‍🚒: Piacere di conoscerti, Carlo.
+🕵🏼‍♂️: Il piacere è mio, Emily.
+👩🏻‍🚒: Sei di qui?
+🕵🏼‍♂️: Sì, sono di Roma. E tu, di dove sei?
+
+3
+00:00:24,000 --> 00:00:36,000
+👩🏻‍🚒: Sono degli Stati Uniti, dalla California.
+🕵🏼‍♂️: Che bello! Vivi qui adesso?
+👩🏻‍🚒: No, resto vicino al centro per qualche giorno.
+🕵🏼‍♂️: Perfetto. A dopo!
+
+4
+00:00:36,000 --> 00:00:48,000
+👩🏻‍🚒: Buongiorno, signore. Come si chiama?
+🕵🏼‍♂️: Buongiorno. Mi chiamo Carlo Rossi.
+👩🏻‍🚒: Piacere, signor Rossi.
+🕵🏼‍♂️: Il piacere è mio. Lei è la signorina Laura?
+
+5
+00:00:48,000 --> 00:00:60,000
+👩🏻‍🚒: Sì, sono Laura Bianchi.
+🕵🏼‍♂️: Incantato, signora Bianchi.
+👩🏻‍🚒: Mi scusi, può firmare qui, per favore?
+🕵🏼‍♂️: Certo. Ecco qua.
+
+6
+00:00:60,000 --> 00:00:72,000
+👩🏻‍🚒: Grazie mille. Di dov’è, signore?
+🕵🏼‍♂️: Sono di Milano, ma vivo a Roma.
+👩🏻‍🚒: Perfetto. Benvenuto e buona giornata!
+🕵🏼‍♂️: Grazie, altrettanto. Arrivederci.
+
+7
+00:00:72,000 --> 00:00:84,000
+👩🏻‍🚒: Ciao, di dove sei?
+🕵🏼‍♂️: Sono del Cile. E tu?
+👩🏻‍🚒: Vengo dal Messico; ora vivo a Firenze.
+🕵🏼‍♂️: Ah, che bello. Io vivo a Roma.
+
+8
+00:00:84,000 --> 00:00:96,000
+👩🏻‍🚒: Ti piace Roma?
+🕵🏼‍♂️: Sì, molto. E Firenze?
+👩🏻‍🚒: Anche a me piace. In che quartiere vivi?
+🕵🏼‍♂️: Vivo a Trastevere. E tu?
+
+9
+00:00:96,000 --> 00:00:108,000
+👩🏻‍🚒: Vivo vicino a Campo de’ Fiori.
+🕵🏼‍♂️: Sei qui in vacanza o lavori qui?
+👩🏻‍🚒: Lavoro qui, sono insegnante.
+🕵🏼‍♂️: Io sono ingegnere. Piacere di conoscerti!
+
+10
+00:00:108,000 --> 00:00:120,000
+👩🏻‍🚒: Buongiorno!
+🕵🏼‍♂️: Buongiorno! Come ti chiami?
+👩🏻‍🚒: Mi chiamo Emily. E tu?
+🕵🏼‍♂️: Sono Carlo. Piacere.
+
+11
+00:00:120,000 --> 00:00:132,000
+👩🏻‍🚒: Piacere, Carlo. Sei di Roma?
+🕵🏼‍♂️: Sì, sono di qui. E tu di dove sei?
+👩🏻‍🚒: Sono degli Stati Uniti. Vivo in California.
+🕵🏼‍♂️: Che bello! Ti fermi vicino al centro?
+
+12
+00:00:132,000 --> 00:00:144,000
+👩🏻‍🚒: Sì, all’Hotel Centrale, a due minuti da Piazza Venezia.
+🕵🏼‍♂️: Perfetto. Quanti giorni resti a Roma?
+👩🏻‍🚒: Quattro giorni. Oggi riposo un po’.
+🕵🏼‍♂️: Capisco. Benvenuta e buona permanenza.
+
+13
+00:00:144,000 --> 00:00:147,000
+👩🏻‍🚒: Grazie, Carlo. A dopo!
+
+14
+00:00:147,000 --> 00:00:159,000
+🕵🏼‍♂️: Ciao, Emily! Come stai oggi?
+👩🏻‍🚒: Molto bene, grazie. E tu, Carlo?
+🕵🏼‍♂️: Bene anch’io. Sei sempre all’Hotel Centrale?
+👩🏻‍🚒: Sì, mi piace perché è vicino alla metro.
+
+15
+00:00:159,000 --> 00:00:171,000
+🕵🏼‍♂️: Fantastico. Di dove sei?
+👩🏻‍🚒: Sono di Los Angeles.
+🕵🏼‍♂️: Interessante. Cosa fai oggi pomeriggio?
+👩🏻‍🚒: Passeggiare in centro e visitare Piazza Navona.
+
+16
+00:00:171,000 --> 00:00:177,000
+🕵🏼‍♂️: Bel programma. Se hai bisogno di aiuto, dimmi.
+👩🏻‍🚒: Grazie. A dopo!
+
+17
+00:00:177,000 --> 00:00:189,000
+👩🏻‍🚒: Buongiorno, Carlo! Cosa fai oggi?
+🕵🏼‍♂️: Passeggio a Villa Borghese. E tu?
+👩🏻‍🚒: Prendo un caffè e leggo un po’.
+🕵🏼‍♂️: Suona bene. Che lavoro fai?
+
+18
+00:00:189,000 --> 00:00:201,000
+👩🏻‍🚒: Sono insegnante. E tu?
+🕵🏼‍♂️: Lavoro in ufficio e studio la sera.
+👩🏻‍🚒: Interessante! Vivi qui a Roma?
+🕵🏼‍♂️: Sì, vivo vicino a Termini. E tu dove stai adesso?
+
+19
+00:00:201,000 --> 00:00:213,000
+👩🏻‍🚒: All’Hotel Centrale, vicino alla metro.
+🕵🏼‍♂️: È comodo.
+👩🏻‍🚒: Sì. Poi vado in centro.
+🕵🏼‍♂️: Ottimo piano! Ci vediamo stasera in hotel.
+
+20
+00:00:213,000 --> 00:00:216,000
+👩🏻‍🚒: Va bene. A dopo!
+
+21
+00:00:216,000 --> 00:00:228,000
+👩🏻‍🚒: Buongiorno! Come ti chiami?
+🕵🏼‍♂️: Buongiorno. Mi chiamo Carlo. E tu?
+👩🏻‍🚒: Mi chiamo Emily. Piacere.
+🕵🏼‍♂️: Incantato, Emily. Di dove sei?
+
+22
+00:00:228,000 --> 00:00:240,000
+👩🏻‍🚒: Sono degli Stati Uniti, della California. E tu?
+🕵🏼‍♂️: Sono di Roma. Dove stai adesso?
+👩🏻‍🚒: Sto all’Hotel Centrale, vicino al centro.
+🕵🏼‍♂️: Perfetto. Cosa fai oggi?
+
+23
+00:00:240,000 --> 00:00:252,000
+👩🏻‍🚒: Adesso faccio il check-in e poi passeggio in piazza.
+🕵🏼‍♂️: Bene. Io lavoro qui vicino; esco alle sei.
+👩🏻‍🚒: Geniale. Ci vediamo nel pomeriggio!
+🕵🏼‍♂️: A dopo!
+
+24
+00:00:252,000 --> 00:00:264,000
+🕵🏼‍♂️: Ciao! Come va, Emily?
+👩🏻‍🚒: Molto bene, grazie. E tu, Carlo?
+🕵🏼‍♂️: Bene. Vivi negli Stati Uniti?
+👩🏻‍🚒: Sì, vivo a San Diego, in California.
+
+25
+00:00:264,000 --> 00:00:276,000
+🕵🏼‍♂️: Io vivo a Roma, vicino al parco.
+👩🏻‍🚒: E la tua famiglia, di dove è?
+🕵🏼‍♂️: La mia famiglia è di Napoli.
+👩🏻‍🚒: Che lavoro fai?
+
+26
+00:00:276,000 --> 00:00:288,000
+🕵🏼‍♂️: Sono designer e lavoro in centro.
+👩🏻‍🚒: Interessante. Io lavoro nella tecnologia.
+🕵🏼‍♂️: Perfetto. Prendiamo un caffè e continuiamo a parlare.
+👩🏻‍🚒: Certo. Grazie per l’invito.
+
+27
+00:00:288,000 --> 00:00:300,000
+👩🏻‍🚒: Buon pomeriggio. Mi chiamo Emily.
+🕵🏼‍♂️: Piacere, Emily. Io sono Daniele.
+👩🏻‍🚒: Piacere, Daniele. Di dove sei?
+🕵🏼‍♂️: Sono di Boston, negli Stati Uniti. E tu?
+
+28
+00:00:300,000 --> 00:00:312,000
+👩🏻‍🚒: Sono della California. Vivo a San Diego.
+🕵🏼‍♂️: Dove stai ora a Roma?
+👩🏻‍🚒: Sto in un hotel vicino a Termini.
+🕵🏼‍♂️: Che bello. Io sto in un piccolo appartamento.
+
+29
+00:00:312,000 --> 00:00:324,000
+👩🏻‍🚒: Cosa fai dopo la lezione?
+🕵🏼‍♂️: Vado al museo e poi ceno con amici.
+👩🏻‍🚒: Perfetto. Ci vediamo domani!
+🕵🏼‍♂️: A domani! Grazie per la chiacchierata.
+
+30
+00:00:324,000 --> 00:00:336,000
+👩🏻‍🚒: Scusi, questo posto è libero?
+🕵🏼‍♂️: Sì, prego. Sono Luigi. Come ti chiami?
+👩🏻‍🚒: Mi chiamo Emily. Piacere.
+🕵🏼‍♂️: Piacere, Emily. Di dove sei?
+
+31
+00:00:336,000 --> 00:00:348,000
+👩🏻‍🚒: Sono degli Stati Uniti. E tu?
+🕵🏼‍♂️: Sono di Napoli. Dove stai lì?
+👩🏻‍🚒: Sto in un hotel vicino alla stazione.
+🕵🏼‍♂️: Perfetto. Cosa fai adesso sul treno?
+
+32
+00:00:348,000 --> 00:00:360,000
+👩🏻‍🚒: Leggo un po’ e ascolto musica.
+🕵🏼‍♂️: Benissimo. Io controllo le mail di lavoro.
+👩🏻‍🚒: Che produttivo. Buon viaggio!
+🕵🏼‍♂️: Grazie. A dopo!

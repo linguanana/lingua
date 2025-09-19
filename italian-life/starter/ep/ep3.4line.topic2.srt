@@ -1,0 +1,209 @@
+1
+00:00:00,000 --> 00:00:16,500
+👩🏼‍🦰: Ciao! Che cos'è questo?
+🤵🏻‍♂️: È un libro.
+👩🏼‍🦰: E quello? Che cos'è quello?
+🤵🏻‍♂️: È un quaderno.
+
+2
+00:00:16,500 --> 00:00:33,000
+👩🏼‍🦰: Che cos'è sul tavolo?
+🤵🏻‍♂️: È un telefono.
+👩🏼‍🦰: Interessante! E nella borsa, che cos'è?
+🤵🏻‍♂️: È una bottiglia d'acqua.
+
+3
+00:00:33,000 --> 00:00:49,500
+👩🏼‍🦰: Perfetto. E questo piccolo oggetto, cos'è?
+🤵🏻‍♂️: È una penna.
+👩🏼‍🦰: Capisco! Tutto chiaro adesso.
+🤵🏻‍♂️: Bravo! A domani.
+
+4
+00:00:49,500 --> 00:01:06,000
+👩🏼‍🦰: Ciao! Cosa significa 'ciao'?
+🤵🏻‍♂️: Significa 'hello' o 'hi'.
+👩🏼‍🦰: Perfetto! E cosa significa 'grazie'?
+🤵🏻‍♂️: Significa 'thank you'.
+
+5
+00:01:06,000 --> 00:01:22,500
+👩🏼‍🦰: Benissimo. E 'prego' cosa significa?
+🤵🏻‍♂️: Vuol dire 'you're welcome'.
+👩🏼‍🦰: Interessante! E 'scusa' cosa vuol dire?
+🤵🏻‍♂️: Vuol dire 'sorry' o 'excuse me'.
+
+6
+00:01:22,500 --> 00:01:39,000
+👩🏼‍🦰: Capisco. Cosa significa 'arrivederci'?
+🤵🏻‍♂️: Vuol dire 'goodbye'.
+👩🏼‍🦰: Perfetto, grazie mille!
+🤵🏻‍♂️: Prego, a domani!
+
+7
+00:01:39,000 --> 00:01:55,500
+🤵🏻‍♂️: Ciao! Cosa fai adesso?
+👩🏼‍🦰: Sto bevendo un caffè.
+🤵🏻‍♂️: Interessante! E cosa fai dopo?
+👩🏼‍🦰: Vado a studiare in biblioteca.
+
+8
+00:01:55,500 --> 00:02:12,000
+🤵🏻‍♂️: Cosa fai nel weekend?
+👩🏼‍🦰: Esco con gli amici.
+🤵🏻‍♂️: Bello! E che lavoro fai?
+👩🏼‍🦰: Sono studentessa. Studio lingue.
+
+9
+00:02:12,000 --> 00:02:28,500
+🤵🏻‍♂️: Capisco. Io lavoro in ufficio. Cosa fai tu la sera?
+👩🏼‍🦰: Di solito leggo o guardo un film.
+🤵🏻‍♂️: Ottimo! Allora buon divertimento stasera.
+👩🏼‍🦰: Grazie! A domani.
+
+10
+00:02:28,500 --> 00:02:45,000
+🤵🏻‍♂️: Buongiorno! Cosa vuoi da bere?
+👩🏼‍🦰: Vorrei un cappuccino.
+🤵🏻‍♂️: Perfetto. E tu, cosa vuoi?
+Female2: Io prendo un tè al limone.
+
+11
+00:02:45,000 --> 00:03:01,500
+🤵🏻‍♂️: Ottimo. E da mangiare, cosa volete?
+👩🏼‍🦰: Io voglio un cornetto alla crema.
+Female2: E io voglio una fetta di torta.
+🤵🏻‍♂️: Perfetto. Quale torta preferisci?
+
+12
+00:03:01,500 --> 00:03:18,000
+Female2: La torta al cioccolato, per favore.
+👩🏼‍🦰: Che buono! Anch'io la voglio domani.
+🤵🏻‍♂️: Va bene. Arriva subito.
+Female2: Grazie mille!
+
+13
+00:03:18,000 --> 00:03:34,500
+👩🏼‍🦰: Che cos'è sul tavolo?
+🤵🏻‍♂️: È un dizionario.
+👩🏼‍🦰: Interessante! Cosa significa 'ciao'?
+🤵🏻‍♂️: Vuol dire 'hello' o 'hi'.
+
+14
+00:03:34,500 --> 00:03:51,000
+👩🏼‍🦰: Perfetto! E adesso, cosa fai?
+🤵🏻‍♂️: Studio un po' di grammatica.
+👩🏼‍🦰: Bravo! Dopo cosa fai?
+🤵🏻‍♂️: Vado al bar. Cosa vuoi da bere?
+
+15
+00:03:51,000 --> 00:04:07,500
+👩🏼‍🦰: Voglio un cappuccino.
+🤵🏻‍♂️: Perfetto, allora prendiamo due cappuccini.
+👩🏼‍🦰: Ottima idea! A dopo.
+🤵🏻‍♂️: A dopo, ciao!
+
+16
+00:04:07,500 --> 00:04:24,000
+👩🏼‍🦰: Qual è il tuo piatto preferito?
+🤵🏻‍♂️: La pasta alla carbonara.
+👩🏼‍🦰: qual è il tuo dolce preferito?
+🤵🏻‍♂️: Il tiramisù.
+
+17
+00:04:24,000 --> 00:04:40,500
+👩🏼‍🦰: Qual è il tuo colore preferito?
+🤵🏻‍♂️: Il blu.
+👩🏼‍🦰: E quale sport ti piace di più?
+🤵🏻‍♂️: Il calcio.
+
+18
+00:04:40,500 --> 00:04:57,000
+👩🏼‍🦰: Qual è la tua stagione preferita?
+🤵🏻‍♂️: L'estate.
+👩🏼‍🦰: Perfetto! Abbiamo gusti diversi.
+🤵🏻‍♂️: Sì, ma interessante!
+
+19
+00:04:57,000 --> 00:05:13,500
+🤵🏻‍♂️: Ciao! Qual è il tuo nome?
+👩🏼‍🦰: Mi chiamo Anna.
+🤵🏻‍♂️: Qual è il tuo cognome?
+👩🏼‍🦰: Bianchi.
+
+20
+00:05:13,500 --> 00:05:30,000
+🤵🏻‍♂️: Qual è la tua nazionalità?
+👩🏼‍🦰: Sono francese.
+🤵🏻‍♂️: Qual è il tuo numero di telefono?
+👩🏼‍🦰: È 345 678 910.
+
+21
+00:05:30,000 --> 00:05:46,500
+🤵🏻‍♂️: E qual è il tuo indirizzo e-mail?
+👩🏼‍🦰: anna.bianchi@example.com.
+🤵🏻‍♂️: Perfetto, ti scrivo dopo.
+👩🏼‍🦰: Va bene, a presto!
+
+22
+00:05:46,500 --> 00:06:03,000
+👩🏼‍🦰: Qual è il tuo colore preferito?
+🤵🏻‍♂️: Il blu.
+👩🏼‍🦰: Qual è il tuo sport preferito?
+🤵🏻‍♂️: Il calcio.
+
+23
+00:06:03,000 --> 00:06:19,500
+👩🏼‍🦰: Qual è la tua stagione preferita?
+🤵🏻‍♂️: L'estate.
+👩🏼‍🦰: Qual è il tuo film preferito?
+🤵🏻‍♂️: Un film di azione.
+
+24
+00:06:19,500 --> 00:06:36,000
+👩🏼‍🦰: Qual è l'orario migliore?
+🤵🏻‍♂️: Alle otto e mezza.
+👩🏼‍🦰: Perfetto, prenoto i biglietti.
+🤵🏻‍♂️: Grazie!
+
+25
+00:06:36,000 --> 00:06:52,500
+🤵🏻‍♂️: Qual è il museo più vicino?
+👩🏼‍🦰: Il Museo Centrale, a dieci minuti.
+🤵🏻‍♂️: Quale autobus devo prendere?
+👩🏼‍🦰: Il numero 12.
+
+26
+00:06:52,500 --> 00:07:09,000
+🤵🏻‍♂️: Qual è la fermata giusta?
+👩🏼‍🦰: Piazza Verdi.
+🤵🏻‍♂️: Quale strada è più veloce a piedi?
+👩🏼‍🦰: Via Garibaldi, poi a sinistra.
+
+27
+00:07:09,000 --> 00:07:25,500
+🤵🏻‍♂️: Perfetto, grazie mille.
+👩🏼‍🦰: Di niente! Buona visita.
+🤵🏻‍♂️: A dopo!
+👩🏼‍🦰: A presto!
+
+28
+00:07:25,500 --> 00:07:42,000
+👩🏼‍🦰: Cosa fai stasera?
+🤵🏻‍♂️: Vado fuori a cena.
+👩🏼‍🦰: Qual è il ristorante?
+🤵🏻‍♂️: Una pizzeria in centro.
+
+29
+00:07:42,000 --> 00:07:58,500
+👩🏼‍🦰: Quale pizza ordini di solito?
+🤵🏻‍♂️: la margherita.
+👩🏼‍🦰: Qual è l'orario della prenotazione?
+🤵🏻‍♂️: Alle otto.
+
+30
+00:07:58,500 --> 00:08:15,000
+👩🏼‍🦰: Perfetto! Dopo quale gelato prendiamo?
+🤵🏻‍♂️: Pistacchio per me. E per te?
+👩🏼‍🦰: Cioccolato fondente.
+🤵🏻‍♂️: Ottima scelta!

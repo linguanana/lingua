@@ -1,0 +1,200 @@
+1
+00:00:00,000 --> 00:00:16,500
+🤵🏻‍♂️: Ciao! Come stai?
+👩🏼‍🦰: Bene, grazie. E tu?
+🤵🏻‍♂️: Anch'io bene. Chi è con te?
+👩🏼‍🦰: È mia sorella, si chiama Anna.
+
+2
+00:00:16,500 --> 00:00:33,000
+🤵🏻‍♂️: Piacere! Dove abita lei?
+👩🏼‍🦰: Abita a Milano, vicino al centro.
+🤵🏻‍♂️: Davvero? E tu di dove sei?
+👩🏼‍🦰: Io sono di Firenze, ma adesso vivo a Roma.
+
+3
+00:00:33,000 --> 00:00:49,500
+🤵🏻‍♂️: Interessante! Da quanto tempo vivi a Roma?
+👩🏼‍🦰: Da due anni.
+🤵🏻‍♂️: Capisco. Allora magari ci vediamo ancora!
+👩🏼‍🦰: Certo, a presto!
+
+4
+00:00:49,500 --> 00:01:06,000
+🤵🏻‍♂️: Buongiorno! Cosa prende oggi?
+👩🏼‍🦰: Vorrei un cappuccino, grazie. E lei?
+🤵🏻‍♂️: Io prendo un tè verde.
+👩🏼‍🦰: Perché non prende il caffè oggi?
+
+5
+00:01:06,000 --> 00:01:22,500
+🤵🏻‍♂️: Perché sono un po' stanco.
+👩🏼‍🦰: Capisco. Quanto costa il cappuccino qui?
+🤵🏻‍♂️: Costa due euro e cinquanta.
+👩🏼‍🦰: Non è caro. Quale bar preferisce di solito?
+
+6
+00:01:22,500 --> 00:01:39,000
+🤵🏻‍♂️: Mi piace questo bar perché è tranquillo.
+👩🏼‍🦰: Ottimo. Allora ci vediamo qui domani?
+🤵🏻‍♂️: Sì, domani mattina alle dieci.
+👩🏼‍🦰: Perfetto, a domani!
+
+7
+00:01:39,000 --> 00:01:55,500
+👩🏼‍🦰: Buongiorno! Vorrei andare a Firenze. Quando parte il treno?
+🤵🏻‍♂️: Domani mattina presto.
+👩🏼‍🦰: Quale treno devo prendere?
+🤵🏻‍♂️: Il treno delle otto e mezza.
+
+8
+00:01:55,500 --> 00:02:12,000
+👩🏼‍🦰: E posso sedermi vicino al finestrino?
+🤵🏻‍♂️: Sì, il finestrino è più comodo.
+👩🏼‍🦰: Quanto dura il viaggio?
+🤵🏻‍♂️: Circa un'ora e mezza.
+
+9
+00:02:12,000 --> 00:02:28,500
+👩🏼‍🦰: E perché vado a Firenze?
+🤵🏻‍♂️: Per visitare un'amica.
+👩🏼‍🦰: Che bello! Grazie, buon consiglio.
+🤵🏻‍♂️: Prego, buon viaggio!
+
+10
+00:02:28,500 --> 00:02:45,000
+🤵🏻‍♂️: Ciao! Di dove sei?
+👩🏼‍🦰: Sono di Parigi. E tu?
+🤵🏻‍♂️: Io sono di Roma.
+👩🏼‍🦰: Interessante! Qual è la tua nazionalità?
+
+11
+00:02:45,000 --> 00:03:01,500
+🤵🏻‍♂️: Sono italiano. E tu, sei francese?
+👩🏼‍🦰: Sì, sono francese.
+🤵🏻‍♂️: Conosci anche altre lingue?
+👩🏼‍🦰: Sì, parlo anche inglese e un po' di spagnolo.
+
+12
+00:03:01,500 --> 00:03:18,000
+🤵🏻‍♂️: Bravissima! Io parlo solo italiano.
+👩🏼‍🦰: Non c'è problema, possiamo praticare insieme.
+🤵🏻‍♂️: Ottima idea. A domani!
+👩🏼‍🦰: A domani, ciao!
+
+13
+00:03:18,000 --> 00:03:34,500
+🤵🏻‍♂️: Scusi, dov'è la stazione?
+👩🏼‍🦰: È vicino, a dieci minuti a piedi.
+🤵🏻‍♂️: Perfetto. Quale strada devo prendere?
+👩🏼‍🦰: Prenda via Garibaldi, poi giri a sinistra.
+
+14
+00:03:34,500 --> 00:03:51,000
+🤵🏻‍♂️: Grazie mille. E il museo, dov'è esattamente?
+👩🏼‍🦰: È accanto alla stazione.
+🤵🏻‍♂️: Ottimo. Quanto tempo ci vuole in autobus?
+👩🏼‍🦰: Solo cinque minuti.
+
+15
+00:03:51,000 --> 00:04:07,500
+🤵🏻‍♂️: Perfetto. Quale autobus devo prendere?
+👩🏼‍🦰: Il numero 12.
+🤵🏻‍♂️: Grazie ancora, è molto gentile.
+👩🏼‍🦰: Di niente, buona giornata!
+
+16
+00:04:07,500 --> 00:04:24,000
+👩🏼‍🦰: Professoressa, come si dice 'apple' in italiano?
+🤵🏻‍♂️: Si dice 'mela'.
+👩🏼‍🦰: E cosa significa 'grazie'?
+🤵🏻‍♂️: Significa 'thank you'.
+
+17
+00:04:24,000 --> 00:04:40,500
+👩🏼‍🦰: Perché studiamo i colori oggi?
+🤵🏻‍♂️: Perché sono molto usati.
+👩🏼‍🦰: Quanto tempo dura la lezione?
+🤵🏻‍♂️: Un'ora.
+
+18
+00:04:40,500 --> 00:04:57,000
+👩🏼‍🦰: Buongiorno! Vorrei un biglietto per Napoli.
+🤵🏻‍♂️: Quando vuole partire?
+👩🏼‍🦰: Oggi pomeriggio.
+🤵🏻‍♂️: Perfetto. Quale treno preferisce?
+
+19
+00:04:57,000 --> 00:05:13,500
+👩🏼‍🦰: Quello delle due e mezza.
+🤵🏻‍♂️: Quanto costa.
+👩🏼‍🦰: Quaranta euro.
+🤵🏻‍♂️: Perfetto, allora ecco il biglietto.
+
+20
+00:05:13,500 --> 00:05:21,000
+👩🏼‍🦰: Grazie mille!
+🤵🏻‍♂️: Prego, buon viaggio!
+
+21
+00:05:21,000 --> 00:05:37,500
+👩🏼‍🦰: Ciao! Che bella casa hai!
+🤵🏻‍♂️: Grazie! Vuoi vedere il giardino?
+👩🏼‍🦰: Volentieri. Quanto è grande la casa?
+🤵🏻‍♂️: Ha tre stanze e una cucina grande.
+
+22
+00:05:37,500 --> 00:05:54,000
+👩🏼‍🦰: Chi vive qui con te?
+🤵🏻‍♂️: Vivo con due coinquilini.
+👩🏼‍🦰: Che lavoro fanno loro?
+🤵🏻‍♂️: Uno è studente, l'altro lavora in un ufficio.
+
+23
+00:05:54,000 --> 00:06:10,500
+👩🏼‍🦰: Interessante! E dove studia lo studente?
+🤵🏻‍♂️: Studia all'università di Roma.
+👩🏼‍🦰: Capisco. La tua casa è molto accogliente.
+🤵🏻‍♂️: Grazie, torna a trovarmi presto!
+
+24
+00:06:10,500 --> 00:06:27,000
+👩🏼‍🦰: Buongiorno! Quanto costa questo pane?
+🤵🏻‍♂️: Costa un euro.
+👩🏼‍🦰: Perfetto, ne prendo due.
+🤵🏻‍♂️: Vuole anche del formaggio?
+
+25
+00:06:27,000 --> 00:06:43,500
+👩🏼‍🦰: Sì, grazie. Quanto costa al chilo?
+🤵🏻‍♂️: Otto euro al chilo.
+👩🏼‍🦰: È un po' caro. Quale mi consiglia?
+🤵🏻‍♂️: Questo è più fresco e costa solo sei euro.
+
+26
+00:06:43,500 --> 00:07:00,000
+👩🏼‍🦰: Perfetto, ne prendo mezzo chilo.
+🤵🏻‍♂️: Va bene. Qualcos'altro?
+👩🏼‍🦰: No, grazie. Quanto pago in totale?
+🤵🏻‍♂️: Sette euro in tutto.
+
+27
+00:07:00,000 --> 00:07:16,500
+🤵🏻‍♂️: Ciao! Quanti anni hai?
+👩🏼‍🦰: Ho vent'anni. E tu?
+🤵🏻‍♂️: Ho ventidue anni.
+👩🏼‍🦰: E quanti anni ha tua sorella?
+
+28
+00:07:16,500 --> 00:07:33,000
+🤵🏻‍♂️: Ha diciotto anni.
+👩🏼‍🦰: Capisco! Dove studia lei?
+🤵🏻‍♂️: Studia a Milano, all'università.
+👩🏼‍🦰: Quando la vedi di solito?
+
+29
+00:07:33,000 --> 00:07:49,500
+🤵🏻‍♂️: Ogni fine settimana.
+👩🏼‍🦰: Che bello! Perché non vieni un giorno con lei a Roma?
+🤵🏻‍♂️: Ottima idea! Quanto costa il treno Milano–Roma?
+👩🏼‍🦰: Dipende, circa cinquanta euro.

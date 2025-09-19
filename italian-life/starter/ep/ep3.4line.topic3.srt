@@ -1,0 +1,186 @@
+1
+00:00:00,000 --> 00:00:16,500
+👩🏼‍🦰: Buonasera! Possiamo cenare qui?
+🤵🏻‍♂️: Certo! Quante persone siete?
+👩🏼‍🦰: Siamo in tre.
+🤵🏻‍♂️: Perfetto, vi accompagno al tavolo.
+
+2
+00:00:16,500 --> 00:00:33,000
+👩🏼‍🦰: Grazie! Quanto costa il menù fisso?
+🤵🏻‍♂️: Costa venti euro a persona.
+👩🏼‍🦰: E quante portate include?
+🤵🏻‍♂️: Tre portate: antipasto, primo e dolce.
+
+3
+00:00:33,000 --> 00:00:49,500
+👩🏼‍🦰: Ottimo! Quanto costa una bottiglia di vino?
+🤵🏻‍♂️: Quindici euro.
+👩🏼‍🦰: Perfetto, prendiamo tre menù fissi e una bottiglia di vino.
+🤵🏻‍♂️: Va bene, arrivo subito.
+
+4
+00:00:49,500 --> 00:01:06,000
+👩🏼‍🦰: Buongiorno! Vorrei un biglietto per Firenze.
+🤵🏻‍♂️: Quando vuole partire?
+👩🏼‍🦰: Oggi pomeriggio.
+🤵🏻‍♂️: Perfetto. Quale treno preferisce, l'alta velocità o il regionale?
+
+5
+00:01:06,000 --> 00:01:22,500
+👩🏼‍🦰: Preferisco l'alta velocità.
+👩🏼‍🦰: Quanto costa il biglietto?
+🤵🏻‍♂️: Costa quaranta euro.
+👩🏼‍🦰: Capisco. Quanto dura il viaggio fino a Firenze?
+
+6
+00:01:22,500 --> 00:01:39,000
+🤵🏻‍♂️: Circa un'ora e mezza.
+👩🏼‍🦰: Benissimo. A che ora parte il prossimo treno?
+🤵🏻‍♂️: Alle due e mezza.
+👩🏼‍🦰: Perfetto. Allora prendo questo, grazie!
+
+7
+00:01:39,000 --> 00:01:55,500
+👩🏼‍🦰: Ciao! Quanti anni hai?
+🤵🏻‍♂️: Ho ventidue anni. E tu?
+👩🏼‍🦰: Ne ho venti.
+🤵🏻‍♂️: Andate al concerto stasera?
+
+8
+00:01:55,500 --> 00:02:12,000
+👩🏼‍🦰: Sì! Quante persone vengono con te?
+🤵🏻‍♂️: Siamo in quattro.
+👩🏼‍🦰: Perfetto. Quanto costa il biglietto?
+🤵🏻‍♂️: Dieci euro. E per gli studenti è meno.
+
+9
+00:02:12,000 --> 00:02:28,500
+👩🏼‍🦰: Ottimo! Allora compro quattro biglietti.
+🤵🏻‍♂️: Ci vediamo lì alle otto?
+👩🏼‍🦰: Sì, a dopo!
+🤵🏻‍♂️: A dopo!
+
+10
+00:02:28,500 --> 00:02:45,000
+👩🏼‍🦰: Buongiorno! Quanto costa questo pane?
+🤵🏻‍♂️: Costa un euro.
+👩🏼‍🦰: Perfetto, ne prendo due.
+🤵🏻‍♂️: Vuole anche del formaggio?
+
+11
+00:02:45,000 --> 00:03:01,500
+👩🏼‍🦰: Sì, grazie. Quanto costa al chilo?
+🤵🏻‍♂️: Otto euro al chilo.
+👩🏼‍🦰: È un po' caro. Quale mi consiglia?
+🤵🏻‍♂️: Questo è più fresco e costa solo sei euro.
+
+12
+00:03:01,500 --> 00:03:18,000
+👩🏼‍🦰: Perfetto, ne prendo mezzo chilo.
+🤵🏻‍♂️: Va bene. Qualcos'altro?
+👩🏼‍🦰: No, grazie. Quanto pago in totale?
+🤵🏻‍♂️: Sette euro in tutto.
+
+13
+00:03:18,000 --> 00:03:34,500
+👩🏼‍🦰: Buongiorno! Quanti biglietti per favore.
+🤵🏻‍♂️: Quanti siete?
+👩🏼‍🦰: Siamo in due adulti e un bambino.
+🤵🏻‍♂️: Va bene. Il bambino quanti anni ha?
+
+14
+00:03:34,500 --> 00:03:51,000
+👩🏼‍🦰: Ha otto anni.
+🤵🏻‍♂️: Perfetto: adulti dodici euro, bambino sei euro.
+👩🏼‍🦰: Grazie. Quanto dura la visita media?
+🤵🏻‍♂️: Circa un'ora e mezza.
+
+15
+00:03:51,000 --> 00:04:07,500
+👩🏼‍🦰: Benissimo. Quanto costa l'audioguida?
+🤵🏻‍♂️: Quattro euro a persona.
+👩🏼‍🦰: Allora prendiamo tre biglietti e due audioguide.
+🤵🏻‍♂️: Perfetto, buon divertimento!
+
+16
+00:04:07,500 --> 00:04:24,000
+👩🏼‍🦰: Scusi, dov'è il bagno?
+🤵🏻‍♂️: È a destra.
+👩🏼‍🦰: Grazie mille! E dove si trova la cassa?
+🤵🏻‍♂️: Accanto all'entrata.
+
+17
+00:04:24,000 --> 00:04:40,500
+👩🏼‍🦰: Perfetto. Dove posso prendere un taxi?
+🤵🏻‍♂️: Fuori, davanti all'hotel.
+👩🏼‍🦰: Ottimo, grazie ancora!
+🤵🏻‍♂️: Prego, buona giornata!
+
+18
+00:04:40,500 --> 00:04:57,000
+👩🏼‍🦰: Scusi, dov'è la biglietteria?
+🤵🏻‍♂️: È lì, accanto alla farmacia.
+👩🏼‍🦰: Grazie! E dov'è la sala d'attesa?
+🤵🏻‍♂️: Al primo piano.
+
+19
+00:04:57,000 --> 00:05:13,500
+👩🏼‍🦰: Perfetto. Dove si trovano i bagni?
+🤵🏻‍♂️: In fondo al corridoio, a sinistra.
+👩🏼‍🦰: Ottimo, grazie mille!
+🤵🏻‍♂️: Prego, buona giornata!
+
+20
+00:05:13,500 --> 00:05:30,000
+👩🏼‍🦰: Ciao! Di dove sei?
+🤵🏻‍♂️: Sono di Firenze. E tu?
+👩🏼‍🦰: Io sono di Napoli.
+🤵🏻‍♂️: Interessante! E di dove è la tua famiglia?
+
+21
+00:05:30,000 --> 00:05:46,500
+👩🏼‍🦰: La mia famiglia è di Sicilia.
+🤵🏻‍♂️: Wow! E adesso vivi a Roma?
+👩🏼‍🦰: Sì, da tre anni.
+🤵🏻‍♂️: E dove studi o lavori?
+
+22
+00:05:46,500 --> 00:06:03,000
+👩🏼‍🦰: Lavoro in un ufficio in centro.
+🤵🏻‍♂️: Perfetto. Piace anche a te vivere qui?
+👩🏼‍🦰: Sì, molto! Roma è bellissima.
+🤵🏻‍♂️: Anch'io la adoro.
+
+23
+00:06:03,000 --> 00:06:19,500
+👩🏼‍🦰: Ciao! Dove abiti?
+🤵🏻‍♂️: Abito a Milano, vicino al centro.
+👩🏼‍🦰: Che bello! Io abito a Firenze.
+🤵🏻‍♂️: Firenze è bellissima! Dove abita la tua famiglia?
+
+24
+00:06:19,500 --> 00:06:36,000
+👩🏼‍🦰: A Bologna.
+🤵🏻‍♂️: Perfetto. Dove lavori adesso?
+👩🏼‍🦰: Lavoro in un ufficio in centro.
+🤵🏻‍♂️: Ottimo! Allora ci vediamo presto a Milano.
+
+25
+00:06:36,000 --> 00:06:52,500
+👩🏼‍🦰: Ciao! Dove vai?
+🤵🏻‍♂️: Vado al mercato.
+👩🏼‍🦰: Anch'io! Dov'è?
+🤵🏻‍♂️: Vicino alla piazza principale.
+
+26
+00:06:52,500 --> 00:07:09,000
+👩🏼‍🦰: Perfetto. E dopo dove vai?
+🤵🏻‍♂️: A casa, per cucinare.
+👩🏼‍🦰: Che buono! Dove compri di solito la frutta?
+🤵🏻‍♂️: Sempre al mercato locale.
+
+27
+00:07:09,000 --> 00:07:16,500
+👩🏼‍🦰: Fantastico. Allora andiamo insieme.
+🤵🏻‍♂️: Volentieri!

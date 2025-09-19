@@ -1,0 +1,156 @@
+1
+00:00:00,000 --> 00:00:12,000
+👩🏻‍🚒: Ciao!
+🕵🏼‍♂️: Buongiorno!
+👩🏻‍🚒: Come stai?
+🕵🏼‍♂️: Sto bene, grazie. E tu?
+
+2
+00:00:12,000 --> 00:00:24,000
+👩🏻‍🚒: Così così.
+🕵🏼‍♂️: Capisco. Buona giornata!
+👩🏻‍🚒: Grazie, anche a te!
+🕵🏼‍♂️: A presto!
+
+3
+00:00:24,000 --> 00:00:27,000
+👩🏻‍🚒: Ciao, a dopo!
+
+4
+00:00:27,000 --> 00:00:39,000
+🕵🏼‍♂️: Ciao, Maria!
+👩🏻‍🚒: Ciao, Luca! Come va?
+🕵🏼‍♂️: Non c’è male.
+👩🏻‍🚒: Scusa, devo andare in classe.
+
+5
+00:00:39,000 --> 00:00:51,000
+🕵🏼‍♂️: Nessun problema.
+👩🏻‍🚒: Grazie! A dopo!
+🕵🏼‍♂️: A più tardi!
+👩🏻‍🚒: Arrivederci!
+
+6
+00:00:51,000 --> 00:00:63,000
+👩🏻‍🚒: Buonasera!
+🕵🏼‍♂️: Buonasera! Come stai?
+👩🏻‍🚒: Sono stanca.
+🕵🏼‍♂️: Anch’io.
+
+7
+00:00:63,000 --> 00:00:75,000
+👩🏻‍🚒: Allora, buonanotte!
+🕵🏼‍♂️: Buonanotte! A domani!
+👩🏻‍🚒: Ciao ciao!
+🕵🏼‍♂️: Arrivederci!
+
+8
+00:00:75,000 --> 00:00:87,000
+👩🏻‍🚒: Buongiorno, signore.
+🕵🏼‍♂️: Buongiorno, signora. Desidera?
+👩🏻‍🚒: Per favore, una bottiglia d’acqua.
+🕵🏼‍♂️: Certo. Ecco a lei.
+
+9
+00:00:87,000 --> 00:00:99,000
+👩🏻‍🚒: Mi scusi, quanto costa?
+🕵🏼‍♂️: Un euro.
+👩🏻‍🚒: Grazie mille.
+🕵🏼‍♂️: Prego. Buona giornata!
+
+10
+00:00:99,000 --> 00:00:102,000
+👩🏻‍🚒: Arrivederci! A presto!
+
+11
+00:00:102,000 --> 00:00:114,000
+👩🏻‍🚒: Pronto? Ciao!
+🕵🏼‍♂️: Ciao! Sono Marco. Come va?
+👩🏻‍🚒: Bene, grazie. E tu?
+🕵🏼‍♂️: Tutto bene.
+
+12
+00:00:114,000 --> 00:00:126,000
+👩🏻‍🚒: Scusa, sono un po’ occupata.
+🕵🏼‍♂️: Nessun problema.
+👩🏻‍🚒: Grazie per la chiamata!
+🕵🏼‍♂️: Prego. A presto! Ciao!
+
+13
+00:00:126,000 --> 00:00:138,000
+🕵🏼‍♂️: Oh, scusi!
+👩🏻‍🚒: Non c’è problema.
+🕵🏼‍♂️: Mi dispiace davvero.
+👩🏻‍🚒: Tranquillo, va bene.
+
+14
+00:00:138,000 --> 00:00:150,000
+🕵🏼‍♂️: Per favore, può aiutarmi?
+👩🏻‍🚒: Sì, certo.
+🕵🏼‍♂️: Dov’è la metro?
+👩🏻‍🚒: Là, a sinistra.
+
+15
+00:00:150,000 --> 00:00:156,000
+🕵🏼‍♂️: Grazie mille! Arrivederci!
+👩🏻‍🚒: Arrivederci! Buona giornata!
+
+16
+00:00:156,000 --> 00:00:168,000
+👩🏻‍🚒: Scusi, questo posto è libero?
+🕵🏼‍♂️: Sì, prego.
+👩🏻‍🚒: Grazie.
+🕵🏼‍♂️: Di nulla.
+
+17
+00:00:168,000 --> 00:00:180,000
+👩🏻‍🚒: Mi scusi, devo scendere.
+🕵🏼‍♂️: Certo, prego.
+👩🏻‍🚒: Buona giornata!
+🕵🏼‍♂️: A presto! Ciao!
+
+18
+00:00:180,000 --> 00:00:192,000
+👩🏻‍🚒: Buongiorno! Un caffè, per favore.
+🕵🏼‍♂️: Subito. Al banco o al tavolo?
+👩🏻‍🚒: Al banco, grazie.
+🕵🏼‍♂️: Ecco il caffè.
+
+19
+00:00:192,000 --> 00:00:204,000
+👩🏻‍🚒: Perfetto. Quanto è?
+🕵🏼‍♂️: Un euro e dieci.
+👩🏻‍🚒: Ecco. Grazie mille!
+🕵🏼‍♂️: Grazie a lei. Buona giornata!
+
+20
+00:00:204,000 --> 00:00:207,000
+👩🏻‍🚒: Arrivederci!
+
+21
+00:00:207,000 --> 00:00:219,000
+🕵🏼‍♂️: Scusi, che ore sono?
+👩🏻‍🚒: Sono le tre.
+🕵🏼‍♂️: Grazie.
+👩🏻‍🚒: Prego.
+
+22
+00:00:219,000 --> 00:00:231,000
+🕵🏼‍♂️: Mi dispiace, ho fretta.
+👩🏻‍🚒: Va bene, a dopo!
+🕵🏼‍♂️: A più tardi! Ciao!
+👩🏻‍🚒: Ciao!
+
+23
+00:00:231,000 --> 00:00:243,000
+👩🏻‍🚒: Ciao, come va oggi?
+🕵🏼‍♂️: Bene, grazie. E tu?
+👩🏻‍🚒: Non c’è male.
+🕵🏼‍♂️: Devo andare.
+
+24
+00:00:243,000 --> 00:00:255,000
+👩🏻‍🚒: Va bene. Buona serata!
+🕵🏼‍♂️: Grazie! A domani!
+👩🏻‍🚒: A presto! Arrivederci!
+🕵🏼‍♂️: Ciao ciao!
