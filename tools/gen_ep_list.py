@@ -20,6 +20,18 @@ import re
 import sys
 from speaker_google import SPEAKER_CONFIG
 
+def clean_text(text: str) -> str:
+    # 統一各種奇怪引號
+    text = text.replace("’", "'").replace("‘", "'")
+    text = text.replace("“", '"').replace("”", '"')
+    text = text.replace("‛", "'").replace("‚", "'")
+    text = text.replace("´", "'").replace("`", "'")
+
+    # 去掉隱藏空白（零寬空白 / 非斷行空白）
+    text = re.sub(r"[\u200B-\u200D\uFEFF\u00A0]", " ", text)
+
+    return text.strip()
+
 def generate_ssml_text(js_file_path, topic_filter=None):
     try:
         with open(js_file_path, 'r', encoding='utf-8') as f:
@@ -78,10 +90,11 @@ def generate_ssml_text(js_file_path, topic_filter=None):
                 pitch = prosody_settings.get("pitch", "0st")
                 text = line.get("text", "")
 
+                text = line.get("text", "")
                 # CORRECTED FILENAME FORMAT
                 mp3_filename = f"ep{episode_id}_topic{topic_id}_scene{scene_id}_d{dialog_id}.mp3"
 
-                break_tag = "<break time='1s'/>"
+                break_tag = "<break time='1.3s'/>"
                 ssml_content = f"<speak lang='{language_code}'><voice speaker='{speaker_name}'><prosody rate='{rate}' pitch='{pitch}'>{text}{break_tag}</prosody></voice></speak>"
 
                 output_blocks.append(f"{mp3_filename} ========== (voice_id={voice_id} rate={speaking_rate} ep{episode_id} topic{topic_id} scene{scene_id} dialog{dialog_id})")

@@ -3,10 +3,12 @@ REQUIRED_ROLES = ["default", "Female", "Male", "M_Chef", "F_hd", "M_hd", "M_Chef
 
 SPEAKER_CONFIG = {
     "it-IT": {
-        "default":  {"voice_id": "Standard-E", "prosody": {"rate": "70%", "pitch": "2st"}, "emoji": "👱🏻‍♀️"},
-        "Female":   {"voice_id": "Standard-E", "prosody": {"rate": "70%", "pitch": "2st"}, "emoji": "👩"},
-        "Male":     {"voice_id": "Standard-D", "prosody": {"rate": "70%", "pitch": "0st"}, "emoji": "🧑"},
-        "M_Chef":   {"voice_id": "Standard-D", "prosody": {"rate": "70%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
+        "default":  {"voice_id": "Standard-E", "prosody": {"rate": "68%", "pitch": "2st"}, "emoji": "👱🏻‍♀️"},
+        "Female":   {"voice_id": "Standard-E", "prosody": {"rate": "68%", "pitch": "2st"}, "emoji": "👩"},
+        "Female2":   {"voice_id": "Standard-A", "prosody": {"rate": "68%", "pitch": "2st"}, "emoji": "👱🏻‍♀️"},
+        "Male":     {"voice_id": "Standard-D", "prosody": {"rate": "68%", "pitch": "0st"}, "emoji": "🧑"},
+        "M_Chef":   {"voice_id": "Standard-D", "prosody": {"rate": "68%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
+        "Barista":  {"voice_id": "Standard-D", "prosody": {"rate": "68%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},
         "F_hd":     {"voice_id": "Chirp3-HD-Leda",   "prosody": {"rate": "100%", "pitch": "0st"}, "emoji": "👩🏻‍🦰"},
         "M_hd":     {"voice_id": "Chirp3-HD-Puck",   "prosody": {"rate": "100%", "pitch": "0st"}, "emoji": "🧑🏻‍🦱"},
         "M_Chef_hd":{"voice_id": "Chirp3-HD-Puck",   "prosody": {"rate": "100%", "pitch": "0st"}, "emoji": "👨🏻‍🍳"},

@@ -7,7 +7,13 @@ OUTFILE="${AUDIODIR}/${BASENAME}_full.mp3"
 
 FILES=()
 
-# 先加 topic intro
+# 先加 episode intro（如果存在）
+EPISODE_INTRO="${AUDIODIR}/${BASENAME%_*}_intro.mp3"
+if [[ -f "$EPISODE_INTRO" ]]; then
+  FILES+=("$EPISODE_INTRO")
+fi
+
+# 再加 topic intro
 FILES+=("${AUDIODIR}/${BASENAME}_intro.mp3")
 
 # 逐一檢查 scene1 ~ scene99

@@ -16,6 +16,11 @@ SPEAKER_CONFIG = {
         "prosody": {"rate": "70%", "pitch": "2st"},
         "emoji": "👩"
     },
+    "Female": {
+        "voice_id": "Standard-A",
+        "prosody": {"rate": "70%", "pitch": "1st"},
+        "emoji": "👩"
+    },
     "Male": {
         "voice_id": "Standard-D",
         "prosody": {"rate": "70%", "pitch": "0st"},

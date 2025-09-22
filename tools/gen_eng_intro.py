@@ -21,7 +21,7 @@ PITCH  = 3                    # semitones; can be float
 
 # ---- Break settings (milliseconds) ----
 # Choose 2000 (2s) or 3000 (3s), or any value you like.
-PRE_BREAK_MS  = 2000   # pause BEFORE speaking each intro
+PRE_BREAK_MS  = 1000   # pause BEFORE speaking each intro
 POST_BREAK_MS = 2000   # pause AFTER speaking each intro
 # ======================================
 
@@ -105,6 +105,13 @@ def main():
     data = read_episode_data(episode_file)
     ep_id = int(data.get("episodeId", 1))
     topics = data.get("topics", [])
+    ep_title = clean_for_tts(data.get("episode", f"Episode {ep_id}"))
+
+    # ---- Episode intro ----
+    out_ep = out_dir / f"ep{ep_id}_intro.mp3"
+    print(f"-> {out_ep.name} (pre = {PRE_BREAK_MS} ms, post = {POST_BREAK_MS} ms)")
+    ssml = ssml_with_breaks(ep_title, PRE_BREAK_MS, POST_BREAK_MS)
+    synth_ssml_to_mp3(ssml, out_ep)
 
     for t in topics:
         topic_id = int(t.get("topicId", 1))

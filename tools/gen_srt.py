@@ -189,7 +189,7 @@ def _force_two_line_split(text: str, max_chars: int) -> list[str]:
     return [t]
 
 
-def wrap_two_lines_or_split(sub, max_chars=40, max_lines=2, force_two=False):
+def wrap_two_lines_or_split(sub, max_chars=32, max_lines=4, force_two=False):
     """
     把字幕排到 ≤max_lines 行（預設 2）且每行 ≤max_chars。
     - 若超過 2 行：切成兩卡（時間依字數比例切）
@@ -208,6 +208,7 @@ def wrap_two_lines_or_split(sub, max_chars=40, max_lines=2, force_two=False):
     if len(lines) <= max_lines:
         sub.content = "\n".join(lines)
         return [sub]
+
 
     # 超過 2 行 → 拆兩卡（依字數比例分時）
     total_chars = sum(len(x) for x in lines) or 1
@@ -236,6 +237,8 @@ def main():
     ap = argparse.ArgumentParser(description="Whisper→SRT→合併→兩行排版（每行≤N字）")
     ap.add_argument("input_file", help="音檔路徑 (mp3/wav/m4a/…)")
     ap.add_argument("--lang", default="it", help="ASR 語言（預設 it）")
+    ap.add_argument("--max-lines", type=int, default=2,
+                help="每卡字幕的最大行數（預設 2 行）")
     ap.add_argument("--model", default="small", help="Whisper 模型（預設 small）")
     ap.add_argument("--max-chars", type=int, default=40, help="每行最大字元（預設 40）")
     ap.add_argument("--max-gap", type=float, default=1.2, help="可合併的最大間隔秒數（預設 1.2）")
@@ -263,7 +266,7 @@ def main():
             wrap_two_lines_or_split(
                 sub,
                 max_chars=args.max_chars,
-                max_lines=2,
+                max_lines=args.max_lines,
                 force_two=args.two_lines
             )
         )

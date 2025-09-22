@@ -245,6 +245,8 @@ def main():
     # 你要的旗標：--2lines（同功能名為 two_lines）
     ap.add_argument("--2lines", dest="two_lines", action="store_true",
                     help="可排兩行就盡量兩行（避免單行；字數不足時不強迫）")
+    ap.add_argument("--4lines", dest="four_lines", action="store_true",
+                help="可排四行就盡量四行（適合長字幕）")
     args = ap.parse_args()
 
     if not os.path.exists(args.input_file):
@@ -258,12 +260,14 @@ def main():
 
     print(f"[INFO] Wrapping to ≤{args.max_chars} chars/line, max 2 lines …")
     wrapped = []
+
+    max_lines = 4 if args.four_lines else 2
     for sub in subs:
         wrapped.extend(
             wrap_two_lines_or_split(
                 sub,
                 max_chars=args.max_chars,
-                max_lines=2,
+                max_lines=max_lines,
                 force_two=args.two_lines
             )
         )
