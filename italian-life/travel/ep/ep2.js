@@ -21,7 +21,7 @@ const episodeData = {
             { speaker: "M_Chef", text: "Certo. Ecco il menù. Cosa desiderate?", en: "Of course. Here is the menu. What would you like?", zh: "好的，這是菜單。想吃點什麼？" },
             { speaker: "Female", text: "Grazie. Ci dia un attimo per decidere.", en: "Thanks. Give us a moment to decide.", zh: "謝謝。給我們一點時間想一下。" },
             { speaker: "M_Chef", text: "Prego. Chiamatemi quando siete pronti.", en: "You're welcome. Call me when you are ready.", zh: "不客氣。你們準備好時再叫我。" },
-            { speaker: "Female", text: "Vorrei un piatto di pasta al pomodoro.", en: "I would like a plate of pasta with tomato sauce.", zh: "我想要一份番茄義大利麵。" },
+            { speaker: "Female", text: "Vorrei un piatto di pasta al pomodoro.", en: "I would like pasta with tomato sauce.", zh: "我想要一份番茄義大利麵。" },
             { speaker: "M_Chef", text: "Perfetto. E da bere?", en: "Perfect. And to drink?", zh: "好的。那要喝點什麼呢？" },
             { speaker: "Female", text: "Acqua naturale, grazie.", en: "Still water, thanks.", zh: "礦泉水，謝謝。" },
             { speaker: "M_Chef", text: "Va bene. Arriva subito!", en: "Alright. Coming right up!", zh: "好的，馬上就來！" }
@@ -35,15 +35,15 @@ const episodeData = {
             { speaker: "M_Chef", text: "Benvenuti! Ecco i nostri menù.", en: "Welcome! Here are our menus.", zh: "歡迎！這是我們的菜單。" },
             { speaker: "Female", text: "Grazie. Come è diviso il menù?", en: "Thank you. How is the menu structured?", zh: "謝謝。請問菜單是如何分類的？" },
             { speaker: "M_Chef", text: "Abbiamo gli antipasti (come bruschette), poi i primi (pasta e risotti).", en: "We have appetizers (like bruschetta), then first courses (pasta and risotto).", zh: "我們有前菜（像烤麵包片），接著是第一道主菜（義大利麵和燉飯）。" },
-            { speaker: "Female", text: "Ah, capisco. E dopo i primi?", en: "Ah, I see. And after the first courses?", zh: "啊，我懂了。那第一道主菜之後呢？" },
-            { speaker: "M_Chef", text: "Poi ci sono i secondi, che sono i piatti principali di carne o pesce.", en: "Then there are the second courses, which are the main meat or fish dishes.", zh: "接著是第二道主菜，也就是主菜類的肉或魚料理。" },
-            { speaker: "Female", text: "E ci sono anche contorni?", en: "And are there side dishes as well?", zh: "那也有配菜嗎？" },
-            { speaker: "M_Chef", text: "Sì, sotto la voce contorni (come patate al forno o insalata).", en: "Yes, under the heading of side dishes (like roasted potatoes or salad).", zh: "有的，在配菜這一區（像是烤馬鈴薯或沙拉）。" },
-            { speaker: "Female", text: "Perfetto. Grazie per la spiegazione!", en: "Perfect. Thanks for the explanation!", zh: "太好了。謝謝你的解說！" },
+            { speaker: "Female", text: "Ah, capisco.", en: "Ah, I see. ", zh: "啊，我懂了。" },
+            { speaker: "M_Chef", text: "Poi, sono i secondi: carne o pesce.", en: "Then, the second courses: meat or fish", zh: "接著是第二道主菜，肉或魚料理。" },
+            { speaker: "Female", text: "E ci sono contorni?", en: "Are there side dishes?", zh: "有配菜嗎？" },
+            { speaker: "M_Chef", text: "Sì, patate o insalata.", en: "Yes, potatoes or salad.", zh: "有，像馬鈴薯或沙拉。" },
+            { speaker: "Female", text: "Perfetto, grazie!", en: "Perfect, thanks!", zh: "太好了，謝謝！" },
             { speaker: "Female", text: "E i dolci? Avete tiramisù?", en: "And desserts? Do you have tiramisù?", zh: "那甜點呢？有提拉米蘇嗎？" },
             { speaker: "M_Chef", text: "Certo! Abbiamo tiramisù, panna cotta e gelato artigianale.", en: "Of course! We have tiramisù, panna cotta, and homemade gelato.", zh: "當然！我們有提拉米蘇、奶酪布丁，還有手工冰淇淋。" },
-            { speaker: "Female", text: "Ottimo! E dopo il dolce si prende il caffè, giusto?", en: "Great! And after dessert, you have coffee, right?", zh: "太棒了！甜點之後就是咖啡，對嗎？" },
-            { speaker: "M_Chef", text: "Esatto, l’espresso non manca mai.", en: "Exactly, espresso is never missing.", zh: "沒錯，濃縮咖啡永遠不會缺席。" }
+            { speaker: "Female", text: "E dopo il dolce c’è il caffè?", en: "And after dessert, is there coffee?", zh: "甜點後有咖啡嗎？" },
+            { speaker: "M_Chef", text: "Sì, sempre espresso.", en: "Yes, always espresso.", zh: "有的，永遠是濃縮咖啡。" },
           ]
         },
         {
@@ -66,15 +66,15 @@ const episodeData = {
           scene: "Day 4 – What's Recommended Today? And Cutlery, Please",
           scene_zh: "第 4 天 — 今天有什麼推薦？還有餐具麻煩了",
           dialogue: [
-            { speaker: "Female", text: "Scusi, cosa ci consiglia oggi?", en: "Excuse me, what do you recommend today?", zh: "不好意思，請問今天有什麼推薦菜嗎？" },
-            { speaker: "M_Chef", text: "Oggi il nostro piatto del giorno sono i ravioli con tartufo.", en: "Today our dish of the day is ravioli with truffle.", zh: "今天我們的每日特餐是松露義式餃。" },
-            { speaker: "Female", text: "Sembra delizioso! È il più popolare?", en: "That sounds delicious! Is it the most popular?", zh: "聽起來很好吃！它是最受歡迎的嗎？" },
-            { speaker: "M_Chef", text: "Sì, molti clienti lo ordinano. È la nostra specialità.", en: "Yes, many customers order it. It's our specialty.", zh: "是的，很多客人都點這道。這是我們的招牌菜。" },
-            { speaker: "Female", text: "E cosa c’è dentro?", en: "And what's inside?", zh: "那裡面有什麼餡料？" },
-            { speaker: "M_Chef", text: "Sono ripieni di ricotta e spinaci, con salsa al tartufo fresco.", en: "They are filled with ricotta and spinach, with a fresh truffle sauce.", zh: "內餡是瑞可達起司和菠菜，搭配新鮮的松露醬。" },
-            { speaker: "M_Chef", text: "Vuole iniziare con una zuppa? Abbiamo una vellutata di verdure molto leggera.", en: "Would you like to start with a soup? We have a very light vegetable cream soup.", zh: "要不要先來一碗湯？我們有很清爽的蔬菜濃湯。" },
-            { speaker: "Female", text: "Mh, sì, una zuppa va bene. E per i ravioli, posso avere anche un cucchiaio e una forchetta, per favore?", en: "Hmm, yes, a soup sounds good. And for the ravioli, could I also have a spoon and a fork, please?", zh: "嗯，好啊，那就來碗湯。另外松露餃也麻煩給我湯匙和叉子，謝謝。" },
-            { speaker: "M_Chef", text: "Certamente, signora. Zuppa e ravioli con posate complete. Arriva subito!", en: "Of course, madam. Soup and ravioli with full cutlery. Coming right up!", zh: "當然，女士。一碗湯加松露餃，餐具齊全。馬上就來！" }
+            { speaker: "Female", text: "Scusi, cosa consiglia oggi?", en: "Excuse me, what do you recommend today?", zh: "不好意思，今天有什麼推薦？" },
+            { speaker: "M_Chef", text: "Oggi abbiamo i ravioli al tartufo.", en: "Today we have ravioli with truffle.", zh: "今天有松露餃子。" },
+            { speaker: "Female", text: "Buono! È popolare?", en: "Nice! Is it popular?", zh: "不錯！很受歡迎嗎？" },
+            { speaker: "M_Chef", text: "Sì, è la nostra specialità.", en: "Yes, it’s our specialty.", zh: "是的，這是我們的招牌菜。" },
+            { speaker: "Female", text: "Cosa c’è dentro?", en: "What’s inside?", zh: "裡面有什麼？" },
+            { speaker: "M_Chef", text: "Ricotta e spinaci, con salsa al tartufo.", en: "Ricotta and spinach, with truffle sauce.", zh: "乳酪和菠菜，加松露醬。" },
+            { speaker: "M_Chef", text: "Vuole una zuppa per iniziare?", en: "Would you like a soup to start?", zh: "要不要先來碗湯？" },
+            { speaker: "Female", text: "Sì, una zuppa va bene. E per i ravioli, una forchetta e un cucchiaio, per favore.", en: "Yes, a soup is fine. And for the ravioli, a fork and a spoon, please.", zh: "好，來碗湯。另外松露餃要叉子和湯匙，謝謝。" },
+            { speaker: "M_Chef", text: "Certamente. Zuppa e ravioli, con posate. Subito!", en: "Of course. Soup and ravioli, with cutlery. Right away!", zh: "當然。湯和松露餃，餐具齊全。馬上來！" }
           ]
         },
         {
@@ -82,11 +82,12 @@ const episodeData = {
           scene: "Day 5 – Ordering a Drink and Water",
           scene_zh: "第 5 天 — 點飲料和水",
           dialogue: [
-            { speaker: "Female", text: "Vorrei ordinare da bere. Avete del vino rosso della casa?", en: "I would like to order a drink. Do you have house red wine?", zh: "我想要點飲料。你們有自釀的紅酒嗎？" },
-            { speaker: "M_Chef", text: "Sì, certo. Un bicchiere o una caraffa?", en: "Yes, of course. A glass or a carafe?", zh: "有的。要一杯還是一壺？" },
-            { speaker: "Female", text: "Un bicchiere, grazie. E anche una bottiglia d'acqua frizzante.", en: "A glass, thanks. And also a bottle of sparkling water.", zh: "一杯，謝謝。另外再來一瓶氣泡水。" },
-            { speaker: "M_Chef", text: "Va bene. E ghiaccio?", en: "Alright. And ice?", zh: "好的。要冰塊嗎？" },
-            { speaker: "Female", text: "No, senza ghiaccio, per favore.", en: "No, without ice, please.", zh: "不用冰塊，謝謝。" },
+            { speaker: "Female", text: "Vorrei del vino rosso della casa.", en: "I’d like the house red wine.", zh: "我想要一杯自釀紅酒。" },
+            { speaker: "M_Chef", text: "Un bicchiere o una caraffa?", en: "A glass or a carafe?", zh: "要一杯還是一壺？" },
+            { speaker: "Female", text: "Un bicchiere, grazie. E una bottiglia d’acqua frizzante.", en: "A glass, thanks. And a bottle of sparkling water.", zh: "一杯，謝謝。還要一瓶氣泡水。" },
+            { speaker: "M_Chef", text: "Va bene. Con ghiaccio?", en: "Alright. With ice?", zh: "好的，要加冰嗎？" },
+            { speaker: "Female", text: "No, senza ghiaccio.", en: "No, without ice.", zh: "不用，加冰塊。" },
+            { speaker: "M_Chef", text: "Perfetto. Subito.", en: "Perfect. Right away.", zh: "好的，馬上來。" },
             { speaker: "M_Chef", text: "Prego. Desidera altro?", en: "You're welcome. Do you wish for anything else?", zh: "不客氣。還需要點別的嗎？" },
             { speaker: "Female", text: "No, è tutto. Grazie.", en: "No, that's all. Thanks.", zh: "沒了，就這些。謝謝。" },
             { speaker: "M_Chef", text: "Perfetto. Arriva subito.", en: "Perfect. It's coming right away.", zh: "好的。馬上就來。" }
@@ -94,17 +95,17 @@ const episodeData = {
         },
         {
           sceneId: 6,
-          scene: "Day 6 – Asking about Ingredients (Allergies)",
-          scene_zh: "第 6 天 — 詢問食材（過敏）",
+          scene: "Day 6 – Asking for Cutlery and Napkins",
+          scene_zh: "第 6 天 — 要餐具和紙巾",
           dialogue: [
-            { speaker: "Female", text: "Mi scusi, ho un'allergia al glutine. Questa zuppa contiene farina?", en: "Excuse me, I have a gluten allergy. Does this soup contain flour?", zh: "不好意思，我對麩質過敏。這道湯裡有麵粉嗎？" },
-            { speaker: "M_Chef", text: "Aspetti che chiedo in cucina. Non sono sicuro.", en: "Wait, I'll ask in the kitchen. I'm not sure.", zh: "請稍等，我去廚房問一下。我不確定。" },
-            { speaker: "M_Chef", text: "No, non c'è farina. Ma ci sono crostini di pane a parte.", en: "No, there is no flour. But there are bread croutons on the side.", zh: "沒有，沒有麵粉。但旁邊有麵包丁。" },
-            { speaker: "Female", text: "Ah, capisco. Grazie per averlo specificato.", en: "Ah, I see. Thanks for specifying that.", zh: "啊，我懂了。謝謝你特別說明。" },
-            { speaker: "M_Chef", text: "Prego. Allora Le tolgo i crostini?", en: "You're welcome. So, should I remove the croutons for you?", zh: "不客氣。那要幫您把麵包丁拿掉嗎？" },
-            { speaker: "Female", text: "Sì, per favore. E posso prendere la zuppa. Grazie per aver controllato.", en: "Yes, please. And I'll have the soup. Thanks for checking.", zh: "好的，麻煩了。那我點這個湯。謝謝您幫我確認。" },
-            { speaker: "M_Chef", text: "Prego! Per noi è un piacere.", en: "You're welcome! It's our pleasure.", zh: "不客氣！這是我們的榮幸。" },
-            { speaker: "Female", text: "Grazie mille!", en: "Thank you very much!", zh: "非常感謝！" }
+            { speaker: "Female", text: "Scusi, posso avere una forchetta?", en: "Excuse me, can I have a fork?", zh: "不好意思，可以給我一支叉子嗎？" },
+            { speaker: "M_Chef", text: "Certo, subito.", en: "Of course, right away.", zh: "當然，馬上來。" },
+            { speaker: "Female", text: "E anche un cucchiaio, per favore.", en: "And also a spoon, please.", zh: "還有一支湯匙，謝謝。" },
+            { speaker: "M_Chef", text: "Va bene, un cucchiaio.", en: "Alright, a spoon.", zh: "好的，一支湯匙。" },
+            { speaker: "Female", text: "Potrei avere anche un coltello?", en: "Could I also have a knife?", zh: "可以再給我一把刀嗎？" },
+            { speaker: "M_Chef", text: "Sì, un coltello subito.", en: "Yes, a knife right away.", zh: "好的，馬上給您刀子。" },
+            { speaker: "Female", text: "E qualche tovagliolo di carta, grazie.", en: "And some paper napkins, thanks.", zh: "還有一些紙巾，謝謝。" },
+            { speaker: "M_Chef", text: "Ecco a Lei: forchetta, cucchiaio, coltello e tovaglioli.", en: "Here you are: fork, spoon, knife and napkins.", zh: "給您：叉子、湯匙、刀子和紙巾。" }
           ]
         },
         {
@@ -112,14 +113,14 @@ const episodeData = {
           scene: "Day 7 – Requesting an English Menu",
           scene_zh: "第 7 天 — 索取英文菜單",
           dialogue: [
-            { speaker: "Female", text: "Mi scusi, parlo poco italiano. Avete un menù in inglese?", en: "Excuse me, I speak very little Italian. Do you have an English menu?", zh: "不好意思，我義大利語說得不太好。請問有英文菜單嗎？" },
-            { speaker: "M_Chef", text: "Sì, certo! Ecco qui il menù in inglese.", en: "Yes, of course! Here is the menu in English.", zh: "有的，當然！這份是英文菜單。" },
-            { speaker: "Female", text: "Grazie mille! Qual è il vostro piatto forte?", en: "Thank you very much! What is your house specialty?", zh: "非常感謝！你們的招牌菜是什麼？" },
-            { speaker: "M_Chef", text: "I nostri spaghetti alla carbonara sono molto famosi.", en: "Our spaghetti carbonara is very famous.", zh: "我們的培根蛋麵非常有名。" },
-            { speaker: "Female", text: "Allora prendo quello. E una coca cola.", en: "Then I'll have that. And a Coke.", zh: "那我點那道。還有一瓶可樂。" },
-            { speaker: "M_Chef", text: "Spaghetti carbonara e Coca Cola. Va bene!", en: "Spaghetti carbonara and a Coke. Okay!", zh: "培根蛋麵和可樂。好的！" },
-            { speaker: "Female", text: "Tutto qui. Quanto costa?", en: "That's all. How much does it cost?", zh: "就這些。多少錢？" },
-            { speaker: "M_Chef", text: "Il totale è quindici euro e cinquanta.", en: "The total is fifteen fifty.", zh: "總共十五歐元五角。" }
+            { speaker: "Female", text: "Scusi, parlo poco italiano. Avete menù in inglese?", en: "Excuse me, I speak little Italian. Do you have an English menu?", zh: "不好意思，我義大利語不太好。有英文菜單嗎？" },
+            { speaker: "M_Chef", text: "Sì, ecco il menù in inglese.", en: "Yes, here’s the English menu.", zh: "有的，這是英文菜單。" },
+            { speaker: "Female", text: "Grazie! Qual è il piatto speciale?", en: "Thanks! What is the special dish?", zh: "謝謝！你們的招牌菜是什麼？" },
+            { speaker: "M_Chef", text: "La carbonara. È molto famosa.", en: "Carbonara. It’s very famous.", zh: "培根蛋麵，很有名。" },
+            { speaker: "Female", text: "Perfetto, prendo quello. E una Coca Cola.", en: "Perfect, I’ll take that. And a Coke.", zh: "太好了，我要這個。再加一瓶可樂。" },
+            { speaker: "M_Chef", text: "Carbonara e Coca Cola. Va bene!", en: "Carbonara and a Coke. Okay!", zh: "培根蛋麵和可樂。好的！" },
+            { speaker: "Female", text: "Quanto costa?", en: "How much is it?", zh: "多少錢？" },
+            { speaker: "M_Chef", text: "Quindici euro e cinquanta.", en: "Fifteen euros fifty.", zh: "十五歐元五角。" }
           ]
         },
         {
@@ -127,14 +128,14 @@ const episodeData = {
           scene: "Day 8 – Ordering a Side Dish or Appetizer",
           scene_zh: "第 8 天 — 點配菜或開胃菜",
           dialogue: [
-            { speaker: "Female", text: "Buongiorno! Vorrei ordinare un antipasto.", en: "Good morning! I would like to order an appetizer.", zh: "早安！我想要點一份開胃菜。" },
+            { speaker: "Female", text: "Buongiorno! Vorrei un antipasto.", en: "Good morning! I’d like an appetizer.", zh: "早安！我想要一份開胃菜。" },
             { speaker: "M_Chef", text: "Quale antipasto?", en: "Which appetizer?", zh: "哪一種開胃菜？" },
-            { speaker: "Female", text: "Prendo il piatto di affettati e formaggi.", en: "I'll take the plate of cold cuts and cheeses.", zh: "我要點綜合冷盤和起司拼盤。" },
-            { speaker: "M_Chef", text: "Ottima scelta. E come piatto principale?", en: "Great choice. And for the main course?", zh: "很棒的選擇。那主菜呢？" },
-            { speaker: "Female", text: "Poi un'insalata mista, per favore.", en: "Then a mixed salad, please.", zh: "然後再來一份綜合沙拉，謝謝。" },
-            { speaker: "M_Chef", text: "Affettati, formaggi e insalata. Tutto chiaro.", en: "Cold cuts, cheeses, and salad. Everything is clear.", zh: "冷盤、起司和沙拉。都清楚了。" },
+            { speaker: "Female", text: "Prendo affettati e formaggi.", en: "I’ll take cold cuts and cheeses.", zh: "我要綜合冷盤和起司。" },
+            { speaker: "M_Chef", text: "Va bene. Altro?", en: "Okay. Anything else?", zh: "好的。還要別的嗎？" },
+            { speaker: "Female", text: "Un’insalata mista, per favore.", en: "A mixed salad, please.", zh: "一份綜合沙拉，謝謝。" },
+            { speaker: "M_Chef", text: "Affettati, formaggi e insalata. Perfetto.", en: "Cold cuts, cheeses and salad. Perfect.", zh: "冷盤、起司和沙拉。太好了。" },
             { speaker: "Female", text: "Grazie!", en: "Thank you!", zh: "謝謝！" },
-            { speaker: "M_Chef", text: "Prego! A lei!", en: "You're welcome! Here you go!", zh: "不客氣！給您！" }
+            { speaker: "M_Chef", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" }
           ]
         },
         {
@@ -142,14 +143,14 @@ const episodeData = {
           scene: "Day 9 – Asking for a Doggy Bag",
           scene_zh: "第 9 天 — 詢問能否打包",
           dialogue: [
-            { speaker: "Female", text: "Il cibo era delizioso, grazie! Ma non riesco a finire tutto.", en: "The food was delicious, thank you! But I can't finish everything.", zh: "食物很美味，謝謝！但我吃不完。" },
-            { speaker: "M_Chef", text: "Vuole che Le prepariamo una vaschetta per portare via?", en: "Would you like us to prepare a container for you to take away?", zh: "您需要我們為您準備一個盒子打包嗎？" },
-            { speaker: "Female", text: "Sì, per favore. Posso avere il resto da portare via?", en: "Yes, please. Can I have the rest to take away?", zh: "好的，麻煩了。我可以把剩下的打包嗎？" },
-            { speaker: "M_Chef", text: "Certo! Lo portiamo subito in cucina.", en: "Of course! We'll take it to the kitchen right away.", zh: "當然！我們馬上送去廚房。" },
-            { speaker: "Female", text: "Grazie mille!", en: "Thank you very much!", zh: "非常感謝！" },
-            { speaker: "M_Chef", text: "Prego! Ha bisogno di altro?", en: "You're welcome! Do you need anything else?", zh: "不客氣！還需要別的嗎？" },
-            { speaker: "Female", text: "No, va bene così. Grazie!", en: "No, it's fine. Thanks!", zh: "不用了，這樣就好。謝謝！" },
-            { speaker: "M_Chef", text: "Quando vuole il conto, mi chiami.", en: "When you want the bill, just call me.", zh: "如果您需要帳單，再叫我。" }
+            { speaker: "Female", text: "Il cibo era buono, ma non finisco tutto.", en: "The food was good, but I can’t finish it all.", zh: "食物很好吃，但我吃不完。" },
+            { speaker: "M_Chef", text: "Vuole una vaschetta per portare via?", en: "Do you want a box to take away?", zh: "要不要一個盒子打包？" },
+            { speaker: "Female", text: "Sì, per favore.", en: "Yes, please.", zh: "好的，麻煩了。" },
+            { speaker: "M_Chef", text: "Va bene, lo porto in cucina.", en: "Okay, I’ll take it to the kitchen.", zh: "好的，我幫您送去廚房。" },
+            { speaker: "Female", text: "Grazie!", en: "Thank you!", zh: "謝謝！" },
+            { speaker: "M_Chef", text: "Prego!", en: "You’re welcome!", zh: "不客氣！" },
+            { speaker: "Female", text: "No, nient’altro.", en: "No, nothing else.", zh: "不用了，沒別的了。" },
+            { speaker: "M_Chef", text: "Perfetto. Quando vuole il conto, mi chiami.", en: "Perfect. When you want the bill, call me.", zh: "好的。要帳單的時候再叫我。" }
           ]
         },
         {
@@ -157,14 +158,14 @@ const episodeData = {
           scene: "Day 10 – Complimenting the Food",
           scene_zh: "第 10 天 — 讚美食物與結帳",
           dialogue: [
-            { speaker: "Female", text: "Scusi, posso dirle che la pasta era squisita!", en: "Excuse me, may I tell you that the pasta was exquisite!", zh: "不好意思，我想說這義大利麵太美味了！" },
-            { speaker: "M_Chef", text: "La ringrazio molto! Lo dirò allo chef.", en: "Thank you very much! I will tell the chef.", zh: "非常感謝您！我會轉告主廚。" },
-            { speaker: "Female", text: "Il tiramisù è anche il migliore che abbia mai mangiato!", en: "The tiramisu is also the best I have ever eaten!", zh: "這份提拉米蘇也是我吃過最棒的！" },
-            { speaker: "M_Chef", text: "Sono felice che Le sia piaciuto così tanto. Grazie ancora.", en: "I'm happy that you liked it so much. Thank you again.", zh: "很高興您這麼喜歡。再次感謝。" },
-            { speaker: "Female", text: "È un piacere. Possiamo avere il conto, per favore?", en: "It's my pleasure. Can we have the bill, please?", zh: "這是我的榮幸。可以給我們帳單嗎？" },
-            { speaker: "M_Chef", text: "Certo, arriva subito.", en: "Of course, it's coming right away.", zh: "好的，馬上就來。" },
+            { speaker: "Female", text: "Scusi, la pasta era molto buona!", en: "Excuse me, the pasta was very good!", zh: "不好意思，這義大利麵很好吃！" },
+            { speaker: "M_Chef", text: "Grazie! Lo dirò allo chef.", en: "Thanks! I’ll tell the chef.", zh: "謝謝！我會告訴主廚。" },
+            { speaker: "Female", text: "Anche il tiramisù era ottimo!", en: "The tiramisu was great too!", zh: "提拉米蘇也很好吃！" },
+            { speaker: "M_Chef", text: "Sono felice che Le sia piaciuto.", en: "I’m happy you liked it.", zh: "很高興您喜歡。" },
+            { speaker: "Female", text: "Possiamo avere il conto, per favore?", en: "Can we have the bill, please?", zh: "可以給我們帳單嗎？" },
+            { speaker: "M_Chef", text: "Certo, subito.", en: "Of course, right away.", zh: "好的，馬上就來。" },
             { speaker: "Female", text: "Posso pagare con la carta?", en: "Can I pay by card?", zh: "可以刷卡嗎？" },
-            { speaker: "M_Chef", text: "Sì, certo. Ecco il POS.", en: "Yes, of course. Here is the card machine.", zh: "好的，當然。這是刷卡機。" }
+            { speaker: "M_Chef", text: "Sì, ecco il POS.", en: "Yes, here is the card machine.", zh: "可以，這是刷卡機。" }
           ]
         },
         {
@@ -172,14 +173,14 @@ const episodeData = {
           scene: "Day 11 - Asking for the Bill and Paying",
           scene_zh: "第 11 天 - 結帳與付款",
           dialogue: [
-            { speaker: "Female", text: "Mi scusi, posso avere il conto, per favore?", en: "Excuse me, can I have the bill, please?", zh: "不好意思，可以給我帳單嗎？" },
-            { speaker: "M_Chef", text: "Certo. Ecco a lei.", en: "Of course. Here you are.", zh: "好的。這是您的帳單。" },
-            { speaker: "Female", text: "Grazie. Accettate carte di credito?", en: "Thanks. Do you accept credit cards?", zh: "謝謝。你們接受信用卡嗎？" },
-            { speaker: "M_Chef", text: "Sì, accettiamo carte. Il totale è venticinque euro.", en: "Yes, we accept cards. The total is twenty-five euros.", zh: "是的，我們接受刷卡。總共二十五歐元。" },
-            { speaker: "Female", text: "Perfetto. Posso avere anche la ricevuta?", en: "Perfect. Can I also have the receipt?", zh: "太好了。可以順便給我收據嗎？" },
-            { speaker: "M_Chef", text: "Certamente. Ecco la ricevuta.", en: "Certainly. Here is the receipt.", zh: "當然。這是您的收據。" },
-            { speaker: "Female", text: "Grazie mille! Buona serata!", en: "Thank you very much! Have a good evening!", zh: "非常感謝！祝您有個愉快的夜晚！" },
-            { speaker: "M_Chef", text: "Anche a lei, grazie! Arrivederci!", en: "You too, thanks! Goodbye!", zh: "也祝您如此，謝謝！再見！" }
+            { speaker: "Female", text: "Scusi, il conto per favore.", en: "Excuse me, the bill please.", zh: "不好意思，請給我帳單。" },
+            { speaker: "M_Chef", text: "Certo, ecco il conto.", en: "Of course, here’s the bill.", zh: "好的，這是帳單。" },
+            { speaker: "Female", text: "Accettate carte di credito?", en: "Do you accept credit cards?", zh: "你們收信用卡嗎？" },
+            { speaker: "M_Chef", text: "Sì, il totale è venticinque euro.", en: "Yes, the total is twenty-five euros.", zh: "是的，總共二十五歐元。" },
+            { speaker: "Female", text: "Perfetto. Una ricevuta, per favore.", en: "Perfect. A receipt, please.", zh: "太好了。請給我收據。" },
+            { speaker: "M_Chef", text: "Ecco la ricevuta.", en: "Here’s the receipt.", zh: "這是收據。" },
+            { speaker: "Female", text: "Grazie! Buona serata!", en: "Thanks! Have a good evening!", zh: "謝謝！祝您晚上愉快！" },
+            { speaker: "M_Chef", text: "Arrivederci! Anche a lei.", en: "Goodbye! You too.", zh: "再見！也祝您愉快。" }
           ]
         }
       ]
