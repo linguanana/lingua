@@ -68,11 +68,11 @@ const episodeData = {
             { speaker: "Male", text: "Ciao! Voi siete studenti?", en: "Hi! Are you (all) students?", zh: "嗨！你們是學生嗎？" },
             { speaker: "Female", text: "Sì, noi siamo studenti. E voi?", en: "Yes, we are students. And you?", zh: "對，我們是學生。你們呢？" },
             { speaker: "Male", text: "Noi siamo in vacanza a Roma. Parliamo inglese.", en: "We are on vacation in Rome. We speak English.", zh: "我們在羅馬度假。我們說英文。" },
-            { speaker: "Female", text: "Che bello! Voi siete americani? Noi parliamo un po' di inglese.", en: "How nice! Are you (all) American? We speak a little English.", zh": "真好！你們是美國人嗎？我們說一點點英文。" },
-            { speaker: "Male", text: "Sì, noi siamo americani. Voi parlate bene italiano!", en": "Yes, we are American. You (all) speak Italian well!", "zh": "對，我們是美國人。你們說義大利文說得很好！" },
-            { speaker: "Female", text: "Grazie! È stato un piacere conoscervi. Voi siete molto simpatici.", en": "Thanks! It was a pleasure to meet you. You (all) are very nice.", "zh": "謝謝！很高興認識你們。你們人很好。" },
-            { speaker: "Male", text: "Anche voi siete simpatiche. Noi siamo contenti di avervi conosciuto.", en": "You are nice too. We are happy to have met you.", "zh": "你們也很好。我們很高興認識你們。" },
-            { speaker: "Female", text: "Voi siete i migliori! Andiamo a prendere un caffè insieme.", en": "You (all) are the best! Let's go get a coffee together.", "zh": "你們最棒了！我們一起去喝杯咖啡吧。" }
+            { speaker: "Female", text: "Che bello! Voi siete americani? Noi parliamo un po' di inglese.", en: "How nice! Are you (all) American? We speak a little English.", zh: "真好！你們是美國人嗎？我們說一點點英文。" },
+            { speaker: "Male", text: "Sì, noi siamo americani. Voi parlate bene italiano!", en: "Yes, we are American. You (all) speak Italian well!", zh: "對，我們是美國人。你們說義大利文說得很好！" },
+            { speaker: "Female", text: "Grazie! È stato un piacere conoscervi. Voi siete molto simpatici.", en: "Thanks! It was a pleasure to meet you. You (all) are very nice.", zh: "謝謝！很高興認識你們。你們人很好。" },
+            { speaker: "Male", text: "Anche voi siete simpatiche. Noi siamo contenti di avervi conosciuto.", en: "You are nice too. We are happy to have met you.", zh: "你們也很好。我們很高興認識你們。" },
+            { speaker: "Female", text: "Voi siete i migliori! Andiamo a prendere un caffè insieme.", en: "You (all) are the best! Let's go get a coffee together.", zh: "你們最棒了！我們一起去喝杯咖啡吧。" }
           ]
         },
         {
@@ -82,12 +82,12 @@ const episodeData = {
           dialogue: [
             { speaker: "Male", text: "Chi sono loro?", en: "Who are they?", zh: "他們是誰？" },
             { speaker: "Female", text: "Loro sono i miei amici. Sono di Milano.", en: "They are my friends. They are from Milan.", zh: "他們是我的朋友。他們來自米蘭。" },
-            { speaker: "Male", text: "Fantastico! Loro vanno in vacanza?", en": "Fantastic! Are they going on vacation?", "zh": "太棒了！他們要去度假嗎？" },
-            { speaker: "Female", text: "No, loro non vanno in vacanza. Loro lavorano qui.", en": "No, they are not going on vacation. They work here.", "zh": "不，他們不去度假。他們在這裡工作。" },
-            { speaker: "Male", text: "Capisco. Loro sono stanchi?", en": "I see. Are they tired?", "zh": "我懂了。他們累了嗎？" },
-            { speaker: "Female", text: "Sì, sono un po' stanchi. Ma loro sono felici.", en": "Yes, they are a little tired. But they are happy.", "zh": "對，他們有點累。但他們很開心。" },
-            { speaker: "Male", text: "Bene. Loro parlano bene l'italiano?", en": "Good. Do they speak Italian well?", "zh": "很好。他們義大利文說得好嗎？" },
-            { speaker: "Female", text: "Sì, parlano molto bene.", en": "Yes, they speak very well.", "zh": "是的，他們說得很好。" }
+            { speaker: "Male", text: "Fantastico! Loro vanno in vacanza?", en: "Fantastic! Are they going on vacation?", zh: "太棒了！他們要去度假嗎？" },
+            { speaker: "Female", text: "No, loro non vanno in vacanza. Loro lavorano qui.", en: "No, they are not going on vacation. They work here.", zh: "不，他們不去度假。他們在這裡工作。" },
+            { speaker: "Male", text: "Capisco. Loro sono stanchi?", en: "I see. Are they tired?", zh: "我懂了。他們累了嗎？" },
+            { speaker: "Female", text: "Sì, sono un po' stanchi. Ma loro sono felici.", en: "Yes, they are a little tired. But they are happy.", zh: "對，他們有點累。但他們很開心。" },
+            { speaker: "Male", text: "Bene. Loro parlano bene l'italiano?", en: "Good. Do they speak Italian well?", zh: "很好。他們義大利文說得好嗎？" },
+            { speaker: "Female", text: "Sì, parlano molto bene.", en: "Yes, they speak very well.", zh: "是的，他們說得很好。" }
           ]
         },
         {
@@ -125,7 +125,7 @@ const episodeData = {
           scene: "Day 8 – Mix & Review: Pronouns + Possessives",
           scene_zh: "第 8 天 – 綜合複習：代詞與所有格",
           dialogue: [
-            { speaker: "Teacher", text: "Ripetiamo! Io sono Marco. Tu sei Anna.", en: "Let’s review! I am Marco. You are Anna.", zh: "我們來複習！我是馬可。你是安娜。" },
+            { speaker: "Male", text: "Ripetiamo! Io sono Marco. Tu sei Anna.", en: "Let’s review! I am Marco. You are Anna.", zh: "我們來複習！我是馬可。你是安娜。" },
             { speaker: "Female", text: "Lui è Paolo. Lei è Maria.", en: "He is Paolo. She is Maria.", zh: "他是保羅。她是瑪麗亞。" },
             { speaker: "Male", text: "Noi siamo amici.", en: "We are friends.", zh: "我們是朋友。" },
             { speaker: "Female", text: "Voi siete studenti.", en: "You all are students.", zh: "你們是學生。" },
