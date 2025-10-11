@@ -1,0 +1,286 @@
+const episodeData = {
+  ep_title: "ep",
+  episodeId: 0,
+  episode: "🇮🇹 Start Zero – Core Words for Absolute Beginners",
+  episode_zh: "🇮🇹 初學零基礎 – 必學單字",
+  toggle_title: "Scenes",
+  voice: "it-IT",
+  speaking_rate: "0.75",
+  topics: [
+    {
+      topicId: 1,
+      topic: "👋 Greetings",
+      topic_zh: "👋 打招呼",
+      scenes: [
+        {
+          sceneId: 1,
+          scene: "Day 1 – Greetings",
+          scene_zh: "第 1 天 — 打招呼",
+          dialogue: [
+            { speaker: "Word", text: "Salve", en: "Hello", zh: "你好" },
+            { speaker: "Word", text: "Ciao", en: "Hi / Bye", zh: "嗨 / 掰" },
+            { speaker: "Word", text: "Buongiorno", en: "Good morning", zh: "早安" },
+            { speaker: "Word", text: "Buon pomeriggio", en: "Good afternoon", zh: "午安" },
+            { speaker: "Word", text: "Buonasera", en: "Good evening", zh: "晚上好" },
+            { speaker: "Word", text: "Buonanotte", en: "Good night", zh: "晚安" },
+            { speaker: "Word", text: "Buona giornata", en: "Have a good day", zh: "祝你有美好的一天" },
+            { speaker: "Word", text: "Buona serata", en: "Have a nice evening", zh: "祝你有個愉快的夜晚" }
+          ]
+        }
+      ]
+    },
+    {
+      topicId: 2,
+      topic: "Day 2 – Goodbyes",
+      topic_zh: "👋 再見的說法",
+      scenes: [
+        {
+          sceneId: 2,
+          scene: "Day 2 – Goodbyes",
+          scene_zh: "第 2 天 — 再見",
+          dialogue: [
+            { speaker: "Word", text: "Arrivederci", en: "Goodbye (formal)", zh: "再見（正式）" },
+            { speaker: "Word", text: "Ciao", en: "Bye (informal)", zh: "掰（非正式）" },
+            { speaker: "Word", text: "A presto", en: "See you soon", zh: "回頭見" },
+            { speaker: "Word", text: "A dopo", en: "See you later", zh: "待會見" },
+            { speaker: "Word", text: "A domani", en: "See you tomorrow", zh: "明天見" },
+            { speaker: "Word", text: "Alla prossima", en: "Until next time", zh: "下次見" },
+            { speaker: "Word", text: "Ci vediamo", en: "See you", zh: "再見 / 我們會再見面" },
+            { speaker: "Word", text: "Ciao ciao", en: "Bye-bye", zh: "掰掰" },
+            { speaker: "Word", text: "Addio", en: "Farewell (final)", zh: "永別 / 再見（文學用語）" },
+            { speaker: "Word", text: "Ci vediamo stasera", en: "See you tonight", zh: "今晚見" }
+          ]
+        }
+      ]
+    },
+    {
+      topicId: 3,
+      topic: "Day 3 – Polite Words",
+      topic_zh: "🙏 禮貌用語",
+      scenes: [
+        {
+          sceneId: 3,
+          scene: "Day 3 – Polite Words",
+          scene_zh: "第 3 天 — 禮貌用語",
+          dialogue: [
+            { speaker: "Word", text: "Sì", en: "Yes", zh: "是的" },
+            { speaker: "Word", text: "No", en: "No", zh: "不是" },
+            { speaker: "Word", text: "Forse", en: "Maybe", zh: "也許" },
+            { speaker: "Word", text: "Certo!", en: "Of course! / Sure!", zh: "當然！" },
+            { speaker: "Word", text: "Per favore", en: "Please", zh: "請" },
+            { speaker: "Word", text: "Grazie", en: "Thank you", zh: "謝謝" },
+            { speaker: "Word", text: "Grazie mille", en: "Thank you very much", zh: "非常感謝" },
+            { speaker: "Word", text: "Prego", en: "You’re welcome", zh: "不客氣" },
+            { speaker: "Word", text: "Di niente", en: "It’s nothing", zh: "沒什麼，不客氣" },
+            { speaker: "Word", text: "Mi puoi aiutare?", en: "Can you help me? (informal)", zh: "你能幫我嗎？（非正式）" },
+            { speaker: "Word", text: "Può aiutarmi?", en: "Can you help me? (formal)", zh: "您能幫我嗎？（正式）" },
+            { speaker: "Word", text: "Scusa", en: "Sorry (informal)", zh: "抱歉（非正式）" },
+            { speaker: "Word", text: "Mi scusi", en: "Excuse me (formal)", zh: "不好意思（正式）" },
+            { speaker: "Word", text: "Mi dispiace", en: "I’m sorry", zh: "對不起" },
+            { speaker: "Word", text: "Non capisco.", en: "I don’t understand.", zh: "我不懂。" },
+            { speaker: "Word", text: "Non lo so.", en: "I don’t know.", zh: "我不知道。" },
+            { speaker: "Word", text: "Puoi ripetere, per favore?", en: "Can you repeat that, please? (informal)", zh: "你能再說一次嗎？（非正式）" },
+            { speaker: "Word", text: "Può ripetere, per favore?", en: "您能再說一次嗎？（正式）" },
+            { speaker: "Word", text: "Nessun problema", en: "No problem", zh: "沒問題" },
+            { speaker: "Word", text: "Tranquillo", en: "Don’t worry", zh: "別擔心" }
+          ]
+        },
+        {
+          sceneId: 4,
+          scene: "Day 4 – How are you?",
+          scene_zh: "第 4 天 — 你好嗎？",
+          dialogue: [
+            { speaker: "Word", text: "Come stai?", en: "How are you? (informal)", zh: "你好嗎？（非正式）" },
+            { speaker: "Word", text: "Come sta?", en: "How are you? (formal)", zh: "您好嗎？（正式）" },
+            { speaker: "Word", text: "Come va?", en: "How’s it going?", zh: "過得怎麼樣？" },
+
+            { speaker: "Word", text: "Sto bene", en: "I’m good", zh: "我很好" },
+            { speaker: "Word", text: "Benissimo", en: "Very well / Great", zh: "非常好" },
+            { speaker: "Word", text: "Così così", en: "So-so", zh: "馬馬虎虎" },
+            { speaker: "Word", text: "Non c’è male", en: "Not bad", zh: "還不錯" },
+            { speaker: "Word", text: "Sto male", en: "I’m not well / I feel bad", zh: "我不好 / 身體不舒服" },
+
+            { speaker: "Word", text: "Sono stanco", en: "I’m tired (male)", zh: "我累了（男）" },
+            { speaker: "Word", text: "Sono stanca", en: "I’m tired (female)", zh: "我累了（女）" },
+            { speaker: "Word", text: "Sono felice", en: "I’m happy", zh: "我很高興" },
+            { speaker: "Word", text: "Sono triste", en: "I’m sad", zh: "我很難過" },
+            { speaker: "Word", text: "Ho fame", en: "I’m hungry", zh: "我餓了" },
+            { speaker: "Word", text: "Ho sete", en: "I’m thirsty", zh: "我渴了" },
+
+            { speaker: "Word", text: "E tu?", en: "And you? (informal)", zh: "你呢？（非正式）" },
+            { speaker: "Word", text: "E Lei?", en: "And you? (formal)", zh: "您呢？（正式）" }
+          ]
+        },
+        {
+          sceneId: 5,
+          scene: "Day 5 – Introductions",
+          scene_zh: "第 5 天 — 自我介紹",
+          dialogue: [
+            { speaker: "Word", text: "Piacere di conoscerti", en: "Nice to meet you (informal)", zh: "很高興認識你（非正式）" },
+            { speaker: "Word", text: "Piacere di conoscerLa", en: "Nice to meet you (formal)", zh: "很高興認識您（正式）" },
+            { speaker: "Word", text: "Piacere!", en: "Nice to meet you! (short)", zh: "幸會！" },
+
+            { speaker: "Word", text: "Come ti chiami?", en: "What’s your name? (informal)", zh: "你叫什麼名字？（非正式）" },
+            { speaker: "Word", text: "Come si chiama?", en: "What’s your name? (formal)", zh: "您貴姓？（正式）" },
+
+            { speaker: "Word", text: "Mi chiamo Anna", en: "My name is Anna", zh: "我叫安娜" },
+            { speaker: "Word", text: "Sono Marco", en: "I’m Marco", zh: "我是馬可" },
+
+            { speaker: "Word", text: "E tu?", en: "And you? (informal)", zh: "你呢？（非正式）" },
+            { speaker: "Word", text: "E Lei?", en: "And you? (formal)", zh: "您呢？（正式）" },
+
+            { speaker: "Word", text: "Sono di Roma", en: "I’m from Rome", zh: "我來自羅馬" },
+            { speaker: "Word", text: "Sono italiano", en: "I’m Italian (male)", zh: "我是義大利人（男）" },
+            { speaker: "Word", text: "Sono italiana", en: "I’m Italian (female)", zh: "我是義大利人（女）" },
+            { speaker: "Word", text: "Sono americano", en: "I’m American (male)", zh: "我是美國人（男）" },
+            { speaker: "Word", text: "Sono americana", en: "I’m American (female)", zh: "我是美國人（女）" },
+
+            { speaker: "Word", text: "Non parlo italiano molto bene", en: "I don’t speak Italian very well", zh: "我不大會說義大利文" },
+            { speaker: "Word", text: "Parlo inglese", en: "I speak English", zh: "我會說英文" },
+
+            { speaker: "Word", text: "E tu?", en: "And you? (informal)", zh: "你呢？（非正式）" },
+            { speaker: "Word", text: "E Lei?", en: "And you? (formal)", zh: "您呢？（正式）" }
+
+          ]
+        },
+        {
+          sceneId: 6,
+          scene: "Day 6 – Where you live, age, and job",
+          scene_zh: "第 6 天 — 你住在哪裡、幾歲、做什麼工作",
+          dialogue: [
+            { speaker: "Word", text: "Dove abiti?", en: "Where do you live? (informal)", zh: "你住在哪裡？（非正式）" },
+            { speaker: "Word", text: "Dove abita?", en: "Where do you live? (formal)", zh: "您住在哪裡？（正式）" },
+            { speaker: "Word", text: "Abito a Roma", en: "I live in Rome", zh: "我住在羅馬" },
+            { speaker: "Word", text: "Abito a Milano", en: "I live in Milan", zh: "我住在米蘭" },
+
+            { speaker: "Word", text: "Quanti anni hai?", en: "How old are you? (informal)", zh: "你幾歲？（非正式）" },
+            { speaker: "Word", text: "Quanti anni ha?", en: "How old are you? (formal)", zh: "您幾歲？（正式）" },
+            { speaker: "Word", text: "Ho venti anni", en: "I’m twenty years old", zh: "我二十歲" },
+            { speaker: "Word", text: "Ho trent’anni", en: "I’m thirty years old", zh: "我三十歲" },
+
+            { speaker: "Word", text: "Che lavoro fai?", en: "What do you do? (informal)", zh: "你做什麼工作？（非正式）" },
+            { speaker: "Word", text: "Che lavoro fa?", en: "What do you do? (formal)", zh: "您做什麼工作？（正式）" },
+            { speaker: "Word", text: "Sono studente", en: "I’m a student (male)", zh: "我是學生（男）" },
+            { speaker: "Word", text: "Sono studentessa", en: "I’m a student (female)", zh: "我是學生（女）" },
+            { speaker: "Word", text: "Sono insegnante", en: "I’m a teacher", zh: "我是老師" },
+            { speaker: "Word", text: "Sono ingegnere", en: "I’m an engineer", zh: "我是工程師" }
+          ]
+        },
+        {
+          sceneId: 7,
+          scene: "Day 7 – Everyday reactions",
+          scene_zh: "第 7 天 — 日常感嘆語",
+          dialogue: [
+            // ✅ 正面讚美 / 驚嘆
+            { speaker: "Word", text: "Buonissimo!", en: "Delicious! / So tasty!", zh: "太好吃了！" },
+            { speaker: "Word", text: "Che buono!", en: "How tasty!", zh: "好好吃！" },
+            { speaker: "Word", text: "Bellissimo!", en: "Beautiful! / So nice!", zh: "太漂亮了！" },
+            { speaker: "Word", text: "Che bello!", en: "How nice! / That’s great!", zh: "太好了！" },
+            { speaker: "Word", text: "Fantastico!", en: "Fantastic!", zh: "超讚的！" },
+            { speaker: "Word", text: "Ottimo!", en: "Excellent! / Great!", zh: "太棒了！" },
+            { speaker: "Word", text: "Perfetto!", en: "Perfect!", zh: "完美！" },
+            { speaker: "Word", text: "Che bontà!", en: "What a delicacy! / How delicious!", zh: "好美味啊！" },
+
+            // ✅ 驚訝 / 確認
+            { speaker: "Word", text: "Davvero?", en: "Really?", zh: "真的嗎？" },
+            { speaker: "Word", text: "Mamma mia!", en: "Oh my God! / My goodness!", zh: "我的天啊！" },
+            { speaker: "Word", text: "Certo!", en: "Of course! / Certainly!", zh: "當然！" },
+
+            // ✅ 日常應答
+            { speaker: "Word", text: "Va bene!", en: "Okay! / That’s fine!", zh: "好啊！/ 沒問題！" },
+            { speaker: "Word", text: "D’accordo.", en: "Agreed / Okay.", zh: "同意 / 行。" },
+            { speaker: "Word", text: "Non capisco.", en: "I don’t understand.", zh: "我不懂。" },
+            { speaker: "Word", text: "Niente.", en: "Nothing / Never mind.", zh: "沒什麼 / 算了。" },
+
+            // ✅ 負面反應
+            { speaker: "Word", text: "Che noia!", en: "So boring! / What a bore!", zh: "好無聊！" },
+            { speaker: "Word", text: "Peccato!", en: "Too bad! / What a pity!", zh: "太可惜了！" },
+
+            // ✅ 場景必備
+            { speaker: "Word", text: "Subito!", en: "Right away! / Immediately!", zh: "馬上！" },
+            { speaker: "Word", text: "Aiuto!", en: "Help!", zh: "救命！" },
+            // ✅ 文化 Bonus
+            { speaker: "Word", text: "La dolce vita.", en: "The sweet life / The good life.", zh: "美好的生活 / 甜美的人生。" }
+          ]
+        },
+        {
+          sceneId: 8,
+          scene: "Day 8 – Pronouns, Possessives, and Demonstratives",
+          scene_zh: "第 8 天 — 人稱代詞、所有格與指示詞",
+          dialogue: [
+            // Pronouns
+            { speaker: "Word", text: "Io sono", en: "I am", zh: "我是" },
+            { speaker: "Word", text: "Tu sei", en: "You are (informal)", zh: "你是（非正式）" },
+            { speaker: "Word", text: "Lui è", en: "He is", zh: "他是" },
+            { speaker: "Word", text: "Lei è", en: "She is", zh: "她是" },
+            { speaker: "Word", text: "Noi siamo", en: "We are", zh: "我們是" },
+            { speaker: "Word", text: "Voi siete", en: "You are (plural)", zh: "你們是" },
+            { speaker: "Word", text: "Loro sono", en: "They are", zh: "他們是" },
+
+            // Possessives
+            { speaker: "Word", text: "Il mio gatto", en: "My cat", zh: "我的貓" },
+            { speaker: "Word", text: "Il tuo amico", en: "Your friend", zh: "你的朋友" },
+            { speaker: "Word", text: "Il suo cane", en: "His/Her dog", zh: "他/她的狗" },
+            { speaker: "Word", text: "La nostra casa", en: "Our house", zh: "我們的房子" },
+            { speaker: "Word", text: "Il vostro professore", en: "Your teacher (plural)", zh: "你們的老師" },
+            { speaker: "Word", text: "I loro genitori", en: "Their parents", zh: "他們的父母" },
+
+            // Demonstratives
+            { speaker: "Word", text: "Questo libro", en: "This book", zh: "這本書" },
+            { speaker: "Word", text: "Quella casa", en: "That house", zh: "那間房子" }
+          ]
+        },
+        {
+          sceneId: 9,
+          scene: "Day 9 – Numbers 0–10",
+          scene_zh: "第 9 天 — 數字 0–10",
+          dialogue: [
+            { speaker: "Word", text: "zero", en: "zero", zh: "零" },
+            { speaker: "Word", text: "uno", en: "one", zh: "一" },
+            { speaker: "Word", text: "due", en: "two", zh: "二" },
+            { speaker: "Word", text: "tre", en: "three", zh: "三" },
+            { speaker: "Word", text: "quattro", en: "four", zh: "四" },
+            { speaker: "Word", text: "cinque", en: "five", zh: "五" },
+            { speaker: "Word", text: "sei", en: "six", zh: "六" },
+            { speaker: "Word", text: "sette", en: "seven", zh: "七" },
+            { speaker: "Word", text: "otto", en: "eight", zh: "八" },
+            { speaker: "Word", text: "nove", en: "nine", zh: "九" },
+            { speaker: "Word", text: "dieci", en: "ten", zh: "十" }
+          ]
+        },
+        {
+          sceneId: 10,
+          scene: "Day 10 – Mini Dialogue",
+          scene_zh: "第 10 天 — 小對話",
+          dialogue: [
+            { speaker: "Female", text: "Ciao! Io sono Anna.", en: "Hi! I am Anna.", zh: "嗨！我是安娜。" },
+            { speaker: "Male", text: "Ciao! Io sono Marco.", en: "Hi! I am Marco.", zh: "嗨！我是馬可。" },
+            { speaker: "Female", text: "Piacere di conoscerti!", en: "Nice to meet you!", zh: "很高興認識你！" },
+            { speaker: "Male", text: "Piacere! Come stai?", en: "Nice to meet you! How are you?", zh: "很高興認識你！你好嗎？" },
+            { speaker: "Female", text: "Bene, grazie. E tu?", en: "Good, thanks. And you?", zh: "很好，謝謝。你呢？" },
+            { speaker: "Male", text: "Così così. Tu sei studentessa?", en: "So-so. Are you a student?", zh: "馬馬虎虎。你是學生嗎？" },
+            { speaker: "Female", text: "No, io sono insegnante.", en: "No, I am a teacher.", zh: "不，我是老師。" },
+            { speaker: "Male", text: "Che bello! Io sono studente.", en: "How nice! I am a student.", zh: "真好！我是學生。" },
+            { speaker: "Female", text: "Da dove sei?", en: "Where are you from?", zh: "你來自哪裡？" },
+            { speaker: "Male", text: "Io sono di Roma. E tu?", en: "I am from Rome. And you?", zh: "我來自羅馬。你呢？" }
+          ]
+        },
+        {
+          sceneId: 11,
+          scene: "Day 11 – Daily Shopping and Dining",
+          scene_zh: "第 11 天 — 日常購物與用餐",
+          dialogue: [
+            { speaker: "Word", text: "Quanto costa?", en: "How much is it?", zh: "多少錢？" },
+            { speaker: "Word", text: "Dov'è...?", en: "Where is...?", zh: "…在哪裡？" },
+            { speaker: "Word", text: "Vorrei un caffè, per favore.", en: "I would like a coffee, please.", zh: "我想要一杯咖啡，麻煩了。" },
+            { speaker: "Word", text: "Il conto, per favore.", en: "The bill, please.", zh: "麻煩結帳。" },
+            { speaker: "Word", text: "Posso avere...?, per favore.", en: "Can I have...?, please.", zh: "我可以有…嗎？麻煩了。" },
+            { speaker: "Word", text: "Accettate carte di credito?", en: "Do you accept credit cards?", zh: "你們收信用卡嗎？" },
+            { speaker: "Word", text: "Cosa mi consiglia?", en: "What do you recommend?", zh: "您能推薦什麼嗎？" },
+            { speaker: "Word", text: "Un tavolo per due, per favore.", en: "A table for two, please.", zh: "麻煩一張兩人座的桌子。" }
+          ]
+        }
+      ]
+    }
+  ]
+};
