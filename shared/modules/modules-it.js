@@ -22,7 +22,9 @@ const modulesData = [
         { name: 'Episode 1: Greetings & Polite Words',        name_zh: '第1集：打招呼與禮貌用語',  link: 'starter/index.html?id=1' },
         { name: 'Episode 2: Self Introductions',               name_zh: '第2集：自我介紹與個人資訊', link: 'starter/index.html?id=2' },
         { name: 'Episode 3: Question Words in Action',         name_zh: '第3集：疑問詞實戰', link: 'starter/index.html?id=3' },
-        { name: 'Episode 4: Subject Pronouns & “Essere”',      name_zh: '第4集：主語人稱與動詞 essere', link: 'starter/index.html?id=4' }
+        { name: 'Episode 4: Subject Pronouns & “Essere”',      name_zh: '第4集：主語人稱與動詞 essere', link: 'starter/index.html?id=4' },
+        { name: 'Episode 5: Core Words for Absolute Beginners', name_zh: '第5集：初學者必學單字', link: 'starter/index.html?id=5' },
+        { name: 'Episode 6: Prepositions in Daily Life',        name_zh: '第6集：介系詞在日常生活中的用法', link: 'starter/index.html?id=6' }
       ]
     },
     {
