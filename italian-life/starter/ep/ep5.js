@@ -1,7 +1,7 @@
 const episodeData = {
   ep_title: "ep",
   episodeId: 5,
-  episode: "🇮🇹 Starter 05: – Core Words for Absolute Beginners",
+  episode: "🇮🇹 Starter 05 – Core Words for Absolute Beginners",
   episode_zh: "🇮🇹 初學零基礎 – 必學單字",
   toggle_title: "Scenes",
   voice: "it-IT",
@@ -9,8 +9,8 @@ const episodeData = {
   topics: [
     {
       topicId: 1,
-      topic: "👋 Greetings",
-      topic_zh: "👋 打招呼",
+      topic: "🗣️ Core Words and Expressions",
+      topic_zh: "🗣️ 初學必學單字與表達",
       scenes: [
         {
           sceneId: 1,
@@ -26,14 +26,7 @@ const episodeData = {
             { speaker: "Female", text: "Buona giornata", en: "Have a good day", zh: "祝你有美好的一天" },
             { speaker: "Female", text: "Buona serata", en: "Have a nice evening", zh: "祝你有個愉快的夜晚" }
           ]
-        }
-      ]
-    },
-    {
-      topicId: 2,
-      topic: "Day 2 – Goodbyes",
-      topic_zh: "👋 再見的說法",
-      scenes: [
+        },
         {
           sceneId: 2,
           scene: "Day 2 – Goodbyes",
@@ -50,14 +43,7 @@ const episodeData = {
             { speaker: "Female", text: "Addio", en: "Farewell (final)", zh: "永別 / 再見（文學用語）" },
             { speaker: "Female", text: "Ci vediamo stasera", en: "See you tonight", zh: "今晚見" }
           ]
-        }
-      ]
-    },
-    {
-      topicId: 3,
-      topic: "Day 3 – Polite Words",
-      topic_zh: "🙏 禮貌用語",
-      scenes: [
+        },
         {
           sceneId: 3,
           scene: "Day 3 – Polite Words",
@@ -80,7 +66,7 @@ const episodeData = {
             { speaker: "Female", text: "Non capisco.", en: "I don’t understand.", zh: "我不懂。" },
             { speaker: "Female", text: "Non lo so.", en: "I don’t know.", zh: "我不知道。" },
             { speaker: "Female", text: "Puoi ripetere, per favore?", en: "Can you repeat that, please? (informal)", zh: "你能再說一次嗎？（非正式）" },
-            { speaker: "Female", text: "Può ripetere, per favore?", en: "您能再說一次嗎？（正式）" },
+            { speaker: "Female", text: "Può ripetere, per favore?", en: "Can you repeat that, please? (formal)", zh: "您能再說一次嗎？（正式）" },
             { speaker: "Female", text: "Nessun problema", en: "No problem", zh: "沒問題" },
             { speaker: "Female", text: "Tranquillo", en: "Don’t worry", zh: "別擔心" }
           ]
@@ -93,20 +79,17 @@ const episodeData = {
             { speaker: "Female", text: "Come stai?", en: "How are you? (informal)", zh: "你好嗎？（非正式）" },
             { speaker: "Female", text: "Come sta?", en: "How are you? (formal)", zh: "您好嗎？（正式）" },
             { speaker: "Female", text: "Come va?", en: "How’s it going?", zh: "過得怎麼樣？" },
-
             { speaker: "Female", text: "Sto bene", en: "I’m good", zh: "我很好" },
             { speaker: "Female", text: "Benissimo", en: "Very well / Great", zh: "非常好" },
             { speaker: "Female", text: "Così così", en: "So-so", zh: "馬馬虎虎" },
             { speaker: "Female", text: "Non c’è male", en: "Not bad", zh: "還不錯" },
             { speaker: "Female", text: "Sto male", en: "I’m not well / I feel bad", zh: "我不好 / 身體不舒服" },
-
             { speaker: "Female", text: "Sono stanco", en: "I’m tired (male)", zh: "我累了（男）" },
             { speaker: "Female", text: "Sono stanca", en: "I’m tired (female)", zh: "我累了（女）" },
             { speaker: "Female", text: "Sono felice", en: "I’m happy", zh: "我很高興" },
             { speaker: "Female", text: "Sono triste", en: "I’m sad", zh: "我很難過" },
             { speaker: "Female", text: "Ho fame", en: "I’m hungry", zh: "我餓了" },
             { speaker: "Female", text: "Ho sete", en: "I’m thirsty", zh: "我渴了" },
-
             { speaker: "Female", text: "E tu?", en: "And you? (informal)", zh: "你呢？（非正式）" },
             { speaker: "Female", text: "E Lei?", en: "And you? (formal)", zh: "您呢？（正式）" }
           ]
@@ -119,28 +102,13 @@ const episodeData = {
             { speaker: "Female", text: "Piacere di conoscerti", en: "Nice to meet you (informal)", zh: "很高興認識你（非正式）" },
             { speaker: "Female", text: "Piacere di conoscerLa", en: "Nice to meet you (formal)", zh: "很高興認識您（正式）" },
             { speaker: "Female", text: "Piacere!", en: "Nice to meet you! (short)", zh: "幸會！" },
-
             { speaker: "Female", text: "Come ti chiami?", en: "What’s your name? (informal)", zh: "你叫什麼名字？（非正式）" },
             { speaker: "Female", text: "Come si chiama?", en: "What’s your name? (formal)", zh: "您貴姓？（正式）" },
-
             { speaker: "Female", text: "Mi chiamo Anna", en: "My name is Anna", zh: "我叫安娜" },
             { speaker: "Female", text: "Sono Marco", en: "I’m Marco", zh: "我是馬可" },
-
-            { speaker: "Female", text: "E tu?", en: "And you? (informal)", zh: "你呢？（非正式）" },
-            { speaker: "Female", text: "E Lei?", en: "And you? (formal)", zh: "您呢？（正式）" },
-
             { speaker: "Female", text: "Sono di Roma", en: "I’m from Rome", zh: "我來自羅馬" },
-            { speaker: "Female", text: "Sono italiano", en: "I’m Italian (male)", zh: "我是義大利人（男）" },
             { speaker: "Female", text: "Sono italiana", en: "I’m Italian (female)", zh: "我是義大利人（女）" },
-            { speaker: "Female", text: "Sono americano", en: "I’m American (male)", zh: "我是美國人（男）" },
-            { speaker: "Female", text: "Sono americana", en: "I’m American (female)", zh: "我是美國人（女）" },
-
-            { speaker: "Female", text: "Non parlo italiano molto bene", en: "I don’t speak Italian very well", zh: "我不大會說義大利文" },
-            { speaker: "Female", text: "Parlo inglese", en: "I speak English", zh: "我會說英文" },
-
-            { speaker: "Female", text: "E tu?", en: "And you? (informal)", zh: "你呢？（非正式）" },
-            { speaker: "Female", text: "E Lei?", en: "And you? (formal)", zh: "您呢？（正式）" }
-
+            { speaker: "Female", text: "Parlo inglese", en: "I speak English", zh: "我會說英文" }
           ]
         },
         {
@@ -151,56 +119,25 @@ const episodeData = {
             { speaker: "Female", text: "Dove abiti?", en: "Where do you live? (informal)", zh: "你住在哪裡？（非正式）" },
             { speaker: "Female", text: "Dove abita?", en: "Where do you live? (formal)", zh: "您住在哪裡？（正式）" },
             { speaker: "Female", text: "Abito a Roma", en: "I live in Rome", zh: "我住在羅馬" },
-            { speaker: "Female", text: "Abito a Milano", en: "I live in Milan", zh: "我住在米蘭" },
-
             { speaker: "Female", text: "Quanti anni hai?", en: "How old are you? (informal)", zh: "你幾歲？（非正式）" },
-            { speaker: "Female", text: "Quanti anni ha?", en: "How old are you? (formal)", zh: "您幾歲？（正式）" },
             { speaker: "Female", text: "Ho venti anni", en: "I’m twenty years old", zh: "我二十歲" },
-            { speaker: "Female", text: "Ho trent’anni", en: "I’m thirty years old", zh: "我三十歲" },
-
             { speaker: "Female", text: "Che lavoro fai?", en: "What do you do? (informal)", zh: "你做什麼工作？（非正式）" },
-            { speaker: "Female", text: "Che lavoro fa?", en: "What do you do? (formal)", zh: "您做什麼工作？（正式）" },
-            { speaker: "Female", text: "Sono studente", en: "I’m a student (male)", zh: "我是學生（男）" },
-            { speaker: "Female", text: "Sono studentessa", en: "I’m a student (female)", zh: "我是學生（女）" },
-            { speaker: "Female", text: "Sono insegnante", en: "I’m a teacher", zh: "我是老師" },
-            { speaker: "Female", text: "Sono ingegnere", en: "I’m an engineer", zh: "我是工程師" }
+            { speaker: "Female", text: "Sono insegnante", en: "I’m a teacher", zh: "我是老師" }
           ]
         },
         {
           sceneId: 7,
-          scene: "Day 7 – Everyday reactions",
+          scene: "Day 7 – Everyday Reactions",
           scene_zh: "第 7 天 — 日常感嘆語",
           dialogue: [
-            // ✅ 正面讚美 / 驚嘆
-            { speaker: "Female", text: "Buonissimo!", en: "Delicious! / So tasty!", zh: "太好吃了！" },
-            { speaker: "Female", text: "Che buono!", en: "How tasty!", zh: "好好吃！" },
-            { speaker: "Female", text: "Bellissimo!", en: "Beautiful! / So nice!", zh: "太漂亮了！" },
-            { speaker: "Female", text: "Che bello!", en: "How nice! / That’s great!", zh: "太好了！" },
+            { speaker: "Female", text: "Buonissimo!", en: "Delicious!", zh: "太好吃了！" },
+            { speaker: "Female", text: "Che bello!", en: "How nice!", zh: "太好了！" },
             { speaker: "Female", text: "Fantastico!", en: "Fantastic!", zh: "超讚的！" },
-            { speaker: "Female", text: "Ottimo!", en: "Excellent! / Great!", zh: "太棒了！" },
             { speaker: "Female", text: "Perfetto!", en: "Perfect!", zh: "完美！" },
-            { speaker: "Female", text: "Che bontà!", en: "What a delicacy! / How delicious!", zh: "好美味啊！" },
-
-            // ✅ 驚訝 / 確認
             { speaker: "Female", text: "Davvero?", en: "Really?", zh: "真的嗎？" },
-            { speaker: "Female", text: "Mamma mia!", en: "Oh my God! / My goodness!", zh: "我的天啊！" },
-            { speaker: "Female", text: "Certo!", en: "Of course! / Certainly!", zh: "當然！" },
-
-            // ✅ 日常應答
-            { speaker: "Female", text: "Va bene!", en: "Okay! / That’s fine!", zh: "好啊！/ 沒問題！" },
-            { speaker: "Female", text: "D’accordo.", en: "Agreed / Okay.", zh: "同意 / 行。" },
-            { speaker: "Female", text: "Non capisco.", en: "I don’t understand.", zh: "我不懂。" },
-            { speaker: "Female", text: "Niente.", en: "Nothing / Never mind.", zh: "沒什麼 / 算了。" },
-
-            // ✅ 負面反應
-            { speaker: "Female", text: "Che noia!", en: "So boring! / What a bore!", zh: "好無聊！" },
-            { speaker: "Female", text: "Peccato!", en: "Too bad! / What a pity!", zh: "太可惜了！" },
-
-            // ✅ 場景必備
-            { speaker: "Female", text: "Subito!", en: "Right away! / Immediately!", zh: "馬上！" },
-            { speaker: "Female", text: "Aiuto!", en: "Help!", zh: "救命！" },
-            // ✅ 文化 Bonus
-            { speaker: "Female", text: "La dolce vita.", en: "The sweet life / The good life.", zh: "美好的生活 / 甜美的人生。" }
+            { speaker: "Female", text: "Mamma mia!", en: "Oh my God!", zh: "我的天啊！" },
+            { speaker: "Female", text: "Va bene!", en: "Okay!", zh: "好啊！" },
+            { speaker: "Female", text: "Aiuto!", en: "Help!", zh: "救命！" }
           ]
         },
         {
@@ -208,26 +145,13 @@ const episodeData = {
           scene: "Day 8 – Pronouns, Possessives, and Demonstratives",
           scene_zh: "第 8 天 — 人稱代詞、所有格與指示詞",
           dialogue: [
-            // Pronouns
             { speaker: "Female", text: "Io sono", en: "I am", zh: "我是" },
             { speaker: "Female", text: "Tu sei", en: "You are (informal)", zh: "你是（非正式）" },
             { speaker: "Female", text: "Lui è", en: "He is", zh: "他是" },
             { speaker: "Female", text: "Lei è", en: "She is", zh: "她是" },
             { speaker: "Female", text: "Noi siamo", en: "We are", zh: "我們是" },
             { speaker: "Female", text: "Voi siete", en: "You are (plural)", zh: "你們是" },
-            { speaker: "Female", text: "Loro sono", en: "They are", zh: "他們是" },
-
-            // Possessives
-            { speaker: "Female", text: "Il mio gatto", en: "My cat", zh: "我的貓" },
-            { speaker: "Female", text: "Il tuo amico", en: "Your friend", zh: "你的朋友" },
-            { speaker: "Female", text: "Il suo cane", en: "His/Her dog", zh: "他/她的狗" },
-            { speaker: "Female", text: "La nostra casa", en: "Our house", zh: "我們的房子" },
-            { speaker: "Female", text: "Il vostro professore", en: "Your teacher (plural)", zh: "你們的老師" },
-            { speaker: "Female", text: "I loro genitori", en: "Their parents", zh: "他們的父母" },
-
-            // Demonstratives
-            { speaker: "Female", text: "Questo libro", en: "This book", zh: "這本書" },
-            { speaker: "Female", text: "Quella casa", en: "That house", zh: "那間房子" }
+            { speaker: "Female", text: "Loro sono", en: "They are", zh: "他們是" }
           ]
         },
         {
@@ -271,13 +195,15 @@ const episodeData = {
           scene_zh: "第 11 天 — 日常購物與用餐",
           dialogue: [
             { speaker: "Female", text: "Quanto costa?", en: "How much is it?", zh: "多少錢？" },
-            { speaker: "Female", text: "Dov'è...?", en: "Where is...?", zh: "…在哪裡？" },
+            { speaker: "Female", text: "Dov'è...?", en: "Where is...?", zh: "……在哪裡？" },
             { speaker: "Female", text: "Vorrei un caffè, per favore.", en: "I would like a coffee, please.", zh: "我想要一杯咖啡，麻煩了。" },
             { speaker: "Female", text: "Il conto, per favore.", en: "The bill, please.", zh: "麻煩結帳。" },
-            { speaker: "Female", text: "Posso avere...?, per favore.", en: "Can I have...?, please.", zh: "我可以有…嗎？麻煩了。" },
+            { speaker: "Female", text: "Posso avere..., per favore?", en: "Can I have..., please?", zh: "我可以要……嗎？麻煩了。" },
             { speaker: "Female", text: "Accettate carte di credito?", en: "Do you accept credit cards?", zh: "你們收信用卡嗎？" },
             { speaker: "Female", text: "Cosa mi consiglia?", en: "What do you recommend?", zh: "您能推薦什麼嗎？" },
-            { speaker: "Female", text: "Un tavolo per due, per favore.", en: "A table for two, please.", zh: "麻煩一張兩人座的桌子。" }
+            { speaker: "Female", text: "Un tavolo per due, per favore.", en: "A table for two, please.", zh: "麻煩一張兩人桌。" },
+            { speaker: "Female", text: "L'acqua naturale o frizzante?", en: "Still or sparkling water?", zh: "要礦泉水還是氣泡水？" },
+            { speaker: "Female", text: "Va bene, grazie.", en: "Alright, thank you.", zh: "好的，謝謝。" }
           ]
         }
       ]
